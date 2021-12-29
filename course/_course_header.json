@@ -1,0 +1,384 @@
+﻿
+{
+"name" : "PMS Database コースデータ案内所",
+"symbol" : "Pcourse",
+"data_url" : "https://pmsdifficulty.xxxxxxxx.jp/course/_course_score.json",
+"level_order" : 
+["lv0","lv5","lv10","lv15","lv20","lv25","lv30","lv35","lv40","lv45",
+1,1.5, 2,2.5, 3,3.5, 4,4.5, 5,5.5, 6,6.5, 7,7.5, 8,8.5, 9,9.5, 10,10.5,
+11,11.5, 12,12.5, 13,13.5, 14,14.5, 15,15.5, 16,16.5, 17,17.5, 18,18.5, 19,19.5,
+20,"？","◆","～"],
+
+
+"course":[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"name":"第5期 PMS段位認定 3級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dbe48c3617f79c98ca45ba65fd7ab0ea","0b18bfaf473f5213318e4ed80af5cad5","56c60f22136a44877e57598b2382c89b","daa9b82aec369c0fbf72343f14004d35"]},
+{"name":"第5期 PMS段位認定 2級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d81c13cda4757412c17216b69586d7fd","496199ab091d7d1f941ee1e4b7a97333","b734d90df2f1d39aea64d37010260d3e","06d222a2d0466222dbf3e65da5bac141"]},
+{"name":"第5期 PMS段位認定 1級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["82c7e1a8bb492f8bac99e69da17b1cc6","3bc652c43af9610ea8c65e416a8692a9","afd9acbc0b3f02d4b79689527ff7a77a","d2a6f16b16f6b65b3bfea9045641e484"]},
+{"name":"第5期 PMS段位認定 発狂初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["51d8af6226aa41d344573c3cf56c137c","33327c083e714d1284be9a24c5b3789f","5db82530216546db015d6d06b5b43bce","9528ee9fd0da7b78723cdc3cbb13b339"]},
+{"name":"第5期 PMS段位認定 発狂2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f6f79ce620e6e7cf2fb3e11f56bd345a","ab757516e90e4c493d071f0e9613d218","a95351b7c319ec1afaa12218141f4858","35aea1ed5356dfeb79188c0fd6d924e5"]},
+{"name":"第5期 PMS段位認定 発狂3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["90277b3d53087b9aa9662b1fbc48f2f2","c3985223159b14a42cf7c5d4418e47b6","eb2636f739a1f371c142592df398ce6c","059c1d227d706becc72a14a160faa749"]},
+{"name":"第5期 PMS段位認定 発狂4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["da2cbf97eb7375bac5ea7a842e538ff7","623c26c39c9440141e2e5c9fc55e986c","448cc5ea1d287501c6c788a23586202d","a52ef366294961beef077f2964c3aa9a"]},
+{"name":"第5期 PMS段位認定 発狂5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a5a048358521014c6b8b2eeed8ff43e2","740aa8ca7e2c7fa75ecfaeb8b61b6d96","cf2dece20a8cdb8b5ce8253443ce9130","bbec6791bc0e2c2b23e04ed9c124cc38"]},
+{"name":"第5期 PMS段位認定 発狂6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9011b2ca9312ad12164315be3fc8ed22","8d33b573a3e98d94c61266b120308ba3","9a2d3d99e351873f0f7b266025033683","b3d6b09ed281e06fcb95970ba951b792"]},
+{"name":"第5期 PMS段位認定 発狂7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ba5b122cfb53e9499948f9e7623d65ea","b4d0b1b7c07c8919cf988c8ff39bd34e","8dfa2c225a6a97c95c80260b14718198","6974f459545b1d8d9e8c4ec40e1f5f44"]},
+{"name":"第5期 PMS段位認定 発狂8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9c28c086d1c8b90843b2323e976fd393","2eedd7865485025d13a03fce077487a0","c0cf6796d39d204fce5fac95bbd7bd02","74d051ee6406e85829b7b456868420b7"]},
+{"name":"第5期 PMS段位認定 発狂9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ec5cd2676ed663b42bd81950cc161b2f","0e3195bc9fae967217e60717d43d5fe5","2617ca06f9d4d07f6872d53602bdc70c","0dc85e572a36348652a7e9b2135ee421"]},
+{"name":"第5期 PMS段位認定 発狂10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["67364496cd8b11c0a0acb22e55d74e59","8e616f818ea8bd427f9050827cc562e6","aa6119658cf0a8c23f8830f01c8740ed","3dff4432ba2af69c4028b312ecf300ca"]},
+{"name":"第5期 PMS段位認定 発狂皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["42810609d4066a8d889b48d3fb1efed6","2e50a211bafb905873a34fe18ee9ae5d","2c4a9d5dd24be774b2f028cd425a7166","0ae06c02deab42a32a818dd868147f19"]},
+{"name":"第5期 PMS段位認定 Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e206ffb42caf8a84dc9f87470d4f5236","09900452c76ed52a1ffc8e75ffb4ac64","ac03fa20574b78bc9877939bf6567dc8","f28dea87dd4faf8c65ee4ae79fd32bce"]},
+{"name":"第5期 PMS Undefined","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f3b195303e4a5e15a9e176d0a39f7c57","007807392f1f8cefb730cf29eda1ac6b","e024332406e5401d714f776beea4d84e","04d9140dbcf0475833f88b816f55356a","25802ac944e3c4d77553b267aad9d9dd"]},
+{"name":"第4期 PMS段位認定 発狂初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["7a5255b42958846e3911ce6e528b3f4b","9cc68e640da062425e54d33d6accedb9","57e6cf042dd344f5f00dbbc6bed81e57","04562809a2c7cceb820a11395191cdc9"]},
+{"name":"第4期 PMS段位認定 発狂2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["80b2dd0756fc5b6c9350dfb977d6a34b","ba6c62f805624c360723cd09c1cff501","2016ddd78b500bd590990c1dd2348fe1","aa0705b6e46f5e7a56dcbb60d87c5ec0"]},
+{"name":"第4期 PMS段位認定 発狂3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c31ffa6a3688b9ef3ba24cbede2f5422","dee6be9445c3b1243f45c86d4ab360a0","cf6ec10b08076439586f1cf28b4dfd28","c7bcc8d2f893455e2bbda579ee18c2ad"]},
+{"name":"第4期 PMS段位認定 発狂4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a0a5d3e1cf2e7157745ed284c4a720ab","7ede05b200b8dc5f22fcaf6d3a572762","f452c1fe83cb81ba6808ed620ae7fa22","5bf5023c013729b62ddba64ac7d30d1e"]},
+{"name":"第4期 PMS段位認定 発狂5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["63f92f7a4e1687b68b01622ca567749b","318cd763acd5e9a7b09a64a9f3c3d93a","6c28f8ff4925053b7f0ffeb28e309079","c2531d850f1bb66e0c39e2d7cccca02a"]},
+{"name":"第4期 PMS段位認定 発狂6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["13ece246d6c24bd0860306ae4db68049","7736144896f2b9d950380267123fc9d0","0389ad8b9c697ddf30b22927d4f4c106","a0ece86aa678fe92faa7d08badbe0b48"]},
+{"name":"第4期 PMS段位認定 発狂7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b8628beb7cb2206605ee94b6b12a7686","53ab5aaebe7b9597bbaf8bc385be0a44","fba8c75cf11194743a07c1504fbd278e","0d5d3a0245092caee855f94972c35162"]},
+{"name":"第4期 PMS段位認定 発狂8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9b6e61ff6453bc73986af9fe58583eb4","93d4f5d3969be5624744b805fecc9090","aba95991ccf90ab7b19bd630db8203d3","4fd819f39b4372939aeb420eb3a3e501"]},
+{"name":"第4期 PMS段位認定 発狂9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["afa0384c0829b1bc3ad011097d526dda","d29576b97753504837164f78262d7c94","f51551f9a0294c4a9b240dc9efa849b6","ec5cd2676ed663b42bd81950cc161b2f"]},
+{"name":"第4期 PMS段位認定 発狂10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["38bf0339d504cf6bf6d560f61b647b10","3f158c9ba9daa8643c668be8c2b13702","48e042796e6c3b065f4084ecc1e3f1f8","0e3195bc9fae967217e60717d43d5fe5"]},
+{"name":"第4期 PMS段位認定 発狂皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a461448532082a003034c70406af1b37","4273c58964c2ea0d5efd9a54eb519efb","bd6291950cc0a1eafa9005250df5f3aa","2437ce304364ae74dd70ec5c1ad04684"]},
+{"name":"第4期 PMS段位認定 Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["71cbb85899e7f27a79540ccaeb13a695","5741cf4362cc5d57cc32b123666b3d74","4d80a511809281fa1c0a34774dcfd146","76f130c6c720e35ed29a846d9783ef8e"]},
+{"name":"第4期 PMS Undefined","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ae5e5e8a8e9500b087c0e11fd40d24ba","668eeebf99948ee74bc6f3e3fe04c907","51f5ae1067e2f4305c4b1de15c631a95","6e15f976c8166d68eaae9358ab73d35c","c9f7474cb442250604c69aca9f5c916b"]},
+{"name":"第3期 PMS段位認定 初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["13712e7171b78e8362d475968aea4f3d","3ea8b50c2dcf9906d96ee6fc842fc6e6","306df051a968331683f415c1e252a192","5663407969e4a9685aab45b6dc13f136"]},
+{"name":"第3期 PMS段位認定 2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["4faed3cac60702fc759d00e6a2619a1c","3463ce5a2b0ec97fbd62d0cbdac0f717","8ef03bdbba10dc575bdd2ac8f21d4401","9e9679a950daedb014d8a59897055338"]},
+{"name":"第3期 PMS段位認定 3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d9cfdb35d388c042a553151bb40ecde5","18d4143888c923b465fa5bcb1fba1690","9c8394a6c09beca211666af5ccf9a49d","0093f62923e40710eef4251456ed0e21"]},
+{"name":"第3期 PMS段位認定 4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c1e9fc70425b23c92c2d5b29730ccd40","5160296f202f6da2681346a8c6eebd2f","64677d735a2f8acd943233b2c67e995d","7aab111f42889c32104d86c017e893db"]},
+{"name":"第3期 PMS段位認定 5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["105145ce42f6482cff99076d0aaf6678","d23ef923646efd8ba2213ce91a0eacf9","39902bb70df30cbfec5d9be45739db03","ce3b4a0a418d831d085e462a519e12e6"]},
+{"name":"第3期 PMS段位認定 6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e8aca8631ee7e6a6019ee97a1cc90fc5","6966782c4f64f29fa8ec97ac17b01040","8d7474d268df7115e4759c7eb187bcc1","aceb4b879fe6818dae39ef7a002b0190"]},
+{"name":"第3期 PMS段位認定 7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b5eb449c6e1b5d5adfc28fb58c3e60ac","caee60fe42cee03de69a89c6331a0eeb","322608503e4f335e9d0eb7802137b123","f531aa4eb4c2006aa6fa8298b6054b9e"]},
+{"name":"第3期 PMS段位認定 8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["fc0702ad8a96229c30b507e5eee61ae0","f562a46a3a0559c2eeb4a71d6d0f6410","7ea4d29fa85018cc8c363b33efd93bb3","b734d90df2f1d39aea64d37010260d3e"]},
+{"name":"第3期 PMS段位認定 9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cf625c8a0bab7201c288dba22e5d6815","b589048144db1f7c5fc6355c0b2a3876","3567d9f1a4c6df4ba146933c0f188c67","054dd4a1befb30fd579a643e80ff5ee8"]},
+{"name":"第3期 PMS段位認定 10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ea4d1801eb59f19ac2413899b8807de5","69e1efb48ece49b1d32738f21570e0b9","276e971b861fcb823c116ba7a6be9a36","acef4602c96ea1208a8e7c22b81de998"]},
+{"name":"第3期 PMS段位認定 発狂初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["04562809a2c7cceb820a11395191cdc9","ebf544d12b98c2220925745a04ca45db","9cc68e640da062425e54d33d6accedb9","83ef1ba73c6d1609d36415dc6443dd95"]},
+{"name":"第3期 PMS段位認定 発狂2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["25d90a39087fe9721b314548ca512e47","80b2dd0756fc5b6c9350dfb977d6a34b","403d3a0cd5436df7a83d5e7fef3f1548","073df1e08b59366cd89141bc978b1e9e"]},
+{"name":"第3期 PMS段位認定 発狂3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c31ffa6a3688b9ef3ba24cbede2f5422","f9f0731e01ce6eddf907ecfb81ee8f05","4fa287e983d9734ac71ab2e3eaf9aaf9","8cec53f66cd947fc47110c6a20017a83"]},
+{"name":"第3期 PMS段位認定 発狂4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["8dfe83208cedc3d714cf638150d3987f","2e669128cab487844727917a91254399","cef004a49c9b448926deefc1fd68ea10","623c26c39c9440141e2e5c9fc55e986c"]},
+{"name":"第3期 PMS段位認定 発狂5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d192dc91146b0f12bda5ca6476605b77","19899adf6b16e73984ae85ec7388577f","63f92f7a4e1687b68b01622ca567749b","6c28f8ff4925053b7f0ffeb28e309079"]},
+{"name":"第3期 PMS段位認定 発狂6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ce2ac318710b4e01fe9562b39626e9ed","13ece246d6c24bd0860306ae4db68049","fa5843b1ef8801d2f24d52494814ceee","d2ae4b00bc702e979b3fcf0dc08346aa"]},
+{"name":"第3期 PMS段位認定 発狂7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["6532d3b4bda9cbc402fc1c2a21d3e062","50dbba3fd22cffb60ff9897a6e4fad38","53ab5aaebe7b9597bbaf8bc385be0a44","17c95abdcd57a6583c33d6fbf8937522"]},
+{"name":"第3期 PMS段位認定 発狂8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["024fdc316eed9ddd04d6ffa2b1af0ba5","c40b8f7675ce2c2ae2448d32a02ceaa5","fba8c75cf11194743a07c1504fbd278e","2d97cca17e2cca26600e9ecd1ddfda11"]},
+{"name":"第3期 PMS段位認定 発狂9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["61d053fbdba76f5a7186672c5cfe37e9","00543771e33d06365abc34a90da7f703","4fd819f39b4372939aeb420eb3a3e501","38bf0339d504cf6bf6d560f61b647b10"]},
+{"name":"第3期 PMS段位認定 発狂10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f51551f9a0294c4a9b240dc9efa849b6","66a74dd7d86e1eb7443d7f5e82f04416","7e79544fd08d3bd2066294b53abe37e7","0e3195bc9fae967217e60717d43d5fe5"]},
+{"name":"第3期 PMS段位認定 発狂皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["4df5f5d186f7c884b25ae5b67c043ac2","9d1a3b75d7769c9ea925159d0b5b99bd","bd6291950cc0a1eafa9005250df5f3aa","2437ce304364ae74dd70ec5c1ad04684"]},
+{"name":"第3期 PMS段位認定 Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a461448532082a003034c70406af1b37","7296a8120b836fa378144b479f093387","5741cf4362cc5d57cc32b123666b3d74","76f130c6c720e35ed29a846d9783ef8e"]},
+{"name":"第2期 PMS段位認定 初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["306df051a968331683f415c1e252a192","45f99240f8c352594fc9611ca720704d","5663407969e4a9685aab45b6dc13f136","4797690ab4baeb8913c0ed36769dec22"]},
+{"name":"第2期 PMS段位認定 2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["235c19edb0bd758af15ab78ca1d43d2f","9d7c2ab46bf9a9072ef50efeb71b6058","9e9679a950daedb014d8a59897055338","8ef03bdbba10dc575bdd2ac8f21d4401"]},
+{"name":"第2期 PMS段位認定 3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["bd88ddeb5acdc35bbdd251406bb0a0a6","71d304aa10a635a869c30347d202891a","9c8394a6c09beca211666af5ccf9a49d","d9343cd749807ad35e4a5cf85b6a2dbc"]},
+{"name":"第2期 PMS段位認定 4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["64677d735a2f8acd943233b2c67e995d","bb58363f85cf5fd5fdf53c60c4f56d8c","7aab111f42889c32104d86c017e893db","be0d9f65fa0328cf226df6a154d86e0c"]},
+{"name":"第2期 PMS段位認定 5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d197534c7ee8e248d3efebbf52738008","ff8595cdfe7fa971d9a153318581ca74","d23ef923646efd8ba2213ce91a0eacf9","ce3b4a0a418d831d085e462a519e12e6"]},
+{"name":"第2期 PMS段位認定 6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["6966782c4f64f29fa8ec97ac17b01040","f6072bed644f65b7ace6f90104bfa64f","30e2ca9eeb73c55543b2221f686043cc","64fcb3ccbc3df131ae395359861e7491"]},
+{"name":"第2期 PMS段位認定 7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["72e7bbef7626fec808fb4d06295ba44f","dd7e196e0508c07cf8ec6281ccfa5230","00882f4adbfb549e7368706c76a95532","7d2170f9791be3959d6dd0e28a95af76"]},
+{"name":"第2期 PMS段位認定 8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["bfe0a0b0124707cab7ca9732895e5e1d","c79bfb7b6c5f75de5a82ce484fa2da8a","aa0b84293ff89510907ab96297aff8e1","5a09205d339c9ed457d9133af9e4afb0"]},
+{"name":"第2期 PMS段位認定 9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b734d90df2f1d39aea64d37010260d3e","f0812b943b8029243395e684c0eaf473","d757a661708ae4b06c02a897ea385962","bc400a706659073be4c164343286719d"]},
+{"name":"第2期 PMS段位認定 10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e0486284727e02909e1e78a0391aa9de","8ef216063b163e73413bec1cfaa2c6bf","567198772cb1479861b6bea06567acf1","6ba5a776e37b9bbde2edaeb2a084de4b"]},
+{"name":"第2期 PMS段位認定 発狂初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9cc68e640da062425e54d33d6accedb9","04562809a2c7cceb820a11395191cdc9","4b6523d475c9ff19436dcbbf8cc5847b","83ef1ba73c6d1609d36415dc6443dd95"]},
+{"name":"第2期 PMS段位認定 発狂2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ecd3b5241401d0dd7f96e3e044ca650d","80b2dd0756fc5b6c9350dfb977d6a34b","8f1564bfa116921562cba6652178c18f","403d3a0cd5436df7a83d5e7fef3f1548"]},
+{"name":"第2期 PMS段位認定 発狂3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c31ffa6a3688b9ef3ba24cbede2f5422","4fa287e983d9734ac71ab2e3eaf9aaf9","5348be53da0e74deaed53efc6a1dde43","43500c0d20ff61936ca9ecb640c6a24e"]},
+{"name":"第2期 PMS段位認定 発狂4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d192dc91146b0f12bda5ca6476605b77","e0a4a16ceef7bb8640bae2e53e8babe4","05ddc200e9a6d3bd55fe6f831c669dab","623c26c39c9440141e2e5c9fc55e986c"]},
+{"name":"第2期 PMS段位認定 発狂5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["38f8f4b2489e4101bf539ff15aace9af","790919c8c94c34a8bbfa07d2f4da8d38","6c28f8ff4925053b7f0ffeb28e309079","c7241b3bd869de685e32ec38357feafb"]},
+{"name":"第2期 PMS段位認定 発狂6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d0842041112a97d24c58ff3be6c7aca7","1e52f6aa753f1f91a0a4be9aa5e3a1f6","d2ae4b00bc702e979b3fcf0dc08346aa","ce12667c643e44283e186b0e944baa2f"]},
+{"name":"第2期 PMS段位認定 発狂7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["92129fccc5be97176f6a66ab88f54e06","50dbba3fd22cffb60ff9897a6e4fad38","989cb406ad0968b12f7eb0551833f79c","53ab5aaebe7b9597bbaf8bc385be0a44"]},
+{"name":"第2期 PMS段位認定 発狂8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2d97cca17e2cca26600e9ecd1ddfda11","5f9f5f710db1d924231e11217173399f","66a74dd7d86e1eb7443d7f5e82f04416","7e79544fd08d3bd2066294b53abe37e7"]},
+{"name":"第2期 PMS段位認定 発狂9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f1f6a3b532eb3eb1710088bbcbb4b0b6","e6fecb14a1badd53c27920ed9f187b6f","f51551f9a0294c4a9b240dc9efa849b6","38bf0339d504cf6bf6d560f61b647b10"]},
+{"name":"第1期 PMS段位認定 発狂初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c12cf0a286b0f953b25a89bf4b9e98ef","9aed9f1aa0a54cf39e526100046bfa37","8eb5d833502ffc4ed7744189ee082b98","0c49c79349d9a1f0117b84d04fa4fb7f"]},
+{"name":"第1期 PMS段位認定 発狂2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["48675f25c533c6ff276dd463de9b6f1d","80b2dd0756fc5b6c9350dfb977d6a34b","e807b32c296e6f2df5f7a237b34a5f76","64101f16618e5bd64d3a2d0a78a9191e"]},
+{"name":"第1期 PMS段位認定 発狂3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["8f317c0f2a50eb9672b2111caad17558","5cc3c8f6f7f8a232082634b22a91e0ed","04562809a2c7cceb820a11395191cdc9","e125e61d968dd7d9e0727f81f8d6a509"]},
+{"name":"第1期 PMS段位認定 発狂4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["6bef0aaab3cf347eb9bd7ce3ad86e7d0","acef4602c96ea1208a8e7c22b81de998","f9f0731e01ce6eddf907ecfb81ee8f05","7a20bb4eec6dc7d2f084028cc4a4a26f"]},
+{"name":"第1期 PMS段位認定 発狂5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2e669128cab487844727917a91254399","8f1564bfa116921562cba6652178c18f","013575cc67d7fc5b51f54f5aaddc1c76","ce12667c643e44283e186b0e944baa2f"]},
+{"name":"第1期 PMS段位認定 発狂6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e69abff7f41cb016e9b3ca38cc151d58","41493a7f61dae2066dfcf065674cc797","8dfe83208cedc3d714cf638150d3987f","d0842041112a97d24c58ff3be6c7aca7"]},
+{"name":"第1期 PMS段位認定 発狂7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["aa271d610c9fbfda90456e83014a1219","f30c3a12195737c85866fe1a8ff93090","e0a4a16ceef7bb8640bae2e53e8babe4","0ce57aca044efcab9f45ea78ed5f5619"]},
+{"name":"第1期 PMS段位認定 発狂8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["10201af0f2de1dd0bf2d6052f187fb77","cef004a49c9b448926deefc1fd68ea10","a7afd18fa19a8b62f38993e7a6f549ff","def30def648cceb28a9e8b283871c03f"]},
+{"name":"第1期 PMS段位認定 発狂9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dcc29bded840d860262844479f0aaa9a","92129fccc5be97176f6a66ab88f54e06","043ea584500bd21adda7da53dcc1d307","2d97cca17e2cca26600e9ecd1ddfda11"]},
+{"name":"第1期 PMS段位認定 発狂10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cc40aa7ba5d3e8b4bb0b85e128b5fcf7","989cb406ad0968b12f7eb0551833f79c","6c7a2ca2192a32cefa63b9190a7f3f6b","38bf0339d504cf6bf6d560f61b647b10"]},
+{"name":"第1期 PMS段位認定 発狂皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e5e92677b41c2e9507d4db5b754fa004","f5497dc865f252ce83d846c9347f0a21","f1f6a3b532eb3eb1710088bbcbb4b0b6","7296a8120b836fa378144b479f093387"]},
+{"name":"第1期 PMS段位認定 Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["bd6291950cc0a1eafa9005250df5f3aa","749ed9826ed1ea94b304fa3c422ce386","3a1603a5740570863db6de51de4f3f4c","26cc705d5f1e3f9af44a9434543125fb"]},
+
+{"name":"VS 346プロダクション（バックメンバー）  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a9b9f8c3e092a6ca9aa7b3fd4ff3bb89","0f30831db2a11470e4e97e7d012f8bb5","ddd80b760636085c261bda3c0e0dcbeb","aa3d923cb99b1491f6f2837b9d84e5a4","742dec667a64554337b3f766e73ffdec"]},
+{"name":"VS 森の妖精  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0d0d08dd7534e488ace782d29c4b297a","a8b241167e4fafcf6957c4b5836eb72d","7d8395a7053d8d793b6ac9a0dc844b84","4139971e67b8ef49a9ec4f75d999ceff","125cf3653adcef731065f2b78d7ec8c1"]},
+{"name":"VS ゆず太大提督(乙)  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e8abb4e846dbb5543dc3f465ebd6d5f8","1e277697f590dc0ee282f6580eceba6b","94e7a764d08d55942de57ea96c738d46","14a8cf7ca691174a381576d560e4a76e","8aaf10dfdbe6bf97763610dd28c302bc"]},
+{"name":"VS ウラ・水霊  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["3197e1e329336d6ebe7d6fbcf7caedd3","4b75a8c68b766656436f15f185379150","8fa5c5d6ed4f6e7796941ec460cd08d0","e9ba194c92465100a1f9eb21033cad26","9260f37250a3b9905e9a7a2a20cc6e90"]},
+{"name":"VS 0samil0 (^^)  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2fc071a360ab8868aad7ad2bb9dfd329","405de2d59c3f5781b789e3c889b13143","f3bdf4682d20fe0d4cd83c7f5006d3f5","194f31026bc0ff476650476f5feed40b","1eeb0e8764b87745c276fea21d64c5bd"]},
+{"name":"VS ゆず太大提督(丙)  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["358e0e2301ee2cfd66816b2c133e5b45","4f1da9fb68570f49639e13c3cb2ac5ac","f2b2da016f55e3d4288b232e1ccc8418","e1e8f66827d5db3b247bf903e5bba842","220a36d7bb65986f19eefdc8ddc665e9"]},
+{"name":"VS 0samil0  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5ebe45ade895c29e7c14914da960162b","e764903551f5b8cee6b5a82e4d0aa202","e4f8f098951650e9adc3d01446c265e7","3b3da84710c6c28f7cb28f383a8937bd","f964f75a81590a727cc2be8f426620dc"]},
+{"name":"VS mkst  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e0dc4c37ec03304dee7eb4733483390d","f7df497fcf0a95f0b2e679c73669c341","141f2d81566d4869053122ab0325fee5","dbfc1444a44b82e727e1092c79fd1331","fcba09d3b3b4f3277194039e0b1d0625"]},
+{"name":"VS 水霊  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["da5b02ab27025f1488e46f3cdea57669","043dc2be02868ba658355074b4213554","d7b01469baea6b2191cf60d5131a5ab0","e79c163df343a74948812d30d4a960c0","165d5de1a00f57584e181b83b2fcda2f"]},
+{"name":"VS Seri  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["118ded57240c02af852bd47cac10859f","565b1e622b9621c7a53f2752d12a2958","aacc78c10e8fd5c9ec5aa6210e2e703d","bb3744d39207106a6603f3d03fe7eaf2","d142e382b77459d238c1c78032579683"]},
+{"name":"VS Rusalka  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["952590d80b27ed9e21427308261111cd","6ad63ad812ca70db814d3c2eaeb840a4","d1981dfd5be58cfb151fb3a3924457ba","b7ea6e34a636dff82cfee63998067a4b","8e5b67fab97e276684fe311d179a7ba8"]},
+{"name":"VS 深海(今日の運勢)  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["bf3df9b6be4d780e36f2445e8986f79d","05bed0bd509e88eaf55b964d280101b8","ee1b6976513bc739631f0c8707ba0966","8cc3d71b27df095b67f1120499def9bb","66cf1be1871eb392843f981afa433f87"]},
+{"name":"VS 未知のエリア  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["27de8ac3460dd23d7eb2466f652bb4c0","8db322955e08c179ad1ec09776aa705a","4f0d35afac59fde2175797904ebf81c1","dbbf83f99b40d45f53ac417427c66456","7267e4170dc484a93dfd56cfddf7d95a"]},
+{"name":"VS 0samil0 (^_^;)  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["bcd4a8edaa4adb50bc03bb660084024b","ec22e9c0c71186dac253dfb181ae232c","5e11f77af341a24d3b879d9db5f37f57","4d0ba89dc36a5826b49bad85095ca611","f0e92ee26414fe15e6e7415a94a79fcc"]},
+{"name":"VS 海底シンデン  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b08670b244b29f83bfc7e9b0d218934b","f191fc958a7edca228a01712a58be2bf","d909f7ba396010d23148a132175ac8ba","f6ffbb2f87a49b4a23e865f95f670e14","810903b9f1c292d5df82d9a8c7763d41"]},
+{"name":"VS Aqua Coronet+  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5efc9020f12ef93b08817419b794e04f","98cc6c1a764f3cec1a5e968ceda4fe2e","7e93b302e2f0a6a966d40663f550d7ae","98ad1ad888eb1ef3f327c3daa8c852e9","ce019d4053ecd877053c149740ab7fb8"]},
+{"name":"VS aquabit  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c0b942792fe51720df5e64aa869e219c","22d9d3eb47593f4c56be40643c923e1d","b108526d35130b951125c94ee4e0a53f","c2b9b77078a499ae1d5cd5c5bda3917a","2670b8d81bb93d91cf8b000380603d4a"]},
+{"name":"VS cotton  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b28f41ded49ca4d3b10bed9fd94c79ae","4ce9ca927429e890a21b518e83ad7b74","44de1a9fa3ea703d9893c46df4d96e1f","096d99487b127f9a6f17083b107d19a3","bf31c77fe0f84e832dabe274cc0d9422"]},
+{"name":"VS oxygen  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a2184c72f817138570d1c35f14a89d77","7ffe155c759a21ec01a7ec165e2b9f2a","83c6ddb06d6f0b411f22f12cac4fe2fb","1ec47d1d9cf6f98ecdf25583a876b251","0bd5285b4efd8ae537d429c5376308cc"]},
+{"name":"VS 浅瀬  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["4348fdebe4ff9dc8e2f882d5beaf2b2b","288b0b9ac410fdfcac877a176a63f24b","9898d6f412c2db4ee259b7b91b454e3b","6d155e3d8e649f1951bfa7e239851e1a","2fe0e213ea478740613976c3bbc21dee"]},
+{"name":"VS アグノム領（海）/ 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["39b81721037f3679a71d889fa14fd23b","30d80344de7c8e58a458183e40a42b54","6f4164d174b41f7bdc5e2878228d4bdf","64a61563f84958d85e3509aeb0de8ff4","43e5aae2448e34ba5004f98f9e1a658c"]},
+{"name":"VS Sugar  / 上級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cdc44e50c8c0a930f134680ea225b543","b337421928d0af7fcb8de6d420f6deeb","3862e148946f8b7850a292c948f6a1d3","8549d4a4c6b0471083db5ed356c335a7","889678fce504d3ab7575ddd230af5ad2"]},
+{"name":"VS Pearl-C(razy).  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9523d668611c7762bc3e159cccae1fc1","f4a61fbbcd20e205e9603fb0571a9817","8b13f96710881bf09649ca3b9cf333cd","ee2f99d0073c51fa5acb1d0b81e83aeb","3b13d1590ae94377890fedfbff66789a"]},
+{"name":"BOFU2015きほん検定  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ffa076476daa308f7903438439ebabbf","eacc01b65b14c8ceb54b55cd6f9bbfda","44729a8fd7820fcf1aa6e48c5ffc8160","a4bd93ceaf69acf37acdb6d7824d518b","70031a64ae5b89033ce2b213088b1a58"]},
+{"name":"VS aqumabit  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["1711ccf9de51c296281343b0129f8902","3c944ba4db1e8ae6a2b0ea6e606447b2","ce0b78b0eb1bd08bcf6ac87a376b4edd","c9a2ef20dded8bb05d58ec403f5dd200","7bef70c0b57687665225399c9e2b7dff"]},
+{"name":"VS Pearl-C.  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["3cd70cbf67c6c4decabdac6a0447cd77","7359d486f19473b322315d7a8aaeb20f","12651a778682cb20db9af15d28580e0c","d8813b9213460afbe361cf8686cdcdcd","d7a3045615e232c08697a9e0d4b27852"]},
+{"name":"VS （　・へ・）  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0029811e6da4353da4ece3a057131102","70cd16992673c5a568c4e84e4486683c","9db5cc4d2de998af460b7222f6f247f6","2aa03dfb04e1ec55ba249f96e59dad41","7f625e687f35e45f4dbab0cd2e042b4d"]},
+{"name":"VS 346プロダクション（フロントメンバー）  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["901bc9fb06d84552ae1c749e90ff75f9","550fd08dbe37f14aeecdc1dc4abe513c","c372ab3b24082e54fee61ff4bbffa45c","249bd82631ad5278ba4070f2282ea9e3","27651c8a463623a5e02ee3a51cb2e9f4"]},
+{"name":"VS ゆず太大提督(甲)  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5f0376c713c9a7bee493f3862ef03d43","6aa7abd5f4085534acd01570f6961c4e","bca84f27d816372bd2976b7653916b7f","14a53eac825c7cf147a6f188772b9e65","fa58235f66288405850a9f6eb4819f68"]},
+{"name":"VS クラン残  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cdf19af5c0ae02a83fd1794fc0791b55","1769d7e3d5b7518924df8ab144baa909","68a93fbe83c20c9fa83bde30cb760a86","8e1aea3110533f84d8223e42b182d831","e206ffb42caf8a84dc9f87470d4f5236"]},
+{"name":"VS アグノム領（山）  / ヤバイ！！！","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e03db5ea9e4bb227a52aaa2a80b2029a","2643e6ba108e656942dc4e19e7112190","e57b19972be4d3020bb57f677c777a14","8306db43478ae5169930ffa4890c8099","e834aaa7430f26da371545d22a4edc11"]},
+{"name":"G2R2014PMS きほん検定 1","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f278387d7bc05fea2a57b73554d4b742","094baa151bd5fc2dd0c706af1fbfcb43","1e29d20cb07b137e5cbbd41547f3954f","caecaa3ed9b4b01a964887d43282550e"]},
+{"name":"G2R2014PMS きほん検定 2","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b0e72849564f31b440edb303f5e79593","7e55e096267a1026641536f96879f9ec","d7b01469baea6b2191cf60d5131a5ab0","b96fc0130e6e9bef2b9c9db5c336bdc8"]},
+{"name":"G2R2014PMS きほん検定 3","constraint":["grade_mirror","gauge_lr2",""],"md5": ["7788f6f60149f73232aaaac0e19a8e27","9ffdbfdcca8679a6148af507fe55df3d","b77051cf5ccd5bb62ec292877bcada81","0c7f23015d10887f207e3492475d55d8"]},
+{"name":"G2R2014PMS きほん検定 4","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e49d6806a5bd867419f8ae4ca1b4080d","d5eb18f83060e14323962a9b21a50205","c36a031242b0cd054700e8524211b973","215239f1cac8368a3c75a47d961e8d0f"]},
+{"name":"G2R2014PMS きほん検定 5","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b882d783a7e4c87053060edf36dfb4c5","bfc01cfef88a8c28112087ef66db723c","6e70ee270e1fd5114238770af47d78fe","fcba09d3b3b4f3277194039e0b1d0625"]},
+{"name":"G2R2014PMS きほん検定 6","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dc3949d974a01e939b61286da7eed78d","7d6843845b0ccd761d42da8f64a124ec","b337421928d0af7fcb8de6d420f6deeb","dc5dc1331d2ddfcd093dd277de026657"]},
+{"name":"G2R2014PMS きほん検定 7","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f7147e1e2ce5645bdc9ae2905e741a8a","6f8a7ce0c5635c9f3964b6c559a5e0f8","08e244287da86c00dd1bed1582981b4a","c2b9b77078a499ae1d5cd5c5bda3917a"]},
+{"name":"G2R2014PMS きほん検定 8","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5e11f77af341a24d3b879d9db5f37f57","bfcc4e7677ed9fc668f26ac95a433f1b","a6fc2446027d20f18db24824ed25ca00","5f0376c713c9a7bee493f3862ef03d43"]},
+{"name":"G2R2014PMS きほん検定 9","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f1d33a8d4d162a178841198056b92b8d","2643e6ba108e656942dc4e19e7112190","fb623dcf6a49d0d61859cdb985e9c826","4c302651c4ec4cecee388f76b6045964"]},
+{"name":"G2R2014PMS きほん検定 10","constraint":["grade_mirror","gauge_lr2",""],"md5": ["07bd1ebf6b1712fb56ae311acef1bc66","d9fb4283b10b745784f0bbe4b14adb05","0c12123c37587fc6ff507a41697f08b1","3c944ba4db1e8ae6a2b0ea6e606447b2"]},
+{"name":"G2R2014PMS きほん検定 !i","constraint":["grade_mirror","gauge_lr2",""],"md5": ["3bc21ebdd6b3cd2692c14da20b4bd538","f7f535970482e9ea15e0593fd915f516","a14649fef359ef18baef612415de21ad","8da88a6abc6f7f156e6d9263245608a9"]},
+{"name":"BOF2013PMS きほん検定 1","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0e4f51244620c9810ab09aeb09b0b407","4241d7828ef07118e29626d5e0f00a65","891ea72c5aa55d5f169e02ad7baaca03","b91f7a3301e0d50555726ecfdde1c954"]},
+{"name":"BOF2013PMS きほん検定 2","constraint":["grade_mirror","gauge_lr2",""],"md5": ["90e546da205ad423fec46c3611f16b84","84535dfae99e4e3a1165079d947f8747","8915bcf69ac1975963b0eae70e4c7609","98837ee77563673e763cba6a71d53b93"]},
+{"name":"BOF2013PMS きほん検定 3","constraint":["grade_mirror","gauge_lr2",""],"md5": ["6fea1dca9a5335a118dde30370257777","2f465d1950ce51f6fe6ce1fd83bf8cf3","b810d4d15a34ba4ed39f97526211286d","2a8388b2f0b532e381198a2ffcb83bfd"]},
+{"name":"BOF2013PMS きほん検定 4","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2fc071a360ab8868aad7ad2bb9dfd329","94e7a764d08d55942de57ea96c738d46","eb2636f739a1f371c142592df398ce6c","cc0fa7fb146fab3236d67213c6a8f722"]},
+{"name":"BOF2013PMS きほん検定 5","constraint":["grade_mirror","gauge_lr2",""],"md5": ["14a8cf7ca691174a381576d560e4a76e","eb75d83d9cf105c415ac5de36ea1f2bb","68eedb07b741e4a7fcc1cb2f9eb12f03","d902caf3eed1ee74acfb1e620b98e8a5"]},
+{"name":"BOF2013PMS きほん検定 6","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cafb12f9afdbc3951c1d5237ef5e5cbe","a2b83f7d7e76350409e9f793f8abc1f0","cf2dece20a8cdb8b5ce8253443ce9130","4491bc616cb90a23f22cdbd8122b35fa"]},
+{"name":"BOF2013PMS きほん検定 7","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9d79f76a34ca08cec7df4c4a87bcd7f8","b4d0b1b7c07c8919cf988c8ff39bd34e","e3deaaff3fe84699a859b58749f48369","8dfa2c225a6a97c95c80260b14718198"]},
+{"name":"BOF2013PMS きほん検定 8","constraint":["grade_mirror","gauge_lr2",""],"md5": ["37d4878458a5286f45ddf49c5d33c4ac","d29576b97753504837164f78262d7c94","565b1e622b9621c7a53f2752d12a2958","37d5dde141c2b37f2a03289d92a668fe"]},
+{"name":"BOF2013PMS きほん検定 9","constraint":["grade_mirror","gauge_lr2",""],"md5": ["51a28d92bbe2279a348a3ab7088a5ae9","0029811e6da4353da4ece3a057131102","8e616f818ea8bd427f9050827cc562e6","7f9bed2fc95bbb1cf7d798c8e49f07d7"]},
+{"name":"BOF2013PMS きほん検定 10","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2617ca06f9d4d07f6872d53602bdc70c","4ff56df3f5ae89f9a5672680a9d47ddd","bbb14ee17a83141288daa499ef65ce46","9db5cc4d2de998af460b7222f6f247f6"]},
+{"name":"BOF2013PMS きほん検定 !i","constraint":["grade_mirror","gauge_lr2",""],"md5": ["42810609d4066a8d889b48d3fb1efed6","09900452c76ed52a1ffc8e75ffb4ac64","668eeebf99948ee74bc6f3e3fe04c907","51f5ae1067e2f4305c4b1de15c631a95"]},
+{"name":"BOF2013PMS ソショウアポカリプス","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f4394df1f74d890bfb03902c7aad1d2c","33aabbdc20546704bc444405d505614c","29f9202df529ef1f7e705dddab9d7347","daf2f1e8bbc669b6767b6dbe202ff6f7"]},
+{"name":"オータムコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["5d1a43c28ded6acc981164125371da73","20e4640011e39b9863f015b8d7ff41dd","33216c11fae2f7e80c8edaf2e4d4c554","15f5cfcd50ff81eaa66c168319673475"]},
+{"name":"ロックコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["945c3b428a8850d0d692dee723bfdb23","ff1ac6877fc63d54cc19dc520cbbc09d","2dbf001f3bc4c90104b4c90a039f73ac","f103b4b0772635f2950ee5d43a6d4274"]},
+{"name":"ジャジーコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["80466ad21c302995e29d7ae3ff252737","aad01228567726058ef448c63e5aa018","625aa96295e2880e7c925d4be4e18886","a7658bd13119b6f20749b827c5897c16"]},
+{"name":"チップチューンコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["a3ad0a20749f0114b5d1dd4cbed8bb1f","58f992d7942f1ea2a6126d73768d4195","880fa8f71d8ffa52767ac48d8f68185c","324d273f524c04975b20a9875c5c872b"]},
+{"name":"ストリートコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["11922e891dc32230945531cf1e7c9730","e8bae1ca809ee6c954d1ee1b79369d23","d2ec1cf3cdbaa31d5d1cc5d3c404fc3b","2dfa47e03c4717a84ae3fb7ff4dffd0c"]},
+{"name":"テクノコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["471a27cefd1f6542e45106a2f8a19a21","9b0f006fe1da067358a02a6bef1b6e1d","90621b35b5e2d5195f9f17ff0fd868d6","836b80c86ac8927feb5a8c857dd950f3"]},
+{"name":"ファンタジーコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["8e20639164396d30834be96f88bc7d71","be437192f9caf76e3c2cb9f15d54b03d","e43434a9d13583c3e81f776a3cbd39e2","7ad6287c12c6099cde2ea42515c2e7cc"]},
+{"name":"セレクションコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["0b4f30dae0d4565ad471e0300e6217b2","505f849b59f6ff2b025c98c2b937a907","0c0030b0936968e6949f8e0eae28ef59","689ac558a213cf7cae930965aec87db3"]},
+{"name":"スピードコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["7e144f37f792cb4b77875975e0c54aba","864a4ad8eb42869398e7ebc7edcdf4c5","26bdacb3156100e0dc6275c726748e45","f7fc80b55521e13b07c0406da18920a2"]},
+{"name":"アンダーグラウンドコース (A9S2013)","constraint":["grade_random","gauge_lr2",""],"md5": ["aa5e206b1d3690f9b6609e08e0e84bf3","8ec5fb2ed031eb83b61c919aef42259b","2e44b93bcf3ad88618582e300e39cbd6","e947c240cdca948d467534e670aefc55"]},
+{"name":"HELL A9S 2013コース","constraint":["grade_random","gauge_lr2",""],"md5": ["78cdb960d4cf8922ddf83eeea0c23401","38d4f39f9195c082322204572241a9b9","0d988d947107b7c85a5db26803f2c5df","6974f459545b1d8d9e8c4ec40e1f5f44"]},
+
+
+
+
+
+{"name":"OXPMS段位認定　初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["55658ed4f731e07011d0fb8704da60ad","f021ae08516c6fa00e658f6d82284927","5f2fe039cc0d0d98fb8db0cf73a290b8","62fe12dd199338aed582498797311ce3"]},
+{"name":"OXPMS段位認定　7級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["4331863bf9c724a19bcef77469cc63dc","7966bac249161fd7af441fc0057568db","27490d96f614403eb263b863d13c4336","e93e231460987285e6d7ed35fa59a07b"]},
+{"name":"OXPMS段位認定　6級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["27bfbd54fbb4dff5ffacd6c4dc050682","9d23118e873efeb0f43a593688be37cc","3675fe9a967f23a9cd7d36d1bade9861","9475848c0b4bb50863690cdb9b9f659e"]},
+{"name":"OXPMS段位認定　5級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["835fb515297f7eb5f0028ece92819731","ebd035ea2f33ad8cca782e98cd6f2674","25e7314137699104e8250eb82d654499","8640a0dcc4b46700127d1e74db23823e"]},
+{"name":"OXPMS段位認定　4級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d41fe58416178e51ccd2411aa6d0bad2","2cade8754ee2a9fc9601605145cef4ce","c4db33bb608abfb0eb749d15486170fa","454a34e9ca0fb219f3e13e4bbde69c32"]},
+{"name":"OXPMS段位認定　3級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["bef0b5d455dd6b49d20ea67afadcac13","7b5b89bdb72922e186193c65a054e8b2","46d9354ca169ed87e014a80524c46894","20d46ecf863b0b07a6b5b47d2eb00a3d"]},
+{"name":"OXPMS段位認定　2級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["1e2461172c41bc14837e0d11a3099b3e","dfed5b3f96c11c94a5a67474a46ea9a0","f5c9b5f6dfc0c05a606ee7047471e21a","846f72f4e2d7e543fa8a2a70aed11605"]},
+{"name":"OXPMS段位認定　1級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["6a50874cae41139c923291b2f6dbdb8e","9748f01a04a3e7c904a36df32274c670","b60a4be1160f37f635412e40713212a3","ee4af63d822a52a1233b7a07bc739e32"]},
+{"name":"OXPMS段位認定　初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["4b63785b5ef610dbb31c856fb06176d6","2365ee39a315ce8185d2d25dd184ae1e","b835b5a1e8d51c23063bb222ab789fa5","d563ed4de3f50cd7353171e8fea3a78a"]},
+{"name":"OXPMS段位認定　2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["317ffc905a2223e27745c10068a51830","01cdacdbf5f1746fc8d81837e79a642b","15dabe7115c7134d7e283d750e1da9aa","7417e9ea34442df43d12789d64311f6b"]},
+{"name":"OXPMS段位認定　3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cd2ff813f94fcc3fba898697b664a4a7","f3f88a1ee41151fe6174f364f7e23dd9","db54df839e0d8f084695bf07b29ae5a6","d58a151be6a76f3639eb8d6102cbf022"]},
+{"name":"OXPMS段位認定　4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["42f6d9d6fc8bd7990c29035c5efe2c67","0483ad53674cbf23edee13368fcee572","5db82530216546db015d6d06b5b43bce","0d06bd2a2356892335ce6478bbe54c48"]},
+{"name":"OXPMS段位認定　5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9a0fec6248b2e6e319237d2dfcd1d7da","eebd96cac57d36c100df3e3308e6247f","70963347610bdb3e8fd985768245888d","4227fb7e8d80e06048dd4bd23b675d3c"]},
+{"name":"OXPMS段位認定　6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5793b10777b7e0ca45502298017f968e","d568525fbfb9ca5e76c268d1b77c9258","a03a9e92bdd3db31d21bf2be2702911f","5e30464154933269fca3dc8d7d60e49a"]},
+{"name":"OXPMS段位認定　7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a66c87010fcc511eb5f4c58ae053852e","d131529ed927c4c8f648f0e64e5f6e8a","448cc5ea1d287501c6c788a23586202d","6b5713d2482ac9a2caca764428a370bf"]},
+{"name":"OXPMS段位認定　8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["7591ce497d9f5aed4d0e180390b9bc1b","244ed55de5bde365723ff330d0690106","2977555ee4ea2f2adc79b5ff58a626bd","8a8bde0feb1328b15735d7d3feae52ca"]},
+{"name":"OXPMS段位認定　9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cb3ec73eb60e0ce3b338abb9e0facba4","67bf4db10a0f5a25518113ff0c0ef15b","02ae620d2e0bb551586859e624ae0784","e4b3268da777de79f95ef0165de149e6"]},
+{"name":"OXPMS段位認定　10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["3f2b2a9829307eb0c4d2b45d4daedfed","fba8c75cf11194743a07c1504fbd278e","b4d0b1b7c07c8919cf988c8ff39bd34e","0454642082162963945c201ed4e7f1f5"]},
+{"name":"OXPMS段位認定　皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["23a532fe7950d47db5288a7c761b0468","ff886ebb62fac5f06216c74a183638e1","0a7372791b6cbf33a6db40e3fe726a0a","594d52a121f690dc2deaef8b5454aa02"]},
+{"name":"OXPMS段位認定　Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["33bc40eea6874c66664d1d4d99343331","5e6941f7db0608573c0ead5b87c0d16e","f176ef691012fc748ebb2f2649502e29","ae5c472be89a8ea2718fceee9825f21b"]},
+{"name":"ダーマ検定その１","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0c5df5149826acf51ac58d08fea00481","27b752f76dcaaa78b8298053b1215a4f","73b2de1a4424cac3c5c88e552f31318a","a2fd7e49705d2c42ceeb38e00a104f14"]},
+{"name":"ダーマ検定その２","constraint":["grade_mirror","gauge_lr2",""],"md5": ["64a3455caa031f5fd03fc221d12e4444","553eaebe822e4d8dd5f34c4791b886cb","a0e03288b7262ab6a6e3fffe0911abef","d0e87b16d5436e5bb1e2d745d47e582b"]},
+{"name":"ダーマ検定その３","constraint":["grade_mirror","gauge_lr2",""],"md5": ["198a1068ef48b4873feb88c9b2152bf5","8cd3948aa53976e10c21e04ac8d67569","b370a0e838c2dd3457f8bdbdfb1bfd7e","a52ef366294961beef077f2964c3aa9a"]},
+{"name":"ダーマ検定その４","constraint":["grade_mirror","gauge_lr2",""],"md5": ["aba4dc28d6764adb93f7ea09975b6ae3","8224e7a218fb9f94f09e7f7fdd5289e6","29ebd53fd5233e7148b5772023412282","161b60bdfd5c41ffb7ddae4c0d0fd187"]},
+{"name":"ダーマ検定その５","constraint":["grade_mirror","gauge_lr2",""],"md5": ["64d7efb9383685eb61309a1ac7420608","3592f5119a23b317e9afa831dc76e165","1d5ff1cb1de623122c38b6c4b22dcc64","6b83a7ca026870d3df7f7c08ca2086d9"]},
+{"name":"ダーマ検定その６","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b2d6c126098456955e3b7e38cc83a6c1","fedca4c0dc7942f42bcadcf101c057ea","e383f39d67a7dd97fe7805021bf3f98d","45e32f96b8b8a28357b3c8a347704c3b"]},
+{"name":"ダーマ検定その７","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b262f349e1bc61c15420d70f108b954a","ac772928b54fc7ea48e5bbeb47e06804","8be3b8ffaf322c4f8856f7884de19bc8","6860cf751da8e2e975f460d9311acf51"]},
+{"name":"ライセンス/水霊 初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0441392e772832ff1775fb6cf6c6e229","6919e75e237b4fce56e41c9bd09eb8c6","6dff6fe183b4698759a3315ac0db6d6b","46307d4d3935f1ba0ccdbbfc30cf923b"]},
+{"name":"ライセンス/水霊 二段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["27c02e6fc89307bf5152aac16908e230","a8dbf218eba3fc602c5c26e8e429928d","a8175b3ebd6f6615c67b8cf363da494f","0b388954e0b6c583fe3c49b61aca56d8"]},
+{"name":"ライセンス/水霊 三段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["060a5f709d809e6425f43b5ecb5ef7aa","da5b02ab27025f1488e46f3cdea57669","979f8dfa11582b21a47067afd0ac8eaa","de13343d5831a9aca23f5548da37eda7"]},
+{"name":"ライセンス/水霊 四段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d7b01469baea6b2191cf60d5131a5ab0","5f6d80847c9bad7431f71fafa1272f84","e79c163df343a74948812d30d4a960c0","76d7804709c1e1eb78203535a716b5bd"]},
+{"name":"ライセンス/水霊 五段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["4a81e35c03efbc042eef925fbafc2e52","388446b3f4ec5f71fceb0988cc7717a1","79770b814b3cff165814c16cf66f504e","90c64e72c01868ec813b62ffc171a4f2"]},
+{"name":"ライセンス/水霊 六段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c36a031242b0cd054700e8524211b973","7e34a8b6cfcf78a9fd71934ae65f9294","24066d171389cd90f5621a44a34b14b4","2eb38ef2b54d63257aee1f35b047e25f"]},
+{"name":"ライセンス/水霊 七段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["06267038556d04276e5edc7694352d71","dab4013eb38b0c5c7f8c16bec6ce0a4e","3197e1e329336d6ebe7d6fbcf7caedd3","d004ed780eca045874aaaee0c4240372"]},
+{"name":"ライセンス/水霊 八段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0feab8d9acd912fbccee7b2693aaf9a3","05d5dd4a0577137c846faa697e7c8227","8243fa97aaa1cc2c3f65616ebfcc0619","8b626dc07ba3291739d34304cafe65c6"]},
+{"name":"ライセンス/水霊 ポ段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["08133ddc263814568c5e82c43ec0937f","1e17c5cc2f56151b83e539aa443227a9","475d2de76d23f27b573840666d2fd5b1","a3fa846b623f80440b6404f1fe28b31b"]},
+{"name":"ライセンス/水霊 神","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f97684f7fae1d4bcd489732622856ad0","0ec6a4e36cdd15a913f7b3188897aeac","7938ef5817c43c1f6722de9f3ce9bcf9","a851744ba6695e32b092adde562d90de"]},
+{"name":"KranichPMS段位認定【戊】","constraint":["grade_mirror","gauge_lr2",""],"md5": ["4fec4b339f20995169a1a73385adb3f2","639e200d4af9ee0832a9b1c7e5c0d4a5","f09c8feb03e14adaca6e728a886c3ffc","bb430e2368d831c74ec9d5a6ac4d4c15"]},
+{"name":"KranichPMS段位認定【丁】","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dcd750e10431b08e3dd3227fb514cef1","257a0d1dc45210092268d0d5c33074b6","0c7d93d4f1ba8c50e4bf50a5afe26e2e","35764e17881900257355c321b32f9cd3"]},
+{"name":"KranichPMS段位認定【丙】","constraint":["grade_mirror","gauge_lr2",""],"md5": ["51fe964c66e3906860c4d7c67cd0b760","a59ab3de06f60c89effc11eb96b7f2da","025b081427b5cd6bb060fe957af0c54f","19207467e19572ed4aad152a61ed8849"]},
+{"name":"KranichPMS段位認定【乙】","constraint":["grade_mirror","gauge_lr2",""],"md5": ["83d8d43b4aad4bf2ff32638df460a5fe","681b99ee53cee3fdee60dcf65be5f597","f3cfc2fff972c29b96fa03a3c00f17e7","45ea0efaee02e0d66a11721460dca24a"]},
+{"name":"KranichPMS段位認定【甲】","constraint":["grade_mirror","gauge_lr2",""],"md5": ["da17d0c090f253a000e8e5046dcfa1ae","d155247d2d1100c491cced1bed215c58","3dedaa1375f023b24dd52427eb97399b","76e1c8fb0de564256462c629237d650f"]},
+{"name":"KranichPMS段位認定【史】","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e2a42e2b061fa6c7c0153baf2346eef7","63a643bcfc3a73a17cf921b14ad5243d","f43225694363bfa8a7d4473482372249"]},
+{"name":"DossyPMS段位認定 初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f6d8c19b948c216c28185608fc2ad6fa","19b35f12bae411f28d67299cd3cd9842","7189343ac646deac6c7d3f4e149b50b0","62c625bed147f7112c570078cb1f2cb5"]},
+{"name":"DossyPMS段位認定 二段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["964475d779f253df23a8f9100f83e8c6","79d3ace28cc68ab4638453d7884bd441","3c6e1fd00ac0c199c64ec3f7cbc507cf","9d24d674e7de0f1a3ea589354987695b"]},
+{"name":"DossyPMS段位認定 三段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c840c77206f8201e7a6b8a23543a4542","00c834edb59ecd4ca1d804a6057e951b","7ceaa3ac14d54bfe996ad83ccecb1755","5fcdc8ada00273d967e7b706d48dd597"]},
+{"name":"DossyPMS段位認定 四段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c8937c640a6fd0e37b606374e411050c","4303d3c11a92a412807036bd95ed1bd7","ebb5b6984941342b7e0aa729a023a07b","434cd6f272d5ece9aae39597036f5bf0"]},
+{"name":"DossyPMS段位認定 五段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["12567a9f12ac49acc46aac9eefdebe1e","389458231a8f08281adb91126439578f","0e06b80f6f865e31a3794ac6b522cb12","18cb689b9c70768bd4c0909c18809202"]},
+{"name":"DossyPMS段位認定 六段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["429d44446dc6f573336d948cadd5c6dc","fea86c621c954ca5b412c4532165eda2","35cde9cbfef1b579923cd219e2cfd0a1","296bac8dc7f050f33e0a310646737768"]},
+{"name":"DossyPMS段位認定 七段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["14934c91fc58bd3a9c30fc73b8e2b392","a36c9e18d0a7d6fe6f2e816fea56b684","4fb1ce99624b9f3d7cd07b9937548bea","9a1b64c6c5f6ea7307f022de8ea0b41f"]},
+{"name":"DossyPMS段位認定 八段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cc45042fca6a4ee296d4da47e88b0ba9","774c3467357fe662bef6aa26bc804e11","0a474b72f865b115cbb295a7cffda055","8cfaba382d6eb5d7dba424291ad8c786"]},
+{"name":"DossyPMS段位認定 九段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["00a8964231886fdc13142eacfc1bff73","991293998872b68e952c4c00bde5c326","8410ed8903be440f683a69c5dd77bbff","1aefb4522ff0a4a93443713b05c5f041"]},
+{"name":"DossyPMS段位認定 十段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["059763ed30b3ff45edda3ddb8bdb6029","fa742e1e40c336fc7e9b8578734f1dfe","c4697cd6acd951b765032e6f6db8446c","c9955a03df1dc59eae6bd009fda1cd5b"]},
+{"name":"DossyPMS段位認定 皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["74ab5f47515ec300bf0f1f840f2c878c","d6ff44f05dae033c33c619563a14ddd0","5751b3fd7a062f5be3c5893d719ca85a","568326e794bfedddcae5dcc400e18de2"]},
+{"name":"DossyPMS段位認定 Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d902444565fb119bc592102be45ee9e5","d4dae41dd4efa328949ea64442afdd90","1f4959f537b9671e03d838b6a228f3bc","c62edd7456e9d93fdcd59db57dbcf043"]},
+{"name":"DossyPMS Undefined","constraint":["grade_mirror","gauge_lr2",""],"md5": ["132d6e7fffc7e1204b2f7c3f63163d29","4f70d54acb2047b6008e939de3c68b12","43dce7c6e4a227e8a30506b67afa6c88","7b9268a86ac68ae88fd58a0d186ccd3d","d6a27ade94b7f9ec4900adda85aabe78"]},
+{"name":"しろくま段位2020 九段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f7c2797325a8df4065ebe20990f787c4","95038b518dff498db697cfd30e56630d","35700059ac49c908520dcaba0a007563","5ae647978780241c11bd6e6832f7c4ed"]},
+{"name":"しろくま段位2020 十段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c828b738de5deb6e3f44e2a8b018f57e","22f28a41e1a7f4df1bd6b2c081124a75","2d76943b448159336fc211bc24dfd1ed","d8b9bf3bdbcbc2de39b79cc978bd456a"]},
+{"name":"しろくま段位2020 皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2d2519403ac9b146f44711b8e1d12cfe","2ba69a0e4a327c22c79a53a16f561994","a27d523b2e0d2ada8f953506bc0913b4","2e9741625abb21fabb7f6e70cfc7b019"]},
+{"name":"しろくま段位2020 Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["fb46f32433fff692942c799f9225f41e","ce57e3731cbf6fe8bce63a2f12a2a793","34f1c205685947355e351b0343c4f263","4ece76fa0079263a575128f8aae60d19"]},
+{"name":"しろくま段位2020 Undefined","constraint":["grade_mirror","gauge_lr2",""],"md5": ["3df26792fb39c46c39321d6fdc5bc99a","1ff2246627e43e491f636b01bdad2e53","0816600a32b263d191841a4f00eeefd0","4bbe15bc6580dd684f633116928bea80","4dc5a74b698d2dfe0c719b394ff35bb6"]},
+{"name":"しろくま段位 over3000","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f7c2797325a8df4065ebe20990f787c4","46d730eb25fdd09e1ef71cbbabf69224","3be94b6c118902cc8b0720fd7de1ce81","233d13110dcc463449d1dc8ce0f0e6c0"]},
+{"name":"しろくま段位 over3000 for you","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9a27ff17c12df80946b98d6e915d09c6","ce57e3731cbf6fe8bce63a2f12a2a793","b6dd081cc2f6ac0257d4d1d991a0ff69","0816600a32b263d191841a4f00eeefd0"]},
+{"name":"しろくま段位「Railway」 ","constraint":["grade_mirror","gauge_lr2",""],"md5": ["542cdc98ebe77b6ba24ddb5488efe47c","992dc2fa47116e540d37a8748de71194","2ba69a0e4a327c22c79a53a16f561994","4ece76fa0079263a575128f8aae60d19"]},
+{"name":"しろくま段位 BOFXV19 ホッキョク","constraint":["grade_mirror","gauge_lr2",""],"md5": ["44fe2394c08df6d19cd2beb83d05f47f","600db937566b4d27be62409b93eae603","1e915af79ebaa0f6ace129054cd11cfc","fb6fe7f894a2a871560791b972ae2696"]},
+{"name":"しろくま段位 BOFXV19 ナンキョク","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ee2349fa9b51caaaebeaa161afbe30a5","07a9739fc98e91fb9f1508a4f89f2484","22f28a41e1a7f4df1bd6b2c081124a75","0170540d6f83373fad60b2db0281bb3a"]},
+{"name":"しろくま段位G2R2018「ナンキョク」","constraint":["grade_mirror","gauge_lr2",""],"md5": ["50d898e39c64dd7be7b63955c9b1ff09","99ec703bac6fc7c705a2cbd26f7ca44c","b8491c9802fc85199ffa7aeb04419f67","a27d523b2e0d2ada8f953506bc0913b4","46665a92b0e49778a6cf411e0d7376c8"]},
+{"name":"しろくま段位 Northern Lights","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c3d647bbfe3ce23daa9a5cec810def65","6ec25d858656ded7c35b19c537ad3404","4c631fdc9b150ccf27056636b7799131","e1002f22146e4331ba854ec9266be2ba"]},
+{"name":"しろくま段位 Southern Lights","constraint":["grade_mirror","gauge_lr2",""],"md5": ["237ec05adb9832f34d02878fb2b57218","99ec703bac6fc7c705a2cbd26f7ca44c","a27d523b2e0d2ada8f953506bc0913b4","4b835d1c21259c652f3f3b66e21b8ab8"]},
+{"name":"【2015GW】HELL水霊コース","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d3c65b920c8c42fc82da7f8ffcbccbaa","dab4013eb38b0c5c7f8c16bec6ce0a4e","d004ed780eca045874aaaee0c4240372","8243fa97aaa1cc2c3f65616ebfcc0619"]},
+{"name":"【2015GW】HELL水霊コース・ウラ","constraint":["grade_mirror","gauge_lr2",""],"md5": ["1e17c5cc2f56151b83e539aa443227a9","e6803a8c913c47c8c5a4d0bed136f2fb","7938ef5817c43c1f6722de9f3ce9bcf9","0ec6a4e36cdd15a913f7b3188897aeac"]},
+{"name":"【2015春】HELL水霊コース","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0feab8d9acd912fbccee7b2693aaf9a3","a033cae681d0cf25183d787557ff74e8","8b626dc07ba3291739d34304cafe65c6","357c2b51c1424583a5e3b01d301fe9c0"]},
+{"name":"【2015春】HELL水霊コース・ウラ","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0b7e9a41ddfdd344597bcda367f2e131","f4033b427e9c56470db4fedfea514351","2708a5c54033142a91722e874d47cec6","a851744ba6695e32b092adde562d90de"]},
+{"name":"【2014】HELL水霊コース","constraint":["grade_mirror","gauge_lr2",""],"md5": ["3197e1e329336d6ebe7d6fbcf7caedd3","fa5d1074e9e969031a4e8ffc2ffdd034","d28d776353dcae2dac37118682ece793","e9ba194c92465100a1f9eb21033cad26"]},
+{"name":"【2014】HELL水霊コースReNew","constraint":["grade_mirror","gauge_lr2",""],"md5": ["2cc756cec39802c7e301c8f3d05f7b88","a71bfa3220acc0c571653298992e0aaf","286f52b87f11840a01fcfa7297bd22a0","a70971df64f8cd4733a2b08334945fb8"]},
+{"name":"PMS OXHELL2013 裏HYPER","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9a0fec6248b2e6e319237d2dfcd1d7da","eebd96cac57d36c100df3e3308e6247f","c3662b44e5dcc009dd6f68c44e35390c","22716a1b22b920764109f591aa53ab94"]},
+{"name":"OX PMS HELL 2013","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cb3ec73eb60e0ce3b338abb9e0facba4","f81b34bf00f646a5c9780fd058a38a22","3f2b2a9829307eb0c4d2b45d4daedfed","23a532fe7950d47db5288a7c761b0468"]},
+{"name":"PMS OXHELL2012 01 HYPER","constraint":["grade_mirror","gauge_lr2",""],"md5": ["6a018a808eaa1638c83849e6e52425e1","190397c7077a44545161e96c59da707a","c9a5c026ecc3f54b1901a79f693c534e","ba1bd9d7a8a3912a97b6be7c0ae48baa"]},
+{"name":"PMS OXHELL2012 01 EX","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d131529ed927c4c8f648f0e64e5f6e8a","e4b3268da777de79f95ef0165de149e6","67bf4db10a0f5a25518113ff0c0ef15b","c1c165c8d0766c51486e80f86e402338"]},
+{"name":"OXPMS かんたんコース","constraint":["grade_random","gauge_lr2",""],"md5": ["f021ae08516c6fa00e658f6d82284927","62fe12dd199338aed582498797311ce3","5f2fe039cc0d0d98fb8db0cf73a290b8","957a509faffc4e242b86b28c1507c870"]},
+{"name":"PMS段位認定  十段+（よーすく式）","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a44683b11973e3f16d3d670164cd03e2","38c19b3715dfddbcea22ef1fedfb2eea","d192dc91146b0f12bda5ca6476605b77","7385d5fabe167c2cbfcdc9fded95f496"]},
+{"name":"おP難 皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["52c8e0cd7efea89ad3506cbde6f61877","87c91abe427daa0ffbafe2cd8ffce570","4f8375b549e228fe9c98866fe0c35b49","cdd9e528ea79432055a59d797d6b689e"]},
+{"name":"みちるセレクション Vol.1","constraint":["grade_mirror","gauge_lr2",""],"md5": ["47aa2369eed0b060d742b1e4d719b009","ba8e3bdc69fe3a1e081978a9c9c54663","49f57828e2f0be74c7d124b3eea06b14","aa9e61e0256c7a4f0fd38343e049f574","4b4b942ac528b6cd880168d9263896d0"]},
+{"name":"kks is god","constraint":["grade_random","gauge_lr2",""],"md5": ["7e07a8f4b2aa1219b13123590771683c","8474aece03bfed13ed9a95f73d0cab84","88d253bbd971c202b760fa1fe80cd2a3","32835027ac0cfc46ec11bab4e95e5354","3ab51d68f9fd6bae9eccdf7bb24b4d0c"]},
+{"name":"symbolize","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c5a4497e29f39087b7c3ea98985af931","7ada0a81ff031bd706bfdba937763b19","82447ee2775890aabe42345bbc845c8d","f16c22ab29988e64ef233b22f1db6261"]},
+{"name":"PMS STEPUP LEVEL 1","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d72949de08daa1b6d69a5bf175116844","77d761c5079afb7d82ba9eb17845a4e0","c7c665c597b0900d6ead379856383108","11b8afed9af00fa08059345776067933"]},
+{"name":"PMS STEPUP LEVEL 2","constraint":["grade_mirror","gauge_lr2",""],"md5": ["aa834d215b59187e43e2de449a6be3fc","b1d46a6c2c4c986df018a1d16a98d4a1","a80f8ddde3ba66ed4efb0c4edc693611","e368baccd4f9dadbc836ecb088243acb"]},
+{"name":"PMS STEPUP LEVEL 3","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c2a96a1db092a6e27512ee6d8f44b695","e9f4bfffaeb07ee492a46386e1d33c33","2b8bc42574e9c962752d055e85035c4a","83ab1c260249456b6a8df912e446c8c2"]},
+{"name":"PMS STEPUP LEVEL 4","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a1a1ccfe0168762043e29b892bcfed4d","e5aa49c1d69a704c72f5a605c643f25c","178bcc86e35dc82abad4d4752575a555","95ec924d314cb222f9b0d73e79697838"]},
+
+{"name":"HELL S9F2012","constraint":["grade_random","gauge_lr2",""],"md5": ["eaa398748be87c6cef501022834ec8e9","9a99f8cc43304db491332dbfecfea7e7","9e3593a829729cd581b5180fcbe77bf3","8d33b573a3e98d94c61266b120308ba3"]},
+{"name":"HELL S9R2011","constraint":["grade_random","gauge_lr2",""],"md5": ["00b0f535105edb441875fe32d1525740","f369c918c70e08b9e9817ab14403f99d","38f8f4b2489e4101bf539ff15aace9af","9c742c873dce4df4a949930238d3cbde"]},
+{"name":"HELL S9R2011 Return","constraint":["grade_random","gauge_lr2",""],"md5": ["fd1f6d039e9339873ec9eb9fc0923ec6","dd7b4d074faed6037bf2c9b6f63b7af8","00b0f535105edb441875fe32d1525740","38f8f4b2489e4101bf539ff15aace9af"]},
+{"name":"PMS tarolabo mix (EX)","constraint":["grade_random","gauge_lr2",""],"md5": ["e91aec2cd1fee3b23e3d1264e6c7e77e","e125e61d968dd7d9e0727f81f8d6a509","3646cf48f5bb4d9b1d919bc88449f346","10201af0f2de1dd0bf2d6052f187fb77"]},
+{"name":"PMS tarolabo mix (H)","constraint":["grade_random","gauge_lr2",""],"md5": ["e59a8826e52b29aa6c0a74870ba44d3f","7fda44cc8a65a8bc004db8b04312ae04","f0812b943b8029243395e684c0eaf473","2961d9992ad87d13cdbd956d19009d39"]},
+{"name":"PMSオリコ『入門編』","constraint":["grade_random","gauge_lr2",""],"md5": ["e49f254e9c8c9ce8c6aea98573011cb4","8df9401eefcbfad1747fd5c052ca8f7f","55463f28f945396f35df87dbe79bf7d6","cead979aeb08186aa8f33f0ed20aa6ea"]},
+{"name":"pt's selection #01","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a5d1753ace6a0d5ec96a7edb81a42893","9a635f02ea46265361b1ffaf0c403097","5ab80f1ccfe579445bbf85a64f8fa866","e00466f62860155c2c14db93605f63b0"]},
+{"name":"pt's selection #02","constraint":["grade_mirror","gauge_lr2",""],"md5": ["8cadd11a798de18aeb049269d6fcd142","972877ca9b4efd290797937bff38ced2","5a8b8b13c64f4ab6ad646fa926400a63","6aa7abd5f4085534acd01570f6961c4e"]},
+{"name":"pt's selection #03","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c46af30e1829c0474e46e25951174405","372bc474cff35d77118c3ad1bc3a05b3","1155bca5f6e87b5ae8e0b2d9dad6d57b","b16a79a36a19495d655a7823bfd0eb5e"]},
+{"name":"pt's selection #04 (EX)","constraint":["grade_mirror","gauge_lr2",""],"md5": ["56baa2e0b57a0c479f684900cb7170c5","2670b8d81bb93d91cf8b000380603d4a","61a06825cf90541a5a1a0b01f8c825c6","332522f06de03e63557295b466c51bea"]},
+{"name":"pt's selection #04 (UPPER)","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dd4c442a7f8cc9ff9330ed0381e59d73","a53472e50fb1b92d90ad11efafa036fa","4c604604d8fb4f407fbf55c6a13bd090","d0a490105be6fb260c56f2702909c411"]},
+{"name":"pt's selection #05","constraint":["grade_mirror","gauge_lr2",""],"md5": ["c504d6bfeb75912a8af2cce449789d08","d9fb4283b10b745784f0bbe4b14adb05","4174462d416acfea0d920c0895c3772c","026d35e79e42019d81e2018aede86df6"]},
+{"name":"pt's selection #Valentine","constraint":["grade_random","gauge_lr2",""],"md5": ["2a8388b2f0b532e381198a2ffcb83bfd","b06bc9d23cafee031e1c8431ca0c8163","38c56680df4f171882ae54414f4b63ea","0a12f6314d829fa359ff0ee6bdf2d1db","cbb2d0b34ecbfb565aa970ccda95e7eb"]},
+{"name":"pt's selection #Whiteday","constraint":["grade_random","gauge_lr2",""],"md5": ["e0450499ad08bc8272cea4df4c084a17","0eb1f1d51e20f464738a38c51b324bec","e3648c44908621f3e9486ef93aa8760a","fff7e1774b46afd0e770a217e6ed4ab5","406d28946bedc48be99534b2ba2f9128"]},
+{"name":"S9R2011 AVERAGE BEST4 [HARD]","constraint":["grade_random","gauge_lr2",""],"md5": ["0f4225cbed4c2564af916587d79ca90c","28365d9ed6188d65017f60dd15bfd9f6","e2500a64a4a77da02ce797aa2cfd2d2c","c22b4ac6f5141859ad85527d066eb7ce"]},
+{"name":"S9R2011 AVERAGE BEST4 [NORMAL]","constraint":["grade_random","gauge_lr2",""],"md5": ["ba9bd1fcf12d5bf51558b69b7c625513","d24defbd0c1cdb4e48e22636e9c670ca","1aa8008869fef35f8df048269148badd","2af3f628437d87058454ee192adc4310"]},
+{"name":"S9R2011 POINT BEST4 [HARD]","constraint":["grade_random","gauge_lr2",""],"md5": ["f21766115feb2bd4fb1ba2cafcb4f035","5faa97376b2a97c50c5590bb87516eec","28365d9ed6188d65017f60dd15bfd9f6","c22b4ac6f5141859ad85527d066eb7ce"]},
+{"name":"S9R2011 POINT BEST4 [NORMAL]","constraint":["grade_random","gauge_lr2",""],"md5": ["8fcf3736f64f4ca16b902eefaa949255","06dab023071bb9c6fef17736a67d8746","d24defbd0c1cdb4e48e22636e9c670ca","2af3f628437d87058454ee192adc4310"]},
+{"name":"SCORE GENOCIDE","constraint":["grade_mirror","gauge_lr2",""],"md5": ["371fcbc10b6d7d6eea7a6b036471b12f","074098ae3a29dacfb4c77870ea32ff7a","dd02bd323ac9ddee8ff283e257b20f57","b85de9684cf0480ae473fa78b6674b62"]},
+{"name":"TMのネタ譜面達(鬼)","constraint":["grade_random","gauge_lr2",""],"md5": ["ce68ac353f8ac53bdd08716340889c30","a6d7b4ecd92e5cfafbc29dbd90a4a628","e8896adc9bc0e5ab406b6ef89b574c00","bb9072b6b0460a5feb96a6a5dad45875"]},
+{"name":"TMのネタ譜面達(難)","constraint":["grade_random","gauge_lr2",""],"md5": ["269df988aaf53bc35bf68068395efc81","f9e4b91c1f5843fee5f050c2970ff259","efab9b39155b07a106a74bc2de793307","aaa6a9021bffee4f930ae91f32774113"]},
+{"name":"TMのネタ譜面達(普)","constraint":["grade_random","gauge_lr2",""],"md5": ["59587f8097f7d64cc11e4824794bd213","e69d72e2f8754648ea0a2b30d7613c3d","3fb252712572fc7df1d0db0285b4b0c6","920c024a2a184dc3ae1680e845f4657f"]},
+{"name":"しろくま考案段位 八段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["630acbc67c1d6f16d2d8d148f7f62742","2643e6ba108e656942dc4e19e7112190","f1aa06b2a5fd823681797784e3aab9e5","04c4724654cf6fb7a1545de337494942"]},
+{"name":"しろくま考案段位 九段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0dc85e572a36348652a7e9b2135ee421","fb623dcf6a49d0d61859cdb985e9c826","8cc3d71b27df095b67f1120499def9bb","753e3e83f4fdb68fbab94874a74eaabf"]},
+{"name":"しろくま考案段位 十段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["b16a79a36a19495d655a7823bfd0eb5e","14a53eac825c7cf147a6f188772b9e65","26df2eeb3207c3df965ad7e06b6f91f9","034be5204546a86bd1beba3b85f79576"]},
+{"name":"ソフラン検定その１","constraint":["grade_mirror","gauge_lr2",""],"md5": ["64893a1781425f55898b12202d063e57","e799a895b757dcb57536609cee10f48c","854d51880633a26235fc5c696b993ee1","e9460b8b9e097a53d426099684ce7c82"]},
+{"name":"ロングポップ君 ふつうコース","constraint":["grade_random","gauge_lr2",""],"md5": ["30a02b96b244e212032b0b98de11edc6","84caa9899aa978bcb19c79bb745fa010","d94edc65271686f2268b15a1fb5456b1"]},
+{"name":"ロングポップ君 むずかしいコース","constraint":["grade_random","gauge_lr2",""],"md5": ["1cbb9e923d3aca9e9013c76532d04057","ca724abb9a8cb477cdd18eef160cd126","b92820bde69189126cc1d10fabb58d18"]},
+{"name":"東方九鍵盤","constraint":["grade_random","gauge_lr2",""],"md5": ["d13953386ac55e716584fabe44fbf8bd","090bab0a3b4d6c0302b635a7e35dc9c2","37a94684c28221c2c3a32aeeb46d7d8c","2dbef50857ff05b929fc0905a8c6087c"]},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"name":"（  ・へ・）かんたん","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0bc9db3b9775b4c004e127daf335ce35","273b4925b4e11eccf4dc2c84db0e77e2","ae24eaa230ebe7f61ad7bed27b84b864","e88da86489d058592482abd327bc1b14"]},
+{"name":"（  ・へ・）ふつう","constraint":["grade_mirror","gauge_lr2",""],"md5": ["5ae379249f2c37132a7382beaf5757bc","1fb04c1cdb098685bd43466604dc77aa","3c62e560cbbd35001ea5e4372e87bcc2","1155bca5f6e87b5ae8e0b2d9dad6d57b"]},
+{"name":"（  ・へ・）むずかしい","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f18a046034df0b3319831aa7c994109e","4a06a3f2cc39ed4dd22eff2005579b3a","e46f22f8fa8616fe864d98bbfe02ac0c","12651a778682cb20db9af15d28580e0c"]}
+],
+"grade":[
+{"name":"3級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dbe48c3617f79c98ca45ba65fd7ab0ea","0b18bfaf473f5213318e4ed80af5cad5","56c60f22136a44877e57598b2382c89b","daa9b82aec369c0fbf72343f14004d35"]},
+{"name":"2級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d81c13cda4757412c17216b69586d7fd","496199ab091d7d1f941ee1e4b7a97333","b734d90df2f1d39aea64d37010260d3e","06d222a2d0466222dbf3e65da5bac141"]},
+{"name":"1級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["82c7e1a8bb492f8bac99e69da17b1cc6","3bc652c43af9610ea8c65e416a8692a9","afd9acbc0b3f02d4b79689527ff7a77a","d2a6f16b16f6b65b3bfea9045641e484"]},
+{"name":"初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["51d8af6226aa41d344573c3cf56c137c","33327c083e714d1284be9a24c5b3789f","5db82530216546db015d6d06b5b43bce","9528ee9fd0da7b78723cdc3cbb13b339"]},
+{"name":"2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f6f79ce620e6e7cf2fb3e11f56bd345a","ab757516e90e4c493d071f0e9613d218","a95351b7c319ec1afaa12218141f4858","35aea1ed5356dfeb79188c0fd6d924e5"]},
+{"name":"3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["90277b3d53087b9aa9662b1fbc48f2f2","c3985223159b14a42cf7c5d4418e47b6","eb2636f739a1f371c142592df398ce6c","059c1d227d706becc72a14a160faa749"]},
+{"name":"4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["da2cbf97eb7375bac5ea7a842e538ff7","623c26c39c9440141e2e5c9fc55e986c","448cc5ea1d287501c6c788a23586202d","a52ef366294961beef077f2964c3aa9a"]},
+{"name":"5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a5a048358521014c6b8b2eeed8ff43e2","740aa8ca7e2c7fa75ecfaeb8b61b6d96","cf2dece20a8cdb8b5ce8253443ce9130","bbec6791bc0e2c2b23e04ed9c124cc38"]},
+{"name":"6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9011b2ca9312ad12164315be3fc8ed22","8d33b573a3e98d94c61266b120308ba3","9a2d3d99e351873f0f7b266025033683","b3d6b09ed281e06fcb95970ba951b792"]},
+{"name":"7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ba5b122cfb53e9499948f9e7623d65ea","b4d0b1b7c07c8919cf988c8ff39bd34e","8dfa2c225a6a97c95c80260b14718198","6974f459545b1d8d9e8c4ec40e1f5f44"]},
+{"name":"8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9c28c086d1c8b90843b2323e976fd393","2eedd7865485025d13a03fce077487a0","c0cf6796d39d204fce5fac95bbd7bd02","74d051ee6406e85829b7b456868420b7"]},
+{"name":"9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ec5cd2676ed663b42bd81950cc161b2f","0e3195bc9fae967217e60717d43d5fe5","2617ca06f9d4d07f6872d53602bdc70c","0dc85e572a36348652a7e9b2135ee421"]},
+{"name":"10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["67364496cd8b11c0a0acb22e55d74e59","8e616f818ea8bd427f9050827cc562e6","aa6119658cf0a8c23f8830f01c8740ed","3dff4432ba2af69c4028b312ecf300ca"]},
+{"name":"皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["42810609d4066a8d889b48d3fb1efed6","2e50a211bafb905873a34fe18ee9ae5d","2c4a9d5dd24be774b2f028cd425a7166","0ae06c02deab42a32a818dd868147f19"]},
+{"name":"Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e206ffb42caf8a84dc9f87470d4f5236","09900452c76ed52a1ffc8e75ffb4ac64","ac03fa20574b78bc9877939bf6567dc8","f28dea87dd4faf8c65ee4ae79fd32bce"]},
+{"name":"Undefined","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f3b195303e4a5e15a9e176d0a39f7c57","007807392f1f8cefb730cf29eda1ac6b","e024332406e5401d714f776beea4d84e","04d9140dbcf0475833f88b816f55356a","25802ac944e3c4d77553b267aad9d9dd"]}
+]}
