@@ -97,7 +97,7 @@
             ]
         }
     ], 
-    "data_url": "https://pmsdifficulty.xxxxxxxx.jp/tanpatsu/tanpatsu_score.json", 
+    "data_url": "https://pmsdatabase.github.io/tanpatsu/tanpatsu_score.json", 
     "level_order": [
         0, 
         1, 
