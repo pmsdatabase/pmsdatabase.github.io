@@ -3431,6 +3431,7 @@
 
 
 
+
 {"level":"1","title":"Annihilate the living","md5":"d1253dd56bb2087d0b0d474f0d562aae","sha256":"a10193f7ae05ce839292dc716f182fda0b1cc6ac5382c2056f37e22ffba87b7d","video1":"","video2":"XqthqwG0vCk","video3":"","url_diff":"","name_diff":"あーさん (BOF2013PMS)","url":"https://pmsdifficulty.xxxxxxxx.jp/BOFPMS.html","artist":"Rocky","notes":"1065","memo":"発狂PMS / BOF2013","total":"280 (0.263%/note)","comment":"低速の入りが引っ掛けになっていてわかりにくい。しかしラスト前に広めの階段+二連打で削りに来るのでハードでどうにかした方がよさげ。","no":"3948","state":"4"},
 {"level":"1","title":"Bang Bang Dan Gan","md5":"fa06f3b7be57b8cc65df178aba9d06ee","sha256":"6b62dcec393d0a964d2335c13b665a9616d34cabf6f8f267ab0171875a9aa552","video1":"","video2":"2cabtd59l7g","video3":"","url_diff":"https://drive.google.com/file/d/1h5YyZDywCVdwHrFO1z-mO7ZZ3sFEObgT/view","name_diff":"0samil0","url":"http://www.mediafire.com/download/8widllw1cl840nx/csp_bang_bang_dan_gan_ogg.zip","artist":"C.S.Port","notes":"1086","memo":"発狂PMS","total":"500 (0.46%/note)","comment":"片手処理の16分階段が多いので最低でもL9ができないとクリアは厳しいかもしれない。ゲージは軽めなので緩いところでこぼさないようにしたい。","no":"3949","state":"4"},
 {"level":"1","title":"colorbar","md5":"ba91c751432619e92289369b71add45a","sha256":"9bd1bf2523f28c39418c3a0413db56e2b5f84a14ec0f933d4ff16220a92d3316","video1":"","video2":"q0axKjIlCJI","video3":"","url_diff":"http://losak.web.fc2.com/index.htm","name_diff":"0samil0(BOF2012 Append package)","url":"https://drive.google.com/drive/folders/1R8T6s8es02eJczB9ykg0Zrr5DYt6oCKl","artist":"roop (BOF2012)","notes":"1113","memo":"発狂PMS","total":"315 (0.283%/note)","comment":"主に分割系の乱打。中盤に長い回復があるけど序盤は1でも結構上位の密度なので注意。ラス殺しもある。","no":"3950","state":"4"},
@@ -12444,11 +12445,11 @@
 {"level":"査定中","title":"アクセルぜんかい！200Km/h！ [XG 9.84]","md5":"23d72503f02ae1d453acc6f39a8f9744","sha256":"","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/popira20bms/1","artist":"株式会社タカラ / Covered by はろるど (Popira20 BMS Remix/Remake)","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50015","state":""},
 {"level":"査定中","title":"Merry Christmas Mr.leonid","md5":"144221d5963dc074bf49656629a71218","sha256":"","video1":"","video2":"NeeEpDxkRy4","video3":"","url_diff":"https://drive.google.com/file/d/1Tpf5Pqf8YLIY-N1OQflWWj2RlsMSn15Y/view","name_diff":"gopo12","url":"http://manbow.nothing.sh/event/explus/ex_revival/bms/mcml.rar","artist":"sasakure.UK","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50016","state":""},
 {"level":"査定中","title":"Henry Henry","md5":"0740126d7188f2723ee651a86f44d219","sha256":"","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://mega.nz/file/UwhnHCDJ#jhMorelMzkl7tKTlBKfcFsDLoaXYXZo8J65q2G6Sh70","artist":"Michira & Ogu (9line & original)","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50017","state":""},
-
-
-
-
-
+{"level":"査定中","title":"Bass Of Foon","md5":"c8f88cf61186f6446f2c217dcc93cc35","sha256":"238c17f71cc1a86b1f9f595bf991a9c37c4abf152635f98f31bcabb1a78f19d1","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=21&event=138","artist":"HAROLD","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50018","state":""},
+{"level":"査定中","title":"ケモショタえかきうた","md5":"40eda9fafd56b23c6c7d828ecb20f331","sha256":"8a42a221935d2648c24704a7806aaaff7234f69c916ff2394f82b28c31da2a31","video1":"","video2":"","video3":"","url_diff":"","name_diff":"理想の彼氏は11才 (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=6&event=138","artist":"ケモショタ推進委員会","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50019","state":""},
+{"level":"査定中","title":"Meccha Tsukaeru Male Voice Samples","md5":"f75882e3288f03f45189b7e3b985260c","sha256":"8ae9bb20b2690402a18444b927034865bb76dd2a700133c041cf44b381403b46","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=10&event=138","artist":"Meccha Tsukawareru Otoko","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50020","state":""},
+{"level":"査定中","title":"真千年女王 -Revolutionary.Himix-","md5":"988b8ea63aac339801430d6e4fe79ddb","sha256":"4d05224724e2278fd8cca42d47bb86e9c856e28cd40f1ae365b6d8eaac375448","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=55&event=138","artist":"しらいし remix by Mister.Himi","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50021","state":""},
+{"level":"査定中","title":"妖々跋扈","md5":"4055b8c948e5b77b7737b72413479bef","sha256":"17169e1ca338b9b5a0fd25f63a0abf2508afd6c47a953f0446e7522ff8b654b9","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://www.dropbox.com/s/i395dd3xrujbw05/%E5%A6%96%E3%80%85%E8%B7%8B%E6%89%88.zip?dl=1","artist":"ZUN","notes":"","memo":"","total":" (-%/note)","comment":"","no":"50022","state":""},
 
 
 
