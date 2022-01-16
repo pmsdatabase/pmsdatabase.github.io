@@ -7679,6 +7679,7 @@
 
 
 
+{"level":"44","title":"Goliath [PMSON差分]","md5":"bccc2a06da12526d41a8ff8f9a52be97","sha256":"b12424dc8a36ef56920513e2b576a7708b89effe2e1b58cec008f1a1382365af","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://pmsdifficulty.xxxxxxxx.jp/BOFPMS.html","artist":"exclusion","notes":"849","total":"430 (0.506%/note)","memo":"BOF2016","comment":"bmson対応本体 (beatoraja等) でプレイしてください  /  難易度更新:lv24→26","no":"11249.5","state":"3"},
 
 
 
@@ -12354,10 +12355,10 @@
 {"level":"44","title":"DRY ICE...","md5":"f0dab1177cd25ff0515e3d2afb4dff40","sha256":"c9ebc7d189e5560d3277ad8c750f1d585dc70b62df0ac1dec7aec2ef71fd5f67","video1":"","video2":"","video3":"","url_diff":"","name_diff":"■■■■■■■ (本体に同梱)","url":"https://event.yaruki0.net/bmd21/impression/20","artist":"■■■■■■ (Be Music in the Dark)","notes":"832","total":"301 (0.362%/note)","memo":"","comment":"NORMAL判定","no":"23237","state":"1"},
 
 
-{"level":"32","title":"seagull","md5":"3f97efb9086a36e77a53a88ce205bede","sha256":"00865037312719f49df707412a77167731c47d573bc97c51ab675bf537483d53","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > スピリット > p1.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"NEKOTEK (TM2)","notes":"489","total":"250 (0.511%/note)","memo":"","comment":"NORMAL判定","no":"23240","state":"1"},
-{"level":"37","title":"ろぼうのほうせき","md5":"338bbcd51a9415f98c69bd1ea837628e","sha256":"0e683fb915748b5291faed71bf50017198c30a843473fceb2c3fa695bec17853","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > カービィポップ > p2.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"じゅーるん (TM2)","notes":"610","total":"276 (0.452%/note)","memo":"","comment":"NORMAL判定　難易度更新: lv29(+6)→37","no":"23241","state":"1"},
-{"level":"37","title":"Refreshing skyBeat","md5":"da90fa8bd7725138adee97dc1f2d5aef","sha256":"05913077a452d7a0b003728295bd12999e9cede54793df7d615e778091cebc8d","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > フライトポップ > p3.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"sek (TM2)","notes":"780","total":"260 (0.333%/note)","memo":"","comment":"NORMAL判定","no":"23242","state":"1"},
-{"level":"?","title":"Cisco Ball","md5":"ff0dd1e33ce062fda25b16617697be00","sha256":"536d11ab56fb7d08e8e41e0a9e04b80f7311770a790f4eed93443813283e7257","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > リッジレーシング > p4.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"Yamajet (TM2)","notes":"500","total":"299 (0.598%/note)","memo":"","comment":"NORMAL判定, 地雷あり 難易度更新: 83 → lv?","no":"23243","state":"1"},
+{"level":"32","title":"seagull","md5":"3f97efb9086a36e77a53a88ce205bede","sha256":"00865037312719f49df707412a77167731c47d573bc97c51ab675bf537483d53","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > スピリット > p1.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"NEKOTEK (TM2)","notes":"489","total":"250 (0.511%/note)","memo":"TM2","comment":"NORMAL判定","no":"23240","state":"1"},
+{"level":"37","title":"ろぼうのほうせき","md5":"338bbcd51a9415f98c69bd1ea837628e","sha256":"0e683fb915748b5291faed71bf50017198c30a843473fceb2c3fa695bec17853","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > カービィポップ > p2.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"じゅーるん (TM2)","notes":"610","total":"276 (0.452%/note)","memo":"TM2","comment":"NORMAL判定　難易度更新: lv29(+6)→37","no":"23241","state":"1"},
+{"level":"37","title":"Refreshing skyBeat","md5":"da90fa8bd7725138adee97dc1f2d5aef","sha256":"05913077a452d7a0b003728295bd12999e9cede54793df7d615e778091cebc8d","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > フライトポップ > p3.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"sek (TM2)","notes":"780","total":"260 (0.333%/note)","memo":"TM2","comment":"NORMAL判定","no":"23242","state":"1"},
+{"level":"?","title":"Cisco Ball","md5":"ff0dd1e33ce062fda25b16617697be00","sha256":"536d11ab56fb7d08e8e41e0a9e04b80f7311770a790f4eed93443813283e7257","video1":"","video2":"","video3":"","url_diff":"","name_diff":"隠し譜面 (Toy Musical 2 > リッジレーシング > p4.ogg → .pms )","url":"http://tm2.toymusical.net/","artist":"Yamajet (TM2)","notes":"500","total":"299 (0.598%/note)","memo":"TM2","comment":"NORMAL判定, 地雷あり 難易度更新: 83 → lv?","no":"23243","state":"1"},
 
 
 
