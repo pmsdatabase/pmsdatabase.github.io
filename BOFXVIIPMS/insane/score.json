@@ -1,4 +1,4 @@
-﻿[
+﻿40
 
 
 
@@ -6,6 +6,7 @@
 
 
 
+[
 
 
 
@@ -127,175 +128,904 @@
 
 
 
-{"level":"45+","title":"Hard Earth","md5":"d7e58c0dd66c7f35c03856a33017208d","sha256":"43c5ab26b5c5bfe01a086341458aca2550d72ccf49581a226e7a9997d393ed29","video1":"","video2":"De0pSUQ0aJk","video3":"","state":"","url_diff":"","name_diff":"agu (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=467&event=137","artist":"Hyparpax","notes":"1079","total":"256 (0.237%/note)","comment":"","memo":""},
 
 
-{"level":"45+","title":"Peaceful Leafs","md5":"738cfed57aab6e6a00221a69e0dba76a","sha256":"b98402ff761483e0358e60e22fc0522d27d68c8b5a9e4caf9714cb1cf4c572dd","video1":"","video2":"0wjC3ltj3TA","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=37&event=137","artist":"Y.W","notes":"1069","total":"295 (0.276%/note)","comment":"","memo":""},
-{"level":"45+","title":"アフェクション・ラヴ","md5":"4abe551033daec07fde8e6ade84678bc","sha256":"b3171e5407c711e0b89621965e4029a0d4ecb927b2551c14c9d326b27c0ab12d","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=21&event=137","artist":"kei_iwata / 監督：KeiuO 美術監督：内村徹","notes":"1164","total":"327 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
 
-{"level":"45+","title":"霓虹灯下","md5":"7f0e7a45e2195a7b8e90e98af30b5af1","sha256":"9d8235c0536803613732323b8d026e6d157c6a4b6b6663638782e45260331da2","video1":"","video2":"DBdRsyRZTVA","video3":"","state":"1","url_diff":"","name_diff":"mk-3","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=104&event=137","artist":"T2o Feat 秦瑜","notes":"1094","total":"260 (0.238%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"1","title":"AI still miss U... [PMS Coral EX]","md5":"1d6545c39d04bc896069c91853cd1846","sha256":"a850f771b1dcccc655fb43abeba80f241d931db22ceee4c7a2aa7aad3beeea32","video1":"","video2":"x5GnEXnP_Nk","video3":"","state":"2","url_diff":"","name_diff":"サンゴ三号さん (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=376&event=137","artist":"tetsuji-ikeda feat.KAFU","notes":"1400","total":"394 (0.281%/note)","comment":"難易度更新:lv45→46","memo":""},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"level":"45+","title":"Intercosmic travel","md5":"e544ac342bbc6670295aa5afde3369cc","sha256":"7df671df4c8f39a559843f33de47edda02ceb5e96f400f7aa0d90f5e7e670ba7","video1":"","video2":"ZvhBdVgu0V4","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=341&event=137","artist":"Mr.Faine","notes":"1289","total":"300 (0.233%/note)","comment":"難易度更新:lv44→45","memo":""},
+
+
+
+
+{"level":"45+","title":"アフェクション・ラヴ","md5":"4abe551033daec07fde8e6ade84678bc","sha256":"b3171e5407c711e0b89621965e4029a0d4ecb927b2551c14c9d326b27c0ab12d","video1":"","video2":"PhW00vxPemc","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=21&event=137","artist":"kei_iwata / 監督：KeiuO 美術監督：内村徹","notes":"1164","total":"327 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"45+","title":"霓虹灯下","md5":"7f0e7a45e2195a7b8e90e98af30b5af1","sha256":"9d8235c0536803613732323b8d026e6d157c6a4b6b6663638782e45260331da2","video1":"","video2":"DBdRsyRZTVA","video3":"","state":"","url_diff":"","name_diff":"mk-3","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=104&event=137","artist":"T2o Feat 秦瑜","notes":"1094","total":"260 (0.238%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"2","title":"AI still miss U... [PMS Coral EX]","md5":"1d6545c39d04bc896069c91853cd1846","sha256":"a850f771b1dcccc655fb43abeba80f241d931db22ceee4c7a2aa7aad3beeea32","video1":"","video2":"x5GnEXnP_Nk","video3":"","state":"","url_diff":"","name_diff":"サンゴ三号さん (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=376&event=137","artist":"tetsuji-ikeda feat.KAFU","notes":"1400","total":"394 (0.281%/note)","comment":"難易度更新:lv45→46","memo":""},
 {"level":"1","title":"AI still miss U... [PMS EXTRA]","md5":"fce36233869145d83c145e93cccddfb1","sha256":"0da89ae598edc61e0eddb474c12c7b2cbda35869d1d9ff6ebeaac4cc19e4b4b3","video1":"","video2":"lJFqOjKbqUo","video3":"","state":"","url_diff":"","name_diff":"aquabit (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=376&event=137","artist":"tetsuji-ikeda feat.KAFU","notes":"1346","total":"350 (0.26%/note)","comment":"","memo":""},
-{"level":"2","title":"Aztec Altar","md5":"1aa0be88f9593e24334d2e37ed9a396c","sha256":"467f7640a1eb9100b26da8f27d9d05479eb1148af728c48d75875a087fea9757","video1":"","video2":"AT1euX69JPQ","video3":"","state":"1","url_diff":"https://drive.google.com/file/d/1gfMQ0VzCMpfULS_WX_auPIrfNgD_QW1K/view?usp=sharing","name_diff":"Argeld & Khibine (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=30&event=137","artist":"Gymholax BGI:paraneumann","notes":"1309","total":"320 (0.244%/note)","comment":"","memo":"12/27 追加譜面"},
-{"level":"2","title":"Berserk.","md5":"126c569a092436fce538ee7a9a33eaf7","sha256":"04795a57bf81949ff0e939554b5d5c5a6ad33af17bb1b0e48bc853556c1870b8","video1":"","video2":"GQVwJ9m1FTI","video3":"","state":"1","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=151&event=137","artist":"atmbzk (movie : Y.A.B.tutidama)","notes":"1301","total":"325 (0.25%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"1","title":"Daydream To Orb [PMS HYPER]","md5":"22c4021a0656b6f364b4d489516e15cb","sha256":"2e2475aff701d883569fbce15d836d4c1522bd125c255674974c1eccf77b19e3","video1":"","video2":"BbDyeIoTmqs","video3":"","state":"","url_diff":"","name_diff":"pt (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"1507","total":"300 (0.199%/note)","comment":"","memo":""},
+{"level":"2","title":"Aztec Altar","md5":"1aa0be88f9593e24334d2e37ed9a396c","sha256":"467f7640a1eb9100b26da8f27d9d05479eb1148af728c48d75875a087fea9757","video1":"","video2":"AT1euX69JPQ","video3":"","state":"","url_diff":"https://drive.google.com/file/d/1gfMQ0VzCMpfULS_WX_auPIrfNgD_QW1K/view?usp=sharing","name_diff":"Argeld & Khibine (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=30&event=137","artist":"Gymholax BGI:paraneumann","notes":"1309","total":"320 (0.244%/note)","comment":"","memo":"12/27 追加譜面"},
+{"level":"2","title":"Berserk.","md5":"126c569a092436fce538ee7a9a33eaf7","sha256":"04795a57bf81949ff0e939554b5d5c5a6ad33af17bb1b0e48bc853556c1870b8","video1":"","video2":"GQVwJ9m1FTI","video3":"","state":"","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=151&event=137","artist":"atmbzk (movie : Y.A.B.tutidama)","notes":"1301","total":"325 (0.25%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"2","title":"Daydream To Orb [PMS HYPER]","md5":"22c4021a0656b6f364b4d489516e15cb","sha256":"2e2475aff701d883569fbce15d836d4c1522bd125c255674974c1eccf77b19e3","video1":"","video2":"BbDyeIoTmqs","video3":"","state":"","url_diff":"","name_diff":"pt (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"1507","total":"300 (0.199%/note)","comment":"","memo":""},
 {"level":"2","title":"Deep Impact","md5":"8621333efd334150e92c23f725cfd115","sha256":"60b1fffd8dd04e96663902ff5fc1fc98f5645dec7602c48d98b0ddda9d167716","video1":"","video2":"-6W6tQoSX0I","video3":"","state":"","url_diff":"","name_diff":"100-200-400 (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=112&event=137","artist":"Sephid","notes":"848","total":"286.6 (0.338%/note)","comment":"","memo":""},
+
 {"level":"2","title":"Dream Journey","md5":"cd1f3a454abe2bada4c6702375025953","sha256":"5c54f974b162df997777803fe97ffe5706935a9f36a1fb383bbb6cd4293d6e3a","video1":"","video2":"jYAoyhOmFo4","video3":"","state":"","url_diff":"","name_diff":"Y.W (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=182&event=137","artist":"れおん","notes":"1485","total":"400 (0.269%/note)","comment":"","memo":""},
 {"level":"2","title":"Firmament Star","md5":"50815a1085ee2a01ba0bd20cf5fccf71","sha256":"2156a53474cf08724b899a9527fef62ab97cee729464f1baccf4774acedab935","video1":"","video2":"XP5gv-mkuC4","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=56&event=137","artist":"Raimukun movie:inukoro","notes":"960","total":"240 (0.25%/note)","comment":"難易度更新:lv40→46","memo":""},
+
 {"level":"1","title":"Illuminated By Moonlight [Y.W EX]","md5":"86925cf7eb8a0af88b8dee511cfb5872","sha256":"e0c8b8f2707323ec68815b34ae2f1fc39a252e06dd718e5d632199981ef53591","video1":"","video2":"NgmbZ00Z4gA","video3":"","state":"","url_diff":"","name_diff":"Y.W (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=337&event=137","artist":"Lollipop","notes":"1190","total":"300 (0.252%/note)","comment":"","memo":""},
 {"level":"2","title":"LOVE","md5":"768b48929933bc955531c7a56abb7e29","sha256":"0649c8f2e2fc91ff84895fa416ac5abe040102ede36f9b0d71e3cf7234004720","video1":"","video2":"s23raIcHbJE","video3":"","state":"","url_diff":"","name_diff":"NASA (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=331&event=137","artist":"Notorious(Nota & TRIAL) / BGA:iimo","notes":"1234","total":"273 (0.221%/note)","comment":"","memo":""},
+
+
 {"level":"◆","title":"Peace Orchestra No.2《Glory》","md5":"ecce4702ea58a5eeff274a49c55f4b20","sha256":"7fdb132c66d8ccfb9bf775c0cc3873ddb4dcbd25f2c2b9b2060373d6d032ae1b","video1":"","video2":"p-QYPPr0m_8","video3":"","state":"","url_diff":"https://drive.google.com/file/d/1bBceH9bv4yxUAoRfO7fN6WyAMFZikcUj/view","name_diff":"追加譜面","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=34&event=137","artist":"scamp remixed by motz","notes":"1146","total":"485 (0.423%/note)","comment":"難易度更新:lv45→46","memo":""},
-{"level":"2","title":"PHAZE UPPER","md5":"d4bfb87cfd455ffe29a9280440f40a1a","sha256":"093c24f6cb126928989bcad92e7bd62f4fd6d71a88bae597fceb5f796cc33cdc","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=174&event=137","artist":"Reku Mochizuki","notes":"1353","total":"305 (0.225%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"1","title":"Peaceful Leafs","md5":"738cfed57aab6e6a00221a69e0dba76a","sha256":"b98402ff761483e0358e60e22fc0522d27d68c8b5a9e4caf9714cb1cf4c572dd","video1":"","video2":"0wjC3ltj3TA","video3":"","state":"2","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=37&event=137","artist":"Y.W","notes":"1069","total":"295 (0.276%/note)","comment":"難易度更新:lv45→46","memo":""},
+{"level":"2","title":"PHAZE UPPER","md5":"d4bfb87cfd455ffe29a9280440f40a1a","sha256":"093c24f6cb126928989bcad92e7bd62f4fd6d71a88bae597fceb5f796cc33cdc","video1":"","video2":"9LUsBEHYuuQ","video3":"","state":"","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=174&event=137","artist":"Reku Mochizuki","notes":"1353","total":"305 (0.225%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"◆","title":"pseudonymph [PMSON差分]","md5":"263c00fb0c4b2157f60e55c83fd8b405","sha256":"607060779a268090d4b9ab3d284229763f36f3c726d7a7176cb0ddedcb12815a","video1":"","video2":"OyqGv2QgeH4","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=202&event=137","artist":"のの","notes":"1116","total":"480 (0.43%/note)","comment":"難易度更新:lv44→46","memo":""},
 {"level":"2","title":"Regain","md5":"af214d42512e4a201bcf90d652e5e2ed","sha256":"42713c6effffbd900d8de1b05b943b966504e14a0beffc83fc0b5894a7d3c2ac","video1":"","video2":"0L9ezHBu3is","video3":"","state":"","url_diff":"https://drive.google.com/file/d/1AdP8TZNwbaGZ_2MhflrSTpbxj9m2J-Ir/view?usp=sharing","name_diff":"hokonekoqs (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=242&event=137","artist":"ProjectG","notes":"1081","total":"252.42 (0.234%/note)","comment":"","memo":""},
 {"level":"1","title":"Riding on Shootingstar","md5":"43219d50f0a32319b59edd7b1aa223c2","sha256":"451a17091ec90c16ea0ed731088bb6469597597586a1e2d77cc6844cb5afbd46","video1":"","video2":"8vJwt6_JPts","video3":"","state":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=122&event=137","artist":"FeNRIR + tok","notes":"1198","total":"306 (0.255%/note)","comment":"","memo":""},
 {"level":"1","title":"Simurgh","md5":"0db08394c519060a693d26dce076e99c","sha256":"be5a56548af8e05b1f54d259ec2a20a8062919bafd4f358b18f0c0b8493ecb6a","video1":"","video2":"WJEhePCCSNc","video3":"","state":"","url_diff":"https://publish.soundpiercer.io/bms/2021/Simurgh_OFFICIAL_ADDON.zip","name_diff":"追加譜面","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=420&event=137","artist":"BilliumMoto & Sobrem","notes":"1492","total":"389 (0.261%/note)","comment":"難易度更新:lv45→46","memo":"12/26 追加譜面"},
-{"level":"2","title":"U ARE","md5":"2c88c91845226c7df1f94f151740a827","sha256":"5ef79bbf74d8913ba7556800917352212a29e321fbd30286e80d30cec89bb9e5","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=250&event=137","artist":"F Rabbeat / Movie:Yeahtuna","notes":"1337","total":"360 (0.269%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"2","title":"U ARE","md5":"2c88c91845226c7df1f94f151740a827","sha256":"5ef79bbf74d8913ba7556800917352212a29e321fbd30286e80d30cec89bb9e5","video1":"","video2":"duUhOacaP4w","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=250&event=137","artist":"F Rabbeat / Movie:Yeahtuna","notes":"1337","total":"360 (0.269%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"1","title":"Volt","md5":"4c43f01b0a994c904db60ed636e33246","sha256":"787b43bf76762678add94c16007be8bbaa046dd06a4e9b1a556d5cb947848755","video1":"","video2":"w3H_XBwb2LU","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=227&event=137","artist":"utah","notes":"916","total":"400 (0.437%/note)","comment":"難易度更新:lv44→46","memo":""},
-{"level":"2","title":"しゃんはいに行きませんか","md5":"208bbe4c6149b349d1189feb85af24e4","sha256":"0681131f8c97218a0ae6cb30e29d67c5e0bf2aa4cd07e8be22542f116077e460","video1":"","video2":"j2RLI0u8WOI","video3":"","state":"2","url_diff":"","name_diff":"mk-3","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=73&event=137","artist":"ですワ","notes":"1346","total":"378 (0.281%/note)","comment":"難易度更新:lv47→46","memo":"Vol.1 追加譜面"},
-{"level":"2","title":"希望の歌 [kuruyanobu EX]","md5":"7fded499b19b19f92287b6134a66493a","sha256":"f2f77fc530a2a5d82de256a13c09bb92b7a8351b2b4c13653f5df54d3164996d","video1":"","video2":"UeNm1C3KPWs","video3":"","state":"","url_diff":"","name_diff":"くるやのぶ (修正譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1365","total":"400 (0.293%/note)","comment":"","memo":""},
-{"level":"？","title":"混沌コズミック☆桃色銀河リレー！","md5":"b10206d8a90df50da34c8c9922bbbaa1","sha256":"69de5b3a643ce979f2983f709b3c960a91c50b17222e81664bf704bb747036fa","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=208&event=137","artist":"星空音楽団はるかぜ組","notes":"5000","total":"1050 (0.21%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"3","title":"∀","md5":"744c83cd83399c75997ed539480bbaaa","sha256":"a1b916d4c0a3aab8489b36a48a1e90ea6713fa31d39daa602a2dd33d91be6759","video1":"","video2":"","video3":"","state":"2","url_diff":"","name_diff":"Dwight","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=8&event=137","artist":"ああああ","notes":"973","total":"410 (0.421%/note)","comment":"難易度更新:lv46→47","memo":"Vol.1 追加譜面"},
-{"level":"4","title":"3↑↑↑3 TYPE:A","md5":"97f17e272eb3342e71902d607635d630","sha256":"e6eede94814907fc2ce88e506477efa312d848adaa88864fadcb3236bd5947ee","video1":"","video2":"Vm3AtFk5OJ0","video3":"","state":"2","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=185&event=137","artist":"13eastie / Undecimber","notes":"1127","total":"300 (0.266%/note)","comment":"難易度更新:lv48→47","memo":""},
+
+{"level":"2","title":"しゃんはいに行きませんか","md5":"208bbe4c6149b349d1189feb85af24e4","sha256":"0681131f8c97218a0ae6cb30e29d67c5e0bf2aa4cd07e8be22542f116077e460","video1":"","video2":"j2RLI0u8WOI","video3":"","state":"","url_diff":"","name_diff":"mk-3","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=73&event=137","artist":"ですワ","notes":"1346","total":"378 (0.281%/note)","comment":"難易度更新:lv47→46","memo":"Vol.1 追加譜面"},
+
+{"level":"？","title":"混沌コズミック☆桃色銀河リレー！","md5":"b10206d8a90df50da34c8c9922bbbaa1","sha256":"69de5b3a643ce979f2983f709b3c960a91c50b17222e81664bf704bb747036fa","video1":"","video2":"5JMQ47uO9tA","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=208&event=137","artist":"星空音楽団はるかぜ組","notes":"5000","total":"1050 (0.21%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"3","title":"∀","md5":"744c83cd83399c75997ed539480bbaaa","sha256":"a1b916d4c0a3aab8489b36a48a1e90ea6713fa31d39daa602a2dd33d91be6759","video1":"","video2":"1_m8dNQ5QEI","video3":"","state":"","url_diff":"","name_diff":"Dwight","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=8&event=137","artist":"ああああ","notes":"973","total":"410 (0.421%/note)","comment":"難易度更新:lv46→47","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"3↑↑↑3 TYPE:A","md5":"97f17e272eb3342e71902d607635d630","sha256":"e6eede94814907fc2ce88e506477efa312d848adaa88864fadcb3236bd5947ee","video1":"","video2":"Vm3AtFk5OJ0","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=185&event=137","artist":"13eastie / Undecimber","notes":"1127","total":"300 (0.266%/note)","comment":"難易度更新:lv48→47","memo":""},
 {"level":"4","title":"AI still miss U... [PMS More Hi-Speed]","md5":"edb406550063df94a3873a0b34d87fa5","sha256":"17f543fda8751e9251d106b5af902ab4a3643d11671a4a09ffc9c1b4e708b3ab","video1":"","video2":"mUcOFR7dk0s","video3":"","state":"","url_diff":"","name_diff":"hokonekoqs (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=376&event=137","artist":"tetsuji-ikeda feat.KAFU","notes":"1215","total":"284.06 (0.234%/note)","comment":"難易度更新:lv48→47","memo":""},
-{"level":"4","title":"Can U Feel It","md5":"b95ad76370c709446708e70e1a166fdf","sha256":"8b0fc2d1799589e40ebd3916817fe37bbf9a0a84328d678684ea167bd4899c45","video1":"","video2":"7cvyju-lAfs","video3":"","state":"1","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=138&event=137","artist":"siqlo / Movie:わっふゑ","notes":"1319","total":"335 (0.254%/note)","comment":"難易度更新:lv48→47","memo":"Vol.1 追加譜面"},
-{"level":"4","title":"cat1 cat2 and cat3","md5":"5b3aa693b9e1c92b86257ba9710702b4","sha256":"f3301752d4deb8f4f9b7c84d2bf1ff2c27f44000045820fdc19511f2eee02b72","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"cat4","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=464&event=137","artist":"ネコミミ・サンプリング","notes":"1222","total":"283.59 (0.232%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"4","title":"BRAIN HACKER","md5":"190c87be83b9e51440308e0fcb9184c8","sha256":"75c5c3496b786c393ff5c98740e79ab6cbfe61dfca68246adb8109097770ef1b","video1":"","video2":"IZ5Et3vnx2g","video3":"","state":"2","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=85&event=137","artist":"SOMON","notes":"1398","total":"345 (0.247%/note)","comment":"難易度更新:lv48→47","memo":"Vol.1 追加譜面"},
+{"level":"4","title":"Can U Feel It","md5":"b95ad76370c709446708e70e1a166fdf","sha256":"8b0fc2d1799589e40ebd3916817fe37bbf9a0a84328d678684ea167bd4899c45","video1":"","video2":"7cvyju-lAfs","video3":"","state":"","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=138&event=137","artist":"siqlo / Movie:わっふゑ","notes":"1319","total":"335 (0.254%/note)","comment":"難易度更新:lv48→47","memo":"Vol.1 追加譜面"},
+{"level":"4","title":"cat1 cat2 and cat3","md5":"5b3aa693b9e1c92b86257ba9710702b4","sha256":"f3301752d4deb8f4f9b7c84d2bf1ff2c27f44000045820fdc19511f2eee02b72","video1":"","video2":"JsEBDnluszM","video3":"","state":"","url_diff":"","name_diff":"cat4","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=464&event=137","artist":"ネコミミ・サンプリング","notes":"1222","total":"283.59 (0.232%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"5","title":"Daydream To Orb [NE EX]","md5":"c7f70c1250ec7901b8a3a350805d4f7f","sha256":"f3c4a48701346398dccbe44bfba3314fb41912fb97ea4ff312ee91be1bd53742","video1":"","video2":"m2c1zKYNq34","video3":"","state":"","url_diff":"","name_diff":"NE (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"1432","total":"335.6 (0.234%/note)","comment":"","memo":""},
-{"level":"4","title":"FLOW","md5":"34f77d08940b8db4bc5ccb57e01cd9a0","sha256":"23a29305b50bed72ae243662d439653ce86838907a699ae6922f357a6f5673cb","video1":"","video2":"lGVgBRRY4Is","video3":"","state":"1","url_diff":"","name_diff":"froji","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=222&event=137","artist":"432pro","notes":"1589","total":"372 (0.234%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"4","title":"Forever Happiely","md5":"06bd71d1ffe43ac84951adfe6e2a8aef","sha256":"d3d0cb901e3a287f999c10313c9f81908cb4439a06cb2f4d3f5dc7a0b9cccfec","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=43&event=137","artist":"ohon","notes":"1490","total":"370 (0.248%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"4","title":"FLOW","md5":"34f77d08940b8db4bc5ccb57e01cd9a0","sha256":"23a29305b50bed72ae243662d439653ce86838907a699ae6922f357a6f5673cb","video1":"","video2":"lGVgBRRY4Is","video3":"","state":"","url_diff":"","name_diff":"froji","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=222&event=137","artist":"432pro","notes":"1589","total":"372 (0.234%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"4","title":"Forever Happiely","md5":"06bd71d1ffe43ac84951adfe6e2a8aef","sha256":"d3d0cb901e3a287f999c10313c9f81908cb4439a06cb2f4d3f5dc7a0b9cccfec","video1":"","video2":"Lnd6mCv3zrw","video3":"","state":"","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=43&event=137","artist":"ohon","notes":"1490","total":"370 (0.248%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
 {"level":"4","title":"Names of a feather","md5":"a30c057046e7fa6c22686e82f43c9bbc","sha256":"e433aa1ad90a371da84db079853af8dbcbe725d86f2082d2be1ee22e9b28b8e6","video1":"","video2":"k0Wep_TbWQc","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=203&event=137","artist":"なな","notes":"1436","total":"524 (0.365%/note)","comment":"","memo":""},
+
 {"level":"5","title":"Pleisure","md5":"65044e5a6d81204ac10fd39c75df774f","sha256":"1a53cb6bf39df45054810749e701f54d95b957d00cdc8dce9084dd604e45eaa0","video1":"","video2":"IKyEzYUwzIs","video3":"","state":"","url_diff":"https://drive.google.com/file/d/1H7KAdm1t_k3dHU1PJ7DUfDz78vH_sgUK/view","name_diff":"hokonekoqs (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=472&event=137","artist":"Zris","notes":"1292","total":"302.81 (0.234%/note)","comment":"","memo":""},
-{"level":"4","title":"Random (Route #2)","md5":"2e3f7dad4a4a2dc391eef16e358324ab","sha256":"e71641d843aa0f1733b7c2da2430fd4ad08d9081387221763aa5eae74144f737","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=372&event=137","artist":"Sobrem × Silentroom / Movie: Harkiadel","notes":"1214","total":"360 (0.297%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"Random (Route #2)","md5":"2e3f7dad4a4a2dc391eef16e358324ab","sha256":"e71641d843aa0f1733b7c2da2430fd4ad08d9081387221763aa5eae74144f737","video1":"","video2":"J8VWRq4i-uM","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=372&event=137","artist":"Sobrem × Silentroom / Movie: Harkiadel","notes":"1214","total":"360 (0.297%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"4","title":"Ulster","md5":"1894cea269ad84bf48c74a21268993a6","sha256":"1f4e3dc7e40bd4995381d0de367a5a2b48c159937ed60e129ba4867018344587","video1":"","video2":"HERnqZY5ALM","video3":"","state":"","url_diff":"","name_diff":"Argeld (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=27&event=137","artist":"Gymholax / BGA:paraneumann","notes":"1663","total":"320 (0.192%/note)","comment":"","memo":""},
-{"level":"4","title":"アルスノヴァに喝采を","md5":"42e394508a7fd777affff12087c69d0c","sha256":"1518eb9e2c83281a9126b4a61817e78fcd26b64450bc3ed9eb884ec610944a44","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"1469","total":"413 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"5","title":"ぱぴぽ？","md5":"7c198209ea0461f860066331a1c45a58","sha256":"ea189330800476ef1a56f945b66528076d77304629bfbe173cc1bb021207b7b0","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=408&event=137","artist":"ねこみりん feat.まるもこ / Movie:むらしん / Illust:なか","notes":"1029","total":"289 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"4","title":"アルスノヴァに喝采を","md5":"42e394508a7fd777affff12087c69d0c","sha256":"1518eb9e2c83281a9126b4a61817e78fcd26b64450bc3ed9eb884ec610944a44","video1":"","video2":"joJOwS8Dt3w","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"1469","total":"413 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"5","title":"ぱぴぽ？","md5":"7c198209ea0461f860066331a1c45a58","sha256":"ea189330800476ef1a56f945b66528076d77304629bfbe173cc1bb021207b7b0","video1":"","video2":"m_7Flbp226A","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=408&event=137","artist":"ねこみりん feat.まるもこ / Movie:むらしん / Illust:なか","notes":"1029","total":"289 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"3","title":"希望の歌 [kuruyanobu EX]","md5":"7fded499b19b19f92287b6134a66493a","sha256":"f2f77fc530a2a5d82de256a13c09bb92b7a8351b2b4c13653f5df54d3164996d","video1":"","video2":"UeNm1C3KPWs","video3":"","state":"2","url_diff":"","name_diff":"くるやのぶ (修正譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1365","total":"400 (0.293%/note)","comment":"難易度更新:lv46→47","memo":""},
 {"level":"3","title":"希望の歌 [PMS EX]","md5":"b6efd90c43c31c0ae19e236bf4f6ecda","sha256":"0a03af7a4dd5f172e3f155697c046e7840f5bf089661fb60fb0a036bab36c12e","video1":"","video2":"y3gKXe1ddY0","video3":"","state":"","url_diff":"","name_diff":"gopo12 (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1417","total":"277 (0.195%/note)","comment":"難易度更新:lv46→47","memo":""},
-{"level":"5","title":"希望の歌 [大丈夫の譜面]","md5":"2194854ee1403b0c91a9c1dad534ee73","sha256":"35deb737c52c2e793c11c67eb7e352112cbe5f4869720747beff011fe24b9678","video1":"","video2":"ew7qGeWABHA","video3":"","state":"1","url_diff":"","name_diff":"0310 (追加譜面, 最新版の本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1536","total":"300 (0.195%/note)","comment":"","memo":"12/26 追加譜面"},
+{"level":"5","title":"希望の歌 [大丈夫の譜面]","md5":"2194854ee1403b0c91a9c1dad534ee73","sha256":"35deb737c52c2e793c11c67eb7e352112cbe5f4869720747beff011fe24b9678","video1":"","video2":"ew7qGeWABHA","video3":"","state":"","url_diff":"","name_diff":"0310 (追加譜面, 最新版の本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1536","total":"300 (0.195%/note)","comment":"","memo":"12/26 追加譜面"},
 {"level":"3","title":"玉響サーチライト","md5":"be5d996b297b93f6dba2d49b3a87ddc9","sha256":"5708791116e1a82bbeb9bfc4925de87dab8a080737c4a2168a33c3acd9ca7944","video1":"","video2":"ze4-O1rGPKg","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=19&event=137","artist":"otoshi.b × みゅい & tolz × はしたかさん & NASA","notes":"1400","total":"273 (0.195%/note)","comment":"難易度更新:lv48→47","memo":""},
-{"level":"5","title":"雪肌玉惚少女","md5":"aabb0ce9948436754dc1225e45194925","sha256":"c8c9ecf8da1181d1f24b1264e8c24827ad876dc6e7befd505d9496c56b36a533","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=161&event=137","artist":"G4zan","notes":"1211","total":"341 (0.282%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"5","title":"田中","md5":"b68bc9a3576eb5932e115bca983b5810","sha256":"ab4d7866a75efd157c7b68178e0f616564d7f95d6a8e16b90671fd957c327634","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=361&event=137","artist":"立秋 feat.ちょこ","notes":"1505","total":"423 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"5","title":"夜空の星に願いを込めて","md5":"e17f6ef9b771389ae2ea98a5db3e4fc7","sha256":"59fd266a06623ac161bfa9019e10add784a03ade88e4174b22b3d25598488460","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=49&event=137","artist":"鈎兎(KagiUsagi)","notes":"1270","total":"357 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"雪肌玉惚少女","md5":"aabb0ce9948436754dc1225e45194925","sha256":"c8c9ecf8da1181d1f24b1264e8c24827ad876dc6e7befd505d9496c56b36a533","video1":"","video2":"lKbbqlLblRY","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=161&event=137","artist":"G4zan","notes":"1211","total":"341 (0.282%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"5","title":"夜空の星に願いを込めて","md5":"e17f6ef9b771389ae2ea98a5db3e4fc7","sha256":"59fd266a06623ac161bfa9019e10add784a03ade88e4174b22b3d25598488460","video1":"","video2":"G2NmqJCmXx8","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=49&event=137","artist":"鈎兎(KagiUsagi)","notes":"1270","total":"357 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+
+
 {"level":"5","title":"AI still miss U... [PMS PT-EX]","md5":"83f8cea908a3f769377899fbbf842ae1","sha256":"a0825cca81b34889d2e3352c555f682e538f31b2d1a96ba2dc3b073f5769c7e7","video1":"","video2":"oVI_5YUg3Zo","video3":"","state":"","url_diff":"","name_diff":"pt (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=376&event=137","artist":"tetsuji-ikeda feat.KAFU","notes":"1486","total":"300 (0.202%/note)","comment":"","memo":""},
 {"level":"6","title":"AI still miss U... [XG 7.35]","md5":"8850b2b1d7c5a0c8c2ab9dd700896817","sha256":"bb52d31186f0a043f1c6d41e6dd5264084c56390eb61daaf2ebcf9b8fd365bd9","video1":"","video2":"3AXE1EYIgd8","video3":"","state":"","url_diff":"","name_diff":"HAROLD (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=376&event=137","artist":"tetsuji-ikeda feat.KAFU","notes":"1169","total":"255 (0.218%/note)","comment":"","memo":""},
-{"level":"4","title":"BRAIN HACKER","md5":"190c87be83b9e51440308e0fcb9184c8","sha256":"75c5c3496b786c393ff5c98740e79ab6cbfe61dfca68246adb8109097770ef1b","video1":"","video2":"IZ5Et3vnx2g","video3":"","state":"1","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=85&event=137","artist":"SOMON","notes":"1398","total":"345 (0.247%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"6","title":"Contact lens - 1000RI 眼","md5":"b6f1f585599bb9e83affb5416293d0e1","sha256":"d5a82601afbf8d47b56a3a8e0981e56b0099e70cc9e589a6043f92f739c977b1","video1":"","video2":"5XXrxzWrQqs","video3":"","state":"1","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=54&event=137","artist":"DJ Eye","notes":"1408","total":"320 (0.227%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"6","title":"Contact lens - 1000RI 眼","md5":"b6f1f585599bb9e83affb5416293d0e1","sha256":"d5a82601afbf8d47b56a3a8e0981e56b0099e70cc9e589a6043f92f739c977b1","video1":"","video2":"5XXrxzWrQqs","video3":"","state":"","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=54&event=137","artist":"DJ Eye","notes":"1408","total":"320 (0.227%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"5","title":"Daydream To Orb [Coral EX]","md5":"60e3ec6baa96d4555201cda0fae2318d","sha256":"41403eafe00efe73c21bd4409fb6d8c4caa1e89e003f0e12a317bf1524467912","video1":"","video2":"94z85nXjVyQ","video3":"","state":"","url_diff":"","name_diff":"サンゴ三号さん (追加譜面, 最新版本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"1339","total":"370 (0.276%/note)","comment":"","memo":""},
-{"level":"7","title":"DDD","md5":"84653e45d3b78a10a4d0c733b7bf7a2f","sha256":"c32fdaf581c5faca79f0fd85f0331181f8a61ea574a5f6b49e707aca4ffea35e","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=206&event=137","artist":"はがね","notes":"1336","total":"320 (0.24%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"7","title":"DIYc","md5":"947c5dd403bc9f7360a08188de2681c5","sha256":"b3b3a43fb4da8587773eda839e2582c1771a3ab0a212b80fe85a7c059dc5e990","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=191&event=137","artist":"K4Y5","notes":"1500","total":"380 (0.253%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"5","title":"endemize","md5":"676a3b6a5c18b57a7cb24d6242e25517","sha256":"fa818db9e653246bae94e45e6bc2b033026d89da8efd7d9e1119c42ad44902d6","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=38&event=137","artist":"あとぅす feat.つゆり花鈴 / BGI:りーふぱいザウルス","notes":"1617","total":"323 (0.2%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"7","title":"DDD","md5":"84653e45d3b78a10a4d0c733b7bf7a2f","sha256":"c32fdaf581c5faca79f0fd85f0331181f8a61ea574a5f6b49e707aca4ffea35e","video1":"","video2":"imRgkxU2pEY","video3":"","state":"","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=206&event=137","artist":"はがね","notes":"1336","total":"320 (0.24%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"7","title":"DIYc","md5":"947c5dd403bc9f7360a08188de2681c5","sha256":"b3b3a43fb4da8587773eda839e2582c1771a3ab0a212b80fe85a7c059dc5e990","video1":"","video2":"RvS_6Q7WL3g","video3":"","state":"","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=191&event=137","artist":"K4Y5","notes":"1500","total":"380 (0.253%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"5","title":"endemize","md5":"676a3b6a5c18b57a7cb24d6242e25517","sha256":"fa818db9e653246bae94e45e6bc2b033026d89da8efd7d9e1119c42ad44902d6","video1":"","video2":"AcPSBzMYoSQ","video3":"","state":"","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=38&event=137","artist":"あとぅす feat.つゆり花鈴 / BGI:りーふぱいザウルス","notes":"1617","total":"323 (0.2%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"6","title":"FREEZE","md5":"79fee53be9910920a9daf5e53c57ecce","sha256":"6f59dddb673d2f0377e4ec87e19eaea7b710be9e5a9e8f1b1f038a2d1fa3bb5e","video1":"","video2":"6hIGJOHts6I","video3":"","state":"","url_diff":"","name_diff":"9RAN (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=441&event=137","artist":"lixound feat. 薛南 / mov:Xquid","notes":"1400","total":"250 (0.179%/note)","comment":"","memo":""},
 {"level":"6","title":"Gnome","md5":"0cb7fcf0429109b56c74533c99d43b62","sha256":"71054a172ef4716fbd1b6af68488ab4ead278ec475ac8c7823948ea00930fb31","video1":"","video2":"aqBs-JC4tQo","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=228&event=137","artist":"utah","notes":"903","total":"300 (0.332%/note)","comment":"難易度更新:lv44→48","memo":""},
 {"level":"5","title":"Heart of Justice","md5":"5af27d3c6ada5f2d9f1f580639345015","sha256":"efedf4f01137df02fb3a2391b478df139bc9c60a8f5ecec31499ad4368b86ec1","video1":"","video2":"AqJ3p4fdiEI","video3":"","state":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=82&event=137","artist":"鈎兎(KagiUsagi)","notes":"1104","total":"305 (0.276%/note)","comment":"","memo":""},
-{"level":"6","title":"Heathenism dogma [LR2IR登録不可]","md5":"f3f223c7326aced53d63207b88211c3f","sha256":"751349872ec44b4ddd15bfc291030c240b5e6bb48415015f6359cf4c4860a0c7","video1":"","video2":"","video3":"","state":"","url_diff":"","name_diff":"まてぃ (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=137","artist":"Sakamiya feat.nayuta / mov:tolz img:ttv","notes":"1433","total":"335.9 (0.234%/note)","comment":"","memo":""},
+{"level":"6","title":"Heathenism dogma [2/18 修正譜面]","md5":"d32e5481a8c6cd7500bc3cc637e1a914","sha256":"","video1":"","video2":"","video3":"","state":"6","url_diff":"https://drive.google.com/file/d/13vjwhoX4dD6YAJf7QjFQdIkK82Qft-xN/view","name_diff":"まてぃ (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=137","artist":"Sakamiya feat.nayuta / mov:Nao_AnD img:ttv","notes":"1433","total":"335.9 (0.234%/note)","comment":"","memo":""},
 {"level":"◆","title":"Illuminated By Moonlight [PMS LN-EX]","md5":"c9b6f6d02c82428d02e9306ca8736aa4","sha256":"d00a89c04ef26d82865a5c9fa841e9920d7d42fccd4aec0d7097cfe2a584cb7b","video1":"","video2":"oaj4Ap7X_y8","video3":"","state":"","url_diff":"https://mega.nz/file/TCwE0Z7Y#k0gmiUc_ia46q-yiFqCp9HjVdf2IYduZwi39o99uyAg","name_diff":"hokonekoqs (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=337&event=137","artist":"Lollipop","notes":"1147","total":"280 (0.244%/note)","comment":"","memo":""},
 
-{"level":"5","title":"Let's get wild!","md5":"957adc677d2818f73e985d6128bec302","sha256":"9e9926a8d255c29f9050889ba7791781207f47fde89fe8f0cc63342d0c1f51c1","video1":"","video2":"RRZaHZhSNW4","video3":"","state":"1","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=60&event=137","artist":"SOMON","notes":"1506","total":"490 (0.325%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"7","title":"Pixel Princess","md5":"76bbc72ec5b886853cd535f460ff48e5","sha256":"b578814c560e5cfece9ae4b6ecdc9fab1d35c4201e15c08664c74e839570bec6","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=418&event=137","artist":"Lime","notes":"1464","total":"412 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"7","title":"Random (Route #5)","md5":"7bd8d3ae35c9f09204dde9646cf8d741","sha256":"b1825a62e92a9a85f2c74b2c85cbca8865f3be78d8fca7709498a01dc635e5f1","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=372&event=137","artist":"Sobrem × Silentroom / Movie: Harkiadel","notes":"1454","total":"375 (0.258%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"6","title":"secret:mirage","md5":"a974d5ab9250b6b2bb37ec8b92569495","sha256":"ce19436bcec0425b5fa5ae4136f1f6d8aad6d8591aad7ce2d44c44dea7a237b0","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=84&event=137","artist":"かゆき / Movie:Nao_AnD","notes":"1317","total":"370 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"Let's get wild!","md5":"957adc677d2818f73e985d6128bec302","sha256":"9e9926a8d255c29f9050889ba7791781207f47fde89fe8f0cc63342d0c1f51c1","video1":"","video2":"RRZaHZhSNW4","video3":"","state":"","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=60&event=137","artist":"SOMON","notes":"1506","total":"490 (0.325%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"7","title":"Pixel Princess","md5":"76bbc72ec5b886853cd535f460ff48e5","sha256":"b578814c560e5cfece9ae4b6ecdc9fab1d35c4201e15c08664c74e839570bec6","video1":"","video2":"UeM1bdQjAdM","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=418&event=137","artist":"Lime","notes":"1464","total":"412 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"7","title":"Random (Route #5)","md5":"7bd8d3ae35c9f09204dde9646cf8d741","sha256":"b1825a62e92a9a85f2c74b2c85cbca8865f3be78d8fca7709498a01dc635e5f1","video1":"","video2":"SvUKvBp9wk8","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=372&event=137","artist":"Sobrem × Silentroom / Movie: Harkiadel","notes":"1454","total":"375 (0.258%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"6","title":"secret:mirage","md5":"a974d5ab9250b6b2bb37ec8b92569495","sha256":"ce19436bcec0425b5fa5ae4136f1f6d8aad6d8591aad7ce2d44c44dea7a237b0","video1":"","video2":"zg0sTX8DPY4","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=84&event=137","artist":"かゆき / Movie:Nao_AnD","notes":"1317","total":"370 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"7","title":"Sense","md5":"33b1e22bf0b8924f8e51e9d75de4fcf5","sha256":"76a978d3321b97b62e3a2ae82de684bdb45e6f9782133409fcc245526fc79532","video1":"","video2":"kHbNOxMNWls","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=375&event=137","artist":"BilliumMoto × Silentroom / Movie: mahinii","notes":"1088","total":"375 (0.345%/note)","comment":"","memo":""},
-{"level":"5","title":"Wit's biz","md5":"e854b2b5acde8a29573de155dba2028e","sha256":"9bcf0db0faedba4c4d5193d59b15c11f1c0aa7efed5bbcf0d8d86d63ec4b14c9","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=384&event=137","artist":"Sobrem / mov.Espitz","notes":"1430","total":"402 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"6","title":"Your Smile","md5":"d8c00ee04ae49a534993062d70c34534","sha256":"d7587c07489324b9a750cd5512408d7968289fbdb37e2644e8d26f9c7f7990ab","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=277&event=137","artist":"litmus*","notes":"1686","total":"269 (0.16%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"7","title":"アジサイ","md5":"9fb3291f9f0839e20a89fc1d5b8f0329","sha256":"9577de5aa0a385e23920ff9d0392cc1616f20b8c41e9b237959adc5f599688a6","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"cat4","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=167&event=137","artist":"litmus* feat. 薛南","notes":"1717","total":"402.42 (0.234%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"7","title":"キユビック","md5":"0663997ae58d47dcee736f2fa08f2d88","sha256":"e210ebf2741ca9b14e5756e9a070a6f775a503f7b5a6313176b9af1b2f423c62","video1":"","video2":"foaB7VRmkfY","video3":"","state":"1","url_diff":"","name_diff":"gopo12","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=143&event=137","artist":"LisicA /  movie : ルゼ(LuzeriA) / illust : Orphee","notes":"1517","total":"300 (0.198%/note)","comment":"難易度更新:lv47→48","memo":"Vol.1 追加譜面"},
-{"level":"6","title":"ネコノテ・カリタガール","md5":"65910ab262f592cdfb6338d43a60a274","sha256":"63888f85fed97d5fa6fc2a7e62ae91de13628297e35919a79bfa81144d84ffc6","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=431&event=137","artist":"Ino(chronoize)","notes":"1309","total":"260 (0.199%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"5","title":"ハッピーフェイクショー","md5":"6a97f18f0d79ff102a64f4a4f5060817","sha256":"968b8bf754e0b0cda064ef5d7105723bea77229a561dcb8dbbd4c181698ec2cc","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=189&event=137","artist":"Ponchi♪ feat.はぁち","notes":"1514","total":"426 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"5","title":"迦鸞禍羅 ～からから～","md5":"3992afafd14c20f0cd3e1a247bd8d51b","sha256":"6ccfb29a69f38da25a131f4116cac606af0d2e83336f2300e8f264a303abeab0","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"弩津使威","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=53&event=137","artist":"うまるつふり","notes":"1338","total":"376 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"Wit's biz [Vol.2 譜面修正あり]","md5":"3c5b0051aff4adff7ccefb82ab8888dc","sha256":"","video1":"","video2":"","video3":"","state":"6","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=384&event=137","artist":"Sobrem / mov.Espitz","notes":"1430","total":"402 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"6","title":"Your Smile","md5":"d8c00ee04ae49a534993062d70c34534","sha256":"d7587c07489324b9a750cd5512408d7968289fbdb37e2644e8d26f9c7f7990ab","video1":"","video2":"GI2aZUX55oU","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=277&event=137","artist":"litmus*","notes":"1686","total":"269 (0.16%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"7","title":"アジサイ","md5":"9fb3291f9f0839e20a89fc1d5b8f0329","sha256":"9577de5aa0a385e23920ff9d0392cc1616f20b8c41e9b237959adc5f599688a6","video1":"","video2":"XzQ0YKpq8gU","video3":"","state":"","url_diff":"","name_diff":"cat4","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=167&event=137","artist":"litmus* feat. 薛南","notes":"1717","total":"402.42 (0.234%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"6","title":"ネコノテ・カリタガール","md5":"65910ab262f592cdfb6338d43a60a274","sha256":"63888f85fed97d5fa6fc2a7e62ae91de13628297e35919a79bfa81144d84ffc6","video1":"","video2":"KxPAk6ZZQ0A","video3":"","state":"","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=431&event=137","artist":"Ino(chronoize)","notes":"1309","total":"260 (0.199%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"6","title":"ハッピーフェイクショー","md5":"6a97f18f0d79ff102a64f4a4f5060817","sha256":"968b8bf754e0b0cda064ef5d7105723bea77229a561dcb8dbbd4c181698ec2cc","video1":"","video2":"Z0FFLvYFWYc","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=189&event=137","artist":"Ponchi♪ feat.はぁち","notes":"1514","total":"426 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"迦鸞禍羅 ～からから～","md5":"3992afafd14c20f0cd3e1a247bd8d51b","sha256":"6ccfb29a69f38da25a131f4116cac606af0d2e83336f2300e8f264a303abeab0","video1":"","video2":"","video3":"","state":"","url_diff":"","name_diff":"弩津使威","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=53&event=137","artist":"うまるつふり","notes":"1338","total":"376 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"6","title":"希望の歌 [Coral EX]","md5":"27869ecccc96daa8f15ae4c733d7d349","sha256":"690bfbecbe9f834a560ccc0529673dfd5a285a54d909d350c554e9902e688a2b","video1":"","video2":"mXQKjYzA9Pg","video3":"","state":"","url_diff":"","name_diff":"サンゴ三号さん (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1652","total":"290 (0.176%/note)","comment":"","memo":""},
 {"level":"6","title":"希望の歌 [Euphorism]","md5":"b2a019a4ca3ff0567bc6f02140df0c59","sha256":"089a34d27fc6dc24c0d9dae975b35cfde26ee2e96a47289b745a1aa81f3bdbaf","video1":"","video2":"GNelEWDxlJQ","video3":"","state":"","url_diff":"","name_diff":"NASA (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1400","total":"273 (0.195%/note)","comment":"","memo":""},
 {"level":"7","title":"希望の歌 [絶望の数字]","md5":"33e01854c68b2cd3fbc9c93fb6e401a6","sha256":"99280419866a0aa25d37cd103e1cfe7cd208b0064433f7cb1dff1ebce0cb6c9a","video1":"","video2":"crk2lUB5PH0","video3":"","state":"","url_diff":"","name_diff":"pt (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1537","total":"180.12 (0.117%/note)","comment":"","memo":""},
-{"level":"7","title":"親フラ","md5":"98364eb3833558e3d01685952bb1afbc","sha256":"33c56dd34a7998e0111ad23ecdf0d5de85b9e512be777ababf0b3b87bcc6d4d5","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=145&event=137","artist":"ルゼ feat.えみゅう。 / mov:あおお/A-ZERO","notes":"1346","total":"379 (0.282%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"7","title":"俗物フェスティバル","md5":"a642bead0f2710e5ae5b86a87bfc3f91","sha256":"9b84ebce107207ff33052cf07f90123b0b76f0fe087f0131d84b320e1f954070","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=137","artist":"Micelle feat.Yshida","notes":"1536","total":"432 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"6","title":"葡萄茶の寫眞機","md5":"18f27af79f891437b7daf893582b62ac","sha256":"6c9aec3eab6e8b52f399a2f6351c9d5062ca672b6b9d9f866f7deffd15759a9f","video1":"","video2":"qaggUn3ZzRA","video3":"","state":"","url_diff":"","name_diff":"黄泉路テヂーモ (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=423&event=137","artist":"魔界都市ニイガタ （dawn-system/黄泉路テヂーモ/かゆき/自動車 原付）","notes":"1811","total":"353 (0.195%/note)","comment":"","memo":""},
+{"level":"7","title":"親フラ","md5":"98364eb3833558e3d01685952bb1afbc","sha256":"33c56dd34a7998e0111ad23ecdf0d5de85b9e512be777ababf0b3b87bcc6d4d5","video1":"","video2":"HPC0qiYtAtE","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=145&event=137","artist":"ルゼ feat.えみゅう。 / mov:あおお/A-ZERO","notes":"1346","total":"379 (0.282%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"6","title":"俗物フェスティバル","md5":"a642bead0f2710e5ae5b86a87bfc3f91","sha256":"9b84ebce107207ff33052cf07f90123b0b76f0fe087f0131d84b320e1f954070","video1":"","video2":"LkgpbOPKV5k","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=137","artist":"Micelle feat.Yshida","notes":"1536","total":"432 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"田中","md5":"b68bc9a3576eb5932e115bca983b5810","sha256":"ab4d7866a75efd157c7b68178e0f616564d7f95d6a8e16b90671fd957c327634","video1":"","video2":"E1wVWQI9cKY","video3":"","state":"2","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=361&event=137","artist":"立秋 feat.ちょこ","notes":"1505","total":"423 (0.281%/note)","comment":"難易度更新:lv47→48","memo":"Vol.1 追加譜面"},
+{"level":"7","title":"葡萄茶の寫眞機","md5":"18f27af79f891437b7daf893582b62ac","sha256":"6c9aec3eab6e8b52f399a2f6351c9d5062ca672b6b9d9f866f7deffd15759a9f","video1":"","video2":"qaggUn3ZzRA","video3":"","state":"","url_diff":"","name_diff":"黄泉路テヂーモ (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=423&event=137","artist":"魔界都市ニイガタ （dawn-system/黄泉路テヂーモ/かゆき/自動車 原付）","notes":"1811","total":"353 (0.195%/note)","comment":"","memo":""},
 {"level":"7","title":"未来のコピヌ","md5":"8bb11552706fc8171613132370135db6","sha256":"15e542df71d6bf851269362a24e4a91a6d8c745788c57fb289d50699748e54c0","video1":"","video2":"GPiKeFXJwqA","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=48&event=137","artist":"yoayua (yoa + yuayua) Movie:自動車 原付 & うまるつふり","notes":"1536","total":"307 (0.2%/note)","comment":"","memo":""},
-{"level":"9","title":"!nterroban(?,","md5":"2651f9fe2e66ea999c860c0bc89b9a61","sha256":"8ce66f1de0bb22e6ef09a39f62ae0c4850b2347cac0f1e87034828d62ac4e5ac","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=407&event=137","artist":"Aoi / mov:出前","notes":"1536","total":"432 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"9","title":"\"Fulcrum-D\"","md5":"94af464f9a06ee24e2fab82f8e6c3e21","sha256":"4ea83180875a17ca423e9e2ea28e69079b7482e8801413cafab38564fc09274e","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=332&event=137","artist":"Lemi.","notes":"1536","total":"345 (0.225%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"7","title":"A Gleam for the Sightless","md5":"95956064ac834cc998528dd8fa2e1ded","sha256":"6f8307cecf673820fe626863c820776cfb5690ffb8811cc399d47a2cd14a3f50","video1":"","video2":"qzZm3l8jzbc","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=369&event=137","artist":"Lidelle × BilliumMoto / Movie: 八重幸 / Illustrations: ShaLink","notes":"1345","total":"410 (0.305%/note)","comment":"","memo":""},
+{"level":"9","title":"!nterroban(?,","md5":"2651f9fe2e66ea999c860c0bc89b9a61","sha256":"8ce66f1de0bb22e6ef09a39f62ae0c4850b2347cac0f1e87034828d62ac4e5ac","video1":"","video2":"MKAU054gvQ4","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=407&event=137","artist":"Aoi / mov:出前","notes":"1536","total":"432 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"9","title":"\"Fulcrum-D\"","md5":"94af464f9a06ee24e2fab82f8e6c3e21","sha256":"4ea83180875a17ca423e9e2ea28e69079b7482e8801413cafab38564fc09274e","video1":"","video2":"GUuBLxyvy4w","video3":"","state":"","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=332&event=137","artist":"Lemi.","notes":"1536","total":"345 (0.225%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"8","title":"A Gleam for the Sightless","md5":"95956064ac834cc998528dd8fa2e1ded","sha256":"6f8307cecf673820fe626863c820776cfb5690ffb8811cc399d47a2cd14a3f50","video1":"","video2":"qzZm3l8jzbc","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=369&event=137","artist":"Lidelle × BilliumMoto / Movie: 八重幸 / Illustrations: ShaLink","notes":"1345","total":"410 (0.305%/note)","comment":"","memo":""},
 {"level":"8","title":"Battle TechniX","md5":"6f5b0d5c34e421e1310525eaea42d016","sha256":"6460832b08f3b0990c3abb925e56359f01103f553da529d1a05c1ea19adabd4c","video1":"","video2":"BcyotMT-lv4","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=395&event=137","artist":"38k","notes":"1624","total":"158 (0.097%/note)","comment":"","memo":""},
-{"level":"9","title":"Berserk. -hyoscyamus-","md5":"c9a7b39919378c94380584df82c7f188","sha256":"0058b0d075d4f2407756998d96ce3010a906ef5e6dba92161b140b37ad855580","video1":"","video2":"jLSm0Vy8Z38","video3":"","state":"1","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=151&event=137","artist":"luzebzk(from 300club) (movie : Y.A.B.tutidama)","notes":"1345","total":"345 (0.257%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"8","title":"Berserk. -hyoscyamus-","md5":"c9a7b39919378c94380584df82c7f188","sha256":"0058b0d075d4f2407756998d96ce3010a906ef5e6dba92161b140b37ad855580","video1":"","video2":"jLSm0Vy8Z38","video3":"","state":"","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=151&event=137","artist":"luzebzk(from 300club) (movie : Y.A.B.tutidama)","notes":"1345","total":"345 (0.257%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"9","title":"Daydream To Orb [PMS EX]","md5":"b392eac04fc7f4e4789fb12cf6554135","sha256":"84fa272b6482dc3bfbef34b68ea82531c14a2e1f32547e0b78add850d4867d08","video1":"","video2":"O5X-WuarUpI","video3":"","state":"","url_diff":"","name_diff":"pt (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"1832","total":"320 (0.175%/note)","comment":"","memo":""},
-{"level":"9","title":"Eldritch Queen","md5":"b5b36a7fae0c06335bac8dab2e96285d","sha256":"e2111f7f548ddcb83cd24c3e6facf17834a6610d45fe78f8fb6bd2e079d24c9d","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"cat4","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=154&event=137","artist":"BTB","notes":"1536","total":"360 (0.234%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"9","title":"energy revival","md5":"96f7321e5d3f3142a2f5b901b94c46e6","sha256":"1e6694aaca6bae144c703f3194ceeed6c2b5ee184d0c18e01d5d87aa4bb3992a","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=160&event=137","artist":"KAH","notes":"1292","total":"363 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"9","title":"Eldritch Queen","md5":"b5b36a7fae0c06335bac8dab2e96285d","sha256":"e2111f7f548ddcb83cd24c3e6facf17834a6610d45fe78f8fb6bd2e079d24c9d","video1":"","video2":"yNJfg94178E","video3":"","state":"","url_diff":"","name_diff":"cat4","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=154&event=137","artist":"BTB","notes":"1536","total":"360 (0.234%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"8","title":"energy revival","md5":"96f7321e5d3f3142a2f5b901b94c46e6","sha256":"1e6694aaca6bae144c703f3194ceeed6c2b5ee184d0c18e01d5d87aa4bb3992a","video1":"","video2":"oVH7voUMMNY","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=160&event=137","artist":"KAH","notes":"1292","total":"363 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"8","title":"Furbulence","md5":"1adc94f0f158822b495273a4a4bc73b2","sha256":"68d7dbdd9fd4b14a2159c9892b76c2ebb44c6b2dc6a40bfbc570e5d65ba69f31","video1":"","video2":"mGbFLcBGn-4","video3":"","state":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=298&event=137","artist":"Nakaiankow","notes":"1411","total":"307 (0.218%/note)","comment":"","memo":""},
-{"level":"9","title":"Heathenism dogma [LR2IR登録不可]","md5":"a4c65596fbb404861504710990f18a05","sha256":"bf5a775b778acf79cec10083d51291b8451bd1a248068490a4354d27acce59bf","video1":"","video2":"","video3":"","state":"","url_diff":"","name_diff":"まてぃ (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=137","artist":"Sakamiya feat.nayuta / mov:tolz img:ttv","notes":"1536","total":"360 (0.234%/note)","comment":"","memo":""},
+{"level":"9","title":"Heathenism dogma [2/18 修正譜面]","md5":"9b6f477d3939f41f782bd8cb37af291e","sha256":"","video1":"","video2":"","video3":"","state":"6","url_diff":"https://drive.google.com/file/d/13vjwhoX4dD6YAJf7QjFQdIkK82Qft-xN/view","name_diff":"まてぃ (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=137","artist":"Sakamiya feat.nayuta / mov:Nao_AnD img:ttv","notes":"1536","total":"360 (0.234%/note)","comment":"","memo":""},
 {"level":"7","title":"Illuminated By Moonlight [HAROLD EX]","md5":"b1907c4485cdd29cdb77318bff70c04e","sha256":"614d2c8567ab7aa9edddbd33a566f6fbea542fe206ec3de5e3920c30e9306735","video1":"","video2":"NrlVXV1ACfQ","video3":"","state":"","url_diff":"","name_diff":"HAROLD (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=337&event=137","artist":"Lollipop","notes":"1254","total":"251.5 (0.201%/note)","comment":"","memo":""},
 {"level":"9","title":"Illuminated By Moonlight [PMS UPPER]","md5":"3545223447cf501ede859454bc742dff","sha256":"24bc744d66cecf1c82bacbdae1ea06e43c42fd94ec9b56c34d77bdd0b135a40d","video1":"","video2":"bqmQJAE2lIc","video3":"","state":"","url_diff":"","name_diff":"pt (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=337&event=137","artist":"Lollipop","notes":"1507","total":"300 (0.199%/note)","comment":"","memo":""},
 {"level":"9","title":"Intercosmic travel","md5":"4c924754458a6e14b9793da31d08421b","sha256":"43769240b6ad3d34d113211ff8c7985ced133e6380328eccd0d4456c45a0e33b","video1":"","video2":"Gj6MhHB0ux8","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=341&event=137","artist":"Mr.Faine","notes":"1702","total":"365 (0.214%/note)","comment":"","memo":""},
-{"level":"8","title":"Let the game begin","md5":"17d641bf2e34a5634c6770de4fac3da8","sha256":"fdd43eded24445c89cb92cb96e8166a90c97cd6024f2219fe1e51519407d8670","video1":"","video2":"G7AsBTrL68s","video3":"","state":"2","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=5&event=137","artist":"motz","notes":"1608","total":"490 (0.305%/note)","comment":"難易度更新:lv48→49","memo":""},
-{"level":"7","title":"Opaque Couche","md5":"8b8a20b52b9fc3ea1917a7b7a4d0ed68","sha256":"7190bfe1fe93651f54559a24521b9d73b0c8fbab8b3cc1deeaae2ec4317e1c36","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=271&event=137","artist":"siqlo / Movie:出前","notes":"1710","total":"273 (0.16%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"10","title":"Simurgh","md5":"603f750f5f3f65c18e59a7d0987e9ff3","sha256":"6dc067f8639373869c9c6565f839d5e04da9d4592cfca88a84337fc04b71229e","video1":"","video2":"RVEsdVap0bU","video3":"","state":"1","url_diff":"https://publish.soundpiercer.io/bms/2021/Simurgh_OFFICIAL_ADDON.zip","name_diff":"追加譜面","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=420&event=137","artist":"BilliumMoto & Sobrem","notes":"1948","total":"254 (0.13%/note)","comment":"","memo":"12/26 追加譜面"},
-{"level":"8","title":"spila","md5":"ef1c9c589488a1396568311bfa99cb3d","sha256":"5cce9d0ff514e2ebbac55bbb9a1e157e92e29582746a28070e40ca41f918198c","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=41&event=137","artist":"lufm","notes":"1538","total":"380 (0.247%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"8","title":"Undine","md5":"cd7f3cc8150365915ca19ce7a38df1e6","sha256":"ed2c963589cd35b8786c44f34f1aec31ddee705f87365fb5c3c0e007558f0919","video1":"","video2":"Y20eKhOLW50","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=226&event=137","artist":"utah","notes":"1387","total":"350 (0.252%/note)","comment":"難易度更新:lv48→49","memo":""},
-{"level":"8","title":"VIFU-0368","md5":"6d6745cc3c92ae19c14d85516a57c6e6","sha256":"dcfb4d1fef2ef102ad98795b20aa0af9e983ccf9cab952715528fecf396107c6","video1":"","video2":"RsVqzInJcMM","video3":"","state":"1","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=404&event=137","artist":"SOMON","notes":"1544","total":"235 (0.152%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"8","title":"アフェクション・ラヴ","md5":"2c79196e2201016218975bde80c6f703","sha256":"3651ed1f5a3bba6ffaa3d269664ccecf2f739ad433533258ef3d972ef515e0d4","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=21&event=137","artist":"kei_iwata / 監督：KeiuO 美術監督：内村徹","notes":"1657","total":"264 (0.159%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"9","title":"イナリッチ","md5":"8b12f456d948987096b94a1849a84a95","sha256":"97b2ea2226018a3cd9d19d29e4f1e94e39c290906b133043eaa21ff6882d03ab","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=141&event=137","artist":"LisicA / movie : 自動車原付 / illust : Orphee","notes":"1872","total":"381.72 (0.204%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"10","title":"コモリヌ","md5":"7ff2d1cb06193e6d7c495fd745cf501e","sha256":"36bc29d870818c4cd2889fa1e8763cb2b319e4690b1666a3d5d3c9d09bfd1d92","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=398&event=137","artist":"Qayo feat.杠葉えりか / movie:inukoro / illust:兎乃介","notes":"1566","total":"300 (0.192%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"8","title":"すぺーすとらべるらびっと","md5":"f3cdd0eace36a5a6b0438b7c3d3205c8","sha256":"f5857ae285b6400c66b189d0d5fc681b4e4ae37fac707903c2cc7358cd2bb1af","video1":"","video2":"6eAoIDHTSPc","video3":"","state":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=18&event=137","artist":"すぺーすとらべらー☆びっくりはてな","notes":"1000","total":"304 (0.304%/note)","comment":"難易度更新:lv50→49","memo":""},
-{"level":"9","title":"希望の歌 -miracle- [APPEND]","md5":"5fdb989e95231266edb6573ead60738d","sha256":"b4347154717c1733904f376fe3d61782180a5ea0d3fd7b9aed902b38e3fabff9","video1":"","video2":"Kc9Lf1WNaoc","video3":"","state":"","url_diff":"","name_diff":"DOCTOR L (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1565","total":"444 (0.284%/note)","comment":"難易度更新:lv48→49","memo":""},
-{"level":"7","title":"水面の煌き","md5":"403955640b44038e0f4402e8f46ba2f0","sha256":"46d795f026703ea1250536165325348bdcaaa25e3a3fa74e5367d8b108bc202f","video1":"","video2":"vzQBpSvgfq8","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=95&event=137","artist":"sugar BGA : TEKINA","notes":"1249","total":"350 (0.28%/note)","comment":"","memo":""},
-{"level":"10","title":"雪肌玉惚少女","md5":"db9a13b68e7153721b8733c7130dc2fc","sha256":"992b0e960f7a44873f5cc6d807abe92430878ebe1b9a1c708b43e0f5c165d0cf","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=161&event=137","artist":"G4zan","notes":"1572","total":"387 (0.246%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"？","title":"Let the game begin","md5":"17d641bf2e34a5634c6770de4fac3da8","sha256":"fdd43eded24445c89cb92cb96e8166a90c97cd6024f2219fe1e51519407d8670","video1":"","video2":"G7AsBTrL68s","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=5&event=137","artist":"motz","notes":"1608","total":"490 (0.305%/note)","comment":"難易度更新:lv48→49","memo":""},
 
-{"level":"7","title":"霧幻峡","md5":"ce36a5519d78a944af4313c0d8c58278","sha256":"a6ca3e7365144306706e4e29b781110597853c5fe6bccc5b9a39ce1a33813dca","video1":"","video2":"5QuRtoRtOrw","video3":"","state":"1","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=83&event=137","artist":"川崎もっぺ","notes":"1632","total":"300 (0.184%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"12","title":"∀","md5":"9f1aa19bf8dc5cbf23e0f05fce4eb251","sha256":"710172920e7380f5a80bf628a03d46e187a5c1397f25150e5f39e2af3041881b","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dwight","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=8&event=137","artist":"ああああ","notes":"1455","total":"409 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"10","title":"All You Need is TECHNO Music","md5":"7a5996dfe9e0f1e915dd8f0d853ef43c","sha256":"8d43c92f19eaebf1167c8fec397bac56bb359337d459df632f129c9c5d0372d8","video1":"","video2":"paGx6ICkoYs","video3":"","state":"1","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=137","artist":"syuuroku","notes":"2071","total":"500 (0.241%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"12","title":"Caesar","md5":"fc2d32d694035b6ada14bc61fbebd1b0","sha256":"92fa5a84131bd1761c60ee4042521b6e0f260a45e1d545616b09ffe0b9a8babe","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=17&event=137","artist":"Abel & WONDERTRAVELER Project","notes":"1996","total":"350 (0.175%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"10","title":"Dream Journey","md5":"cfc62f5d9ed9aaab1fa4cd12a479353c","sha256":"ce12c2692dfc99409e33a6dba8926f2f91285bcbdcf43a77318db518f1216cd9","video1":"","video2":"dCPys1v0QEE","video3":"","state":"2","url_diff":"","name_diff":"Y.W (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=182&event=137","artist":"れおん","notes":"2021","total":"285 (0.141%/note)","comment":"難易度更新:lv49→50","memo":""},
+
+{"level":"8","title":"Opaque Couche","md5":"8b8a20b52b9fc3ea1917a7b7a4d0ed68","sha256":"7190bfe1fe93651f54559a24521b9d73b0c8fbab8b3cc1deeaae2ec4317e1c36","video1":"","video2":"wZ9K4bqpu-I","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=271&event=137","artist":"siqlo / Movie:出前","notes":"1710","total":"273 (0.16%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"10","title":"Simurgh","md5":"603f750f5f3f65c18e59a7d0987e9ff3","sha256":"6dc067f8639373869c9c6565f839d5e04da9d4592cfca88a84337fc04b71229e","video1":"","video2":"RVEsdVap0bU","video3":"","state":"","url_diff":"https://publish.soundpiercer.io/bms/2021/Simurgh_OFFICIAL_ADDON.zip","name_diff":"追加譜面","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=420&event=137","artist":"BilliumMoto & Sobrem","notes":"1948","total":"254 (0.13%/note)","comment":"","memo":"12/26 追加譜面"},
+{"level":"9","title":"spila","md5":"ef1c9c589488a1396568311bfa99cb3d","sha256":"5cce9d0ff514e2ebbac55bbb9a1e157e92e29582746a28070e40ca41f918198c","video1":"","video2":"y4E-DHJFJuo","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=41&event=137","artist":"lufm","notes":"1538","total":"380 (0.247%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"8","title":"Undine","md5":"cd7f3cc8150365915ca19ce7a38df1e6","sha256":"ed2c963589cd35b8786c44f34f1aec31ddee705f87365fb5c3c0e007558f0919","video1":"","video2":"Y20eKhOLW50","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=226&event=137","artist":"utah","notes":"1387","total":"350 (0.252%/note)","comment":"難易度更新:lv48→49","memo":""},
+{"level":"9","title":"VIFU-0368","md5":"6d6745cc3c92ae19c14d85516a57c6e6","sha256":"dcfb4d1fef2ef102ad98795b20aa0af9e983ccf9cab952715528fecf396107c6","video1":"","video2":"RsVqzInJcMM","video3":"","state":"","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=404&event=137","artist":"SOMON","notes":"1544","total":"235 (0.152%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"8","title":"アフェクション・ラヴ","md5":"2c79196e2201016218975bde80c6f703","sha256":"3651ed1f5a3bba6ffaa3d269664ccecf2f739ad433533258ef3d972ef515e0d4","video1":"","video2":"wj_Og2nkQog","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=21&event=137","artist":"kei_iwata / 監督：KeiuO 美術監督：内村徹","notes":"1657","total":"264 (0.159%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"9","title":"イナリッチ","md5":"8b12f456d948987096b94a1849a84a95","sha256":"97b2ea2226018a3cd9d19d29e4f1e94e39c290906b133043eaa21ff6882d03ab","video1":"","video2":"G_zG0v9DFSU","video3":"","state":"","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=141&event=137","artist":"LisicA / movie : 自動車原付 / illust : Orphee","notes":"1872","total":"381.72 (0.204%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"8","title":"キユビック","md5":"0663997ae58d47dcee736f2fa08f2d88","sha256":"e210ebf2741ca9b14e5756e9a070a6f775a503f7b5a6313176b9af1b2f423c62","video1":"","video2":"foaB7VRmkfY","video3":"","state":"2","url_diff":"","name_diff":"gopo12","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=143&event=137","artist":"LisicA /  movie : ルゼ(LuzeriA) / illust : Orphee","notes":"1517","total":"300 (0.198%/note)","comment":"難易度更新:lv47→48→49","memo":"Vol.1 追加譜面"},
+{"level":"10","title":"コモリヌ","md5":"7ff2d1cb06193e6d7c495fd745cf501e","sha256":"36bc29d870818c4cd2889fa1e8763cb2b319e4690b1666a3d5d3c9d09bfd1d92","video1":"","video2":"YAezFJbEcVM","video3":"","state":"","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=398&event=137","artist":"Qayo feat.杠葉えりか / movie:inukoro / illust:兎乃介","notes":"1566","total":"300 (0.192%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"8","title":"すぺーすとらべるらびっと","md5":"f3cdd0eace36a5a6b0438b7c3d3205c8","sha256":"f5857ae285b6400c66b189d0d5fc681b4e4ae37fac707903c2cc7358cd2bb1af","video1":"","video2":"6eAoIDHTSPc","video3":"","state":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=18&event=137","artist":"すぺーすとらべらー☆びっくりはてな","notes":"1000","total":"304 (0.304%/note)","comment":"難易度更新:lv50→49","memo":""},
+
+
+{"level":"10","title":"希望の歌 -miracle- [APPEND]","md5":"5fdb989e95231266edb6573ead60738d","sha256":"b4347154717c1733904f376fe3d61782180a5ea0d3fd7b9aed902b38e3fabff9","video1":"","video2":"Kc9Lf1WNaoc","video3":"","state":"","url_diff":"","name_diff":"DOCTOR L (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1565","total":"444 (0.284%/note)","comment":"難易度更新:lv48→49","memo":""},
+{"level":"7","title":"水面の煌き","md5":"403955640b44038e0f4402e8f46ba2f0","sha256":"46d795f026703ea1250536165325348bdcaaa25e3a3fa74e5367d8b108bc202f","video1":"","video2":"vzQBpSvgfq8","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=95&event=137","artist":"sugar BGA : TEKINA","notes":"1249","total":"350 (0.28%/note)","comment":"","memo":""},
+{"level":"10","title":"雪肌玉惚少女","md5":"db9a13b68e7153721b8733c7130dc2fc","sha256":"992b0e960f7a44873f5cc6d807abe92430878ebe1b9a1c708b43e0f5c165d0cf","video1":"","video2":"L08jSHu3-aI","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=161&event=137","artist":"G4zan","notes":"1572","total":"387 (0.246%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"7","title":"霧幻峡","md5":"ce36a5519d78a944af4313c0d8c58278","sha256":"a6ca3e7365144306706e4e29b781110597853c5fe6bccc5b9a39ce1a33813dca","video1":"","video2":"5QuRtoRtOrw","video3":"","state":"","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=83&event=137","artist":"川崎もっぺ","notes":"1632","total":"300 (0.184%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"12","title":"∀","md5":"9f1aa19bf8dc5cbf23e0f05fce4eb251","sha256":"710172920e7380f5a80bf628a03d46e187a5c1397f25150e5f39e2af3041881b","video1":"","video2":"4UWkVRAuo9I","video3":"","state":"","url_diff":"","name_diff":"Dwight","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=8&event=137","artist":"ああああ","notes":"1455","total":"409 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"10","title":"All You Need is TECHNO Music","md5":"7a5996dfe9e0f1e915dd8f0d853ef43c","sha256":"8d43c92f19eaebf1167c8fec397bac56bb359337d459df632f129c9c5d0372d8","video1":"","video2":"paGx6ICkoYs","video3":"","state":"","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=137","artist":"syuuroku","notes":"2071","total":"500 (0.241%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"12","title":"Caesar","md5":"fc2d32d694035b6ada14bc61fbebd1b0","sha256":"92fa5a84131bd1761c60ee4042521b6e0f260a45e1d545616b09ffe0b9a8babe","video1":"","video2":"PlXyhIv88Fw","video3":"","state":"","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=17&event=137","artist":"Abel & WONDERTRAVELER Project","notes":"1996","total":"350 (0.175%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"10","title":"Dream Journey","md5":"cfc62f5d9ed9aaab1fa4cd12a479353c","sha256":"ce12c2692dfc99409e33a6dba8926f2f91285bcbdcf43a77318db518f1216cd9","video1":"","video2":"dCPys1v0QEE","video3":"","state":"","url_diff":"","name_diff":"Y.W (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=182&event=137","artist":"れおん","notes":"2021","total":"285 (0.141%/note)","comment":"難易度更新:lv49→50","memo":""},
 {"level":"10","title":"Firmament Star","md5":"e3d509b4976d8ae5c1f3f3482b164ed1","sha256":"283fc5a7a8da3a279e07be194a1df25759563d4fa1e669e170fadd605bb386e7","video1":"","video2":"n9Lg-NSdkFo","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=56&event=137","artist":"Raimukun movie:inukoro","notes":"1423","total":"280 (0.197%/note)","comment":"難易度更新:lv47→50","memo":""},
-{"level":"10","title":"glacier's poetry","md5":"315159fb5b77f743875e9434acd7729a","sha256":"fed3ab15990520762470eba289926270cd215c91dda62b581b6f76c572e37754","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=425&event=137","artist":"VeetaCrush & ProjectG / bga: linglvz","notes":"1809","total":"390 (0.216%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"10","title":"glacier's poetry","md5":"315159fb5b77f743875e9434acd7729a","sha256":"fed3ab15990520762470eba289926270cd215c91dda62b581b6f76c572e37754","video1":"","video2":"jSy-Kl6Byrg","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=425&event=137","artist":"VeetaCrush & ProjectG / bga: linglvz","notes":"1809","total":"390 (0.216%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"11","title":"Gnome","md5":"b86a325111a3a9eda7d6f7554167a46c","sha256":"b79b540b9f69c767232adfc90407fdb72b49a579508938b7233193036caebb9c","video1":"","video2":"WmtAnzrdhlM","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=228&event=137","artist":"utah","notes":"1482","total":"350 (0.236%/note)","comment":"難易度更新:lv48→50","memo":""},
-{"level":"12","title":"Let's get wild!","md5":"6fe145ac28d0dabc23ea48e63475ff0d","sha256":"50785bf2c5385f5dfe7057494cf9a67c7836f08f27b39b05fc81d481af92867d","video1":"","video2":"-yhilTXEx8g","video3":"","state":"1","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=60&event=137","artist":"SOMON","notes":"2221","total":"588 (0.265%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
 {"level":"10","title":"LOVE","md5":"a1e6841d53c73cfe03ebdb7c6ed5f80f","sha256":"69259518b83d20fca04b6d776e96b903238adbc83851570506a79ea46d06fa32","video1":"","video2":"Xq2j8inpO50","video3":"","state":"","url_diff":"","name_diff":"NASA (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=331&event=137","artist":"Notorious(Nota & TRIAL) / BGA:iimo","notes":"1600","total":"300 (0.188%/note)","comment":"","memo":""},
-{"level":"10","title":"Luminaria","md5":"8bde33ac845e895336990d7721822fad","sha256":"14e8c5df23a21867b212ff5da413d6a5a8523b7d6fb1dbb341340baa4def99b8","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=137","artist":"Lime","notes":"1820","total":"275 (0.151%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"12","title":"Pixel Princess","md5":"90ff460a4fb33c5d8156c1e80a0b7a97","sha256":"82dd7da11ea0f31c81a45b61227a67dfcaf4f72e799083007db69fde315c7843","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=418&event=137","artist":"Lime","notes":"1917","total":"312 (0.163%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"10","title":"Luminaria","md5":"8bde33ac845e895336990d7721822fad","sha256":"14e8c5df23a21867b212ff5da413d6a5a8523b7d6fb1dbb341340baa4def99b8","video1":"","video2":"DNOaQykaoTA","video3":"","state":"","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=137","artist":"Lime","notes":"1820","total":"275 (0.151%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"12","title":"Pixel Princess","md5":"90ff460a4fb33c5d8156c1e80a0b7a97","sha256":"82dd7da11ea0f31c81a45b61227a67dfcaf4f72e799083007db69fde315c7843","video1":"","video2":"d3lmLzTS1ss","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=418&event=137","artist":"Lime","notes":"1917","total":"312 (0.163%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"◆","title":"Pleisure","md5":"3e12ef34e27046882083f4de14f970b0","sha256":"83d03f4d318e116c3125385a2bcae2d650d20a04b3035ccf9847d6059f73f9b2","video1":"","video2":"Bx9OCSHqGV8","video3":"","state":"","url_diff":"https://drive.google.com/file/d/1H7KAdm1t_k3dHU1PJ7DUfDz78vH_sgUK/view","name_diff":"hokonekoqs (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=472&event=137","artist":"Zris","notes":"1429","total":"336.56 (0.236%/note)","comment":"","memo":""},
-{"level":"11","title":"secret:mirage","md5":"ac1be448ed0ce3b4761155f23f1a8e2e","sha256":"1f50b72a0a8f70c1aceae3745b7b2c875ac806e62a512f2dc022e48813b5b45e","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=84&event=137","artist":"かゆき / Movie:Nao_AnD","notes":"1716","total":"275 (0.16%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"11","title":"Simurgh","md5":"461542fc0ca6ade6ff6e841536c1ebee","sha256":"cdb0ec191f8ad266acb8944ae975205c9c6f56b281dab46f4cf9ab583a4a041c","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=420&event=137","artist":"BilliumMoto & Sobrem","notes":"1960","total":"240 (0.122%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"12","title":"secret:mirage","md5":"ac1be448ed0ce3b4761155f23f1a8e2e","sha256":"1f50b72a0a8f70c1aceae3745b7b2c875ac806e62a512f2dc022e48813b5b45e","video1":"","video2":"IgMmVH--bxQ","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=84&event=137","artist":"かゆき / Movie:Nao_AnD","notes":"1716","total":"275 (0.16%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"11","title":"Simurgh","md5":"461542fc0ca6ade6ff6e841536c1ebee","sha256":"cdb0ec191f8ad266acb8944ae975205c9c6f56b281dab46f4cf9ab583a4a041c","video1":"","video2":"aDNJVRJ1yZE","video3":"","state":"","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=420&event=137","artist":"BilliumMoto & Sobrem","notes":"1960","total":"240 (0.122%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"10","title":"Starbowscapes*","md5":"5ebc834538105821bf99aa4972cc0646","sha256":"e6adb1a14e14ba03ad7ad9baabf20b7a32ba21a30f6c78537fb7ef35db603c42","video1":"","video2":"355ihNctgXw","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=373&event=137","artist":"NASA / BGA:Arishima_+NASA","notes":"1600","total":"300 (0.188%/note)","comment":"","memo":""},
-{"level":"11","title":"ultimer","md5":"d2f867bdec96400110cdafea214be8f3","sha256":"5889d5caacb89dfd9e5a1f32c4d564c4f2e4319ce7d2efb3762ad2690874c553","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=320&event=137","artist":"ikaruga_nex","notes":"1480","total":"416 (0.281%/note)","comment":"難易度更新:lv49→50","memo":"Vol.1 追加譜面"},
+
+
+
+{"level":"11","title":"ultimer","md5":"d2f867bdec96400110cdafea214be8f3","sha256":"5889d5caacb89dfd9e5a1f32c4d564c4f2e4319ce7d2efb3762ad2690874c553","video1":"","video2":"5emD1f-ymDE","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=320&event=137","artist":"ikaruga_nex","notes":"1480","total":"416 (0.281%/note)","comment":"難易度更新:lv49→50","memo":"Vol.1 追加譜面"},
 {"level":"12","title":"Undine","md5":"a70482b6254841533cadfbd772ad68e7","sha256":"0a9088a102a56922fb4ac2a04875003e1ace74f5de8051112a739ec7e0dc16ba","video1":"","video2":"8JeqqWMONZc","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=226&event=137","artist":"utah","notes":"1658","total":"350 (0.211%/note)","comment":"難易度更新:lv49→50","memo":""},
 {"level":"10","title":"Volt","md5":"086d94cceff24d0acff2e67956965011","sha256":"55f432f64a81a2c80d54419c1b37d0bcfe0c7b76fa16c5851df9b1769f3e2dd2","video1":"","video2":"EmecPD0gb0g","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=227&event=137","artist":"utah","notes":"1340","total":"500 (0.373%/note)","comment":"難易度更新:lv49→50","memo":""},
-{"level":"11","title":"アルスノヴァに喝采を","md5":"7d1bc8483ee78a7e3ecf0a0b57a2367d","sha256":"17b858646fce7091a56d7d69a3c2f9000bd9f94de2d0fa5cc2e29df581ca58a1","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"1795","total":"380 (0.212%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"11","title":"ぱぴぽ？","md5":"82044c9e4efc552860be85cb6fbe9994","sha256":"18d34a4693d5c282ceab5d8e604e4af7fd92583d977470cdb378bfdd8612d1e2","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=408&event=137","artist":"ねこみりん feat.まるもこ / Movie:むらしん / Illust:なか","notes":"1409","total":"396 (0.281%/note)","comment":"難易度更新:lv49→50","memo":"Vol.1 追加譜面"},
+{"level":"11","title":"アルスノヴァに喝采を","md5":"7d1bc8483ee78a7e3ecf0a0b57a2367d","sha256":"17b858646fce7091a56d7d69a3c2f9000bd9f94de2d0fa5cc2e29df581ca58a1","video1":"","video2":"3OZ4DJoQhIY","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"1795","total":"380 (0.212%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+{"level":"10","title":"ぱぴぽ？","md5":"82044c9e4efc552860be85cb6fbe9994","sha256":"18d34a4693d5c282ceab5d8e604e4af7fd92583d977470cdb378bfdd8612d1e2","video1":"","video2":"N9NzGA_tg2Q","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=408&event=137","artist":"ねこみりん feat.まるもこ / Movie:むらしん / Illust:なか","notes":"1409","total":"396 (0.281%/note)","comment":"難易度更新:lv49→50","memo":"Vol.1 追加譜面"},
+
 {"level":"10","title":"玉響サーチライト","md5":"335a998896067a5386181eed2b123507","sha256":"533f67fa2ebafd5d344a7ef2a978b40b53b69ed702b80d4888cd0528d223a213","video1":"","video2":"w8XxxEAAEY0","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=19&event=137","artist":"otoshi.b × みゅい & tolz × はしたかさん & NASA","notes":"1900","total":"300 (0.158%/note)","comment":"難易度更新:lv51→50","memo":""},
-{"level":"11","title":"親フラ","md5":"b3634dc16ce8691dd7db495eb2442f44","sha256":"49515e6abedf0e2097b332a98293ee81eb5d199225f51c3cfc4b78e613583a6e","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=145&event=137","artist":"ルゼ feat.えみゅう。 / mov:あおお/A-ZERO","notes":"1777","total":"286 (0.161%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"11","title":"親フラ","md5":"b3634dc16ce8691dd7db495eb2442f44","sha256":"49515e6abedf0e2097b332a98293ee81eb5d199225f51c3cfc4b78e613583a6e","video1":"","video2":"bDP6bA1Z1cs","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=145&event=137","artist":"ルゼ feat.えみゅう。 / mov:あおお/A-ZERO","notes":"1777","total":"286 (0.161%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
 {"level":"10","title":"蝎虎天体 -Lacertid-","md5":"874903a9e46e1c976370829e5500a3ec","sha256":"ead58cc987126eec5edc1c22149efab3ff4f689798f043ef0d4dc22f5b563fcf","video1":"","video2":"DK2AfjWLdK0","video3":"","state":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=118&event=137","artist":"Nick Furry vs 悪いケモノ-A / BGA by the GalaxyF / Illust by ケモノ内閣総理大臣","notes":"1572","total":"309 (0.197%/note)","comment":"","memo":""},
-{"level":"14","title":"CLUB RENDA","md5":"42c27936272f6ed968bfddc503223e96","sha256":"5cb1a91ea0c1a48cf0bb1d89b2da999cdba1ca4b3c04fa609f9efbe66b43de91","video1":"","video2":"LcQEwHaQx4U","video3":"","state":"1","url_diff":"","name_diff":"入店禁止の人","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=140&event=137","artist":"ルゼ","notes":"1572","total":"280 (0.178%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"14","title":"CLUB RENDA","md5":"42c27936272f6ed968bfddc503223e96","sha256":"5cb1a91ea0c1a48cf0bb1d89b2da999cdba1ca4b3c04fa609f9efbe66b43de91","video1":"","video2":"LcQEwHaQx4U","video3":"","state":"","url_diff":"","name_diff":"入店禁止の人","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=140&event=137","artist":"ルゼ","notes":"1572","total":"280 (0.178%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"13","title":"Illuminated By Moonlight [sirokuma EX]","md5":"ca27198d3b56bd64082e0ab439b0af8b","sha256":"b2160fee1ff12cc471d7403d2faa8f1bccfacbb2c7aa1bb9f3d6df3294562485","video1":"","video2":"n_LkQakRTAE","video3":"","state":"","url_diff":"","name_diff":"sirokuma (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=337&event=137","artist":"Lollipop","notes":"2102","total":"400 (0.19%/note)","comment":"難易度更新:lv50→51","memo":""},
 {"level":"13","title":"La Mort de Notre Soleil","md5":"c6aec8e48d43a2592c8d524df5919088","sha256":"995cb2b962c2041b8201cbe33a8ce9028abc5713f15b41a545b7b965320cf27e","video1":"","video2":"DUz_BN3y5OU","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=259&event=137","artist":"AYhaz / nyannurs / 草壁美鈴","notes":"2053","total":"350 (0.17%/note)","comment":"難易度更新:lv99→51","memo":""},
-{"level":"14","title":"Majesty of Anubis","md5":"ef09df9d4022201a43d3bb46e2116460","sha256":"6840d531518605dd8f487d315061de2644a03930e7d0d537399e56d8b61401ad","video1":"","video2":"uc5xk66UIPQ","video3":"","state":"1","url_diff":"","name_diff":"sirokuMAX","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=121&event=137","artist":"ryhki / BGA by keizou","notes":"2149","total":"500 (0.233%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"12","title":"Opaque Couche","md5":"34b4e3703d25ee487c53d8716ae0892e","sha256":"41a91638a593147e9e209c03a56ab1745b0e31379d7a3f4a1202f56603b38fb0","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=271&event=137","artist":"siqlo / Movie:出前","notes":"2058","total":"338 (0.164%/note)","comment":"難易度更新:lv52→51","memo":"Vol.1 追加譜面"},
-{"level":"14","title":"Wit's biz","md5":"10ca11555e65788c6ba01a641070e75d","sha256":"7d04c803956804c9d4eba27114313aa433d17eec08dc24a0e4cb6dd24749d340","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=384&event=137","artist":"Sobrem / mov.Espitz","notes":"1939","total":"316 (0.163%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"13","title":"アルスノヴァに喝采を","md5":"b5deec0f78083fccfd572ab7fb7df658","sha256":"238cc9d6ad6852d4cfa72d7ad43a401f31773e90bf07c13d74b4f04d4edf0047","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"2145","total":"355 (0.166%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"13","title":"ハッピーフェイクショー","md5":"e8f9140c4a292eb1d77549610d6747c3","sha256":"a0e4d259ef37333de9d0f1288e0fc03ec473d90d22b273c9a8f044b740865dbc","video1":"","video2":"","video3":"","state":"2","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=189&event=137","artist":"Ponchi♪ feat.はぁち","notes":"2000","total":"327 (0.164%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
-{"level":"14","title":"俗物フェスティバル","md5":"0369557174f06949378c380074016ec9","sha256":"efe59cb60e970ffc50f7ead6094ab17b1f185e3bebfdf2bfad979e50337a251b","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=137","artist":"Micelle feat.Yshida","notes":"2059","total":"338 (0.164%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
-{"level":"13","title":"田中","md5":"1809d444eb30c6689cd9f69c5e34c175","sha256":"d7cf97c99a48d7687728d465f376986a3438600d29f479b8b12b83290100f389","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=361&event=137","artist":"立秋 feat.ちょこ","notes":"2021","total":"331 (0.164%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
-{"level":"14","title":"霧幻峡","md5":"39881958c8688fcbed426d323324e87b","sha256":"aa1f4caf7abee7b156749a85c6516118e22d0f5c41fad77346f61670bd706d62","video1":"","video2":"oJzVSKb9GKA","video3":"","state":"1","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=83&event=137","artist":"川崎もっぺ","notes":"2487","total":"721 (0.29%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
-{"level":"14","title":"夜空の星に願いを込めて","md5":"181c9e34c28cd7060ffcf1533ce95479","sha256":"afb89cac966b1eda5b80b985ef93a2176cb86893f9beead2fcb4681d7102673b","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=49&event=137","artist":"鈎兎(KagiUsagi)","notes":"1767","total":"284 (0.161%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
-{"level":"16","title":"!nterroban(?,","md5":"ddd0081321e25fe0c5c591593c6e8f90","sha256":"d2602f7a0be75cff4de4762dd24f5e5cd386204bdaa48d12f0f7d56ef15071a9","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=407&event=137","artist":"Aoi / mov:出前","notes":"2236","total":"371 (0.166%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"16","title":"All You Need is TECHNO Music","md5":"6f173285dca7608be4d373bb2aa76613","sha256":"b29fda91426f71d684696ba36118c8212af75896015761f77d88460f64670bfb","video1":"","video2":"OQS5plZr4X4","video3":"","state":"1","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=137","artist":"syuuroku","notes":"2809","total":"590 (0.21%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
+{"level":"13","title":"Let's get wild!","md5":"6fe145ac28d0dabc23ea48e63475ff0d","sha256":"50785bf2c5385f5dfe7057494cf9a67c7836f08f27b39b05fc81d481af92867d","video1":"","video2":"-yhilTXEx8g","video3":"","state":"2","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=60&event=137","artist":"SOMON","notes":"2221","total":"588 (0.265%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
+{"level":"14","title":"Majesty of Anubis","md5":"ef09df9d4022201a43d3bb46e2116460","sha256":"6840d531518605dd8f487d315061de2644a03930e7d0d537399e56d8b61401ad","video1":"","video2":"uc5xk66UIPQ","video3":"","state":"","url_diff":"","name_diff":"sirokuMAX","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=121&event=137","artist":"ryhki / BGA by keizou","notes":"2149","total":"500 (0.233%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"12","title":"Opaque Couche","md5":"34b4e3703d25ee487c53d8716ae0892e","sha256":"41a91638a593147e9e209c03a56ab1745b0e31379d7a3f4a1202f56603b38fb0","video1":"","video2":"JnLgo59T8jY","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=271&event=137","artist":"siqlo / Movie:出前","notes":"2058","total":"338 (0.164%/note)","comment":"難易度更新:lv52→51","memo":"Vol.1 追加譜面"},
+{"level":"14","title":"Wit's biz [Vol.2 譜面修正あり]","md5":"c2ce90e377bdfb0f7304635211d4185a","sha256":"","video1":"","video2":"","video3":"","state":"6","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=384&event=137","artist":"Sobrem / mov.Espitz","notes":"1939","total":"316 (0.163%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"13","title":"アルスノヴァに喝采を","md5":"b5deec0f78083fccfd572ab7fb7df658","sha256":"238cc9d6ad6852d4cfa72d7ad43a401f31773e90bf07c13d74b4f04d4edf0047","video1":"","video2":"Sx1RuzmJ9ak","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"2145","total":"355 (0.166%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"13","title":"ハッピーフェイクショー","md5":"e8f9140c4a292eb1d77549610d6747c3","sha256":"a0e4d259ef37333de9d0f1288e0fc03ec473d90d22b273c9a8f044b740865dbc","video1":"","video2":"K9ThdkbGJOM","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=189&event=137","artist":"Ponchi♪ feat.はぁち","notes":"2000","total":"327 (0.164%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
+{"level":"14","title":"俗物フェスティバル","md5":"0369557174f06949378c380074016ec9","sha256":"efe59cb60e970ffc50f7ead6094ab17b1f185e3bebfdf2bfad979e50337a251b","video1":"","video2":"DAu-0AnRbbw","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=137","artist":"Micelle feat.Yshida","notes":"2059","total":"338 (0.164%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
+{"level":"13","title":"田中","md5":"1809d444eb30c6689cd9f69c5e34c175","sha256":"d7cf97c99a48d7687728d465f376986a3438600d29f479b8b12b83290100f389","video1":"","video2":"fE0BiLmiAJg","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=361&event=137","artist":"立秋 feat.ちょこ","notes":"2021","total":"331 (0.164%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
+{"level":"14","title":"霧幻峡","md5":"39881958c8688fcbed426d323324e87b","sha256":"aa1f4caf7abee7b156749a85c6516118e22d0f5c41fad77346f61670bd706d62","video1":"","video2":"oJzVSKb9GKA","video3":"","state":"","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=83&event=137","artist":"川崎もっぺ","notes":"2487","total":"721 (0.29%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
+{"level":"13","title":"夜空の星に願いを込めて","md5":"181c9e34c28cd7060ffcf1533ce95479","sha256":"afb89cac966b1eda5b80b985ef93a2176cb86893f9beead2fcb4681d7102673b","video1":"","video2":"O5KAZHMNZc0","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=49&event=137","artist":"鈎兎(KagiUsagi)","notes":"1767","total":"284 (0.161%/note)","comment":"難易度更新:lv50→51","memo":"Vol.1 追加譜面"},
+{"level":"16","title":"!nterroban(?,","md5":"ddd0081321e25fe0c5c591593c6e8f90","sha256":"d2602f7a0be75cff4de4762dd24f5e5cd386204bdaa48d12f0f7d56ef15071a9","video1":"","video2":"3A3Lw1ECE_M","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=407&event=137","artist":"Aoi / mov:出前","notes":"2236","total":"371 (0.166%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"16","title":"All You Need is TECHNO Music","md5":"6f173285dca7608be4d373bb2aa76613","sha256":"b29fda91426f71d684696ba36118c8212af75896015761f77d88460f64670bfb","video1":"","video2":"OQS5plZr4X4","video3":"","state":"","url_diff":"","name_diff":"sirokuma","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=137","artist":"syuuroku","notes":"2809","total":"590 (0.21%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
 {"level":"16","title":"Daydream To Orb [PMS INSANE]","md5":"1d2177a6d36c3128ec7554c97ee4a122","sha256":"5c107c57215b68b2a9ea945f697a003eb85035365bd75e1cac91ce54fbc98185","video1":"","video2":"-oTEPElBHmI","video3":"","state":"","url_diff":"","name_diff":"pt (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"2773","total":"485 (0.175%/note)","comment":"","memo":""},
-{"level":"15","title":"DIYc","md5":"c384fad4eabde261433e1654b7370b6f","sha256":"115c4d81d2f9808ed8afb381b36f2664d8388a59c28e809e66192afeb6f61b13","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=191&event=137","artist":"K4Y5","notes":"2294","total":"500 (0.218%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
-{"level":"16","title":"energy revival","md5":"ae032ef3c6a911a50b0430bdab5dc641","sha256":"49404293f88b16eee9405b24fe38e28a89f9f4ff295935d2c2a2ec8fa781d874","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=160&event=137","artist":"KAH","notes":"1864","total":"302 (0.162%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"15","title":"DIYc","md5":"c384fad4eabde261433e1654b7370b6f","sha256":"115c4d81d2f9808ed8afb381b36f2664d8388a59c28e809e66192afeb6f61b13","video1":"","video2":"Vzd7llnZBHE","video3":"","state":"","url_diff":"","name_diff":"ponz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=191&event=137","artist":"K4Y5","notes":"2294","total":"500 (0.218%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
+{"level":"16","title":"energy revival","md5":"ae032ef3c6a911a50b0430bdab5dc641","sha256":"49404293f88b16eee9405b24fe38e28a89f9f4ff295935d2c2a2ec8fa781d874","video1":"","video2":"88divveck_A","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=160&event=137","artist":"KAH","notes":"1864","total":"302 (0.162%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"16","title":"Heart of Justice","md5":"a0b0d6fceb99994992b5ea8e251fb044","sha256":"e82c7fd18655a11edaec3dd9ee224f1c917fc0b2416e3ee6c8a4a6c06f000dec","video1":"","video2":"LJ3GRks4OKk","video3":"","state":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=82&event=137","artist":"鈎兎(KagiUsagi)","notes":"1965","total":"333 (0.169%/note)","comment":"難易度更新:lv55→52","memo":""},
-{"level":"14","title":"Luminaria","md5":"dcfc845892897a1f2353b33fa550cdd4","sha256":"52120c25fea30fc8f889c91c33aa9be6f53b1c6303acb8a6e38ad39e1a58e32f","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=137","artist":"Lime","notes":"2594","total":"500 (0.193%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"16","title":"Non Return to Zero","md5":"911ca7ed0f099431a1dbc6951a65446a","sha256":"4eb9f604fba4bcf88b0380a344000389f65e6151f16ddad5fba56fb15a7f6bd8","video1":"","video2":"ur2GRXpAewE","video3":"","state":"1","url_diff":"","name_diff":"βマン","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=55&event=137","artist":"Rakuno.α","notes":"2310","total":"500 (0.216%/note)","comment":"難易度更新:lv50→52","memo":"Vol.1 追加譜面"},
-{"level":"15","title":"ultimer","md5":"a6c3ed534f97f7ef2ed3783ee95e58ec","sha256":"dca1b91c9efc09a230b9ee22e946ea51984b0c02e6bcf91c2dc4cce7c8c6b851","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=320&event=137","artist":"ikaruga_nex","notes":"1894","total":"308 (0.163%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
-{"level":"15","title":"VIFU-0368","md5":"9795d592a71e05f2059f4b0511350722","sha256":"0c757dadce58f2970972243d7b54783e68b7c87771d557b050ab14d27b7b3740","video1":"","video2":"NUMJtvpdo8A","video3":"","state":"2","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=404&event=137","artist":"SOMON","notes":"2079","total":"370 (0.178%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
-{"level":"15","title":"迦鸞禍羅 ～からから～","md5":"1936afc3d49261eb724ed7d3e2e9aa14","sha256":"3618c0e5ae3672e1dfe209a6e9a20f29c60d32f93513290537b1c65bd6aa4ce4","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"弩津使威","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=53&event=137","artist":"うまるつふり","notes":"2085","total":"343 (0.165%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
-{"level":"15","title":"私が見たのは\"私\"でした。","md5":"3d373b76deed50284c9f9fbf22a9bc33","sha256":"be3551fd85ab2db03a576e15a48d4f8abab07d8346a28f97bb59c44a506257ff","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"私","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=355&event=137","artist":"Tise","notes":"2366","total":"460 (0.194%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"16","title":"Aerial","md5":"5dc3aa5d372c91b8205ed1655a6c35ef","sha256":"7a0d9011d8ac050ccafffba24e3c24f1182a88a9b7e10c2e1b6221ac55ae2beb","video1":"","video2":"rL8grYpL3qM","video3":"","state":"1","url_diff":"","name_diff":"Fas ligand","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=44&event=137","artist":"Kucchi","notes":"2830","total":"620 (0.219%/note)","comment":"難易度更新:lv99→53","memo":"Vol.1 追加譜面"},
+{"level":"14","title":"Luminaria","md5":"dcfc845892897a1f2353b33fa550cdd4","sha256":"52120c25fea30fc8f889c91c33aa9be6f53b1c6303acb8a6e38ad39e1a58e32f","video1":"","video2":"hxS_vGt2slo","video3":"","state":"","url_diff":"","name_diff":"yphan","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=1&event=137","artist":"Lime","notes":"2594","total":"500 (0.193%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"16","title":"Non Return to Zero","md5":"911ca7ed0f099431a1dbc6951a65446a","sha256":"4eb9f604fba4bcf88b0380a344000389f65e6151f16ddad5fba56fb15a7f6bd8","video1":"","video2":"ur2GRXpAewE","video3":"","state":"","url_diff":"","name_diff":"βマン","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=55&event=137","artist":"Rakuno.α","notes":"2310","total":"500 (0.216%/note)","comment":"難易度更新:lv50→52","memo":"Vol.1 追加譜面"},
+{"level":"15","title":"ultimer","md5":"a6c3ed534f97f7ef2ed3783ee95e58ec","sha256":"dca1b91c9efc09a230b9ee22e946ea51984b0c02e6bcf91c2dc4cce7c8c6b851","video1":"","video2":"C0zYtIx47RE","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=320&event=137","artist":"ikaruga_nex","notes":"1894","total":"308 (0.163%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
+{"level":"15","title":"VIFU-0368","md5":"9795d592a71e05f2059f4b0511350722","sha256":"0c757dadce58f2970972243d7b54783e68b7c87771d557b050ab14d27b7b3740","video1":"","video2":"NUMJtvpdo8A","video3":"","state":"","url_diff":"","name_diff":"010m010","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=404&event=137","artist":"SOMON","notes":"2079","total":"370 (0.178%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
+{"level":"15","title":"迦鸞禍羅 ～からから～ [Vol.2 譜面修正あり]","md5":"edd99f884632890c64416f9b4821fbe2","sha256":"","video1":"","video2":"","video3":"","state":"6","url_diff":"","name_diff":"弩津使威","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=53&event=137","artist":"うまるつふり","notes":"2085","total":"343 (0.165%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
+{"level":"15","title":"私が見たのは\"私\"でした。","md5":"3d373b76deed50284c9f9fbf22a9bc33","sha256":"be3551fd85ab2db03a576e15a48d4f8abab07d8346a28f97bb59c44a506257ff","video1":"","video2":"UJ35AqC19sI","video3":"","state":"","url_diff":"","name_diff":"私","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=355&event=137","artist":"Tise","notes":"2366","total":"460 (0.194%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"16","title":"Aerial","md5":"5dc3aa5d372c91b8205ed1655a6c35ef","sha256":"7a0d9011d8ac050ccafffba24e3c24f1182a88a9b7e10c2e1b6221ac55ae2beb","video1":"","video2":"rL8grYpL3qM","video3":"","state":"","url_diff":"","name_diff":"Fas ligand","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=44&event=137","artist":"Kucchi","notes":"2830","total":"620 (0.219%/note)","comment":"難易度更新:lv99→53","memo":"Vol.1 追加譜面"},
 {"level":"18","title":"Daydream To Orb [謎のEX]","md5":"4830b13dfdce8f1815dc8f9e64cba244","sha256":"6b43cf97216fa65cf9d9c67853e52f3c4847604f484b52f917d885ac75066a92","video1":"","video2":"GAM8TrbrT34","video3":"","state":"","url_diff":"","name_diff":"Pumusu Sabun Team \"謎の威勢\" (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"3804","total":"700 (0.184%/note)","comment":"難易度更新:lv52→53","memo":""},
 {"level":"18","title":"Regain","md5":"ef0af75a12f84bfd394b02f56e917fa4","sha256":"d9ecbe2ec0724242025ee1713c41adb77e9158cf295094fcb84a7635572d74d3","video1":"","video2":"k5Y1GDz2PmE","video3":"","state":"","url_diff":"https://drive.google.com/file/d/1AdP8TZNwbaGZ_2MhflrSTpbxj9m2J-Ir/view?usp=sharing","name_diff":"hokonekoqs (追加譜面)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=242&event=137","artist":"ProjectG","notes":"2416","total":"555.55 (0.23%/note)","comment":"","memo":""},
-{"level":"17","title":"spila","md5":"1f9f20364714217ae74f83333b78b799","sha256":"3bd3d6e7e7338c06fb8ec3aa6af021057668026ce6a3ee09d7b5dafc67e77a9a","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=41&event=137","artist":"lufm","notes":"2222","total":"430 (0.194%/note)","comment":"難易度更新:lv52→53","memo":"Vol.1 追加譜面"},
+{"level":"17","title":"spila","md5":"1f9f20364714217ae74f83333b78b799","sha256":"3bd3d6e7e7338c06fb8ec3aa6af021057668026ce6a3ee09d7b5dafc67e77a9a","video1":"","video2":"mRYn0bV1iTc","video3":"","state":"","url_diff":"","name_diff":"zz","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=41&event=137","artist":"lufm","notes":"2222","total":"430 (0.194%/note)","comment":"難易度更新:lv52→53","memo":"Vol.1 追加譜面"},
 {"level":"17","title":"Volt","md5":"e095cf8d269f6f855ebd68ce8147fd3a","sha256":"812aa6fe4b37e2037bf14d32e7b4aa64301afea6644282dc0dbcc9c2bace0bb7","video1":"","video2":"A_BqBbx5iLw","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=227&event=137","artist":"utah","notes":"1870","total":"350 (0.187%/note)","comment":"難易度更新:lv50→53","memo":""},
-{"level":"18","title":"アルスノヴァに喝采を","md5":"52619697c99e4e23cb9502126601ed83","sha256":"1cf6824d47508ebe5ff68a5b8cf778d4b7fe31df56aecd8df7457c2f77abe19d","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"MISOBON","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"2626","total":"490 (0.187%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"17","title":"イナリッチ","md5":"be739d77446b767ef34c7314c4357f90","sha256":"3163514b236427b15ee143d16478708319a43c892df5dbcf543933d6788d1bce","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"環はなび","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=141&event=137","artist":"LisicA / movie : 自動車原付 / illust : Orphee","notes":"3461","total":"777 (0.225%/note)","comment":"","memo":"Vol.1 追加譜面"},
-{"level":"18","title":"アルスノヴァに喝采を","md5":"dd746a54d668452f3c986a6e7df1960d","sha256":"168ce04455dc892d86b0f27ca5e55ac8606479d4ec9612aa5658716c5b542800","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"2938","total":"504 (0.172%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"18","title":"アルスノヴァに喝采を","md5":"52619697c99e4e23cb9502126601ed83","sha256":"1cf6824d47508ebe5ff68a5b8cf778d4b7fe31df56aecd8df7457c2f77abe19d","video1":"","video2":"1b-ycyDvJUk","video3":"","state":"","url_diff":"","name_diff":"MISOBON","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"2626","total":"490 (0.187%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"17","title":"イナリッチ","md5":"be739d77446b767ef34c7314c4357f90","sha256":"3163514b236427b15ee143d16478708319a43c892df5dbcf543933d6788d1bce","video1":"","video2":"6P1dPSMTOlI","video3":"","state":"","url_diff":"","name_diff":"環はなび","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=141&event=137","artist":"LisicA / movie : 自動車原付 / illust : Orphee","notes":"3461","total":"777 (0.225%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"18","title":"アルスノヴァに喝采を","md5":"dd746a54d668452f3c986a6e7df1960d","sha256":"168ce04455dc892d86b0f27ca5e55ac8606479d4ec9612aa5658716c5b542800","video1":"","video2":"bPE8xs9eCEE","video3":"","state":"","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=15&event=137","artist":"qfeileadh feat.レゾナンスもえこ / movie:アカイユウ / illust:ねるぞう","notes":"2938","total":"504 (0.172%/note)","comment":"","memo":"Vol.1 追加譜面"},
 {"level":"？","title":"Daydream To Orb [XG]","md5":"04eece21e722236e5a79c623ed76aa23","sha256":"2b2719dbdff47bb263c23ee6c344329f8c40cd5b857a8215b92b0ad4a44f0086","video1":"","video2":"rBizAL89awk","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=152&event=137","artist":"HAROLD / 十錠らぴす","notes":"1899","total":"400 (0.211%/note)","comment":"難易度更新:lv52→99","memo":""},
 {"level":"～","title":"Deep Impact [9K EX]","md5":"edfb8fd5a91921d75ae6c08af853e68e","sha256":"fb4268d1c656f6c243c7a9c3c227d15f7fffe69adc2abf6255af0af8800b8bf6","video1":"","video2":"3Gzs-0GEMfY","video3":"","state":"","url_diff":"","name_diff":"100-200-400 (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=112&event=137","artist":"Sephid","notes":"1254","total":"269.41 (0.215%/note)","comment":"難易度更新:lv50→99","memo":""},
 {"level":"◆","title":"Deep Impact [9K LONG]","md5":"74da0407c688523d3a6c78cb3f74437a","sha256":"1c992ccb6ffe730096b6283c3b5a22bf8b2431ada2189231e654e2090ae8b497","video1":"","video2":"KGsjDaJ-bCg","video3":"","state":"","url_diff":"","name_diff":"佰-貮佰-肆佰 (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=112&event=137","artist":"Sephid","notes":"1140","total":"274.2 (0.241%/note)","comment":"","memo":""},
 {"level":"？","title":"Deep Impact [9K UPPER]","md5":"b08e8a6b3910d3fede22bc4a057866dd","sha256":"9a625594a72f51ae089b92ce24b499f00eeaed48d49c32e4c5a9e65fde7f5983","video1":"","video2":"BKtGoZTg4lo","video3":"","state":"","url_diff":"","name_diff":"100-200-400 (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=112&event=137","artist":"Sephid","notes":"1477","total":"345.47 (0.234%/note)","comment":"難易度更新:lv52→99","memo":""},
+
 {"level":"？","title":"Illuminated By Moonlight [XG]","md5":"5c1d91250d00fd2814d4804a71521457","sha256":"9cce1b4c504848e9dbad30474e18b301f89882db2cad11885221274b5ef849df","video1":"","video2":"euQWUQb3epA","video3":"","state":"","url_diff":"","name_diff":"HAROLD (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=337&event=137","artist":"Lollipop","notes":"1032","total":"280 (0.271%/note)","comment":"難易度更新:lv49→99","memo":""},
+
 {"level":"？","title":"希望の歌 -miracle- [APPEND XG 9.64]","md5":"2978a4a059347c110767614325dc6746","sha256":"59486bed1cfe5ffc161360c1b5f31b4971b241631b4e0acdfccace564ae9c8eb","video1":"","video2":"ShaNI8XgIrg","video3":"","state":"","url_diff":"","name_diff":"DOCTOR L / HAROLD (追加譜面, 最新版の本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1927","total":"444 (0.23%/note)","comment":"難易度更新:lv52→99","memo":""},
 {"level":"？","title":"希望の歌 [XG 8.62]","md5":"874eb62d3d82d5f7c7b7159cba060ae5","sha256":"3e6867fcdff5741f2e2226a941da3aa53160eb7cef2ead6a85cbeb5109b26975","video1":"","video2":"ZZLSj1xBE9Y","video3":"","state":"","url_diff":"","name_diff":"HAROLD (追加譜面, 最新版の本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=402&event=137","artist":"ume feat.kei_iwata","notes":"1451","total":"300 (0.207%/note)","comment":"難易度更新:lv50→99","memo":""},
-{"level":"lv?","title":"玉響サーチライト [Hidden Jewel]","md5":"2e432a8f81afc0578f401fe1760448a4","sha256":"421983abdbdcf1f797f56cc0a42135765438a063f8f127aada9cd12ac85d8875","video1":"","video2":"f-OGnvi40dI","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=19&event=137","artist":"otoshi.b × みゅい & tolz × はしたかさん & NASA","notes":"730","total":"173 (0.237%/note)","comment":"","memo":""}]
+{"level":"lv?","title":"玉響サーチライト [Hidden Jewel]","md5":"2e432a8f81afc0578f401fe1760448a4","sha256":"421983abdbdcf1f797f56cc0a42135765438a063f8f127aada9cd12ac85d8875","video1":"","video2":"f-OGnvi40dI","video3":"","state":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=19&event=137","artist":"otoshi.b × みゅい & tolz × はしたかさん & NASA","notes":"730","total":"173 (0.237%/note)","comment":"","memo":""},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"level":"15","title":"迦鸞禍羅 ～からから～","md5":"1936afc3d49261eb724ed7d3e2e9aa14","sha256":"3618c0e5ae3672e1dfe209a6e9a20f29c60d32f93513290537b1c65bd6aa4ce4","video1":"","video2":"","video3":"","state":"1","url_diff":"","name_diff":"弩津使威","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=53&event=137","artist":"うまるつふり","notes":"2085","total":"343 (0.165%/note)","comment":"難易度更新:lv51→52","memo":"Vol.1 追加譜面"},
+{"level":"5","title":"Wit's biz [Vol.2 譜面修正あり]","md5":"3c5b0051aff4adff7ccefb82ab8888dc","sha256":"","video1":"","video2":"","video3":"","state":"6","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=384&event=137","artist":"Sobrem / mov.Espitz","notes":"1430","total":"402 (0.281%/note)","comment":"","memo":"Vol.1 追加譜面"},
+{"level":"14","title":"Wit's biz [Vol.2 譜面修正あり]","md5":"c2ce90e377bdfb0f7304635211d4185a","sha256":"","video1":"","video2":"","video3":"","state":"6","url_diff":"","name_diff":"Dossy","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=384&event=137","artist":"Sobrem / mov.Espitz","notes":"1939","total":"316 (0.163%/note)","comment":"","memo":"Vol.1 追加譜面"},
+
+
+
+{"level":"6","title":"Heathenism dogma [LR2IR登録不可]","md5":"f3f223c7326aced53d63207b88211c3f","sha256":"751349872ec44b4ddd15bfc291030c240b5e6bb48415015f6359cf4c4860a0c7","video1":"","video2":"","video3":"","state":"","url_diff":"","name_diff":"まてぃ (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=137","artist":"Sakamiya feat.nayuta / mov:tolz img:ttv","notes":"1433","total":"335.9 (0.234%/note)","comment":"","memo":""},
+{"level":"9","title":"Heathenism dogma [LR2IR登録不可]","md5":"a4c65596fbb404861504710990f18a05","sha256":"bf5a775b778acf79cec10083d51291b8451bd1a248068490a4354d27acce59bf","video1":"","video2":"","video3":"","state":"","url_diff":"","name_diff":"まてぃ (本体に同梱)","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=262&event=137","artist":"Sakamiya feat.nayuta / mov:tolz img:ttv","notes":"1536","total":"360 (0.234%/note)","comment":"","memo":""}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
