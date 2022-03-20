@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja"><head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>M“ïˆÕ“x•\(2nd)</title>
+	<title>çš¿é›£æ˜“åº¦è¡¨(2nd)</title>
 	<meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -43,7 +43,7 @@ a:active{
 
 <script language="javascript" type="text/javascript">
 <!--
-// ƒf[ƒ^‚Ì“Ç‚İ‚İ
+// ãƒ‡ãƒ¼ã‚¿ã®èª­ã¿è¾¼ã¿
 function getsc() {
 	var m = new Date().getMonth();
 	if (m%2==1){
@@ -55,10 +55,10 @@ function getsc() {
 	}
 }
 
-// ƒNƒbƒL[‚Ì“Ç‚İ‚İ
+// ã‚¯ãƒƒã‚­ãƒ¼ã®èª­ã¿è¾¼ã¿
 function loadCookie(name) {
   var bData = "";
-  var cName = name + "~"; // ƒNƒbƒL[–¼
+  var cName = name + "~"; // ã‚¯ãƒƒã‚­ãƒ¼å
   var cCookie = document.cookie+";";
   var str = cCookie.indexOf(cName);
   if(str != -1) {
@@ -68,26 +68,26 @@ function loadCookie(name) {
   return bData;
 }
 
-// ƒNƒbƒL[‚Ì‘‚«‚İ
+// ã‚¯ãƒƒã‚­ãƒ¼ã®æ›¸ãè¾¼ã¿
 function saveCookie(name,dValue) {
-  var cName = name + "~"; // ƒNƒbƒL[–¼
-  var cDays = 365; // ƒf[ƒ^‚Ì•Û‘¶“ú”
+  var cName = name + "~"; // ã‚¯ãƒƒã‚­ãƒ¼å
+  var cDays = 365; // ãƒ‡ãƒ¼ã‚¿ã®ä¿å­˜æ—¥æ•°
   var setPre = new Date();
   setPre.setTime(setPre.getTime() + (cDays*1000*24*3600));
   var prd = setPre.toGMTString();
   document.cookie = cName + escape(dValue) + ";expires=" + prd;
 }
-// ƒNƒŠƒAƒf[ƒ^‚Ì‚Ìíœ
+// ã‚¯ãƒªã‚¢ãƒ‡ãƒ¼ã‚¿ã®ã®å‰Šé™¤
 function deletedt() {
-  cName = "tmpdt~"; // íœ‚·‚éƒNƒbƒL[–¼
+  cName = "tmpdt~"; // å‰Šé™¤ã™ã‚‹ã‚¯ãƒƒã‚­ãƒ¼å
   dTime = new Date();
   dTime.setYear(dTime.getYear() - 1);
   document.cookie = cName + ";expires=" + dTime.toGMTString();
 }
 
-var CookieValue = new Array(2000); //* ŒÂ‚Ìƒf[ƒ^‚ğ•Û‘¶‚Å‚«‚é
+var CookieValue = new Array(2000); //* å€‹ã®ãƒ‡ãƒ¼ã‚¿ã‚’ä¿å­˜ã§ãã‚‹
 
-//CookieValue ‚Ì‰Šú‰» ‚Æ“Ç‚İ‚İAƒ{ƒ^ƒ“‚Ì onclick ƒCƒxƒ“ƒgİ’è
+//CookieValue ã®åˆæœŸåŒ– ã¨èª­ã¿è¾¼ã¿ã€ãƒœã‚¿ãƒ³ã® onclick ã‚¤ãƒ™ãƒ³ãƒˆè¨­å®š
 function initCookieValue() {
   
   for (var i=0;i < CookieValue.length;i++) CookieValue[i] = 0;
@@ -122,14 +122,14 @@ function initCookieValue() {
         }
         
         
-@@@@else if (o.className == "tr_ok")
+ã€€ã€€ã€€ã€€else if (o.className == "tr_ok")
         {
         o.className = "tr_hd";
         CookieValue[idx] = 3;
 
         
         }
-@@@@else if (o.className == "tr_hd")
+ã€€ã€€ã€€ã€€else if (o.className == "tr_hd")
         {
         o.className = "tr_fc";
         CookieValue[idx] = 4;
@@ -171,7 +171,7 @@ function backupCookie() {
 -->
 
 </script>
-</head><body onload="initCookieValue()&amp;getsc()" style="padding-top: 420px !important;" text="white" bgcolor="#000000"><!--  ”wŒiF‚Æ‚©‚»‚ñ‚È‚ñ -->
+</head><body onload="initCookieValue()&amp;getsc()" style="padding-top: 420px !important;" text="white" bgcolor="#000000"><!--  èƒŒæ™¯è‰²ã¨ã‹ãã‚“ãªã‚“ -->
 <!-- St-HP-H -->
 
  
@@ -223,21 +223,21 @@ var fc2footerparam = 'charset=' + encodeURIComponent(document.charset ? document
 var fc2footertag = '<' + 'script src="//vip.chps-api.fc2.com/apis/footer/?' + fc2footerparam + '" charset="UTF-8"><' + '/script>';
 document.write(fc2footertag);
 //--></script><script src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/a" charset="UTF-8"></script><script type="text/javascript">var _userPageInfo = {"fc2_footer_pos":"1","inactive_header_ad":"<iframe src='https:\/\/media5.fc2.com\/1187\/' style='width:300px;height:250px;border:none;' scrolling='no'><\/iframe>\r\n\r\n<!-- FC2\u7ba1\u7406\u7528 -->\r\n<img src=\"https:\/\/media.fc2.com\/counter_img.php?id=1781\" width=\"1\" height=\"1\">\r\n<!-- FC2\u7ba1\u7406\u7528 -->\r\n","inactive_footer_ad":"<iframe src='https:\/\/media5.fc2.com\/1188\/' style='width:728px;height:90px;border:none;' scrolling='no'><\/iframe>\r\n\r\n<!-- FC2\u7ba1\u7406\u7528 -->\r\n<img src=\"https:\/\/media.fc2.com\/counter_img.php?id=1782\" width=\"1\" height=\"1\">\r\n<!-- FC2\u7ba1\u7406\u7528 -->","account_name":"minddnim","external_domain":null};
-</script><script src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_web_user_page.js" charset="UTF-8"></script><div id="fc2_footer" style="text-align: center; width: 100%; line-height: 14px;"><span style="font-size:12px;"><br><a target="_blank" href="https://web.fc2.com/">Powered by FC2ƒz[ƒ€ƒy[ƒW</a></span></div><div id="fc2_ad_box" style="text-align: center; width: 100%; position: absolute; top: 8px; z-index: 9998;"><div id="fc2_ad_container" style="border: 1px solid gray; text-align: left; margin: 0px auto; width: 320px; background-color: white; color: black;"><div title="close ads" style="text-align: right; margin: 4px; position: relative; z-index: 9999;"><img id="fc2_web_header_ad_close" style="cursor:pointer;" src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_header_bnr_close.gif"></div><div id="adContainer" style="margin: 1em; text-align: left; text-indent: 0px; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-family: sans-serif;"><div id="ad_script_box">
+</script><script src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_web_user_page.js" charset="UTF-8"></script><div id="fc2_footer" style="text-align: center; width: 100%; line-height: 14px;"><span style="font-size:12px;"><br><a target="_blank" href="https://web.fc2.com/">Powered by FC2ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸</a></span></div><div id="fc2_ad_box" style="text-align: center; width: 100%; position: absolute; top: 8px; z-index: 9998;"><div id="fc2_ad_container" style="border: 1px solid gray; text-align: left; margin: 0px auto; width: 320px; background-color: white; color: black;"><div title="close ads" style="text-align: right; margin: 4px; position: relative; z-index: 9999;"><img id="fc2_web_header_ad_close" style="cursor:pointer;" src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_header_bnr_close.gif"></div><div id="adContainer" style="margin: 1em; text-align: left; text-indent: 0px; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-family: sans-serif;"><div id="ad_script_box">
 <iframe src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/a.htm" style="width:300px;height:250px;border:none;" scrolling="no"></iframe>
 
-<!-- FC2ŠÇ——p -->
+<!-- FC2ç®¡ç†ç”¨ -->
 <img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/counter_img_002.gif" width="1" height="1">
-<!-- FC2ŠÇ——p -->
+<!-- FC2ç®¡ç†ç”¨ -->
 
-</div></div><div style="margin: 0px 0px 1em 2em; font-style: normal; font-variant: normal; font-weight: normal; text-indent: 0; letter-spacing: 0; word-spacing: normal; font-size: 10px; line-height: normal; font-family: sans-serif;"><span style="font-size: 10px;">‚±‚ÌL‚Í3ƒ–ŒˆÈãXV‚ª‚È‚¢ê‡‚É•\¦‚³‚ê‚Ü‚·B<br>ƒz[ƒ€ƒy[ƒW‚ÌXVŒãA24ŠÔˆÈ“à‚É•\¦‚³‚ê‚È‚­‚È‚è‚Ü‚·B</span></div></div></div><div id="fc2_bottom_bnr" style="position: fixed; z-index: 10000; left: 0px; bottom: 0px; width: 100%; display: block; background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%; top: auto;"><div id="fc2_bottom_bnr_img" style="display:block;width:728px;height:94px;margin:0px auto;padding:10px 0px 14px;">
+</div></div><div style="margin: 0px 0px 1em 2em; font-style: normal; font-variant: normal; font-weight: normal; text-indent: 0; letter-spacing: 0; word-spacing: normal; font-size: 10px; line-height: normal; font-family: sans-serif;"><span style="font-size: 10px;">ã“ã®åºƒå‘Šã¯3ãƒ¶æœˆä»¥ä¸Šæ›´æ–°ãŒãªã„å ´åˆã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚<br>ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®æ›´æ–°å¾Œã€24æ™‚é–“ä»¥å†…ã«è¡¨ç¤ºã•ã‚Œãªããªã‚Šã¾ã™ã€‚</span></div></div></div><div id="fc2_bottom_bnr" style="position: fixed; z-index: 10000; left: 0px; bottom: 0px; width: 100%; display: block; background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0%; top: auto;"><div id="fc2_bottom_bnr_img" style="display:block;width:728px;height:94px;margin:0px auto;padding:10px 0px 14px;">
 <iframe src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/a.htm" style="width:728px;height:90px;border:none;" scrolling="no"></iframe>
 
-<!-- FC2ŠÇ——p -->
+<!-- FC2ç®¡ç†ç”¨ -->
 <img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/counter_img.gif" width="1" height="1">
-<!-- FC2ŠÇ——p -->
-<div style="color:#C0C0C0;text-align:center;font-size:9px;margin:0px;padding:2px 0px 0px;">‚±‚ÌL‚Í3ƒ–ŒˆÈãXV‚ª‚È‚¢ê‡‚É•\¦‚³‚ê‚Ü‚·Bƒz[ƒ€ƒy[ƒW‚ÌXVŒãA24ŠÔˆÈ“à‚É•\¦‚³‚ê‚È‚­‚È‚è‚Ü‚·B</div></div><span id="fc2_bottom_bnr_close" style="cursor:pointer;display:block;position:absolute;padding:5px;top:0;right:0;width:20px;height:20px;opacity:0.8;max-width:100%;max-height:100%;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_bottom_bnr_close.png" style="border:none;width:20px;height:20px;max-width: 100%;" width="20" height="20"></span><script type="text/javascript">(function(w, d) {var area = d.getElementById('fc2_bottom_bnr'),areaStyle = area.style;var getScrollMax = function() { return d.documentElement.getBoundingClientRect().height - w.innerHeight - 1; };var getScrollCurrent = function() { return d.documentElement.scrollTop || d.body.scrollTop; };var overlayPosition = function() {if (getScrollMax() > getScrollCurrent()) {areaStyle.bottom = 0;areaStyle.top = 'auto';} else {areaStyle.bottom = 'auto';areaStyle.top = 0;}};var closeBtn = d.getElementById('fc2_bottom_bnr_close'),close = function() { area.style.display = 'none'; };if (w.addEventListener) {w.addEventListener('resize', overlayPosition, false);w.addEventListener('scroll', overlayPosition, false);closeBtn.addEventListener('click', close, false);} else {w.attachEvent('onresize', overlayPosition);w.attachEvent('onscroll', overlayPosition);closeBtn.attachEvent('onclick', close);}})(window, document);</script></div>
-<style>div#sys1_close {text-align: right; left: 0; right:0; top: 370px; position: absolute; width: 320px; margin: auto; z-index: 9999} div#sys1 {left: 0;right: 0;top: 370px;margin: auto;width: 320px;position: absolute; z-index: 9990}</style><div id="sys1_close"><img id="inactive_text_ad_close" style="cursor:pointer; margin: 4px" src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_header_bnr_close.gif"></div><script>document.getElementById("inactive_text_ad_close").onclick = function () { document.getElementById("sys1").style.display = "none"; document.getElementById("sys1_close").style.display = "none";}</script><style>.sys_font1 a{font: 12px Verdana;text-decoration:underline;color: #0000FF;}.sys_font1 a:hover{text-decoration:underline;}#sys1{background-color: #F0F0F0;border: #F0F0F0 1px solid ;position:relative;display: inline-block;}</style><div id="sys1" class="sys_font1" style="background-color: rgb(240, 240, 240);"><a target="_blank" href="https://textad.net/cgi-bin/redir.cgi?uid=12572&amp;bid=1&amp;site=https://contents.fc2.com/?tag=TXpjMk1EY3dOak09&amp;dref=textad_general" style="display: block;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/668f540669179556b8cfb8e5a9d647f4.png" alt="ƒfƒWƒ^ƒ‹¤•i‚Ì”„”ƒ‚ª’N‚Å‚àŠÈ’P‚ÉI" width="320" height="50"></a><a target="_blank" href="https://textad.net/cgi-bin/redir.cgi?uid=12572&amp;bid=3&amp;site=https://web.fc2.com/fc2html/wordpress.html" style="display: none;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/eb91f8f1e7e9d94ef76cd0025113bfc3.png" alt="WordPress‚ªg‚¦‚é–³—¿‚ÌƒŒƒ“ƒ^ƒ‹ƒT[ƒo[" width="320" height="50"></a><a target="_blank" href="https://textad.net/cgi-bin/redir.cgi?uid=12572&amp;bid=5&amp;site=http://domain.fc2.com/ex/" style="display: none;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/a878e5f07a336ab7afb0c8207a4fed9d.png" alt="‚©‚ñ‚½‚ñ•ÏŠ·JPƒhƒƒCƒ“‚ªAÅ‘å2”NŠÔ–³—¿" width="320" height="50"></a></div><script language="javascript" src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/manager.cgi" charset="utf-8"></script>
+<!-- FC2ç®¡ç†ç”¨ -->
+<div style="color:#C0C0C0;text-align:center;font-size:9px;margin:0px;padding:2px 0px 0px;">ã“ã®åºƒå‘Šã¯3ãƒ¶æœˆä»¥ä¸Šæ›´æ–°ãŒãªã„å ´åˆã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸ã®æ›´æ–°å¾Œã€24æ™‚é–“ä»¥å†…ã«è¡¨ç¤ºã•ã‚Œãªããªã‚Šã¾ã™ã€‚</div></div><span id="fc2_bottom_bnr_close" style="cursor:pointer;display:block;position:absolute;padding:5px;top:0;right:0;width:20px;height:20px;opacity:0.8;max-width:100%;max-height:100%;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_bottom_bnr_close.png" style="border:none;width:20px;height:20px;max-width: 100%;" width="20" height="20"></span><script type="text/javascript">(function(w, d) {var area = d.getElementById('fc2_bottom_bnr'),areaStyle = area.style;var getScrollMax = function() { return d.documentElement.getBoundingClientRect().height - w.innerHeight - 1; };var getScrollCurrent = function() { return d.documentElement.scrollTop || d.body.scrollTop; };var overlayPosition = function() {if (getScrollMax() > getScrollCurrent()) {areaStyle.bottom = 0;areaStyle.top = 'auto';} else {areaStyle.bottom = 'auto';areaStyle.top = 0;}};var closeBtn = d.getElementById('fc2_bottom_bnr_close'),close = function() { area.style.display = 'none'; };if (w.addEventListener) {w.addEventListener('resize', overlayPosition, false);w.addEventListener('scroll', overlayPosition, false);closeBtn.addEventListener('click', close, false);} else {w.attachEvent('onresize', overlayPosition);w.attachEvent('onscroll', overlayPosition);closeBtn.attachEvent('onclick', close);}})(window, document);</script></div>
+<style>div#sys1_close {text-align: right; left: 0; right:0; top: 370px; position: absolute; width: 320px; margin: auto; z-index: 9999} div#sys1 {left: 0;right: 0;top: 370px;margin: auto;width: 320px;position: absolute; z-index: 9990}</style><div id="sys1_close"><img id="inactive_text_ad_close" style="cursor:pointer; margin: 4px" src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/fc2_header_bnr_close.gif"></div><script>document.getElementById("inactive_text_ad_close").onclick = function () { document.getElementById("sys1").style.display = "none"; document.getElementById("sys1_close").style.display = "none";}</script><style>.sys_font1 a{font: 12px Verdana;text-decoration:underline;color: #0000FF;}.sys_font1 a:hover{text-decoration:underline;}#sys1{background-color: #F0F0F0;border: #F0F0F0 1px solid ;position:relative;display: inline-block;}</style><div id="sys1" class="sys_font1" style="background-color: rgb(240, 240, 240);"><a target="_blank" href="https://textad.net/cgi-bin/redir.cgi?uid=12572&amp;bid=1&amp;site=https://contents.fc2.com/?tag=TXpjMk1EY3dOak09&amp;dref=textad_general" style="display: block;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/668f540669179556b8cfb8e5a9d647f4.png" alt="ãƒ‡ã‚¸ã‚¿ãƒ«å•†å“ã®å£²è²·ãŒèª°ã§ã‚‚ç°¡å˜ã«ï¼" width="320" height="50"></a><a target="_blank" href="https://textad.net/cgi-bin/redir.cgi?uid=12572&amp;bid=3&amp;site=https://web.fc2.com/fc2html/wordpress.html" style="display: none;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/eb91f8f1e7e9d94ef76cd0025113bfc3.png" alt="WordPressãŒä½¿ãˆã‚‹ç„¡æ–™ã®ãƒ¬ãƒ³ã‚¿ãƒ«ã‚µãƒ¼ãƒãƒ¼" width="320" height="50"></a><a target="_blank" href="https://textad.net/cgi-bin/redir.cgi?uid=12572&amp;bid=5&amp;site=http://domain.fc2.com/ex/" style="display: none;"><img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/a878e5f07a336ab7afb0c8207a4fed9d.png" alt="ã‹ã‚“ãŸã‚“å¤‰æ›JPãƒ‰ãƒ¡ã‚¤ãƒ³ãŒã€æœ€å¤§2å¹´é–“ç„¡æ–™" width="320" height="50"></a></div><script language="javascript" src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/manager.cgi" charset="utf-8"></script>
 
 <!-- FC2, inc.-->
 <img src="%E7%9A%BF%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8(2nd)_files/counter_img_003.gif" style="visibility:hidden" alt="inserted by FC2 system" width="0" height="0">
@@ -245,16 +245,16 @@ document.write(fc2footertag);
 
 
 <font color="white">
-“ïˆÕ“x•\‚Ì’è‹`<br>
+é›£æ˜“åº¦è¡¨ã®å®šç¾©<br>
 <br>
--1@EEE@–{‰Æ™7`™9<br>
-0@EEE@–{‰Æ™10`™11<br>
-1ˆÈã@EEE@–{‰Æ™12ˆÈã<br>
+â—-1ã€€ãƒ»ãƒ»ãƒ»ã€€æœ¬å®¶â˜†7ï½â˜†9<br>
+â—0ã€€ãƒ»ãƒ»ãƒ»ã€€æœ¬å®¶â˜†10ï½â˜†11<br>
+â—1ä»¥ä¸Šã€€ãƒ»ãƒ»ãƒ»ã€€æœ¬å®¶â˜†12ä»¥ä¸Š<br>
 </font>
 
 <table id="table1" cellspacing="3" align="center">
 <tbody><tr style="color:white" height="20" bgcolor="#070007">
-		<td align="center"></td>
+		<td align="center">â—</td>
 		<td></td>
 		<td align="center">LR</td>
 		<td align="center">music title</td>
@@ -265,23 +265,23 @@ document.write(fc2footertag);
   <script language="javascript" type="text/javascript">
 <!--//
 var mname = [
-[1,"-1",
-"M“Š‚°ƒvƒŠƒ“ƒZƒX[NORMAL]",
+[1,"â—-1",
+"çš¿æŠ•ã’ãƒ—ãƒªãƒ³ã‚»ã‚¹[NORMAL]",
 "158254",
-"<a href='http://www.geocities.jp/dsks5456/osg.html'>‚¨‰º‚°</a>",
+"<a href='http://www.geocities.jp/dsks5456/osg.html'>ãŠä¸‹ã’</a>",
 "",
 "",
 "872727c4dc8116897bfd2316dd8a0389",
 ],
-[2,"-1",
-"‚¨M—ûK‹È [ì•i]",
+[2,"â—-1",
+"ãŠçš¿ç·´ç¿’æ›² [è©¦ä½œå“]",
 "196644",
-"<a href='http://www.nicovideo.jp/watch/sm24717065'>‰pŒŸ‚S‹‰</a>",
+"<a href='http://www.nicovideo.jp/watch/sm24717065'>è‹±æ¤œï¼”ç´š</a>",
 "",
 "",
 "3d3d5255905b468abe944bd17699e1f2",
 ],
-[3,"-1",
+[3,"â—-1",
 "naughty girl@Excellency's Palace Hyper",
 "191144",
 "<a href='http://www.nicovideo.jp/watch/sm24015862'>DJ Haruka MAD Izm*</a>",
@@ -289,79 +289,79 @@ var mname = [
 "",
 "aa47eec9e2483891f85f116ad5bc481e",
 ],
-[4,"0",
-"LOVE™BEAM (orange summer mix) -NAGTHER@M-",
+[4,"â—0",
+"LOVEâ˜†BEAM (orange summer mix) -NAGTHERã€€çš¿-",
 "181385",
 "<a href='http://nothing.sh/~manbow/event/event.cgi?action=More_def&num=3&event=33'>honey princess</a>",
-"<a href='http://ux.getuploader.com/nagsa_bms/download/1/sara_love_orange.zip'>…‹´‚È‚®‚³</a>",
+"<a href='http://ux.getuploader.com/nagsa_bms/download/1/sara_love_orange.zip'>æ°´æ©‹ãªãã•</a>",
 "",
 "a2f6eaa1000a1825fcc02c8a2dbc18a6",
 ],
-[5,"0",
-"Poppin' Shower -NAGTHER M-",
+[5,"â—0",
+"Poppin' Shower -NAGTHER çš¿-",
 "182646",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=239&event=74'>P*Light</a>",
-"<a href='http://ux.getuploader.com/nagsa_bms/download/3/sara_ps.zip'>…‹´‚È‚®‚³</a>",
+"<a href='http://ux.getuploader.com/nagsa_bms/download/3/sara_ps.zip'>æ°´æ©‹ãªãã•</a>",
 "",
 "9f21e4795e76b927f40a002763ea53a5",
 ],
-[6,"0",
-"belly dance (Consistently_Drinkin_remix) [E-M]",
+[6,"â—0",
+"belly dance (Consistently_Drinkin_remix) [E-çš¿]",
 "182661",
 "<a href='http://www1.axfc.net/uploader/so/3203155.zip'>Kotira Sample</a>",
-"<a href='http://www1.axfc.net/u/3203117.zip'>‚¢‚¢ŒC</a>",
+"<a href='http://www1.axfc.net/u/3203117.zip'>ã„ã„é´</a>",
 "",
 "81ab1dddee58699c52e474d1962f5fc6",
 ],
-[7,"0",
-"ƒtƒ@ƒ“ƒL[ƒzƒbƒg [7KEYS HYPER]",
+[7,"â—0",
+"ãƒ•ã‚¡ãƒ³ã‚­ãƒ¼ãƒ›ãƒƒãƒˆ [7KEYS HYPER]",
 "168524",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=464&event=88'>BACO + kazpulse</a>",
 "",
 "BOF2013 TEAM : Cutting Nation",
 "45400e292f7e1f35f5c66eefdb0fd19d",
 ],
-[8,"0",
+[8,"â—0",
 "Total Eclipse of the Sun [SP Scratch.ver Normal]",
 "198464",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=96'>-45</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Total_Eclipse_Scr_N.bms</a>",
-"G2R2014 TEAM : ˜J“­”ª†",
+"G2R2014 TEAM : åŠ´åƒå…«å·",
 "0885845f9067ef127cafe48a8fc7bd1b",
 ],
-[9,"0",
-"ƒ_ƒCƒiƒ‚‚Æ”’’‹–² (GLITCHHOP MIX) [SP Scratch.ver]",
+[9,"â—0",
+"ãƒ€ã‚¤ãƒŠãƒ¢ã¨ç™½æ˜¼å¤¢ (GLITCHHOP MIX) [SP Scratch.ver]",
 "198493",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=436&event=88'>kju8 + zen + Scarfaith</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Dynamo_H_SP_Scr.bms</a>",
-"BOF2013 TEAM : ƒƒbƒvƒCƒ„[ƒY vs. STR@‘ã—UP",
+"BOF2013 TEAM : ãƒ­ãƒƒãƒ—ã‚¤ãƒ¤ãƒ¼ã‚º vs. STRã€€ä»£ç†UP",
 "820004612007ca3f3b5dd17aa1f1712d",
 ],
-[10,"0",
+[10,"â—0",
 "Recollections of ageHa in 2004 [SP Scratch.ver]",
 "198709",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=60&event=96'>U-hey</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Recollections_Scr.bms</a>",
-"G2R2014 TEAM : ’@‚¢‚Ä—V‚ñ‚ÅŠç–Êƒgƒ‰ƒ“ƒUƒ€",
+"G2R2014 TEAM : å©ã„ã¦éŠã‚“ã§é¡”é¢ãƒˆãƒ©ãƒ³ã‚¶ãƒ ",
 "e7060267ec5bc4bf7064483f17f84bf9",
 ],
-[11,"0",
-"ƒRƒIƒŠƒmƒoƒ‰ [SCRATCHE DANGEROUS]",
+[11,"â—0",
+"ã‚³ã‚ªãƒªãƒãƒãƒ© [SCRATCHE DANGEROUS]",
 "129",
 "<a href='http://www.mediafire.com/download/gny1kp66pwd4x53/%5Bnaotyu-%5Dkoorinobara.zip'>naotyu- feat. Miyu</a>",
 "",
 "",
 "a81096c5160f406c9cec45b094e8c6d7",
 ],
-[12,"0",
-"‚¤‚§`‚é™‚­‚ç‚Á‚µ‚á`2chu! [SP Scratch.ver]",
+[12,"â—0",
+"ã†ã‰ï½ã‚‹â˜†ãã‚‰ã£ã—ã‚ƒï½2chu! [SP Scratch.ver]",
 "198990",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=277&event=96'>ƒƒPƒAƒj@iƒCƒ‰ƒXƒgEƒNƒj</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=277&event=96'>ãƒ¯ã‚±ã‚¢ãƒ‹ã€€ï¼ˆã‚¤ãƒ©ã‚¹ãƒˆãƒ»ã‚¯ãƒ­ï¼‰</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>wall2_hyper_Scr.bms</a>",
-"G2R2014 TEAM : ‚·‚Æ‚ë[‚Í‚Á‚Æ",
+"G2R2014 TEAM : ã™ã¨ã‚ãƒ¼ã¯ã£ã¨",
 "21ad5555b6e9aebbc7ad95ebbab1a611",
 ],
-[13,"0",
+[13,"â—0",
 "F13 [SP Scratch.ver Normal]",
 "199540",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=52&event=96'>Judah</a>",
@@ -369,7 +369,7 @@ var mname = [
 "G2R2014 TEAM : Judecca",
 "45b4dc4124e2837d5ec87934903479ad",
 ],
-[14,"0",
+[14,"â—0",
 "FALL THE BOMB [hyper]",
 "140567",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=10&event=83'>dge-nesis SPThx W.CROW</a>",
@@ -377,15 +377,15 @@ var mname = [
 "",
 "e188aa9486998d1a5082d75c097816bf",
 ],
-[15,"0",
+[15,"â—0",
 "Burn Out, Fire!! [SP Scratch.ver]",
 "198509",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=379&event=88'>klavistr (movie : o‘O)</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=379&event=88'>klavistr (movie : å‡ºå‰)</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Burn_Out_Scr.bme</a>",
-"BOF2013 TEAM : TEAM HARD TRANCE -BUCHIAGE-@‘ã—UP",
+"BOF2013 TEAM : TEAM HARD TRANCE -BUCHIAGE-ã€€ä»£ç†UP",
 "4bd5a57c8cb9e6aac9900626c20ca575",
 ],
-[16,"<font color='red'>0</font>",
+[16,"<font color='red'>â—0</font>",
 "TETRIS B-TYPE [SP Scratch.ver Normal]",
 "200054",
 "<a href='http://www.nicovideo.jp/watch/sm25025632'>9-zen</a>",
@@ -393,31 +393,31 @@ var mname = [
 "",
 "820c3ee5f0925c350a1dfc95a29ded4d",
 ],
-[17,"1",
+[17,"â—1",
 "It's 'alice' dream[S_hinather]",
 "183674",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>polysha</a>",
-"<a href='http://flowermaster.web.fc2.com/'>•‘—</a>",
+"<a href='http://flowermaster.web.fc2.com/'>èˆé››</a>",
 "",
 "413b575ee11c6a8a070e2c0577da9047",
 ],
-[18,"1",
-"AquaMarine[7key_KASATHER]",
+[18,"â—1",
+"AquaMarine[7key_KASATHERâ—]",
 "183459",
 "<a href='https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!173'>Floatage</a>",
 "<a href='https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
 "",
 "1c7b34e1969ffbc102a9b29e2d8f86bd",
 ],
-[19,"1",
+[19,"â—1",
 "theme of Maia [Fire Ball]",
 "183879",
-"<a href='http://nekomimi.name/'>‚Ë‚±‚İ‚İ–‚–@g‚¢</a>",
+"<a href='http://nekomimi.name/'>ã­ã“ã¿ã¿é­”æ³•ä½¿ã„</a>",
 "<a href='http://ux.getuploader.com/sabun_/download/32/_nm19_E.zip'>DJ.END</a>",
 "",
 "41e48edc00e05b5635ba3d3ce86c1fc2",
 ],
-[20,"1",
+[20,"â—1",
 "naughty girl@Excellency's Palace Another",
 "191139",
 "<a href='http://www.nicovideo.jp/watch/sm24015862'>DJ Haruka MAD Izm*</a>",
@@ -425,15 +425,15 @@ var mname = [
 "",
 "9b1aad42e6faf6882bfd1361dd77a94c",
 ],
-[21,"1",
-"ice valley 'beyond the searoad' [FREEZE@KAMABOKO]",
+[21,"â—1",
+"ice valley 'beyond the searoad' [FREEZEã€€KAMABOKO]",
 "189495",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=38&event=74'>maki</a>",
 "<a href='http://www.nicovideo.jp/watch/sm23797032'>ZEN-SOQ</a>",
-"‘ã—UP",
+"ä»£ç†UP",
 "2a04edbec1b721e67e023f31d892bed8",
 ],
-[22,"1",
+[22,"â—1",
 "Back 2 Oldskool [SP Scratch.ver]",
 "198710",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=138&event=96'>vorbis</a>",
@@ -441,7 +441,7 @@ var mname = [
 "G2R2014 TEAM : Urutora Electronic Corporation",
 "e9f574df5c3b8945fdb19f78569e8748",
 ],
-[23,"1",
+[23,"â—1",
 "The Typewriter -Yoisaraeasy-",
 "194030",
 "<a href='http://onedrive.live.com/redir?resid=3F2FA32F01292CDF%21119'>Leroy Anderson</a>",
@@ -449,7 +449,7 @@ var mname = [
 "",
 "c27648e170f545877eadacf6427e7324",
 ],
-[24,"1",
+[24,"â—1",
 "YUGAMINAI LOVE [7KEY HYPER]",
 "121986",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=76'>kinohito</a>",
@@ -457,23 +457,23 @@ var mname = [
 "",
 "ecd611c624dc6300617a3979e0f27170",
 ],
-[25,"1",
+[25,"â—1",
 "Bitter and Sweet -Yoisaraeasy-",
 "194056",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=329&event=83'>Alfort</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>\˜ZM–é</a>",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>åå…­çš¿å¤œ</a>",
 "up0036",
 "5827beff9b849b3a050fedac64f8ef20",
 ],
-[26,"1",
+[26,"â—1",
 "conflict [Caesar]",
 "146627",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=57&event=74'>siromaru + cranky</a>",
-"<a href='http://absolute.pv.land.to/uploader/all.html?1416620270'>‚µ[</a>",
+"<a href='http://absolute.pv.land.to/uploader/all.html?1416620270'>ã—ãƒ¼</a>",
 "up3077",
 "af248c48b7ecd1931bed175b4c80c755",
 ],
-[27,"1",
+[27,"â—1",
 "STAGER [for HEALIN]",
 "182944",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=356&event=88'>Ras</a>",
@@ -481,23 +481,23 @@ var mname = [
 "",
 "28b9df81a73df3a9cce98e13fdffe38b",
 ],
-[28,"1",
+[28,"â—1",
 "funny crasher (Shift)",
 "190595",
 "<a href='http://estish.nobody.jp/'>TOMA</a>",
-"<a href='http://www.nicovideo.jp/watch/sm23940041'>‘¼l</a>",
-"Œ´‹È‚ÍuŒÃ‚¢‚Ì‚Æ‚©‚ÍSkyDrive‚Év‚ÌƒŠƒ“ƒNæ‚Ìuest049_toma_funny_crasher.zipv",
+"<a href='http://www.nicovideo.jp/watch/sm23940041'>ä»–äºº</a>",
+"åŸæ›²ã¯ã€Œå¤ã„ã®ã¨ã‹ã¯SkyDriveã«ã€ã®ãƒªãƒ³ã‚¯å…ˆã®ã€Œest049_toma_funny_crasher.zipã€",
 "f75e2b23fd6cc6dc82b1f5ea28afc11c",
 ],
-[29,"2",
-"LOVE™BEAM (orange summer mix) -NAGTHER+ M-",
+[29,"â—2",
+"LOVEâ˜†BEAM (orange summer mix) -NAGTHER+ çš¿-",
 "182770",
 "<a href='http://nothing.sh/~manbow/event/event.cgi?action=More_def&num=3&event=33'>honey princess</a>",
-"<a href='http://ux.getuploader.com/nagsa_bms/download/5/sara_love_orange_BLACK.zip'>…‹´‚È‚®‚³</a>",
+"<a href='http://ux.getuploader.com/nagsa_bms/download/5/sara_love_orange_BLACK.zip'>æ°´æ©‹ãªãã•</a>",
 "",
 "2c1fd9cd9912db67f15785ad86ee43e1",
 ],
-[30,"2",
+[30,"â—2",
 "DJ BATTLE theme:PARANOiA [4 IIDX Player]",
 "183473",
 "<a href='http://dcut.s165.xrea.com/'>Remixed by Octa the B.G.</a>",
@@ -505,47 +505,47 @@ var mname = [
 "",
 "3d813fae8e28c829dec5fa8d6971f99c",
 ],
-[31,"2",
-"‰ñ‚·ƒVƒ“ƒoƒ‹ [SP Scratch.ver]",
+[31,"â—2",
+"å›ã™ã‚·ãƒ³ãƒãƒ« [SP Scratch.ver]",
 "198510",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=265&event=88'>DJ Mawas Cymbal(CV:‚©‚ä‚«)</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=265&event=88'>DJ Mawas Cymbal(CV:ã‹ã‚†ã)</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>mawasu_Scr.bms</a>",
-"BOF2013 TEAM : ‰ñ‚·ƒVƒ“ƒoƒ‹",
+"BOF2013 TEAM : å›ã™ã‚·ãƒ³ãƒãƒ«",
 "94a4e9aeb457b5c8c714d14b2a618f9b",
 ],
-[32,"2",
-"ƒsƒNƒjƒbƒNƒK[ƒ‹ [SP Scratch.ver]",
+[32,"â—2",
+"ãƒ”ã‚¯ãƒ‹ãƒƒã‚¯ã‚¬ãƒ¼ãƒ« [SP Scratch.ver]",
 "198494",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=22&event=85'>‚©‚ä‚« (movie : Captain HIMBA)</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=22&event=85'>ã‹ã‚†ã (movie : Captain HIMBA)</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>piknic_SP_Scr.bms</a>",
 "",
 "87da3e5636873ef817391cf0e3e0a6c5",
 ],
-[33,"3",
-"Holy Doll -XTM STDK RMX- [KASATHER]",
+[33,"â—3",
+"Holy Doll -XTM STDK RMX- [KASATHERâ—]",
 "181853",
 "<a href='http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!173'>taqumi remixed by xenothium</a>",
 "<a href='http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
-"hollydoll_xtmstdkrmx_ogg, _hd_xsr[7key_KASATHER].bms",
+"hollydoll_xtmstdkrmx_ogg, _hd_xsr[7key_KASATHERâ—].bms",
 "50686d232932477cfd16b3e7a3ea013f",
 ],
-[34,"3",
-"“ÁŒø–ò‚ÍƒJƒjƒsƒ‰ƒt (ƒJƒjƒJƒ})",
+[34,"â—3",
+"ç‰¹åŠ¹è–¬ã¯ã‚«ãƒ‹ãƒ”ãƒ©ãƒ• (ã‚«ãƒ‹ã‚«ãƒ)",
 "182717",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=316&event=88'>ƒZƒi</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=316&event=88'>ã‚»ãƒŠ</a>",
 "<a href='https://dl.dropboxusercontent.com/u/20710299/_kanipilaf_Z.zip'>ZENSOQ</a>",
 "",
 "fb4de222e2abea567651a3e2e1ae3ce1",
 ],
-[35,"3",
+[35,"â—3",
 "Meteor Lights [SP Scratch.ver]",
 "198498",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=450&event=88'>s-don / kkkfff2</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Meteor_Lights_Scr.bme</a>",
-"BOF2013 TEAM : (Donft say) Goodbye",
+"BOF2013 TEAM : (Donâ€™t say) Goodbye",
 "e4ce0e7b32dcf2be5cbab112da3edf75",
 ],
-[36,"3",
+[36,"â—3",
 "YUGAMINAI LOVE [7KEY ANOTHER]",
 "121978",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=76'>kinohito</a>",
@@ -553,15 +553,15 @@ var mname = [
 "",
 "8e11780556365f510aabc0a3c7b26dc6",
 ],
-[37,"3",
-"‚¨‚¢‚µ‚¢M‚İ‚»(‚×‚Á‚Æ‚èƒAƒiƒU[)",
+[37,"â—3",
+"ãŠã„ã—ã„çš¿ã¿ã(ã¹ã£ã¨ã‚Šã‚¢ãƒŠã‚¶ãƒ¼)",
 "194976",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=345&event=74'>‚³‚Î‚İ‚»</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>‚³‚ñ‚í‚è</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=345&event=74'>ã•ã°ã¿ã</a>",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>ã•ã‚“ã‚ã‚Š</a>",
 "up0039",
 "ffbd4a34de91c2d244a0f97a7bef9b32",
 ],
-[38,"3",
+[38,"â—3",
 "GIN TONIC FLAVOR [aspER7]",
 "181799",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=203&event=88'>q/stol</a>",
@@ -569,39 +569,39 @@ var mname = [
 "up0023.lzh ",
 "7c876e3c54afe604c03d585a3de52e2b",
 ],
-[39,"<font color='blue'>3</font>",
-"Wonder Bullfighter ` A Barcelona cuando florece la lira `  [7key_KASATHER]",
+[39,"<font color='blue'>â—3</font>",
+"Wonder Bullfighter ï½ A Barcelona cuando florece la lira ï½  [7key_KASATHERâ—]",
 "182379",
 "<a href='https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!173'>naotyu- feat. R.Yago</a>",
 "<a href='https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
-"[naotyu-]wonder, wonder[7key_KASATHER].bme",
+"[naotyu-]wonder, wonder[7key_KASATHERâ—].bme",
 "36734a52f3e052a4bc0f744c4e282952",
 ],
-[40,"4",
+[40,"â—4",
 "Maharaja Trance -Full Mahara Jacket-",
 "69452",
 "<a href='http://web.archive.org/web/20020817193500/http://isweb13.infoseek.co.jp/art/yuhno/poem/maharaja.exe'>Queen P.A.L</a>",
 "<a href='http://www.geocities.jp/penmawashi2000/'>Ark-Z</a>",
-"2010 DPBMSƒ^ƒu‚É‚ ‚è‚Ü‚·",
+"2010 DPBMSã‚¿ãƒ–ã«ã‚ã‚Šã¾ã™",
 "41b6863d6b6d218c335d0d8ea62f1033",
 ],
-[41,"4",
+[41,"â—4",
 "Nigrette -SCanother-",
 "149651",
-"<a href='http://3t1a.net/bms/nigrette_ogg.zip'>ŠpÏƒuƒ‰ƒbƒNƒ‰ƒO[ƒ“ / ƒGƒ^[ƒiƒ‹ƒRƒXƒ‚Ö“¡</a>",
-"<a href='http://absolute.pv.land.to/bof/all.html'>La*2</a>",
+"<a href='http://3t1a.net/bms/nigrette_ogg.zip'>è§’ç…®ãƒ–ãƒ©ãƒƒã‚¯ãƒ©ã‚°ãƒ¼ãƒ³ / ã‚¨ã‚¿ãƒ¼ãƒŠãƒ«ã‚³ã‚¹ãƒ¢æ–è—¤</a>",
+"<a href='http://absolute.pv.land.to/bof/all.html'>La*2â„ƒ</a>",
 "up0297.zip",
 "714461caefdead80e1222335a1f62db3",
 ],
-[42,"4",
-"“ú—§‚Ì÷ -‚±‚ÌM‚È‚ñ‚ÌM-",
+[42,"â—4",
+"æ—¥ç«‹ã®æ¨¹ -ã“ã®çš¿ãªã‚“ã®çš¿-",
 "120357",
 "<a href='https://onedrive.live.com/?cid=3f3fcf7e354956a6&id=3F3FCF7E354956A6%21115'>G-Y</a>",
-"<a href='http://profile.live.com/P.mvc#!https://skydrive.live.com/?cid=aea1b5017e9593bc&group=0&sc=documents!cid=AEA1B5017E9593BC&id=AEA1B5017E9593BC!236&sc=documents'>ƒNƒ‹ƒ‹withKJ</a>",
-"skydrive•ÛŠÇ",
+"<a href='http://profile.live.com/P.mvc#!https://skydrive.live.com/?cid=aea1b5017e9593bc&group=0&sc=documents!cid=AEA1B5017E9593BC&id=AEA1B5017E9593BC!236&sc=documents'>ã‚¯ãƒ«ãƒ«withKJ</a>",
+"skydriveä¿ç®¡",
 "da501cc53023d990f9cb1566fdfa8c15",
 ],
-[43,"4",
+[43,"â—4",
 "DIFINITION OF INSANITY [JUNKIE]",
 "180225",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=83'>H.U.T GiGAR</a>",
@@ -609,31 +609,31 @@ var mname = [
 "",
 "47113c4b69fb887a83c01ee5b2c5973a",
 ],
-[44,"5",
-"SMALL BEN [7KEY KASATHER]",
+[44,"â—5",
+"SMALL BEN [7KEY KASATHERâ—]",
 "181523",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=3&event=72'>kireji</a>",
 "<a href='http://absolute.pv.land.to/turntable/upload.html'>KASAKO</a>",
 "up0024.zip",
 "f946889a19787e7e9d405dc17d3e1c1f",
 ],
-[45,"5",
-"Moon phase Encounter -g”’Š—–g-",
+[45,"â—5",
+"Moon phase Encounter -ç´…ç™½è’²é‰¾-",
 "66224",
-"<a href='http://nekomimi.name/'>‚Ë‚±‚İ‚İ–‚–@g‚¢</a>",
-"<a href='http://www1.axfc.net/uploader/Sc/so/117289.zip'>–¼–³‚µ</a>",
+"<a href='http://nekomimi.name/'>ã­ã“ã¿ã¿é­”æ³•ä½¿ã„</a>",
+"<a href='http://www1.axfc.net/uploader/Sc/so/117289.zip'>åç„¡ã—</a>",
 "",
 "1ea83aa1f7dc25939d64560820ffb788",
 ],
-[46,"5",
+[46,"â—5",
 "NO NIGHT MORE SOUL! [for Home2]",
 "130662",
-"<a href='http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=17'>‚Ë‚±‚İ‚è‚ñ</a>",
-"<a href='http://www.geocities.jp/musicmakeman/'>Œ–å</a>",
-"ƒŠƒ“ƒNæ‚©‚çA·•ª¨‘¼‚Ì‘¼‚Ì·•ª‚Í‚±‚¿‚ç‚É‘S•”‚ ‚è‚Ü‚·A‚Ì‚Æ‚±‚ë‚©‚çDL",
+"<a href='http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=17'>ã­ã“ã¿ã‚Šã‚“</a>",
+"<a href='http://www.geocities.jp/musicmakeman/'>æœˆé–€</a>",
+"ãƒªãƒ³ã‚¯å…ˆã‹ã‚‰ã€å·®åˆ†â†’ä»–ã®ä»–ã®å·®åˆ†ã¯ã“ã¡ã‚‰ã«å…¨éƒ¨ã‚ã‚Šã¾ã™ã€ã®ã¨ã“ã‚ã‹ã‚‰DL",
 "83897223a4a8152da58630e1e0df6bcf",
 ],
-[47,"5",
+[47,"â—5",
 "GO BACK 2 RAVE [SP Scratch.ver]",
 "199011",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=265&event=96'>DOT96</a>",
@@ -641,23 +641,23 @@ var mname = [
 "G2R2014 TEAM : STRLabel_",
 "f390abb6b59b72bba9c7dba752cabc12",
 ],
-[48,"5",
-"BIAS [‚ ‚©‚¢]",
+[48,"â—5",
+"BIAS [ã‚ã‹ã„]",
 "186879",
 "<a href='http://yatai.ath.cx/c03_shuffle2/detail.php?n=39'>syzfonics</a>",
 "<a href='https://onedrive.live.com/?cid=1ACC86CE07A5310A&id=1ACC86CE07A5310A%21112'>alt</a>",
-"·•ª‚ÍƒŠƒ“ƒNæ‚Ì44”Ô–Ú‚Ìƒtƒ@ƒCƒ‹",
+"å·®åˆ†ã¯ãƒªãƒ³ã‚¯å…ˆã®44ç•ªç›®ã®ãƒ•ã‚¡ã‚¤ãƒ«",
 "d604130c9a409cde9827500d8534b967",
 ],
-[49,"5",
+[49,"â—5",
 "Luminance [SP Scratch.ver]",
 "198402",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=42&event=96'>Cocoa</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>luminance_h_SP_Scratch.bme</a>",
-"G2R2014 TEAM : ‚²’•¶‚ÍƒJƒ}ƒ{ƒR‚Å‚·‚©",
+"G2R2014 TEAM : ã”æ³¨æ–‡ã¯ã‚«ãƒãƒœã‚³ã§ã™ã‹",
 "289de1af0f13830112203eb76410a4d6",
 ],
-[50,"5",
+[50,"â—5",
 "Two Hundred Dimension [SP Scratch.ver]",
 "198499",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=71&event=83'>DG-P</a>",
@@ -665,23 +665,23 @@ var mname = [
 "BOF2012 TEAM : RICH RACER2",
 "611e94ab4008e8e2e34e5a873c4eed20",
 ],
-[51,"5",
+[51,"â—5",
 "Flare(BMS Edit.) [SP Scratch.ver]",
 "198401",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=25&event=96'>Nurumayu</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>_Flare_SP_Scratch.bms</a>",
-"G2R2014 TEAM : ‰¹Šy§ìƒT[ƒNƒ‹ ƒ‰ƒ€ƒŒ[ƒYƒ“ vs. ‰¹ƒQ[ƒT[ƒNƒ‹ ƒ†[ƒXƒg",
+"G2R2014 TEAM : éŸ³æ¥½åˆ¶ä½œã‚µãƒ¼ã‚¯ãƒ« ãƒ©ãƒ ãƒ¬ãƒ¼ã‚ºãƒ³ vs. éŸ³ã‚²ãƒ¼ã‚µãƒ¼ã‚¯ãƒ« ãƒ¦ãƒ¼ã‚¹ãƒˆ",
 "afc56f9d52c85ce93d471296a799287e",
 ],
-[52,"5",
+[52,"â—5",
 "Karakuri Plum _SCR ver",
 "181704",
-"<a href='http://www1.axfc.net/uploader/C/so/167738'>Mitsu™</a>",
+"<a href='http://www1.axfc.net/uploader/C/so/167738'>Mitsuâ˜†</a>",
 "<a href='http://sdrv.ms/1bZPbBm'>MIND</a>",
 "",
 "eebd547affb449235039090819de4e0f",
 ],
-[53,"<font color='blue'>5</font>",
+[53,"<font color='blue'>â—5</font>",
 "FALL THE BOMB [another]",
 "140573",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=10&event=83'>dge-nesis SPThx W.CROW</a>",
@@ -689,111 +689,111 @@ var mname = [
 "",
 "d874b94bfb1b678baff0a0162819e073",
 ],
-[54,"6",
-"INFINITE BEATS [NANATHER] ",
+[54,"â—6",
+"INFINITE BEATS [â—NANATHER] ",
 "183564",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>P4koo</a>",
-"<a href='http://flowermaster.web.fc2.com/'>“Ş“ß÷</a>",
+"<a href='http://flowermaster.web.fc2.com/'>å¥ˆé‚£æ¨¹</a>",
 "",
 "68d5f2eb87d015608996bf04f4fed65b",
 ],
-[55,"6",
+[55,"â—6",
 "Reach to the sky (radio edit)  [SP Scratch.ver]",
 "199012",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=243&event=96'>void feat. Salita</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Reach_to_the_sky_Scr.bme</a>",
-"G2R2014 TEAM : ƒŠƒA[‚Æ‚Í‰½‚¾‚Á‚½‚Ì‚©",
+"G2R2014 TEAM : ãƒªã‚¢å……ã¨ã¯ä½•ã ã£ãŸã®ã‹",
 "a16d63ac359d357f1ad0feb85ff0b89f",
 ],
-[56,"6",
+[56,"â—6",
 "At Aqualand [SP Scratch.ver]",
 "198632",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=2&event=96'>AsAhisAn</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>at_aqualand_Scr.bms</a>",
-"G2R2014 TEAM : AA(A)AAA‚â‚Á‚Ï‚èo‚Ü‚¹‚ñ",
+"G2R2014 TEAM : AA(A)AAAã‚„ã£ã±ã‚Šå‡ºã¾ã›ã‚“",
 "d11d6bcf5d208fedb19843f3d0cfc02b",
 ],
-[57,"6",
+[57,"â—6",
 "locked girl@Scarlet-Devils Palace [ANOTHER]",
 "96971",
-"<a href='http://page.freett.com/ykyk00/'>‚­‚Á‚¿[</a>",
+"<a href='http://page.freett.com/ykyk00/'>ãã£ã¡ãƒ¼</a>",
 "",
 "",
 "ed40d68d31873d52dd87cd1cf7896113",
 ],
-[58,"6",
-"It's 'alice' dream [7key_KASATHER]",
+[58,"â—6",
+"It's 'alice' dream [7key_KASATHERâ—]",
 "183060",
 "<a href='http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!173'>polysha</a>",
 "<a href='http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
 "",
 "2e4fbaa3f9968ca6cd5239049520ad1b",
 ],
-[59,"<font color='blue'>6</font>",
-"’¼ŠpƒXƒ‰ƒCƒhƒK[ƒ‹ [Princess]",
+[59,"<font color='blue'>â—6</font>",
+"ç›´è§’ã‚¹ãƒ©ã‚¤ãƒ‰ã‚¬ãƒ¼ãƒ« [Princess]",
 "184790",
-"<a href='http://www.geocities.jp/dsks5456/osg.html'>o.s.gate‚Æd‰¹ƒeƒg•P</a>",
+"<a href='http://www.geocities.jp/dsks5456/osg.html'>o.s.gateã¨é‡éŸ³ãƒ†ãƒˆå§«</a>",
 "<a href='http://ux.getuploader.com/sabun_/download/33/tetete_E.zip'>DJ.END</a>",
 "",
 "73b3d09ad21a4d92cb53a234871957d8",
 ],
-[60,"7",
-"”N’†–²’†‚ÈDŠïS[scr_another]",
+[60,"â—7",
+"å¹´ä¸­å¤¢ä¸­ãªå¥½å¥‡å¿ƒ[scr_another]",
 "183659",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>er</a>",
 "<a href='http://flowermaster.web.fc2.com/'>jin</a>",
 "",
 "937b20699bb0df1b236c2fb77c95587f",
 ],
-[61,"7",
-"Showguts i‚¢‚Â‚à‚æ‚è‘½‚­‰ñ‚·KASATHERj",
+[61,"â—7",
+"Showguts ï¼ˆã„ã¤ã‚‚ã‚ˆã‚Šå¤šãå›ã™KASATHERâ—ï¼‰",
 "183460",
 "<a href='http://ninjaactionteam.sakura.ne.jp/'>Ninja Action Team</a>",
 "<a href='http://https//onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
 "",
 "66a10c2e0edf1a7e5ca610c03736f5e8",
 ],
-[62,"7",
+[62,"â—7",
 "Dancing Dirty Monster [boiled Tear fish paste Squid]",
 "194577",
 "<a href='http://www.geocities.jp/hihihi4442/sandwich.html'>anubasu-anubasu</a>",
 "<a href='http://www.geocities.jp/hihihi4442/sandwich.html'>ZEN-SOQ</a>",
-"ŒÂ•ÊDL‚É·•ªA‚»‚Ì‰º‚Ì‚É–{‘Ì‚ª‚ ‚è‚Ü‚·B",
+"å€‹åˆ¥DLã«å·®åˆ†ã€ãã®ä¸‹ã®â—ã«æœ¬ä½“ãŒã‚ã‚Šã¾ã™ã€‚",
 "48698daeb95a6be2b11fe5a40ffc1647",
 ],
-[63,"7",
-"The Question[7key KASATHER]",
+[63,"â—7",
+"The Question[7key KASATHERâ—]",
 "182233",
 "<a href='http://mournfinale.com/question/'>Personative feat. MC. NOREAJ</a>",
 "<a href='https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
-"[]_The Question [7key_KASATHER].bme",
+"[]_The Question [7key_KASATHERâ—].bme",
 "68dd0f1a8f598f1496936c2c74446467",
 ],
-[64,"7",
-"M“Š‚°ƒvƒŠƒ“ƒZƒX[ANOTHER]",
+[64,"â—7",
+"çš¿æŠ•ã’ãƒ—ãƒªãƒ³ã‚»ã‚¹[ANOTHER]",
 "158245",
-"<a href='http://www.geocities.jp/dsks5456/osg.html'>‚¨‰º‚°</a>",
+"<a href='http://www.geocities.jp/dsks5456/osg.html'>ãŠä¸‹ã’</a>",
 "",
-"ƒn[ƒh‚Í“ï‚µ‚¢B",
+"ãƒãƒ¼ãƒ‰ã¯é›£ã—ã„ã€‚",
 "0f1db76bdb64effd5f79d5a5737ed085",
 ],
-[65,"8",
+[65,"â—8",
 "It's 'alice' dream[S_hinaticr]",
 "183627",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>polysha</a>",
-"<a href='http://flowermaster.web.fc2.com/'>•‘—</a>",
+"<a href='http://flowermaster.web.fc2.com/'>èˆé››</a>",
 "",
 "ae50d5ae456c6f74f9d496f3cb8a963e",
 ],
-[66,"8",
+[66,"â—8",
 "Espresso Shots [Another+]",
 "196762",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=39&event=96'>Chino</a>",
 "",
-"G2R2014 TEAM : ‚²’•¶‚ÍƒJƒ}ƒ{ƒR‚Å‚·‚©",
+"G2R2014 TEAM : ã”æ³¨æ–‡ã¯ã‚«ãƒãƒœã‚³ã§ã™ã‹",
 "6ac4a7d3a047e307ce12272d4f6a7751",
 ],
-[67,"8",
+[67,"â—8",
 "The Formula",
 "199216",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=351&event=88'>Junk</a>",
@@ -801,135 +801,135 @@ var mname = [
 "",
 "92738534b6e55e0bb0b28c3836814303",
 ],
-[68,"<font color='blue'>8</font>",
-"Ä“ü—ƒ^ƒCƒ€ƒY [SP Scratch.ver]",
+[68,"<font color='blue'>â—8</font>",
+"å†å…¥æµ´ã‚¿ã‚¤ãƒ ã‚º [SP Scratch.ver]",
 "198993",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=241&event=96'>ƒoƒXƒƒ}ƒ“ƒX`ƒoƒ‰‚Ì‚è` obj:GEIST</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=241&event=96'>ãƒã‚¹ãƒ­ãƒãƒ³ã‚¹ï½ãƒãƒ©ã®é¦™ã‚Šï½ obj:GEIST</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>snyt_SPH_Scr.bms</a>",
 "G2R2014 TEAM : system U",
 "38489aa89b243feecb0b007f4dfa1c69",
 ],
-[69,"<font color='blue'>8</font>",
+[69,"<font color='blue'>â—8</font>",
 "Lieselotte [lunether]",
 "162723",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>wa. / deadblue238</a>",
 "<a href='http://www1.axfc.net/uploader/so/2971192'>lune</a>",
-"BOF2012 TEAM : Memoirs –{‘ÌƒŠƒ“ƒNæ‚©‚çDL‚Å‚«‚È‚¢‚½‚ß‘ã—UP‚µ‚Ü‚·B(_wa_lieselotte.zip)",
+"BOF2012 TEAM : Memoirs æœ¬ä½“ãƒªãƒ³ã‚¯å…ˆã‹ã‚‰DLã§ããªã„ãŸã‚ä»£ç†UPã—ã¾ã™ã€‚(_wa_lieselotte.zip)",
 "d312e5f3b5a3f1211b96f764a0e3ac91",
 ],
-[70,"9",
-"Cherry Blossom Shower -SP For Scratch ŒŞ•ªç-",
+[70,"â—9",
+"Cherry Blossom Shower -SP For Scratch ä¼åˆ†å’²-",
 "100592",
 "<a href='https://onedrive.live.com/?cid=3f3fcf7e354956a6&id=3F3FCF7E354956A6%21115'>Belle.</a>",
-"<a href='http://p.tl/1Kpm'>Ê—</a>",
-"skydrive•ÛŠÇ",
+"<a href='http://p.tl/1Kpm'>å½©é››</a>",
+"skydriveä¿ç®¡",
 "ed4068be79d17221c1ee74fe44fbd1fe",
 ],
-[71,"9",
+[71,"â—9",
 "Love & Justice [blackRIETHER]",
 "175784",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=227&event=65'>ƒtƒƒ“ / ƒ‰ƒYƒxƒŠƒ‹</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=227&event=65'>ãƒ•ãƒ­ãƒ³ / ãƒ©ã‚ºãƒ™ãƒªãƒ«</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>RIE.</a>",
 "_03_flonne_spbr.bml",
 "6ba830e02aa02c0725d2e6ef07a580fe",
 ],
-[72,"<font color='red'>9</font>",
-"—ö‚Ì2-4-11(BMS Edit) [boiled IDOL fish LCruiser paste]",
+[72,"<font color='red'>â—9</font>",
+"æ‹ã®2-4-11(BMS Edit) [boiled IDOL fish LCruiser paste]",
 "199913",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=74&event=96'>Gun-SEKI feat.“ß‰Ï</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=74&event=96'>Gun-SEKI feat.é‚£ç‚</a>",
 "<a href='http://www.nicovideo.jp/watch/sm24985664'>ZEN-SOQ</a>",
-"G2R2014 TEAM : O\˜H",
+"G2R2014 TEAM : ä¸‰åè·¯",
 "72166840eaec08f286c762e84f4bba26",
 ],
-[73,"10",
+[73,"â—10",
 "Gun to Childhead",
 "106958",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=237&event=65'>music</a>",
 "<a href='http://absolute.pv.land.to/bmsuploader.html'>sabun</a>",
-"šš3",
+"â˜…â˜…3",
 "b3125dad9faddd06386110933be53143",
 ],
-[74,"10",
-"ƒtƒ‰ƒ“‚ªM‚Å‚«‚ã‚«‚ã‚«‚ã‚Á™‚Æ‚µ‚ÄƒMƒ…ƒC[ƒ“",
+[74,"â—10",
+"ãƒ•ãƒ©ãƒ³ãŒçš¿ã§ãã‚…ãã‚…ãã‚…ã£â˜†ã¨ã—ã¦ã‚®ãƒ¥ã‚¤ãƒ¼ãƒ³â—",
 "198947",
-"<a href='http://yaruki0.sakura.ne.jp/event/ondanyugi4/impression.cgi?no=42'>‚Ó‚ç‚ñ‚Ç[‚éE‚·‚©[‚ê‚Á‚Æ(495‚Ü‚¢~2)</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>“Ş“ß÷</a>",
+"<a href='http://yaruki0.sakura.ne.jp/event/ondanyugi4/impression.cgi?no=42'>ãµã‚‰ã‚“ã©ãƒ¼ã‚‹ãƒ»ã™ã‹ãƒ¼ã‚Œã£ã¨(495ã¾ã„Ã—2)</a>",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>å¥ˆé‚£æ¨¹</a>",
 "up0042",
 "6cabe932118bf272d6f4de41b249da44",
 ],
-[75,"10",
-"Bicolor spirit[NANATHER] ",
+[75,"â—10",
+"Bicolor spirit[â—NANATHER] ",
 "183604",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>urimu</a>",
-"<a href='http://flowermaster.web.fc2.com/'>“Ş“ß÷</a>",
+"<a href='http://flowermaster.web.fc2.com/'>å¥ˆé‚£æ¨¹</a>",
 "",
 "56dbebc0002f45164112679266a08895",
 ],
-[76,"11",
-"Singing of Night birds [NANATHER]",
+[76,"â—11",
+"Singing of Night birds [â—NANATHER]",
 "183529",
-"<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>Ark-Z Illustration by t‰J</a>",
-"<a href='http://flowermaster.web.fc2.com/'>“Ş“ß÷</a>",
+"<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>Ark-Z Illustration by æ˜¥é›¨</a>",
+"<a href='http://flowermaster.web.fc2.com/'>å¥ˆé‚£æ¨¹</a>",
 "",
 "766ca3606583ca51ee87a97389a8700a",
 ],
-[77,"11",
-"ELECTRiCiTY [Mæ”y]",
+[77,"â—11",
+"ELECTRiCiTY [çš¿å…ˆè¼©]",
 "199507",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=57&event=96'>NIKITA / misokabocha</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>‚ÆH</a>",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>ã¨ï¼Ÿ</a>",
 "up0048",
 "fb5733549f60a4aa771d6b166951ea0a",
 ],
-[78,"11",
-"It's 'alice' dream[NANATHER]",
+[78,"â—11",
+"It's 'alice' dream[â—NANATHER]",
 "183642",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>polysha</a>",
-"<a href='http://flowermaster.web.fc2.com/'>“Ş“ß÷</a>",
+"<a href='http://flowermaster.web.fc2.com/'>å¥ˆé‚£æ¨¹</a>",
 "",
 "ad39831a2fa73a7675f027806806e173",
 ],
-[79,"11",
-"2Rock []",
+[79,"â—11",
+"2Rock [â—]",
 "183083",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>EBIMAYO</a>",
-"<a href='http://t.co/v6YBKHMoKQ'>“Ş“ß÷</a>",
+"<a href='http://t.co/v6YBKHMoKQ'>å¥ˆé‚£æ¨¹</a>",
 "",
 "76cb0ee15b6035acee48c81873146c69",
 ],
-[80,"<font color='blue'>11</font>",
-"æè•KŸí“¬‹@@–P [SP Scratch.ver]",
+[80,"<font color='blue'>â—11</font>",
+"å…ˆæ‰‹å¿…å‹æˆ¦é—˜æ©Ÿã€€é³³ [SP Scratch.ver]",
 "198711",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=171&event=96'>Dr.A (BGA:”ª“ˆ) </a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=171&event=96'>Dr.A (BGA:å…«å¶‹) </a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>sentehissyo_Scr.bms</a>",
 "G2R2014 TEAM : Sound Lab",
 "ad49a49aad6e128c7e9d50790c10f29e",
 ],
-[81,"12",
-"Here we goI(TM edit) [KASATHER]",
+[81,"â—12",
+"Here we goï¼(TM edit) [KASATHERâ—]",
 "181706",
 "<a href='http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!173'>Awesomeman</a>",
 "<a href='http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
-"miamibass[KASATHER]",
+"miamibass[KASATHERâ—]",
 "d05a25b1cca3f83ad10894f89303012d",
 ],
-[82,"12",
-"Earthquake,thunder,a fire,and father [7key_KASATHER]",
+[82,"â—12",
+"Earthquake,thunder,a fire,and father [7key_KASATHERâ—]",
 "183243",
 "<a href='http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!173'>WAKIMATA</a>",
 "<a href='http://https//onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&id=3763CEB14F983372!161'>KASAKO</a>",
 "",
 "0b1091b0cd57d7b7edbc91cf8fb4e72c",
 ],
-[83,"13",
-"‚ ‚É‚Ü‚ç [MƒuƒŒƒCƒN]",
+[83,"â—13",
+"ã‚ã«ã¾ã‚‰ [çš¿ãƒ–ãƒ¬ã‚¤ã‚¯]",
 "183656",
 "<a href='http://estish.nobody.jp/'>TOMA</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>‚¦‚¢‚ä‚¤</a>",
-"Œ´‹È‚Ískydrive‚Ìest073A·•ª‚Íup0026.zip",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>ãˆã„ã‚†ã†</a>",
+"åŸæ›²ã¯skydriveã®est073ã€å·®åˆ†ã¯up0026.zip",
 "2a19b1036eb40304b842ddb48374acc4",
 ],
-[84,"<font color='red'>13</font>",
+[84,"<font color='red'>â—13</font>",
 "HAELEQUIN [boiled Arlequin fish pantomine paste]",
 "199743",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=389&event=83'>orangentle / deadblue238</a>",
@@ -937,63 +937,63 @@ var mname = [
 "BOF2012 TEAM : Memoirs",
 "946cb817ae45ffdeb051236c61af059b",
 ],
-[85,"14",
-"Cross Galaxy [boiled fishcosmic]paste]",
+[85,"â—14",
+"Cross Galaxy [boiled fishâ—cosmicâ€paste]",
 "189493",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=304&event=74'>kanone</a>",
 "<a href='http://www.nicovideo.jp/watch/sm23790435'>ZEN-SOQ</a>",
 "",
 "0dac32ca8ba27e6f66146e1054e43674",
 ],
-[86,"14",
+[86,"â—14",
 "Bitter and Sweet -Yoisarather-",
 "194059",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=329&event=83'>Alfort</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>\˜ZM–é</a>",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>åå…­çš¿å¤œ</a>",
 "up0036",
 "d017e011665e347a9d62685d936b1a73",
 ],
-[87,"14",
-"Altale[Mæ”y]",
+[87,"â—14",
+"Altale[çš¿å…ˆè¼©]",
 "199508",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=150&event=96'>íœ</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>‚ÆH</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=150&event=96'>å‰Šé™¤</a>",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>ã¨ï¼Ÿ</a>",
 "up0046",
 "e2d6ef694fcf6caffd6d436e8fd4a38c",
 ],
-[88,"14",
-"ƒ_ƒCƒiƒ‚‚Æ”’’‹–² (ANOTHER MIX) [SP Scratch.ver]",
+[88,"â—14",
+"ãƒ€ã‚¤ãƒŠãƒ¢ã¨ç™½æ˜¼å¤¢ (ANOTHER MIX) [SP Scratch.ver]",
 "198502",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=436&event=88'>kju8 + zen + DOT96</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Dynamo_A_SP_Scr.bms</a>",
-"BOF2013 TEAM : ƒƒbƒvƒCƒ„[ƒY vs. STR",
+"BOF2013 TEAM : ãƒ­ãƒƒãƒ—ã‚¤ãƒ¤ãƒ¼ã‚º vs. STR",
 "f818fb0fbf819b395877ea7566eda5ac",
 ],
-[89,"14",
-"ƒtƒ@ƒ“ƒL[ƒzƒbƒg [SP Scratch.ver]",
+[89,"â—14",
+"ãƒ•ã‚¡ãƒ³ã‚­ãƒ¼ãƒ›ãƒƒãƒˆ [SP Scratch.ver]",
 "198403",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=464&event=88'>BACO + kazpulse</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>02_funkyhot_h_SP_Scratch.bms</a>",
 "BOF2013 TEAM : Cutting Nation",
 "6b17af810dc88e2fc3d8ffbfe4ffc1c0",
 ],
-[90,"15",
-"Apocalypse... []",
+[90,"â—15",
+"Apocalypse... [â—]",
 "181839",
 "<a href='http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=22'>anubasu-anubasu</a>",
-"<a href='http://akred.web.fc2.com/ak-red-home.html'>Ô‚¢l</a>",
+"<a href='http://akred.web.fc2.com/ak-red-home.html'>èµ¤ã„äºº</a>",
 "",
 "a8d0356de7b980217d0702e7665ebe64",
 ],
-[91,"15",
+[91,"â—15",
 "Total Eclipse of the Sun [SP Scratch.ver Hyper]",
 "198465",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=210&event=96'>-45</a>",
 "<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Total_Eclipse_Scr_H.bms</a>",
-"G2R2014 TEAM : ˜J“­”ª†",
+"G2R2014 TEAM : åŠ´åƒå…«å·",
 "072f78b2ae6e73aa8977f71fad706538",
 ],
-[92,"15",
+[92,"â—15",
 "F13 [SP Scratch.ver]",
 "199017",
 "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=52&event=96'>Judah</a>",
@@ -1001,59 +1001,59 @@ var mname = [
 "G2R2014 TEAM : Judecca",
 "89b6c441fd021c872c63453c3041d7a9",
 ],
-[93,"15",
-"BIAS [‚à‚Á‚ÆI@‚ ‚©‚¢]",
+[93,"â—15",
+"BIAS [ã‚‚ã£ã¨ï¼ã€€ã‚ã‹ã„]",
 "194852",
 "<a href='http://yatai.ath.cx/c03_shuffle2/detail.php?n=39'>syzfonics</a>",
 "<a href='https://onedrive.live.com/?cid=1ACC86CE07A5310A&id=1ACC86CE07A5310A%21112'>alt</a>",
-"·•ª‚ÍƒŠƒ“ƒNæ‚Ì44”Ô–Ú‚Ìƒtƒ@ƒCƒ‹",
+"å·®åˆ†ã¯ãƒªãƒ³ã‚¯å…ˆã®44ç•ªç›®ã®ãƒ•ã‚¡ã‚¤ãƒ«",
 "aa06daedcde7b71b34472b1f77e9fe09",
 ],
-[94,"15",
-"Lambda Driver [boiled ƒ©fish paste Driver]",
+[94,"â—15",
+"Lambda Driver [boiled Î›fish paste Driver]",
 "199538",
-"<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Lambda Driver [boiled ƒ©fish paste Driver]</a>",
+"<a href='https://onedrive.live.com/?cid=3F3FCF7E354956A6&id=3F3FCF7E354956A6%21202'>Lambda Driver [boiled Î›fish paste Driver]</a>",
 "<a href='http://www.nicovideo.jp/watch/sm24953344'>.ZEN-SOQ</a>",
-"‘ã—UP",
+"ä»£ç†UP",
 "ce2f0b5d9752ece78bef80c2506bf871",
 ],
-[95,"16",
-"l@g@–@ŒÌ@‚Å@‚@‘¬@M",
+[95,"â—16",
+"äººã€€èº«ã€€äº‹ã€€æ•…ã€€ã§ã€€é«˜ã€€é€Ÿã€€çš¿",
 "180859",
-"<a href='http://skydrive.live.com/?cid=40805CD20B6241C6&id=40805CD20B6241C6!194'>VjHEaRTs/yo.t/UN&CO/—‡/UnK-now/37E</a>",
-"<a href='http://akred.web.fc2.com/ak-red-home.html'>Ô‚¢l</a>",
+"<a href='http://skydrive.live.com/?cid=40805CD20B6241C6&id=40805CD20B6241C6!194'>VjHEaRTs/yo.t/UN&CO/è½åˆ/UnK-now/37E</a>",
+"<a href='http://akred.web.fc2.com/ak-red-home.html'>èµ¤ã„äºº</a>",
 "",
 "a8b3b8af39f0d09d8a175fa973ff3707",
 ],
-[96,"16",
-"FREEDOM DiVE []",
+[96,"â—16",
+"FREEDOM DiVE [â—]",
 "180860",
 "<a href='http://skydrive.live.com/?cid=FD93B4F2CB8CD95F&id=FD93B4F2CB8CD95F%21105'>xi</a>",
-"<a href='http://akred.web.fc2.com/ak-red-home.html'>Ô‚¢l</a>",
-"”­‹¶‹È‚Ì•ÛŠÇ",
+"<a href='http://akred.web.fc2.com/ak-red-home.html'>èµ¤ã„äºº</a>",
+"ç™ºç‹‚æ›²ã®ä¿ç®¡",
 "4f21c3e1207b65917988fef045b06639",
 ],
-[97,"16",
-"ƒXƒNƒ‰ƒbƒ`ƒ}ƒjƒAI‚±‚Ì‚±‚ä‚Ñ‚¨‚ê‚ëI [WriStCUttEr]",
+[97,"â—16",
+"ã‚¹ã‚¯ãƒ©ãƒƒãƒãƒãƒ‹ã‚¢ï¼ã“ã®ã“ã‚†ã³ãŠã‚Œã‚ï¼ [WriStCUttEr]",
 "179704",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=212&event=65'>í‰Äƒnƒj[ƒpƒC</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=212&event=65'>å¸¸å¤ãƒãƒ‹ãƒ¼ãƒ‘ã‚¤</a>",
 "<a href='http://www.nicovideo.jp/watch/sm21426592'>ZEN-SOQ</a>",
 "",
 "7a80295d155c62c11858d0d586d20f3b",
 ],
-[98,"16",
-"”N’†–²’†‚ÈDŠïS[USC] ",
+[98,"â—16",
+"å¹´ä¸­å¤¢ä¸­ãªå¥½å¥‡å¿ƒ[USCâ—] ",
 "183661",
 "<a href='http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html'>er</a>",
-"<a href='http://flowermaster.web.fc2.com/'>“Ş“ß÷</a>",
+"<a href='http://flowermaster.web.fc2.com/'>å¥ˆé‚£æ¨¹</a>",
 "",
 "ae3e471dc42b93f7a6fadfaccdee05c6",
 ],
-[99,"16",
-"•K‘R€‚Ì‰^–½˜_",
+[99,"â—16",
+"å¿…ç„¶æ­»ã®é‹å‘½è«–",
 "199509",
-"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=205&event=88'>ƒ‹ƒ[ ™ ‚¦‚İ‚ã‚¤B ™ Î‰¤ƒ}ƒTƒg</a>",
-"<a href='http://absolute.pv.land.to/turntable/upload.html'>‚ÆH</a>",
+"<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&num=205&event=88'>ãƒ«ã‚¼ â˜† ãˆã¿ã‚…ã†ã€‚ â˜† çŸ³ç‹ãƒã‚µãƒˆ</a>",
+"<a href='http://absolute.pv.land.to/turntable/upload.html'>ã¨ï¼Ÿ</a>",
 "up0044",
 "f11050396cb3fd3156d4804edeece18a",
 ]];
@@ -1073,108 +1073,108 @@ if(mname[i][0]==1||mname[i][0]==4||mname[i][0]==17||mname[i][0]==29||mname[i][0]
   }
   
   //-->
-  </script></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr1" style="color:black;font-size:12px" height="14"><td width="45" align="center">-1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=158254"><center>IR</center></a></td><td>M“Š‚°ƒvƒŠƒ“ƒZƒX[NORMAL]</td><td><a href="http://www.geocities.jp/dsks5456/osg.html">‚¨‰º‚°</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr2" style="color:black;font-size:12px" height="14"><td width="45" align="center">-1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=196644"><center>IR</center></a></td><td>‚¨M—ûK‹È [ì•i]</td><td><a href="http://www.nicovideo.jp/watch/sm24717065">‰pŒŸ‚S‹‰</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr3" style="color:black;font-size:12px" height="14"><td width="45" align="center">-1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=191144"><center>IR</center></a></td><td>naughty girl@Excellency's Palace Hyper</td><td><a href="http://www.nicovideo.jp/watch/sm24015862">DJ Haruka MAD Izm*</a></td><td></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr4" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181385"><center>IR</center></a></td><td>LOVE™BEAM (orange summer mix) -NAGTHER@M-</td><td><a href="http://nothing.sh/~manbow/event/event.cgi?action=More_def&amp;num=3&amp;event=33">honey princess</a></td><td><a href="http://ux.getuploader.com/nagsa_bms/download/1/sara_love_orange.zip">…‹´‚È‚®‚³</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr5" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182646"><center>IR</center></a></td><td>Poppin' Shower -NAGTHER M-</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=239&amp;event=74">P*Light</a></td><td><a href="http://ux.getuploader.com/nagsa_bms/download/3/sara_ps.zip">…‹´‚È‚®‚³</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr6" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182661"><center>IR</center></a></td><td>belly dance (Consistently_Drinkin_remix) [E-M]</td><td><a href="http://www1.axfc.net/uploader/so/3203155.zip">Kotira Sample</a></td><td><a href="http://www1.axfc.net/u/3203117.zip">‚¢‚¢ŒC</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr7" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=168524"><center>IR</center></a></td><td>ƒtƒ@ƒ“ƒL[ƒzƒbƒg [7KEYS HYPER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=464&amp;event=88">BACO + kazpulse</a></td><td></td><td>BOF2013 TEAM : Cutting Nation
-</td></tr><tr class="tr_ng" id="#tr8" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198464"><center>IR</center></a></td><td>Total Eclipse of the Sun [SP Scratch.ver Normal]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=210&amp;event=96">-45</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Total_Eclipse_Scr_N.bms</a></td><td>G2R2014 TEAM : ˜J“­”ª†
-</td></tr><tr class="tr_ng" id="#tr9" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198493"><center>IR</center></a></td><td>ƒ_ƒCƒiƒ‚‚Æ”’’‹–² (GLITCHHOP MIX) [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=436&amp;event=88">kju8 + zen + Scarfaith</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Dynamo_H_SP_Scr.bms</a></td><td>BOF2013 TEAM : ƒƒbƒvƒCƒ„[ƒY vs. STR@‘ã—UP
-</td></tr><tr class="tr_ng" id="#tr10" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198709"><center>IR</center></a></td><td>Recollections of ageHa in 2004 [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=60&amp;event=96">U-hey</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Recollections_Scr.bms</a></td><td>G2R2014 TEAM : ’@‚¢‚Ä—V‚ñ‚ÅŠç–Êƒgƒ‰ƒ“ƒUƒ€
-</td></tr><tr class="tr_ng" id="#tr11" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=129"><center>IR</center></a></td><td>ƒRƒIƒŠƒmƒoƒ‰ [SCRATCHE DANGEROUS]</td><td><a href="http://www.mediafire.com/download/gny1kp66pwd4x53/%5Bnaotyu-%5Dkoorinobara.zip">naotyu- feat. Miyu</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr12" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198990"><center>IR</center></a></td><td>‚¤‚§`‚é™‚­‚ç‚Á‚µ‚á`2chu! [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=277&amp;event=96">ƒƒPƒAƒj@iƒCƒ‰ƒXƒgEƒNƒj</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">wall2_hyper_Scr.bms</a></td><td>G2R2014 TEAM : ‚·‚Æ‚ë[‚Í‚Á‚Æ
-</td></tr><tr class="tr_ng" id="#tr13" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199540"><center>IR</center></a></td><td>F13 [SP Scratch.ver Normal]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=52&amp;event=96">Judah</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">F13_Scr_normal.bms</a></td><td>G2R2014 TEAM : Judecca
-</td></tr><tr class="tr_ng" id="#tr14" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=140567"><center>IR</center></a></td><td>FALL THE BOMB [hyper]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=10&amp;event=83">dge-nesis SPThx W.CROW</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr15" style="color:black;font-size:12px" height="14"><td width="45" align="center">0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198509"><center>IR</center></a></td><td>Burn Out, Fire!! [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=379&amp;event=88">klavistr (movie : o‘O)</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Burn_Out_Scr.bme</a></td><td>BOF2013 TEAM : TEAM HARD TRANCE -BUCHIAGE-@‘ã—UP
-</td></tr><tr class="tr_ng" id="#tr16" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="red">0</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=200054"><center>IR</center></a></td><td>TETRIS B-TYPE [SP Scratch.ver Normal]</td><td><a href="http://www.nicovideo.jp/watch/sm25025632">9-zen</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">tetris_b-type_Scr.bms</a></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr17" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183674"><center>IR</center></a></td><td>It's 'alice' dream[S_hinather]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">polysha</a></td><td><a href="http://flowermaster.web.fc2.com/">•‘—</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr18" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183459"><center>IR</center></a></td><td>AquaMarine[7key_KASATHER]</td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">Floatage</a></td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr19" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183879"><center>IR</center></a></td><td>theme of Maia [Fire Ball]</td><td><a href="http://nekomimi.name/">‚Ë‚±‚İ‚İ–‚–@g‚¢</a></td><td><a href="http://ux.getuploader.com/sabun_/download/32/_nm19_E.zip">DJ.END</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr20" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=191139"><center>IR</center></a></td><td>naughty girl@Excellency's Palace Another</td><td><a href="http://www.nicovideo.jp/watch/sm24015862">DJ Haruka MAD Izm*</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr21" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=189495"><center>IR</center></a></td><td>ice valley 'beyond the searoad' [FREEZE@KAMABOKO]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=38&amp;event=74">maki</a></td><td><a href="http://www.nicovideo.jp/watch/sm23797032">ZEN-SOQ</a></td><td>‘ã—UP
-</td></tr><tr class="tr_ng" id="#tr22" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198710"><center>IR</center></a></td><td>Back 2 Oldskool [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=138&amp;event=96">vorbis</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">back2oldskool_Scr.bms</a></td><td>G2R2014 TEAM : Urutora Electronic Corporation
-</td></tr><tr class="tr_ng" id="#tr23" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194030"><center>IR</center></a></td><td>The Typewriter -Yoisaraeasy-</td><td><a href="http://onedrive.live.com/redir?resid=3F2FA32F01292CDF%21119">Leroy Anderson</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">up0034</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr24" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=121986"><center>IR</center></a></td><td>YUGAMINAI LOVE [7KEY HYPER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=4&amp;event=76">kinohito</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr25" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194056"><center>IR</center></a></td><td>Bitter and Sweet -Yoisaraeasy-</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=329&amp;event=83">Alfort</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">\˜ZM–é</a></td><td>up0036
-</td></tr><tr class="tr_ng" id="#tr26" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=146627"><center>IR</center></a></td><td>conflict [Caesar]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=57&amp;event=74">siromaru + cranky</a></td><td><a href="http://absolute.pv.land.to/uploader/all.html?1416620270">‚µ[</a></td><td>up3077
-</td></tr><tr class="tr_ng" id="#tr27" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182944"><center>IR</center></a></td><td>STAGER [for HEALIN]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=356&amp;event=88">Ras</a></td><td><a href="http://bit.ly/1bYjJUC">notebook</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr28" style="color:black;font-size:12px" height="14"><td width="45" align="center">1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=190595"><center>IR</center></a></td><td>funny crasher (Shift)</td><td><a href="http://estish.nobody.jp/">TOMA</a></td><td><a href="http://www.nicovideo.jp/watch/sm23940041">‘¼l</a></td><td>Œ´‹È‚ÍuŒÃ‚¢‚Ì‚Æ‚©‚ÍSkyDrive‚Év‚ÌƒŠƒ“ƒNæ‚Ìuest049_toma_funny_crasher.zipv
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr29" style="color:black;font-size:12px" height="14"><td width="45" align="center">2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182770"><center>IR</center></a></td><td>LOVE™BEAM (orange summer mix) -NAGTHER+ M-</td><td><a href="http://nothing.sh/~manbow/event/event.cgi?action=More_def&amp;num=3&amp;event=33">honey princess</a></td><td><a href="http://ux.getuploader.com/nagsa_bms/download/5/sara_love_orange_BLACK.zip">…‹´‚È‚®‚³</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr30" style="color:black;font-size:12px" height="14"><td width="45" align="center">2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183473"><center>IR</center></a></td><td>DJ BATTLE theme:PARANOiA [4 IIDX Player]</td><td><a href="http://dcut.s165.xrea.com/">Remixed by Octa the B.G.</a></td><td><a href="http://ux.getuploader.com/sabun_/download/31/djbtp_E.zip">DJ.END</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr31" style="color:black;font-size:12px" height="14"><td width="45" align="center">2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198510"><center>IR</center></a></td><td>‰ñ‚·ƒVƒ“ƒoƒ‹ [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=265&amp;event=88">DJ Mawas Cymbal(CV:‚©‚ä‚«)</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">mawasu_Scr.bms</a></td><td>BOF2013 TEAM : ‰ñ‚·ƒVƒ“ƒoƒ‹
-</td></tr><tr class="tr_ng" id="#tr32" style="color:black;font-size:12px" height="14"><td width="45" align="center">2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198494"><center>IR</center></a></td><td>ƒsƒNƒjƒbƒNƒK[ƒ‹ [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=22&amp;event=85">‚©‚ä‚« (movie : Captain HIMBA)</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">piknic_SP_Scr.bms</a></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr33" style="color:black;font-size:12px" height="14"><td width="45" align="center">3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181853"><center>IR</center></a></td><td>Holy Doll -XTM STDK RMX- [KASATHER]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">taqumi remixed by xenothium</a></td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>hollydoll_xtmstdkrmx_ogg, _hd_xsr[7key_KASATHER].bms
-</td></tr><tr class="tr_ng" id="#tr34" style="color:black;font-size:12px" height="14"><td width="45" align="center">3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182717"><center>IR</center></a></td><td>“ÁŒø–ò‚ÍƒJƒjƒsƒ‰ƒt (ƒJƒjƒJƒ})</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=316&amp;event=88">ƒZƒi</a></td><td><a href="https://dl.dropboxusercontent.com/u/20710299/_kanipilaf_Z.zip">ZENSOQ</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr35" style="color:black;font-size:12px" height="14"><td width="45" align="center">3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198498"><center>IR</center></a></td><td>Meteor Lights [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=450&amp;event=88">s-don / kkkfff2</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Meteor_Lights_Scr.bme</a></td><td>BOF2013 TEAM : (Donft say) Goodbye
-</td></tr><tr class="tr_ng" id="#tr36" style="color:black;font-size:12px" height="14"><td width="45" align="center">3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=121978"><center>IR</center></a></td><td>YUGAMINAI LOVE [7KEY ANOTHER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=4&amp;event=76">kinohito</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr37" style="color:black;font-size:12px" height="14"><td width="45" align="center">3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194976"><center>IR</center></a></td><td>‚¨‚¢‚µ‚¢M‚İ‚»(‚×‚Á‚Æ‚èƒAƒiƒU[)</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=345&amp;event=74">‚³‚Î‚İ‚»</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">‚³‚ñ‚í‚è</a></td><td>up0039
-</td></tr><tr class="tr_ng" id="#tr38" style="color:black;font-size:12px" height="14"><td width="45" align="center">3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181799"><center>IR</center></a></td><td>GIN TONIC FLAVOR [aspER7]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=203&amp;event=88">q/stol</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">jakko</a></td><td>up0023.lzh 
-</td></tr><tr class="tr_ng" id="#tr39" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">3</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182379"><center>IR</center></a></td><td>Wonder Bullfighter ` A Barcelona cuando florece la lira `  [7key_KASATHER]</td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">naotyu- feat. R.Yago</a></td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>[naotyu-]wonder, wonder[7key_KASATHER].bme
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr40" style="color:black;font-size:12px" height="14"><td width="45" align="center">4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=69452"><center>IR</center></a></td><td>Maharaja Trance -Full Mahara Jacket-</td><td><a href="http://web.archive.org/web/20020817193500/http://isweb13.infoseek.co.jp/art/yuhno/poem/maharaja.exe">Queen P.A.L</a></td><td><a href="http://www.geocities.jp/penmawashi2000/">Ark-Z</a></td><td>2010 DPBMSƒ^ƒu‚É‚ ‚è‚Ü‚·
-</td></tr><tr class="tr_ng" id="#tr41" style="color:black;font-size:12px" height="14"><td width="45" align="center">4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=149651"><center>IR</center></a></td><td>Nigrette -SCanother-</td><td><a href="http://3t1a.net/bms/nigrette_ogg.zip">ŠpÏƒuƒ‰ƒbƒNƒ‰ƒO[ƒ“ / ƒGƒ^[ƒiƒ‹ƒRƒXƒ‚Ö“¡</a></td><td><a href="http://absolute.pv.land.to/bof/all.html">La*2</a></td><td>up0297.zip
-</td></tr><tr class="tr_ng" id="#tr42" style="color:black;font-size:12px" height="14"><td width="45" align="center">4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=120357"><center>IR</center></a></td><td>“ú—§‚Ì÷ -‚±‚ÌM‚È‚ñ‚ÌM-</td><td><a href="https://onedrive.live.com/?cid=3f3fcf7e354956a6&amp;id=3F3FCF7E354956A6%21115">G-Y</a></td><td><a href="http://profile.live.com/P.mvc#!https://skydrive.live.com/?cid=aea1b5017e9593bc&amp;group=0&amp;sc=documents!cid=AEA1B5017E9593BC&amp;id=AEA1B5017E9593BC!236&amp;sc=documents">ƒNƒ‹ƒ‹withKJ</a></td><td>skydrive•ÛŠÇ
-</td></tr><tr class="tr_ng" id="#tr43" style="color:black;font-size:12px" height="14"><td width="45" align="center">4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=180225"><center>IR</center></a></td><td>DIFINITION OF INSANITY [JUNKIE]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=210&amp;event=83">H.U.T GiGAR</a></td><td><a href="http://ux.getuploader.com/sabun_/download/23/difinition_of_insanity-E.zip">DJ.END</a></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr44" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181523"><center>IR</center></a></td><td>SMALL BEN [7KEY KASATHER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=3&amp;event=72">kireji</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">KASAKO</a></td><td>up0024.zip
-</td></tr><tr class="tr_ng" id="#tr45" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=66224"><center>IR</center></a></td><td>Moon phase Encounter -g”’Š—–g-</td><td><a href="http://nekomimi.name/">‚Ë‚±‚İ‚İ–‚–@g‚¢</a></td><td><a href="http://www1.axfc.net/uploader/Sc/so/117289.zip">–¼–³‚µ</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr46" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=130662"><center>IR</center></a></td><td>NO NIGHT MORE SOUL! [for Home2]</td><td><a href="http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=17">‚Ë‚±‚İ‚è‚ñ</a></td><td><a href="http://www.geocities.jp/musicmakeman/">Œ–å</a></td><td>ƒŠƒ“ƒNæ‚©‚çA·•ª¨‘¼‚Ì‘¼‚Ì·•ª‚Í‚±‚¿‚ç‚É‘S•”‚ ‚è‚Ü‚·A‚Ì‚Æ‚±‚ë‚©‚çDL
-</td></tr><tr class="tr_ng" id="#tr47" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199011"><center>IR</center></a></td><td>GO BACK 2 RAVE [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=265&amp;event=96">DOT96</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">goback2rave_Scr.bme</a></td><td>G2R2014 TEAM : STRLabel_
-</td></tr><tr class="tr_ng" id="#tr48" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=186879"><center>IR</center></a></td><td>BIAS [‚ ‚©‚¢]</td><td><a href="http://yatai.ath.cx/c03_shuffle2/detail.php?n=39">syzfonics</a></td><td><a href="https://onedrive.live.com/?cid=1ACC86CE07A5310A&amp;id=1ACC86CE07A5310A%21112">alt</a></td><td>·•ª‚ÍƒŠƒ“ƒNæ‚Ì44”Ô–Ú‚Ìƒtƒ@ƒCƒ‹
-</td></tr><tr class="tr_ng" id="#tr49" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198402"><center>IR</center></a></td><td>Luminance [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=42&amp;event=96">Cocoa</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">luminance_h_SP_Scratch.bme</a></td><td>G2R2014 TEAM : ‚²’•¶‚ÍƒJƒ}ƒ{ƒR‚Å‚·‚©
-</td></tr><tr class="tr_ng" id="#tr50" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198499"><center>IR</center></a></td><td>Two Hundred Dimension [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=71&amp;event=83">DG-P</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">200D_Scr.bms</a></td><td>BOF2012 TEAM : RICH RACER2
-</td></tr><tr class="tr_ng" id="#tr51" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198401"><center>IR</center></a></td><td>Flare(BMS Edit.) [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=25&amp;event=96">Nurumayu</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">_Flare_SP_Scratch.bms</a></td><td>G2R2014 TEAM : ‰¹Šy§ìƒT[ƒNƒ‹ ƒ‰ƒ€ƒŒ[ƒYƒ“ vs. ‰¹ƒQ[ƒT[ƒNƒ‹ ƒ†[ƒXƒg
-</td></tr><tr class="tr_ng" id="#tr52" style="color:black;font-size:12px" height="14"><td width="45" align="center">5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181704"><center>IR</center></a></td><td>Karakuri Plum _SCR ver</td><td><a href="http://www1.axfc.net/uploader/C/so/167738">Mitsu™</a></td><td><a href="http://sdrv.ms/1bZPbBm">MIND</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr53" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">5</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=140573"><center>IR</center></a></td><td>FALL THE BOMB [another]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=10&amp;event=83">dge-nesis SPThx W.CROW</a></td><td></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr54" style="color:black;font-size:12px" height="14"><td width="45" align="center">6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183564"><center>IR</center></a></td><td>INFINITE BEATS [NANATHER] </td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">P4koo</a></td><td><a href="http://flowermaster.web.fc2.com/">“Ş“ß÷</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr55" style="color:black;font-size:12px" height="14"><td width="45" align="center">6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199012"><center>IR</center></a></td><td>Reach to the sky (radio edit)  [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=243&amp;event=96">void feat. Salita</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Reach_to_the_sky_Scr.bme</a></td><td>G2R2014 TEAM : ƒŠƒA[‚Æ‚Í‰½‚¾‚Á‚½‚Ì‚©
-</td></tr><tr class="tr_ng" id="#tr56" style="color:black;font-size:12px" height="14"><td width="45" align="center">6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198632"><center>IR</center></a></td><td>At Aqualand [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=2&amp;event=96">AsAhisAn</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">at_aqualand_Scr.bms</a></td><td>G2R2014 TEAM : AA(A)AAA‚â‚Á‚Ï‚èo‚Ü‚¹‚ñ
-</td></tr><tr class="tr_ng" id="#tr57" style="color:black;font-size:12px" height="14"><td width="45" align="center">6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96971"><center>IR</center></a></td><td>locked girl@Scarlet-Devils Palace [ANOTHER]</td><td><a href="http://page.freett.com/ykyk00/">‚­‚Á‚¿[</a></td><td></td><td>
-</td></tr><tr class="tr_ng" id="#tr58" style="color:black;font-size:12px" height="14"><td width="45" align="center">6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183060"><center>IR</center></a></td><td>It's 'alice' dream [7key_KASATHER]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">polysha</a></td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr59" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">6</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=184790"><center>IR</center></a></td><td>’¼ŠpƒXƒ‰ƒCƒhƒK[ƒ‹ [Princess]</td><td><a href="http://www.geocities.jp/dsks5456/osg.html">o.s.gate‚Æd‰¹ƒeƒg•P</a></td><td><a href="http://ux.getuploader.com/sabun_/download/33/tetete_E.zip">DJ.END</a></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr60" style="color:black;font-size:12px" height="14"><td width="45" align="center">7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183659"><center>IR</center></a></td><td>”N’†–²’†‚ÈDŠïS[scr_another]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">er</a></td><td><a href="http://flowermaster.web.fc2.com/">jin</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr61" style="color:black;font-size:12px" height="14"><td width="45" align="center">7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183460"><center>IR</center></a></td><td>Showguts i‚¢‚Â‚à‚æ‚è‘½‚­‰ñ‚·KASATHERj</td><td><a href="http://ninjaactionteam.sakura.ne.jp/">Ninja Action Team</a></td><td><a href="http://https//onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr62" style="color:black;font-size:12px" height="14"><td width="45" align="center">7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194577"><center>IR</center></a></td><td>Dancing Dirty Monster [boiled Tear fish paste Squid]</td><td><a href="http://www.geocities.jp/hihihi4442/sandwich.html">anubasu-anubasu</a></td><td><a href="http://www.geocities.jp/hihihi4442/sandwich.html">ZEN-SOQ</a></td><td>ŒÂ•ÊDL‚É·•ªA‚»‚Ì‰º‚Ì‚É–{‘Ì‚ª‚ ‚è‚Ü‚·B
-</td></tr><tr class="tr_ng" id="#tr63" style="color:black;font-size:12px" height="14"><td width="45" align="center">7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182233"><center>IR</center></a></td><td>The Question[7key KASATHER]</td><td><a href="http://mournfinale.com/question/">Personative feat. MC. NOREAJ</a></td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>[]_The Question [7key_KASATHER].bme
-</td></tr><tr class="tr_ng" id="#tr64" style="color:black;font-size:12px" height="14"><td width="45" align="center">7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=158245"><center>IR</center></a></td><td>M“Š‚°ƒvƒŠƒ“ƒZƒX[ANOTHER]</td><td><a href="http://www.geocities.jp/dsks5456/osg.html">‚¨‰º‚°</a></td><td></td><td>ƒn[ƒh‚Í“ï‚µ‚¢B
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr65" style="color:black;font-size:12px" height="14"><td width="45" align="center">8</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183627"><center>IR</center></a></td><td>It's 'alice' dream[S_hinaticr]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">polysha</a></td><td><a href="http://flowermaster.web.fc2.com/">•‘—</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr66" style="color:black;font-size:12px" height="14"><td width="45" align="center">8</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=196762"><center>IR</center></a></td><td>Espresso Shots [Another+]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=39&amp;event=96">Chino</a></td><td></td><td>G2R2014 TEAM : ‚²’•¶‚ÍƒJƒ}ƒ{ƒR‚Å‚·‚©
-</td></tr><tr class="tr_ng" id="#tr67" style="color:black;font-size:12px" height="14"><td width="45" align="center">8</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199216"><center>IR</center></a></td><td>The Formula</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=351&amp;event=88">Junk</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">up0043</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr68" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">8</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198993"><center>IR</center></a></td><td>Ä“ü—ƒ^ƒCƒ€ƒY [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=241&amp;event=96">ƒoƒXƒƒ}ƒ“ƒX`ƒoƒ‰‚Ì‚è` obj:GEIST</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">snyt_SPH_Scr.bms</a></td><td>G2R2014 TEAM : system U
-</td></tr><tr class="tr_ng" id="#tr69" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">8</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=162723"><center>IR</center></a></td><td>Lieselotte [lunether]</td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">wa. / deadblue238</a></td><td><a href="http://www1.axfc.net/uploader/so/2971192">lune</a></td><td>BOF2012 TEAM : Memoirs –{‘ÌƒŠƒ“ƒNæ‚©‚çDL‚Å‚«‚È‚¢‚½‚ß‘ã—UP‚µ‚Ü‚·B(_wa_lieselotte.zip)
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr70" style="color:black;font-size:12px" height="14"><td width="45" align="center">9</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100592"><center>IR</center></a></td><td>Cherry Blossom Shower -SP For Scratch ŒŞ•ªç-</td><td><a href="https://onedrive.live.com/?cid=3f3fcf7e354956a6&amp;id=3F3FCF7E354956A6%21115">Belle.</a></td><td><a href="http://p.tl/1Kpm">Ê—</a></td><td>skydrive•ÛŠÇ
-</td></tr><tr class="tr_ng" id="#tr71" style="color:black;font-size:12px" height="14"><td width="45" align="center">9</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=175784"><center>IR</center></a></td><td>Love &amp; Justice [blackRIETHER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=227&amp;event=65">ƒtƒƒ“ / ƒ‰ƒYƒxƒŠƒ‹</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">RIE.</a></td><td>_03_flonne_spbr.bml
-</td></tr><tr class="tr_ng" id="#tr72" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="red">9</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199913"><center>IR</center></a></td><td>—ö‚Ì2-4-11(BMS Edit) [boiled IDOL fish LCruiser paste]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=74&amp;event=96">Gun-SEKI feat.“ß‰Ï</a></td><td><a href="http://www.nicovideo.jp/watch/sm24985664">ZEN-SOQ</a></td><td>G2R2014 TEAM : O\˜H
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr73" style="color:black;font-size:12px" height="14"><td width="45" align="center">10</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=106958"><center>IR</center></a></td><td>Gun to Childhead</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=237&amp;event=65">music</a></td><td><a href="http://absolute.pv.land.to/bmsuploader.html">sabun</a></td><td>šš3
-</td></tr><tr class="tr_ng" id="#tr74" style="color:black;font-size:12px" height="14"><td width="45" align="center">10</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198947"><center>IR</center></a></td><td>ƒtƒ‰ƒ“‚ªM‚Å‚«‚ã‚«‚ã‚«‚ã‚Á™‚Æ‚µ‚ÄƒMƒ…ƒC[ƒ“</td><td><a href="http://yaruki0.sakura.ne.jp/event/ondanyugi4/impression.cgi?no=42">‚Ó‚ç‚ñ‚Ç[‚éE‚·‚©[‚ê‚Á‚Æ(495‚Ü‚¢~2)</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">“Ş“ß÷</a></td><td>up0042
-</td></tr><tr class="tr_ng" id="#tr75" style="color:black;font-size:12px" height="14"><td width="45" align="center">10</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183604"><center>IR</center></a></td><td>Bicolor spirit[NANATHER] </td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">urimu</a></td><td><a href="http://flowermaster.web.fc2.com/">“Ş“ß÷</a></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr76" style="color:black;font-size:12px" height="14"><td width="45" align="center">11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183529"><center>IR</center></a></td><td>Singing of Night birds [NANATHER]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">Ark-Z Illustration by t‰J</a></td><td><a href="http://flowermaster.web.fc2.com/">“Ş“ß÷</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr77" style="color:black;font-size:12px" height="14"><td width="45" align="center">11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199507"><center>IR</center></a></td><td>ELECTRiCiTY [Mæ”y]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=57&amp;event=96">NIKITA / misokabocha</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">‚ÆH</a></td><td>up0048
-</td></tr><tr class="tr_ng" id="#tr78" style="color:black;font-size:12px" height="14"><td width="45" align="center">11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183642"><center>IR</center></a></td><td>It's 'alice' dream[NANATHER]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">polysha</a></td><td><a href="http://flowermaster.web.fc2.com/">“Ş“ß÷</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr79" style="color:black;font-size:12px" height="14"><td width="45" align="center">11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183083"><center>IR</center></a></td><td>2Rock []</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">EBIMAYO</a></td><td><a href="http://t.co/v6YBKHMoKQ">“Ş“ß÷</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr80" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">11</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198711"><center>IR</center></a></td><td>æè•KŸí“¬‹@@–P [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=171&amp;event=96">Dr.A (BGA:”ª“ˆ) </a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">sentehissyo_Scr.bms</a></td><td>G2R2014 TEAM : Sound Lab
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr81" style="color:black;font-size:12px" height="14"><td width="45" align="center">12</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181706"><center>IR</center></a></td><td>Here we goI(TM edit) [KASATHER]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">Awesomeman</a></td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>miamibass[KASATHER]
-</td></tr><tr class="tr_ng" id="#tr82" style="color:black;font-size:12px" height="14"><td width="45" align="center">12</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183243"><center>IR</center></a></td><td>Earthquake,thunder,a fire,and father [7key_KASATHER]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">WAKIMATA</a></td><td><a href="http://https//onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr83" style="color:black;font-size:12px" height="14"><td width="45" align="center">13</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183656"><center>IR</center></a></td><td>‚ ‚É‚Ü‚ç [MƒuƒŒƒCƒN]</td><td><a href="http://estish.nobody.jp/">TOMA</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">‚¦‚¢‚ä‚¤</a></td><td>Œ´‹È‚Ískydrive‚Ìest073A·•ª‚Íup0026.zip
-</td></tr><tr class="tr_ng" id="#tr84" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="red">13</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199743"><center>IR</center></a></td><td>HAELEQUIN [boiled Arlequin fish pantomine paste]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=389&amp;event=83">orangentle / deadblue238</a></td><td><a href="http://www.nicovideo.jp/watch/sm24982802?ref=search_key_video">ZEN-SOQ</a></td><td>BOF2012 TEAM : Memoirs
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr85" style="color:black;font-size:12px" height="14"><td width="45" align="center">14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=189493"><center>IR</center></a></td><td>Cross Galaxy [boiled fishcosmic]paste]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=304&amp;event=74">kanone</a></td><td><a href="http://www.nicovideo.jp/watch/sm23790435">ZEN-SOQ</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr86" style="color:black;font-size:12px" height="14"><td width="45" align="center">14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194059"><center>IR</center></a></td><td>Bitter and Sweet -Yoisarather-</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=329&amp;event=83">Alfort</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">\˜ZM–é</a></td><td>up0036
-</td></tr><tr class="tr_ng" id="#tr87" style="color:black;font-size:12px" height="14"><td width="45" align="center">14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199508"><center>IR</center></a></td><td>Altale[Mæ”y]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=150&amp;event=96">íœ</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">‚ÆH</a></td><td>up0046
-</td></tr><tr class="tr_ng" id="#tr88" style="color:black;font-size:12px" height="14"><td width="45" align="center">14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198502"><center>IR</center></a></td><td>ƒ_ƒCƒiƒ‚‚Æ”’’‹–² (ANOTHER MIX) [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=436&amp;event=88">kju8 + zen + DOT96</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Dynamo_A_SP_Scr.bms</a></td><td>BOF2013 TEAM : ƒƒbƒvƒCƒ„[ƒY vs. STR
-</td></tr><tr class="tr_ng" id="#tr89" style="color:black;font-size:12px" height="14"><td width="45" align="center">14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198403"><center>IR</center></a></td><td>ƒtƒ@ƒ“ƒL[ƒzƒbƒg [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=464&amp;event=88">BACO + kazpulse</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">02_funkyhot_h_SP_Scratch.bms</a></td><td>BOF2013 TEAM : Cutting Nation
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr90" style="color:black;font-size:12px" height="14"><td width="45" align="center">15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181839"><center>IR</center></a></td><td>Apocalypse... []</td><td><a href="http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=22">anubasu-anubasu</a></td><td><a href="http://akred.web.fc2.com/ak-red-home.html">Ô‚¢l</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr91" style="color:black;font-size:12px" height="14"><td width="45" align="center">15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198465"><center>IR</center></a></td><td>Total Eclipse of the Sun [SP Scratch.ver Hyper]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=210&amp;event=96">-45</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Total_Eclipse_Scr_H.bms</a></td><td>G2R2014 TEAM : ˜J“­”ª†
-</td></tr><tr class="tr_ng" id="#tr92" style="color:black;font-size:12px" height="14"><td width="45" align="center">15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199017"><center>IR</center></a></td><td>F13 [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=52&amp;event=96">Judah</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">F13_Scr.bms</a></td><td>G2R2014 TEAM : Judecca
-</td></tr><tr class="tr_ng" id="#tr93" style="color:black;font-size:12px" height="14"><td width="45" align="center">15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194852"><center>IR</center></a></td><td>BIAS [‚à‚Á‚ÆI@‚ ‚©‚¢]</td><td><a href="http://yatai.ath.cx/c03_shuffle2/detail.php?n=39">syzfonics</a></td><td><a href="https://onedrive.live.com/?cid=1ACC86CE07A5310A&amp;id=1ACC86CE07A5310A%21112">alt</a></td><td>·•ª‚ÍƒŠƒ“ƒNæ‚Ì44”Ô–Ú‚Ìƒtƒ@ƒCƒ‹
-</td></tr><tr class="tr_ng" id="#tr94" style="color:black;font-size:12px" height="14"><td width="45" align="center">15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199538"><center>IR</center></a></td><td>Lambda Driver [boiled ƒ©fish paste Driver]</td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Lambda Driver [boiled ƒ©fish paste Driver]</a></td><td><a href="http://www.nicovideo.jp/watch/sm24953344">.ZEN-SOQ</a></td><td>‘ã—UP
-</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr95" style="color:black;font-size:12px" height="14"><td width="45" align="center">16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=180859"><center>IR</center></a></td><td>l@g@–@ŒÌ@‚Å@‚@‘¬@M</td><td><a href="http://skydrive.live.com/?cid=40805CD20B6241C6&amp;id=40805CD20B6241C6!194">VjHEaRTs/yo.t/UN&amp;CO/—‡/UnK-now/37E</a></td><td><a href="http://akred.web.fc2.com/ak-red-home.html">Ô‚¢l</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr96" style="color:black;font-size:12px" height="14"><td width="45" align="center">16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=180860"><center>IR</center></a></td><td>FREEDOM DiVE []</td><td><a href="http://skydrive.live.com/?cid=FD93B4F2CB8CD95F&amp;id=FD93B4F2CB8CD95F%21105">xi</a></td><td><a href="http://akred.web.fc2.com/ak-red-home.html">Ô‚¢l</a></td><td>”­‹¶‹È‚Ì•ÛŠÇ
-</td></tr><tr class="tr_ng" id="#tr97" style="color:black;font-size:12px" height="14"><td width="45" align="center">16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=179704"><center>IR</center></a></td><td>ƒXƒNƒ‰ƒbƒ`ƒ}ƒjƒAI‚±‚Ì‚±‚ä‚Ñ‚¨‚ê‚ëI [WriStCUttEr]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=212&amp;event=65">í‰Äƒnƒj[ƒpƒC</a></td><td><a href="http://www.nicovideo.jp/watch/sm21426592">ZEN-SOQ</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr98" style="color:black;font-size:12px" height="14"><td width="45" align="center">16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183661"><center>IR</center></a></td><td>”N’†–²’†‚ÈDŠïS[USC] </td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">er</a></td><td><a href="http://flowermaster.web.fc2.com/">“Ş“ß÷</a></td><td>
-</td></tr><tr class="tr_ng" id="#tr99" style="color:black;font-size:12px" height="14"><td width="45" align="center">16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199509"><center>IR</center></a></td><td>•K‘R€‚Ì‰^–½˜_</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=205&amp;event=88">ƒ‹ƒ[ ™ ‚¦‚İ‚ã‚¤B ™ Î‰¤ƒ}ƒTƒg</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">‚ÆH</a></td><td>up0044
+  </script></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr1" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—-1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=158254"><center>IR</center></a></td><td>çš¿æŠ•ã’ãƒ—ãƒªãƒ³ã‚»ã‚¹[NORMAL]</td><td><a href="http://www.geocities.jp/dsks5456/osg.html">ãŠä¸‹ã’</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr2" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—-1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=196644"><center>IR</center></a></td><td>ãŠçš¿ç·´ç¿’æ›² [è©¦ä½œå“]</td><td><a href="http://www.nicovideo.jp/watch/sm24717065">è‹±æ¤œï¼”ç´š</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr3" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—-1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=191144"><center>IR</center></a></td><td>naughty girl@Excellency's Palace Hyper</td><td><a href="http://www.nicovideo.jp/watch/sm24015862">DJ Haruka MAD Izm*</a></td><td></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr4" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181385"><center>IR</center></a></td><td>LOVEâ˜†BEAM (orange summer mix) -NAGTHERã€€çš¿-</td><td><a href="http://nothing.sh/~manbow/event/event.cgi?action=More_def&amp;num=3&amp;event=33">honey princess</a></td><td><a href="http://ux.getuploader.com/nagsa_bms/download/1/sara_love_orange.zip">æ°´æ©‹ãªãã•</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr5" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182646"><center>IR</center></a></td><td>Poppin' Shower -NAGTHER çš¿-</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=239&amp;event=74">P*Light</a></td><td><a href="http://ux.getuploader.com/nagsa_bms/download/3/sara_ps.zip">æ°´æ©‹ãªãã•</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr6" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182661"><center>IR</center></a></td><td>belly dance (Consistently_Drinkin_remix) [E-çš¿]</td><td><a href="http://www1.axfc.net/uploader/so/3203155.zip">Kotira Sample</a></td><td><a href="http://www1.axfc.net/u/3203117.zip">ã„ã„é´</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr7" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=168524"><center>IR</center></a></td><td>ãƒ•ã‚¡ãƒ³ã‚­ãƒ¼ãƒ›ãƒƒãƒˆ [7KEYS HYPER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=464&amp;event=88">BACO + kazpulse</a></td><td></td><td>BOF2013 TEAM : Cutting Nation
+</td></tr><tr class="tr_ng" id="#tr8" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198464"><center>IR</center></a></td><td>Total Eclipse of the Sun [SP Scratch.ver Normal]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=210&amp;event=96">-45</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Total_Eclipse_Scr_N.bms</a></td><td>G2R2014 TEAM : åŠ´åƒå…«å·
+</td></tr><tr class="tr_ng" id="#tr9" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198493"><center>IR</center></a></td><td>ãƒ€ã‚¤ãƒŠãƒ¢ã¨ç™½æ˜¼å¤¢ (GLITCHHOP MIX) [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=436&amp;event=88">kju8 + zen + Scarfaith</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Dynamo_H_SP_Scr.bms</a></td><td>BOF2013 TEAM : ãƒ­ãƒƒãƒ—ã‚¤ãƒ¤ãƒ¼ã‚º vs. STRã€€ä»£ç†UP
+</td></tr><tr class="tr_ng" id="#tr10" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198709"><center>IR</center></a></td><td>Recollections of ageHa in 2004 [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=60&amp;event=96">U-hey</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Recollections_Scr.bms</a></td><td>G2R2014 TEAM : å©ã„ã¦éŠã‚“ã§é¡”é¢ãƒˆãƒ©ãƒ³ã‚¶ãƒ 
+</td></tr><tr class="tr_ng" id="#tr11" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=129"><center>IR</center></a></td><td>ã‚³ã‚ªãƒªãƒãƒãƒ© [SCRATCHE DANGEROUS]</td><td><a href="http://www.mediafire.com/download/gny1kp66pwd4x53/%5Bnaotyu-%5Dkoorinobara.zip">naotyu- feat. Miyu</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr12" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198990"><center>IR</center></a></td><td>ã†ã‰ï½ã‚‹â˜†ãã‚‰ã£ã—ã‚ƒï½2chu! [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=277&amp;event=96">ãƒ¯ã‚±ã‚¢ãƒ‹ã€€ï¼ˆã‚¤ãƒ©ã‚¹ãƒˆãƒ»ã‚¯ãƒ­ï¼‰</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">wall2_hyper_Scr.bms</a></td><td>G2R2014 TEAM : ã™ã¨ã‚ãƒ¼ã¯ã£ã¨
+</td></tr><tr class="tr_ng" id="#tr13" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199540"><center>IR</center></a></td><td>F13 [SP Scratch.ver Normal]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=52&amp;event=96">Judah</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">F13_Scr_normal.bms</a></td><td>G2R2014 TEAM : Judecca
+</td></tr><tr class="tr_ng" id="#tr14" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=140567"><center>IR</center></a></td><td>FALL THE BOMB [hyper]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=10&amp;event=83">dge-nesis SPThx W.CROW</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr15" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—0</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198509"><center>IR</center></a></td><td>Burn Out, Fire!! [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=379&amp;event=88">klavistr (movie : å‡ºå‰)</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Burn_Out_Scr.bme</a></td><td>BOF2013 TEAM : TEAM HARD TRANCE -BUCHIAGE-ã€€ä»£ç†UP
+</td></tr><tr class="tr_ng" id="#tr16" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="red">â—0</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=200054"><center>IR</center></a></td><td>TETRIS B-TYPE [SP Scratch.ver Normal]</td><td><a href="http://www.nicovideo.jp/watch/sm25025632">9-zen</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">tetris_b-type_Scr.bms</a></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr17" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183674"><center>IR</center></a></td><td>It's 'alice' dream[S_hinather]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">polysha</a></td><td><a href="http://flowermaster.web.fc2.com/">èˆé››</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr18" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183459"><center>IR</center></a></td><td>AquaMarine[7key_KASATHERâ—]</td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">Floatage</a></td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr19" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183879"><center>IR</center></a></td><td>theme of Maia [Fire Ball]</td><td><a href="http://nekomimi.name/">ã­ã“ã¿ã¿é­”æ³•ä½¿ã„</a></td><td><a href="http://ux.getuploader.com/sabun_/download/32/_nm19_E.zip">DJ.END</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr20" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=191139"><center>IR</center></a></td><td>naughty girl@Excellency's Palace Another</td><td><a href="http://www.nicovideo.jp/watch/sm24015862">DJ Haruka MAD Izm*</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr21" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=189495"><center>IR</center></a></td><td>ice valley 'beyond the searoad' [FREEZEã€€KAMABOKO]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=38&amp;event=74">maki</a></td><td><a href="http://www.nicovideo.jp/watch/sm23797032">ZEN-SOQ</a></td><td>ä»£ç†UP
+</td></tr><tr class="tr_ng" id="#tr22" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198710"><center>IR</center></a></td><td>Back 2 Oldskool [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=138&amp;event=96">vorbis</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">back2oldskool_Scr.bms</a></td><td>G2R2014 TEAM : Urutora Electronic Corporation
+</td></tr><tr class="tr_ng" id="#tr23" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194030"><center>IR</center></a></td><td>The Typewriter -Yoisaraeasy-</td><td><a href="http://onedrive.live.com/redir?resid=3F2FA32F01292CDF%21119">Leroy Anderson</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">up0034</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr24" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=121986"><center>IR</center></a></td><td>YUGAMINAI LOVE [7KEY HYPER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=4&amp;event=76">kinohito</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr25" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194056"><center>IR</center></a></td><td>Bitter and Sweet -Yoisaraeasy-</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=329&amp;event=83">Alfort</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">åå…­çš¿å¤œ</a></td><td>up0036
+</td></tr><tr class="tr_ng" id="#tr26" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=146627"><center>IR</center></a></td><td>conflict [Caesar]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=57&amp;event=74">siromaru + cranky</a></td><td><a href="http://absolute.pv.land.to/uploader/all.html?1416620270">ã—ãƒ¼</a></td><td>up3077
+</td></tr><tr class="tr_ng" id="#tr27" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182944"><center>IR</center></a></td><td>STAGER [for HEALIN]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=356&amp;event=88">Ras</a></td><td><a href="http://bit.ly/1bYjJUC">notebook</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr28" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=190595"><center>IR</center></a></td><td>funny crasher (Shift)</td><td><a href="http://estish.nobody.jp/">TOMA</a></td><td><a href="http://www.nicovideo.jp/watch/sm23940041">ä»–äºº</a></td><td>åŸæ›²ã¯ã€Œå¤ã„ã®ã¨ã‹ã¯SkyDriveã«ã€ã®ãƒªãƒ³ã‚¯å…ˆã®ã€Œest049_toma_funny_crasher.zipã€
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr29" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182770"><center>IR</center></a></td><td>LOVEâ˜†BEAM (orange summer mix) -NAGTHER+ çš¿-</td><td><a href="http://nothing.sh/~manbow/event/event.cgi?action=More_def&amp;num=3&amp;event=33">honey princess</a></td><td><a href="http://ux.getuploader.com/nagsa_bms/download/5/sara_love_orange_BLACK.zip">æ°´æ©‹ãªãã•</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr30" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183473"><center>IR</center></a></td><td>DJ BATTLE theme:PARANOiA [4 IIDX Player]</td><td><a href="http://dcut.s165.xrea.com/">Remixed by Octa the B.G.</a></td><td><a href="http://ux.getuploader.com/sabun_/download/31/djbtp_E.zip">DJ.END</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr31" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198510"><center>IR</center></a></td><td>å›ã™ã‚·ãƒ³ãƒãƒ« [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=265&amp;event=88">DJ Mawas Cymbal(CV:ã‹ã‚†ã)</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">mawasu_Scr.bms</a></td><td>BOF2013 TEAM : å›ã™ã‚·ãƒ³ãƒãƒ«
+</td></tr><tr class="tr_ng" id="#tr32" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198494"><center>IR</center></a></td><td>ãƒ”ã‚¯ãƒ‹ãƒƒã‚¯ã‚¬ãƒ¼ãƒ« [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=22&amp;event=85">ã‹ã‚†ã (movie : Captain HIMBA)</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">piknic_SP_Scr.bms</a></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr33" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181853"><center>IR</center></a></td><td>Holy Doll -XTM STDK RMX- [KASATHERâ—]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">taqumi remixed by xenothium</a></td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>hollydoll_xtmstdkrmx_ogg, _hd_xsr[7key_KASATHERâ—].bms
+</td></tr><tr class="tr_ng" id="#tr34" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182717"><center>IR</center></a></td><td>ç‰¹åŠ¹è–¬ã¯ã‚«ãƒ‹ãƒ”ãƒ©ãƒ• (ã‚«ãƒ‹ã‚«ãƒ)</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=316&amp;event=88">ã‚»ãƒŠ</a></td><td><a href="https://dl.dropboxusercontent.com/u/20710299/_kanipilaf_Z.zip">ZENSOQ</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr35" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198498"><center>IR</center></a></td><td>Meteor Lights [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=450&amp;event=88">s-don / kkkfff2</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Meteor_Lights_Scr.bme</a></td><td>BOF2013 TEAM : (Donâ€™t say) Goodbye
+</td></tr><tr class="tr_ng" id="#tr36" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=121978"><center>IR</center></a></td><td>YUGAMINAI LOVE [7KEY ANOTHER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=4&amp;event=76">kinohito</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr37" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194976"><center>IR</center></a></td><td>ãŠã„ã—ã„çš¿ã¿ã(ã¹ã£ã¨ã‚Šã‚¢ãƒŠã‚¶ãƒ¼)</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=345&amp;event=74">ã•ã°ã¿ã</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">ã•ã‚“ã‚ã‚Š</a></td><td>up0039
+</td></tr><tr class="tr_ng" id="#tr38" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181799"><center>IR</center></a></td><td>GIN TONIC FLAVOR [aspER7]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=203&amp;event=88">q/stol</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">jakko</a></td><td>up0023.lzh 
+</td></tr><tr class="tr_ng" id="#tr39" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">â—3</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182379"><center>IR</center></a></td><td>Wonder Bullfighter ï½ A Barcelona cuando florece la lira ï½  [7key_KASATHERâ—]</td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">naotyu- feat. R.Yago</a></td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>[naotyu-]wonder, wonder[7key_KASATHERâ—].bme
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr40" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=69452"><center>IR</center></a></td><td>Maharaja Trance -Full Mahara Jacket-</td><td><a href="http://web.archive.org/web/20020817193500/http://isweb13.infoseek.co.jp/art/yuhno/poem/maharaja.exe">Queen P.A.L</a></td><td><a href="http://www.geocities.jp/penmawashi2000/">Ark-Z</a></td><td>2010 DPBMSã‚¿ãƒ–ã«ã‚ã‚Šã¾ã™
+</td></tr><tr class="tr_ng" id="#tr41" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=149651"><center>IR</center></a></td><td>Nigrette -SCanother-</td><td><a href="http://3t1a.net/bms/nigrette_ogg.zip">è§’ç…®ãƒ–ãƒ©ãƒƒã‚¯ãƒ©ã‚°ãƒ¼ãƒ³ / ã‚¨ã‚¿ãƒ¼ãƒŠãƒ«ã‚³ã‚¹ãƒ¢æ–è—¤</a></td><td><a href="http://absolute.pv.land.to/bof/all.html">La*2â„ƒ</a></td><td>up0297.zip
+</td></tr><tr class="tr_ng" id="#tr42" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=120357"><center>IR</center></a></td><td>æ—¥ç«‹ã®æ¨¹ -ã“ã®çš¿ãªã‚“ã®çš¿-</td><td><a href="https://onedrive.live.com/?cid=3f3fcf7e354956a6&amp;id=3F3FCF7E354956A6%21115">G-Y</a></td><td><a href="http://profile.live.com/P.mvc#!https://skydrive.live.com/?cid=aea1b5017e9593bc&amp;group=0&amp;sc=documents!cid=AEA1B5017E9593BC&amp;id=AEA1B5017E9593BC!236&amp;sc=documents">ã‚¯ãƒ«ãƒ«withKJ</a></td><td>skydriveä¿ç®¡
+</td></tr><tr class="tr_ng" id="#tr43" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=180225"><center>IR</center></a></td><td>DIFINITION OF INSANITY [JUNKIE]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=210&amp;event=83">H.U.T GiGAR</a></td><td><a href="http://ux.getuploader.com/sabun_/download/23/difinition_of_insanity-E.zip">DJ.END</a></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr44" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181523"><center>IR</center></a></td><td>SMALL BEN [7KEY KASATHERâ—]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=3&amp;event=72">kireji</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">KASAKO</a></td><td>up0024.zip
+</td></tr><tr class="tr_ng" id="#tr45" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=66224"><center>IR</center></a></td><td>Moon phase Encounter -ç´…ç™½è’²é‰¾-</td><td><a href="http://nekomimi.name/">ã­ã“ã¿ã¿é­”æ³•ä½¿ã„</a></td><td><a href="http://www1.axfc.net/uploader/Sc/so/117289.zip">åç„¡ã—</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr46" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=130662"><center>IR</center></a></td><td>NO NIGHT MORE SOUL! [for Home2]</td><td><a href="http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=17">ã­ã“ã¿ã‚Šã‚“</a></td><td><a href="http://www.geocities.jp/musicmakeman/">æœˆé–€</a></td><td>ãƒªãƒ³ã‚¯å…ˆã‹ã‚‰ã€å·®åˆ†â†’ä»–ã®ä»–ã®å·®åˆ†ã¯ã“ã¡ã‚‰ã«å…¨éƒ¨ã‚ã‚Šã¾ã™ã€ã®ã¨ã“ã‚ã‹ã‚‰DL
+</td></tr><tr class="tr_ng" id="#tr47" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199011"><center>IR</center></a></td><td>GO BACK 2 RAVE [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=265&amp;event=96">DOT96</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">goback2rave_Scr.bme</a></td><td>G2R2014 TEAM : STRLabel_
+</td></tr><tr class="tr_ng" id="#tr48" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=186879"><center>IR</center></a></td><td>BIAS [ã‚ã‹ã„]</td><td><a href="http://yatai.ath.cx/c03_shuffle2/detail.php?n=39">syzfonics</a></td><td><a href="https://onedrive.live.com/?cid=1ACC86CE07A5310A&amp;id=1ACC86CE07A5310A%21112">alt</a></td><td>å·®åˆ†ã¯ãƒªãƒ³ã‚¯å…ˆã®44ç•ªç›®ã®ãƒ•ã‚¡ã‚¤ãƒ«
+</td></tr><tr class="tr_ng" id="#tr49" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198402"><center>IR</center></a></td><td>Luminance [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=42&amp;event=96">Cocoa</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">luminance_h_SP_Scratch.bme</a></td><td>G2R2014 TEAM : ã”æ³¨æ–‡ã¯ã‚«ãƒãƒœã‚³ã§ã™ã‹
+</td></tr><tr class="tr_ng" id="#tr50" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198499"><center>IR</center></a></td><td>Two Hundred Dimension [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=71&amp;event=83">DG-P</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">200D_Scr.bms</a></td><td>BOF2012 TEAM : RICH RACER2
+</td></tr><tr class="tr_ng" id="#tr51" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198401"><center>IR</center></a></td><td>Flare(BMS Edit.) [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=25&amp;event=96">Nurumayu</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">_Flare_SP_Scratch.bms</a></td><td>G2R2014 TEAM : éŸ³æ¥½åˆ¶ä½œã‚µãƒ¼ã‚¯ãƒ« ãƒ©ãƒ ãƒ¬ãƒ¼ã‚ºãƒ³ vs. éŸ³ã‚²ãƒ¼ã‚µãƒ¼ã‚¯ãƒ« ãƒ¦ãƒ¼ã‚¹ãƒˆ
+</td></tr><tr class="tr_ng" id="#tr52" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181704"><center>IR</center></a></td><td>Karakuri Plum _SCR ver</td><td><a href="http://www1.axfc.net/uploader/C/so/167738">Mitsuâ˜†</a></td><td><a href="http://sdrv.ms/1bZPbBm">MIND</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr53" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">â—5</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=140573"><center>IR</center></a></td><td>FALL THE BOMB [another]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=10&amp;event=83">dge-nesis SPThx W.CROW</a></td><td></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr54" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183564"><center>IR</center></a></td><td>INFINITE BEATS [â—NANATHER] </td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">P4koo</a></td><td><a href="http://flowermaster.web.fc2.com/">å¥ˆé‚£æ¨¹</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr55" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199012"><center>IR</center></a></td><td>Reach to the sky (radio edit)  [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=243&amp;event=96">void feat. Salita</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Reach_to_the_sky_Scr.bme</a></td><td>G2R2014 TEAM : ãƒªã‚¢å……ã¨ã¯ä½•ã ã£ãŸã®ã‹
+</td></tr><tr class="tr_ng" id="#tr56" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198632"><center>IR</center></a></td><td>At Aqualand [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=2&amp;event=96">AsAhisAn</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">at_aqualand_Scr.bms</a></td><td>G2R2014 TEAM : AA(A)AAAã‚„ã£ã±ã‚Šå‡ºã¾ã›ã‚“
+</td></tr><tr class="tr_ng" id="#tr57" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96971"><center>IR</center></a></td><td>locked girl@Scarlet-Devils Palace [ANOTHER]</td><td><a href="http://page.freett.com/ykyk00/">ãã£ã¡ãƒ¼</a></td><td></td><td>
+</td></tr><tr class="tr_ng" id="#tr58" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183060"><center>IR</center></a></td><td>It's 'alice' dream [7key_KASATHERâ—]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">polysha</a></td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr59" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">â—6</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=184790"><center>IR</center></a></td><td>ç›´è§’ã‚¹ãƒ©ã‚¤ãƒ‰ã‚¬ãƒ¼ãƒ« [Princess]</td><td><a href="http://www.geocities.jp/dsks5456/osg.html">o.s.gateã¨é‡éŸ³ãƒ†ãƒˆå§«</a></td><td><a href="http://ux.getuploader.com/sabun_/download/33/tetete_E.zip">DJ.END</a></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr60" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183659"><center>IR</center></a></td><td>å¹´ä¸­å¤¢ä¸­ãªå¥½å¥‡å¿ƒ[scr_another]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">er</a></td><td><a href="http://flowermaster.web.fc2.com/">jin</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr61" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183460"><center>IR</center></a></td><td>Showguts ï¼ˆã„ã¤ã‚‚ã‚ˆã‚Šå¤šãå›ã™KASATHERâ—ï¼‰</td><td><a href="http://ninjaactionteam.sakura.ne.jp/">Ninja Action Team</a></td><td><a href="http://https//onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr62" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194577"><center>IR</center></a></td><td>Dancing Dirty Monster [boiled Tear fish paste Squid]</td><td><a href="http://www.geocities.jp/hihihi4442/sandwich.html">anubasu-anubasu</a></td><td><a href="http://www.geocities.jp/hihihi4442/sandwich.html">ZEN-SOQ</a></td><td>å€‹åˆ¥DLã«å·®åˆ†ã€ãã®ä¸‹ã®â—ã«æœ¬ä½“ãŒã‚ã‚Šã¾ã™ã€‚
+</td></tr><tr class="tr_ng" id="#tr63" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=182233"><center>IR</center></a></td><td>The Question[7key KASATHERâ—]</td><td><a href="http://mournfinale.com/question/">Personative feat. MC. NOREAJ</a></td><td><a href="https://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>[]_The Question [7key_KASATHERâ—].bme
+</td></tr><tr class="tr_ng" id="#tr64" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=158245"><center>IR</center></a></td><td>çš¿æŠ•ã’ãƒ—ãƒªãƒ³ã‚»ã‚¹[ANOTHER]</td><td><a href="http://www.geocities.jp/dsks5456/osg.html">ãŠä¸‹ã’</a></td><td></td><td>ãƒãƒ¼ãƒ‰ã¯é›£ã—ã„ã€‚
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr65" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183627"><center>IR</center></a></td><td>It's 'alice' dream[S_hinaticr]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">polysha</a></td><td><a href="http://flowermaster.web.fc2.com/">èˆé››</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr66" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=196762"><center>IR</center></a></td><td>Espresso Shots [Another+]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=39&amp;event=96">Chino</a></td><td></td><td>G2R2014 TEAM : ã”æ³¨æ–‡ã¯ã‚«ãƒãƒœã‚³ã§ã™ã‹
+</td></tr><tr class="tr_ng" id="#tr67" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199216"><center>IR</center></a></td><td>The Formula</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=351&amp;event=88">Junk</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">up0043</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr68" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">â—8</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198993"><center>IR</center></a></td><td>å†å…¥æµ´ã‚¿ã‚¤ãƒ ã‚º [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=241&amp;event=96">ãƒã‚¹ãƒ­ãƒãƒ³ã‚¹ï½ãƒãƒ©ã®é¦™ã‚Šï½ obj:GEIST</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">snyt_SPH_Scr.bms</a></td><td>G2R2014 TEAM : system U
+</td></tr><tr class="tr_ng" id="#tr69" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">â—8</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=162723"><center>IR</center></a></td><td>Lieselotte [lunether]</td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">wa. / deadblue238</a></td><td><a href="http://www1.axfc.net/uploader/so/2971192">lune</a></td><td>BOF2012 TEAM : Memoirs æœ¬ä½“ãƒªãƒ³ã‚¯å…ˆã‹ã‚‰DLã§ããªã„ãŸã‚ä»£ç†UPã—ã¾ã™ã€‚(_wa_lieselotte.zip)
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr70" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100592"><center>IR</center></a></td><td>Cherry Blossom Shower -SP For Scratch ä¼åˆ†å’²-</td><td><a href="https://onedrive.live.com/?cid=3f3fcf7e354956a6&amp;id=3F3FCF7E354956A6%21115">Belle.</a></td><td><a href="http://p.tl/1Kpm">å½©é››</a></td><td>skydriveä¿ç®¡
+</td></tr><tr class="tr_ng" id="#tr71" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=175784"><center>IR</center></a></td><td>Love &amp; Justice [blackRIETHER]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=227&amp;event=65">ãƒ•ãƒ­ãƒ³ / ãƒ©ã‚ºãƒ™ãƒªãƒ«</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">RIE.</a></td><td>_03_flonne_spbr.bml
+</td></tr><tr class="tr_ng" id="#tr72" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="red">â—9</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199913"><center>IR</center></a></td><td>æ‹ã®2-4-11(BMS Edit) [boiled IDOL fish LCruiser paste]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=74&amp;event=96">Gun-SEKI feat.é‚£ç‚</a></td><td><a href="http://www.nicovideo.jp/watch/sm24985664">ZEN-SOQ</a></td><td>G2R2014 TEAM : ä¸‰åè·¯
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr73" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—10</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=106958"><center>IR</center></a></td><td>Gun to Childhead</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=237&amp;event=65">music</a></td><td><a href="http://absolute.pv.land.to/bmsuploader.html">sabun</a></td><td>â˜…â˜…3
+</td></tr><tr class="tr_ng" id="#tr74" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—10</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198947"><center>IR</center></a></td><td>ãƒ•ãƒ©ãƒ³ãŒçš¿ã§ãã‚…ãã‚…ãã‚…ã£â˜†ã¨ã—ã¦ã‚®ãƒ¥ã‚¤ãƒ¼ãƒ³â—</td><td><a href="http://yaruki0.sakura.ne.jp/event/ondanyugi4/impression.cgi?no=42">ãµã‚‰ã‚“ã©ãƒ¼ã‚‹ãƒ»ã™ã‹ãƒ¼ã‚Œã£ã¨(495ã¾ã„Ã—2)</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">å¥ˆé‚£æ¨¹</a></td><td>up0042
+</td></tr><tr class="tr_ng" id="#tr75" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—10</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183604"><center>IR</center></a></td><td>Bicolor spirit[â—NANATHER] </td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">urimu</a></td><td><a href="http://flowermaster.web.fc2.com/">å¥ˆé‚£æ¨¹</a></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr76" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183529"><center>IR</center></a></td><td>Singing of Night birds [â—NANATHER]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">Ark-Z Illustration by æ˜¥é›¨</a></td><td><a href="http://flowermaster.web.fc2.com/">å¥ˆé‚£æ¨¹</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr77" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199507"><center>IR</center></a></td><td>ELECTRiCiTY [çš¿å…ˆè¼©]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=57&amp;event=96">NIKITA / misokabocha</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">ã¨ï¼Ÿ</a></td><td>up0048
+</td></tr><tr class="tr_ng" id="#tr78" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183642"><center>IR</center></a></td><td>It's 'alice' dream[â—NANATHER]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">polysha</a></td><td><a href="http://flowermaster.web.fc2.com/">å¥ˆé‚£æ¨¹</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr79" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—11</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183083"><center>IR</center></a></td><td>2Rock [â—]</td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">EBIMAYO</a></td><td><a href="http://t.co/v6YBKHMoKQ">å¥ˆé‚£æ¨¹</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr80" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="blue">â—11</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198711"><center>IR</center></a></td><td>å…ˆæ‰‹å¿…å‹æˆ¦é—˜æ©Ÿã€€é³³ [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=171&amp;event=96">Dr.A (BGA:å…«å¶‹) </a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">sentehissyo_Scr.bms</a></td><td>G2R2014 TEAM : Sound Lab
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr81" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—12</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181706"><center>IR</center></a></td><td>Here we goï¼(TM edit) [KASATHERâ—]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">Awesomeman</a></td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>miamibass[KASATHERâ—]
+</td></tr><tr class="tr_ng" id="#tr82" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—12</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183243"><center>IR</center></a></td><td>Earthquake,thunder,a fire,and father [7key_KASATHERâ—]</td><td><a href="http://onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!173">WAKIMATA</a></td><td><a href="http://https//onedrive.live.com/?cid=3763CEB14F983372#cid=3763CEB14F983372&amp;id=3763CEB14F983372!161">KASAKO</a></td><td>
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr83" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—13</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183656"><center>IR</center></a></td><td>ã‚ã«ã¾ã‚‰ [çš¿ãƒ–ãƒ¬ã‚¤ã‚¯]</td><td><a href="http://estish.nobody.jp/">TOMA</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">ãˆã„ã‚†ã†</a></td><td>åŸæ›²ã¯skydriveã®est073ã€å·®åˆ†ã¯up0026.zip
+</td></tr><tr class="tr_ng" id="#tr84" style="color:black;font-size:12px" height="14"><td width="45" align="center"><font color="red">â—13</font></td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199743"><center>IR</center></a></td><td>HAELEQUIN [boiled Arlequin fish pantomine paste]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=389&amp;event=83">orangentle / deadblue238</a></td><td><a href="http://www.nicovideo.jp/watch/sm24982802?ref=search_key_video">ZEN-SOQ</a></td><td>BOF2012 TEAM : Memoirs
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr85" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=189493"><center>IR</center></a></td><td>Cross Galaxy [boiled fishâ—cosmicâ€paste]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=304&amp;event=74">kanone</a></td><td><a href="http://www.nicovideo.jp/watch/sm23790435">ZEN-SOQ</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr86" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194059"><center>IR</center></a></td><td>Bitter and Sweet -Yoisarather-</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=329&amp;event=83">Alfort</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">åå…­çš¿å¤œ</a></td><td>up0036
+</td></tr><tr class="tr_ng" id="#tr87" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199508"><center>IR</center></a></td><td>Altale[çš¿å…ˆè¼©]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=150&amp;event=96">å‰Šé™¤</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">ã¨ï¼Ÿ</a></td><td>up0046
+</td></tr><tr class="tr_ng" id="#tr88" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198502"><center>IR</center></a></td><td>ãƒ€ã‚¤ãƒŠãƒ¢ã¨ç™½æ˜¼å¤¢ (ANOTHER MIX) [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=436&amp;event=88">kju8 + zen + DOT96</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Dynamo_A_SP_Scr.bms</a></td><td>BOF2013 TEAM : ãƒ­ãƒƒãƒ—ã‚¤ãƒ¤ãƒ¼ã‚º vs. STR
+</td></tr><tr class="tr_ng" id="#tr89" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—14</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198403"><center>IR</center></a></td><td>ãƒ•ã‚¡ãƒ³ã‚­ãƒ¼ãƒ›ãƒƒãƒˆ [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=464&amp;event=88">BACO + kazpulse</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">02_funkyhot_h_SP_Scratch.bms</a></td><td>BOF2013 TEAM : Cutting Nation
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr90" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=181839"><center>IR</center></a></td><td>Apocalypse... [â—]</td><td><a href="http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=22">anubasu-anubasu</a></td><td><a href="http://akred.web.fc2.com/ak-red-home.html">èµ¤ã„äºº</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr91" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=198465"><center>IR</center></a></td><td>Total Eclipse of the Sun [SP Scratch.ver Hyper]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=210&amp;event=96">-45</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Total_Eclipse_Scr_H.bms</a></td><td>G2R2014 TEAM : åŠ´åƒå…«å·
+</td></tr><tr class="tr_ng" id="#tr92" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199017"><center>IR</center></a></td><td>F13 [SP Scratch.ver]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=52&amp;event=96">Judah</a></td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">F13_Scr.bms</a></td><td>G2R2014 TEAM : Judecca
+</td></tr><tr class="tr_ng" id="#tr93" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=194852"><center>IR</center></a></td><td>BIAS [ã‚‚ã£ã¨ï¼ã€€ã‚ã‹ã„]</td><td><a href="http://yatai.ath.cx/c03_shuffle2/detail.php?n=39">syzfonics</a></td><td><a href="https://onedrive.live.com/?cid=1ACC86CE07A5310A&amp;id=1ACC86CE07A5310A%21112">alt</a></td><td>å·®åˆ†ã¯ãƒªãƒ³ã‚¯å…ˆã®44ç•ªç›®ã®ãƒ•ã‚¡ã‚¤ãƒ«
+</td></tr><tr class="tr_ng" id="#tr94" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—15</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199538"><center>IR</center></a></td><td>Lambda Driver [boiled Î›fish paste Driver]</td><td><a href="https://onedrive.live.com/?cid=3F3FCF7E354956A6&amp;id=3F3FCF7E354956A6%21202">Lambda Driver [boiled Î›fish paste Driver]</a></td><td><a href="http://www.nicovideo.jp/watch/sm24953344">.ZEN-SOQ</a></td><td>ä»£ç†UP
+</td></tr><tr style="background-color:#FFFF00" height="10"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr95" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=180859"><center>IR</center></a></td><td>äººã€€èº«ã€€äº‹ã€€æ•…ã€€ã§ã€€é«˜ã€€é€Ÿã€€çš¿</td><td><a href="http://skydrive.live.com/?cid=40805CD20B6241C6&amp;id=40805CD20B6241C6!194">VjHEaRTs/yo.t/UN&amp;CO/è½åˆ/UnK-now/37E</a></td><td><a href="http://akred.web.fc2.com/ak-red-home.html">èµ¤ã„äºº</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr96" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=180860"><center>IR</center></a></td><td>FREEDOM DiVE [â—]</td><td><a href="http://skydrive.live.com/?cid=FD93B4F2CB8CD95F&amp;id=FD93B4F2CB8CD95F%21105">xi</a></td><td><a href="http://akred.web.fc2.com/ak-red-home.html">èµ¤ã„äºº</a></td><td>ç™ºç‹‚æ›²ã®ä¿ç®¡
+</td></tr><tr class="tr_ng" id="#tr97" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=179704"><center>IR</center></a></td><td>ã‚¹ã‚¯ãƒ©ãƒƒãƒãƒãƒ‹ã‚¢ï¼ã“ã®ã“ã‚†ã³ãŠã‚Œã‚ï¼ [WriStCUttEr]</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=212&amp;event=65">å¸¸å¤ãƒãƒ‹ãƒ¼ãƒ‘ã‚¤</a></td><td><a href="http://www.nicovideo.jp/watch/sm21426592">ZEN-SOQ</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr98" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=183661"><center>IR</center></a></td><td>å¹´ä¸­å¤¢ä¸­ãªå¥½å¥‡å¿ƒ[USCâ—] </td><td><a href="http://colorfulumbrella.sakura.ne.jp/ondan/ondan6.html">er</a></td><td><a href="http://flowermaster.web.fc2.com/">å¥ˆé‚£æ¨¹</a></td><td>
+</td></tr><tr class="tr_ng" id="#tr99" style="color:black;font-size:12px" height="14"><td width="45" align="center">â—16</td><td><input type="button" value="   "></td><td width="16"><a href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=199509"><center>IR</center></a></td><td>å¿…ç„¶æ­»ã®é‹å‘½è«–</td><td><a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=205&amp;event=88">ãƒ«ã‚¼ â˜† ãˆã¿ã‚…ã†ã€‚ â˜† çŸ³ç‹ãƒã‚µãƒˆ</a></td><td><a href="http://absolute.pv.land.to/turntable/upload.html">ã¨ï¼Ÿ</a></td><td>up0044
 
   </td></tr></tbody></table>
-<div align="center"><strong><a href="http://minddnim.web.fc2.com/index.html" target="_top">–ß‚é</a></strong></div>
+<div align="center"><strong><a href="http://minddnim.web.fc2.com/index.html" target="_top">æˆ»ã‚‹</a></strong></div>
 
 
 </body></html>
