@@ -1,7 +1,7 @@
 ﻿{
 "name" : "新規登録譜面一覧表 (月別)",
 "symbol" : "Pmonthly",
-"data_url" : https://pmsdatabase.github.io/subtable/monthly/monthly_score.json",
+"data_url" : "https://pmsdatabase.github.io/subtable/monthly/monthly_score.json",
 "level_order" : 
 [
 
