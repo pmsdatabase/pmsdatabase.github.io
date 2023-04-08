@@ -1622,8 +1622,8 @@
 
 
 
-{"level":"28","title":"Arcade Noise","md5":"d1385154ea5b0f33f54ebc30253c8ca5","sha256":"8d72dcbf571975e43d6e44daff3c37b062d9212add50c650a7c90d78af573115","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://zatsuzatsu.sakura.ne.jp/orig-bms/","artist":"ZatsuZatsu","notes":"503","total":"300 (0.596%/note)","memo":"","comment":"","no":"2138","state":""},
-{"level":"37","title":"Arcade Noise","md5":"3d44b0c628390d1e8fdd356f88bb68f7","sha256":"e4077cf2a1db12bef774d6caae36318dccd1fe6589e5594c6c280bd444b1679a","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://zatsuzatsu.sakura.ne.jp/orig-bms/","artist":"ZatsuZatsu","notes":"887","total":"310 (0.349%/note)","memo":"","comment":"","no":"2139","state":""},
+
+
 
 
 
@@ -1721,8 +1721,8 @@
 {"level":"44","title":"byte9216","md5":"99e090c7a6acd046e8b3a606bfcabf18","sha256":"7cd510319aa7d936e25ab56184620cf43953084ab8999fe4807e57280ca78dcc","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://web.archive.org/web/20070502045311/http:/bin.dot908.net/9b/?mode=detail&no=0016","artist":"t-plain","notes":"652","total":"300 (0.46%/note)","memo":"","comment":"短尺(1分), NORMAL判定 ○4査定済み 難易度更新:lv41→44","no":"2234","state":""},
 
 
-
-
+{"level":"28","title":"Arcade Noise","md5":"d1385154ea5b0f33f54ebc30253c8ca5","sha256":"8d72dcbf571975e43d6e44daff3c37b062d9212add50c650a7c90d78af573115","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://mega.nz/folder/FNFDCQaT#wfv-iI4UuSIaGpP0oFZdtQ/file/MJlR2YIR","artist":"ZatsuZatsu","notes":"503","total":"300 (0.596%/note)","memo":"","comment":"","no":"2138","state":""},
+{"level":"37","title":"Arcade Noise","md5":"3d44b0c628390d1e8fdd356f88bb68f7","sha256":"e4077cf2a1db12bef774d6caae36318dccd1fe6589e5594c6c280bd444b1679a","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://mega.nz/folder/FNFDCQaT#wfv-iI4UuSIaGpP0oFZdtQ/file/MJlR2YIR","artist":"ZatsuZatsu","notes":"887","total":"310 (0.349%/note)","memo":"","comment":"","no":"2139","state":""},
 
 {"level":"20","title":"Calista","md5":"1365e2a3308715cb7c37f728ff7828ec","sha256":"fab225a3ddd24142d69e6973d7413b73000d91b5e66c8c8e7e2e1a68554827a2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20160813035044/https:/dl.dropboxusercontent.com/s/10hok25g21s9y13/%E7%99%BB%E7%AB%9C%E9%96%80vol.1.zip","artist":"TEKINA (登竜門より)","notes":"169","total":"180 (1.065%/note)","memo":"","comment":"低TOTAL(180)","no":"2240","state":""},
 {"level":"35","title":"Calista","md5":"7a50311e9e899d36e1e2f78a9c1479ec","sha256":"024d974f9656ec80c684714f7da67d70488633610f4d3543173b7161ffa09090","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20160813035044/https:/dl.dropboxusercontent.com/s/10hok25g21s9y13/%E7%99%BB%E7%AB%9C%E9%96%80vol.1.zip","artist":"TEKINA (登竜門より)","notes":"385","total":"260 (0.675%/note)","memo":"","comment":"","no":"2241","state":""},
@@ -2569,9 +2569,9 @@
 
 
 
-{"level":"22","title":"Second Future","md5":"a7a3459b26d145ee1a9b41af05fbb725","sha256":"3b1c835fd06271bdca38e6946f31481a1d065c02c5a64602251b4e5fd9b14fc0","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://zatsuzatsu.sakura.ne.jp/orig-bms/","artist":"oxygen","notes":"391","total":"250 (0.639%/note)","memo":"","comment":"","no":"3085","state":""},
-{"level":"33","title":"Second Future","md5":"bb0b595fc0aea9fe979c6c9293da9db7","sha256":"4fab7f3793344dcb4706933f1b0629ddc24c187f32d739b245eff5207278cb42","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://zatsuzatsu.sakura.ne.jp/orig-bms/","artist":"oxygen","notes":"576","total":"250 (0.434%/note)","memo":"","comment":"","no":"3086","state":""},
-{"level":"43","title":"Second Future","md5":"1bc2c3528a1f9d8ba19a7cecf25c16df","sha256":"3e3e157d86b758159a6eab893cb558c22e2b53185d8bca9264e2df63eca237d3","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://zatsuzatsu.sakura.ne.jp/orig-bms/","artist":"oxygen","notes":"843","total":"280 (0.332%/note)","memo":"","comment":"○3査定済み 難易度更新:lv42→43","no":"3087","state":""},
+
+
+
 
 
 
@@ -2827,7 +2827,7 @@
 
 
 
-
+{"level":"22","title":"Second Future","md5":"a7a3459b26d145ee1a9b41af05fbb725","sha256":"3b1c835fd06271bdca38e6946f31481a1d065c02c5a64602251b4e5fd9b14fc0","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20160311225409/http://zatsuzatsu.blog.shinobi.jp/bms/-pop%20step-%EF%BC%8Fsecond%20future","artist":"oxygen","notes":"391","total":"250 (0.639%/note)","memo":"","comment":"","no":"3085","state":""},
 
 
 
@@ -3071,8 +3071,8 @@
 
 {"level":"23","title":"ミルクティーラバーズ","md5":"7e61e2fa45496ff50a12c3371e239b73","sha256":"151adaf15ba4c52d8b8087dc7774256b0ba4ee46bf8d3aa90e476278110c2a2d","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://www.yamajet.com/music/list.html","artist":"Yamajet feat. yukari","notes":"348","total":"238 (0.684%/note)","memo":"","comment":"","no":"3585","state":""},
 {"level":"38","title":"ミルクティーラバーズ","md5":"78354c3d5adaba9b92c7e68d97d94773","sha256":"e3d75ccd45bbdab64717a5085a269f353838dd5a5d35a83e8e6ab543b78a6ef3","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://www.yamajet.com/music/list.html","artist":"Yamajet feat. yukari","notes":"659","total":"238 (0.361%/note)","memo":"","comment":"難易度更新:lv37→38","no":"3586","state":""},
-
-
+{"level":"33","title":"Second Future","md5":"bb0b595fc0aea9fe979c6c9293da9db7","sha256":"4fab7f3793344dcb4706933f1b0629ddc24c187f32d739b245eff5207278cb42","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20160311225409/http://zatsuzatsu.blog.shinobi.jp/bms/-pop%20step-%EF%BC%8Fsecond%20future","artist":"oxygen","notes":"576","total":"250 (0.434%/note)","memo":"","comment":"","no":"3086","state":""},
+{"level":"43","title":"Second Future","md5":"1bc2c3528a1f9d8ba19a7cecf25c16df","sha256":"3e3e157d86b758159a6eab893cb558c22e2b53185d8bca9264e2df63eca237d3","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20160311225409/http://zatsuzatsu.blog.shinobi.jp/bms/-pop%20step-%EF%BC%8Fsecond%20future","artist":"oxygen","notes":"843","total":"280 (0.332%/note)","memo":"","comment":"○3査定済み 難易度更新:lv42→43","no":"3087","state":""},
 
 
 
@@ -3333,8 +3333,8 @@
 
 
 
-{"level":"22","title":"八月絵日記","md5":"2e556946d79127c9b15f4fec79f9e494","sha256":"980b79f2b0f00ca3d08c139d7976ca46ca5a137ab0122c2897d38f99101006e8","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://zatsuzatsu.sakura.ne.jp/orig-bms/","artist":"少年","notes":"515","total":"500 (0.971%/note)","memo":"","comment":"高TOTAL(500)","no":"3849","state":""},
-{"level":"39","title":"八月絵日記","md5":"064e7ea6cd3ef6a7752a4a6000dd5fd4","sha256":"f42e99b74cdafe6fdc1b2cecdb39f1829f3eb60b18c157dfc361eb78c55b5f11","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://zatsuzatsu.sakura.ne.jp/orig-bms/","artist":"少年","notes":"814","total":"450 (0.553%/note)","memo":"","comment":"高TOTAL(450)","no":"3850","state":""},
+
+
 
 
 
@@ -6337,7 +6337,7 @@
 
 
 
-
+{"level":"22","title":"八月絵日記","md5":"2e556946d79127c9b15f4fec79f9e494","sha256":"980b79f2b0f00ca3d08c139d7976ca46ca5a137ab0122c2897d38f99101006e8","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20200226135052/http://zatsuzatsu.blog.shinobi.jp/%E9%81%8E%E5%8E%BB%E3%81%AB%E8%A3%BD%E4%BD%9C%E3%81%97%E3%81%9Fbms%E4%B8%80%E8%A6%A7/%E9%81%8E%E5%8E%BB%E3%81%AB%E8%A3%BD%E4%BD%9C%E3%81%97%E3%81%9Fbms%E4%B8%80%E8%A6%A7","artist":"少年","notes":"515","total":"500 (0.971%/note)","memo":"","comment":"高TOTAL(500)","no":"3849","state":""},
 
 
 
@@ -9411,7 +9411,7 @@
 
 
 
-{"level":"13","title":"cocktail - Symphonic Poetry -","md5":"1c8427112165af9f27ade6951b9cb550","sha256":"34ce8305fa24900dc2a808a6d91a6d8fe0f70526e81b52627567e8b4d792d70f","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱 (BOFXVIPMS)","url":"https://pmsdifficulty.xxxxxxxx.jp/BOFPMS.html","artist":"mots respects kalas","notes":"181","total":"240 (1.326%/note)","memo":"BOF2020","comment":"難易度更新:lv8→18→16→13","no":"12981","state":"2"},
+{"level":"13","title":"cocktail - Symphonic Poetry -","md5":"1c8427112165af9f27ade6951b9cb550","sha256":"34ce8305fa24900dc2a808a6d91a6d8fe0f70526e81b52627567e8b4d792d70f","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱 (BOFXVIPMS)","url":"https://pmsdifficulty.xxxxxxxx.jp/BOFPMS.html","artist":"mots respects kalas","notes":"181","total":"240 (1.326%/note)","memo":"BOF2020","comment":"難易度更新:lv8→18→16→13","no":"12981","state":"3"},
 {"level":"32","title":"cocktail - Symphonic Poetry -","md5":"5ad8355fd1cf30358c146f972edc93c6","sha256":"ca4bb0edd8f91e1b10ec497bcc683ea2d355cd55f87d023569e906e5c2369488","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱 (BOFXVIPMS)","url":"https://pmsdifficulty.xxxxxxxx.jp/BOFPMS.html","artist":"mots respects kalas","notes":"427","total":"320 (0.749%/note)","memo":"BOF2020","comment":"難易度更新:lv28→32","no":"12982","state":"3"},
 {"level":"41","title":"cocktail - Symphonic Poetry -","md5":"2ffebefc631ad580e0a9276c78665f97","sha256":"f8ca945a88447b7d76004d3d0e7e1f8b51d4fb851fba76d512bc08840065c019","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱 (BOFXVIPMS)","url":"https://pmsdifficulty.xxxxxxxx.jp/BOFPMS.html","artist":"mots respects kalas","notes":"856","total":"410 (0.479%/note)","memo":"BOF2020","comment":"難易度更新:lv38→41","no":"12983","state":"3"},
 {"level":"42","title":"cocktail - Symphonic Poetry -","md5":"1daada6d03253d3c7345b36f57be20c4","sha256":"6c777828a6a0a9058794d7ba3b71f2d8cc4ba396eae31564a74544e6cb874666","video1":"","video2":"mCjRXl1-iF8","video3":"","url_diff":"","name_diff":"本体に同梱 (BOFXVIPMS)","url":"https://pmsdifficulty.xxxxxxxx.jp/BOFPMS.html","artist":"mots respects kalas","notes":"1051","total":"420 (0.4%/note)","memo":"BOF2020","comment":"難易度更新:lv44→42","no":"12984","state":"3"},
@@ -10429,7 +10429,7 @@
 {"level":"35","title":"My Road My Journey","md5":"40f3e19279c1ac5e588137e5ca8e172b","sha256":"ca0d60219b125d3e8436c34ba67d68d84095f38738d1d498f5ca54ef5c476e9d","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://pms268.dw.land.to/bms/","artist":"#268","notes":"453","total":"200 (0.442%/note)","memo":"","comment":"低TOTAL(200) 難易度更新:lv28(+6)→35","no":"20156","state":""},
 {"level":"38","title":"My Road My Journey","md5":"6edd89a353afd5f31fcdfb52bf6195db","sha256":"01772145399db917ce589e50246ddd2940a203d60220008a9557e776c3eec488","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://pms268.dw.land.to/bms/","artist":"#268","notes":"597","total":"250 (0.419%/note)","memo":"","comment":"難易度更新:lv35(+6)→38","no":"20157","state":""},
 
-
+{"level":"39","title":"八月絵日記","md5":"064e7ea6cd3ef6a7752a4a6000dd5fd4","sha256":"f42e99b74cdafe6fdc1b2cecdb39f1829f3eb60b18c157dfc361eb78c55b5f11","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20200226135052/http://zatsuzatsu.blog.shinobi.jp/%E9%81%8E%E5%8E%BB%E3%81%AB%E8%A3%BD%E4%BD%9C%E3%81%97%E3%81%9Fbms%E4%B8%80%E8%A6%A7/%E9%81%8E%E5%8E%BB%E3%81%AB%E8%A3%BD%E4%BD%9C%E3%81%97%E3%81%9Fbms%E4%B8%80%E8%A6%A7","artist":"少年","notes":"814","total":"450 (0.553%/note)","memo":"","comment":"高TOTAL(450)","no":"3850","state":""},
 
 
 
@@ -10566,7 +10566,7 @@
 {"level":"?","title":"ファミマ入店音","md5":"dd0f6d73fb75510f500fc920d15cdcf2","sha256":"53cfdf3cd51d9c88176463053a5fe25b04470be20ec362aa20f94a120ab5c0b4","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://ux.getuploader.com/c4_bms/download/19","artist":"Yasushi Inada / bms:C4","notes":"17","total":"260 (15.294%/note)","memo":"","comment":"難易度更新:lv35→?","no":"20293","state":""},
 {"level":"22","title":"Marineside Cafeteria","md5":"c0c779cc184971b6ec287cc9ebbb7a21","sha256":"23b59acc33003fc083c95487f45934b13bcfeafd53d8120c8159dcc693159591","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=2&event=125","artist":"NASA","notes":"222","total":"200 (0.901%/note)","memo":"","comment":"難易度更新:lv28→22","no":"20294","state":""},
 {"level":"37","title":"Marineside Cafeteria","md5":"6993586b46a1aa41a28dfd0536c19106","sha256":"fa37770fba9d92467c29851394e9829ed985fac20b999206a92c9ff9ec72a959","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=2&event=125","artist":"NASA","notes":"600","total":"237 (0.395%/note)","memo":"","comment":"","no":"20295","state":""},
-{"level":"45+","title":"Marineside Cafeteria","md5":"3913ef8d97071071162f2925de16378d","sha256":"112eaca72d4c0448da8c5c17231edeacfa24498c1d89d03af84c83ec1f107a6c","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=2&event=125","artist":"NASA","notes":"1200","total":"237 (0.198%/note)","memo":"","comment":"","no":"20296","state":"2"},
+{"level":"45+","title":"Marineside Cafeteria","md5":"3913ef8d97071071162f2925de16378d","sha256":"112eaca72d4c0448da8c5c17231edeacfa24498c1d89d03af84c83ec1f107a6c","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=2&event=125","artist":"NASA","notes":"1200","total":"237 (0.198%/note)","memo":"","comment":"","no":"20296","state":""},
 {"level":"23","title":"まゆすき ~Deep Inside~","md5":"828a538083834464c28cb1edbecc224c","sha256":"22d586cdab6d2cf3c8231e024256377cc7c8bd0ad7d69db0a5fe8e231f62f6c8","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=125","artist":"0310 pres. まゆP","notes":"300","total":"430 (1.433%/note)","memo":"","comment":"","no":"20297","state":""},
 {"level":"34","title":"まゆすき ~Deep Inside~","md5":"b263d3897486807f973211a4bd2a28ba","sha256":"3c1aa956632dfbf8e0b00ec98eede94c46c5e278b6fefa3b6d8d7fb99aaba760","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=125","artist":"0310 pres. まゆP","notes":"621","total":"420 (0.676%/note)","memo":"","comment":"","no":"20298","state":""},
 {"level":"41","title":"まゆすき ~Deep Inside~","md5":"57d7091f21ca546a84fb00f1dc6b3139","sha256":"f11383d9d32e3005eb079da2122f8f44f3f43c79d292a017deeaa606635a9bde","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://manbow.nothing.sh/event/event.cgi?action=More_def&num=4&event=125","artist":"0310 pres. まゆP","notes":"939","total":"370 (0.394%/note)","memo":"","comment":"難易度更新:lv40→41","no":"20299","state":""},
@@ -10799,9 +10799,9 @@
 
 
 
-{"level":"38","title":"赤 (原曲: 天衣無縫)","md5":"0e13a88d9c9389585d608a7e292608e1","sha256":"90d1aa6ee6c4e6b3e30d839bb432e1b56f1814b8062bf1c522dd497da8ce5530","video1":"","video2":"","video3":"","url_diff":"http://gnqg.rosx.net/upload/upload.cgi?get=04077","name_diff":"hokonekoqs (追加譜面)","url":"http://nekonotsuka.com/ondan9/index.html","artist":"Columba (Daily vs Roon_kun) (東方音弾遊戯9 )","notes":"850","total":"332.2 (0.391%/note)","memo":"","comment":"ソフラン(MAX-FIX推奨) 難易度更新:lv37→38","no":"20529","state":""},
-{"level":"43","title":"赤 (原曲: 天衣無縫)","md5":"3a802c27d28616224728205b42f870e9","sha256":"19aecd8846bb8847329aab8c1ad57b2c4e297cd8bafc382a6ee04ef9fcbd3c35","video1":"","video2":"","video3":"","url_diff":"http://gnqg.rosx.net/upload/upload.cgi?get=04077","name_diff":"hokonekoqs (追加譜面)","url":"http://nekonotsuka.com/ondan9/index.html","artist":"Columba (Daily vs Roon_kun) (東方音弾遊戯9 )","notes":"1234","total":"243.1 (0.197%/note)","memo":"","comment":"ソフラン(MAX-FIX推奨)","no":"20530","state":""},
-{"level":"37","title":"Critical Cannonball","md5":"12369adeaca7ab0dd91f85ecf2d6ac83","sha256":"edd720381bad9f66f9e4278fc8640b00440aaebc105d30e9f531074a14ea8392","video1":"","video2":"","video3":"","url_diff":"http://gnqg.rosx.net/upload/upload.cgi?get=04075","name_diff":"hokonekoqs (追加譜面)","url":"http://nekonotsuka.com/ondan9/index.html","artist":"SEPHID (東方音弾遊戯9 )","notes":"799","total":"276.5 (0.346%/note)","memo":"","comment":"難易度更新:lv35→37","no":"20531","state":""},
+{"level":"38","title":"赤 (原曲: 天衣無縫)","md5":"0e13a88d9c9389585d608a7e292608e1","sha256":"90d1aa6ee6c4e6b3e30d839bb432e1b56f1814b8062bf1c522dd497da8ce5530","video1":"","video2":"","video3":"","url_diff":"https://drive.google.com/drive/folders/1PKuT3YYozyc2FXcOgBLG5L0HBddIkPIO","name_diff":"hokonekoqs (追加譜面) (gnqg No.04077)","url":"http://nekonotsuka.com/ondan9/index.html","artist":"Columba (Daily vs Roon_kun) (東方音弾遊戯9 )","notes":"850","total":"332.2 (0.391%/note)","memo":"","comment":"ソフラン(MAX-FIX推奨) 難易度更新:lv37→38","no":"20529","state":""},
+{"level":"43","title":"赤 (原曲: 天衣無縫)","md5":"3a802c27d28616224728205b42f870e9","sha256":"19aecd8846bb8847329aab8c1ad57b2c4e297cd8bafc382a6ee04ef9fcbd3c35","video1":"","video2":"","video3":"","url_diff":"https://drive.google.com/drive/folders/1PKuT3YYozyc2FXcOgBLG5L0HBddIkPIO","name_diff":"hokonekoqs (追加譜面) (gnqg No.04077)","url":"http://nekonotsuka.com/ondan9/index.html","artist":"Columba (Daily vs Roon_kun) (東方音弾遊戯9 )","notes":"1234","total":"243.1 (0.197%/note)","memo":"","comment":"ソフラン(MAX-FIX推奨)","no":"20530","state":""},
+{"level":"37","title":"Critical Cannonball","md5":"12369adeaca7ab0dd91f85ecf2d6ac83","sha256":"edd720381bad9f66f9e4278fc8640b00440aaebc105d30e9f531074a14ea8392","video1":"","video2":"","video3":"","url_diff":"https://drive.google.com/drive/folders/1PKuT3YYozyc2FXcOgBLG5L0HBddIkPIO","name_diff":"hokonekoqs (追加譜面) (gnqg No.04075)","url":"http://nekonotsuka.com/ondan9/index.html","artist":"SEPHID (東方音弾遊戯9 )","notes":"799","total":"276.5 (0.346%/note)","memo":"","comment":"難易度更新:lv35→37","no":"20531","state":""},
 {"level":"28","title":"Doomed_To_Be_Doomed","md5":"fd2bd1977100bc703376c3ba41f21b5e","sha256":"198c533a648041a69eec52199cb1f085778cb5650b195a169d3a142d1df2d2c9","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://package.bms.ms/PABAT2020_68bms_Pack_v200329.zip","artist":"HAEGOE (PABAT!2020 )","notes":"600","total":"342 (0.57%/note)","memo":"","comment":"難易度更新:lv33→28","no":"20532","state":""},
 {"level":"45+","title":"Doomed_To_Be_Doomed","md5":"6d6c015992e1a00b2079927b33e908ef","sha256":"f189018dfc26b922901613c4de16824c52d6478b1933886fe117908c0ea21020","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://package.bms.ms/PABAT2020_68bms_Pack_v200329.zip","artist":"HAEGOE (PABAT!2020 )","notes":"1193","total":"272 (0.228%/note)","memo":"","comment":"難易度更新:lv41→45+","no":"20533","state":""},
 {"level":"18","title":"Scatman (Ski-Ba-Bop-Ba-Dop-Bop) (SmiGoon's Dedication Remix) (BMS Edit)","md5":"be1f4f932b7b3518387f72ad428060e1","sha256":"f40b8427f44086bed6837066ec62a77f89be993cb87a3ddb5f2b2f222b2b0bd8","video1":"","video2":"","video3":"","url_diff":"","name_diff":"KKOGI (本体に同梱)","url":"https://package.bms.ms/PABAT2020_68bms_Pack_v200329.zip","artist":"Scatman John / SmiGoon (PABAT!2020 )","notes":"481","total":"310 (0.644%/note)","memo":"","comment":"難易度更新:lv26→18","no":"20534","state":""},
@@ -12894,7 +12894,7 @@
 
 
 
-{"level":"?","title":"second 0(incomplete)","md5":"d3f5f02265962957167d807d3baf6cd5","sha256":"dc9f16dc6234733d1d665d2f02c988b72c21944a0f389ccdf7bc603479f0a7fa","video1":"","video2":"","video3":"","url_diff":"","name_diff":"はろるど (本体に同梱)","url":"https://drive.google.com/file/d/1vUITazvyjo3uaNLaIP6UmsAsjNwjxbrZ/view","artist":"REONOAH","notes":"155","total":"222 (1.432%/note)","memo":"","comment":"難易度更新:lv47→?","no":"23357","state":""},
+{"level":"?","title":"second 0(incomplete)","md5":"d3f5f02265962957167d807d3baf6cd5","sha256":"dc9f16dc6234733d1d665d2f02c988b72c21944a0f389ccdf7bc603479f0a7fa","video1":"","video2":"","video3":"","url_diff":"","name_diff":"はろるど (本体に同梱)","url":"https://drive.google.com/uc?id=1nxcRVgDqwsAgM4rMdH8UdnKmZwPnVObz","artist":"REONOAH","notes":"155","total":"222 (1.432%/note)","memo":"","comment":"難易度更新:lv47→?","no":"23357","state":""},
 
 
 
@@ -12918,7 +12918,7 @@
 
 
 
-{"level":"?","title":"Hydrosphere","md5":"daedf72d89a84996c2df1f067e61abf8","sha256":"caa301900d5be32cebe6713cdb39a528d400a0b0d3d6b83ea10b7c6b4eeaa52f","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://14b.starfree.jp/index2.html","artist":"air","notes":"1375","total":"515 (0.375%/note)","memo":"","comment":"難易度更新:lv48→?","no":"23381","state":""},
+{"level":"?","title":"Hydrosphere","md5":"daedf72d89a84996c2df1f067e61abf8","sha256":"caa301900d5be32cebe6713cdb39a528d400a0b0d3d6b83ea10b7c6b4eeaa52f","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://web.archive.org/web/20220902110715/https://doc-00-b8-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/l4cbovm082i2qealdfu39cf4jeb3atl5/1662116775000/13146478295758814848/*/11nzvGnRbQVmsw6ZqQXuj4hNs7oL_etiL?uuid=4c587704-d387-4819-b11a-eebcedd8f5d3","artist":"air","notes":"1375","total":"515 (0.375%/note)","memo":"","comment":"難易度更新:lv48→?","no":"23381","state":""},
 
 
 
@@ -12999,7 +12999,7 @@
 
 
 
-{"level":"32","title":"Opera House","md5":"b66d0690dc763626ba55969747c234ea","sha256":"6665645a49f67fdca32488ab87c54420d58bcbb9cc53811bc0d398324da2fd79","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://9domu46i.com/yuruyuru/phase15.html","artist":"Yosk! / BGA : 空読無 白眼","notes":"571","total":"350 (0.613%/note)","memo":"","comment":"","no":"23462","state":"1"},
+{"level":"32","title":"Opera House","md5":"b66d0690dc763626ba55969747c234ea","sha256":"6665645a49f67fdca32488ab87c54420d58bcbb9cc53811bc0d398324da2fd79","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://9domu46i.com/yuruyuru/phase15.html","artist":"Yosk! / BGA : 空読無 白眼","notes":"571","total":"350 (0.613%/note)","memo":"","comment":"","no":"23462","state":""},
 
 
 
@@ -13007,19 +13007,16 @@
 
 
 
-{"level":"9","title":"green fairy's healing step","md5":"7e357b5cf81d1e4a624b23e6be523676","sha256":"5722c66d1757991d99a397fd20434b31af9df501246cdf84632747109d37d9a4","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"87","total":"240 (2.759%/note)","memo":"","comment":"","no":"23470","state":"1"},
-{"level":"16","title":"blue fairy's lullaby step","md5":"c5557c652898eaaf568ea22a6b12f986","sha256":"bca008a9f2115fe0ce0713a37b3ab5450e3781ca545026884ca96f6eb30662e2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"149","total":"250 (1.678%/note)","memo":"","comment":"","no":"23471","state":"1"},
-{"level":"25","title":"yellow fairy's cheerful step","md5":"140f22a80cc04ce64657d088b58a8e33","sha256":"32050bc62a9a24bc11311f5d1d656e7d26a558709d35cbcc9b4a22bf962634d4","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"280","total":"270 (0.964%/note)","memo":"","comment":"難易度更新:lv23→25","no":"23472","state":"1"},
-{"level":"33","title":"red fairy's blazing step","md5":"6da6226eae9691107a8c3ebfc7c6095b","sha256":"8a8bb92af53b5da4ab56a14639dccd4e8a9b13fc9a988cd3611858882dcb1131","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"496","total":"340 (0.685%/note)","memo":"","comment":"難易度更新:lv31→33","no":"23473","state":"1"},
-{"level":"43","title":"purple fairy's confusion step","md5":"364d546722d529defca5bc060a44cfe6","sha256":"8b3a738e7b6ad7e94faf15157671e17692e0b3a70384fca30b3d0534753260d2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"897","total":"444 (0.495%/note)","memo":"","comment":"難易度更新:lv0→43","no":"23474","state":"1"},
+{"level":"9","title":"green fairy's healing step","md5":"7e357b5cf81d1e4a624b23e6be523676","sha256":"5722c66d1757991d99a397fd20434b31af9df501246cdf84632747109d37d9a4","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"87","total":"240 (2.759%/note)","memo":"","comment":"","no":"23470","state":""},
+{"level":"16","title":"blue fairy's lullaby step","md5":"c5557c652898eaaf568ea22a6b12f986","sha256":"bca008a9f2115fe0ce0713a37b3ab5450e3781ca545026884ca96f6eb30662e2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"149","total":"250 (1.678%/note)","memo":"","comment":"","no":"23471","state":""},
+{"level":"25","title":"yellow fairy's cheerful step","md5":"140f22a80cc04ce64657d088b58a8e33","sha256":"32050bc62a9a24bc11311f5d1d656e7d26a558709d35cbcc9b4a22bf962634d4","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"280","total":"270 (0.964%/note)","memo":"","comment":"難易度更新:lv23→25","no":"23472","state":""},
+{"level":"33","title":"red fairy's blazing step","md5":"6da6226eae9691107a8c3ebfc7c6095b","sha256":"8a8bb92af53b5da4ab56a14639dccd4e8a9b13fc9a988cd3611858882dcb1131","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"496","total":"340 (0.685%/note)","memo":"","comment":"難易度更新:lv31→33","no":"23473","state":""},
+{"level":"43","title":"purple fairy's confusion step","md5":"364d546722d529defca5bc060a44cfe6","sha256":"8b3a738e7b6ad7e94faf15157671e17692e0b3a70384fca30b3d0534753260d2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/fantasybms/2","artist":"freesia (Blessed Magical Story)","notes":"897","total":"444 (0.495%/note)","memo":"","comment":"難易度更新:lv0→43","no":"23474","state":""},
 
 
-{"level":"22","title":"Tower of Instinct","md5":"97e1b9ab6f808c0fb05a3f857f73d6aa","sha256":"e0d9b172d0053ade07f332b7b8c243b8ce15a333b11295c1909a194e199855f6","video1":"","video2":"","video3":"","url_diff":"","name_diff":"marie (本体に同梱)","url":"https://venue.bmssearch.net/fantasybms/13","artist":"Hyparpax (Blessed Magical Story)","notes":"279","total":"279 (1%/note)","memo":"","comment":"","no":"23477","state":"1"},
-{"level":"35","title":"Tower of Instinct","md5":"b8a1f05118dcd56a2fdd200a195891ae","sha256":"9ba2285dc35dcdbdec3b37aaf709cda6237b054efe97d5fd268dfbba0c7ee40a","video1":"","video2":"","video3":"","url_diff":"","name_diff":"agu (本体に同梱)","url":"https://venue.bmssearch.net/fantasybms/13","artist":"Hyparpax (Blessed Magical Story)","notes":"624","total":"290 (0.465%/note)","memo":"","comment":"","no":"23478","state":"1"},
-{"level":"41","title":"Tower of Instinct","md5":"ca80b2d48e0b1abca10fe74551f9cb0f","sha256":"90637b1cfb32781806ad9c0ac1dcdcddc642472ddf519324105b4e440490b5a2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"agu (本体に同梱)","url":"https://venue.bmssearch.net/fantasybms/13","artist":"Hyparpax (Blessed Magical Story)","notes":"916 ","total":"255 (0.278%/note)","memo":"","comment":"難易度更新:lv44→41","no":"23479","state":"1"},
-
-
-
+{"level":"22","title":"Tower of Instinct","md5":"97e1b9ab6f808c0fb05a3f857f73d6aa","sha256":"e0d9b172d0053ade07f332b7b8c243b8ce15a333b11295c1909a194e199855f6","video1":"","video2":"","video3":"","url_diff":"","name_diff":"marie (本体に同梱)","url":"https://venue.bmssearch.net/fantasybms/13","artist":"Hyparpax (Blessed Magical Story)","notes":"279","total":"279 (1%/note)","memo":"","comment":"","no":"23477","state":""},
+{"level":"35","title":"Tower of Instinct","md5":"b8a1f05118dcd56a2fdd200a195891ae","sha256":"9ba2285dc35dcdbdec3b37aaf709cda6237b054efe97d5fd268dfbba0c7ee40a","video1":"","video2":"","video3":"","url_diff":"","name_diff":"agu (本体に同梱)","url":"https://venue.bmssearch.net/fantasybms/13","artist":"Hyparpax (Blessed Magical Story)","notes":"624","total":"290 (0.465%/note)","memo":"","comment":"","no":"23478","state":""},
+{"level":"41","title":"Tower of Instinct","md5":"ca80b2d48e0b1abca10fe74551f9cb0f","sha256":"90637b1cfb32781806ad9c0ac1dcdcddc642472ddf519324105b4e440490b5a2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"agu (本体に同梱)","url":"https://venue.bmssearch.net/fantasybms/13","artist":"Hyparpax (Blessed Magical Story)","notes":"916 ","total":"255 (0.278%/note)","memo":"","comment":"難易度更新:lv44→41","no":"23479","state":""},
 
 
 
@@ -13031,34 +13028,91 @@
 
 
 
-{"level":"31","title":"黒雲母","md5":"77658379e4c755f3351c8bdb2de329c4","sha256":"2ef46163ad5db251f61e395cc26564644a6a0ad4dc9c7c6f1cdac89f9b714661","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmskanji2/1","artist":"6CHA9N (BMSかん字ドリル 2年生)","notes":"394","total":"265 (0.673%/note)","memo":"","comment":"NORMAL判定","no":"23494","state":"1"},
-
-{"level":"39","title":"春夏秋冬","md5":"9542d28e868cf913fb9d7f27fdd16f96","sha256":"b2ec615f58f84b43fdcd6a834400b0f3bd52b468189d06d3cc07ef7631884894","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmskanji2/19","artist":"YuKa (BMSかん字ドリル 2年生)","notes":"716","total":"279.7 (0.391%/note)","memo":"","comment":"難易度更新:lv35→39","no":"23496","state":"1"},
-{"level":"35","title":"春夏秋冬","md5":"f1de3d23f963d4106047effa7dc02691","sha256":"4d0d66ef9e141041d2a9fc39bc2ef188c96af131a88f57eb19427030087fd5ec","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmskanji2/19","artist":"YuKa (BMSかん字ドリル 2年生)","notes":"582","total":"284.2 (0.488%/note)","memo":"","comment":"難易度更新:lv28→35","no":"23497","state":"1"},
 
 
 
+{"level":"31","title":"黒雲母","md5":"77658379e4c755f3351c8bdb2de329c4","sha256":"2ef46163ad5db251f61e395cc26564644a6a0ad4dc9c7c6f1cdac89f9b714661","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmskanji2/1","artist":"6CHA9N (BMSかん字ドリル 2年生)","notes":"394","total":"265 (0.673%/note)","memo":"","comment":"NORMAL判定","no":"23494","state":""},
 
-{"level":"36","title":"青輝残光","md5":"f9d17ab74e4fd44cf4843a7eee4a81ae","sha256":"dec4f2732ff69b68fe3b1d4dce6028153eb0cfa5cbcb17adb0462780c831c0a2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://event.yaruki0.net/lux-in-tenebris2022/impression/5","artist":"虹色鴉（ume＆a-m）/mov:わっふゑ (リファイン & 新規BGAバージョン)","notes":"683","total":"280 (0.41%/note)","memo":"","comment":"","no":"23502","state":"1"},
-{"level":"45","title":"青輝残光","md5":"7ec741043efb2ddba4da01e78388b226","sha256":"aadd714ba621c332adb23f83fcd9e05c3e59182e2780c980b13e97f78f34aff5","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://event.yaruki0.net/lux-in-tenebris2022/impression/5","artist":"虹色鴉（ume＆a-m）/mov:わっふゑ (リファイン & 新規BGAバージョン)","notes":"1284","total":"300 (0.234%/note)","memo":"","comment":"","no":"23503","state":"1"},
-
-
-
-{"level":"23","title":"紅葉音","md5":"e8b0f7a7010010aecbb448af1c1e2b48","sha256":"6afe84a7488fb5b4e6f8596b01269c18bfddf8216e45f9e10b777841f0a4da0b","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://kagerow.net/bms_file/kgrw_akahane.zip","artist":"Mapleaf","notes":"400","total":"300 (0.75%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新:lv17(+6)→23","no":"23507","state":"1"},
-{"level":"33","title":"紅葉音","md5":"920b05105649ff8e75adcc2b5c2942f8","sha256":"02a58a3213c6f342b28563397d8fbf37afdc6ab43799473c3ca4c38313993a51","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://kagerow.net/bms_file/kgrw_akahane.zip","artist":"Mapleaf","notes":"700","total":"330 (0.471%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新:lv26(+6)→33","no":"23508","state":"1"},
-{"level":"41","title":"紅葉音","md5":"c688a27350a7b7a251c36ca2a08dadbd","sha256":"210261ccfe5fc7bddb8a61b57e6e6cb2a5c308591caf6f694b44817a6e30135c","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://kagerow.net/bms_file/kgrw_akahane.zip","artist":"Mapleaf","notes":"900","total":"360 (0.4%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新:lv35(+6)→41","no":"23509","state":"1"},
+{"level":"39","title":"春夏秋冬","md5":"9542d28e868cf913fb9d7f27fdd16f96","sha256":"b2ec615f58f84b43fdcd6a834400b0f3bd52b468189d06d3cc07ef7631884894","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmskanji2/19","artist":"YuKa (BMSかん字ドリル 2年生)","notes":"716","total":"279.7 (0.391%/note)","memo":"","comment":"難易度更新:lv35→39","no":"23496","state":""},
+{"level":"35","title":"春夏秋冬","md5":"f1de3d23f963d4106047effa7dc02691","sha256":"4d0d66ef9e141041d2a9fc39bc2ef188c96af131a88f57eb19427030087fd5ec","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmskanji2/19","artist":"YuKa (BMSかん字ドリル 2年生)","notes":"582","total":"284.2 (0.488%/note)","memo":"","comment":"難易度更新:lv28→35","no":"23497","state":""},
 
 
 
 
-{"level":"41","title":"Happy Syndrome (Pop Stella.Remix)","md5":"edeecb07a2b882cc1f9af2d0438252a2","sha256":"777fa18947bfbd40056c82b0acab4bb58f3fc14d51ea7dcac606b45a70b08dc3","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/artisticbms/4","artist":"Muchavoid (arranged by sumomo) (アートなBMS)","notes":"1111","total":"220 (0.198%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新: lv39→41","no":"23514","state":"1"},
-{"level":"45+","title":"Happy Syndrome (Pop Stella.Remix)","md5":"2634deb1a26617f856a8ffc97e538e55","sha256":"92a4a2cb6bf241f8eb6f71bd30440385d695b4919f2cef56e43f54c5a1d698e5","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/artisticbms/4","artist":"Muchavoid (arranged by sumomo) (アートなBMS)","notes":"1500","total":"200 (0.133%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨), 低TOTAL(200)","no":"23515","state":"1"},
-{"level":"32","title":"Halation","md5":"9e1dd588402097fb646701072e52bb8f","sha256":"35df32a2b100e193acd4e947d5318c42e005b976a262adbe14778cf130a39e2f","video1":"","video2":"","video3":"","url_diff":"","name_diff":"froji (本体に同梱)","url":"https://venue.bmssearch.net/artisticbms/9","artist":"Nyolfen","notes":"511","total":"299 (0.585%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨), NORMAL判定, LNあり","no":"23516","state":"1"},
-{"level":"40","title":"Halation","md5":"d636c57210952da1c4295f99c47dd18e","sha256":"57fa2e871014cf55278dce422eacc8ab0836b47251c5f9c910b26909bf5b606c","video1":"","video2":"","video3":"","url_diff":"","name_diff":"froji (本体に同梱)","url":"https://venue.bmssearch.net/artisticbms/9","artist":"Nyolfen","notes":"876","total":"257 (0.293%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨), NORMAL判定, LN複合譜面","no":"23517","state":"1"},
+{"level":"36","title":"青輝残光","md5":"f9d17ab74e4fd44cf4843a7eee4a81ae","sha256":"dec4f2732ff69b68fe3b1d4dce6028153eb0cfa5cbcb17adb0462780c831c0a2","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://event.yaruki0.net/lux-in-tenebris2022/impression/5","artist":"虹色鴉（ume＆a-m）/mov:わっふゑ (リファイン & 新規BGAバージョン)","notes":"683","total":"280 (0.41%/note)","memo":"","comment":"","no":"23502","state":""},
+{"level":"45","title":"青輝残光","md5":"7ec741043efb2ddba4da01e78388b226","sha256":"aadd714ba621c332adb23f83fcd9e05c3e59182e2780c980b13e97f78f34aff5","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://event.yaruki0.net/lux-in-tenebris2022/impression/5","artist":"虹色鴉（ume＆a-m）/mov:わっふゑ (リファイン & 新規BGAバージョン)","notes":"1284","total":"300 (0.234%/note)","memo":"","comment":"","no":"23503","state":""},
+
+
+
+{"level":"23","title":"紅葉音","md5":"e8b0f7a7010010aecbb448af1c1e2b48","sha256":"6afe84a7488fb5b4e6f8596b01269c18bfddf8216e45f9e10b777841f0a4da0b","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://kagerow.net/bms_file/kgrw_akahane.zip","artist":"Mapleaf","notes":"400","total":"300 (0.75%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新:lv17(+6)→23","no":"23507","state":""},
+{"level":"33","title":"紅葉音","md5":"920b05105649ff8e75adcc2b5c2942f8","sha256":"02a58a3213c6f342b28563397d8fbf37afdc6ab43799473c3ca4c38313993a51","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://kagerow.net/bms_file/kgrw_akahane.zip","artist":"Mapleaf","notes":"700","total":"330 (0.471%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新:lv26(+6)→33","no":"23508","state":""},
+{"level":"41","title":"紅葉音","md5":"c688a27350a7b7a251c36ca2a08dadbd","sha256":"210261ccfe5fc7bddb8a61b57e6e6cb2a5c308591caf6f694b44817a6e30135c","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://kagerow.net/bms_file/kgrw_akahane.zip","artist":"Mapleaf","notes":"900","total":"360 (0.4%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新:lv35(+6)→41","no":"23509","state":""},
 
 
 
 
+{"level":"41","title":"Happy Syndrome (Pop Stella.Remix)","md5":"edeecb07a2b882cc1f9af2d0438252a2","sha256":"777fa18947bfbd40056c82b0acab4bb58f3fc14d51ea7dcac606b45a70b08dc3","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/artisticbms/4","artist":"Muchavoid (arranged by sumomo) (アートなBMS)","notes":"1111","total":"220 (0.198%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨) 難易度更新: lv39→41","no":"23514","state":""},
+{"level":"45+","title":"Happy Syndrome (Pop Stella.Remix)","md5":"2634deb1a26617f856a8ffc97e538e55","sha256":"92a4a2cb6bf241f8eb6f71bd30440385d695b4919f2cef56e43f54c5a1d698e5","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/artisticbms/4","artist":"Muchavoid (arranged by sumomo) (アートなBMS)","notes":"1500","total":"200 (0.133%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨), 低TOTAL(200)","no":"23515","state":""},
+{"level":"32","title":"Halation","md5":"9e1dd588402097fb646701072e52bb8f","sha256":"35df32a2b100e193acd4e947d5318c42e005b976a262adbe14778cf130a39e2f","video1":"","video2":"","video3":"","url_diff":"","name_diff":"froji (本体に同梱)","url":"https://venue.bmssearch.net/artisticbms/9","artist":"Nyolfen","notes":"511","total":"299 (0.585%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨), NORMAL判定, LNあり","no":"23516","state":""},
+{"level":"40","title":"Halation","md5":"d636c57210952da1c4295f99c47dd18e","sha256":"57fa2e871014cf55278dce422eacc8ab0836b47251c5f9c910b26909bf5b606c","video1":"","video2":"","video3":"","url_diff":"","name_diff":"froji (本体に同梱)","url":"https://venue.bmssearch.net/artisticbms/9","artist":"Nyolfen","notes":"876","total":"257 (0.293%/note)","memo":"","comment":"ソフラン(MAX-FIX 推奨), NORMAL判定, LN複合譜面","no":"23517","state":""},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{"level":"35","title":"I'm angy","md5":"6d6cdaed214ea4672062854995674551","sha256":"e5fbc11e7b3b0ba13e232c2e213682f90903a2c9deb65c1720f4d5d8c1c2db0c","video1":"","video2":"","video3":"","url_diff":"","name_diff":"cat4 (追加譜面 / 最新版の本体に同梱)","url":"https://venue.bmssearch.net/bmstukuru2023/8","artist":"agu (BMSをたくさん作るぜ'23)","notes":"752 ","total":"294 (0.391%/note)","memo":"見てない難易度","comment":"難易度更新:lv32→35","no":"23538","state":"1"},
+
+
+
+
+
+{"level":"11","title":"Icicle Mountain","md5":"3eb7c13c88d45750f5d42d03a7d75086","sha256":"b0630cb0abdd9a14142314d6be5a5ff93c9a12e5a364f73d14aa7110aaf052dc","video1":"","video2":"","video3":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://venue.bmssearch.net/bmstukuru2023/50","artist":"HAROLD bgi:ume","notes":"98","total":"262 (2.673%/note)","memo":"見てない難易度","comment":"","no":"23544","state":"1"},
+{"level":"26","title":"Icicle Mountain","md5":"b5ee9b9d5642c9e969cfdfe04faba2b2","sha256":"e7607fc47da947be989fa2ff6e32d23c2bf31f955666e742252bc0e997b78657","video1":"","video2":"","video3":"","url_diff":"","name_diff":"Khibine (本体に同梱)","url":"https://venue.bmssearch.net/bmstukuru2023/50","artist":"HAROLD bgi:ume","notes":"291 ","total":"283 (0.973%/note)","memo":"見てない難易度","comment":"","no":"23545","state":"1"},
+{"level":"34","title":"Icicle Mountain","md5":"1b0d8daf27077bfae1038157fae9aa22","sha256":"467336bdab776fde1e606bac357a584a2958401e4f9fbd17084b9cc3751d86ac","video1":"","video2":"","video3":"","url_diff":"","name_diff":"ほこ猫 (本体に同梱)","url":"https://venue.bmssearch.net/bmstukuru2023/50","artist":"HAROLD bgi:ume","notes":"531","total":"259.28 (0.488%/note)","memo":"見てない難易度","comment":"LNあり","no":"23546","state":"1"},
+{"level":"42","title":"Icicle Mountain","md5":"07f3bb6148008ef179ea10728309d565","sha256":"4e53c170a69b8748df5629ecfb05cebe86a2f9bcdeee77fbc751ff66043f5a74","video1":"","video2":"","video3":"","url_diff":"","name_diff":"ほこ猫 (本体に同梱)","url":"https://venue.bmssearch.net/bmstukuru2023/50","artist":"HAROLD bgi:ume","notes":"818","total":"239.65 (0.293%/note)","memo":"見てない難易度","comment":"LNあり","no":"23547","state":"1"},
+{"level":"45","title":"Icicle Mountain","md5":"d634516be3e397099cda6c8bcdecea88","sha256":"0cddd1a9f0670b7e7306f788d9dfd8bd195cb3d563f0f9455c2af43036c32257","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmstukuru2023/50","artist":"HAROLD bgi:ume","notes":"1050 ","total":"300 (0.286%/note)","memo":"見てない難易度","comment":"LNあり","no":"23548","state":"1"},
+
+
+
+{"level":"21","title":"スタート地点のうしろには","md5":"3a6afb644b0a80ebb59c79f406ae981d","sha256":"580bb4ad3fb27c35e6d973919737845c26a7331a0a88c7ee62086a0c31e48838","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmstukuru2023/46","artist":"freesia","notes":"195 ","total":"460 (2.359%/note)","memo":"見てない難易度","comment":"難易度更新:lv18→21","no":"23552","state":"1"},
+{"level":"38","title":"テキトウ・エクスプローリング・トイボックス","md5":"81129ca4892adad1f35a0d40a966ea4d","sha256":"bd100d218cdc98e206f169c2ba7447ee4fdc6341f0ce7c597e65f69e95001437","video1":"","video2":"","video3":"","url_diff":"https://drive.google.com/file/d/1WjlhlB77cEPlQwz9YM0qOErxvfDllm4_/view","name_diff":"修正譜面 (最新版の本体に同梱)","url":"https://venue.bmssearch.net/bmstukuru2023/45","artist":"CYLTIE.","notes":"1135 ","total":"450 (0.396%/note)","memo":"見てない難易度","comment":"難易度更新:lv35→38","no":"23553","state":"1"},
+
+
+
+
+
+{"level":"28","title":"よくばりピエロ","md5":"9307769356543f0e8b7a210baa79768d","sha256":"e9466c095d17293460ff6af91635752b6c183b6dfede56ea320d9d83928cdad4","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmstukuru2023/47","artist":"freesia","notes":"565 ","total":"330 (0.584%/note)","memo":"見てない難易度","comment":"ソフラン(MAX-FIX 推奨)","no":"23559","state":"1"},
+
+
+
+{"level":"35","title":"NIMIISO","md5":"62fdd095caa92c8403617e76364aabe7","sha256":"b7c8d7a92b94fc568cc8123f9ef86eb31f503feaa2a2f1f4151c2f7658db87c0","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"https://venue.bmssearch.net/bmstukuru2023/82","artist":"RykSeb","notes":"403 ","total":"277 (0.687%/note)","memo":"見てない難易度","comment":"","no":"23563","state":"1"},
+{"level":"?","title":"ε0 - Epsilon Zero -","md5":"8a4d363464aef79ce4ff60446fc30873","sha256":"0ffeae85986509ed778fa615fa44f018990e2233a4bfe1464b35e6df5e32aeea","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=32&order=reg&odtype=a","artist":"Alex Turell (PABAT!2023)","notes":"398 ","total":"624 (1.568%/note)","memo":"見てない難易度","comment":"LN複合譜面、無理押しあり 難易度更新:lv24→lv?","no":"23564","state":"1"},
+{"level":"38","title":"ε0 - Epsilon Zero -","md5":"a3c86fa7e976f3c6864bf54a112045ff","sha256":"2525d1ea56a44eaf6ef7491e1b0819c63bb5e4924c35d99c306fdf87924de429","video1":"","video2":"","video3":"","url_diff":"","name_diff":"本体に同梱","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=32&order=reg&odtype=a","artist":"Alex Turell (PABAT!2023)","notes":"897 ","total":"482 (0.537%/note)","memo":"見てない難易度","comment":"","no":"23565","state":"1"},
+
+{"level":"9","title":"There [5BUTTONS]","md5":"3b18c5e89380ea25c049e1f7356cee61","sha256":"59bcdf4accc3a49068db55a95940e15335f89094f8490ac65eeb017cb18147f3","video1":"","video2":"","video3":"","url_diff":"","name_diff":"babyzionov (本体に同梱)","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=35&order=reg&odtype=a","artist":"Euphoria Guru with Sobrem (PABAT!2023)","notes":"235 ","total":"298.34 (1.27%/note)","memo":"見てない難易度","comment":"","no":"23567","state":"1"},
+{"level":"35","title":"There","md5":"dc301ab96659cf0458400febb8ee07ed","sha256":"51b06588c06b16f3bbc4822fc0bf98fb7b51de117ac2a46fd1971111c74c8b67","video1":"","video2":"","video3":"","url_diff":"","name_diff":"babyzionov (本体に同梱)","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=35&order=reg&odtype=a","artist":"Euphoria Guru with Sobrem (PABAT!2023)","notes":"835","total":"245.80 (0.294%/note)","memo":"見てない難易度","comment":"","no":"23568","state":"1"},
+{"level":"44","title":"There","md5":"356f6919d4eab9e468a8fb5d320266fb","sha256":"113ddc2f3a14ba66e912ed3b86d58d97b7655a29685d40075b0173b54acbd9cc","video1":"","video2":"","video3":"","url_diff":"","name_diff":"babyzionov (本体に同梱)","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=35&order=reg&odtype=a","artist":"Euphoria Guru with Sobrem (PABAT!2023)","notes":"1235","total":"241.21 (0.195%/note)","memo":"見てない難易度","comment":"難易度更新:lv43→44","no":"23569","state":"1"},
+
+{"level":"8","title":"Techno in the Green Zone [5BUTTONS]","md5":"daae3e27039c4ab772654f17f0211726","sha256":"1fa59fd7ccf64b15bcb332f59cbf7d7c701e480d931be7756f8cf8f68a5fc09d","video1":"","video2":"","video3":"","url_diff":"http://www.teufelstruhe.de/bms/GreenPatch2.zip","name_diff":"追加譜面","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=18&order=reg&odtype=a","artist":"Ace of Beat (PABAT!2023)","notes":"132","total":"396 (3%/note)","memo":"見てない難易度","comment":"難易度更新:lv9→3","no":"23571","state":"1"},
+{"level":"10","title":"Techno in the Green Zone [5BUTTONS]","md5":"dbfbe9f1d7888b39f06fbae70ac9ffc2","sha256":"06caa5413b1d92c13c7d36b29979a003a154fb502f5f0261fe0c25aae6a12a48","video1":"","video2":"","video3":"","url_diff":"http://www.teufelstruhe.de/bms/GreenPatch2.zip","name_diff":"追加譜面","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=18&order=reg&odtype=a","artist":"Ace of Beat (PABAT!2023)","notes":"310","total":"310 (1%/note)","memo":"見てない難易度","comment":"難易度更新:lv15→10","no":"23572","state":"1"},
+{"level":"25","title":"Techno in the Green Zone [5BUTTONS]","md5":"1a35c939951390ceaeac26f40c9ee270","sha256":"7ecbbf956ba9c76650910d85e7c7ebefc35a38d8a16c8cc35200d1b60d145c30","video1":"","video2":"","video3":"","url_diff":"http://www.teufelstruhe.de/bms/GreenPatch2.zip","name_diff":"追加譜面","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=18&order=reg&odtype=a","artist":"Ace of Beat (PABAT!2023)","notes":"625","total":"350 (0.56%/note)","memo":"見てない難易度","comment":"","no":"23573","state":"1"},
+{"level":"11","title":"Techno in the Green Zone","md5":"56865af2b0f8cf48cd760957049b045f","sha256":"d95cec0a354028d04d2d03f7122620d554f99653c185e76493874bc4b5c5a243","video1":"","video2":"","video3":"","url_diff":"http://www.teufelstruhe.de/bms/GreenPatch2.zip","name_diff":"追加譜面","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=18&order=reg&odtype=a","artist":"Ace of Beat (PABAT!2023)","notes":"200","total":"300 (1.5%/note)","memo":"見てない難易度","comment":"","no":"23574","state":"1"},
+{"level":"31","title":"Techno in the Green Zone","md5":"865408fd83e40b68dfaeac42ae5816c3","sha256":"ebdb87b81654aa85f8b887be7c0e3b88d9d699cc605e1f88736a5232ae772a59","video1":"","video2":"","video3":"","url_diff":"http://www.teufelstruhe.de/bms/GreenPatch2.zip","name_diff":"追加譜面","url":"http://k-bms.com/party_pabat/party.jsp?board_num=23&num=18&order=reg&odtype=a","artist":"Ace of Beat (PABAT!2023)","notes":"600","total":"390 (0.65%/note)","memo":"見てない難易度","comment":"難易度更新:lv29→31","no":"23575","state":"1"},
 
 
 
