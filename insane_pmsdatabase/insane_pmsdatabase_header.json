@@ -1,7 +1,8 @@
 ﻿{
     "name": "発狂PMSデータベース(lv46～)",
     "symbol": "P●",
-    "data_url": "https://pmsdatabase.github.io/insane_pmsdatabase/insane_pmsdatabase_score.json",
+    "data_url_org": "https://script.google.com/macros/s/AKfycbxxIG6DRM_yFNYV6yMWGhZusbcGNGoZmVKOVcANDge7ayL_WemCfKthT0_qmdKdXc-z/exec",
+    "data_url_org": "https://pmsdatabase.github.io/insane_pmsdatabase/insane_pmsdatabase_score.json",
     "level_order": [
         1,
         2,
