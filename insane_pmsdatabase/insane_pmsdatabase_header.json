@@ -4,7 +4,7 @@
     "data_url": "https://script.google.com/macros/s/AKfycbxxIG6DRM_yFNYV6yMWGhZusbcGNGoZmVKOVcANDge7ayL_WemCfKthT0_qmdKdXc-z/exec",
     "data_url_org": "https://pmsdatabase.github.io/insane_pmsdatabase/insane_pmsdatabase_score.json",
     "level_order": [
-        0,
+	0,
         1,
         2,
         3,
@@ -29,6 +29,7 @@
         "？",
         "◆",
         "～",
+	"短い",
         "査定中"
     ],
     "course": [
