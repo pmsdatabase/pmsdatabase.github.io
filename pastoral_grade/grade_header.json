@@ -3,7 +3,7 @@
 
 
 
-{"name" : "PMS段位認定 2024 反映テスト","symbol" : "●","data_url" : "https://pmsdatabase.github.io/pastoral_grade/grade_score.json","level_order" : [],
+{"name" : "PMS段位認定 2024","symbol" : "●","data_url" : "https://pmsdatabase.github.io/pastoral_grade/grade_score.json","level_order" : [],
 "course":[
 {"name":"PMS段位認定 2024 発狂初段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["ebd15232e653757f26159e33cf257381","6605d690699319f6539babf6e9f5619b","e0c3733087942a435daa90a92519ce03","d8da787d7830fd703ad7648646e8db0d"],"trophy": [{"missrate":3.0,"name":"bronzemedal","scorerate":89.5},{"missrate":2.0,"name":"silvermedal","scorerate":94.5},{"missrate":1.0,"name":"goldmedal","scorerate":97.5}]},
 {"name":"PMS段位認定 2024 発狂二段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["5287ff3bee73665913cdafa79f3e21ca","215239f1cac8368a3c75a47d961e8d0f","7fde7c269011d7f4c403d2b5ee099ae5","30ded05ce08b4bf15e72af26ed5c8700"],"trophy": [{"missrate":3.0,"name":"bronzemedal","scorerate":89.5},{"missrate":2.0,"name":"silvermedal","scorerate":94.5},{"missrate":1.0,"name":"goldmedal","scorerate":97.5}]},
