@@ -1,7 +1,7 @@
 ﻿{
     "name": "PMSデータベース隔離枠",
     "symbol": "P†",
-    "data_url": "https://pmsdifficulty.xxxxxxxx.jp/excluded_pmsdatabase/excluded_pmsdatabase_score.json",
+    "data_url": "https://pmsdatabase.github.io/excluded_pmsdatabase/excluded_pmsdatabase_score.json",
     "level_order": [
         "調査中",
         "入手困難",
