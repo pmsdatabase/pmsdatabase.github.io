@@ -2,7 +2,7 @@
 {
 "name" : "PMS Database コースデータ案内所",
 "symbol" : "Pcourse",
-"data_url" : "https://pmsdifficulty.xxxxxxxx.jp/course/_course_score.json",
+"data_url" : "https://pmsdatabase.github.io/course/course_score.json",
 "level_order" : 
 ["lv0","lv5","lv10","lv15","lv20","lv25","lv30","lv35","lv40","lv45",
 1,1.5, 2,2.5, 3,3.5, 4,4.5, 5,5.5, 6,6.5, 7,7.5, 8,8.5, 9,9.5, 10,10.5,
