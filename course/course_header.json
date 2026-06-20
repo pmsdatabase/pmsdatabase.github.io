@@ -1,16 +1,6 @@
 ﻿
-{
-"name" : "PMS Database コースデータ案内所",
-"symbol" : "Pcourse",
-"data_url" : "https://pmsdatabase.github.io/course/course_score.json",
-"level_order" : 
-["lv0","lv5","lv10","lv15","lv20","lv25","lv30","lv35","lv40","lv45",
-1,1.5, 2,2.5, 3,3.5, 4,4.5, 5,5.5, 6,6.5, 7,7.5, 8,8.5, 9,9.5, 10,10.5,
-11,11.5, 12,12.5, 13,13.5, 14,14.5, 15,15.5, 16,16.5, 17,17.5, 18,18.5, 19,19.5,
-20,"？","◆","～"],
-
-
-"course":[
+{"name" : "PMS Database コースデータ案内所","symbol" : "Pcourse","data_url" : "https://pmsdatabase.github.io/course/course_score.json","level_order" : ["lv0","lv5","lv10","lv15","lv20","lv25","lv30","lv35","lv40","lv45",1,1.5, 2,2.5, 3,3.5, 4,4.5, 5,5.5, 6,6.5, 7,7.5, 8,8.5, 9,9.5, 10,10.5,11,11.5, 12,12.5, 13,13.5, 14,14.5, 15,15.5, 16,16.5, 17,17.5, 18,18.5, 19,19.5,20,"？","◆","～"],"course":
+[
 
 
 
@@ -67,6 +57,20 @@
 
 
 
+{"name":"PMS段位認定 2024 発狂初段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["ebd15232e653757f26159e33cf257381","6605d690699319f6539babf6e9f5619b","e0c3733087942a435daa90a92519ce03","d8da787d7830fd703ad7648646e8db0d"]},
+{"name":"PMS段位認定 2024 発狂二段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["5287ff3bee73665913cdafa79f3e21ca","215239f1cac8368a3c75a47d961e8d0f","7fde7c269011d7f4c403d2b5ee099ae5","30ded05ce08b4bf15e72af26ed5c8700"]},
+{"name":"PMS段位認定 2024 発狂三段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["f8bf024bfcb2737d701a7ec309bacb42","c3985223159b14a42cf7c5d4418e47b6","d8a06f5e97485e10220fd7b72fd7dfdc","3dace5dfc3d2004c77cdedb9f8ffaa67"]},
+{"name":"PMS段位認定 2024 発狂四段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["ddd80b760636085c261bda3c0e0dcbeb","fe0ee38640dbde10df3c07a1a8ada416","217300d971af65d055960c739e6a4fe6","42e6e4c9fdd8fb97dd3893f80dc2c1d4"]},
+{"name":"PMS段位認定 2024 発狂五段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["36b5a08ffe47ff52c4185ad6b9bb099e","f4e7a902afc8f93cf7260124ed9ee7b7","bfb46d0789f82e31811a6e6c6852d5d1","19899adf6b16e73984ae85ec7388577f"]},
+{"name":"PMS段位認定 2024 発狂六段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["a2b83f7d7e76350409e9f793f8abc1f0","ce2ac318710b4e01fe9562b39626e9ed","6c28f8ff4925053b7f0ffeb28e309079","2a4db5f54b50f0ab26061bcb552f9284"]},
+{"name":"PMS段位認定 2024 発狂七段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["c71c7ee543723ced2f67706a59a91cdb","c2b9b77078a499ae1d5cd5c5bda3917a","cfbe5e24b6e236da273cf4589dbe850f","ce019d4053ecd877053c149740ab7fb8"]},
+{"name":"PMS段位認定 2024 発狂八段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["810903b9f1c292d5df82d9a8c7763d41","64fc36e58c67dafae944c0a8e70b68c9","e28062db1d2a19da0d8ea1e197bac6c8","4fd819f39b4372939aeb420eb3a3e501"]},
+{"name":"PMS段位認定 2024 発狂九段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["50a7786ad5f3a064bf46fd5423973089","5ab80f1ccfe579445bbf85a64f8fa866","d142e382b77459d238c1c78032579683","2cb6c23aee35e1f02fcf25e1976ba3b0"]},
+{"name":"PMS段位認定 2024 発狂十段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["3368cfa7d3a764c36236f980b12104c7","d75c2a2272baf4bae2ca194eca9877df","2b9f52a444e939b7a5ab881b75952499","fe8d94a35e91b9ce56241a7c539ee19d"]},
+{"name":"PMS段位認定 2024 発狂中伝","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["e0f9cecc358de519502a88178f67927b","2cd337acbf97911d41a20288cec60bfc","e57b19972be4d3020bb57f677c777a14","5d3309cd6e0a9b39238683fac033681e"]},
+{"name":"PMS段位認定 2024 発狂皆伝","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["0c12123c37587fc6ff507a41697f08b1","bfd12f281b7d2e5d432e9fccbaaffc38","1676a09d06d39015f5da8d15de96e6ec","eacc01b65b14c8ceb54b55cd6f9bbfda"]},
+{"name":"PMS段位認定 2024 Overjoy","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["a55e669bcb5943fb800cc19a4c67adb2","04b7dbbf9f816b29830be8fc37cab2b2","4e1fa3a614c8c90bd28eb6f105901b78","a24b92a298b13322a407e1f9d946e443"]},
+{"name":"PMS段位認定 2024 Uberjoy","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["f28dea87dd4faf8c65ee4ae79fd32bce","d8813b9213460afbe361cf8686cdcdcd","4bf1e3cfeafc540237ea1a74042d9c98","760d9d362aeb393839a3097c5ccc163e"]},
 {"name":"第5期 PMS段位認定 3級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dbe48c3617f79c98ca45ba65fd7ab0ea","0b18bfaf473f5213318e4ed80af5cad5","56c60f22136a44877e57598b2382c89b","daa9b82aec369c0fbf72343f14004d35"]},
 {"name":"第5期 PMS段位認定 2級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d81c13cda4757412c17216b69586d7fd","496199ab091d7d1f941ee1e4b7a97333","b734d90df2f1d39aea64d37010260d3e","06d222a2d0466222dbf3e65da5bac141"]},
 {"name":"第5期 PMS段位認定 1級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["82c7e1a8bb492f8bac99e69da17b1cc6","3bc652c43af9610ea8c65e416a8692a9","afd9acbc0b3f02d4b79689527ff7a77a","d2a6f16b16f6b65b3bfea9045641e484"]},
@@ -149,6 +153,51 @@
 {"name":"第1期 PMS段位認定 発狂10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["cc40aa7ba5d3e8b4bb0b85e128b5fcf7","989cb406ad0968b12f7eb0551833f79c","6c7a2ca2192a32cefa63b9190a7f3f6b","38bf0339d504cf6bf6d560f61b647b10"]},
 {"name":"第1期 PMS段位認定 発狂皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e5e92677b41c2e9507d4db5b754fa004","f5497dc865f252ce83d846c9347f0a21","f1f6a3b532eb3eb1710088bbcbb4b0b6","7296a8120b836fa378144b479f093387"]},
 {"name":"第1期 PMS段位認定 Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["bd6291950cc0a1eafa9005250df5f3aa","749ed9826ed1ea94b304fa3c422ce386","3a1603a5740570863db6de51de4f3f4c","26cc705d5f1e3f9af44a9434543125fb"]},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {"name":"VS 346プロダクション（バックメンバー）  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a9b9f8c3e092a6ca9aa7b3fd4ff3bb89","0f30831db2a11470e4e97e7d012f8bb5","ddd80b760636085c261bda3c0e0dcbeb","aa3d923cb99b1491f6f2837b9d84e5a4","742dec667a64554337b3f766e73ffdec"]},
 {"name":"VS 森の妖精  / 初級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["0d0d08dd7534e488ace782d29c4b297a","a8b241167e4fafcf6957c4b5836eb72d","7d8395a7053d8d793b6ac9a0dc844b84","4139971e67b8ef49a9ec4f75d999ceff","125cf3653adcef731065f2b78d7ec8c1"]},
@@ -365,20 +414,18 @@
 {"name":"（  ・へ・）むずかしい","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f18a046034df0b3319831aa7c994109e","4a06a3f2cc39ed4dd22eff2005579b3a","e46f22f8fa8616fe864d98bbfe02ac0c","12651a778682cb20db9af15d28580e0c"]}
 ],
 "grade":[
-{"name":"3級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["dbe48c3617f79c98ca45ba65fd7ab0ea","0b18bfaf473f5213318e4ed80af5cad5","56c60f22136a44877e57598b2382c89b","daa9b82aec369c0fbf72343f14004d35"]},
-{"name":"2級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["d81c13cda4757412c17216b69586d7fd","496199ab091d7d1f941ee1e4b7a97333","b734d90df2f1d39aea64d37010260d3e","06d222a2d0466222dbf3e65da5bac141"]},
-{"name":"1級","constraint":["grade_mirror","gauge_lr2",""],"md5": ["82c7e1a8bb492f8bac99e69da17b1cc6","3bc652c43af9610ea8c65e416a8692a9","afd9acbc0b3f02d4b79689527ff7a77a","d2a6f16b16f6b65b3bfea9045641e484"]},
-{"name":"初段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["51d8af6226aa41d344573c3cf56c137c","33327c083e714d1284be9a24c5b3789f","5db82530216546db015d6d06b5b43bce","9528ee9fd0da7b78723cdc3cbb13b339"]},
-{"name":"2段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f6f79ce620e6e7cf2fb3e11f56bd345a","ab757516e90e4c493d071f0e9613d218","a95351b7c319ec1afaa12218141f4858","35aea1ed5356dfeb79188c0fd6d924e5"]},
-{"name":"3段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["90277b3d53087b9aa9662b1fbc48f2f2","c3985223159b14a42cf7c5d4418e47b6","eb2636f739a1f371c142592df398ce6c","059c1d227d706becc72a14a160faa749"]},
-{"name":"4段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["da2cbf97eb7375bac5ea7a842e538ff7","623c26c39c9440141e2e5c9fc55e986c","448cc5ea1d287501c6c788a23586202d","a52ef366294961beef077f2964c3aa9a"]},
-{"name":"5段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["a5a048358521014c6b8b2eeed8ff43e2","740aa8ca7e2c7fa75ecfaeb8b61b6d96","cf2dece20a8cdb8b5ce8253443ce9130","bbec6791bc0e2c2b23e04ed9c124cc38"]},
-{"name":"6段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9011b2ca9312ad12164315be3fc8ed22","8d33b573a3e98d94c61266b120308ba3","9a2d3d99e351873f0f7b266025033683","b3d6b09ed281e06fcb95970ba951b792"]},
-{"name":"7段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ba5b122cfb53e9499948f9e7623d65ea","b4d0b1b7c07c8919cf988c8ff39bd34e","8dfa2c225a6a97c95c80260b14718198","6974f459545b1d8d9e8c4ec40e1f5f44"]},
-{"name":"8段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["9c28c086d1c8b90843b2323e976fd393","2eedd7865485025d13a03fce077487a0","c0cf6796d39d204fce5fac95bbd7bd02","74d051ee6406e85829b7b456868420b7"]},
-{"name":"9段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["ec5cd2676ed663b42bd81950cc161b2f","0e3195bc9fae967217e60717d43d5fe5","2617ca06f9d4d07f6872d53602bdc70c","0dc85e572a36348652a7e9b2135ee421"]},
-{"name":"10段","constraint":["grade_mirror","gauge_lr2",""],"md5": ["67364496cd8b11c0a0acb22e55d74e59","8e616f818ea8bd427f9050827cc562e6","aa6119658cf0a8c23f8830f01c8740ed","3dff4432ba2af69c4028b312ecf300ca"]},
-{"name":"皆伝","constraint":["grade_mirror","gauge_lr2",""],"md5": ["42810609d4066a8d889b48d3fb1efed6","2e50a211bafb905873a34fe18ee9ae5d","2c4a9d5dd24be774b2f028cd425a7166","0ae06c02deab42a32a818dd868147f19"]},
-{"name":"Overjoy","constraint":["grade_mirror","gauge_lr2",""],"md5": ["e206ffb42caf8a84dc9f87470d4f5236","09900452c76ed52a1ffc8e75ffb4ac64","ac03fa20574b78bc9877939bf6567dc8","f28dea87dd4faf8c65ee4ae79fd32bce"]},
-{"name":"Undefined","constraint":["grade_mirror","gauge_lr2",""],"md5": ["f3b195303e4a5e15a9e176d0a39f7c57","007807392f1f8cefb730cf29eda1ac6b","e024332406e5401d714f776beea4d84e","04d9140dbcf0475833f88b816f55356a","25802ac944e3c4d77553b267aad9d9dd"]}
+{"name":"初段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["ebd15232e653757f26159e33cf257381","6605d690699319f6539babf6e9f5619b","e0c3733087942a435daa90a92519ce03","d8da787d7830fd703ad7648646e8db0d"]},
+{"name":"二段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["5287ff3bee73665913cdafa79f3e21ca","215239f1cac8368a3c75a47d961e8d0f","7fde7c269011d7f4c403d2b5ee099ae5","30ded05ce08b4bf15e72af26ed5c8700"]},
+{"name":"三段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["f8bf024bfcb2737d701a7ec309bacb42","c3985223159b14a42cf7c5d4418e47b6","d8a06f5e97485e10220fd7b72fd7dfdc","3dace5dfc3d2004c77cdedb9f8ffaa67"]},
+{"name":"四段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["ddd80b760636085c261bda3c0e0dcbeb","fe0ee38640dbde10df3c07a1a8ada416","217300d971af65d055960c739e6a4fe6","42e6e4c9fdd8fb97dd3893f80dc2c1d4"]},
+{"name":"五段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["36b5a08ffe47ff52c4185ad6b9bb099e","f4e7a902afc8f93cf7260124ed9ee7b7","bfb46d0789f82e31811a6e6c6852d5d1","19899adf6b16e73984ae85ec7388577f"]},
+{"name":"六段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["a2b83f7d7e76350409e9f793f8abc1f0","ce2ac318710b4e01fe9562b39626e9ed","6c28f8ff4925053b7f0ffeb28e309079","2a4db5f54b50f0ab26061bcb552f9284"]},
+{"name":"七段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["c71c7ee543723ced2f67706a59a91cdb","c2b9b77078a499ae1d5cd5c5bda3917a","cfbe5e24b6e236da273cf4589dbe850f","ce019d4053ecd877053c149740ab7fb8"]},
+{"name":"八段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["810903b9f1c292d5df82d9a8c7763d41","64fc36e58c67dafae944c0a8e70b68c9","e28062db1d2a19da0d8ea1e197bac6c8","4fd819f39b4372939aeb420eb3a3e501"]},
+{"name":"九段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["50a7786ad5f3a064bf46fd5423973089","5ab80f1ccfe579445bbf85a64f8fa866","d142e382b77459d238c1c78032579683","2cb6c23aee35e1f02fcf25e1976ba3b0"]},
+{"name":"十段","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["3368cfa7d3a764c36236f980b12104c7","d75c2a2272baf4bae2ca194eca9877df","2b9f52a444e939b7a5ab881b75952499","fe8d94a35e91b9ce56241a7c539ee19d"]},
+{"name":"中伝","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["e0f9cecc358de519502a88178f67927b","2cd337acbf97911d41a20288cec60bfc","e57b19972be4d3020bb57f677c777a14","5d3309cd6e0a9b39238683fac033681e"]},
+{"name":"皆伝","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["0c12123c37587fc6ff507a41697f08b1","bfd12f281b7d2e5d432e9fccbaaffc38","1676a09d06d39015f5da8d15de96e6ec","eacc01b65b14c8ceb54b55cd6f9bbfda"]},
+{"name":"Overjoy","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["a55e669bcb5943fb800cc19a4c67adb2","04b7dbbf9f816b29830be8fc37cab2b2","4e1fa3a614c8c90bd28eb6f105901b78","a24b92a298b13322a407e1f9d946e443"]},
+{"name":"Uberjoy","constraint":["grade_random","gauge_lr2","ln",""],"md5": ["f28dea87dd4faf8c65ee4ae79fd32bce","d8813b9213460afbe361cf8686cdcdcd","4bf1e3cfeafc540237ea1a74042d9c98","760d9d362aeb393839a3097c5ccc163e"]}
 ]}
