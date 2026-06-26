@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PMS導入ガイド (2023年版) - 本体プレイヤーの導入 - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="PMS,発狂PMS,PMSデータベース, PMS Database">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar" style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li class="current"><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+
+<h2 id="guide-player">PMS導入ガイド (2023年版) - 本体プレイヤーの導入</h2>
+
+
+<p>
+PMSをプレイするための本体プレイヤー (アプリケーション) の導入と、必要な初期設定に関する説明です。<br>
+2023年現在、PMS Database は LR2 / beatoraja を本体の対象としており、<span style="color: #ff0000;">特にこれから完全新規で始めるという場合は beatoraja を推奨しています。</span>
+</p>
+
+<h2 id="toc">目次</h2>
+<h3 id="guide-back-to-about"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+<p>
+<strong>・ <a href="#beatoraja">beatoraja</a></strong><br>
+　- <a href="#beatoraja-download">Download</a><br>
+　　- <a href="#beatoraja-configuration">beatoraja-configuration について</a><br>
+　- <a href="#beatoraja-ir-registration">アカウント作成・インターネットランキング (Mocha-Repository) の登録</a><br>
+　　- <a href="#beatoraja-ir-features">IR (Mocha-Repository) で出来ること</a><br>
+　- <a href="#beatoraja-multiple-ir">複数のIRへの同時接続を設定する</a><br>
+　　- <a href="#beatoraja-primary-ir">プライマリIRについて</a><br>
+　　- <a href="#beatoraja-ir-list">各IRの簡易的な紹介</a><br>
+
+<br>
+<strong>・ <a href="#lr2">Lunatic Rave2 (LR2)</a></strong><br>
+　- <a href="#lr2-download">Download</a><br>
+　　- <a href="#lr2setup">LR2SETUP について</a><br>
+　- <a href="#lr2-initial-setup">初回設定 ～ LR2 の起動</a><br>
+　- <a href="#lr2ir-registration">インターネットランキング (LR2IR) の登録 (旧記事)</a><br>
+</p>
+
+<br>
+
+<h4 id="openclosebox1_hdr" class="close"><span id="beatoraja"></span>beatoraja (クリックで開閉)</h4>
+<div id="openclosebox1">
+<h2 id="beatoraja-download">(1) Download</h2>
+<p>
+<strong><span style="font-size: 20pt;"><a href="https://mocha-repository.info/download.php" target="_blank">【Download】beatoraja　(Mocha-Repository : Download)</a></span></strong>
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/player_beatoraja_download.png" width="70%" height="70%">
+</div>
+</p>
+<br>
+
+<p>
+基本的には画像赤枠 (JRE同梱版) のパッケージをダウンロードすればOKです。<br>
+ただし、<strong>Windows のシステムロケールが日本国外の場合(韓国語で報告あり)、オプション選択に不具合が生じる</strong> との報告があるため、画像青枠 (Java版) を使用してください。<br>
+<a href="https://codoc.jp/sites/haaEBtTkhA/entries/rDDRUocsng" target="_blank">【2021年版】beatoraja を Windows にインストールする方法【BMS】</a>
+</p>
+
+<p>
+時々 beatoraja のアップデートを確認してください。古すぎるバージョンを使用していると、インターネットランキング (後述) に参加できなくなります。
+</p>
+
+<p>
+ファイルを解凍したら、 <strong>beatoraja.exe</strong> をダブルクリック > <strong>beatoraja-configuration</strong> > 左下の<strong>「起動」</strong>をクリック。beatoraja が正常に起動するか確認しましょう。<br>
+Java 版を使用している場合は、<strong>beatoraja-config.bat</strong> から起動してください。
+</p>
+<br>
+
+
+<h3 id="beatoraja-configuration">beatoraja-configuration について</h3>
+<p>beatoraja.exe をダブルクリックすると最初に起動する画面です。ここで beatoraja のあらゆる機能を設定することができます。<br>
+以降の記事中で "beatoraja-configuration" と書かれている場合はこの画面での操作を指しますので、覚えておいてください。
+</p>
+
+<div align="center">
+<img src="style/images/guide/player_beatoraja_configuration.png" width="40%" height="40%">
+</div>
+<br>
+
+
+
+<h2 id="beatoraja-ir-registration">(2) アカウント作成・インターネットランキング (Mocha-Repository) の登録</h2>
+
+<p>
+beatoraja はインターネットランキング (以下IR) 機能を搭載しており、アカウント作成を行う事で、オンライン上でクリアランプを集計したり ライバル機能を利用することが可能です。<br>
+IR登録はPMSをプレイする上で必須の工程ではありませんが、<span style="color: #ff0000;">beatoraja の IR は オフラインでのクリアデータを後日反映させることができない場合があることや、IRデータを統計や難易度表の投票に利用するサイトがあることなどから、早い段階で設定しておくことをオススメします。</span>
+</p>
+<br>
+
+<p>
+beatoraja-configuration の画面上部 > <strong>Player ID</strong> を確認します。<strong>"NO NAME"</strong> となっている所に自分のプレイヤーネームを入力し、<strong>[+]</strong> ボタンをクリックしてください。<br>
+player1 - プレイヤーネーム の紐付けが取れていればOKです。(2人目以降のデータを作成したい場合は、player2,3,… を選択し、同様の操作を行ってください)
+</p>
+<div align="center">
+<img src="style/images/guide/player_beatoraja_account.png" width="50%" height="50%">
+</div>
+
+<br>
+<br>
+
+
+<p>
+次に、IRへのアカウント連携を行います。IRは複数存在しますが、まずは最もベーシックな "Mocha-Repository" へ登録してみます。
+</p>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://mocha-repository.info/" target="_blank">Mocha-Repository</a></strong></span><br>
+　　- ACCOUNT > Register > E-mail / Player Name / Password を入力し、Register ボタンで送信。あとは送られてくるメールの指示に従ってください。
+</p>
+
+<br>
+<p>
+最後に、作成したアカウントを beatoraja のプレイヤーアカウント紐付けします。<br>
+beatoraja-configuration > 自分のプレイヤーネームが表示されている事を確認 > IR を開き、<strong>Mocha-Repository の登録に使用した E-mail と Password を入力</strong>します。<br>
+<strong>【注意】<span style="color: #ff0000;">User ID 欄には E-mail を入力</strong> してください。プレイヤーネームやプレイヤーIDを入力しても認証されません。</span>
+</p>
+
+<p>
+認証が成功していれば、beatoraja を起動したときに左上に <strong>"IR Connection Succeed"</strong> と表示されます。
+</p>
+
+<div align="center">
+<img src="style/images/guide/player_beatoraja_ir.png" width="80%" height="80%">
+</div>
+
+<br>
+
+<h3 id="beatoraja-ir-features">IR (Mocha-Repository) で出来ること</h3>
+<p>
+・ スコアデータの登録 (オフラインプレイからの後日反映は不可、アシストオプション不可)<br>
+・ 楽曲、段位コース、プレイヤー などの検索、URL情報等の追加<br>
+・ 自己紹介の登録、取得済段位の反映<br>
+・ <strong>Level Review の登録</strong><br>
+・ Collection 一覧表の登録と利用<br>
+・ その他
+</p>
+
+<br>
+<h2 id="beatoraja-multiple-ir">(3) 複数のIRへの同時接続を設定する</h2>
+<p>
+※IRへの登録にこれ以上の関心がなければ、この項目は飛ばしてもらっても構いません。
+</p>
+
+<p>
+-----<br>
+先述したとおり、beatoraja 関連のIRは複数存在しており、一度設定を済ませておけば全てのIRにスコアを一斉送信することができます。<br>
+設定手順は (2) とほとんど同じですが、各IRで発行される「APIトークン」という拡張子 .jar のファイルを取得し、beatoraja > <strong>ir</strong> フォルダ内に設置する必要があります。<br>
+<strong>APIトークンは時おり更新されることがあり、ir フォルダ内に古いバージョンが残っていると接続不良を起こします。定期的に情報を確認してください。</strong>
+</p>
+
+<div align="center">
+<img src="style/images/guide/player_beatoraja_jar.png" width="40%" height="40%">
+</div>
+<br>
+
+<h3 id="beatoraja-primary-ir">プライマリIRについて</h3>
+<p>
+■ <strong><a href="https://www.gaftalk.com/blog/items/beatoraja-ir/#%E3%83%97%E3%83%A9%E3%82%A4%E3%83%9E%E3%83%AAir-%E3%81%A8-%E3%82%BB%E3%82%AB%E3%83%B3%E3%83%80%E3%83%AAir-%E8%A8%AD%E5%AE%9A" target="_blank">beatoraja IRの登録方法・各IR特色 - プライマリIR と セカンダリIR （設定）</a></strong>　 (外部記事)
+</p>
+<p>
+2つ以上のIRを登録したとき、beatoraja-configuration > IR タブ内に <strong>Set Primary</strong> というボタンが現れます。<br>
+Set Primary を設定したIR (プライマリIR) では、そのIRのさまざまな独自機能に beatoraja の起動画面内からアクセスすることができます。<br>
+<strong>プライマリIR は1つだけ設定できます。</strong>ひとまず Mocha-Repository を設定しておき、より魅力的なIRが見つかったら乗り換えを検討すると良いかもしれません。
+</p>
+
+<br>
+
+<h3 id="beatoraja-ir-list">各IRの簡易的な紹介 (2026/06 現在)</h3>
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://www.gaftalk.com/minir/" target="_blank">MinIR</a></strong></span><br>
+・Mocha-Repository と同じくベーシックで稼働歴の長いIRです。<a href="https://stellabms.xyz/" target="_blank">STELLAVERSE</a> のスコアデータと連携しており、7,14KEYS 方面での定着率が高いです。<br>
+・<a href="https://www.gaftalk.com/minir/#/about" target="_blank">登録方法の解説記事</a><br>
+・beatoraja 0.8.8 (2026/06) 現在、新しくダウンロードした beatoraja 本体であれば、最新版のAPIトークン (minir-600.jar) が既に同梱されています。<br>
+・<strong>beatoraja の導入時期が一定以上古い (0.8.5 以前？) 場合、古いAPIトークン (minir-440.jar など) が ir フォルダに残存していることがあります。各自で更新してください。</strong><br>
+・beatoraja-configration > IR タブの User ID / Password にはそれぞれ MinIR にアカウント作成した際のメールアドレスとパスワードを入力してください。
+</p>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://boku.tachi.ac/" target="_blank">Bokutachi IR</a></strong></span><br>
+・幅広い音楽ゲームのスコアを収集・分析しているデータベース&コミュニティです。公式 Discord Server は <a href="https://discord.com/invite/E4n8ZZF5ES" target="_blank">こちら</a> (招待リンクが開きます)<br>
+・PMS Database に個別対応して頂いており、9KEYS に限り beatoraja からのスコア送信が可能です。<br>
+・<a href="https://boku.tachi.ac/import/beatoraja-ir-pms" target="_blank">登録方法の解説記事</a> (要ログイン)<br>
+・APIトークンは <a href="https://github.com/zkldi/Tachi/releases/tag/beatoraja-ir-4.0.0" target="_blank">こちら</a> から入手できます。<br>
+・beatoraja-configration > IR タブの User ID には登録時のメールアドレスを、<strong>Password にはサイト内で発行される <a href="https://boku.tachi.ac/client-file-flow/CXBeatorajaIR" target="_blank">APIキー</a> を貼り付けてください。</strong>
+</p>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://bms-ir.org/" target="_blank">BMS-IR</a></strong></span><br>
+・LR2IR の代替サーバーを発端として発展した新しいIRで、<strong>beatoraja のほか、純正LR2からのスコアデータも送信可能な恐らく唯一のIRです。</strong><br>
+・<a href="https://discord.com/invite/KG35pzyyWV" target="_blank">公式 Discord Server (クリックすると招待リンクが開きます)</a> が盛んに動いており、導入に行き詰まった場合は直接質問することもできます。<br>
+・<a href="https://bms-ir.org/new/beatoraja" target="_blank">登録方法の解説記事</a> はこちらです。APIトークンは同ページ内で配布されています。<br>
+・beatoraja-configration > IR タブの <strong>User ID には BMS-IR のアカウント作成時に割り振られたID</strong> を、Password には登録時のパスワードを入力してください。
+</p>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://rianir.link/" target="_blank">rianIR</a></strong></span><br>
+・2026/06 現在紹介している中では最も新しいIRです。beatoraja ほか複数の本体プレイヤーに対応しており、既存IRの長所を兼ね備えたような機能美が見られます。<br>
+・<a href="https://rianir.link/pages/info/guide.php" target="_blank">登録方法の解説記事</a> はこちら。APIトークンは同ページ内で配布されています。<br>
+・beatoraja-configration > IR タブの <strong>User ID には rianIR 登録時の (※メールアドレスではなく) ユーザーID</strong> を、Password には登録時のパスワードを入力してください。
+</p>
+
+<br>
+
+<p>
+-----<br>
+以下のIRは、2026/06 現在、サービス終了となっています。
+</p>
+<p>
+■ <span style="font-size: 14pt;"><a href="https://web.archive.org/web/20240925020342/https://ir.cinnamon.link/" target="_blank">CinnamonIR</a></span><br>
+■ <span style="font-size: 14pt;"><a href="https://web.archive.org/web/20190919103248/https://citrus-ir.iidx.app/" target="_blank">CitrusIR</a></span><br>
+
+</p>
+
+<br>
+<br>
+<br>
+
+
+</div>
+
+
+
+
+
+
+<h4 id="openclosebox2_hdr" class="close"><span id="lr2"></span>Lunatic Rave2 (LR2) (クリックで開閉)</h4>
+<div id="openclosebox2">
+<h2 id="lr2-download">(1) Download</h2>
+<p>
+<strong><span style="font-size: 20pt;"><a href="https://web.archive.org/web/20230513152029/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=download" target="_blank">【Download】Lunatic Rave 2</a>　 (Internet Archive)</span></strong><br>
+【注意】LR2 は本体の再配布が禁止されており、2026/05/31 の LR2IR 閉鎖に伴い、正規の入手経路は事実上ほぼ失われました。当サイトでは、既存プレイヤーによる環境維持や BMSeeker をはじめとする LR2 連携ツールの需要を考慮し、参考情報として Internet Archive 上の保存ページを案内していますが、本体の再配布を推奨する意図はありません。<br>
+既存プレイヤーの方ないし連携ツールの利用等の個人的な目的でない限り、beatoraja の導入を改めてお願いいたします。 </p>
+
+
+<br>
+<p>
+-----<br>
+上記リンクから入手した LR2_100201.zip を解凍したら、LR2beta3 フォルダ内の <strong>LR2.exe</strong> をダブルクリック。<strong>LR2SETUP</strong> 画面が立ち上がります。
+</p>
+
+
+<h3 id="lr2setup">LR2SETUP について</h3>
+<p>LR2.exe をダブルクリックすると (初回起動以降) 最初に起動する画面です。ここで LR2 のあらゆる機能を設定することができます。<br>
+以降の記事中で "LR2SETUP" と書かれている場合はこの画面での操作を指しますので、覚えておいてください。
+</p>
+
+<br>
+
+<h2 id="lr2-initial-setup">(2) 初回設定 ～ LR2 の起動</h2>
+<p>
+2023/06 現在配布されている LR2 は、初回起動時の動作が少しおかしくなっている場合があります。<br>
+下図のように LR2SETUP > MAIN > <span style="color: #ff0000;">PLAYER ID が文字化けしている場合、何も設定せずに [終了] > エラーを無視して [OK] と押した後、LR2.exe を再起動</span> してください。
+</p>
+<div align="center">
+<img src="style/images/guide/player_lr2_setup_1.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+正常に起動した場合、LR2SETUP 画面に入る前にアカウント作成を求められます。<strong>ID / PASSWORD (半角英数字のみ) を記入して [OK]</strong> をクリックしてください。
+</p>
+
+<div align="center">
+<img src="style/images/guide/player_lr2_setup_2.png" width="80%" height="80%">
+</div>
+<br>
+
+
+
+
+<h2 id="lr2ir-registration">(3) インターネットランキング (LR2IR) の登録</h2>
+<p>
+2026/05/31　LR2IR の閉鎖に伴い、インターネットランキング機能は利用不可能になりました。従って、この項目は読み飛ばして頂いてOKです。<br>
+今後とも LR2 でランキング機能を利用したい場合は <a href="https://bms-ir.org/" target="_blank">BMS-IR</a> が非公式の代替サーバーとして機能していますので、そちらのマニュアルをご参照ください。
+</p>
+
+<br>
+
+<h4 id="openclosebox3_hdr" class="close"><span id="lr2ir-old"></span>それでもインターネットランキング (LR2IR) の登録　旧記事を開く (クリックで開閉)</h4>
+<div id="openclosebox3">
+
+
+
+
+<s>
+
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://web.archive.org/web/20260531095350/www.dream-pro.info/~lavalse/LR2IR/search.cgi" target="_blank">LR2 internet ranking (LR2IR)</a></strong></span>
+</p>
+
+
+
+<p>
+----------
+</p>
+
+<p>
+LR2IR の場合は会員登録等は必要なく、PLAYER ID を選択 > LR2SETUP > <strong>LR2インターネットランキングに参加する にチェック</strong> した状態で LR2 を起動すると 自動的にアカウント作成が行われます。<strong>オンライン接続状態で 1曲以上スコアを残してから　</strong> LR2SETUP > <strong>[LR2マイページに接続]</strong>　をクリックすると、LR2IR にログイン出来るようになります。
+</p>
+
+<div align="center">
+<img src="style/images/guide/player_lr2_ir.png" width="50%" height="50%">
+</div>
+
+<br>
+
+<h3 id="lr2ir-old-features">IR (LR2IR) で出来ること</h3>
+<p>
+・ スコアデータの登録 (オフラインプレイからの後日反映が可能、アシストオプション一部反映可能)<br>
+・ 楽曲、段位コース、プレイヤー などの検索、URL情報等の追加<br>
+・ プレイ履歴の全数確認<br>
+・ 自己紹介の登録、情報の公開/非公開設定<br>
+・ ラウンジの利用<br>
+・ その他
+</p>
+</s>
+
+
+<br>
+<br>
+
+
+</div>
+</div>
+<br>
+
+<h3 id="guide-back-to-about-bottom"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+
+
+
+
+
+</div>
+
+<!--/contents-->
+
+<footer>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+open_close("openclosebox2_hdr", "openclosebox2");
+open_close("openclosebox3_hdr", "openclosebox3");
+
+
+}
+</script>
+
+
+<script type="text/javascript">
+(function () {
+  function addClass(element, className) {
+    if (!element) return;
+    if (element.classList) {
+      element.classList.add(className);
+      return;
+    }
+    if ((" " + element.className + " ").indexOf(" " + className + " ") === -1) {
+      element.className = (element.className + " " + className).replace(/^\s+|\s+$/g, "");
+    }
+  }
+
+  function removeClass(element, className) {
+    if (!element) return;
+    if (element.classList) {
+      element.classList.remove(className);
+      return;
+    }
+    var pattern = new RegExp("(^|\\s)" + className + "(\\s|$)", "g");
+    element.className = element.className.replace(pattern, " ").replace(/^\s+|\s+$/g, "");
+  }
+
+  function openBox(boxId) {
+    var box = document.getElementById(boxId);
+    var header = document.getElementById(boxId + "_hdr");
+
+    if (box) {
+      box.style.display = "block";
+    }
+
+    if (header) {
+      removeClass(header, "close");
+      addClass(header, "open");
+    }
+  }
+
+  function collectOpenCloseBoxes(target) {
+    var boxes = [];
+    var seen = {};
+    var node = target;
+
+    while (node && node.nodeType === 1) {
+      if (node.id) {
+        if (/^openclosebox[0-9]+$/.test(node.id) && !seen[node.id]) {
+          boxes.unshift(node.id);
+          seen[node.id] = true;
+        }
+        if (/^openclosebox[0-9]+_hdr$/.test(node.id)) {
+          var boxId = node.id.replace(/_hdr$/, "");
+          if (!seen[boxId]) {
+            boxes.unshift(boxId);
+            seen[boxId] = true;
+          }
+        }
+      }
+      node = node.parentNode;
+    }
+
+    return boxes;
+  }
+
+  function openByHash() {
+    if (!location.hash) return;
+
+    var id = decodeURIComponent(location.hash.substring(1));
+    var target = document.getElementById(id);
+
+    if (!target) return;
+
+    var boxes = collectOpenCloseBoxes(target);
+
+    for (var i = 0; i < boxes.length; i++) {
+      openBox(boxes[i]);
+    }
+
+    setTimeout(function () {
+      if (target.scrollIntoView) {
+        target.scrollIntoView();
+      }
+    }, 0);
+  }
+
+  if (window.addEventListener) {
+    window.addEventListener("load", openByHash);
+    window.addEventListener("hashchange", openByHash);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", openByHash);
+  }
+
+  openByHash();
+})();
+</script>
+
+
+</body>
+</html>
