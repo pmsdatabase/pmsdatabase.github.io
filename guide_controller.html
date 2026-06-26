@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PMS導入ガイド (2023年版) - コントローラの導入・キーコンフィグと操作方法 - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="PMS,発狂PMS,PMSデータベース, PMS Database">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li class="current"><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+
+<h2 id="guide-controller">PMS導入ガイド (2023年版) - コントローラの導入と操作方法</h2>
+
+<p>
+主にアーケードコントローラ (ACコン) の導入を想定しています。購入の手引きと、ACコンを使った本体プレイヤー上での操作方法についてまとめます。
+</p>
+
+<h2 id="toc">目次</h2>
+<h3 id="guide-back-to-about"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+
+<p>
+<strong>・ <a href="#controller-purchase">ACコンの購入</a></strong><br>
+　- <a href="#controller-before-purchase">購入する前に</a><br>
+　- <a href="#controller-buttons-switches">ボタンとマイクロスイッチについて</a><br>
+　- <a href="#controller-review">各コントローラの簡易レビューと購入先情報</a><br>
+　　- <a href="#controller-old-models">旧型コントローラー</a><br>
+<br>
+<strong>・ <a href="#controller-initial-setup">コントローラの初期設定</a></strong><br>
+　- <a href="#controller-pc-connection">PCへの接続</a><br>
+　- <a href="#controller-right-yellow-fix">右黄色が押しっぱなしになる問題の対策</a><br>
+　　- <a href="#controller-still-pressed">この設定を行ってもボタンが押しっぱなしになる場合</a><br>
+<br>
+<strong>・ <a href="#beatoraja-keyconfig">キーコンフィグ設定 - beatoraja</a></strong><br>
+　　- <a href="#beatoraja-keyconfig-not-working">キーコンフィグ画面でACコンが反応しない場合</a><br>
+<br>
+<strong>・ <a href="#beatoraja-controls">ゲーム画面での操作方法 - beatoraja</a></strong><br>
+　- <a href="#beatoraja-select-screen">選曲画面 - beatoraja</a><br>
+　　- <a href="#beatoraja-music-select">楽曲選択</a><br>
+　　- <a href="#beatoraja-option-normal">オプション選択 (通常)</a><br>
+　　- <a href="#beatoraja-option-sub">オプション選択 (サブ)</a><br>
+　　- <a href="#beatoraja-option-assist">オプション選択 (アシスト)</a><br>
+　　- <a href="#beatoraja-keyboard-options">キーボード操作系オプション</a><br>
+　- <a href="#beatoraja-play-screen">プレイ画面 - beatoraja</a><br>
+　　- <a href="#beatoraja-special-options">特殊オプションの有効化について</a><br>
+　　- <a href="#beatoraja-option-list">オプション一覧</a><br>
+　- <a href="#beatoraja-result-screen">リザルト画面 - beatoraja</a><br>
+　- <a href="#beatoraja-practice-mode">プラクティスモード - beatoraja</a><br>
+<br>
+<strong>・ <a href="#lr2-keyconfig">キーコンフィグ設定 - LR2</a></strong><br>
+　　- <a href="#lr2-music-select-keyconfig">選曲画面でもACコンを使いたい場合の設定</a><br>
+<br>
+<strong>・ <a href="#lr2-controls">ゲーム画面での操作方法 - LR2</a></strong><br>
+　- <a href="#lr2-select-screen">選曲画面 - LR2</a><br>
+　　- <a href="#lr2-music-select">楽曲選択</a><br>
+　　- <a href="#lr2-option-normal">オプション選択 (通常)</a><br>
+　　- <a href="#lr2-sudden-plus">レーンカバー (SUDDEN+ / SUD+) の使用設定</a><br>
+　　- <a href="#lr2-keyboard-options">キーボード操作系オプション</a><br>
+　　- <a href="#lr2-special-options">特殊オプション・ネタオプション</a><br>
+　- <a href="#lr2-play-screen">プレイ画面 - LR2</a><br>
+　　- <a href="#lr2-option-list">オプション一覧</a><br>
+　- <a href="#lr2-result-screen">リザルト画面 - LR2</a><br>
+</p>
+
+<br>
+
+<h4 id="openclosebox1_hdr" class="close"><span id="controller-purchase"></span>ACコンの購入 (クリックで開閉)</h4>
+<div id="openclosebox1">
+<h2 id="controller-before-purchase">購入する前に</h2>
+<p>
+ACコンの打鍵音は非常に大きいです。静音化改造という手はあるものの、室内ではなく床への振動が問題になる場合も多く、根本的な解決にはなりません。<br>
+<span style="color: #ff0000;">購入する前に一度「自分の家の環境ではどこまで騒音を出しても許されるのか」について検討しておきましょう。</span>
+</p>
+
+<p>
+また、スイッチや筐体パーツが破損した場合、修理依頼が困難で、<span style="color: #ff0000;">各自でパーツを取り寄せてメンテナンスを行わなければならない可能性があります。</span><br>
+メンテナンスには専門的な知識は要求されませんが、「そういうものだ」と割り切って作業するのか、カスタマーサービスに依頼するのか、自身の負担にならない選択肢を取りましょう。
+</p>
+
+<br>
+
+<h2 id="controller-buttons-switches">ボタンとマイクロスイッチについて</h2>
+<p>
+「ボタン」は普段叩いている丸型ドーム部分のことで、「マイクロスイッチ」はボタンを押し込んだ時にカチッという音のする部分です。<br>
+これらは打鍵感、ボタン重さ、陥没などのメンテナンス不良に直結しやすい、非常に重要なパーツです。代表的なもの (純正パーツ) は次の通りです。
+</p>
+
+<p>
+■ <strong><a href="https://www.sanwa-d.shop/shop/shopdetail.html?brandcode=000000000156" target="_blank">三和電子製 照光式押しボタン薄型ドーム 100φ（旧型ランプホルダー）　OBSA-100UMQ</a></strong>　(三和ボタン)<br>
+■ <strong><a href="https://www.fa.omron.co.jp/product/item/V-10-1A4/" target="_blank">オムロン(OMRON) V-10-1A4 形V小形基本スイッチ ピン押ボタン形 100g</a></strong>　(オムロン製マイクロスイッチ)
+</p>
+
+<p>
+しかし純正パーツは高コストなので、<span style="color: #ff0000;">パーツ換装が可能なACコンの多くは自社製のボタン・スイッチを採用しており、純正パーツへの換装はオプション価格になっている場合があります。</span><br>
+本体のパッケージ価格で即決するのではなく、プレイの快適さも考慮して総合的に判断しましょう。(迷ったらボタンは各メーカーの自社製、スイッチは純正品がオススメです。)
+</p>
+
+<br>
+
+<h2 id="controller-review">各コントローラの簡易レビューと購入先情報</h2>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://www.konamistyle.jp/products/detail.php?product_id=109921" target="_blank">pop'n music専用コントローラ プレミアムモデル　(公式コン / Lively コン)</a></strong></span>
+</p>
+<div align="center">
+<img src="style/images/guide/controller_lively.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+・ 2021年にコナステから発売された Pop'n Lively 専用の新型ACコン　再販待ち or 中古で入手<br>
+・ <strong>(推奨されないと思われますが PMS に標準対応　<a href="https://www.gamo2.com/jp/products/detail.php?product_id=97" target="_blank">BE2PS コンバータ</a> を購入することで PS2 にも接続可能</strong>)<br>
+・ <strong>カスタマーサービスが利用しやすい反面、メンテナンスやカスタマイズ、パーツ換装は不可</strong>　*実際には分解可能と思われますが、サポート対象外になりそうです<br>
+・ <strong>接点ゴム製スイッチ仕様　マイクロスイッチが使われていないため 独特の打鍵感になりますが、静音性に優れています</strong><br>
+・ ボタンの押下圧は 3N (300g / 標準より固め) 程度？　ただしストロークが浅いのでソフトタッチで十分反応します<br>
+・ 重量 3.5kg　薄型で他コントローラに比べて筐体の厚みが半分程度<br>
+</p>
+
+<br>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://www.dj-dao.com/jp/popoller" target="_blank">POPOLLER (新DAOコン)</a></strong></span>
+</p>
+<div align="center">
+<img src="style/images/guide/controller_popoller.png" width="60%" height="60%">
+</div>
+<br>
+
+<p>
+・ DAO POP'N ASC コントローラ (左図) として知られていますが、2023年に POPOLLER としてリニューアルされました (右図)<br>
+・ <strong>PMS / Pop'n Lively に標準対応　<a href="https://www.gamo2.com/jp/products/detail.php?product_id=97" target="_blank">BE2PS コンバータ</a> を購入することで PS2 にも接続可能</strong><br>
+・ <strong>メンテナンスは各自でパーツを取り寄せて行う　パーツ換装でボタン固さやストローク深さなどをカスタマイズ可能　/　<a href="https://www.gamo2.com/jp/" target="_blank">パーツの再販所</a> が充実しています</strong><br>
+・ <strong>(2023/06 現在) START + SELECT 同時押しした際に本体プレイヤーと干渉し合う問題があり、特に beatoraja で使用する場合はキーボード入力との併用が必要</strong><br>
+・ 旧DAOコンのボタン縦間隔問題 (詳細は下記当該欄) が解消されており、AC と同一のボタン距離になっています<br>
+・ 重量 6.2kg　堅牢な構造で歪みにくく、振動での過反応は少ない方
+</p>
+
+<br>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://www.gqlabo.com/product/2" target="_blank">GENBU POP'N STANDARD 2019 (GENBUコン / 謎コン)</a></strong></span>
+</p>
+<div align="center">
+<img src="style/images/guide/controller_genbu_2019.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+・ 2019年以降に発売されたモデル<br>
+・ <span style="color: #ff0000;">何度かのリニューアルが行われていて、一口に "GENBUコン" と言っても、現行版と過去版では性能が大きく違います。必ずデザインを確認してください。</span><br>
+・ PMS / Pop'n Lively に標準対応　PS2 接続は非対応 (<a href="https://www.gamo2.com/jp/products/detail.php?product_id=97" target="_blank">BE2PS コンバータ</a> で動かせるかもしれません)<br>
+・ <strong>メンテナンスは各自でパーツを取り寄せて行う　購入時に純正パーツの発注オプションがあります。</strong><br>
+・ <strong>SELECT ボタンが無いため、キーボードの併用が必要</strong><br>
+・ <strong>ボタンの縦間隔 (上段ボタンの中心から下段ボタンの中心までの距離) が AC より広いとの情報を頂いています。本家 130mm に対し GENBU 140mm</strong><br>
+・ 重量 8.2kg で非常に堅牢　ただし天板がやや薄い？<br>
+</p>
+
+<br>
+
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="http://kcg0319.blog.fc2.com/blog-category-10.html" target="_blank">KCG コントローラ (KCGコン)</a></strong></span>
+</p>
+<div align="center">
+<img src="style/images/guide/controller_kcg.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+・ <a href="https://x.com/kamisaka0319" target="_blank">かみさか氏 (リンクは X(Twitter))</a> による自作コントローラ　不定期で販売されています。<br>
+・ <strong>PMS には標準対応　Lively にも恐らく標準対応していると思われます。PS2 接続端子はあるものの、接続が安定しない報告も？</strong><br>
+・ <strong>オムロン製スイッチ使用、静音化処理済ながら、他のコントローラに比べて圧倒的に安価</strong><br>
+・ 配線や筐体がデリケート　メンテナンスはパーツの発注から換装まで全て各自で行う必要があり、必要な工数は他コントローラより多くなると思われます<br>
+・ 重量 3.2kg
+</p>
+
+<br>
+
+<h3 id="controller-old-models">旧型コントローラー</h3>
+<p>
+全て、オフィシャルストアでの取り扱いが終了しているコントローラです。リサイクルショップやオークションで安価に手に入るかもしれません。
+</p>
+
+<p>
+<span style="font-size: 14pt;">■ <strong>DJ DAO POP'N ASC (DAOコン)</strong></span>
+</p>
+<div align="center">
+<img src="style/images/guide/controller_dao.png" width="60%" height="60%">
+</div>
+<br>
+
+<p>
+・ 従来型の DAO POP'N コントローラ<br>
+・ PS2 接続に標準対応　PMS / Pop'n Lively は初期設定 (後述) を行うと使用可能<br>
+・ <strong>メンテナンスは各自でパーツを取り寄せて行う　パーツ換装でボタン固さやストローク深さなどをカスタマイズ可能　/　<a href="https://www.gamo2.com/jp/" target="_blank">パーツの再販所</a> が充実しています(POPOLLER と併用可)</strong><br>
+・ POPOLLER で発生する START + SELECT 同時押しの不具合は、このコントローラの場合は発生しません<br>
+・ <strong>ボタンの縦間隔 (上段ボタンの中心から下段ボタンの中心までの距離) が AC より広いです。本家 130mm に対し DAO 135mm 　*POPOLLER で解消済</strong><br>
+・ 重量 6kg<br>
+</p>
+
+<br>
+
+
+<p>
+<span style="font-size: 14pt;">■ <strong>pop'n Music ARCADESTYLE CONTROLLER (旧ACコン)</strong></span>
+</p>
+<div align="center">
+<img src="style/images/guide/controller_arcade.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+・ 旧型の公式アーケードコントローラー<br>
+・ <strong>PS2 接続に標準対応　一方 USB端子を備えていないため、PMS / Lively で使用するには PS2 to USB コンバータ(後述) が必須</strong><br>
+・ <strong>ボタン周りの構造が特殊 & 廃版になったと思われるスイッチが使用されているため、メンテナンスやパーツ換装は困難</strong><br>
+・ 重量は軽め　丸みを帯びたフレームになっていることもあり、滑り止めを工夫しないと筐体位置が結構ずれやすい<br>
+・ <strong>本家AC筐体に比べ、ボタンの配置間隔が全体的にひとまわり広い</strong>
+</p>
+
+<br>
+
+<p>
+<span style="font-size: 14pt;">■ <strong>GENBU POP'N 2013 STANDARD / PREMIUM JAPAN MODEL (GENBUコン / 謎コン)</strong></span>
+</p>
+<div align="center">
+<img src="style/images/guide/controller_genbu_2013.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+・ <a href="http://homingpuyo.blog91.fc2.com/blog-entry-626.html" target="_blank">謎ポプコン GENBUコンレビュー</a> 記事 (スタンダード版)<br>
+・ <a href="http://homingpuyo.blog91.fc2.com/blog-entry-633.html" target="_blank">謎ポプコン PREMIUM JAPAN MODELコンレビュー</a> 記事 (プレミアム版)<br>
+・ <strong>恐らく PMS / Pop'n Lively では初期設定 (後述) を行えば使用可能？ PS2 接続はプレミアム版のみ対応 (スタンダード版でも <a href="https://www.gamo2.com/jp/products/detail.php?product_id=97" target="_blank">BE2PS コンバータ</a> で動かせるかもしれません)<br>
+・ <strong>メンテナンスは各自でパーツを取り寄せて行う</strong><br>
+・ 天板やネジ穴が破損しやすい、基盤の寿命が短いとの報告あり<br>
+</p>
+
+<br>
+<br>
+
+</div>
+
+
+<h4 id="openclosebox2_hdr" class="close"><span id="controller-initial-setup"></span>コントローラの初期設定　(クリックで開閉)</h4>
+<div id="openclosebox2">
+
+<h2 id="controller-pc-connection">PCへの接続</h2>
+<p>
+<strong>ACコンに付属したUSB端子をPCに接続します。USBで接続する場合、ハブなどを介さずにマザーボード由来のポートへ接続することが推奨されています。</strong><br>
+配線の事情等でハブを使わざるを得ない場合は、バスパワーのものは極力避けるか、LED給電用のUSB端子を コンセントから直取りしたUSB充電ポートに接続してください。
+</p>
+
+<p>
+旧ACコンなど <span style="color: #ff0000;">PS2端子しか備わっていないコントローラを接続する場合は PS2 to USB コンバータが必要なのですが、コンバータは入手困難な上、結構シビアな相性問題があります。</span><br>
+ELECOM 社のコンバータは相性が良いようです。動作確認の報告を頂いている機種を例示しますので、購入の参考にしてください。
+</p>
+<p>
+■ <strong><a href="https://www.elecom.co.jp/products/JC-PS101UBK.html" target="_blank">ELECOM JC-PS101U シリーズ</a></strong><br>
+■ <strong><a href="https://www2.elecom.co.jp/peripheral/gamepad/jc-ps102u/" target="_blank">ELECOM JC-PS102U シリーズ</a></strong>
+</p>
+
+<p>
+正常に接続された場合、自動的にドライバがインストールされ、PC上でボタン入力が検出される状態になります。
+</p>
+
+<br>
+
+<h2 id="controller-right-yellow-fix">右黄色が押しっぱなしになる問題の対策</h2>
+<p>
+この段階で、<span style="color: #ff0000;">右黄色ボタンが押しっぱなしになったままでボタン割り当てができない</span> という報告がよく挙がります。<br>
+これはPS2との接続が主だった時代のコントローラ全般に共通する基盤由来の問題で、<strong>PMS または Pop'n Lively に標準対応している新型のコントローラでは発生しません。</strong><br>
+もしこの問題が見られる場合は、次の初期設定を行ってください。
+</p>
+
+<p>
+(1) Win10の場合、左下検索窓に「USB ゲーム」と入力し、<strong>USB ゲーム コントローラの設定</strong> 画面を立ち上げます。<br>
+　　　*コントロールパネル > デバイスとプリンターの表示 > 対応するゲームコントローラを右クリック > 設定　でも可<br>
+　　　*Win8以前のOSでも似たような手順で辿りつけます。
+</p>
+<p>
+(2) コントローラ (筆者のDAOコンの場合は "Joystick" 表示) を選択し、<strong>プロパティ</strong> > <strong>設定タブ</strong> から <strong>調整</strong><br>
+(3) <span style="color: #ff0000;">ACコンには触らず、マウスで</span> <strong>次へ を設定完了までクリックします。</strong><br>
+(4) プロパティ > <strong>テスト</strong> を確認します。"軸" のカーソルが中央に来ていればOK　これで右黄色の押しっぱなしは解消されています。<br>
+　　　*稀に軸カーソルが左右にずれる場合がありますが、その場合も恐らく正常に動作します。フィードバック募集中
+</p>
+
+<div align="center">
+<img src="style/images/guide/controller_fix.png">
+</div>
+<br>
+
+<h3 id="controller-still-pressed">この設定を行ってもボタンが押しっぱなしになる場合</h3>
+<p>個々の基盤、コンバータ、USBポートやHUB、デバイスの認識に問題があるかもしれません。根本的な解決方法は示せないのですが、強引に動かす策がいくつか考えられます。</p>
+<p>
+・ (beatoraja 限定) beatoraja-configuration > Input > MODE 9KEYS ><strong>「JKOC HACK」にチェック</strong><br>
+・ (LR2 限定) LR2SETUP > OPTION ><strong>「選曲にポプコンを使う」にチェック</strong>　*選曲画面での操作にバグがあるので注意<br>
+・ <a href="https://joytokey.net/ja/" target="_blank">JoyToKey</a> でキーボード入力にリアサインする
+</p>
+<br>
+
+</div>
+<br>
+
+
+<h4 id="openclosebox3_hdr" class="close"><span id="beatoraja-keyconfig"></span>キーコンフィグ設定 - beatoraja　(クリックで開閉)</h4>
+<div id="openclosebox3">
+
+<p>
+beatoraja を起動して、SETTING > <strong>キーコンフィグ (KEY CONFIG)</strong> を起動します。<br>
+キーボードの左右キーで <strong>9 KEYS の設定画面</strong> に移動 > <strong>[2]キー</strong> を押して <strong>Controller Device 1</strong> をACコンのデバイス名に変更します。(筆者のDAOコンの場合は "Joystick" 表示)<br>
+選曲画面でもACコンで操作したい場合は　<strong>[1]キー</strong> を押して <strong>Music Select</strong> を <strong>popn</strong> に設定しておきます。
+</p>
+
+<p>
+次に、上下キーで 1～9 KEY を個々選択し、<strong>Enter キー</strong> > 表示が赤色になったら <strong>対応するACコンのボタンを入力</strong> していきます。
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/keyconfig_beatoraja.png">
+</div>
+<br>
+
+<div align="center">
+<img src="style/images/guide/keyconfig_buttons.png" width="50%" height="50%">
+</div>
+</p>
+<br>
+
+<p>
+全ての KEY をコントローラからの入力に上書きしたら <strong>Esc キー</strong> で選曲画面に戻ります。これでプレイ可能な状態になりました。
+</p>
+<br>
+
+<h3 id="beatoraja-keyconfig-not-working">キーコンフィグ画面でACコンが反応しない場合</h3>
+<p>
+はっきりした原因が分からないのですが、beatoraja や PC の再起動、デバイスの再接続を行っていると突然解消されるようです。<br>
+</p>
+
+<p>
+・ beatoraja-configuration > Input > MODE: 9KEYS > で、<strong>アナログスクラッチ</strong> にチェックを入れると反応するようになる？<br>
+・ 頂いた情報の例　随時募集中
+</p>
+
+<br>
+
+</div>
+
+
+
+
+
+
+<h4 id="openclosebox4_hdr" class="close"><span id="beatoraja-controls"></span>ゲーム画面での操作方法 - beatoraja　(クリックで開閉)</h4>
+<div id="openclosebox4">
+
+<p>
+Reference :<br>
+■　<a href="https://github.com/exch-bms2/beatoraja/blob/master/manual/hotkeys.txt" target="_blank">beatoraja\manual\hotkeys.txt</a><br>
+■　<a href="https://lntakeshi.hateblo.jp/entry/2017/05/19/002127" target="_blank">beatorajaの設定などのまとめ</a>
+</p>
+
+<p>
+選曲画面での操作方法は、上記「キーコンフィグ設定 - beatoraja」で Music Select に popn を適用した場合のものです。それ以外の場合、選曲はマウスで行ってください。
+</p>
+
+<p>
+本家 IIDX に慣れている人の場合は、SP の 2Pサイド (1～7KEY が鍵盤、8～9KEY がスクラッチ) の操作イメージで覚えておくと直感的かもしれません。<br>
+<strong>筆者が特に使用頻度が高いと感じるものを太字</strong> にしてみました。
+</p>
+
+<br>
+
+<h2 id="beatoraja-select-screen">選曲画面 - beatoraja</h2>
+
+
+<h3 id="beatoraja-music-select">楽曲選択</h3>
+<p>
+<div align="center">
+<img src="style/images/guide/control_musicselect_beatoraja.png" width="50%" height="50%">
+</div>
+</p>
+<br>
+
+<p>
+・ <strong>1KEY</strong> : オートプレイ<br>
+・ <strong>5KEY : 通常プレイ</strong><br>
+・ <strong>7KEY : プラクティスモード (後述) でプレイ</strong>
+</p>
+
+<p>
+・ <strong>3KEY</strong> : 一つ前の階層　/　<strong>5KEY</strong> で一つ先の階層に移動<br>
+・ <strong>4,6KEY</strong> : 上下に移動<br>
+・ <strong>選曲画面の最上層で 3KEY : 楽曲ソートの切り替え (曲名 - アーティスト名 - BPM …)</strong>
+</p>
+<br>
+
+<h3 id="beatoraja-option-normal">オプション選択 (通常)</h3>
+<p>
+<div align="center">
+<img src="style/images/guide/control_option_normal_beatoraja.png" width="50%" height="50%">
+</div>
+</p>
+
+
+
+<p>
+<span style="font-size: 14pt;">・ <strong>START ボタンを押しながら選択します</strong></span>
+</p>
+
+<p>
+・ <strong>1,2KEY : 譜面オプションの設定</strong><br>
+　　　- R-RANDOM : レーン配置がローテーション規則上でランダム化します (123456789 → 3456789 12 など)<br>
+　　　- H-RANDOM : 連打が発生しづらくなる補正のかかった S-RANDOM です。<span style="color: #ff0000;">アシストオプション扱いになるので要注意</span><br>
+・ <strong>3KEY : ゲージオプションの設定</strong><br>
+　　　- EX-HARD : HARD の上位ゲージ<br>
+　　　- A-EASY  : EASY の下位ゲージ<br>
+・ <strong>5KEY : ハイスピード固定化オプションの設定<br>
+　　　- MAIN-BPM : 曲中で最も長い BPM 区間に自動調節します。通常時はこの設定がオススメ</strong><br>
+　　　- START-BPM : 曲開始時の BPM に自動調節します<br>
+　　　- ハイスピードの速さ自体を決めるオプションではないので注意<br>
+・ 8,9KEY : ターゲットスコアの設定
+</p>
+
+<br>
+
+<h3 id="beatoraja-option-sub">オプション選択 (サブ)</h3>
+<p>
+<div align="center">
+<img src="style/images/guide/control_option_sub_beatoraja.png" width="50%" height="50%">
+</div>
+</p>
+
+
+
+<p>
+<span style="font-size: 14pt;">・ <strong>START + SELECT ボタンを押しながら選択します</strong></span>
+</p>
+
+<p>
+・ <strong>1KEY</strong> ： BGA の表示切替<br>
+・ <strong>2KEY</strong> ： GAUGE AUTO SHIFT (GAS) オプションの切り替え<br>
+　　　- CONTINUE ： HARDゲージなどが途中で空になっても演奏をそのまま続行<br>
+　　　- SUVIVAL TO GROOVE ： HARDゲージなどが途中で空になったときグルーヴゲージに移行<br>
+　　　- BEST CLEAR ： ゲージオプションの設定に関わらず、プレイ中最も良いゲージを適用<br>
+　　　- SELECT TO UNDER ： 選択したゲージオプションの範囲内で、プレイ中最も良いゲージを適用 (範囲はオプションパネル左側の <strong>Lower Limit of GAS</strong> で選択可能)
+</p>
+<p>
+・ 3KEY ： ノーツ表示時間自動調節機能の切り替え<br>
+・ <strong>4,6KEY ： ノーツ表示時間の調整 (いわゆるハイスピード設定、IIDX でいう 緑数字)</strong><br>
+　　　- 長押ししていると素早く数値変更できます<br>
+・ <strong>5,7KEY ： 判定タイミングの調整</strong><br>
+　　　- FAST が出る場合は [-] 方向　SLOW が出る場合は [+] 方向に調整
+</p>
+
+<br>
+
+<h3 id="beatoraja-option-assist">オプション選択 (アシスト)</h3>
+<p>
+<div align="center">
+<img src="style/images/guide/control_option_assist_beatoraja.png" width="50%" height="50%">
+</div>
+</p>
+
+
+<p>
+<span style="font-size: 14pt;">・ <strong>SELECT ボタンを押しながら選択します</strong></span><br>
+<span style="font-size: 14pt;">・ <span style="color: #ff0000;">アシストオプションのため、使用しているとデータが保存されない場合があります。誤ってONにしないように要注意！</span></span><br>
+</p>
+
+<p>
+・ 通常プレイで使用することはあまりないと思われます。<br>
+・ もう少し詳しく知りたい場合は <a href="https://lntakeshi.hateblo.jp/entry/2017/05/19/002127#%E3%83%97%E3%83%AC%E3%82%A4%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%BF%E3%83%96" target="_blank">beatoraja の設定などのまとめ - プレイオプションタブ</a> などが参考になるかもしれません。
+</p>
+
+<br>
+
+<h3 id="beatoraja-keyboard-options">キーボード操作系オプション</h3>
+
+
+<p>
+・ 数字1 : プレイモードフィルター<br>
+・ <strong>数字2 : ソート変更　(選曲画面 3KEY の挙動と同じ)</strong><br>
+・ 数字3 : LN / CN / HCN の切り替え<br>
+　　　- <span style="color: #ff0000;">(注意) データは LNモードごと別々に保存されます。クリアしたのにランプが消えた！ というときはまずここを確認</span><br>
+　　　- LN モードが本家に一番近い挙動です。<br>
+　　　- 本家と異なり、LN を押し直した場合は必ずミス扱いになります。
+</p>
+<p>
+・ 数字4 : リプレイを選択<br>
+・ 数字5 : オプション選択 (サブ) の設定　(START+SELECT で開く方法と同じ)<br>
+・ 数字6 : キーコンフィグ 画面に移動<br>
+・ 数字7 : ライバル変更<br>
+・ <strong>数字8 : 選曲中の譜面と同じフォルダ内の譜面を表示</strong><br>
+・ <strong>数字9 : 選曲中の楽曲の同梱テキスト (readme.txt 類) を開く</strong>
+</p>
+
+<p>
+----------
+</p>
+
+<p>
+・ F1 : FPS表示<br>
+・ <strong>F2 : 選択中のフォルダ・難易度表をリロード</strong><br>
+・ F3 : 選択中の BMS が格納されているフォルダをエクスプローラーで表示<br>
+・ <strong>F4 : フルスクリーン / ウインドウモードの切り替え</strong><br>
+・ <strong>F6 : スクリーンショット</strong><br>
+　　　- beatoraja > screenshot フォルダ内に保存されます。リザルト画面以外でも随時使用可能
+</p>
+<p>
+・ <strong>F8 / F9 : お気に入り (Favorite Folder)　/　不可視フォルダ (Invisible Folder) への登録</strong><br>
+　　　- <strong>F8 は楽曲全体(全譜面)</strong> を一括登録　　<strong>F9 は選択中の譜面のみ</strong> を登録<br>
+　　　- 1回押すと Favorite Folder に登録され、<span style="color: #ff0000;">もう1回押すと Invisible Folder に登録されて、Invisible Folder 外からの選曲が不可能になります。</span><br>
+　　　- <span style="color: #ff0000;">Invisible Folder で F8 / F9 を押すと、フォルダ登録が解除されます。</span><br>
+　　　- 万一 Invisible Folder 自体が選曲画面に現れない問題が発生した場合は、最新版の beatoraja にある beatoraja\folder\default.json を上書きしてください。
+</p>
+<p>
+・ <strong>F11 : 選択中の譜面の IR を表示</strong><br>
+　　　- IR に接続していない場合は利用できません<br>
+・ F12 : スキンカスタマイズ 画面に移動
+</p>
+
+<p>
+----------
+</p>
+
+<p>
+・ Shift + Windows + 左右矢印キー : デュアルモニタ環境の表示ウィンドウ切り替え<br>
+・ Ctrl + F3：md5 ハッシュ値をクリップボードにコピー<br>
+・ Ctrl + Shift + F3 : sha256 ハッシュ値をクリップボードにコピー
+</p>
+
+<br>
+<br>
+
+<h2 id="beatoraja-play-screen">プレイ画面 - beatoraja</h2>
+
+<h3 id="beatoraja-special-options">特殊オプションの有効化について</h3>
+<p>
+次のオプションは、beatoraja-configuration > プレイオプション > 9KEY の <span style="color: #ff0000;">当該欄に使用チェックを入れた場合のみ有効化</span> されます。あらかじめ取捨選択して設定しておきましょう。<br>
+レーンカバー (SUDDEN) についてはプレイ画面の操作でも着脱が可能ですが、普段装着したままで遊んでいるという場合はここでチェックしておくと便利です。
+</p>
+
+<p>
+・ <strong>レーンカバー (SUD+)</strong>　:　画面上部の表示領域制限です。チェックすると、装着した状態での HS設定 (緑数字) が曲開始時のデフォルト値になります。
+</p>
+<p>
+・ <strong>リフト (LIFT)</strong>　:　判定ライン自体の上下移動<br>
+・ <strong>HIDDEN</strong>　:　判定ライン側の表示領域制限<br>
+・ <strong>HI-SPEED 固定自動調整</strong>　:　IIDX のいわゆる <a href="https://w.atwiki.jp/otogeshiyouze/pages/51.html#id_50ea5230" target="_blank">皿チョン</a> に相当する機能です。START + 8,9KEY を押すと、即座にHSが緑数字のデフォルト設定値へと再FIXされます。<br>
+・ <strong>GUIDE SE</strong>　:　判定に応じた打鍵音を外挿します。beatoraja > defaultsound フォルダ内の音源を入れ替えることでカスタマイズできます。
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/control_play_beatoraja_pp.png" width="100%" height="100%">
+</div>
+</p>
+
+
+
+
+
+<br>
+
+
+<h3 id="beatoraja-option-list">オプション一覧</h3>
+<p>
+(全般) ハイスピード固定化オプション (Hi-Speed Fix / HS-FIX) を有効にしている想定です。<br>
+SUD+ / HIDDEN / LIFT 位置を変更した後は、譜面を叩いて (FAILED でも構わないので) <span style="color: #ff0000;">リザルト画面に遷移したタイミングで設定が保存されます。</span>
+</p>
+
+<p>
+-----------
+</p>
+
+<p>
+・ START + 1～7KEY　:　一時的にハイスピードを1段階変更<br>
+　　　 　- 曲が終了すると設定値 (緑数字) はリセットされます。<br>
+　　　　 - IIDX でいう FHS 使用中の HS 変更に相当　*一部のソフラン対策以外では使用しないかもしれません
+</p>
+
+<p>
+・ <strong>START ボタンをダブルクリック　:　レーンカバー (SUD+) の着脱</strong><br>
+　　・ <strong>SUD+ 装着中 に　START + 8,9KEY　:　SUD+ 表示位置の調整</strong><br>
+　　・ SUD+ <span style="color: #ff0000;">脱着中 かつ HIDDEN / LIFT 有効時</span> に　START + 8,9KEY　:　HIDDEN / LIFT 表示位置の調整
+</p>
+
+<p>
+・ <strong>HI-SPEED 固定自動調整 有効時に　START + 8 or 9KEY を一瞬押す　:　そのタイミングのBPM値に緑数字を再設定</strong><br>
+　　　　- SUD+ / HIDDEN / LIFT の適用状態に関わらず動作します。(同時に動作してしまうため、一瞬だけ押すようにする必要があります)<br>
+　　　　- IIDX でいう 皿チョン に相当　事実上のソフラン対策オプションです。
+</p>
+
+<p>
+・ <span style="color: #ff0000;">SELECT</span> + 1～9KEY　:　デフォルトのノーツ表示時間 (緑数字) を1段階変更<br>
+　　　　- 選曲画面のサブオプション「ノーツ表示時間の調整」と同じことがプレイ中に可能ということです。曲終了後も設定値 (緑数字) は維持されます。<br>
+　　　　- IIDX でいう FHS 解除 - SUD 位置変更 (緑数字調整) - FHS 再設定　の流れに相当
+</p>
+
+<p>
+・ <strong>START + SELECT を長押し　:　強制終了</strong><br>
+　　　　- Esc キー を押した場合も同様<br>
+　　・ <strong>暗転中に START または SELECT を押し直し　:　クイックリトライ</strong>
+
+</p>
+
+<br>
+<br>
+
+<h2 id="beatoraja-result-screen">リザルト画面 - beatoraja</h2>
+<p>
+・ キーボードの数字 1,2,3,4　:　リプレイ保存　*同時に最大4枠<br>
+・ <strong>6KEY　:　ゲージオプションごとのゲージ推移 表示切り替え</strong>
+</p>
+
+<p>
+・ 1,3KEY　:　選曲画面に戻る<br>
+・ 5KEY を長押し　:　ランダムオプションの配置を維持せずに再プレイ (IIDX 仕様)<br>
+・ 7KEY を長押し　:　ランダムオプションの配置を維持して再プレイ (LR2 仕様)
+</p>
+<br>
+<br>
+
+<h2 id="beatoraja-practice-mode">プラクティスモード - beatoraja</h2>
+<p>
+選曲画面から 7KEY でプラクティスモードに移行します。<br>
+プラクティスモードでは、オプションは全てキーボードの上下左右キーで入力し、最後にコントローラの <strong>1KEY (左白) を押すと再生開始</strong> されます。
+</p>
+
+<p>
+・ <strong>START TIME / END TIME　:　再生区間の設定</strong><br>
+　　　- 区間スキップがないので絞り込みに少し時間がかかりますが、一度入力した内容は譜面ごとに保存されるので 2回目以降はショートカット可能です。
+</p>
+
+<p>
+・ <strong>GAUGE TYPE / GAUGE CATEGORY / GAUGE VALUE　:　グルーヴゲージの仕様の細かい絞り込み</strong><br>
+　　　- NORMAL / HARD などの基本的な設定のほか、他プレイスタイルの仕様を適用するなどの変わった使い方もできます。<br>
+　　　- TYPE: GRADE , CATEGORY: LR2 と設定することで <span style="color: #ff0000;">LR2 の段位ゲージを疑似再現できます。</span>
+</p>
+
+<p>
+・ <strong> JUDGERANK / TOTAL　:　主に創作譜面のバランス調整向けの機能</strong><br>
+・ <strong> FREQUENCY　:　再生速度の変更</strong><br>
+・ <strong> OPTION-1P　:　プレイオプションの設定</strong>
+</p>
+
+
+<br>
+<br>
+<br>
+
+</div>
+
+<br>
+
+
+
+
+
+
+<h4 id="openclosebox5_hdr" class="close"><span id="lr2-keyconfig"></span>キーコンフィグ設定 - LR2　(クリックで開閉)</h4>
+<div id="openclosebox5">
+
+
+<p>
+LR2 を起動して、SYSTEM OPTION > <strong>KEY CONFIG</strong> を起動します。<br>
+マウス操作で <strong>9 BUTTONS の設定画面</strong> に移動し、はじめに <strong>F2キー (初期設定に戻す)</strong> を押してデフォルトのキー設定を全解除します。
+</p>
+
+<p>
+画面内のボタンのアイコン > その下のスロットの順にクリックし、スロットが入力受付状態(青色) になったら <strong>対応するACコンのボタンを入力</strong> していきます。
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/keyconfig_lr2.png" width="80%" height="80%">
+</div>
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/keyconfig_buttons.png" width="50%" height="50%">
+</div>
+</p>
+
+<br>
+
+<p>
+全てのボタンについてACコンからの入力を登録したら完了です。<strong>Esc キー</strong> で選曲画面に戻りましょう。これでプレイ可能な状態になりました。
+</p>
+<br>
+
+<h3 id="lr2-music-select-keyconfig">選曲画面でもACコンを使いたい場合の設定</h3>
+<p>
+LR2 の場合、選曲画面で PMS の ACコンを使うには 7KEYS のキーコンフィグを改変する必要があります。<br>
+そのため、<span style="color: #ff0000;">7/14KEYS も並行して遊ぶ予定がある場合は、この設定は行わない方が良いかもしれません。</span>
+</p>
+
+<br>
+
+<p>
+<span style="font-size: 14pt;"><strong>PMS 以外遊ばないという人向けの 7KEYS (Music Select) オススメ設定例</strong></span>
+</p>
+
+<p>
+F2キー (初期設定に戻す) を行ってから、下図のようにアサインしてください。<br>
+2,4KEY にはそれぞれ2種類のボタンをマルチアサインします。(LR2 はマルチアサインを受け付ける仕様になっています)
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/keyconfig_musicselelect_lr2.png" width="80%" height="80%">
+</div>
+
+<br>
+<br>
+<br>
+</div>
+
+
+<h4 id="openclosebox6_hdr" class="close"><span id="lr2-controls"></span>ゲーム画面での操作方法 - LR2　(クリックで開閉)</h4>
+<div id="openclosebox6">
+<p>
+選曲画面での操作方法は、上記「選曲画面でもACコンを使いたい場合の設定」を使用している場合のものです。それ以外の場合、選曲はマウスで行ってください。<br>
+<strong>筆者が特に使用頻度が高いと感じるものを太字</strong> にしてみました。
+</p>
+
+<br>
+
+<h2 id="lr2-select-screen">選曲画面 - LR2</h2>
+<h3 id="lr2-music-select">楽曲選択</h3>
+<p>
+<div align="center">
+<img src="style/images/guide/control_musicselect_lr2.png" width="50%" height="50%">
+</div>
+</p>
+<br>
+
+<p>
+・ <strong>1KEY</strong> : オートプレイ<br>
+・ <strong>5KEY : 通常プレイ</strong>
+</p>
+
+<p>
+・ <strong>3KEY</strong> : 一つ前の階層　/　<strong>5KEY</strong> で一つ先の階層に移動<br>
+・ <strong>4,6KEY</strong> : 上下に移動<br>
+・ <strong>8KEY : IRランキングを表示 (長押しが必要な場合があります)</strong><br>
+　　　- <strong>IR上のプレイヤーにカーソルを合わせた状態でオートプレイ : そのプレイヤーのリプレイを再生</strong>
+</p>
+
+<br>
+
+<h3 id="lr2-option-normal">オプション選択 (通常)</h3>
+<p>
+<div align="center">
+<img src="style/images/guide/control_option_normal_lr2.png" width="50%" height="50%">
+</div>
+</p>
+
+
+
+<p>
+<span style="font-size: 14pt;">・ <strong>START ボタンを押しながら選択します</strong></span>
+</p>
+
+<p>
+・ <strong>START を押しながら SELECT</strong> : ターゲットスコアの設定<br>
+
+・ <strong>2,3KEY : 譜面オプションの設定</strong><br>
+　　　- SCATTER (H-RANDOM) : 連打が発生しづらくなる補正のかかった S-RANDOM です。<span style="color: #ff0000;">イージークリア扱いになるので要注意</span><br>
+　　　- <span style="color: #ff0000;">2,3KEY を一定時間押しっぱなしにすると EXTRA MODE という高難易度モードに切り替わります。ランプが消えた！譜面がおかしい！と思ったらまずここを確認</span><br>
+・ <strong>4KEY : ゲージオプションの設定</strong><br>
+　　　- EX-HARD 及び A-EASY は設定できません
+</p>
+
+<p>
+・ <strong>5,7KEY : ハイスピード設定 (5KEY で HS 減少　7KEY で HS 増加)</strong><br>
+　　・ <strong>5KEY を押しながら 7KEY : ハイスピード固定化オプションの設定</strong><br>
+　　　　　- CONSTANT (REGUL-SPEED) : ソフランが解除されます。<span style="color: #ff0000;">イージークリア扱いになるので要注意</span><br>
+　　　　　- LR2 の場合は MAX-FIX が主流です。beatoraja の MAIN / START-FIX は設定できません。<br>
+　　　　　- 緑数字表示もありませんので、FIX 後の HS 値はプレイしながらの微調整が必要です。
+</p>
+
+<br>
+
+
+
+<h3 id="lr2-sudden-plus">レーンカバー (SUDDEN+ / SUD+) の使用設定</h3>
+<p>
+・ <strong>SYSTEM OPTION > LANE COVER を ON / OFF　:　SUD+ の使用切り替え</strong><br>
+　　　- 使用している選曲スキンによっては、オプション画面に切り替えアイコンが表示される場合があります。<br>
+　　　- SUD+ の表示位置はプレイ画面で調整します。
+</p>
+
+<br>
+
+
+
+<h3 id="lr2-keyboard-options">キーボード操作系オプション</h3>
+
+<p>
+・ F1 : 説明の表示<br>
+・ F2 : 変態向けプレイオプション<br>
+・ F3 : レベルと難度カテゴリの変更<br>
+・ <strong>F4 : フルスクリーン / ウインドウモードの切り替え</strong><br>
+・ <strong>F5 : LR2IR 接続</strong><br>
+・ <strong>F6 :スクリーンショット(成功するとシャッター音が鳴ります)</strong><br>
+　　　　- LR2beta3 フォルダ直下に保存されます。リザルト画面以外でも随時使用可能<br>
+・ F7 : FPS表示<br>
+
+</p>
+<br>
+
+<h3 id="lr2-special-options">特殊オプション・ネタオプション</h3>
+<p>
+・ <strong>選曲画面 > EFFECTS > FX > PITCH > FREQ スライダーを変更 > スイッチをON　:　再生速度の変更</strong><br>
+　　　- ±12段階 (BPM 50～200%) で設定できます。<span style="color: #ff0000;">＋方向に設定した場合、クリアランプが保存されます。</span><br>
+　　　- ON/OFF スイッチの位置がスキンによっては分かりづらいので注意してください。デフォルトスキンの場合は下記画像参照 赤枠部分をクリックします。<br>
+
+<div align="center">
+<img src="style/images/guide/control_option_freq_lr2.png" width="50%" height="50%">
+</div>
+</p>
+<br>
+
+<p>
+・ <strong>オプション選択画面で 2,3KEY (譜面オプション) を長押し　:　EXTRA MODE の ON/OFF</strong><br>
+　　　- 余剰キー音を詰め込んだ譜面になります。正規譜面の概念があり、ランプも別枠で保存されます。
+</p>
+
+<p>
+・ <strong>選曲画面で F2 キーを押しながら キーボードの左右上下キー　:　マニアックオプションのON/OFF</strong><br>
+　　　- 全21種類　どれもこれもパンドラの箱！
+</p>
+
+<p>
+・ <strong><a href="http://stellawingroad.web.fc2.com/i/lr2.html" target="_blank">PMSの上達に役立つかもしれないマニアックオプションの利用例</a></strong><br>
+</p>
+
+<br>
+<br>
+
+
+
+<h2 id="lr2-play-screen">プレイ画面 - LR2</h2>
+<h3 id="lr2-option-list">オプション一覧</h3>
+<p>
+・ <strong>START + 1～7KEY　:　ハイスピードを1段階変更</strong><br>
+</p>
+
+<p>
+・ <strong>START ボタンをダブルクリック　:　レーンカバー (SUD+) の着脱</strong>　※上記「レーンカバー (SUDDEN+ / SUD+) の使用設定」を有効化している場合のみ<br>
+　　・ <strong>SUD+ 装着中 に　START + 6,7KEY　:　SUD+ 表示位置の調整</strong>
+</p>
+
+<p>
+・ <strong>START + SELECT を長押し　:　強制終了</strong><br>
+　　　　- Esc キー を押した場合も同様
+</p>
+
+<p>
+----------
+</p>
+
+<p>
+・ <strong>プレイ中に数字キーの 1～9 + 上下左右キー　:　スキン描画の調整</strong><br>
+　　・ 筆者はこの機能について詳しくありません。解説記事 <a href="http://lil.techblog.jp/archives/1638491.html" target="_blank">「Re:sweet LR2を便利に使おう！」</a> などを参照してください。<br>
+　　・ 1キー : スキンのオフセット位置変更<br>
+　　・ 2キー : スキン拡大率変更<br>
+　　・ 3キー : 判定文字の表示位置変更<br>
+　　・ 4キー : ノートオブジェクト拡大率変更<br>
+　　・ 5キー : 描画制限<br>
+　　・ 6キー : 1P側レーン位置変更 (疑似 LIFT)<br>
+　　・ 7キー : 2P側レーン位置変更 (疑似 LIFT)
+
+</p>
+
+
+<br>
+
+
+<h2 id="lr2-result-screen">リザルト画面 - LR2</h2>
+
+<p>
+・ 下段ボタンで決定　:　選曲画面に戻る<br>
+・ <strong>上段+下段ボタンを長押し　:　クイックリトライ (ランダムオプションの配置は維持されます)</strong><br>
+　　　- ランダムの再抽選を行いたい場合は、一度選曲画面に遷移する必要があります。
+</p>
+<br>
+<br>
+
+</div>
+<br>
+<h3 id="guide-back-to-about-bottom"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+
+
+
+
+
+</section>
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+open_close("openclosebox2_hdr", "openclosebox2");
+open_close("openclosebox3_hdr", "openclosebox3");
+open_close("openclosebox4_hdr", "openclosebox4");
+open_close("openclosebox5_hdr", "openclosebox5");
+open_close("openclosebox6_hdr", "openclosebox6");
+
+}
+</script>
+
+<!--フラグメントリンク用：閉じた開閉ブロックを開いてからページ内ジャンプ-->
+<script type="text/javascript">
+(function () {
+  function addClass(element, className) {
+    if (!element) return;
+    if ((" " + element.className + " ").indexOf(" " + className + " ") === -1) {
+      element.className = (element.className + " " + className).replace(/^\s+|\s+$/g, "");
+    }
+  }
+
+  function removeClass(element, className) {
+    if (!element) return;
+    var pattern = new RegExp("(^|\\s)" + className + "(\\s|$)", "g");
+    element.className = element.className.replace(pattern, " ").replace(/^\s+|\s+$/g, "");
+  }
+
+  function openBox(boxId) {
+    var box = document.getElementById(boxId);
+    var header = document.getElementById(boxId + "_hdr");
+
+    if (box) {
+      box.style.display = "block";
+    }
+
+    if (header) {
+      removeClass(header, "close");
+      addClass(header, "open");
+    }
+  }
+
+  function collectOpenBoxes(target) {
+    var boxes = [];
+    var node = target;
+
+    while (node && node.nodeType === 1) {
+      if (node.id && /^openclosebox\d+$/.test(node.id)) {
+        boxes.unshift(node.id);
+      }
+      node = node.parentNode;
+    }
+
+    node = target;
+    while (node && node.nodeType === 1) {
+      if (node.id && /^openclosebox\d+_hdr$/.test(node.id)) {
+        boxes.unshift(node.id.replace(/_hdr$/, ""));
+        break;
+      }
+      node = node.parentNode;
+    }
+
+    var unique = [];
+    for (var i = 0; i < boxes.length; i++) {
+      if (unique.indexOf(boxes[i]) === -1) {
+        unique.push(boxes[i]);
+      }
+    }
+    return unique;
+  }
+
+  function openByHash() {
+    if (!location.hash) return;
+
+    var id = decodeURIComponent(location.hash.substring(1));
+    var target = document.getElementById(id);
+    if (!target) return;
+
+    var boxes = collectOpenBoxes(target);
+    for (var i = 0; i < boxes.length; i++) {
+      openBox(boxes[i]);
+    }
+
+    setTimeout(function () {
+      if (target.scrollIntoView) {
+        target.scrollIntoView();
+      }
+    }, 0);
+  }
+
+  window.addEventListener("load", openByHash);
+  window.addEventListener("hashchange", openByHash);
+})();
+</script>
+
+
+</body>
+</html>
