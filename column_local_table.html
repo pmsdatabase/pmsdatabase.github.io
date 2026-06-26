@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>難易度表をローカル(オフライン) 環境で作成・登録する方法について - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="難易度表,作り方,BMS,PMS">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About & Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li class="current"><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+<h2 id="local-table">コラム -難易度表をオフライン(ローカル) 環境で作成・登録する方法について -</h2>
+<p>
+会員登録等を介さず、ローカル環境下に難易度表を作成し楽しむ方法はありませんか？ というリクエストを頂きました。<br>
+そこで当コラムでは、Google スプレッドシートの代わりに <strong>表計算ソフト(.xlsx / Excel等) でデータを作成</strong>し、URLの代わりに<strong>ファイルパスから難易度表を登録</strong>する方法をご紹介します。プライベートなプレイリストの作成や、難易度表の動作確認などにも利用できるかもしれません。<br>
+</p>
+<p>
+コラム - <a href="column_table.html" target="_blank">難易度表の作成方法について</a>　/　<a href="column_course.html" target="_blank">段位認定コースセットの作成方法について</a> の内容を統合しています。動作対象の本体プレイヤーは LR2 / beatoraja です。
+</p>
+
+<h2 id="sample-set">サンプルセットと中身の概要</h2>
+<p>
+<strong><span style="font-size: 16pt;"><a href="table_sample/local_table/local_table_sample.zip">【Download】ローカル環境用 難易度表作成用テンプレート & サンプルセット</a></span></strong>
+</p>
+
+<p>
+- <strong>「worksheet.xlsx」</strong> … ここでデータ作成を行います。<strong>.xlsx</strong> に対応した表計算ソフトが必要です。(Excel 2019 で動作確認しました。)<br>
+
+- <strong>「header.json」</strong> … 難易度表全般のプロパティと段位認定情報を書き込むファイルです。<br>
+
+- <strong>「score.json」</strong> … 難易度表に登録する譜面の情報を書き込むファイルです。<br>
+</p>
+
+<p>
+- <strong>「header_with_course_sample.json」「course_sample.lr2crs」</strong> … 解説用のサンプルファイルです。<br>
+- <strong>「manual.pdf」</strong> … 完全オフライン環境向けのマニュアルです。内容は当コラム(と関連するコラム) に準じますので、どちらを参照頂いても構いません。<br>
+<br>
+* 難易度表をウェブ公開するためのファイル類は含まれません。必要になった場合は、<a href="column_table.html" target="_blank">難易度表の作成方法について</a> のサンプルセットから導入してください。
+</p>
+
+<h2 id="create-data-with-spreadsheet">表計算ソフトで難易度表の各種データを作成する</h2>
+
+<h3 id="create-difficulty-table">(1) 難易度表の作成</h3>
+<p>
+スプレッドシートの代わりに「worksheet.xlsx」を使用する以外は <a href="column_table.html" target="_blank">難易度表の作成方法について</a> の手順(2)～(3) と同様です。詳しくは当該コラムを参照してください。
+</p>
+
+<p>
+メモ帳アプリから「header.json」を編集し、ワークシートの「テンプレート(難易度表)」に楽曲データを書き込んで「score.json」に貼り付けます。<br>
+<span style="color: #ff0000;">「score.json」のデータ末尾  }, を }] に書き換えるところだけは手動で、毎回忘れずに行ってください。</span><br>
+ローカル環境の場合は <strong>難易度・曲名・md5・sha256 (BMSONの場合のみ)</strong> のデータが揃えば十分です。<a href="column_table_tips.html" target="_blank">「bmsmd5 の効率的な取得方法について」</a> も参考にどうぞ。<br>
+</p>
+
+<h3 id="create-course-data">(2) 段位認定の作成</h3>
+<p>
+こちらも <a href="column_course.html" target="_blank">段位認定コースセットの作成方法について</a> と同様の作業になります。<br>
+ただし、この作業を行って改変した「header.json」に1コースも登録されていない場合、難易度表の読み込みに不具合が発生します。<br>
+<strong>段位認定が必要なければこの工程はスキップし、作業する場合は必ず1コース以上作成しておいてください。</strong>
+
+</p>
+
+<p>
+ワークシートの「テンプレート(段位認定)」に各種データを書き込んで、LR2の場合はコースファイルを出力し、beatoraja の場合は「header.json」を上書きします。<br>
+<span style="color: #ff0000;">「header.json」コースデータ記入部 最終行末尾のカンマの削除 ]}, → ]} は毎回忘れずに行ってください。</span><br>
+「header_with_course_sample.json」「course_sample.lr2crs」は、ワークシート「シート例(段位認定)」の情報を記入した場合の出力例です。参考にどうぞ。
+</p>
+
+<br>
+
+<h2 id="load-local-table">ローカル環境の難易度表データを本体プレイヤーに読み込ませる</h2>
+<p>
+「header.json」「score.json」が同一ディレクトリにあることを確認し、「header.json」のファイルパスを取得(ファイルを選択 > Shift+右クリック > パスのコピー) しておきます。<br>
+これらのファイルは管理しやすい場所に設置して構いませんが、<span style="color: #ff0000;"><strong>ファイルパスに半角英数字(ASCII文字) 以外が含まれないようにし、パス内の \ マークは / に変換しておいてください。</strong></span><br>
+</p>
+
+<p>
+以下は一例として、ユーザ名 "user" が Cドライブ &gt; ドキュメント にサンプルファイル「local_table_sample」全体を設置したものとして紹介します。
+</p>
+<div align="center">
+この場合のファイルパス　<strong>C:<span style="color: #ff0000;">/</span>Users<span style="color: #ff0000;">/</span>user<span style="color: #ff0000;">/</span>Documents<span style="color: #ff0000;">/</span>local_table_sample<span style="color: #ff0000;">/</span>header.json</strong><br>
+<img src="style/images/columns/local_table_fig1.png" width="1000px" height="300px" alt="header.json のファイルパス例">
+</div>
+<br>
+
+
+<h3 id="lr2-bemusicseeker">LR2 の場合 (BeMusicSeeker)</h3>
+<p>
+<a href="https://github.com/SayakaIsBaka/BeMusicSeeker-installer/releases/tag/installer-v1" target="_blank">BeMusicSeeker</a> を使用します。あらかじめインストールしておいてください。<br>
+メイン画面の左側「プレイリスト」を右クリック &gt; インポート &gt; URLを指定して読み込む を選択し、上記のファイルパスを入力して OK を押すと難易度表として読み込まれます。
+</p>
+
+<div align="center">
+<img src="style/images/columns/local_table_fig2.png" width="1000px" height="300px" alt="BeMusicSeeker のURL指定読み込み画面">
+</div>
+
+<h3 id="beatoraja-local-table">beatoraja の場合</h3>
+<p>
+(v0.8.4現在) beatoraja-config > リソース > Table URL ではファイルパスが入力出来ませんが、URLの保存されている beatoraja/config.json を直接編集する事で、ファイルパスから難易度表を読み込ませることが可能になります。ただし、<strong><span style="color: #ff0000;">操作を誤ると config.json が初期化されてしまうので、あらかじめバックアップを作成しておいてください。</span></strong>
+</p>
+
+<p>
+beatoraja フォルダ直下の config.json をメモ帳で開き、<strong>"tableURL":[</strong> と書かれている行の下に新たに行を挿入し、次のように入力して保存します。
+</p>
+
+<div align="center">
+<strong><span style="font-size: 14pt;"><span style="color: #ff0000;">"file:///</span>(header.json のファイルパス)<span style="color: #ff0000;">",</span></span></strong><br>
+上述の例の場合は <strong><span style="color: #ff0000;">"file:///</span>C:/Users/user/Documents/local_table_sample/header.json<span style="color: #ff0000;">",</span></strong><br>
+<img src="style/images/columns/local_table_fig3.png" width="1000px" height="300px" alt="beatoraja config.json のTable URL設定例">
+</div>
+
+<p>
+\マークや非ASCII文字が含まれていないか、ファイルパス周りの記述にミスがないか、もう一度確認してください。<br>
+きちんと導入できていれば、右図のように beatoraja-config > リソース > Table URL に難易度表が表示されています。「難易度表読み込み」を押して反映しましょう。
+</p>
+
+<h2 id="update-local-table">難易度表の更新等について</h2>
+<p>
+以降は通常の難易度表と同様に、「header.json」「score.json」を編集し、BeMusicSeeker あるいは beatoraja 上で更新すればOKです。<br>
+.json ファイルを移動させたい場合は、一旦難易度表から削除して、移動先のファイルパスで再度上記の導入作業を行ってください。<br>
+2つ目以降の難易度表を作成した場合も同様に行ってください。
+</p>
+
+</section>
+
+
+
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+
+}
+</script>
+
+
+
+</body>
+</html>
