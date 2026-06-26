@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PMS導入ガイド (2023年版) - Tips / トラブルシューティング - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="PMS,発狂PMS,PMSデータベース, PMS Database">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style/css/style_base.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li class="current"><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+<h2 id="guide-tips">PMS導入ガイド (2023年版) - Tips / トラブルシューティング</h2>
+<h2 id="toc">目次</h2>
+<h3 id="guide-back-to-about"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+<p>
+・ <a href="#tip-chart-not-recognized">[Common] 特定の差分が本体プレイヤーに認識されない</a><br>
+・ <a href="#tip-lr2-ime-duplicate-input">[LR2] 曲検索しようとすると文字が二重に入力される (IME バグ)</a><br>
+・ <a href="#tip-lr2-leap-year-bug">[LR2] 閏年バグについて</a><br>
+・ <a href="#tip-beatoraja-litone5-ln-laser">[beatoraja] LITONE5 スキンの LN レーザーが黒色に表示されて見づらい</a><br>
+・ <a href="#tip-beatoraja-lr2-skin">[beatoraja] LR2 で使用しているスキンを流用したい</a><br>
+・ <a href="#tip-chart-editor-crash">[差分作成] iBMSC / uBMSC / pBMSC のクラッシュに関して</a>
+</p>
+<br>
+
+<h2 id="tip-chart-not-recognized">[Common] 特定の差分が本体プレイヤーに認識されない</h2>
+<p>
+・ BMSの入ったフォルダが入れ子 (二重フォルダ) になっていないか確認してください。(ディレクトリ配下で最上層にある BMS / PMS ファイル以外認識されません)<br>
+・ 隠し譜面となっていて、拡張子変更や別途解凍が必要な場合があります。PMS Database 難易度表内の各曲コメント欄に追記しているのでチェックしてください。<br>
+・ 楽曲全更新を行ってみてください。
+</p>
+<p>
+・ (LR2) 当該ファイルをリネームしてみてください。また、ファイル名に文字化けや特殊文字が使われていないか確認し、適当な半角アルファベットに変換してください。<br>
+・ (beatoraja) BMSON ファイルの場合、データベースから消失するバグがあるそうです。beatoraja\songdata.db と songinfo.db を初期化 (beatoraja を再DLしてファイル入れ替え) したのち、楽曲全更新を行ってみてください。
+</p>
+
+
+<h2 id="tip-lr2-ime-duplicate-input">[LR2] 曲検索しようとすると文字が二重に入力される (IME バグ)</h2>
+<p>
+<a href="https://pcdr-chiebukuro.com/ime-bug/#%E4%BB%A5%E5%89%8D%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%81%AEMicrosoft_IME%E3%82%92%E4%BD%BF%E3%81%86" target="_blank">Windows10のIME不具合とは？ - 以前のバージョンのMicrosoft IMEを使う</a> を参考に、以前のバージョンの Microsoft IME を使う を ON に設定してください。<br>
+<strong>設定 → 時刻と言語 → 言語 → 日本語 → オプション → IME → オプション → 全般 → 互換性 → オン</strong>
+</p>
+
+
+<h2 id="tip-lr2-leap-year-bug">[LR2] 閏年バグについて</h2>
+<p>
+閏年の 2月29日 (うるう日) に LR2 を起動すると、選曲やデータの保存ができないなどの致命的なバグに見舞われます。発生状況によっては翌日以降も影響が出続けるので、<br>
+<span style="color: #ff0000;">2024/02/29　2028/02/29　2032/02/29　… には LR2 を起動しないのが最善の策です。要注意！</span>
+</p>
+
+<p>
+<strong>バグを引いてしまった場合の対処策</strong><br>
+・ <a href="https://github.com/SayakaIsBaka/BeMusicSeeker-installer/releases/tag/installer-v1" target="_blank">BeMusicSeeker</a> を起動してみる (閏年バグが発生している場合、自動検出して修正を試みてくれます)<br>
+・ LR2beta3\LR2files のバックアップがあれば、復元してみる<br>
+・ LR2beta3\LR2files\Database 内の各 .db ファイルを <a href="https://www.dbonline.jp/sqlite-db-browser/" target="_blank">DB Browser for SQLite</a> 等で開き、異常な日付データを修正する
+</p>
+
+<h2 id="tip-beatoraja-litone5-ln-laser">[beatoraja] LITONE5 スキンの LN レーザーが黒色に表示されて見づらい</h2>
+<p>
+LITONE5\Play\parts\common\dummy.cim (画像ファイル) が透過されていないのが原因です。<br>
+<a href="https://github.com/sr8e/cim-ct/releases" target="_blank">CIM Conversion Tool</a> で PNG 画像に置換し、画像内の黒ドットを <a href="https://www.gimp.org/" target="_blank">GIMP</a> などの画像編集ソフトか <a href="https://www.peko-step.com/tool/alphachannel.html" target="_blank">適当な Web ツール</a> で透明色に置換してください。<br>
+*LITONE シリーズは規約により修正パッチの配布が禁止されているため、各自で作業を行ってください。
+</p>
+<p>
+CN モードを使用することでも回避できます。また力技ではあるものの、LOST や Very Short キービームを使ってレーザー表示自体を制限する方法もあります。
+</p>
+
+<h2 id="tip-beatoraja-lr2-skin">[beatoraja] LR2 で使用しているスキンを流用したい</h2>
+<p>
+Endless Circulation / Light Pop EX を利用している場合は、beatoraja 用に画面表示や解像度が最適化されたスキンパッケージが配布されています。<br>
+■ <strong><a href="https://x.com/lisqms/status/957227110958972929" target="_blank">Endless Circulation P-Play for beatoraja</a></strong><br>
+■ <strong><a href="https://github.com/ssdh233/light-pop-ex-for-beatoraja" target="_blank">Light Pop EX-B</a></strong>
+</p>
+<p>
+任意の LR2 スキンを beatoraja で利用できるようにコンバートする方法が解説されています。(一部表示に不具合が生じることがあります)<br>
+■ <strong><a href="https://lntakeshi.hateblo.jp/entry/2018/02/06/173642" target="_blank">beatorajaにカスタムスキンをインストールする</a></strong>　記事内の「beatorajaにスキンを適用する（LR2用のスキンの場合）」
+
+</p>
+
+<h2 id="tip-chart-editor-crash">[差分作成] iBMSC / uBMSC / pBMSC のクラッシュに関して</h2>
+<p>
+■ <strong>pBMSC を起動した際に "Unhandled Exception" というエラーが表示されて落ちてしまう</strong><br>
+pBMSC.exe に直接何かしらの BMS / PMS ファイルを D&D で読み込ませると、以降再び起動できるようになるようです。
+</p>
+
+<p>
+■ <strong>uBMSC で特定の音声ノートをクリックした際にクラッシュする</strong><br>
+特定の uBMSC のバージョンで発生するようです。<a href="https://github.com/NS-Kazuki/iBMSC/releases" target="_blank">uBMSC (v3.5.0-)</a> など新しいバージョンに乗り換えてみてください。
+</p>
+
+<p>
+■ <strong>iBMSC で ctrl + z で配置を巻き戻したとき、多重ノートが発生して動作が重くなる</strong><br>
+uBMSC / pBMSC で修正されたバグになりますので、乗り換えをオススメします。
+</p>
+
+<br>
+
+
+
+<br>
+<h3 id="guide-back-to-about-bottom"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+
+</section>
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+</body>
+</html>
