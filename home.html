@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Home - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PMS(9鍵BMS)譜面のデータベースを公開しています。">
+<meta name="keywords" content="PMS,発狂PMS,PMSデータベース, PMS Database">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="top">
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li class="current"><a href="home.html">Home</a></li>
+<li><a href="about.html">About & Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+
+<section id="new">
+<h2 id="news">更新情報・お知らせ</h2>
+
+<p>
+<span style="font-size: 14pt;">
+<strong>[NEWS] モダンなデザインの beatoraja 9keys プレイスキン <a href="https://ralba-gear.hateblo.jp/entry/PeacefulPlay" target="_blank">PeacefulPlay ver1.1.0</a> が公開されました！</strong><br>
+<a href="https://ralba-gear.hateblo.jp/entry/PeacefulPlay" target="_blank"><img src="style/banner/peacefulplay.png" width="30%" height="30%"></a>
+</span>
+</p>
+
+<br>
+
+
+<dl id="newinfo">
+
+<dt>2026/06/23</dt>
+<dd>
+・<a href="about.html#guide">Guide - PMS導入ガイド (2023年版)</a> の刷新を行いました。<br>
+　- 非常に今更ながら、各見出し部の HTML に ID 属性を付与しましたのでご活用ください。また、各記事のトップに目次を設置しました。<br> 
+　- 本体プレイヤーの導入 > <a href="guide_player.html#beatoraja-multiple-ir" target="_blank">複数のIRへの同時接続を設定する</a>　記事を追加しました。<br>
+　- 楽曲・スキン・難易度表の導入 > <a href="guide_song_skin_table.html#beatoraja-skin-peacefulplay" target="_blank">プレイスキン - PeacefulPlay</a>　記事を追加しました。<br>
+　- いくつかのリンク切れの修正と、LR2IR の閉鎖に伴う動線の見直しを行いました。
+</dd>
+
+<br>
+<dt>2026/06/20</dt>
+<dd>・LR2 Internet Ranking が 2026/05/31 をもって封鎖されました。これに伴い、難易度表内のリンクを魚拓サイトに置き換える暫定措置を行いました。<br>
+        　(旧)　<strong>http://www.dream-pro.info/*</strong>　　→　　(新)　<strong><a href="https://lr2ir.com/" target="_blank">https://lr2ir.com/</a>*</strong></dd>
+
+<dd>・サブ難易度表のうち、使用しておらず、アクティブなリンク共有も行っていないものを数点削除しました。万一リンク切れが問題になる場合は管理者に連絡ください。</dd>
+<dd>・<a href="course.html">コースデータ案内所</a> の刷新を行うとともに、これをもって更新停止とすることにしました。詳細は当該ページ内の情報を参照してください。</dd>
+
+<br>
+
+<dt>2026/05/31</dt>
+<dd>・<a href="BOF21PMS.html">BOF21 (BOF2025) PMS差分企画</a> 登録譜面をデータベースに統合しました。(PLv:150譜面 P●:148譜面)</dd>
+
+<dt>2026/04/06</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:40譜面 P●:30譜面)</dd>
+
+<dt>2025/12/31</dt>
+<dd>・<strong>[NEWS] 9key/PMS 譜面専用のチャート分析アプリケーション　<a href="https://github.com/010m010/PMSChartAnalyzer" target="_blank">PMSChartAnalyzer</a>　が公開されました！</dd>
+
+
+
+</dl>
+
+
+
+
+<h4 id="openclosebox1_hdr" class="close"><span id="update-history"></span>過去の更新履歴 (クリックで開閉)</h4>
+<div id="openclosebox1">
+<dl id="past-newinfo">
+
+<dt>2026/06/23</dt>
+<dd>
+・<a href="about.html#guide">Guide - PMS導入ガイド (2023年版)</a> の刷新を行いました。<br>
+　- 非常に今更ながら、各見出し部の HTML に ID 属性を付与しましたのでご活用ください。また、各記事のトップに目次を設置しました。<br> 
+　- 本体プレイヤーの導入 > <a href="guide_player.html#beatoraja-multiple-ir" target="_blank">複数のIRへの同時接続を設定する</a>　記事を追加しました。<br>
+　- 楽曲・スキン・難易度表の導入 > <a href="guide_song_skin_table.html#beatoraja-skin-peacefulplay" target="_blank">プレイスキン - PeacefulPlay</a>　記事を追加しました。<br>
+　- いくつかのリンク切れの修正と、LR2IR の閉鎖に伴う動線の見直しを行いました。
+</dd>
+
+<dt>2026/06/20</dt>
+<dd>・LR2 Internet Ranking が 2026/05/31 をもって封鎖されました。これに伴い、難易度表内のリンクを魚拓サイトに置き換える暫定措置を行いました。<br>
+        　(旧)　<strong>http://www.dream-pro.info/*</strong>　　→　　(新)　<strong><a href="https://lr2ir.com/" target="_blank">https://lr2ir.com/</a>*</strong></dd>
+<dd>・サブ難易度表のうち、使用しておらず、アクティブなリンク共有も行っていないものを数点削除しました。万一リンク切れが問題になる場合は管理者に連絡ください。</dd>
+<dd>・<a href="course.html">コースデータ案内所</a> の刷新を行うとともに、これをもって更新停止とすることにしました。詳細は当該ページ内の情報を参照してください。</dd>
+
+<dt>2026/06/14</dt>
+<dd>・<strong>[NEWS] モダンなデザインの beatoraja 9keys プレイスキン <a href="https://ralba-gear.hateblo.jp/entry/PeacefulPlay" target="_blank">PeacefulPlay ver1.1.0</a> が公開されました！</strong></dd>
+
+
+<dt>2026/05/31</dt>
+<dd>・<a href="BOF21PMS.html">BOF21 (BOF2025) PMS差分企画</a> 登録譜面をデータベースに統合しました。(PLv:150譜面 P●:148譜面)</dd>
+
+<dt>2026/04/06</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:40譜面 P●:30譜面)</dd>
+
+<dt>2026/04/05</dt>
+<dd>・<a href="BOF21PMS.html">BOF:21 (BOF2025) PMS差分企画</a> Vol.3 (Final) を公開しました。</dd>
+
+<dt>2026/02/01</dt>
+<dd>・<a href="BOF21PMS.html">BOF:21 (BOF2025) PMS差分企画</a> Vol.2 を公開しました。</dd>
+
+<dt>2025/12/31</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:10譜面 P●:14譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2025年下半期 提案を反映しました。</dd>
+<dd>・<strong>[NEWS] 9key/PMS 譜面専用のチャート分析アプリケーション　<a href="https://dragonrattiger.neocities.org/pms/pomyu" target="_blank">PMSChartAnalyzer v1.0.0</a>　が公開されました！</dd>
+
+<dt>2025/12/08</dt>
+<dd>・<a href="BOF21PMS.html">BOF:21 (BOF2025) PMS差分企画</a> Vol.1 を公開しました。</dd>
+
+<dt>2025/10/12</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:103譜面 P●:103譜面)</dd>
+
+<dt>2025/09/25</dt>
+<dd>・<a href="BOFNTPMS.html">BOF:NT (BOF2023) PMS差分企画</a> Vol.3 (Final) を公開しました。</dd>
+
+<dt>2025/07/02</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:23譜面 P●:19譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2025年上半期 提案を反映しました。</dd>
+<dd>・各難易度表「コメント」カラムの情報を整理し、LNMODE / STOP / SCROLL / MINE(地雷) / RANDOM 分岐 / 辛判定 / BPM変化 のデータを追加しました。</dd>
+
+<dt>2025/05/11</dt>
+<dd>・<a href="BOFTTPMS.html">BOF:TT (BOF2024) PMS差分企画</a> 登録譜面をデータベースに統合しました。(PLv:208譜面 P●:186譜面)</dd>
+
+<dt>2025/04/06</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:53譜面 P●:39譜面)</dd>
+
+<dt>2025/04/01</dt>
+<dd>・<a href="BOFTTPMS.html">BOF:TT (BOF2024) PMS差分企画</a> Vol.3 (Final) を公開しました。</dd>
+
+<dt>2025/02/08</dt>
+<dd>・<a href="BOFTTPMS.html">BOF:TT (BOF2024) PMS差分企画</a> Vol.2 を公開しました。</dd>
+
+<dt>2024/12/31</dt>
+<dd>・<a href="overjoy/table.html" target="_blank">PMS XG Overjoy (仮)</a> / <a href="xg_insaneplus/table.html" target="_blank">PMS XG Insane+ (仮)</a> を更新停止しました。難易度表としては引き続きご利用いただけます。</dd>
+<dd>・<a href="_pastoral_upper.html" target="_blank">Pastoral Table</a> への一元化のため、<a href="tanpatsu.html"target="_blank">たんぱつ難易度表+</a> を閉鎖しました。 *従来のデータは <a href="subtable/archive/tanpatsu.html" target="_blank">たんぱつ難易度表 Archive (for LR2 2023/07)</a> から確認可能です。</dd>
+
+
+<dt>2024/12/26</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:5譜面 P●:21譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2024年下半期 提案を反映しました。</dd>
+
+<dt>2024/12/09</dt>
+<dd>・<a href="BOFTTPMS.html">BOF:TT (BOF2024) PMS差分企画</a> Vol.1 を公開しました。</dd>
+
+<dt>2024/11/23</dt>
+<dd>・<strong>[NEWS] beatoraja で利用可能なポップン風キャラクター「ぽみゅキャラ」の案内所　<a href="https://dragonrattiger.neocities.org/pms/pomyu" target="_blank">Pomyu Chara Archive</a>　を作成して頂きました！</dd>
+<dd>・関連記事を暫定的に更新しました:　<a href="column_pomyu_chara.html" target="_blank">「ぽみゅキャラ」導入ガイド</a> (Others > コラム)　/　<a href="links.html" target="_blank">Links</a> (その他 > スキン関係 (ぽみゅキャラ))</dd>
+
+<dt>2024/10/10</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:43譜面 P●:60譜面)</dd>
+
+<dt>2024/07/01</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:66譜面 P●:129譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2024年上半期 提案を反映しました。</dd>
+
+<dt>2024/05/30</dt>
+<dd>・<a href="BOFNTPMS.html">BOF:NT (BOF2023) PMS差分企画</a> 登録譜面をデータベースに統合しました。(PLv:158譜面 P●:243譜面)</dd>
+
+<dt>2024/04/26</dt>
+<dd>・以前よりリンク切れとなっていた各難易度表の「譜面画像」リンクを <a href="https://twitter.com/dialgadu77/status/1780533938970116353" target="_blank">黒皇帝さんの BMS Score Viewer</a> に差し替え、再表示可能になりました。</dd>
+
+<dt>2024/04/02</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:75譜面 P●:47譜面)</dd>
+<dd>・今期をもって 曲名末尾タグ [LR2IR登録不可] の調査を終了とし、表記を削除することにしました。<a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=308417614" target="_blank">(対象譜面のログ)</a></dd>
+
+<dt>2024/04/01</dt>
+<dd>・<a href="BOFNTPMS.html">BOF:NT (BOF2023) PMS差分企画</a> Vol.3 (Final) を公開しました。</dd>
+
+<dt>2024/02/26</dt>
+<dd>・<a href="_pastoral_grade.html">PMS段位認定 2024</a> のリリースに伴い、Normal Records / Insane Records ヘッダ部に掲載していた 第5期 発狂PMS段位認定 を削除しました。</dd>
+<dd>　※第1期 ～ 第5期 PMS段位認定に引き続き挑戦したい場合は <a href="course.html">コースデータ案内所</a> をご利用ください。</dd>
+
+<dt>2024/02/25</dt>
+<dd>・<strong>[NEWS] <a href="https://mocha-repository.info/download.php" target="_blank">beatoraja 0.8.7 アップデート</a>　このバージョンから LN の押し直し判定が実装されています。</strong></dd>
+<dd>・<strong>[NEWS] <a href="https://ralba-gear.hateblo.jp/entry/2023/11/06/141139">【発狂PMS】beatoraja/LR2仕様比較まとめ （beatoraja0.8.7対応）</a> 上述の押し直しを含め、9keys 特有のゲージ・判定仕様をまとめて頂きました。</strong></dd>
+
+<dt>2024/02/01</dt>
+<dd>・<a href="BOFNTPMS.html">BOF:NT (BOF2023) PMS差分企画</a> Vol.2 を公開しました。</dd>
+
+<dt>2023/12/27</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:13譜面 P●:13譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2023年下半期 提案を反映しました。</dd>
+
+<dt>2023/11/27</dt>
+<dd>・<a href="BOFNTPMS.html">BOF:NT (BOF2023) PMS差分企画</a> Vol.1 を公開しました。</dd>
+
+<dt>2023/09/27</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:21譜面 P●:36譜面)</dd>
+
+<br>
+
+<dt>2023/07/23</dt>
+<dd>・<strong><a href="_pastoral_home.html">発狂PMS難易度表</a> 更新再開 & サイト統合　一部コンテンツを改訂しました。(詳細は <a href="guideline_202307.html">ガイドライン</a> 参照)</strong></dd>
+
+<dt>サイト全般更新</dt>
+<dd>・<strong><a href="index.html">index.html</a></strong> をポータルサイトに変更しました。今後、PMS Database としてのトップページは　<strong><a href="home.html">https://pmsdifficulty.xxxxxxxx.jp/home.html</a></strong>　になります。</dd>
+<dd>・PMS関連の主要難易度表について、統合直前 (= LR2 最終基準) 時点でのアーカイブを作成しました。(Others > 2023/07 PMS Database リニューアル関連)</dd>
+<dd>・「発狂PMS関連避難所(仮)」を公開停止しました。</dd>
+
+<dt>About の改訂</dt>
+<dd>・<a href="about.html">About & Guide</a> に「難易度移動提案所」の説明を統合　従来の「難易度移動提案所」(html) は公開停止しました。(ワークシートは変わりありません)</dd>
+<dd>・レギュレーション関連の記述を改訂しました。新しい記述は青色でハイライトしています。</dd>
+<dd>・ページ下部に、<a href="about.html#guide">PMS導入ガイド (2023年版)</a> 記事を新規追加しました。 *記事追加予定あり</dd>
+
+<dt>PLv / P● 更新</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:38譜面 P●:50譜面)</dd>
+<dd>・<a href="BOFETPMS.html">BOF:ET(BOF2022)PMS差分企画</a> 登録譜面をデータベースに統合しました。(PLv:281譜面 P●:293譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2023年上半期 提案を反映しました。</dd>
+<dd>・<a href="excluded_PMSdifficulty.html">Excluded Records</a> の改訂を行いました。　*一部作品が本表から移動されています。詳細や議論は <a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=1732793279" target="_blank">こちら (アンケート会場)</a></dd>
+<dd>・「memo」「コメント」カラム記入内容を整理し、色分けルールを更新しました。</dd>
+<dd>・P●0 難易度フォルダを追加しました。</dd>
+<br>
+
+
+<dt>2023/07/02</dt>
+<dd>・<a href="guideline_202307.html">発狂PMS難易度表更新再開に伴う当サイトの変更点・ガイドラインまとめ</a> を公開しました。(Others > 2023/07 PMS Database リニューアル関連)</dd>
+
+<dt>2023/05/06</dt>
+<dd>・<a href="column_colorful_channel.html">コラム - PMSパッケージ "Colorful Channel" 導入ガイド &コンテンツ紹介</a> を公開しました。</dd>
+
+<dt>2023/04/18</dt>
+<dd>・各難易度表に Mocha-Repository, MinIR へのリンクとロゴを追加しました。*ロゴは <a href="https://twitter.com/hibine52_49" target="_blank">Khibine さん</a> 制作で二次利用、再配布可　ダウンロードは <a href="table_sample/beatoraja_ir_logo.zip">こちら</a></dd>
+
+<dt>2023/04/08</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:21譜面 P●:35譜面)</dd>
+
+<dt>2023/04/03</dt>
+<dd>・<a href="BOFETPMS.html"> BOF:ET(BOF2022)PMS差分企画</a> Vol.3 (Final) を公開しました。</dd>
+
+<dt>2023/02/01</dt>
+<dd>・<a href="BOFETPMS.html"> BOF:ET(BOF2022)PMS差分企画</a> Vol.2 を公開しました。</dd>
+
+<dt>2022/12/31</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:5譜面 P●:8譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2022年下半期 提案を反映しました。</dd>
+
+<dt>2022/12/03</dt>
+<dd>・<a href="BOFETPMS.html"> BOF:ET(BOF2022)PMS差分企画</a> Vol.1 を公開しました。</dd>
+<dd>・<a href="diff_suggestion.html">難易度変更提案所</a> の下半期提案をリストしましたので、意見の記入をお願いします。(締切・反映予定: 2022/12月末以降)</dd>
+
+<dt>2022/09/25</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:26譜面 P●:24譜面)</dd>
+
+<dt>2022/08/14</dt>
+<dd>・<a href="grade.html" target="_blank">PMS Database Grade ver.2022.08</a> 正式コースを実装しました。ご協力ありがとうございました！</dd>
+
+<dt>2022/08/03</dt>
+<dd>・<a href="xg_insaneplus/table.html" target="_blank">PMS XG Insane+ (P●6-11) (仮)</a> を作成しました。(Others > サブ難易度表)</dd>
+<dd>・<a href="diff_suggestion.html">難易度変更提案所</a> の集計ルーティンを一部変更します。詳細は会場ページを参照してください。(次回締切: 2022/11月末　/　反映: 12月末以降)</dd>
+
+<dt>2022/07/12</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:54譜面 P●:71譜面)</dd>
+<dd>・<a href="BOFXVIIPMS.html">BOFXVII(BOF2021) PMS差分企画</a> 登録譜面をデータベースに統合しました。(PLv:186譜面 P●:230譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2022/06 締切分を反映しました。</dd>
+<dd>・<a href="overjoy/table.html" target="_blank">PMS XG Overjoy (仮)</a> に P●12フォルダの内容を追加しました。(Others > サブ難易度表)</dd>
+
+<dt>2022/05/01</dt>
+<dd>・<a href="BOFXVIIPMS.html">BOFXVII(BOF2021) PMS差分企画</a> Vol.3(Final) パッケージを公開しました。</dd>
+
+<dt>2022/04/09</dt>
+<dd>・<a href="column_course.html">コラム -段位認定コースセットの作成方法について (LR2/beatoraja 対応)-</a> を公開しました。</dd>
+<dd>・<a href="column_local_table.html">コラム -難易度表をオフライン(ローカル) 環境で作成・登録する方法について-</a> を公開しました。</dd>
+
+<dt>2022/03/01</dt>
+<dd>・<a href="BOFXVIIPMS.html">BOFXVII(BOF2021) PMS差分企画</a> Vol.2 パッケージを公開しました。</dd>
+
+<dt>2022/02/02</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:13譜面 P●:22譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2022/12 締切分を反映しました。</dd>
+
+<dt>2022/01/22</dt>
+<dd><strong>・[NEWS]<a href="http://dozen13092.web.fc2.com/"  target="_blank">PMS譜面ミスチェッカー (PMS Mistake Checker)</a> がアップデートされましたので、適用よろしくお願いします。</strong></dd>
+
+
+<dt>2022/01/10</dt>
+<dd>・当サイトの各難易度表が BeMusicSeeker で読み込めなくなっていた問題を対処しました。</dd>
+
+<dt>2021/12/27</dt>
+<dd>・<a href="BOFXVIIPMS.html">BOFXVII(BOF2021) PMS差分企画</a> Vol.1 パッケージを公開しました。</dd>
+
+<dt>2021/12/19</dt>
+<dd><s>・11月下旬ごろより 当サイトの各難易度表が BeMusicSeeker で読み込めない不具合が発生しており、現在対処中です。<br>
+　ローカルに保存した JSON(header) のパスを難易度表のURIに指定すると一応動作します。必要な場合は <a href="https://cdn.discordapp.com/attachments/875930403947573258/921086070463033374/pdb_jsons_20211217.zip" target="_blank">こちら</a> のJSONファイルを使用してください。</s></dd>
+
+<dt>2021/11/11</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:12譜面 P●:54譜面)</dd>
+
+<dt>2021/09/17</dt>
+<dd>・<a href="https://cinnamon.link/" target="_blank">Cinnamon</a></strong> に PMS Database を搭載して頂きました。オリジナルの難易度表を作成したり、クリア履歴を記録することができます。</dd>
+
+<dt>2021/09/09</dt>
+<dd>・主要な難易度表に「<a href="https://mocha-repository.info/" target="_blank">Mocha Repository</a> の曲別リンク」「ノート数」「TOTAL(+増加率)」カラムを追加しました。</dd>
+<dd>・<a href="stellawingroad_mirror.html">発狂PMS関連避難所(仮)</a> に、<a href="http://stellawingroad.web.fc2.com/new/pms.html" target="_blank">発狂PMS難易度表</a> を移植しました。リンクとオート動画はPDB準拠です。</dd>
+<dd>・これまで一部限定で共有状態となっていた、<a href="overjoy/table.html" target="_blank">PMS XG Overjoy (仮)</a>、同梱PMS譜面一覧表 (<a href="subtable/included/_normal_table.html" target="_blank">非発狂</a> / <a href="subtable/included/_insane_table.html" target="_blank">発狂</a>) を公開しました。(Others > サブ難易度表)</dd>
+<dd>・<a href="monthly.html">新規登録譜面一覧表 - 月別</a> を公開しました。(Others > サブ難易度表)</dd>
+<dd>・<a href="subtable/randomselect/randomselect.html" target="_blank">PMS Database お題箱 - P●/5曲/1分間隔</a> を公開しました。(Others > サブ難易度表)</dd>
+<dd>・<a href="course.html">コースデータ案内所</a> を公開しました。(Others > その他)</dd>
+
+<dt>2021/08/17</dt>
+<dd>・<a href="https://discord.gg/eSJB53shzE" target="_blank">PMS Database Discord Server</a> を設立しました。TOPページ下部にもリンクを設置しています。</dd>
+
+<dt>2021/08/08</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:48譜面 P●:72譜面)</dd>
+<dd><s>・R18(-G) 関連作品について 曲名末尾に [R18BMS] を追記し、本表に登録しました。</s>全年齢加工版を <a href="https://drive.google.com/drive/folders/1DCeiwC2V04eeX7sm76T-F7mmCDLEx26h" target="_blank">こちらからダウンロード</a> できます。</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の 2021/07 締切分を反映しました。</dd>
+
+<dt>2021/06/06</dt>
+<dd>・<a href="BOFXVIPMS.html">BOFXVI(BOF2020)PMS差分企画</a> 登録譜面をデータベースに統合しました。(PLv:266譜面 P●:251譜面)</dd>
+
+<dt>2021/05/10</dt>
+<dd>・譜面追加を行いました。(新規登録　PLv:55譜面 P●:54譜面)</dd>
+
+<dt>2021/05/01</dt>
+<dd>・<a href="BOFXVIPMS.html">BOFXVI(BOF2020)PMS差分企画</a> Vol.3 (Final) を公開しました。</dd>
+
+<dt>2021/02/15</dt>
+<dd>・<a href="BOFXVIPMS.html">BOFXVI(BOF2020)PMS差分企画</a> Vol.2 を公開しました。</dd>
+
+<dt>2021/01/21</dt>
+<dd>・<a href="stellawingroad_mirror.html">発狂PMS関連避難所(仮)</a> を公開しました。</dd>
+
+<dt>2020/12/27</dt>
+<dd>・譜面追加と難易度修正を行いました。(新規登録　PLv:41譜面 P●:45譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> の初回締切分 (2020/10) を全て反映しました。</dd>
+
+<dt>2020/12/21</dt>
+<dd>・<a href="BOFXVIPMS.html">BOFXVI(BOF2020)PMS差分企画</a> Vol.1 を公開しました。</dd>
+
+<dt>2020/11/09</dt>
+<dd>・譜面追加と難易度修正を行いました。(新規登録　PLv:27譜面 P●:80譜面)</dd>
+
+<dt>2020/09/29</dt>
+<dd>・<a href="BOFXVIPMS.html">BOFXVI(BOF2020)PMS差分企画</a> 専用ページをオープンしました。</dd>
+<dd>・PMS Database 全般が常時SSLに対応しました。ブックマークやリンクの置換をお願いします。<br>
+　<strong>(旧) <span style="color: #ff0000;">http</span>://pmsdifficulty.xxxxxxxx.jp/*　→　(新) <span style="color: #ff0000;">https</span>://pmsdifficulty.xxxxxxxx.jp/*</strong> </dd>
+
+<dt>2020/08/08</dt>
+<dd>・譜面追加と難易度修正を行いました。(PLv:24譜面 P●:64譜面)</dd>
+
+<dt>2020/08/01</dt>
+<dd>・<a href="column_table_tips.html">コラム -難易度表の作成方法について (Tips/ Q&A/ カスタマイズ編)-</a> を公開しました。</dd>
+
+<dt>2020/07/10</dt>
+<dd>・<a href="tanpatsu.html">たんぱつ難易度表を移植</a> しました。(Others > その他)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">難易度変更提案所</a> を開設しました。(Others > その他)</dd>
+<dd>・<a href="https://docs.google.com/forms/d/e/1FAIpQLSfi1d4qWUXDUSQ2TAp5YqUpm80fItDv3LOYX32bjjG0u5GgnQ/viewform" target="_blank">PMS Database に関してのお問い合わせ (Googleフォーム)</a> を開設。当ページ下部の連絡先も改修しました。</dd>
+
+<dt>2020/06/03</dt>
+<dd>・譜面追加を行いました。(Plv:78譜面 P●:65譜面)</dd>
+<dd>・<a href="BOFXV19PMS.html">BOFXV19PMS差分企画</a> 登録譜面をデータベースに統合しました。</dd>
+<dd>・Normal Records の一部色分けルールを試験的に変更しました。</dd>
+
+<dt>2020/04/05</dt>
+<dd>・譜面追加を行いました。(Plv:68譜面 P●:91譜面)</dd>
+
+<dt>2020/04/02</dt>
+<dd>・<a href="BOFXV19PMS.html">BOFXV19PMS(BOF2019PMS)差分企画 最終版</a> を公開しました。</dd>
+
+<dt>2020/02/01</dt>
+<dd>・譜面追加を行いました。(Plv:97譜面 P●:74譜面)</dd>
+
+<dt>2019/12/02</dt>
+<dd>・<a href="BOFXV19PMS.html">BOFXV19PMS(BOF2019PMS)差分企画 初版</a> を公開しました。</dd>
+<dd>・<a href="column_for_S9B2020.html">コラム - SPRING 9KEYS BLOSSOM 2020 へのお誘い</a> を追加しました。</dd>
+
+<dt>2019/10/20</dt>
+<dd>・譜面追加を行いました。(Plv:23譜面 P●:120譜面)</dd>
+<dd>・BOF関連の本体リンクを更新しました。<a href="BOFPMS.html">こちら</a>からどうぞ。 Ceena(Torrent) が利用できず諦めていた方ももう一度試してみてください。</dd>
+
+<dt>2019/08/11</dt>
+<dd>・譜面追加を行いました。(Plv:57譜面 P●:161譜面)</dd>
+<dd>・<a href="https://twitter.com/pmsdatabase" target="_blank">連絡用Twitterアカウント</a>を開設しました。</dd>
+
+<dt>2019/07/04</dt>
+<dd>・<a href="G2R2018PMS.html">G2R2018PMS差分企画</a> 登録譜面をデータベースに統合しました。(Plv:97譜面 P●:268譜面)</dd>
+<dd>・効率良く査定を行うため、難易度 "Plv査定中" "P●査定中" を追加しました。最新の譜面は随時こちらに仮登録していきます。</dd>
+
+<dt>2019/05/05</dt>
+<dd>・譜面追加を行いました。(Plv:44譜面 P●:63譜面)</dd>
+
+<dt>2019/04/01</dt>
+<dd>・<a href="G2R2018PMS.html">G2R2018PMS差分企画 最終版</a> を公開しました。</dd>
+
+<dt>2019/01/03</dt>
+<dd>・発狂PMSデータベースの表の中身がおかしくなっていた問題を修正しました。ご迷惑おかけしました。</dd>
+
+<dt>2018/12/27</dt>
+<dd>・<a href="BOFPMS.html">新BOFPMS差分企画難易度表</a> の高難易度譜面を中心にオート動画をひととおり投稿し、反映しました。</dd>
+
+<dt>2018/11/01</dt>
+<dd>・譜面追加を行いました。(Plv:39譜面 P●:101譜面)</dd>
+<dd>・<a href="http://nigo10sabun.web.fc2.com/G2R2018.html">G2R2018 PMS差分企画</a></dd>
+
+<dt>2018/06/21</dt>
+<dd>・譜面追加とリンク情報等の整理を行いました。</dd>
+
+<dt>2018/04/25</dt>
+<dd>・<a href="column_table.html">コラム -難易度表の作成方法について</a> を公開しました。</dd>
+
+<dt>2018/04/01</dt>
+<dd>・譜面追加を行いました。</dd>
+<dd>・<a href="BOFU2017PMS.html">BOFU2017PMS差分企画</a> 登録譜面をデータベースに統合しました。(Plv:171譜面 P●:252譜面)</dd>
+<dd>・<a href="https://docs.google.com/spreadsheets/d/1s7tYu3PK34fU5byKPfmqqPEpIjQII4tlcFNbuA3y410/edit#gid=10" target="_blank">ミスなどの報告</a> を最新の報告分まで対応しました。
+<dd>・Normal Records のlv45+フォルダの内容を「●1譜面からの抜粋」→「○6譜面(45強～46弱相当)」に変更することになりました。</dd>
+<dd>・Insane Records の情報整理がひととおり完了しました。</dd>
+<dd>・<a href="BOFPMS.html">新BOFPMS差分企画難易度表</a> を追加しました。</dd>
+<dd>・ブラウザによって難易度表のレイアウトが崩れてしまう問題があるようなのですが、技術不足でなかなか解決できていません。<br>
+　最新版Firefoxで表示を確認していますので、当面はそちらをお使いください。</dd>
+
+<dt>2018/01/22</dt>
+<dd>・Linksを一通り記入しました。追加要望は <a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=752456326" target="_blank">こちら</a> まで。</dd>
+<dt>2018/01/09</dt>
+<dd>・<a href="BOFU2017PMS.html">BOFU2017PMS差分企画</a> Vol.2を公開しました。</dd>
+<dt>2017/11/20</dt>
+<dd>・<a href="BOFU2017PMS.html">BOFU2017PMS差分企画</a> Vol.1を公開しました。</dd>
+<dt>2017/12/27</dt>
+<dd>・BOF関連とPLv45 ～ P●1 境界付近の査定結果を中心に更新を行いました。</dd>
+<dd>・ブラウザ上で難易度表が表示されなくなっていた問題を対策しました。表示が変わらない場合はF5で更新してみてください。</dd>
+
+<dt>2017/11/06</dt>
+<dd>・レイアウトを改装しました。</dd>
+
+<dt>2017/09/17</dt>
+<dd>・データの引継ぎが概ね完了しました。</dd>
+
+<dt>2017/04 頃</dt>
+<dd>・PMS Database のホームページを立ち上げました。</dd>
+
+
+
+</dl>
+</div>
+
+
+</section>
+
+
+
+<section>
+
+<h2 id="about-this-site">このサイトについて</h2>
+<p>
+PMS譜面を出来る限り広く収集・共有・維持することを目的とし、難易度表形式で公開しています。 <br>
+各難易度表のURLはJSON(新形式)に対応しており、
+<a href="https://mocha-repository.info/index.php" target="_blank">beatoraja</a> および GLAssist、BeMusicSeeker などの各種難易度表連携ツールで利用可能です。
+</p>
+
+<p>
+<a href="about.html">About & Guide</a> には、PMS Database の詳細な仕様と　PMS環境の導入ガイド (2023年版) を掲載しています。はじめての方はご一読ください。<br>
+
+当サイトはリンクフリーです。各コンテンツの利用・引用・転載等は、モラルに沿った範疇であれば ご自由に行って頂いて構いません。(連絡も不要です)
+</p>
+
+<h3 id="site-contents">コンテンツ</h3>
+
+<p>
+<table class="ta3" align="center">
+<tr>
+<th>About & Guide</th>
+<td> PMS Database の詳細な仕様と、PMS環境の導入ガイド (2023年版) を掲載しています。PMSへの足がかりにどうぞ。</td>
+</tr>
+<tr>
+<th>Normal Records</th>
+<td> Lv1-45のPMS(非発狂)の難易度表です。最上位の譜面をlv45+(○6:45強-46弱)としてあります。発狂への足がかりにどうぞ。</td>
+</tr>
+<tr>
+<th>Insane Records</th>
+<td> Lv46以上のPMS(発狂)の難易度表です。<a href="https://popn.hyrorre.com/%E8%B3%87%E6%96%99%E9%A4%A8/lv%E9%96%93%E7%9B%AE%E5%AE%89%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8" target="_blank">●数字</a>準拠で20段階+αに分類しています。新人類への足がかりにどうぞ。</td>
+</tr>
+<tr>
+<th>Excluded Records</th>
+<td> 上記難易度表に登録していない譜面のまとめです。LR2IRを利用したデータ検索に使用します。</td>
+</tr>
+<tr>
+<th>Others</th>
+<td> 差分企画やコラムなどで特設ページを設けた場合に使用します。サブ難易度表 (不定期更新) も用意しています。</td>
+</tr>
+<tr>
+<th>Links</th>
+<td> PMSに関連する関連リンクを広く収集しています。</td>
+</tr>
+</table>
+</p>
+
+<h3 id="collaborative-spreadsheets">共同作業用の Google スプレッドシート (使い方は <a href="about.html">About & Guide</a> 参照)</h3>
+<p>
+<strong>■ 新規譜面のリクエスト & 仮査定</strong> … <a href="https://docs.google.com/spreadsheets/d/1nhZOh-62QKrIiQyAienhfyMHYVRo1CdXAO8D8f5ldTw/edit#gid=972772071" target="_blank">PMS Database 関連作業所 「見てない2021～ (PLv+P●)」</a><br>
+<strong>■ 難易度変更リクエスト</strong> … <a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">PMS Database 難易度議論所</a> <br>
+<strong>■ リンク切れ報告</strong> … <a href="https://docs.google.com/spreadsheets/d/1nhZOh-62QKrIiQyAienhfyMHYVRo1CdXAO8D8f5ldTw/edit#gid=10" target="_blank">PMS Database 関連作業所 「ミスなどの報告」</a><br>
+<strong>■ その他の話題 (Googleフォームの回答を含みます)</strong> … <a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=1925343195" target="_blank">PMS Database 関連アンケート場</a>
+</p>
+
+
+
+<h3 id="useful-shortcuts">その他 特によく利用されるコンテンツへのショートカット (全て <a href="others.html">Others</a> にあります)</h3>
+<p>
+<strong>■ <a href="BOFPMS.html">BOFPMS差分企画難易度表</a></strong>　… 毎年開催しているPMS差分企画の総合ポータルです。</a><br>
+<strong>■ <a href="course.html">コースデータ案内所</a></strong>　… 過去のPMS段位認定や記念コースをアーカイブしています。<br>
+<strong>■ <a href="column_table.html">コラム -難易度表の作成方法について-</a></strong>　… 備忘録とサンプルセットの配布所です。
+</p>
+
+<br>
+
+
+
+
+<h2 id="community-contact">コミュニティ・連絡先について</h2>
+<h3 id="discord-server">PMS Database Discord Server</h3>
+<p>
+<span style="font-size: 16pt;"><strong>
+■ <a href="https://discord.gg/eSJB53shzE" target="_blank">PMS Database Discord Server</a><br>
+</strong></span>
+PMS Database 利用者さん向けの交流用 Discord サーバーです。当サイトのコンテンツに限らず、広い話題でお気軽にご利用ください。<br>
+※ 難易度、リンク修正など PMS Database の更新に関する正式な要望を出したい場合は、前述の作業用 Google スプレッドシートにお願いします。<br>
+※ 発狂PMS難易度表の運営用 Discord とは別になりますのでご注意ください。
+</p>
+<br>
+
+<h3 id="direct-contact">管理者に直接連絡したい場合</h3>
+
+<p>
+<span style="font-size: 14pt;">
+<strong>■ <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi1d4qWUXDUSQ2TAp5YqUpm80fItDv3LOYX32bjjG0u5GgnQ/viewform" target="_blank"> PMS Database に関してのお問い合わせ (Googleフォーム)</a></strong></span> 　匿名での質問が可能です。返答は<a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=464221422" target="_blank">こちら</a>
+</p>
+
+<p>
+■ Twitter:<a href="https://twitter.com/pmsdatabase" target="_blank"> ＠pmsdatabase</a></strong>　リプライ/DM でお気軽にどうぞ。<br>
+■ Mail: pvideocomplement☆gmail.com (☆ → ＠)　※あまりチェックしていません。上記フォームにてメールアドレスを入力された場合、こちらからお返事致します。
+</p>
+
+
+
+
+</div>
+
+
+<!--/contents-->
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--TOP用開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 3000) {
+open_close("newinfo_hdr", "newinfo");
+
+}
+</script>
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+
+}
+</script>
+
+
+</body>
+</html>
