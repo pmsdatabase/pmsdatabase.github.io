@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>段位認定コースセットの作成方法について (LR2/beatoraja 対応) - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="段位認定,LR2,beatoraja,BMS,PMS">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About & Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li class="current"><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+<h2 id="column-course">コラム -段位認定コースセットの作成方法について (LR2/beatoraja 対応)-</h2>
+<p>
+beatoraja の難易度表フォルダ内に段位認定コースを追加し、LR2に一括導入可能なコースセット(.lr2crs ファイル) を出力する方法の一例をご紹介します。<br>
+<strong>beatoraja 向けの作業では、難易度表の「header.json」に段位データを追加していきます。必要に応じてあらかじめ難易度表を開設しておいてください。</strong><br>
+(<a href="column_table.html" target="_blank">難易度表の作成方法について</a> で紹介しているサンプルが直接必要になる事はありません。手元の「header.json」から作業を始めればOKです。)
+</p>
+
+<br>
+
+<h2 id="course-sheet-example">コースデータ作成用のスプレッドシートと実装例</h2>
+<p>
+<strong><span style="font-size: 16pt;"><a href="https://docs.google.com/spreadsheets/d/1f1uUzkC5ZOUXBXVa9jO2g7vKIneDdezDRoCdD3jXlzQ/edit#gid=662056762" target="_blank">段位認定コースセット作成用シート (Google スプレッドシート)</a></span></strong><br>
+</p>
+
+<p>
+ほとんどの作業は LR2/beatoraja 同時並行で進められます。<br>
+段位認定の情報を書き込むと LR2/beatoraja それぞれ公開に必要なコードが関数出力されるという <s>どこかで見たような</s> 流れで、当コラムはこのシートの使い方の解説が中心となります。<br>
+「シート例」の内容を <a href="column_table.html" target="_blank">コラム -難易度表の作成方法について</a> で紹介したサンプル難易度表に追加すると <strong><a href="table_sample/course/table.html" target="_blank">このようになります</a></strong>。
+サンプルセットのダウンロードは <strong><a href="table_sample/course/course_sample.zip">コチラ</a></strong>
+</p>
+
+
+<h2 id="spreadsheet-work">スプレッドシートでの作業</h2>
+<p>
+シートでの作業時は、<span style="color: #ff0000;">セル内改行およびセルの切り取りを使用しないでください。</span>
+</p>
+<h3 id="copy-header-info">(1) B1～B4 セルに header.json の情報を書き写す</h3>
+<p>
+既存データを引用すれば大丈夫です。書き方が分からない場合は <a href="column_table.html" target="_blank">難易度表の作成方法について</a> > 公開までの手順 > (2) header.json の編集 を参照してください。<br>
+　* JSON書式ミス防止のための処置です。JSONの仕組みを把握していて 既存データの体裁を変更したくないという場合は省略し、最終出力の "course" 要素のみ追加してください。<br>
+　* 難易度表をコース専用に使う場合も data_url は必ず指定しなければなりません。その場合 score.json の中身はブランク [] で大丈夫です。<br>
+　* B5 セル「header_md5」は初期状態のままにしておいてください。
+</p>
+
+<h3 id="input-course-info">(2) コース情報の記入</h3>
+<p>
+「シート例」を参考に、コース情報を記入してください。<strong>【必須】</strong>となっている項目に記入漏れがあると、コースデータが出力されない仕様となっています。
+</p>
+
+<p>
+■ コースタイトル (B列)<strong>【必須】</strong> *作成、テスト後に変更してもスコアデータは引き継がれますが、IRには一番最初にスコアを送信した時点でのコースタイトルが登録されます。<br>
+■ Line(LR2) (D列)<strong>【必須】</strong> … 使用するレーン数を半角数字で記入してください。<br>
+■ 1曲目の曲情報 (E～G列)<strong>【必須】</strong> … 旧LR2IR の末尾 bmsmd5= となっているURL もしくは md5 文字列が必須です。<strong>*難易度表に登録していない差分でも使用できます。</strong><br>
+■ 2～5曲目の曲情報 (H～S列) … 4曲構成以外も対応しています。必要な分だけ記入し、使わない所は空欄にしておいてください。
+</p>
+
+<p>
+md5 の値は、例えば beatoraja の選曲画面 Ctrl + F3 で取得できます。その他については <a href="column_table_tips.html" target="_blank">bmsmd5 の効率的な取得方法について</a> などを参照してください。<br>
+</p>
+
+<h3 id="beatoraja-course-options">(3) カスタマイズ(beatoraja) (T～X列) の記入</h3>
+<p>
+beatoraja で利用できる段位認定のオプション制限項目です。全て任意の記入項目ではありますが、beatoraja からの難易度表利用率は年々高まっています。ぜひ記入しておきましょう。<br>
+今回ご紹介する方法は <a href="https://github.com/exch-bms2/jbmstable-parser/wiki/%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8%E3%81%AE%E4%BB%95%E6%A7%98" target="_blank">難易度表の仕様</a> > Course 要素に準拠していますが、トロフィー機能には対応しておりません。あしからずご了承ください。</p>
+
+<p>
+「シート例」や下記補足情報を参考に、文字列コピペで正確に書き写してください。<br>
+<span style="color: #ff0000;">LR2の段位認定に出来るだけ近づけたい場合は、「grade」欄に <strong>grade_mirror</strong>　「gauge」欄に <strong>gauge_lr2</strong>　「LN」欄に <strong>ln</strong>　を指定し、「HS」「judge」は空欄にしてください。</span>
+</p>
+
+<br>
+<p>
+<strong>各設定項目の補足情報</strong> (beatoraja 0.8.4 時点 / 筆者は beatoraja の仕様に明るくないため、誤りがあるかもしれません。詳しい方おられましたらご教授ください)
+</p>
+
+<p>
+■ grade<br>
+　・<strong>grade_mirror</strong> : 譜面オプションMIRRORを許可<br>
+　・<strong>grade_random</strong> : 譜面オプションRANDOM, R-RANDOM, S-RANDOM, MIRRORを許可<br>
+　・<strong>(空欄)</strong> : grade_random と同様に扱われます(IRページは変化します)。Mocha-Repository では通常の楽曲同様に使用オプションが表示されます。<br>
+　・今回紹介している手法の場合、正規縛りは設定不可？ のようです。<br>
+
+■ HS<br>
+　・<strong>no_speed</strong> : ハイスピード設定無効<br>
+　・<strong>(空欄)</strong> : ハイスピード設定有効<br>
+
+■ judge<br>
+　・<strong>no_good</strong> : GOOD判定無効(BAD判定になります)<br>
+　・<strong>no_great</strong> : GREAT/GOOD判定無効(BAD判定になります)<br>
+　・<strong>(空欄)</strong> : 全判定有効<br>
+
+■ gauge<br>
+　・<strong>gauge_lr2</strong> : LR2段位ゲージを使用<br>
+　・<strong>gauge_5k</strong> : 5KEY用段位ゲージを使用<br>
+　・<strong>gauge_7k</strong> : 7KEY用段位ゲージを使用<br>
+　・<strong>gauge_9k</strong> : 9KEY用段位ゲージを使用<br>
+　・<strong>gauge_24k</strong> : 24KEY用段位ゲージを使用<br>
+　・<strong>(空欄)</strong> : 未検証<br>
+　・異なるプレイスタイルのゲージ設定を適用する事も可能なようです。(9KEY段位を7KEY段位ゲージで遊ぶなど)<br>
+　・gauge_9k は gauge_lr2 よりも若干易しくなります。他のプレイスタイルは未検証ですが、恐らく独自のゲージ設定が備えられていると思われます。<br>
+
+■ LN<br>
+　・<strong>ln</strong> : 末端判定なし (LR2仕様)<br>
+　・<strong>cn</strong> : 末端判定あり (本家CN)<br>
+　・<strong>hcn</strong> : 押下中ゲージ増加、踏み外し中ゲージ減少 (本家HCN)<br>
+　・<strong>(空欄)</strong> : LN/CN/HCN 全て選択可能で、Mocha-Repository では通常の楽曲同様に使用オプション毎のページ内リンクが作成されます。
+
+</p>
+
+<h3 id="create-all-course-data">(4) 全コースのデータ作成</h3>
+<p>
+(2)～(3) を繰り返し、全コースのデータを記入していきます。行数が足りない場合は<strong>黒線より上に行追加</strong>してください。<br>
+コースリストのソートも検討しておきましょう。作成したコースは、beatoraja では行番号昇順(シートの並びと同順)、LR2 では降順(シートの並びと逆順) で表示されます。
+</p>
+<br>
+
+<h2 id="course-implementation">コースの実装作業</h2>
+
+<h3 id="export-lr2-course-file">コースファイルの出力 (LR2用)</h3>
+<p>
+スプレッドシートの Y列(黄緑) を <a href="http://docs.grapecity.com/help/spread-winforms-8/spwin-cell-dragfill.html" target="_blank">ドラッグフィル</a> し、出力されたコードの列全体をテキストファイルに貼り付けて保存します。このとき<span style="color: #ff0000;">文字コードは Shift-JIS で保存</span>してください。<br>
+最後に拡張子を <strong>.lr2crs</strong> に変更すれば配布用ファイルの完成です。LR2SETUP 画面にD&Dして確認しましょう。 *一覧から削除したい場合は LR2の選曲画面 > TAG EDITOR > DELETE<br>
+サンプル難易度表およびサンプルセット内の course_sample.lr2crs が「シート例」からの出力になっていますので、参考にしてください。
+</p>
+
+<h3 id="implement-beatoraja-course-data">コースデータの難易度表への実装 (beatoraja 用)</h3>
+<p>
+beatoraja の場合は難易度表の header.json を出力コードに沿って改変することで、段位認定コースのデータが読み込まれるようになります。<br>
+<strong>ただし、改変後の header.json に1コースも登録されていないと不具合が発生するので、必ず何かしらのコースを準備しておいてください。</strong>
+</p>
+
+<p>
+スプレッドシートの Z列(深緑) をドラッグフィルし、出力されたコードの列全体を、現在難易度表に使用している header.json の中身に上書きします。<br>
+次に、<span style="color: #ff0000;">コースデータの最終行末尾のカンマを削除 <strong> ]}, → ]} </strong></span> して保存してください。これを忘れると、段位認定どころか難易度表自体が読み込まれなくなりますので要注意！<br>
+不安な場合は header.json の中身を <a href="https://lab.syncer.jp/Tool/JSON-Viewer/" target="_blank">JSON Pretty Linter Ver3</a> に入力してみます。<strong>"JSON is valid!"</strong> と表示されれば問題ありません。
+<br>
+</p>
+<div align="center">
+<img src="style/images/columns/course_fig.png" width="1000px" height="300px">
+</div>
+
+<p>
+<br>
+保存した header.json ファイルを難易度表のサーバーに上書きして、作業終了です。<br>
+サンプル難易度表およびサンプルセット内の header.json が「シート例」からの出力になっているので、参考にしてください。
+</p>
+<br>
+
+<h2 id="pre-publication-check">コースを公開するまでに確認するべきこと</h2>
+<p>
+beatoraja で段位認定を非公開テストしたい場合は、専用の難易度表を作成するか、<a href="column_local_table.html" target="_blank">こちらのコラム</a> の「ローカル環境の難易度表データを本体プレイヤーに読み込ませる」を参考に。<br>
+テストプレイは原則オフラインで。md5の記入ミスやカスタマイズ項目の不備はIRの分裂に繋がります。各種IRへのスコア送信は取り消せませんので、十分注意してください。
+</p>
+
+<p>
+公開時は LR2 と beatoraja で導入作業が変わる事を周知すると良いでしょう。サンプルセットの table.html にアナウンスの一例を置いておきました。<br>
+Mocha-Repository のプレイヤーページにある CLASS 表示など、IR独自の実装に対応したい場合はそれぞれサーバー管理者の方に依頼してください。
+</p>
+
+
+<h2 id="notes">その他・備忘録等</h2>
+<p>
+<strong>beatoraja で段位認定コースがうまく反映されない場合にまず確認すること</strong><br>
+　- 工程(2) コースの必須情報が記入されているか<br>
+　- カスタマイズ項目のスペルミスの確認。スペース(空白文字)が挿入されていないか。コピペ推奨<br>
+　- score.json が指定されているか<br>
+　- 最低1コース以上登録されているか<br>
+　- header.json / score.json のコードミス (<a href="https://lab.syncer.jp/Tool/JSON-Viewer/" target="_blank">JSON Pretty Linter Ver3</a>)<br>
+　- header.json / score.json の文字コードが UTF-8 になっているか (普通は大丈夫ですが、LR2用コースファイルのみ Shift-JIS が必要でややこしい)<br>
+</p>
+
+
+</section>
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+
+}
+</script>
+
+
+
+</body>
+</html>
