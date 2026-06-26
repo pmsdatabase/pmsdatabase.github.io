@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PMS導入ガイド (2023年版) - 楽曲・スキン・難易度表の導入 - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="PMS,発狂PMS,PMSデータベース, PMS Database">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li class="current"><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+
+<h2 id="guide-song-skin-table">PMS導入ガイド (2023年版) - 楽曲・スキン・難易度表の導入</h2>
+
+<p>
+本体プレイヤーに楽曲とスキンを登録し、再生環境を整えます。また、楽曲を効率良く収集・整理するための「難易度表」の活用方法について解説します。
+</p>
+
+<h2 id="toc">目次</h2>
+<h3 id="guide-back-to-about"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+<p>
+<strong>・ <a href="#beatoraja">beatoraja</a></strong><br>
+　- <a href="#beatoraja-song-registration">楽曲の登録 - beatoraja</a><br>
+　- <a href="#beatoraja-skin">スキンの導入 - beatoraja</a><br>
+　　- <a href="#beatoraja-skin-peacefulplay">プレイスキン - PeacefulPlay</a><br>
+　　- <a href="#beatoraja-skins">その他の beatoraja 用 PMSスキン集</a><br>
+　- <a href="#beatoraja-table">難易度表の導入 - beatoraja</a><br>
+<br>
+<strong>・ <a href="#lr2">Lunatic Rave2 (LR2)</a></strong><br>
+　- <a href="#lr2-song-registration">楽曲の登録 - LR2</a><br>
+　- <a href="#lr2-skin">スキンの導入 - LR2</a><br>
+　　- <a href="#lr2-skin-light-pop-ex">プレイスキン - Light Pop EX</a><br>
+　　- <a href="#lr2-skins">その他の LR2 用 PMSスキン集</a><br>
+　- <a href="#lr2-table">難易度表の導入 - LR2</a><br>
+<br>
+<strong>・ <a href="#pms-collection">PMS の効率的な収集方法について</a></strong><br>
+　　- <a href="#pms-package">パッケージ配布されているPMSを一括導入する</a><br>
+　　- <a href="#pms-insane-table">発狂PMS難易度表を収集する</a><br>
+　　- <a href="#pms-download-notes">本体ダウンロード時のアレコレ</a><br>
+　　- <a href="#pms-diff-auto-install">差分は自動導入機能を使って効率よく収集する</a>
+</p>
+
+<br>
+
+
+<h4 id="openclosebox1_hdr" class="close"><span id="beatoraja"></span>beatoraja　(クリックで展開)</h4>
+<div id="openclosebox1">
+
+<h2 id="beatoraja-song-registration">(1) 楽曲の登録 - beatoraja</h2>
+
+<p>
+実際に作業してみましょう。「New Song」など適当な名前の親フォルダを1つ仮作成し、PMS Database からダウンロードした作品をいくつか格納しておきます。
+</p>
+<p>
+【注意】　PMS の再生に必要な 楽曲 / 映像 / 同梱譜面 のまとまったファイルを「本体」、本体のデータをもとに第三者が作った創作譜面のことを「差分」(または単に譜面) と呼びます。<br>
+<strong>本体と差分の入手先URL が分かれている場合は両方をダウンロードし、差分を本体のフォルダ内に統合してください。</strong>
+</p>
+
+
+<div align="center">
+<img src="style/images/guide/song_rootfolder.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+<strong>親フォルダを beatoraja-configuration > リソース > BMS Path 画面内に ドラッグ&ドロップ で投入します。</strong><br>
+　　- 曲数が多い場合、登録に時間がかかります。<br>
+　　- 登録済のフォルダに楽曲を追加した場合、beatoraja 起動中に当該フォルダで <strong>F2 キー (リロード)</strong> を行うと反映されます。<br>
+　　　　- 追加数が多い場合は beatoraja-configuration > リソース > <strong>楽曲全更新</strong>
+</p>
+
+
+<div align="center">
+<img src="style/images/guide/song_beatoraja.png" width="40%" height="40%">
+</div>
+<br>
+
+<p>
+beatoraja を起動して、再生確認してみましょう。
+</p>
+
+<p>
+以降 楽曲データを入手したら、新しくフォルダを登録するか、登録済のフォルダに統合してリロード、を繰り返します。<br>
+闇雲にフォルダを増やしていくと管理が大変になるため、用途別、作家別、BMSイベント別… など、系統的に構築していくことをオススメします。
+</p>
+<br>
+
+
+
+<h2 id="beatoraja-skin">(2) スキンの導入 - beatoraja</h2>
+<p>
+選曲画面やプレイ画面の見た目をカスタマイズできるのがスキンパッケージで、有志の方々により様々に制作、配布されています。<br>
+中でもプレイスキンに関してはクオリティに気を遣う方が多くおられると思いますので、筆者イチオシのプレイスキンを実例にしつつ、導入方法を解説していきます。
+</p>
+
+<h3 id="beatoraja-skin-peacefulplay">プレイスキン - PeacefulPlay</h3>
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://ralba-gear.hateblo.jp/entry/PeacefulPlay" target="_blank">PeacefulPlay</a></strong></span>
+</p>
+
+<p>
+PeacefulPlay は 2026/06 に公開された新しいプレイスキンで、FHD画質対応、Lua言語製で機能美にも優れたモダンなデザインが特徴です。<br>
+上記リンクから PeacefulPlay をダウンロードしたら、beatoraja > <strong>skin フォルダ</strong> に解凍します。以降も新しいスキンを入手したら、ここに解凍してください。
+</p>
+
+<p>
+次に beatoraja-configuration > スキン を開きます。<br>
+<strong>"スキン種類" に "9KEYS"</strong> を選択、すぐ右の <strong>"スキン" に "PeacefulPlay"</strong> を選択し、<strong>[更新]</strong> をクリック。これでプレイスキンが切り替わります。
+</p>
+
+<div align="center">
+<img src="style/images/guide/skin_beatoraja_pp.png" width="90%" height="90%">
+</div>
+<br>
+
+<p>
+各スキンは固有のカスタマイズ機能を持っており、beatoraja-configuration > スキン画面で細かく設定することができます。<br>
+PeacefulPlay のカスタマイズの詳細については公式サイトを確認いただくのが最適ですが、代表的なものだけここでもいくつか挙げておきます。
+</p>
+
+<p>
+・ <strong>判定表示 > Fast/Slow 表示</strong>　:　FAST / SLOW 表示の切り替え<br>
+・ <strong>レーン > キービームの長さ・レーンの明るさ</strong>　:　本家の BRIGHTNESS, KEYBEAM, 従来の LOST オプションのように画面内の情報を減らします。10%単位で調節可能<br>
+・ <strong>ノーツ > ノーツ種別</strong>　:　ビートポップ (IIDX 風の青白ノート) の切り替え<br>
+・ <strong>サイドユニット > NOTES CHART</strong>　:　Jubeat のような区間密度と判定分布、FAST / SLOW 分布の表示<br>
+・ <strong>サイドユニット > KEY LOGGER</strong>　:　キー入力の履歴をその場確認できる機能
+</p>
+
+<p>
+・ よくある質問ですが、LIFT, HIDDEN, SUDDEN, GUIDE SE などのオプションはスキンではなく beatoraja 本体の機能として備わっています。<br>
+　　　→ 次のガイド記事： コントローラの導入・キーコンフィグと操作方法 > プレイ画面 > <a href="guide_controller.html#beatoraja-special-options" target="_blank">特殊オプションの有効化について</a> で扱いますので、このまま読み進めてください。
+</p>
+
+<br>
+
+<h3 id="beatoraja-skins">その他の beatoraja 用 PMSスキン集</h3>
+
+<p>
+■ <strong><a href="https://mega.nz/file/0HomkCJR#Un95BYsBJYbrz5Up67g8jp_Y3pnaHXi6yolSZ2uD744" target="_blank">LITONE5</a></strong><br>
+(2026/06 補足) 当解説記事では長らく LITONE5 プレイスキンを代表例に挙げさせて頂いてきましたが、LITONE5 は公式の配布が停止しており、それに伴って beatoraja のアップデートのたび少しずつバグが増えている状況です。
+PMS Database では長期的な視点から、<strong>これから新しくPMSを始める方には PeacefulPlay の利用をオススメする方針に切り替えました。</strong><br>
+既に LITONE5 を使い慣れている方には申し訳ありませんが、ご理解よろしくお願いします。なおトラブルシューティングには今後も対応する予定です。
+</p>
+
+<p>
+■ <strong><a href="https://x.com/Azuruff/status/1311461871308869632" target="_blank">DotPop</a></strong><br>
+■ <strong><a href="https://x.com/lisqms/status/957227110958972929" target="_blank">Endless Circulation P-Play for beatoraja</a></strong>
+</p>
+
+<p>
+■ <strong><a href="https://mirais-station.hatenablog.com/entry/2021/01/21/180000" target="_blank">【BMS/beatoraja】各種スキン一覧 - Mirai's Station</a></strong><br>
+■ <strong>PMS Database の Links > <a href="links.html#links-skins" target="_blank">スキン関係</a> </strong><br>
+■ <strong><a href="https://w.atwiki.jp/laser_bm/pages/129.html" target="_blank">スキン一覧 - BMSまとめ @wiki</a></strong>
+</p>
+<br>
+
+
+
+
+<h2 id="beatoraja-table">(3) 難易度表の導入 - beatoraja</h2>
+<p>
+BMS/PMSにおける「難易度表」とは、単にブラウザで確認できる一覧表というだけでなく、<span style="color: #ff0000;">本体プレイヤーと連携できて、所持している譜面を難易度別にフォルダ仕分けしてくれる機能を持ったウェブページ (URL)</span> のような意味で使われる用語となっています。基本的には、難易度表フォルダから譜面を選ぶ機会が多くなるでしょう。<br>
+PMS Database で公開している難易度表は全て beatoraja で利用可能です。第一ステップとして、<strong>利用したい表のURLを控えておきましょう。</strong>
+</p>
+<br>
+
+<p>
+<span style="font-size: 14pt;">■　<a href="PMSdifficulty.html" target="_blank">PMS Database (Normal Records / Lv1～45)</a>　:　<strong>https://pmsdifficulty.xxxxxxxx.jp/PMSdifficulty.html</strong></span><br>
+<span style="font-size: 14pt;">■　<a href="insane_PMSdifficulty.html" target="_blank">PMS Database (Insane Records / Lv46～)</a>　　:　<strong>https://pmsdifficulty.xxxxxxxx.jp/insane_PMSdifficulty.html</strong></span>
+</p>
+
+<p>
+■　<a href="others.html" target="_blank">Others</a> ページ内にもいくつかの難易度表を用意しています。<br>
+■　<a href="links.html" target="_blank">Links</a> > <a href="links.html#links-difficulty-tables" target="_blank">難易度表</a> には、PMS Database 以外で運営されている難易度表 (自作差分一覧表など) をリストしています。
+</p>
+
+<p>
+-----
+</p>
+
+<p>
+<strong>難易度表のURLを beatoraja-configuration > リソース > Table URL に貼り付けて [+] ボタン > 難易度表読み込み (新) を押します。</strong><br>
+　　- 初回の難易度表読み込みを行った後は、beatoraja 起動中に難易度表フォルダで <strong>F2 キー (リロード)</strong> を押すことでも最新の難易度表情報を反映可能です。<br>
+　　- 難易度表フォルダ内で所持していない譜面は色付き表示となり、選曲しようとすると<strong>難易度表に登録されたダウンロードページにジャンプします。</strong>
+</p>
+<br>
+
+<p>
+beatoraja を起動し、難易度表の選曲フォルダが増えている事を確認しましょう。<br>
+適切な差分を所持していれば、対応する難易度表のレベルフォルダ内に格納されているはずです。
+</p>
+
+<br>
+<br>
+<br>
+
+</div>
+
+
+
+
+
+
+<h4 id="openclosebox2_hdr" class="close"><span id="lr2"></span>Lunatic Rave2 (LR2)　(クリックで展開)</h4>
+<div id="openclosebox2">
+
+<h2 id="lr2-song-registration">(1) 楽曲の登録 - LR2</h2>
+<p>
+実際に作業してみましょう。「New Song」など適当な名前の親フォルダを1つ仮作成し、PMS Database からダウンロードした作品をいくつか格納しておきます。
+</p>
+<p>
+【注意】　PMS の再生に必要な 楽曲 / 映像 / 同梱譜面 のまとまったファイルを「本体」、本体のデータをもとに第三者が作った創作譜面のことを「差分」と呼びます。<br>
+<strong>本体と差分の入手先URL が分かれている場合は両方をダウンロードし、差分を本体のフォルダ内に統合してください。</strong>
+</p>
+
+
+<div align="center">
+<img src="style/images/guide/song_rootfolder.png" width="30%" height="30%">
+</div>
+<br>
+
+<p>
+<strong>親フォルダを LR2SETUP > JUKEBOX1 >曲検索フォルダ 画面内に ドラッグ&ドロップ で投入します。</strong><br>
+　　- 登録済のフォルダに楽曲を追加した場合、LR2 起動中に当該フォルダで <strong>F8 キー (リロード)</strong> を行うと反映されます。<br>
+　　　　- 追加数が多い場合は LR2SETUP > MAIN > データベース自動更新 > <strong>「起動時に全フォルダに対して行う」にチェック</strong> > LR2を起動<br>
+　　　　- フォルダ登録時に "引数エラー" と表示され読み込みが中断された場合も、一度この方法でリロードしてください。
+</p>
+
+<div align="center">
+<img src="style/images/guide/song_lr2.png" width="40%" height="40%">
+</div>
+<br>
+
+<p>
+LR2 を起動して、再生確認してみましょう。(LR2 は楽曲が1つも登録されていないと起動できない仕様となっているので、必ず楽曲登録を行ってください。)
+</p>
+<p>
+以降 楽曲データを入手したら、新しくフォルダを登録するか、登録済のフォルダに統合してリロード、を繰り返します。<br>
+闇雲にフォルダを増やしていくと管理が大変になるため、用途別、作家別、BMSイベント別… など、系統的に構築していくことをオススメします。
+</p>
+<br>
+
+
+
+<h2 id="lr2-skin">(2) スキンの導入 - LR2</h2>
+<p>
+選曲画面やプレイ画面の見た目をカスタマイズできるのがスキンパッケージで、有志の方々により様々に制作、配布されています。<br>
+LR2 PMSのプレイ画面の場合は "Light Pop EX (LPEX)" スキンがスタンダードとなっているので、導入方法を兼ねて解説します。
+</p>
+
+<h3 id="lr2-skin-light-pop-ex">プレイスキン - Light Pop EX</h3>
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://mistyblue.info/lpex.html" target="_blank">Light Pop EX</a></strong></span>
+</p>
+
+<p>
+Light Pop EX をダウンロードしたら、<strong>LR2beta3 > LR2files > Theme フォルダ</strong> 内に解凍します。以降も新しいスキンを入手したら、ここに解凍してください。 <br>
+次に LR2 を起動して <strong>SYSTEM OPTION > SKIN/SOUND > 9KEYS ></strong> プレビュー画面両サイドの矢印をクリックし、スキンを <strong>LR2 STANDARD から Light Pop EX に変更</strong> します。
+</p>
+
+<div align="center">
+<img src="style/images/guide/skin_lr2_lpex.png" width="90%" height="90%">
+</div>
+<br>
+
+<p>
+また、この画面でスキンの挙動を細かく設定することができます。Light Pop EX の場合は <a href="https://mistyblue.info/lpex.html#custom">公式マニュアル</a> が非常に充実しているので、ぜひ一読ください。
+</p>
+
+<br>
+
+<h3 id="lr2-skins">その他の LR2 用 PMSスキン集</h3>
+<p>
+■ <strong><a href="http://l-bms.space/2nd/download.html" target="_blank">Endless Circulation : Self Evolution</a></strong><br>
+■ <strong><a href="http://yukisite.com/johnny/others/girlish_cafe_skin.html" target="_blank">Girlish Cafe</a></strong>
+</p>
+
+<p>
+■ <strong><a href="links.html" target="_blank">PMS Database の Links</a> > スキン関係 </strong><br>
+■ <strong><a href="https://w.atwiki.jp/laser_bm/pages/129.html" target="_blank">スキン一覧 - BMSまとめ @wiki</a></strong>
+</p>
+<br>
+
+
+
+
+
+<h2 id="lr2-table">(3) 難易度表の導入 - LR2</h2>
+<p>
+BMS/PMSにおける「難易度表」とは、単にブラウザで確認できる一覧表というだけでなく、<span style="color: #ff0000;">本体プレイヤーと連携できて、所持している譜面を難易度別にフォルダ仕分けしてくれる機能を持ったウェブページ (URL)</span> のような意味で使われる用語となっています。基本的には、難易度表フォルダから譜面を選ぶ機会が多くなるでしょう。<br>
+PMS Database で公開している難易度表は全て LR2 で利用可能です。第一ステップとして、<strong>利用したい表のURLを控えておきましょう。</strong>
+</p>
+<br>
+
+<p>
+<span style="font-size: 14pt;">■　<a href="PMSdifficulty.html" target="_blank">PMS Database (Normal Records / Lv1～45)</a>　：　<strong>https://pmsdifficulty.xxxxxxxx.jp/PMSdifficulty.html</strong></span><br>
+<span style="font-size: 14pt;">■　<a href="insane_PMSdifficulty.html" target="_blank">PMS Database (Insane Records / Lv46～)</a>　　：　<strong>https://pmsdifficulty.xxxxxxxx.jp/insane_PMSdifficulty.html</strong></span>
+</p>
+
+<p>
+■　<a href="others.html" target="_blank">Others</a> ページ内にもいくつかの難易度表を用意しています。<br>
+■　<a href="links.html" target="_blank">Links</a> > 難易度表 には、PMS Database 以外で運営されている難易度表 (自作差分一覧表など) をリストしています。
+</p>
+
+<p>
+----------
+</p>
+
+<p>
+取得したURLから、<strong>難易度表ツール</strong> というソフトを介して仕分け用のフォルダ (カスタムフォルダ) を作成し、それを LR2 に読み込ませます。
+</p>
+
+<p>
+■　<strong><a href="https://tumblr.ribbit.xyz/post/129562866015/bemusicseeker-%E6%AD%A3%E5%BC%8F%E7%89%88%E3%82%92%E5%85%AC%E9%96%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F-v034" target="_blank">BeMusicSeeker</a></strong>　*(2023/10) 現在アクセス不可のため <a href="https://github.com/SayakaIsBaka/BeMusicSeeker-installer/releases/tag/installer-v1" target="_blank">非公式インストーラー</a> を使用してください<br>
+　　- 2023年現在 最も主流の難易度表作成ツール<br>
+　　- 初期設定を行った後は、アプリを起動するだけで最新の難易度表データを取得し、LR2 内にカスタムフォルダを作成・同期することができます。<br>
+　　- 非常に多機能です。<span style="color: #ff0000;">差分自動導入機能 と フォルダメンテナンス機能 で効率良くPMS収集を行う事ができます (後述)</span><br>
+　　- その反面、登録作品数が増えると起動にかなり時間がかかります。<br>
+　　- 導入方法は <a href="https://tumblr.ribbit.xyz/post/129562878360/bemusicseeker-%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-v030-%E5%AF%BE%E5%BF%9C%E7%89%88" target="_blank">公式マニュアル</a> を参照してください。特に難易度表の出力操作についての記事は <a href="https://tumblr.ribbit.xyz/post/129562878360/bemusicseeker-%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-v030-%E5%AF%BE%E5%BF%9C%E7%89%88#tutorial_playlist_load" target="_blank">こちら</a><br>
+
+</p>
+
+<p>
+■　<strong><a href="https://bmsnormal2.syuriken.jp/bms_dtimporter.html" target="_blank">GLAssist</a></strong>　*入手できない場合は <a href="https://mega.nz/folder/FNFDCQaT#wfv-iI4UuSIaGpP0oFZdtQ/file/pJ9XTYaa" target="_blank">こちらの保管庫</a> から<br>
+　　- 動作がとても軽いです。難易度表を更新するだけの目的であれば非常に取り回しが良くて便利<br>
+　　- BeMusicSeeker に比べて限定的ではあるものの、<span style="color: #ff0000;">差分自動導入機能 が利用できます (後述)</span><br>
+　　- 導入方法は <a href="https://www.kasacontent.com/musicgame/bms/glassist/2255/" target="_blank">BMSユーザ総合支援ツールGLAssistを使ってみる</a> 記事を参照してください。<br>
+　　　　- <strong>(補足) 手順に沿って出力された "custom folders" というフォルダを、LR2SETUP > JUKEBOX1 の 曲選択フォルダ に追加してください。</strong>
+</p>
+<br>
+
+<p>
+LR2 を起動し、難易度表の選曲フォルダ (custom folder) 内を確認しましょう。<br>
+適切な差分を所持していれば、対応する難易度表のレベルフォルダ内に格納されているはずです。
+</p>
+
+
+<br>
+<br>
+
+
+</div>
+<br>
+
+
+
+
+
+
+
+<h4 id="openclosebox3_hdr" class="close"><span id="pms-collection"></span>PMS の効率的な収集方法について (LR2 / beatoraja 共通)　(クリックで展開)</h4>
+<div id="openclosebox3">
+
+<p>
+これ以降は「難易度表」を眺め、遊んでみたい PMS の「本体」「差分」をダウンロードし、本体プレイヤーに登録する、という作業を繰り返すことになります。<br>
+…が、いま膨大な作業量を想像されたことでしょう。どこから手を付ければよいか分からなくなって、やがて面倒になって遊ぶのを諦めてしまいそうです。<br>
+そこで、これから PMS に触れ始める方を想定し、収集の指針を少し示してみることにします。
+</p>
+
+<br>
+
+<h3 id="pms-package">パッケージ配布されているPMSを一括導入する</h3>
+<p>
+<strong>次の作品群は公式パッケージでの導入を推奨しています。まとまった数の PMS が確実に入手できるので、一番最初に作業してしまうのがオススメです。</strong>
+</p>
+
+<p>
+<span style="font-size: 14pt;">■　<strong><a href="https://tm2.toymusical.net/download.html" target="_blank">Toy Musical (TM) / Toy Musical 2 (TM2)</a></strong></span><br>
+　　(1) 「Toy Musical 2 Full」をダウンロードして解凍<br>
+　　(2) 「Toy Musical 1 (修正差分適用済)」をダウンロードし、中にある「Toy Musical」フォルダの中身を (1) で解凍した中にある同名フォルダに統合<br>
+　　(3)　Toy Musical 非公式 <a href="http://d11x.sakura.ne.jp/box/tm_unofficial.zip" target="_blank">パッケージ1</a>　<a href="http://d11x.sakura.ne.jp/box/tm2_unofficial_append.zip" target="_blank">パッケージ2</a>　<a href="http://d11x.sakura.ne.jp/box/tm2_unofficial2.zip" target="_blank">パッケージ3</a>　をダウンロードし、同様に (1) のフォルダに統合<br>
+　　(4)　以上の統合作業を済ませた「Toy Musical」「Toy Musical 2」を 本体プレイヤー に登録
+</p>
+
+<p>
+<span style="font-size: 14pt;">■　<strong><a href="http://nekokan.dyndns.info/~pmcc/pmcc2/download.html" target="_blank">Colorful Canvas (CC)　/　Colorful Channel (CC2)</a></strong></span><br>
+　　- フルパッケージを解凍した中にある Bms > 「Colorful Canvas」「Colorful Channel」を 本体プレイヤー に登録<br>
+　　- <span style="color: #ff0000;">一部楽曲は解禁が必要です。</span><a href="column_colorful_channel.html" target="_blank">コラム - PMSパッケージ "Colorful Channel" 導入ガイド &コンテンツ紹介</a> に必要な作業をリストしましたので、参考にしてください。<br>
+</p>
+
+<p>
+<span style="font-size: 14pt;">■　<strong><a href="https://drive.google.com/drive/folders/1niFWRIMuzEvxKNkZ25e6dfBulXvsfzKo" target="_blank">四季PMSイベントパッケージ</a>
+(<a href="https://manbow.nothing.sh/event/event.cgi?action=List_def&event=69" target="_blank">S9R2011</a> / 
+<a href="https://manbow.nothing.sh/event/event.cgi?action=List_def&event=80" target="_blank">S9F2012</a> / 
+<a href="https://manbow.nothing.sh/event/event.cgi?action=List_def&event=89" target="_blank">A9S2013</a> / 
+<a href="https://manbow.nothing.sh/event/event.cgi?action=List_def&event=100" target="_blank">W9F2015</a> / 
+<a href="https://manbow.nothing.sh/event/event.cgi?action=List_def&event=130" target="_blank">S9B2020</a> )</strong></span><br>
+
+　　- 「…_Appends.zip」となっているファイルは、対応する本体パッケージに統合してください。
+</p>
+
+<p>
+<span style="font-size: 14pt;">■　<strong><a href="BOFPMS.html" target="_blank">BOFPMS差分企画</a></strong></span><br>
+　　- 最大規模のBMSイベント「BOF」の開催に合わせて毎年行っている、PMS創作差分のパッケージ企画です。<br>
+　　- 導入方法はリンク先(ポータル) や各開催年度ごとの解説を参照してください。<br>
+　　- <span style="color: #ff0000;">他のパッケージに比べてファイルサイズが巨大です。全てDLする場合、ストレージに数百GBの空き領域を確保しておくことをオススメします。</span><br>
+　　- 高難易度譜面の割合が高い傾向があります。
+</p>
+
+<br>
+
+<h3 id="pms-insane-table">発狂PMS難易度表を収集する</h3>
+<p>
+<strong>
+■ <a href="_pastoral_home.html" target="_blank">PASTORAL(UPPER) - 発狂PMS難易度表 for beatoraja</a>
+</strong>
+</p>
+
+<p>
+発狂PMS難易度表はユーザーから支持を得た譜面の集合です。1曲ずつ収集する手間を考えても、取り組む価値は高いのではないでしょうか。<br>
+プレイヤー数が比較的多く、統計を取りやすいことも魅力となっていますので、積極的に IR に参加されることをオススメします。
+</p>
+
+<p>
+<strong>万一リンク切れしているという場合は、<a href="https://docs.google.com/spreadsheets/d/1nhZOh-62QKrIiQyAienhfyMHYVRo1CdXAO8D8f5ldTw/edit#gid=10" target="_blank">ミスなどの報告 (Google スプレッドシート)</a> に一報ください。</strong>解決できない場合もありますが、極力善処します。<br>
+発狂PMS難易度表の収録作品は所持されている方が多いので、コミュニティでお願いすれば譲って頂けるかもしれません。<br>
+有志による非公式パッケージが存在するかもしれません。表立って推奨するものではないですが、「PMS(BMS)保管」「PMS(BMS)パッケージ」 といった検索は強力な手段です。
+<!--/ Unofficial Secret Addon -->
+<!--/ PMS Database Full Package: https://drive.google.com/drive/folders/139uOXEGE6mE9KdM4FkQpy0gNFuqVoMhW -->
+</p>
+
+
+
+<br>
+
+<h3 id="pms-download-notes">本体ダウンロード時のアレコレ</h3>
+<p>
+・ <strong>ダウンロードリンクが wav / ogg 版と分かれている場合</strong><br>
+　　- ogg 版の方が若干低音質ですが、ファイルサイズが非常に小さくなるため主流となっています。どちらか片方を選んでダウンロードすればOKです。<br>
+　　- 差分ファイルは wav / ogg 版どちらの本体に統合しても問題ありません。
+</p>
+
+<p>
+・ <strong>BGAファイルが wmv / mp4 版と分かれていたり、mp4 ファイルが個別に配布されている場合</strong><br>
+　　- beatoraja での再生が中心になる場合は mp4 版を選択してください。LR2 の場合は mp4 ファイルが再生できない場合がありますので注意してください。
+</p>
+
+<p>
+・ <strong>解凍ソフトについて</strong><br>
+　　-　> <strong>BMSの解凍には <a href="https://www.ponsoftware.com/" target="_blank">Explzh</a> がおすすめです！</strong>　(<a href="https://qiita.com/yuinore/items/53d4796869de90dd4b8f" target="_blank">2015年上半期ベストBMS解凍ソフト</a> より)<br>
+　　- ただし Explzh はやや動作が重いので、パッケージの解凍にお手軽な <a href="https://sevenzip.osdn.jp/" target="_blank">7-Zip</a> や、RAR圧縮の展開が圧倒的に早い <a href="https://www.winrarjapan.com/download" target="_blank">WinRAR</a> を使い分ける手もあります。<br>
+　　- <span style="color: #ff0000;"><a href="https://forest.watch.impress.co.jp/library/software/lhaplus/" target="_blank">Lhaplus</a> はファイル総数が多くなると解凍不良を起こす場合があるので、BMSの解凍に使用するのは非推奨です。</span>
+</p>
+
+<p>
+・ <a href="https://package.bms.ms/" target="_blank"><strong>BMSイベントで配布された本体パッケージが多数アーカイブされているサーバー</strong></a><br>
+
+</p>
+
+<br>
+<br>
+
+
+<h3 id="pms-diff-auto-install">差分は自動導入機能を使って効率よく収集する</h3>
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://neeted.github.io/bemusicseeker-unofficial-fork/index.ja.html" target="_blank">BeMusicSeeker Unofficial Fork</a></strong></span><br>
+　- <a href="https://neeted.github.io/bemusicseeker-unofficial-fork/manual.ja.html" target="_blank">ユーザーマニュアル</a><br>
+　- ダウンロード先が分かりづらい場合： <a href="https://github.com/Neeted/bemusicseeker-unofficial-fork/releases" target="_blank">このページ</a> 下部の Assets > bemusicseeker-unofficial-fork-vX.X.X.X-with-metadata.zip です。
+</p>
+
+<p>
+BeMusicSeeker (BMSeeker) はBMSの総合管理ツールで、こと沢山の楽曲で遊びたい、色々な難易度表を楽しみたいという方にとっては必携のアプリケーションです。<br>
+本体BMS や PMS差分をまとめてドラッグ&ドロップすると、所持状況や統合先を推定し、自動的にインストールしてくれる機能が備わっています。<strong>これを使い倒します。</strong><br>
+<span style="color: #ff0000;">2026/06 以降、こちらのフォーク版は (LR2 に依存しない) スタンドアローンで動作するようになりました。beatoraja 向けの機能も追加されつつあるので、ぜひ導入してください。</span>
+</p>
+
+<br>
+
+<p>
+自動導入機能の備わっているその他のツール集 (旧記事)
+</p>
+<p>
+■ <a href="https://github.com/SayakaIsBaka/BeMusicSeeker-installer/releases/tag/installer-v1" target="_blank">BeMusicSeeker</a>　(従来版)<br>
+　- 公式マニュアル <a href="https://tumblr.ribbit.xyz/post/129562878360/bemusicseeker-%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-v030-%E5%AF%BE%E5%BF%9C%E7%89%88#tutorial_install" target="_blank">「BMSファイルのインストール」</a>　フォルダ整理したい場合は <a href="https://tumblr.ribbit.xyz/post/129562878360/bemusicseeker-%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB-v030-%E5%AF%BE%E5%BF%9C%E7%89%88#tutorial_maintenance" target="_blank">「BMSファイルのメンテナンス」</a><br>
+
+■ <a href="https://mega.nz/folder/FNFDCQaT#wfv-iI4UuSIaGpP0oFZdtQ/file/pJ9XTYaa" target="_blank">GLAssist</a><br>
+　- 公式マニュアル <a href="https://bmsnormal2.syuriken.jp/glassist_feature.html" target="_blank">「差分導入機能」</a><br>
+■ <a href="https://github.com/keidrumfreak/BmsManager" target="_blank">BmsManager</a><br>
+　- ダウンロードは <a href="https://github.com/keidrumfreak/BmsManager/releases" target="_blank">Releases</a> より
+</p>
+
+<p>
+-----
+</p>
+
+<br>
+
+<p>
+PMS Database を大規模に収集したい場合は、次のような手順が効率的と思われます:
+</p>
+<p>
+
+(1) BMSイベントパッケージ等を利用し、出来る限りの本体BMS を LR2 / beatoraja に登録しておきます。<br>
+(2) 差分ファイルを一か所に収集します。Links > <a href="links.html#links-pms-diff-sites" target="_blank">PMS差分公開サイト</a> も活用してください。<br>
+(3) 集めた差分ファイルを BMSeeker にドラッグ&ドロップで投入してインストールします。
+
+<br>
+<br>
+</div>
+
+
+<br>
+<h3 id="guide-back-to-about-bottom"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+
+</section>
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+open_close("openclosebox2_hdr", "openclosebox2");
+open_close("openclosebox3_hdr", "openclosebox3");
+
+
+}
+</script>
+
+<!--フラグメントリンクから閉じた開閉ブロック内へジャンプするための補助-->
+<script type="text/javascript">
+(function () {
+  function addClass(element, className) {
+    if (!element) return;
+    if ((" " + element.className + " ").indexOf(" " + className + " ") === -1) {
+      element.className = (element.className + " " + className).replace(/^\s+|\s+$/g, "");
+    }
+  }
+
+  function removeClass(element, className) {
+    if (!element) return;
+    var pattern = new RegExp("(^|\\s)" + className + "(\\s|$)", "g");
+    element.className = element.className.replace(pattern, " ").replace(/^\s+|\s+$/g, "");
+  }
+
+  function openBox(box) {
+    if (!box || !box.id) return;
+
+    var header = document.getElementById(box.id + "_hdr");
+
+    box.style.display = "block";
+
+    if (header) {
+      removeClass(header, "close");
+      addClass(header, "open");
+    }
+  }
+
+  function findParentOpencloseBox(element) {
+    while (element && element !== document) {
+      if (element.id && /^openclosebox\d+$/.test(element.id)) {
+        return element;
+      }
+      element = element.parentNode;
+    }
+    return null;
+  }
+
+  function openByHash() {
+    if (!location.hash) return;
+
+    var id = decodeURIComponent(location.hash.substring(1));
+    var target = document.getElementById(id);
+    if (!target) return;
+
+    var box = findParentOpencloseBox(target);
+    if (box) {
+      openBox(box);
+    } else if (target.id && /^openclosebox\d+_hdr$/.test(target.id)) {
+      openBox(document.getElementById(target.id.replace(/_hdr$/, "")));
+    }
+
+    setTimeout(function () {
+      if (target.scrollIntoView) {
+        target.scrollIntoView();
+      }
+    }, 0);
+  }
+
+  window.addEventListener("load", openByHash);
+  window.addEventListener("hashchange", openByHash);
+})();
+</script>
+
+
+</body>
+</html>
