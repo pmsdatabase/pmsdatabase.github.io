@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>難易度表の作成方法について (Tips/ Q&A/ カスタマイズ編) - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="難易度表,作り方,BMS,PMS">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About & Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li class="current"><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+<div id="contents">
+
+<section>
+
+<h2 id="column-table-tips">コラム -難易度表の作成方法について (Tips/ Q&A/ カスタマイズ編)-</h2>
+<p>
+<a href="column_table.html">コラム -難易度表の作成方法について</a> に関しての追加記事です。ノウハウの備忘録なので雑多です。加筆修正が入る可能性もありますがご了承ください。<br>
+記事中で不具合や質問、要望などありましたら <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi1d4qWUXDUSQ2TAp5YqUpm80fItDv3LOYX32bjjG0u5GgnQ/viewform" target="_blank"> PMS Database に関してのお問い合わせ (Googleフォーム)</a> もしくは <a href="https://twitter.com/pmsdatabase" target="_blank">＠pmsdatabase</a> にお寄せください。
+</p>
+<p>
+<strong>(2026/06)<br>
+LR2IR の閉鎖に伴い、一部文章の修正を行いました。<br>
+また、Q&A のうち「md5 (or LR2IR)　/　sha256 (or Mocha-Repository)　の効率的な取得方法について」を最新の情報に書き換えました。</strong>
+</p>
+
+<p>
+(2022/04)<br>
+昨今の事情を鑑みて sha256 カラムを追加することにしました。それに伴い、〇行目～ ××セル～ の表現も見直されています。<br>
+既に導入済の方々にはお手数おかけしますが、最新版のサンプルシートに基づいて表記を読み替えてください。よろしくお願いします。
+
+</p>
+
+
+<h4 id="openclosebox1_hdr" class="close"><span id="browser-display-trouble"></span>難易度表がブラウザ表示されない / 更新したら表示されなくなった (クリックで開閉)</h4>
+<div id="openclosebox1">
+<p>
+複数質問を頂きました。「table.html」(HTML) をブラウザプレビュー(ブラウザにD&Dで投入) した段階では難易度表は表示されません。サーバーにアップする必要があります。<br>
+難易度表の公開後にページを読み込んでも難易度表が表示されない場合は、「score.json」の中身(JSON)、またはHTMLの不備がまず疑われます。<br>
+GitHub Pages の場合、Jekyll処理の影響でアンダーバー始まりのファイル・フォルダが公開対象から外れることがあります。ルートに空ファイル <strong>.nojekyll</strong> を置くと回避できます。特に難易度表用のJSONは、紛らわしさを避けるため score.json / header.json のようにアンダーバーなしのファイル名を推奨します。
+</p>
+<br>
+
+<h3 id="score-json-check">補遺：「score.json」に記入ミスがないか確かめる</h3>
+<p>
+<a href="https://lab.syncer.jp/Tool/JSON-Viewer/" target="_blank">JSON Pretty Linter Ver3 (Webツールです)</a> を開き「整形前」ウィンドウ内にJSONを貼り付けると、エラーチェックを行えます。(下図)<br>
+例えば右図では11312行目にエラーがあると示されていますが、これはスプレッドシートの行番号と一致するので すぐに問題箇所を特定することが出来ます。<br>
+<strong>セルの切り取りに伴う参照エラー(#REF!) ・ セル内改行 ・ 末尾の },→}] 置換忘れ </strong>　が特によく起こるパターンなのでチェックしてみてください。<br>
+また念のため「header.json」の記述にミスがないかも同様に確認してください。いずれも問題無し判定をされた場合は、HTML側の不備を疑いましょう。
+<div align="center">
+<img src="style/images/columns/fig1.png">
+</div>
+</p>
+
+<h3 id="html-check">補遺：HTMLに不備がないか確かめる</h3>
+<p>
+難易度表ツールや beatoraja で正常に読み込めるかを試してみてください。<br>
+JSONに不備がないにも関わらずツールでの読み込み時にエラーが発生する場合は、HTMLから「header.json」「score.json」へのリンクが上手くいっていない可能性があります。<br>
+一方、ツール上では正常に読み込まれるのにブラウザ上では表示できない場合、「style」へのリンクミス、あるいはHTMLの難易度表表示部(22-233行目)に問題があると思われます。<br>
+HTMLに問題がある場合はケースバイケースな対応が必要で、筆者も原因がよく分からないことばかりです。ごちゃごちゃしてきたらサンプルセットから該当部を再コピペしてリセットするのが手っ取り早いかも…。
+</p>
+</div>
+
+
+
+<h4 id="openclosebox2_hdr" class="close"><span id="update-not-reflected"></span>難易度表を更新したのにブラウザに反映されない (クリックで開閉)</h4>
+<div id="openclosebox2">
+<p>
+難易度表ツールや beatoraja 上では反映されているでしょうか。反映されていない場合は、送信ミスやサーバーの不具合(稀によくある/報告して解決を待つ) が考えられます。<br>
+ブラウザ上でだけ反映されないという場合は <strong>キャッシュを読み込んでしまう仕様*</strong> によるものです。<a href="https://helpx.adobe.com/jp/legacy/kb/222659.html#anc_A3" target="_blank">キャッシュクリア</a> もしくはしばらく放置すれば自然に解決します。
+</p>
+<p>
+<span style="font-size: 9pt;">
+* 例えば発狂PMS難易度表(FC2運営)では $.post メソッド とやらを使用してこの問題を解決しているのですが、忍者ホームページでは難易度表表示に不具合が生じるため諦めている経緯があります。<br>
+ 忍者ホームページ以外のサーバーを利用されている方は、<a href="http://stellawingroad.web.fc2.com/new/pms.html" target="_blank">発狂PMS難易度表からソースコード(33-45行目)を参照</a>して書き換えてみると良いかもしれません。(未検証につき自己責任でお願いします。)
+</span>
+</p>
+</div>
+
+
+
+<h4 id="openclosebox3_hdr" class="close"><span id="hash-values"></span>md5 (or LR2IR)　/　sha256 (or Mocha-Repository)　の効率的な取得方法について。 LR2連携ツールを導入しない方法、未所持譜面のハッシュ値を調べる方法など (クリックで開閉)</h4>
+<div id="openclosebox3">
+<p>
+筆者がよく使う方法を中心にご紹介します。他にいい方法をご存知の方おられたらシェアお願いします； 
+</p>
+
+<br>
+
+<h3 id="get-hash-one-by-one">1譜面ずつ取得</h3>
+<p>
+<strong>■ beatoraja の選曲画面から取得</strong><br>
+　・ Ctrl + F3：md5 ハッシュ値をクリップボードにコピー<br>
+　・ Ctrl + Shift + F3 : sha256 ハッシュ値をクリップボードにコピー 
+</p>
+
+
+<p>
+<strong>■ <a href="https://github.com/Nekokan/hash2web" target="_blank">hash2web</a> を使ってBMSファイルから直接取得</strong><br>
+配布所の解説に従って、右クリック → 送る にショートカット登録しておきましょう。<br>
+(2026/06) LR2IR と Cinnamon のリンクが機能しなくなりましたので、例えば <a href="table_sample/hash2web-body_unofficial_20260601.zip">このように</a> Python スクリプトを改変すると良い感じです。<br>
+</p>
+
+
+<p>
+<strong>■ その他レガシーな手法として紹介していたもの</strong><br>
+md5 であれば <a href="http://stairway.sakura.ne.jp/bms/tabletool/editor.html" target="_blank">Stairway 氏のツール</a> や <a href="https://misty.orz.hm/tools.html" target="_blank">BMSHashUtil (misty.ls04 氏)</a> を使う方法が、
+sha256 であれば <a href="https://www.ponsoftware.com/archiver/download.htm" target="_blank">Explzh</a> の右クリック拡張メニュー「SHA256ハッシュ値…」から調べる方法があります。また、LR2と連携する難易度表ツール　GLAssist / BeMusicSeeker を導入済であれば、曲検索→IRページを開く をクリックすると 旧LR2IR の末尾が ～bmsmd5={md5} となっているURLにジャンプするので、そこから入手できます。<br>
+</p>
+
+
+<br>
+
+<h3 id="get-hash-from-db">DBファイルからまとめて取得</h3>
+<p>
+md5 の他、曲名、レベル、アーティスト名などの曲情報がまとめられた拡張子.dbのファイルが下記ディレクトリにあり、これを <a href="https://www.dbonline.jp/sqlite-db-browser/" target="_blank">DB Browser for SQLite</a> というソフトで開くことで、たくさんの曲情報をcsv形式でまとめて取得することが出来ます。使いこなせば非常に効率的でオススメ。使用前にBMSプレイヤーの楽曲データ読み込みを行っておきましょう。
+</p>
+<p>
+<strong>LR2の場合:</strong>　LR2beta3 /LR2files /Database /<strong>song.db</strong><br>
+<strong>beatorajaの場合:</strong>　beatoraja ディレクトリ内の <strong>songdata.db</strong><br>
+</p>
+
+<p>
+DB Browser for SQLite を開いて DBファイルをD&Dで投入し、左下図のように Browse Data > Table: のプルダウンメニューから"song"を選択します。<br>
+読み込み済の曲情報が表形式で表示されるので、必要な情報をコピーしましょう。なお、表カラムの"hash" の値が、当コラムにおける md5 (or LR2IR) に相当しています。
+</p>
+<p>
+フィルター機能を利用すると効率が上がります。例えば「BOFXVフォルダ内にあるレベル45表記のPMS(9keys)」を難易度表にしたい場合、右下図のように "path" に「BOFXV」"level"に「45」"mode"に「9」を入力し、抽出された譜面リストから"hash" "title" "artist" などをコピーし、スプレッドシートに貼り付ければOKです。<br>
+スプレッドシートの md5 (or LR2IR) 欄は、この文字列のみを入力しても、末尾が bmsmd5=...のURL形式で入力しても 同様に動作しますのでご心配なく。
+<img src="style/images/columns/fig2.png">
+</p>
+
+<br>
+
+<h3 id="unknown-chart-hash">未所持譜面や入手困難譜面の md5 / sha256 を調べたい場合</h3>
+
+<p>
+<strong>■ 既存のIRページから取得する</strong><br>
+<a href="https://mocha-repository.info/" target="_blank">Mocha-Repository</a> に登録済の譜面であれば、そのIRページのURLから sha256 を、またヘッダ情報にある LR2IRへのリンク先URLから md5 を引き続き入手できます。<br>
+(2026/06 LR2IR 閉鎖以降) LR2IR にしか登録されていない譜面の場合は、代替IRや魚拓サイトから譜面検索を行うことで md5 を入手可能な場合があります。<br>
+いくつかのミラーサイトと、確認すべきURLの形式を列挙します：<br>
+</p>
+
+<p>
+	・<strong><a href="https://lr2ir.com/" target="_blank">LR2IR Archive</a></strong> : 魚拓サイト　　<strong>https://lr2ir.com/charts/{md5}</strong>　　*(2026/06) PDB における LR2IR 代替リンクの暫定接続先サイトです。<br>
+	・<strong><a href="https://lr2db.congenial-spirits.com/" target="_blank">LR2DB</a></strong> : 魚拓サイト　　<strong>https://lr2db.congenial-spirits.com/chart/{md5}</strong><br>
+	・<strong><a href="https://stellabms.xyz/lr2ir-archive" target="_blank">LR2IRアーカイブ</a></strong> : 魚拓サイト　　<strong>https://stellabms.xyz/lr2ir/md5/{md5}</strong>　　*難易度表でおなじみの Stella のサーバーに保管されています。
+</p>
+<p>
+	・<strong><a href="https://bms-ir.org/" target="_blank">BMS-IR</a></strong> : 魚拓 + LR2IR閉鎖後の新規スコアを蒐集している代替IR候補　より新しい譜面を探す場合はこちら　　<strong>https://bms-ir.org/new/song?songmd5={md5}</strong>
+</p>
+
+
+<br>
+
+<p>
+<s>
+■ BMS Search Alternative を利用して取得する<br>
+
+Ribbit氏運営の BMS Search Alternative は bmsid と bmsmd5 の大部分* が紐付けされてあり、曲タイトル欄からLR2IRにジャンプすると、URLから bmsmd5 が取得できます。<br>
+他の難易度表に登録されている差分を検索したり 入手先URLを複数リストする等の独自機能があり、手元にBMSが揃っていなくても難易度表向けの情報収集ができる点で重宝します。
+</p>
+<p>
+<span style="font-size: 9pt;">
+* LR2IR登録者が0名だと検索にかかりません。また非常に古い差分等は一部 bmsmd5 の紐付けが出来ていない場合があるようです。<br>
+* 筆者は未使用なのですが、<a href="https://github.com/rib2bit/BMS-database/tree/master/lr2ir" target="_blank">このページ (Ribbit氏の GitHub)</a> で LR2IRの生データ+bmsmd5 がまとめられた csvファイルが配布されているようです。まとめて調査したい場合は便利かもしれません。
+</span>
+</p>
+</s>
+<p>
+こちらの方法は非常に強力でしたが、サービスの停止により現在は使えません。
+</p>
+
+<br>
+
+</div>
+
+
+
+<h4 id="openclosebox4_hdr" class="close"><span id="spreadsheet-backup"></span>スプレッドシートの自動バックアップを作成する (クリックで開閉)</h4>
+<div id="openclosebox4">
+<p>
+Google Apps Script を利用し、日時を指定して Googleスプレッドシートのバックアップを作成する方法が 様々なページで解説されています。万一の備えにオススメ。<br>
+<s>しかもスプレッドシートはどれだけ作成しても Google Drive の容量を消費しない仕様</strong> らしく、基本的に作り得のようです。<br>
+</s> (2023/12 頃より) 容量を消費する仕様に変わったのでトリガーの設定にご注意ください。バックアップを定期的に削除する想定で、専用のフォルダを作成しておくと効率的と思われます。<br>
+
+<br>
+Google Apps Script は、Googleドライブ > 左上の新規ボタン > その他 プルダウンからアクセスできます。
+</p>
+<p>
+■ <a href="https://arrown-blog.com/googlespreadsheet-autobackup/" target="_blank">Google Apps Scriptでスプレッドシートのバックアップを指定フォルダに定時のタイミングでとる方法  |  Arrown</a>
+</p>
+<p>
+【補足】<br>
+ Google Apps Script で初めて関数を実行するときに承認を求められる場合があります。その場合は下図のように　(1)許可を確認 → (2)詳細を表示 → (3) ページに移動　とクリックし、指示に従ってログインと許可を行ってください。2回目以降はこの操作は必要なくなります。<br>
+<div align="center">
+<img src="style/images/columns/fig3.png">
+</div>
+
+</p>
+
+</div>
+
+
+<h4 id="openclosebox10_hdr" class="close"><span id="other-qa"></span>その他 (クリックで開閉)</h4>
+<div id="openclosebox10">
+<p>
+<strong>■ 難易度表にはリストされているのに、カスタムフォルダ内に見つからない譜面がある</strong><br>
+　 md5 (or LR2IR) の入力ミス、あるいは同じ値が重複して入力されていないか確認してみてください。<br>
+<strong>■ 一部のブラウザやスマホから難易度表を読み込んだ時、表の横幅やレイアウトがおかしくなる</strong><br>
+　 長い文字列などで自動的に改行できないものがあると発生する不具合のようなのですが 詳しくは分かりません。筆者も困っています！<br>
+<strong>■ その他</strong><br>
+　 簡単な Tips / Q&A は、見つけ次第ここに追記していきます。<br>
+
+
+</p>
+</div>
+
+
+<br>
+<br>
+
+<h2 id="customization">カスタマイズ</h2>
+<p>配布中のサンプルセットのソースコードを改変する形式での紹介です。〇行目:　という場合、<a href="table_sample/table.html" target="_blank">オリジナルのサンプル難易度表</a> のソース上での行番号と読み替えてください。
+</p>
+
+<h4 id="openclosebox11_hdr" class="close"><span id="column-width"></span>カラムの表示幅を変更する (クリックで開閉)</h4>
+<div id="openclosebox11">
+<p>
+例えば「レベル表記」であれば、「table.html」の160行目:　<strong>$("＜td width='<span style="color: #ff0000;">6%</span>'＞" + mark + x + "＜/td＞").appendTo(str);</strong>　の赤字部分の数値を変更します。<br>
+「差分」(209 / 211 / 215 / 217行目) など設定箇所が複数にわたっている場合は、念のため全ての数値を変更しておきましょう。
+</p>
+<p>
+<span style="font-size: 9pt;">
+*非常に長い文字列がデータに含まれていると設定が効かなくなることがあります。(上記 その他のQ&A と同じ)
+</span>
+</p>
+</div>
+
+
+
+<h4 id="openclosebox12_hdr" class="close"><span id="remove-column"></span>不要なカラムを削除する (クリックで開閉)</h4>
+<div id="openclosebox12">
+<p>
+一例として、サンプルセットから「コメント」カラムを削除してみます。実際のサンプルはこちら。<br>
+■ <a href="table_sample/tips_01/table.html" target="_blank">「コメント」カラムを削除した難易度表</a><br>
+■ <a href="table_sample/tips_01/table_sample_tips01.zip">サンプルセットをダウンロード (この中身を反映すると、手元の難易度表から「コメント」カラムが消えます)</a>
+</p>
+<p>
+(1)「table.html」を開きます。<br>
+(2) 122行目: <strong>＜td align='center'＞コメント＜/td＞</strong> 記述を削除します。　(*この行の記述で難易度表の表示カラムが指定されています)<br>
+(3) 129行目:　<strong>obj_sep.html("＜td colspan='<span style="color: #ff0000;">8</span>' align='center'＞" + ...(略)</strong> を <span style="color: #ff0000;">7</span> に変更。　(*この数字は表示するカラムの総数で、今回はコメント列を削除したので -1 します)<br>
+(4) 230行目:　(3)と同様 <strong>＜td colspan='<span style="color: #ff0000;">7</span>'...</strong> に変更します。<br>
+(5) 220-221行目:　<strong>//コメント ～ .appendTo(str);</strong> までの記述を削除します。222-223行目は表の生成に必要なので、間違えて削除しないように注意。<br>
+　　　　　　　　　他のカラムを削除する場合は、基本的に脚注間を全て削除すればOKです。　(*例えば「差分」なら206-219行目を削除)
+</p>
+<p>
+(6) スプレッドシート側のカラムは削除(列全体削除)をしないでください。データのみ消去し、邪魔な場合は非表示にしておきましょう。
+</p>
+
+</div>
+
+
+
+
+<h4 id="openclosebox13_hdr" class="close"><span id="add-column"></span>カラムを追加する (クリックで開閉)</h4>
+<div id="openclosebox13">
+<p>
+一例として、サンプルセットの「差分」と「コメント」の間に「memo」カラムを追加してみます。HTMLとスプレッドシートを改変する必要があります。<br>
+文章化しづらくて説明に自信がありません！ 分かりにくい場合はサンプルと比較しつつ実際に試してみてください。HTMLのソースコードにも注釈を入れてありますので何卒。<br>
+■ <a href="table_sample/tips_02/table.html" target="_blank">「memo」カラムを追加した難易度表</a><br>
+■ <a href="https://docs.google.com/spreadsheets/d/1GOHf6CquCbGxvwfp5H9BpIryYdzg6v_acZCSIptLtuE/edit#gid=819180110" target="_blank">「memo」カラムを追加したスプレッドシート (関数書き換えの解説あり)</a><br>
+■ <a href="table_sample/tips_02/table_sample_tips02.zip">サンプルセットをダウンロード (この中身を反映すると、手元の難易度表に「memo」カラムが増えます)</a>
+
+
+</p>
+
+<h3 id="edit-html">HTML側の編集</h3>
+<p>
+(1)「table.html」を開きます。<br>
+(2) 122行目:　次のように改変します。＜＞ は半角 < > に変換してください。　(*カラムはここでの記述順に並ぶので、「差分」と「コメント」の間に「memo」を挿入します)<br>
+
+　　<strong>...＜td align='center'＞差分＜/td＞<span style="color: #ff0000;">＜td align='center'＞memo＜/td＞</span>＜td align='center'＞コメント＜/td＞...</strong>
+</p>
+<p>
+(3) 129行目:　<strong>obj_sep.html("＜td colspan='<span style="color: #ff0000;">8</span>' align='center'＞" + ...(略) </strong>を <span style="color: #ff0000;">9</span> に変更。　(*この数字は表示するカラムの総数で、今回はmemo列を追加したので +1 します)<br>
+(4) 230行目:　(3)と同様 <strong>＜td colspan='<span style="color: #ff0000;">9</span>'...</strong> に変更します。<br>
+</p>
+<p>
+(5) 220行目:　次の記述を挿入します。
+</p>
+<p>
+<strong>　　// memo<br>
+　	　$("＜td width='10%'＞" + info[i].<span style="color: #ff0000;">memo</span> + "＜/div＞＜/td＞").appendTo(str);
+</strong>
+</p>
+<p>
+<strong>　　info[i].<span style="color: #ff0000;">●●</span></strong> の赤字部分で、JSONの中のどの要素を抽出するかが指定されています。<br>
+　　したがって、追加しようとしているカラムのJSON上での表記が "memo" 以外の場合は、この部分を適時書き換える必要があります。
+</p>
+
+<h3 id="edit-spreadsheet">スプレッドシート側の編集</h3>
+<p>
+(1) テンプレシートの <strong>M列(JSONコード出力部) より右側</strong>の任意の列を1つ「memo」仮記入用の欄にします。今回は P列 を使用します。<br>
+(2) P列に「memo」の内容を書き終えたら、<strong>M4セル</strong> を選択し、内容を次の関数に書き換えます。コピペOK。
+</p>
+<p>
+<strong><span style="font-size: 10pt;">
+=IF(AND(<span style="color: #0000ff;">C4</span>="",<span style="color: #0000ff;">D4</span>=""),"","{"&"""level"":"""&<span style="color: #0000ff;">A4</span>&""""&","&"""title"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">B4</span>,"\","\\"),"""","\""")&""""&","&"""sha256"":"""&if(<span style="color: #0000ff;">C4</span>="","",if(ISERROR(Find("sha256",<span style="color: #0000ff;">C4</span>)),<span style="color: #0000ff;">C4</span>,mid(<span style="color: #0000ff;">C4</span>,Find("sha256",<span style="color: #0000ff;">C4</span>)+7,64)))&""""&","&"""md5"":"""&if(<span style="color: #0000ff;">D4</span>="","",if(ISERROR(Find("bmsmd5",<span style="color: #0000ff;">D4</span>)),<span style="color: #0000ff;">D4</span>,mid(<span style="color: #0000ff;">D4</span>,Find("bmsmd5",<span style="color: #0000ff;">D4</span>)+7,32)))&""""&","&"""video1"":"""&<span style="color: #0000ff;">E4</span>&""""&","&"""video2"":"""&<span style="color: #0000ff;">F4</span>&""""&","&"""url_diff"":"""&""&<span style="color: #0000ff;">G4</span>&""","&"""name_diff"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">H4</span>,"\","\\"),"""","\""")&""""&","&"""url"":"""&<span style="color: #0000ff;">I4</span>&""","&"""artist"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">J4</span>,"\","\\"),"""","\""")&""""&","&"""<span style="color: #ff0000;">memo</span>"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">P4</span>,"\","\\"),"""","\""")&""""&","&"""comment"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">K4</span>,"\","\\"),"""","\""")&""""&","&"""state"":"""&<span style="color: #0000ff;">L4</span>&""""&"},")</span></p>
+<p>
+(3) M4セルの内容をフィルドラッグで列方向に埋めなおせば完了です。新たに出力されたJSONコードで「score.json」を更新してください。<br>
+(4) 反映が確認できたら、以降は「memo」をお好きな列に移動させて頂いて大丈夫です。サンプルシートではJ列(曲作者名) と K列(コメント) の間に挿入しました。
+</p>
+
+<p>
+【 (2) の関数に関しての補足】<br>
+■ 追加しようとしているカラムのJSON上での表記が "memo" 以外の場合は、赤字の"<span style="color: #ff0000;">memo</span>"となっている部分を書き換えてください。<br>
+■ セル番地に相対参照を利用しているため、<span style="color: #0000ff;">青字の部分</span> は各々のスプレッドシートの状況によって変化します。シートの入力内容と表の出力列がズレてしまう場合などは要チェック。<br>
+■ オリジナルの関数に「memo」要素を加えるための改変方法を <a href="https://docs.google.com/spreadsheets/d/1GOHf6CquCbGxvwfp5H9BpIryYdzg6v_acZCSIptLtuE/edit#gid=308747734" target="_blank">上記スプレッドシート内(コチラ)</a> に解説しました。より細かくカスタマイズしたい方は試してみてください。
+</p>
+</div>
+
+
+
+
+<h4 id="openclosebox14_hdr" class="close"><span id="add-colors"></span>色分けを追加する (クリックで開閉)</h4>
+<div id="openclosebox14">
+<p>
+一例として、スプレッドシートの「色分け」に <span style="color: #ff0000;">7</span> を入力したときに <span style="color: #40e0d0;">青緑色</span> が表示されるようにしてみます。HTML と CSS (style /style.css) を編集する必要があります。<br>
+■  <a href="table_sample/tips_03/table.html" target="_blank">「青緑色表示」を追加した難易度表</a><br>
+■ <a href="table_sample/tips_03/table_sample_tips03.zip">サンプルセットをダウンロード (この中身を反映すると、手元の難易度表で「色分け」に7を入力したとき青緑色になります)</a>
+
+</p>
+<p>
+(1)「table.html」の 156行目:　次の記述を挿入します。＜＞ は半角 < > に変換してください。
+</p>
+<p>
+<strong>
+	}<br>
+	if(info[i].state == <span style="color: #ff0000;">7</span>) {<br>
+	str = $("＜tr class='state<span style="color: #ff0000;">7</span>'＞＜/tr＞");
+</strong>
+</p>
+<p>
+(2) style フォルダ内の「style.css」をメモ帳などで開き、67行目:　次の記述を挿入* すれば完了です。「style.css」のアップロードをお忘れなく。<br>
+<span style="font-size: 9pt;">
+* 「style.css」の記述で全角空白を使用すると表示がおかしくなることがあります。↓をコピペする場合は大丈夫ですが、細かく弄ったりインデントを作る場合は要注意。
+</span>
+
+</p>
+<p>
+<strong>
+	.state<span style="color: #ff0000;">7</span> {<br>
+	background-color: <span style="color: #40e0d0;">#40e0d0</span>;<br>
+	}
+</strong>
+</p>
+<p>
+(3) スプレッドシートの「色分け」で、青緑色表示したい所に "7" を入力し、「score.json」を反映して確認します。
+</p>
+<p>
+(1)～(2)を繰り返し、<span style="color: #ff0000;">赤字部分</span> (スプレッドシートの色分けに入力する値) を 8,9,10... と増やして <span style="color: #40e0d0;">青緑字部分</span> (<a href="https://www.colordic.org/" target="_blank">カラーコード</a>) を変更することで、好きな配色を何種でも設定できます。<br>
+なお、サンプルセットにデフォルトで登録されている「色分け」1～6 のカラーコードを変更しても良いのですが、その場合 GLAssist の色表示との対応が取れなくなります。
+
+</div>
+
+
+
+<h4 id="openclosebox15_hdr" class="close"><span id="fold-comments"></span>コメント行の表示を折りたたむ (クリックで開閉)</h4>
+<div id="openclosebox15">
+<p>
+コメント欄を折りたたんで表示スペースを節約する方法です。(詳しく調べていないため、コメント欄以外への適用方法は省略します。)
+</p>
+<div align="center">
+<img src="style/images/columns/fig4.png">
+</div>
+<br>
+
+<p>
+221行目:　次の記述に書き換えます。＜＞ は半角 < > に変換してください。
+</p>
+<p>
+<strong>
+$("＜td width='25%'＞<span style="color: #ff0000;">＜a href='javaScript:menu(\"" + info[i].md5 + "\")'>→＜/a＞＜div id='" + info[i].md5 + "' style='display:none'＞</span>" + info[i].comment + "＜/div＞＜/td＞").appendTo(str);
+</strong>
+</p>
+</div>
+
+
+</section>
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+open_close("openclosebox2_hdr", "openclosebox2");
+open_close("openclosebox3_hdr", "openclosebox3");
+open_close("openclosebox4_hdr", "openclosebox4");
+open_close("openclosebox10_hdr", "openclosebox10");
+
+
+open_close("openclosebox11_hdr", "openclosebox11");
+open_close("openclosebox12_hdr", "openclosebox12");
+open_close("openclosebox13_hdr", "openclosebox13");
+open_close("openclosebox14_hdr", "openclosebox14");
+open_close("openclosebox15_hdr", "openclosebox15");
+
+}
+</script>
+
+
+
+</body>
+</html>
