@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>PMS導入ガイド (2023年版) - 創作譜面 (自作差分) の作成 - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="PMS,発狂PMS,PMSデータベース, PMS Database">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li class="current"><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+<h2 id="chart-guide">PMS導入ガイド (2023年版) - 創作譜面 (自作差分) の作成</h2>
+
+<p>
+PMS差分の作り方について、ツールの導入方法と、PMS特有の注意点にもフォーカスを当てつつご紹介します。
+</p>
+
+<h3 id="chart-manners">はじめに - 差分作りのマナーに関して</h3>
+<p>
+創作差分を作る際「本体(原曲) 作者さんへの許可取りが必要ですか？」 という質問を伺った例がありました。<br>
+結論から言えば、<strong>本体作者さんが readme.txt 等で明確に禁止していない限り、差分の制作・公開は自由に行って構わない</strong> というのが暗黙の了解になっていると思われます。<br>
+差分を制作した事が作者さんに伝わると喜ばれる場合がほとんどなので、気軽に制作されてはいかがでしょうか。
+</p>
+<p>
+一方、差分制作は作者さんの厚意で成立しているという意味でもあります。誹謗中傷等、モラルに反する内容は作成しないでください。<br>
+大規模すぎる原曲破壊が物議になった事もあります。神経質になりすぎる必要はありませんが、敬意や配慮を損なっていないかは留意しておきましょう。
+</p>
+
+<br>
+
+
+<h2 id="toc">目次</h2>
+<h3 id="guide-back-to-about"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+<p>
+<strong>・ <a href="#chart-manners">差分作りのマナーに関して</a></strong><br>
+<br>
+<strong>・ <a href="#chart-editor-setup">差分エディタの導入と初期設定</a></strong><br>
+　- <a href="#chart-file-extension">拡張子の表示設定</a><br>
+　- <a href="#chart-editor-download">エディタのダウンロード</a><br>
+　- <a href="#chart-editor-initial-settings">エディタの初期設定</a><br>
+　- <a href="#chart-viewer-linkage">譜面ビューアーとの連携設定</a><br>
+<br>
+<strong>・ <a href="#chart-creation-flow">基本的な差分作成の流れ</a></strong><br>
+　- <a href="#pms-file-preparation">PMSファイルの準備</a><br>
+　　- <a href="#pms-template">テンプレート (未配置譜面) から作成する場合</a><br>
+　　- <a href="#bms-rearrange">既存のBMS差分から再編成していく場合</a><br>
+　　- <a href="#pms-rearrange">既存のPMS差分から再編成していく場合</a><br>
+　- <a href="#chart-placement">配置作業</a><br>
+　　- <a href="#chart-normal-notes">通常ノート</a><br>
+　　- <a href="#chart-long-notes">ロングノート (LN / #LNTYPE 1)</a><br>
+　　- <a href="#chart-scroll-speed">スクロールスピード変化 (ソフラン / BPM ノート / 時間編集モード)</a><br>
+　　- <a href="#chart-invisible-mine">不可視ノート・地雷ノート</a><br>
+　　- <a href="#chart-attributes-reference">PMSの譜面属性について詳しく解説しているサイト</a><br>
+　- <a href="#chart-viewer-check">譜面ビューアーでの確認 (mBMplay)</a><br>
+　　- <a href="#chart-viewer-faq">よくある質問・マニュアル表記外の諸注意</a><br>
+　- <a href="#chart-header-settings">譜面情報・各種パラメータの設定</a><br>
+　　- <a href="#chart-rank">判定ランク (#RANK)</a><br>
+　　- <a href="#chart-difficulty">難易度種別 (#DIFFIC / #DIFFICULTY)</a><br>
+　　- <a href="#chart-level">レベル設定 (#LEVEL)</a><br>
+　　- <a href="#chart-total">ゲージ重さの設定 (#TOTAL)</a><br>
+　　- <a href="#chart-genre">ジャンル名 (#GENRE)</a><br>
+　　- <a href="#chart-subtitle">差分名 (#SUBTIT / #SUBTITLE)</a><br>
+　　- <a href="#chart-subartist">差分作者名 (#SUBAR / #SUBARTIST)</a><br>
+<br>
+<strong>・ <a href="#chart-check-release">差分のチェック ～ 公開</a></strong><br>
+　- <a href="#chart-mistake-checker">PMS譜面ミスチェッカー (PMS Mistake Checker)</a><br>
+　　- <a href="#chart-important-errors">特に重要なエラーと対処方法</a><br>
+　- <a href="#chart-sound-diff-check">音ズレ音抜けチェッカー / Anzu BMS Diff Tool</a><br>
+　- <a href="#chart-bmanalyzer">BMAnalyzer</a><br>
+　- <a href="#chart-upload">差分のアップロード先について</a>
+</p>
+
+
+<br>
+
+
+
+
+
+<h4 id="openclosebox1_hdr" class="close"><span id="chart-editor-setup"></span>差分エディタの導入と初期設定　(クリックで開閉)</h4>
+<div id="openclosebox1">
+
+<h2 id="chart-file-extension">(1) 拡張子の表示設定</h2>
+<p>
+はじめに、<a href="https://www.pc-koubou.jp/magazine/36291" target="_blank">ファイルの拡張子を表示させる方法 (Win10)</a>　<a href="https://askpc.panasonic.co.jp/beginner/guide/win11_02/2405.html" target="_blank">(Win11)</a> を参照し、拡張子を表示しておいてください。<br>
+一般的なBMSに使われている拡張子は .bms .bml .bme 等ですが、<strong>PMS差分を識別するための拡張子は .pms で統一</strong> されていて、拡張子を書き換える操作が度々必要になります。
+</p>
+
+<br>
+
+
+
+<h2 id="chart-editor-download">(2) エディタのダウンロード</h2>
+
+<p>
+<span style="font-size: 14pt;"><strong> <a href="https://github.com/psyk2642/iBMSC/releases" target="_blank">【Download】pBMSC</a></strong></span><br>
+　　- <a href="http://hitkey.nekokan.dyndns.info/ibmsc_ja/Download.html" target="_blank">iBMSC</a> / <a href="https://github.com/NS-Kazuki/iBMSC/releases" target="_blank">uBMSC</a> というアプリケーションから派生したバージョンです。UI は変わらないので、他バージョンを使っている場合は読み替えてください。<br>
+　　- ver.3.5.5.16 (2022/05/31)　を基準に解説します。
+</p>
+
+<p>
+ダウンロードして解凍したら、<strong>pBMSC.exe</strong> をダブルクリックで起動します。
+</p>
+<p>
+<div align="center">
+<img src="style/images/guide/chart_setup_pbmsc_1.png" width="50%" height="50%">
+</div>
+</p>
+
+
+<br>
+
+
+
+<h2 id="chart-editor-initial-settings">(3) エディタの初期設定</h2>
+<p>
+・ <strong>言語設定 : 画面上部のツールバーから Options > language > 日本語 に変更</strong><br>
+　　- 以降は日本語基準で解説します。(ごめんなさい。)
+</p>
+<p>
+・ <strong>ツールバーから オプション > 一般オプション を開き、次の設定を確認して OK</strong><br>
+　　- <strong>BMS のグリッド最大分解能 を 10000 に設定</strong><br>
+　　- <strong>「拡張 BPM の最大仕様数を1295個 (01～ZZ拡張) にする」にチェック</strong><br>
+　　- <strong>「STOP の最大仕様数を1295個 (01～ZZ拡張) にする」にチェック</strong><br>
+　　- 文字コードが "System ANSI (日本語 (シフト JIS))" になっていることを確認　　*本体プレイヤー上で文字化けする場合はここを確認
+</p>
+<p>
+・ <strong>(pBMSC のみ) ツールバーから ツール > #TOTAL ツール を開き「推奨値を表示」「推奨TOTALを表示」「#TOTALを自動入力」のチェックを解除して OK</strong><br>
+　　- SP/DP差分を作る際は非常に有用なオプションなのですが、PMSの場合は TOTAL値の計算規則が特殊 (後述) なため、都度手動調整した方が確実という事情があります。
+</p>
+<p>
+・ <strong>画面右側のオプションパネルから グリッド > 中にある Expand... をクリックし、「BGM 列の数」を 100 以上に変更</strong>
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/chart_setup_pbmsc_2.png" width="80%" height="80%">
+</div>
+</p>
+
+<br>
+<br>
+
+<h2 id="chart-viewer-linkage">(4) 譜面ビューアーとの連携設定</h2>
+<p>
+ここでいう譜面ビューアとは、譜面作成中のテスト再生を想定した 再生特化型の BMSプレイヤーです。エディタと連携してその場再生できるのが便利です。
+</p>
+
+<p>
+<span style="font-size: 14pt;"><strong> <a href="https://mistyblue.info/mbmplay.html" target="_blank">【Download】mBMplay</a></strong></span><br>
+　　- 細かくカスタマイズして使いこみたくなったら、同ダウンロード会場にある mBMconfig も導入しておきましょう。<br>
+　　- ver.2.22.0222.0　を基準に解説します。
+</p>
+
+<p>
+ダウンロードして解凍したら、下図のように <strong>mBMplay フォルダを pBMSC.exe のディレクトリ配下に配置してください。</strong><br>
+　　- mBMplay と pBMSC が同一のディレクトリにあると mBMplay が音声を再生しなくなる？ 問題があるようで、そのための対策となっています (要フィードバック)
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/guide/chart_setup_mbmplay_1.png" width="60%" height="60%">
+</div>
+</p>
+<br>
+
+<p>
+次に pBMSC を開いて、<strong>ツールバーから オプション > 再生ソフトの設定 > Current Player: mBMplay を選択</strong> してください。<br>
+ファイルパスの再設定をします。<strong>パス欄右側の […] アイコンをクリックして、上記工程で配置した mBMplay.exe を選択 > 開く > OK</strong><br>
+再生確認をしてみましょう。適当な PMS ファイルを pBMSC にドラッグ&ドロップで開き、ツールバーから再生ボタンをクリックします。
+
+
+
+<div align="center">
+<img src="style/images/guide/chart_setup_mbmplay_2.png" width="60%" height="60%">
+</div>
+</p>
+<br>
+
+<p>
+正常に再生できれば、エディタの初期設定は全て完了です。
+</p>
+
+<br><br><br>
+
+</div>
+
+
+
+
+
+<h4 id="openclosebox2_hdr" class="close"><span id="chart-creation-flow"></span>基本的な差分作成の流れ　(クリックで開閉)</h4>
+<div id="openclosebox2">
+
+<h2 id="pms-file-preparation">(1) PMSファイルの準備</h2>
+<p>
+Reference:　<a href="https://hitkey.nekokan.dyndns.info/cmdsJP.htm#PMS" target="_blank">BMS command memo (JP) - PMS</a>
+</p>
+
+<p>
+PMS は内部的には #PLAYER 3 (14KEYSモード) の 1P 1～5KEY / 2P 2～5KEY への配置と同義なので、両者を区別するために <strong> #PLAYER 3 かつ 拡張子が .pms</strong> でないといけません。<br>
+元となるファイルのフォーマットによって必要な作業が少し変わりますので、いくつかの例を挙げてみます。
+</p>
+<br>
+
+
+<h3 id="pms-template">テンプレート (未配置譜面) から作成する場合</h3>
+<p>
+本体 BMS によっては、差分制作者向けのテンプレートファイルが用意されている場合があります。"base.bmx" のように拡張子が改変されている事が多いので、<br>
+まず <strong>ファイルの拡張子を .pms に変更</strong> し、次に pBMSC を開いて、画面右側のオプションパネルから <strong>#PLAYER　を　3 - Double Play　に変更</strong> してください。<br>
+その後は、すぐに配置作業を始められます。
+</p>
+<div align="center">
+<img src="style/images/guide/chart_setup_pmsfile_1.png" width="15%" height="15%">
+</div>
+
+<br>
+
+<h3 id="bms-rearrange">既存の <strong>BMS差分から</strong> 再編成していく場合</h3>
+<p>
+BMS用に配置されているオブジェクトを、PMSとして利用できるように整理する必要があります。<br>
+下記ツールを使用すると、<strong>全てのノートをBGMレーンに整列させる</strong> ことができます。その後は、上記のテンプレートから作成する場合と同様に作業してください。
+</p>
+
+<p>
+■ <strong><a href="https://www.dropbox.com/s/t4cl0m3ou3gzdur/B2BC102.rar" target="_blank">BMS to BGM Converter</a></strong>　*オススメ<br>
+■ <strong><a href="http://dozen13092.web.fc2.com/" target="_blank">BGMレーンソーター</a></strong><br>
+</p>
+
+<br>
+
+
+<p>
+テンプレートからではなく BMS(SP/DP) 用の演奏レーンに配置されているオブジェクトを流用したい場合は、エディタ上で引っ越しを行います。<br>
+元となるBMS差分を pBMSC で開き、
+</p>
+<p>
+(1) オプションパネルから<strong> テーマ > IIDX.Theme.xml に設定します。</strong><br>
+(2) 演奏レーンのノーツをドラッグ等で全選択し、BGM レーンに仮移動します。<br>
+(3) <strong>#PLAYER　を　3 - Double Play　に変更します。</strong><br>
+(4) オプションパネルから<strong> テーマ > Pomu.Theme.xml に設定します。</strong><br>
+(5) (2)で移動したノーツを演奏レーンに差し戻します。
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_setup_pmsfile_2.png" width="60%" height="60%">
+</div>
+
+<br>
+
+
+
+<h3 id="pms-rearrange">既存の <strong>PMS差分から</strong> 再編成していく場合</h3>
+<p>
+そのまま配置作業を始められます。
+</p>
+<br>
+<br>
+
+
+<h2 id="chart-placement">(2) 配置作業</h2>
+<p>
+オプションパネルから<strong> テーマ > Pomu.Theme.xml に設定</strong> し、1～9KEY にノートを配置していきます。
+</p>
+<br>
+
+<h3 id="chart-normal-notes">通常ノート</h3>
+
+<p>
+<div align="center">
+<img src="style/images/guide/chart_placement_note_1.png" width="70%" height="70%">
+</div>
+</p>
+
+<p>
+<strong>・ 編集モード (オプションパネルのマウスカーソルアイコン)　*普段はこのモードを使用</strong><br>
+既存ノートをドラッグで移動し、1つずつ配置していきます。ノートをクリックするとキー音を確認できます。(uBMSC 以前のバージョンでは .wav　音声のみ再生可能)<br>
+<span style="color: #ff0000;">ノートを縦方向に動かしてしまうと意図しない音ズレに繋がるので、オプションパネル > グリッド > <strong>"オブジェを縦移動させない" にあらかじめチェックしておくことを推奨します。</strong></span><br>
+pBMSC では、キーボードショートカットで配置することもできます。ノートを選択した状態で、キーボードの 1～9 キーで各レーンに配置、0キーでBGMレーンに移動
+</p>
+
+<p>
+PMS差分を作り慣れていない場合は、<strong>意図しない <a href="https://w.atwiki.jp/asagaolabo/pages/2567.html" target="_blank">無理押し</a> にも注意しましょう。</strong>
+</p>
+
+<br>
+
+<p>
+<strong>・ 書込モード (オプションパネルの鉛筆アイコン)</strong><br>
+このモードでは、クリックした場所に新しくノートを追加する事ができます。<br>
+配置される音は オプションパネル > #WAV で選択中の音であり、従って <strong>#WAV 定義されていない音を選択すれば、無音ノートとして配置することも可能です。</strong>
+</p>
+
+<br>
+
+
+
+<h3 id="chart-long-notes">ロングノート (LN / #LNTYPE 1)</h3>
+<p>
+<strong>・ LN 入力モード (オプションパネルの"NT"アイコン)</strong><br>
+このモードをチェックした状態で、<strong>Shift キーを押しながら ノートを縦方向にドラッグ</strong> すると LN になります。<br>
+LNを解除したい場合は Shift + LN末端をドラッグで原点に重ねるか、LNを範囲選択して ツールバーから <strong>置換 > → ノーマルオブジェ</strong> を選択してください。<br>
+pBMSC の場合は、キー音の波形表示・自動ロングノートなど、LN入力用の便利機能があります。慣れてきたら試してみても良いかもしれません。(詳しい解説は省略します)
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_placement_LN_1.png" width="40%" height="40%">
+</div>
+<br>
+
+<p>
+<strong>・ LNOBJ xx の設定解除</strong><br>
+上記のLNの配置方法は <a href="https://hitkey.nekokan.dyndns.info/cmdsJP.htm#LNTYPE-1" target="_blank">#LNTYPE 1</a> と呼ばれています。このほかのLN配置方法に <a href="https://hitkey.nekokan.dyndns.info/cmdsJP.htm#LNOBJ" target="_blank">#LNOBJ xx</a> というものがあるのですが、本ガイドでは解説を省略します。<br>
+ただし、<span style="color: #ff0000;">これら2つの方法(定義) が重複していると致命的なバグが生じるので、使わない方の定義 (今回の場合 #LNOBJ xx) が解除されていることを必ず確認してください。</span>
+</p>
+
+<p>
+右側のオプションパネル > HEADER > Expand... を展開し、<strong>#LNOBJ を None (#LnType 1) に変更</strong> します。<br>
+元となるBMS差分によっては、(テンプレートファイルであっても) デフォルトで #LNOBJ が設定されている場合があります。毎回確認するようにしてください。
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_placement_LN_2.png" width="15%" height="15%">
+</div>
+<br>
+
+
+
+<p>
+<strong>・ LN / CN / HCN の指定 (beatoraja 向け)</strong><br>
+右側のオプションパネル > <strong>拡張命令 のフリースペースに "#LNMODE n" (n … 1:LN / 2:CN / 3:HCN) と記入</strong> すると、beatoraja で再生したときのLNの挙動を指定できます。
+</p>
+
+<p>
+・ LN  … 末端判定なし<br>
+・ CN  … 末端判定あり<br>
+・ HCN … 末端判定あり、押している間は継続的にゲージ増加、離している間はゲージ減少
+</p>
+
+<p>
+<span style="color: #ff0000;">LR2 では #LNMODE 命令は無視され、自動的に LN が適用されます。</span><br>
+<strong>本家と LR2 の仕様に極力寄せたい場合は、#LNMODE 1 と記入するか、記入自体を省略すれば OK です。</strong>
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_placement_LN_3.png" width="20%" height="20%">
+</div>
+<br>
+<br>
+
+
+<h3 id="chart-scroll-speed">スクロールスピード変化 (ソフラン / BPM ノート / 時間編集モード)</h3>
+<p>
+ソフランを追加したり削除したい場合には、オプションパネル > <strong>時間編集モード (物差しアイコン)</strong> を利用します。<br>
+時間編集モードを起動すると、画面下部に専用のウィンドウが表示されます。また、ノート配置画面でのカーソル操作が区間選択 (紫ライン) に切り替わります。
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_placement_timeselection_1.png" width="55%" height="55%">
+</div>
+<br>
+
+<p>
+一例として、上記画像の 2/4 ～ 4/4 節の区間に 倍速 (BPM240、ノート間隔2倍) のソフランを適用してみます。
+</p>
+<p>
+(1) 変化させたい区間の <strong>始点をクリックしたあと、終点までドラッグ または 終点を Shift + クリック して区間選択</strong> します。<br>
+(2) <strong>終点部を Shift + ドラッグ するとノートが引き延ばされる</strong> ので、目標のソフラン幅 (今回は2倍幅 = 追加された BPM ノートの値が 240 になる地点) までドラッグします。<br>
+　　- または <strong>時間編集ウィンドウ内に 倍率 (今回は 2÷1 倍) を入力し、[倍] ボタンをクリック</strong> でもOK
+</p>
+<p>
+(3) 引き延ばされた小節長を補正します。<strong>元の小節線からのズレ幅と同じだけ #001 内を区間選択</strong>して、<br>
+(4) 時間編集ウィンドウの <strong>(Measure Only)</strong> をクリックすると、小節線が補正されます。(ノート位置を維持したまま小節線位置だけを時間編集する、pBMSC の独自機能です)
+</p>
+
+
+<div align="center">
+<img src="style/images/guide/chart_placement_timeselection_2.png" width="65%" height="65%">
+</div>
+<br>
+<br>
+
+<p>
+既存譜面のソフランを排除したい場合は、逆の倍率操作を行えばOKです。<br>
+ワープギミックや STOP などの特殊なソフランについての解説は、すみませんが本ガイドでは省略します。興味のある方は<a href="http://yaruki0.sakura.ne.jp/bms/column/gimmic.html" target="_blank">「譜面ギミックの作り方」</a> 記事などを参照ください。
+</p>
+
+<p>
+<strong>【注意】</strong><br>
+
+・ (3)～(4) 工程は pBMSC の独自機能です。uBMSC 以前のバージョンを使用している場合は、右側オプションパネル > 拍子 > Expand... > <strong>「絶対的な位置を保つ」「小節の長さに合わせて位置を変化させる」</strong>を活用して、小節線の位置を補正してください。(かなり手間なので、この工程だけ pBMSC に移行するのも良いと思います)<br>
+・ 時間編集によって <span style="color: #ff0000;">192分音符1つ分の幅よりも細かすぎる微ズレノートが現れると、LR2 / beatoraja で正常に再生されなくなる場合があります。</span>テストプレイを必ず行ってください。<br>
+</p>
+
+<br>
+
+<h3 id="chart-invisible-mine">不可視ノート・地雷ノート</h3>
+<p>
+<strong>・ 不可視ノート : 書込モード中に、ctrl キーを押しながらノート配置</strong><br>
+</p>
+
+<p>
+不可視ノートの判定タイミング内でボタンを叩くと、本来のキー音よりも不可視ノートのキー音を優先的に鳴らすことができます。<br>
+曲のキメポイントや長い休符地帯で空打ちさせないために無音不可視ノートを配置したり、隠しキー音を仕込んだりといった目的で使用されます。
+
+</p>
+
+<br>
+
+<p>
+<strong>・ 地雷ノート : 書込モード中に、ctrl + shift キーを押しながらノート配置</strong>
+</p>
+
+<p>
+叩くとゲージが減少してしまうノートです。通常使用する機会は少ないですが、ギミックと組み合わせた演出で活用される場合があります。<br>
+ダメージ率は WAV 定義番号を <a href="https://linesegment.web.fc2.com/application/math/numbers/Base36Number.html" target="_blank">36→10進数変換</a> した値(%)　となります。定義番号 01 で 1%　2S 以上で 100% ダメージ (要検証)<br>
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_placement_invisible_and_mine.png" width="20%" height="20%">
+</div>
+<br>
+<br>
+
+<h3 id="chart-attributes-reference">PMSの譜面属性について詳しく解説しているサイト</h3>
+<p>
+■ <a href="http://nigo10sabun.web.fc2.com/column/sabun.html" target="_blank">差分作成のアレコレ (西ヶ蜂さん)</a>　ガイド中央付近、譜面属性の解説欄をクリックで展開<br>
+■ <a href="https://popn.wiki/%E3%81%9D%E3%81%AE%E4%BB%96/%E8%AD%9C%E9%9D%A2%E5%B1%9E%E6%80%A7" target="_blank">ポップンミュージック上級攻略Wiki - 譜面属性</a><br>
+■ <a href="https://w.atwiki.jp/asagaolabo/pages/2300.html" target="_blank">用語集 - asagaolabo</a><br>
+■ <a href="https://k5.hatenablog.com/entry/20120928/p2" target="_blank">ポップンミュージック(Pop'n Music)の練習法についての考察 - 入隠者通信 ～病を嗜む～</a><br>
+■ <a href="http://web.archive.org/web/20090524060117/http://asdf.bms.ms/junk/text/9lines.html" target="_blank">9鍵盤BMS(PMS)集中解説 (激辛党さん)</a>
+
+</p>
+
+<br>
+<br>
+<br>
+
+<h2 id="chart-viewer-check">(3) 譜面ビューアーでの確認 (mBMplay)</h2>
+
+<p>
+オプションパネルの <strong>現在位置から再生 (再生アイコン)</strong> で mBMplay を呼び出し、譜面をプレビューする事ができます。<br>
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_placement_viewer_1.png" width="50%" height="50%">
+</div>
+<br>
+
+<p>
+筆者が特によく使う操作をリストしてみます。操作方法の全容は <a href="https://mistyblue.info/mbmplay.html" target="_blank">公式マニュアル</a> を参照してください。
+</p>
+
+<p>
+・ <strong>↑↓キー / マウスホイール</strong>　:　1小節ずつシーク (早送り/巻戻し)<br>
+・ <strong>Shift キー + ↑↓ / マウスホイール</strong>　:　4小節ずつシーク<br>
+・ <strong>スペースキー</strong>　:　曲の先頭にジャンプ<br>
+・ <strong>画面内のシークバーをマウス操作</strong>　:　指定位置にジャンプ
+</p>
+
+<br>
+
+<p>
+<strong>※ 以下は画面内マウスクリックでも操作可能です</strong>
+</p>
+<p>
+・ <strong>数字1 / 2</strong>　:　ハイスピード変更<br>
+・ <strong>数字5 / 6</strong>　:　HS-FIX タイプ変更　*普段使いには HS-MAINTIME または HS-MAXFIX がオススメ
+</p>
+
+<p>
+・ <strong>数字3 / 4</strong>　:　マスターボリューム変更<br>
+・ <strong>Q / W</strong>　:　キー音のボリューム変更<br>
+・ <strong>E / R</strong>　:　BGMレーンのボリューム変更
+</p>
+
+<p>
+・ <strong>数字7 / 8</strong>　:　再生速度 (FREQ) 変更
+</p>
+
+<br>
+
+<h3 id="chart-viewer-faq">よくある質問・マニュアル表記外の諸注意</h3>
+<p>
+・ PMS を配置しているのに DPスキンで起動してしまう場合は、拡張子、未使用レーン配置など PMSファイルの構成に問題があります。→ <a href="#pms-file-preparation">(1) PMSファイルの準備</a><br>
+・ 不可視ノートと地雷ノートは mBMplay で表示させることができません。<br>
+・ 一時停止機能は実装されていません。<br>
+・ 毎回の起動に非常に時間がかかる場合は、<a href="https://www.rarewares.org/ogg-oggdec.php" target="_blank">oggdec</a> を使って本体BMS の音声ファイルを .wav に変換してみてください。<br>
+・ 読み込み途中でクラッシュする場合や 99% 読み込んだ所でフリーズしてしまう場合は、BGA ファイルを (定義やBGAノートではなく、ファイル自体を) 削除してみてください。
+</p>
+
+<br>
+<br>
+
+<h2 id="chart-header-settings">(4) 譜面情報・各種パラメータの設定</h2>
+<p>
+ゲームバランスに直結するパラメータや体裁の調整です。pBMSC 右側の オプションパネル > <strong>HEADER</strong> タブ内で設定します。<br>
+配置作業を終えてからでないと記入しづらい項目もありますので、主に仕上げ段階で行うことになるでしょう。<br>
+<span style="color: #ff0000;">いずれも重要な項目な上、公開後に修正すると IRページが分裂します。</span>書き漏らさないように注意してください。
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_placement_header.png" width="15%" height="15%">
+</div>
+<br>
+
+<h3 id="chart-rank">判定ランク (#RANK)</h3>
+<p>
+■ <strong><a href="https://ralba-gear.hateblo.jp/entry/2023/11/06/141139#%E5%88%A4%E5%AE%9A%E5%B9%85%E6%AF%94%E8%BC%83" target="_blank">【発狂PMS】beatoraja/LR2仕様比較まとめ > 判定幅比較</a></strong>
+</p>
+
+<p>
+<strong>通常は　3 - Easy</strong> (beatoraja で本家通常判定に相当)　または　<strong>2 - Normal</strong> (beatoraja で本家辛判定に相当)　のいずれかで設定します。<br>
+Hard / Very Hard 判定はつまり思想なので、適用したい場合は色々理解した上でどうぞ。<span style="color: #ff0000;">Very Easy は互換性に難があるため、Easy 判定の方が堅実です。</span>
+</p>
+
+<h3 id="chart-difficulty">難易度種別 (#DIFFIC / #DIFFICULTY)</h3>
+<p>
+選曲画面での色表示やソートに影響する、体裁管理系の設定です。<strong>1: EASY　2: NORMAL　3: HYPER　4: EX　5: INSANE</strong>
+</p>
+
+<h3 id="chart-level">レベル設定 (#LEVEL)</h3>
+<p>
+■ <strong><a href="style/images/diffmap.png" target="_blank">PMS Database で使用している難易度相関図</a></strong>
+</p>
+<p>
+PMS Database ではレベル46以上の譜面に ●数字を使った難易度付けを行っていますが、<strong>#LEVEL 表記は本家さん同様に 50 (+α) 段階で記入 </strong>して頂けると助かります。<br>
+レベル51～55, 99 表記は PMS Database で独自に使用しています。(基準が分からなければまとめてレベル50 表記にしておいても意図は伝わるでしょう)
+</p>
+
+<h3 id="chart-total">ゲージ重さの設定 (#TOTAL)</h3>
+<p>
+■ <strong><a href="https://docs.google.com/spreadsheets/d/1Epr2Ko9e_mDIxpsj6Ofm70iFLvAAlQRpAxmWbe2zpz4/edit#gid=0" target="_blank">PMS用TOTAL計算機</a> (LR2 / beatoraja 両対応 オススメ)</strong>
+</p>
+
+<p>
+■ <a href="https://web.archive.org/web/20181106045254/http://www.geocities.jp/aurora_totalnotes1280/data/9key/gauge/gauge.html" target="_blank">TOTAL値の設定</a>　*Yosk! さんによる解説記事と計算機 (Internet Archive)<br>
+■ <a href="https://mistyblue.info/pms_diff.php" target="_blank">ゲージの重さ(TOTAL値)について</a>　*misty.ls04 さんによる解説記事<br>
+■ <a href="https://ralba-gear.hateblo.jp/entry/2023/11/06/141139#%E3%82%B2%E3%83%BC%E3%82%B8%E4%BB%95%E6%A7%98%E6%AF%94%E8%BC%83" target="_blank">【発狂PMS】beatoraja/LR2仕様比較まとめ > ゲージ仕様比較</a>　*極端なTOTAL値を設定した場合の HARDゲージ増減量にかかる補正などの解説
+</p>
+
+<p>
+#TOTAL はグルーヴゲージの最大回復量を表すパラメータです。<br>
+#TOTAL ÷ 総ノート数 ＝ 1ノート当たりの増加率 に相当し、本家の境界値では <strong>1025ノーツの時 TOTAL 200(0.195 %/note),　1537ノーツの時 TOTAL 150(0.097 %/note)</strong><br>
+<span style="color: #ff0000;">IIDX ゲージとは全く別物で、安易に設定してしまうとバランス難で泣きを見ます。設定を省略してしまうと LR2 / beatoraja でゲージの重さが大幅に変わるため、こちらも非推奨です。</span><br>
+テストプレイを重ねて、慎重に設定してください。<br>
+</p>
+
+
+<br>
+
+<h3 id="chart-genre">ジャンル名 (#GENRE)</h3>
+<p>
+任意の設定項目です。カタカナ表記や創作ジャンルを設定すると、ポップンらしいフレーバーを加えられるかもしれません。 (参考) <a href="https://w.atwiki.jp/asagaolabo/pages/19.html" target="_blank">ジャンル名 - asagaolabo</a>
+</p>
+
+<h3 id="chart-subtitle">差分名 (#SUBTIT / #SUBTITLE)</h3>
+<p>
+たとえば <strong>[PMS NORMAL] [9KEYS EX] [UPPER] </strong>のような表記タイトルです。もっと自由に命名しても大丈夫。省略しても OK です。
+</p>
+
+<h3 id="chart-subartist">差分作者名 (#SUBAR / #SUBARTIST)</h3>
+<p>
+たとえば <strong>obj: pmsdatabase</strong> のように記入します。省略することもできますが、偽名でも良いので何かしら記入しておいた方が作者の区別になって良いでしょう。
+</p>
+
+
+<br><br><br>
+
+</div>
+
+
+
+
+
+<h4 id="openclosebox3_hdr" class="close"><span id="chart-check-release"></span>差分のチェック ～ 公開　(クリックで開閉)</h4>
+<div id="openclosebox3">
+<h2 id="chart-mistake-checker">PMS譜面ミスチェッカー (PMS Mistake Checker)</h2>
+<p>
+<span style="font-size: 14pt;"><strong>■　<a href="http://dozen13092.web.fc2.com/index.html" target="_blank">PMS譜面ミスチェッカー (PMS Mistake Checker)</a></strong></span>
+</p>
+
+<p>
+無理押しをはじめ、PMS 特有のエラーをひと通り拾ってくれる必携ツールです。
+
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_check_mistake_checker.png" width="95%" height="95%">
+</div>
+<br>
+
+<h3 id="chart-important-errors">特に重要なエラーと対処方法</h3>
+<p>
+・ <strong>PMS未使用レーンへの配置があります</strong>　:　<a href="#pms-file-preparation">(1) PMSファイルの用意</a> で行った初期操作に問題がないかを確認<br>
+・ <strong>BGA配置ミスの可能性があります</strong>　:　BGAレーン (右白レーン ～ BGMレーンの間の 深緑レーン) に音声ノートが誤配置されていないかを確認<br>
+・ <strong>#LNOBJと#LNTYPEが混在しています</strong>　:　(2) 配置作業 > <a href="#chart-long-notes">ロングノート (LN / #LNTYPE 1)</a> > LNOBJ xx の設定解除<br>
+・ <strong>無理押し</strong>　:　<a href="https://w.atwiki.jp/asagaolabo/pages/2567.html" target="_blank">無理押し - asagaolabo</a>　当該の小節線 / ポジションを確認<br>
+・ <strong>超高速縦連</strong>　:　当該の小節線 / ポジションを確認　　*config.txt でエラー検出の閾値を変更できます<br>
+・ <strong>TOTALが未定義です</strong>　:　(4) 譜面情報・各種パラメータの設定 > <a href="#chart-total">ゲージ重さの設定 (#TOTAL)</a>
+
+</p>
+<br>
+
+<h2 id="chart-sound-diff-check">音ズレ音抜けチェッカー / Anzu BMS Diff Tool</h2>
+<p>
+<span style="font-size: 14pt;"><strong>■　<a href="http://stairway.sakura.ne.jp/smalltools/minibmsplay/diff.htm" target="_blank">bms diff tool　音ズレ/音抜けチェッカー　(Webツール)</a></strong></span><br>
+<span style="font-size: 14pt;"><strong>■　<a href="https://yuinore.net/2015/12/difftool/" target="_blank">Anzu BMS Diff Tool　(アプリケーション)</a></strong></span>
+</p>
+
+<p>
+「作成した差分」と「基準になる差分」を指定すると、音の鳴っているタイミングに違いがないか、鳴りすぎていたり欠落している音がないかをチェックしてくれるツールです。<br>
+「基準になる差分」には 本体BMS に同梱されているテンプレートや、作者さんが制作した同梱譜面を用います。<br>
+</p>
+<p>
+音の鳴り方が厳密に一致しないといけないというわけではなく、意図的にずらした部分と配置ミスを切り分ける目的で使用されます。<br>
+<span style="color: #ff0000;">ずらした記憶がないのに大量の微ズレが発生している場合は、エディタの分解能設定を見直してください。</span>　→ <a href="#chart-editor-initial-settings">(3) エディタの初期設定</a><br>
+
+</p>
+<br>
+
+<h2 id="chart-bmanalyzer">BMAnalyzer</h2>
+<p>
+<span style="font-size: 14pt;"><strong>■　<a href="https://mega.nz/folder/FNFDCQaT#wfv-iI4UuSIaGpP0oFZdtQ/folder/gUs3Qa4D" target="_blank">GLAssist v232</a>　に同梱されている　BMAnalyzer.jar</strong></span>
+</p>
+
+<p>
+区間密度やゲージ上昇量、譜面画像などを可視化できるツールです。最終確認のお供に。<br>
+BMAnalyzer.jar を開き ファイルを指定して起動するほか、GLAssist の差分検索結果から右クリックで呼び出すことも可能です。
+</p>
+
+<div align="center">
+<img src="style/images/guide/chart_check_bmanalyzer.png" width="45%" height="45%">
+</div>
+<br>
+<br>
+
+<h2 id="chart-upload">差分のアップロード先について</h2>
+<p>
+<span style="font-size: 14pt;"><strong>■　<a href="https://stellabms.xyz/uploader" target="_blank">Stella Uploader</a>　(共同アップローダー)</strong></span><br>
+　　　- プレイスタイルを問わず様々な差分を投稿可能　2023/06 現在最も主流のアップローダー
+</p>
+
+<p>
+<span style="font-size: 14pt;"><strong>■　<a href="https://drive.google.com" target="_blank">Google Drive</a>　(個人用オンラインストレージ / 標準的 / 15GB)</strong></span><br>
+　　　- フォルダの共有設定を確認してください。デフォルトで「自分のみ」になっている場合があり、URLを共有しても第三者にはダウンロードできません。
+</p>
+<p>
+<span style="font-size: 14pt;"><strong>■　<a href="https://www.dropbox.com/" target="_blank">Dropbox</a>　(個人用オンラインストレージ / 標準的 / 2GB)</strong></span><br>
+
+<span style="font-size: 14pt;"><strong>■　<a href="https://mega.io" target="_blank">MEGA Uploader</a>　(個人用オンラインストレージ / 高匿名性 / 50GB)</strong></span>
+</p>
+
+<p>
+----------
+</p>
+
+<p>
+その他のストレージサービス、あるいは個人のホームページで公開頂いても構いません。公開場所はともかく 差分が公開されていることが明らかになって欲しいので、<br>
+<span style="color: #ff0000;">X(Twitter) / Discord などでのアナウンス、Mocha-Repository へのスコア送信 (& URL共有) など 情報発信のご協力をお願いします。</span>
+</p>
+<br>
+<br>
+
+</div>
+<br>
+
+<h3 id="guide-back-to-about-bottom"><a href="about.html#guide">目次 - About &amp; Guide に戻る</a></h3>
+
+
+</section>
+
+</div>
+<!--/contents-->
+
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+open_close("openclosebox2_hdr", "openclosebox2");
+open_close("openclosebox3_hdr", "openclosebox3");
+
+
+}
+</script>
+
+<!--フラグメントリンクから閉じた開閉ブロック内へジャンプするための補助-->
+<script type="text/javascript">
+(function () {
+  function addClass(element, className) {
+    if (!element) return;
+    if ((" " + element.className + " ").indexOf(" " + className + " ") === -1) {
+      element.className = (element.className + " " + className).replace(/^\s+|\s+$/g, "");
+    }
+  }
+
+  function removeClass(element, className) {
+    if (!element) return;
+    var pattern = new RegExp("(^|\\s)" + className + "(\\s|$)", "g");
+    element.className = element.className.replace(pattern, " ").replace(/^\s+|\s+$/g, "");
+  }
+
+  function openBox(boxId) {
+    var box = document.getElementById(boxId);
+    var header = document.getElementById(boxId + "_hdr");
+
+    if (box) {
+      box.style.display = "block";
+    }
+
+    if (header) {
+      removeClass(header, "close");
+      addClass(header, "open");
+    }
+  }
+
+  function collectBoxIds(target) {
+    var boxIds = [];
+    var current = target;
+
+    while (current) {
+      if (current.id) {
+        if (/^openclosebox\d+$/.test(current.id)) {
+          boxIds.push(current.id);
+        } else if (/^openclosebox\d+_hdr$/.test(current.id)) {
+          boxIds.push(current.id.replace(/_hdr$/, ""));
+        }
+      }
+      current = current.parentNode;
+    }
+
+    return boxIds;
+  }
+
+  function openByHash() {
+    if (!location.hash) return;
+
+    var id = decodeURIComponent(location.hash.substring(1));
+    var target = document.getElementById(id);
+    if (!target) return;
+
+    var boxIds = collectBoxIds(target);
+    for (var i = boxIds.length - 1; i >= 0; i--) {
+      openBox(boxIds[i]);
+    }
+
+    setTimeout(function () {
+      if (target.scrollIntoView) {
+        target.scrollIntoView();
+      }
+    }, 0);
+  }
+
+  window.addEventListener("load", openByHash);
+  window.addEventListener("hashchange", openByHash);
+})();
+</script>
+
+
+</body>
+</html>
