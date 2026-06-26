@@ -1,0 +1,683 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>About - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PMSデータベースに関する説明と、PMS環境の導入ガイド記事を掲載しています。">
+<meta name="keywords" content="PMS,発狂PMS,PMSデータベース, PMS Database">
+<link rel="stylesheet" href="style/css/style_base.css">
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</span>
+</nav>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li class="current"><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+<h2 id="about">About　- PMS Database について</h2>
+<p>
+PMS Database のコンテンツに関する諸説明、および細かい仕様に関しての備忘録です。<br>
+(2023/07) 発狂PMS難易度表の更新再開にあわせ、一部のルールを見直しました。<strong><span style="color: #0000ff;">更新部分は青色でハイライトしています。</span></strong>
+</p>
+
+
+<h4 id="openclosebox1_hdr" class="close"><span id="registration-targets"></span>PMS Database の登録対象となるPMS差分について　(クリックで開閉)</h4>
+<div id="openclosebox1">
+<p>
+PMS Database では、基本的に全てのPMS差分を <strong>Normal Records / Insane Records (本表)</strong> に振り分けて登録しています。<br>
+一方、<strong>Excluded Records (隔離表)</strong> は主にデータ整理を目的としており、本表で取り扱わないPMS差分 (下記ガイドライン参照) と、LR2IR に記録がある全ての差分をリストしています。
+</p>
+
+<br>
+
+<h3 id="integrated-tables">PMS Database に全数統合済の難易度表</h3>
+<p>
+2017/06 以降、PMS Database は次の内容を全て統合しています。<br>
+</p>
+<p>
+■ <a href="http://stellawingroad.web.fc2.com/old/pms.html" target="_blank">発狂PMS難易度表(Lv46～99)</a> … 2017/04 更新停止時 <span style="color: #0000ff;">+ 2023/07 更新再開後 (同期中)</span><br>
+■ <a href="https://object-storage.tyo1.conoha.io/v1/nc_8d4380f170ae4d9ba6e62e7e588a28b5/tukiyama/new2/pmssecond.html" target="_blank">発狂PMS表外案内所(Lv46～99)</a> … 2017/04 更新停止時<br>
+■ <a href="https://object-storage.tyo1.conoha.io/v1/nc_8d4380f170ae4d9ba6e62e7e588a28b5/tukiyama/kikaku/pms.html" target="_blank">BOFPMS差分企画難易度表(Lv1～99)</a> … 初開催(2013) ～ 最終開催(2016)<br>
+■ <a href="http://masshiroworld.web.fc2.com/" target="_blank">発狂PMS見てない難易度(Lv46～99)</a> … 2017/04 ～ 2019 発狂PMS難易度表 更新停止以降の新しい差分をまとめていた暫定表<br>
+■ <a href="http://hiiiii.web.fc2.com/pms/Table.htm" target="_blank">PMS通常難易度表(Lv1～99)</a> … 秘密氏作成 2014-15頃? 更新停止<br>
+</p>
+<p>
+■ <a href="links.html">Links</a> に記入されている差分サイト・難易度表サイトで公開されているPMS差分 … 最終確認 : 2017/06 頃<br>
+■ <a href="https://bms.ms/bmsevtalt/" target="_blank">BMS EVENT</a> で確認できるBMSイベントの同梱PMS差分 … 最終確認 : 全て (2017～) / 確認可能なパッケージ全て(～2016)<br>
+■ 旧LR2IR (http://www.dream-pro.info/~lavalse/LR2IR/search.cgi) に登録されていた 9KEYS モードの全ての差分 … 最終確認 : 2020/05/31 (所在不明のものについては Excluded Records に登録)
+</p>
+<p>
+調査に携わっていただいている方々に感謝いたします。
+</p>
+
+<br>
+
+<span style="color: #0000ff;">
+<h3 id="registration-guideline">本表で取り扱わないPMS差分 の判断基準に関するガイドライン</h3>
+<p>
+過去に質問を頂いた内容を中心に方針を示します。ただし一元的な線引きを行うことは難しく、最終的には管理者の一存となることをご了承ください。<br>
+(PMS Database の管理者は、登録している差分がこれらの基準に沿っている事を確認する義務を負いません。判断が必要な場合はお問い合わせフォームにお願いします。)
+</p>
+
+<p>
+■「キー音無し」系統のPMS<br>
+　　・第三者が導入する上で、版権上の明らかな問題が生じているかを第一の判断基準とします。<br>
+　　　　・CDリッピング音源に無音ノートを配置したものはNG　ハンドクラップ等の単一キー音をアサインしている場合も同様にNGとします。<br>
+　　　　・音声分離ツール等を使ってキー音が出力されていても、原曲を演奏することが目的となっている場合はNGとします。
+</p>
+<p>
+　　・版権上の問題がない場合は、演奏感重視で主観的に判断します。(暫定対応)<br>
+　　　　・いわゆる <a href="https://www.google.com/search?q=%E5%B0%8F%E8%B1%86%E7%A0%94%E3%81%8E%20bms" target="_blank">小豆研ぎ</a> に類するものであれば演奏感基準でOK<br>
+　　　　・無音ノートが曲全般にわたって音ズレを起こしている場合は、キー音の有無にかかわらず審議します。<br>
+
+　　・「キー音の総数が少ない」「無音ノートの割合が高い」こと自体は判断材料としていません。
+</p>
+
+<p>
+■ 解析PMS / 再現譜面 / コピーPMS(耳コピ)<br>
+　　・解析PMS は全てNG　解析BMS から作成した創作PMS差分もNGです。<br>
+　　　　・<a href="https://tm3.nekokan.dyndns.info/" target="_blank">Toy Musical 3</a> の解析、再現差分もNG です。<br>
+　　　　・<a href="https://dtxmania.net/" target="_blank">DTXMania</a> などのフリーウェアかつBMS変換が可能なフォーマットからの非公式な変換差分については、都度審議とします。
+</p>
+
+<p>
+　　・コピーPMS や 曲変更差分の手法を用いて版権楽曲が再現されている場合 (版権曲の音源を直接使用していない場合) は、次のように判断します。<br>
+　　　　・楽曲や映像の著作権に関しては、著作権の当事者から要請があった場合に限り、取り下げを行います。<br>
+　　　　・本家楽曲を再現しているPMSのうち、譜面の再現が目的になっているものはNG、類似性があるものは審議とします。<br>
+　　　　・それ以外の場合はOK とします。
+</p>
+
+<p>
+■ 版権楽曲や映像からのサンプリング的な素材利用<br>
+　　・元となる作品の再現 (上記2項目のNG に該当するようなもの) を目的としていない限りは暫定的に OK と判断し、権利者からの要請に委ねます。<br>
+　　　　・<a href="https://www.google.com/search?q=nightcore" target="_blank">Nightcore</a> や原曲音源をそのまま使用しているアレンジの場合は審議となります。
+</p>
+
+<p>
+■ R18(-G) / NSFW(閲覧・再生注意) / センシティブ / その他 特殊な表現<br>
+　　・都度判断します。問題があると感じる場合は、<a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=1732793279" target="_blank"> NSFW(再生注意) List  &  P† Discussion 　- PMS Database 関連アンケート場</a> に記入ください。
+</p>
+
+<p>
+■ その他<br>
+　　・差分作者さんからの要請があった場合、本表からの取り下げを行います。<br>
+　　・誹謗中傷や荒らし行為を目的とした創作と判断した場合は審議となります。(相当特殊な場合を想定しており、普通に差分制作されている限り気にする必要はありません)
+</p>
+</span>
+
+<br>
+
+</div>
+
+
+
+<h4 id="openclosebox2_hdr" class="close"><span id="request-report-guide"></span>新規登録リクエスト・リンク切れの報告　/　PMS Database 関連作業所(旧：案内所) の使い方について　 (クリックで開閉)</h4>
+<div id="openclosebox2">
+<p>
+<strong><span style="font-size: 16pt;"><a href="https://docs.google.com/spreadsheets/d/1nhZOh-62QKrIiQyAienhfyMHYVRo1CdXAO8D8f5ldTw/edit#gid=0" target="_blank">PMS Database 関連作業所 (Google スプレッドシート)</a></span></strong>
+</p>
+
+<p>
+このスプレッドシート内で、PMS Database に新規登録する譜面の情報整理、およびリンク切れ・ミス報告を受け付けています。<br>
+必ずしも管理者が記入しているわけではなく、有志の方々に大部分をお任せしています。匿名で記入可能ですので、気付いた方は自主的に記入していただけると助かります。
+</p>
+
+<br>
+
+<h2 id="new-registration-request">新規登録をリクエストしたい場合　- 見てない2021～ (PLv+P●) シート</h2>
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1nhZOh-62QKrIiQyAienhfyMHYVRo1CdXAO8D8f5ldTw/edit#gid=972772071" target="_blank">見てない2021～ (PLv+P●)</a> シートの下部に「ここまで●査定中に登録済　新規譜面は下に」のように書かれているラインがありますので、その下に情報を記入してください。
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/about_fig1.png">
+</div>
+</p>
+
+<br>
+
+<h3 id="request-entry-fields">記入する内容</h3>
+<p>
+<strong>太字になっている欄は必須情報となります。</strong>
+
+<p>
+<table class="ta2" align="center">
+
+	<tr>
+		<th>見出し</th>
+		<th>シート上の列番号</th>
+		<th>内容</th>
+	</tr>
+	<tr>
+		<td>更新日</td>
+		<td>A</td>
+		<td>記入日を書いてください。<a href="monthly.html" target="_blank">新規登録譜面一覧表</a> (Others > サブ難易度表) で使用します。</td>
+	</tr>
+	<tr>
+		<td>難易度 (PLv)</td>
+		<td>B</td>
+		<td>PMSファイル内の #LEVEL を書き写してください。</td>
+	</tr>
+	<tr>
+		<td>難易度 (P●)</td>
+		<td>C</td>
+		<td>記入不要</td>
+	</tr>
+	<tr>
+		<td><strong>曲名【必須】</strong></td>
+		<td><strong>D</strong></td>
+		<td><strong>PMSファイル内の #TITLE を書き写してください。</strong></td>
+	</tr>
+	<tr>
+		<td>Mocha / LR2IR</td>
+		<td>E / F</td>
+		<td>それぞれの IRページ(URL) を記入します。よく分からない場合は省略してください。</td>
+	</tr>
+	<tr>
+		<td>sha256 / md5</td>
+		<td>G / H</td>
+		<td>記入不要</td>
+	</tr>
+	<tr>
+		<td>ニコ動　ID<br>youtube ID</td>
+		<td>I / J</td>
+		<td>オート動画がある場合に記入してください。(いずれか一方のみでOK)</td>
+	</tr>
+	<tr>
+		<td><strong>差分URL<br>【必須】</strong></td>
+		<td><strong>L</strong></td>
+		<td><strong>ダウンロード可能なURLを記入してください。同梱譜面の場合は記入不要</strong><br>Google Drive からアップしている場合は、フォルダのアクセス権限がデフォルトの「自分のみ」になっているとダウンロードできないので注意</td>
+	</tr>
+	<tr>
+		<td><strong>差分作者名<br>【必須】</strong></td>
+		<td><strong>M</strong></td>
+		<td><strong>同梱譜面の場合は「本体に同梱」と記入。無記名や匿名希望の場合はそのように書いてください。</strong></td>
+	</tr>
+	<tr>
+		<td>music DLURL</td>
+		<td>N</td>
+		<td>分からない場合は省略してください。万一どこからも入手できない場合、譲っていただけるようにお願いする場合があります。</td>
+	</tr>
+	<tr>
+		<td><strong>曲作者名<br>【必須】</strong></td>
+		<td><strong>O</strong></td>
+		<td><strong>PMSファイル内の #ARTIST を書き写してください。</strong></td>
+	</tr>
+	<tr>
+		<td>譜面情報</td>
+		<td>T～</td>
+		<td>各種譜面情報と、関連リンクを整理するためのスペースです。よく分からない場合は省略してください。</td>
+	</tr>
+	<tr>
+		<td>備考 / comment</td>
+		<td>最右列</td>
+		<td>連絡したいことがある場合に自由に記入してください。</td>
+	</tr>
+	<tr>
+		<td>査定意見記入欄</td>
+		<td>最右列～</td>
+		<td>難易度査定を募集しています。誰でも自由に記入できますのでお気軽にどうぞ。<br>空いている好きな列を使って頂いて構いませんが、<span style="color: #0000ff;">beatoraja 以外の本体を使用している場合は、境界列より右側に区別して記入してください。</span></td>
+	</tr>
+
+</table>
+
+<br>
+
+<h3 id="registration-flow">情報記入から PMS Database への登録までの流れ</h3>
+<p>
+運営側で記入を確認したら、<strong>Insane Records - P●査定中</strong> フォルダに仮登録、査定と進めていき、定例更新のタイミングで本登録を行います。<br>
+難易度査定はシート内「査定意見記入欄」を使用して行っており、誰でも記入できます。難易度査定につきましても慢性的な人手不足ですので、ぜひ情報提供をお願いします。
+</p>
+<p>
+<span style="color: #0000ff;">
+定例更新は大まかに3ヶ月ごと(3,6,9,12月末 / 年4回) ですが、BMSイベントの開催期間と重なる場合は適宜時期をずらして対応しています。<br>
+各回の更新タイミングは X とスプレッドシート上でお知らせします。
+</span>
+</p>
+
+<br>
+
+<h3 id="find-unregistered-charts">未登録のPMS差分の発掘にご協力ください</h3>
+
+<p>
+<strong>Excluded Records の「要調査」「入手困難」に登録されているPMS差分は捜索中です。もしこれらの差分を所持しているという場合、情報共有をお願いします。</strong><br>
+次に示す方法で PMS Database 未登録の差分を所持しているかどうかを (力技ながら) 確実に調査する事ができますので、ご協力頂けると幸いです。
+</p>
+
+<p>
+(0) 本体プレイヤーに LR2 を使用します。念のため、全フォルダのリロード (またはデータベース更新) を行っておいてください。<br>
+(1) LR2 と連携した <a href="https://mega.nz/folder/FNFDCQaT#wfv-iI4UuSIaGpP0oFZdtQ/file/pJ9XTYaa" target="_blank">GLAssist</a> を用意します。<br>
+(2) Normal / Insane / Excluded Records の3種難易度表を GLAssist に登録し、それぞれタグ情報の更新を行います。<br>
+(3) <strong><a href="https://www.dropbox.com/s/ty4crabn6zkom8a/%E3%82%BF%E3%82%B0%E7%84%A1%E3%81%97%E8%AD%9C%E9%9D%A2%E6%8A%BD%E5%87%BA%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80.zip?dl=1">タグ無し譜面抽出カスタムフォルダ </a></strong> をダウンロードし、LR2 のルートフォルダに登録します。<br>
+(4) LR2 を起動し、(3) のカスタムフォルダを開いて 9KEYS でフィルタリングしてください。<strong>この状態でフォルダ内にある差分は、PMS Database 未登録の可能性が高いです。</strong>
+</p>
+
+<br>
+
+<h2 id="broken-link-report">リンク切れや各種コンテンツのミスを報告したい場合　- ミスなどの報告 シート</h2>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1nhZOh-62QKrIiQyAienhfyMHYVRo1CdXAO8D8f5ldTw/edit#gid=972772071" target="_blank">ミスなどの報告</a> シートの下部に「ここまで反映済み」と書かれているラインがありますので、その下に情報を記入してください。
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/about_fig2.png">
+</div>
+</p>
+
+<br>
+
+<p>
+リンク切れの場合は曲名を記入し、「レベル等」欄には <strong>リンク切れを確認した譜面の難易度を代表して1つ</strong>記入してください。(全譜面を確認して頂く必要はありません。)<br>
+その他のミスや疑問の場合は「ミスの内容」欄だけで構わないので、できるだけ具体的に記入してください。
+</p>
+
+<p>
+有志の情報が頼りとなりますので、解決策 (代替リンクなど) をご存知の場合は <strong>右列方向にレスポンス形式で</strong> 情報共有をお願いします。<br>
+報告を記入した方もときどきシートを開き、レスポンスがついていないか確認するようにしてください。
+</p>
+
+
+<h3 id="report-status-colors">シート内 A列の色分けについて</h3>
+<p>
+　<strong>白： 未調査</strong><br>
+　<strong>緑： 解決済</strong>　*しばらくしたらページ上部に行整理されます<br>
+　<strong>黄： 保留</strong> … 作者さんとコンタクトを取る必要があるなど、解決に時間がかかる場合<br>
+　<strong>赤： 対応不可</strong> … 入手困難な作品、技術的に困難なリクエスト、PMS Database 以外に報告すべき担当者がいる場合など。しばらくしたらページ最下部に移動
+</p>
+
+<br>
+
+</div>
+
+
+
+
+<h4 id="openclosebox3_hdr" class="close"><span id="difficulty-standards"></span>難易度基準と査定のレギュレーションについて　(クリックで開閉)</h4>
+<div id="openclosebox3">
+
+<p>
+ページ下部に PLv / P● の難易度一覧・対応表を用意しました。なお難易度区分は今後の議論で更に変化する可能性があります。
+</p>
+
+<p>
+本家譜面との対応が知りたい場合、<a href="https://popn.hyrorre.com/%E8%B3%87%E6%96%99%E9%A4%A8/lv%E9%96%93%E7%9B%AE%E5%AE%89%E9%9B%A3%E6%98%93%E5%BA%A6%E8%A1%A8" target="_blank">Lv間目安難易度表</a> が大雑把な目安になるかもしれません。<br>
+<span style="color: #0000ff;">
+ただし、<strong>●難易度はもともと発狂PMS難易度表内の基準曲を元に設定された</strong> とのことなので、Lv難易度との対応は厳密には一致しないのが仕様のようです。<br>
+特に ●10 以上の高難易度は本家との対応がはっきり定まっていない領域ですので、●数字間のギャップを難易度の指標に据えるようにお願いします。
+</p>
+</span>
+
+<p>
+なお、PMS Database ではレベル51～55,99 の拡張難易度を導入しています。創作差分の公開時など、Lv表記を使用することが望ましい場合に参考にしてください。
+</p>
+
+
+<br>
+
+<h3 id="difficulty-map"><span style="color: #0000ff;">難易度一覧・対応表 (2023/07 統合後 Level Review 対応版)</span></h3>
+<p>
+<div align="center">
+<img src="style/images/diffmap.png">
+</div>
+</p>
+
+<br>
+
+
+
+<h2 id="difficulty-regulation">難易度査定のレギュレーション</h2>
+<h3 id="common-rules">共通事項</h3>
+<p>
+<span style="color: #0000ff;">
+<strong>
+・基本的に、beatoraja を使用した査定意見を優先します。<br>
+</strong>
+　　・LR2, QMS-player, Qwilight, Bemuse 等 (以下、第三本体) からの意見は、beatoraja からの査定が少ない場合、意見が二分されている場合のみ判断材料に加えます。<br>
+　　・beatoraja 固有の拡張定義が使用されている場合、TOTAL値未定義など本体プレイヤーの仕様に依存している場合は、beatoraja からの査定のみで判断をします。<br>
+　　・第三本体特有の仕様やバグが意図的に使用されていて beatoraja での難易度が大きく変わってしまう場合は、beatoraja の査定に関わらず総合的に評価します。
+</p>
+
+<p>
+<span style="color: #0000ff;">
+・beatoraja 環境下で「Gauge Auto Shift (GAS) を BEST CLEAR に設定し、下限を NORMAL としたときにクリアランプがつく難易度」を、その譜面の難易度とします。<br>
+</span>
+　　・第三本体からプレイする場合は「NORMAL または HARD ゲージで簡単な方でのクリア難易度」をその譜面の難易度とします。
+</p>
+
+<p>
+・AC準拠のボタンサイズでの難易度を基準とします。ポプコン、アナコン、KBでの査定が不可というわけではありませんが、配慮をお願いします。<br>
+・正規、ミラー譜面でのプレイを基本とします。(ただし、RAN/S-RAN で明らかに数レベル易しくなる場合は個人差フォルダに送られる場合があります)
+</p>
+
+<p>
+<span style="color: #0000ff;">
+・beatoraja のソフラン対策オプション SUD+ 使用と位置変更 / HS 変更 / HI-SPEED固定自動調整 (皿チョン) は<strong>全て使用可</strong> とします。<br>
+・#LNMODE 定義の制限がない譜面では、beatoraja のLNモードは "LN" を使用した場合を基準とします。<br>
+　　・第三本体でも、これらに該当するオプションがある場合は同様に使用可とします。
+</span>
+</p>
+
+
+<br>
+
+<h3 id="normal-records-notes">Normal Records (Lv1～45) の特記事項</h3>
+<p>
+・本家の旧難易度が設定されているものは、表記難易度 +6(新基準) で登録します。<br>
+<span style="color: #0000ff;">
+・5BUTTONS 譜面は「同じ密度が 9KEY に広がったと想定したときの難易度」から -6 (旧基準) した値で登録します。<br>
+　　・難易度体系が異なるため 1つの難易度ラベル内で扱う事自体に無理があると理解していますが、データ処理上の都合を優先した対応、ということでひとまずご理解ください。<br>
+</span>
+・特に難易度のつけづらい譜面や癖の強い譜面、ネタ譜面などを PLv? フォルダに格納します。<br>
+・PLv45の中でも特に難しく P●1 あるか判断がつかないものを、PLv45+ フォルダに格納します。<br>
+</p>
+
+<br>
+
+<h3 id="insane-records-notes">Insane Records (Lv46～)の特記事項</h3>
+<p>
+<span style="color: #0000ff;">
+・P●0 は発狂PMS難易度表の ●0 に同期しており、選抜された 44～45+ (と ●1降格) が含まれます。<br>
+　　・その他の譜面に関しては、これまでと同じく非発狂側 44, 45, 45+ フォルダに格納されます。
+</span>
+</p>
+
+<p>
+・個人差大(●？) ソフラン特化(●～) LN特化(●◆) としてそれぞれ仕分けします。(通常難易度が定められそうであればそちらを優先します)
+</p>
+
+<br>
+
+</div>
+
+
+<h4 id="openclosebox4_hdr" class="close"><span id="difficulty-change-guide"></span>難易度移動リクエスト　/　PMS Database 難易度議論所の使い方について　(クリックで開閉)</h4>
+<div id="openclosebox4">
+<p>
+<strong><span style="font-size: 16pt;"><a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=336311120" target="_blank">PMS Database 難易度議論所 (Google スプレッドシート)</a></span></strong>
+</p>
+
+<p>
+このスプレッドシート内で、PMS Database の難易度に関する意見全般を収集しています。
+難易度に関連する話題であれば、フォーラムとしてご自由に編集してください。
+</p>
+
+<br>
+
+<h2 id="difficulty-change-request">PMS Database 登録譜面の難易度移動をリクエストしたい場合</h2>
+<p>
+<span style="color: #0000ff;">
+2023/07 以降 beatoraja からの難易度を優先したいため、<strong>PLv / P● 数字内の移動を提案することができるのは beatoraja の利用者さんに限らせて頂きます。</strong><br>
+</span>
+※個人差フォルダ (Lv? / ？◆～) と数字を行き来する提案であれば、従来通り LR2 / beatoraja / 第三本体 全て受け付けます。
+</p>
+
+<p>
+<a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=0" target="_blank">PMS Database 難易度移動提案所</a>「新規譜面は下に」ライン以下に、提案したい差分の「新難易度」「現在の難易度 (Lv/●いずれか) 」「曲名」を記入してください。<br>
+また、右側の査定欄に名前を記入し「新難易度」の数字を書き写しておいてください。
+</p>
+
+<p>
+他の提案に意見を付け加えたい場合も、右側の査定欄を使用します。<span style="color: #0000ff;">beatoraja (ACコントローラ) とそれ以外の環境で記入欄を分離していますので、ご協力をお願いします。<br>
+本体プレイヤーを乗り換えた場合は新規列を取得して再エントリーしてください。両方の環境でプレイしている場合は、beatoraja の査定結果のみ記入するようにしてください。</span>
+</p>
+
+<p>
+<div align="center">
+<img src="style/images/suggestion_fig1.png">
+</div>
+</p>
+
+<br>
+
+<h3 id="proposal-rules">提案に関するその他のルール説明</h3>
+<p>
+・難易度付けのルールについては、前項「難易度基準と査定のレギュレーションについて」に準じます。<br>
+　　・ 5BUTTONS 譜面は旧基準 (-6レベル) 扱いとなります。<br>
+　　・ 個人差フォルダ (？◆～) は、通常難易度が定められそうであればそちらを優先します。希望する場合は、数字難易度での記入をお願いします。<br>
+・<a href="_pastoral_home.html" target="_blank">発狂PMS難易度表 (新)</a> の登録譜面は、PMS Database での難易度移動を受付できません。<br>
+<span style="color: #0000ff;">
+・Excluded Records を行き来する移動提案は、難易度移動提案所では行っておりません。→ <a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=1732793279" target="_blank">NSFW(再生注意) List  &  P† Discussion</a>
+</span>
+</p>
+
+<p><span style="color: #0000ff;">
+・(記入者を含め) 3票以上投稿されているものを移動対象とし、多数決に従います。<br>
+　　・移動先の難易度は、各投票者の平均 または多数派の意見を採用します。<br>
+　　・「●3.5」「●3-4」のように書かれている場合は、低い方の難易度(この場合は●3) を重視して読み取ります。<br>
+</span>
+　　・超高難易度 / 低難易度 で票数獲得の見込みが立たないと判断した場合は、提案者さんの適正レベルを基にして運営が主観的に判断する場合があります。<br>
+　　・そのほか運営の判断で、票数に関わらず移動対応を行う場合があります。(特殊な場合を想定しています)　ご了承ください。
+</p>
+
+<p>
+・実際には統計不足で正確な査定が困難な状況が多いため、<a href="http://stellawingroad.web.fc2.com/i/memo.html">つきやまさんの方針</a> に従い P●1 レベル以内の誤差は許容して頂けますようお願いします。<br>
+　　・査定や反映作業にはマンパワーが必要で、一度に大量の提案が送られると負担が大きく、精度が下がってしまうためです。重要度の高いものから少しずつ投稿してください。<br>
+</p>
+
+<br>
+
+<h3 id="aggregation-schedule">集計タイミングについて</h3>
+<p>
+締切から反映まで、1ヶ月の査定猶予を設けます。
+</p>
+
+<p>
+■ 上半期集計 … 提案締切:  5月末　/　意見募集期間:  6月中　/　反映:  6月末以降の本表更新のタイミング<br>
+■ 下半期集計 … 提案締切: 11月末　/　意見募集期間: 12月中　/　反映: 12月末以降の本表更新のタイミング<br>
+</p>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------>
+
+<br>
+<br>
+<br>
+
+
+
+
+<h2 id="guide">Guide 　- PMS導入ガイド (2023年版)</h2>
+
+<p>
+PMSをこれから触れ始める方向けのガイドラインです。<a href="http://nigo10sabun.web.fc2.com/column/index.html" target="_blank">西ヶ蜂さんのPMS導入ガイド</a> から改訂する形で作成させて頂きました。ありがとうございます。<br>
+導入する本体プレイヤーは LR2 / beatoraja を想定しています。「beatoraja の場合～」「LR2 の場合～」と分岐する箇所は、自身が使用する予定の本体の項目をご覧ください。<br>
+2023年現在、PMS Database では <strong>これから完全新規で始めるという場合は beatoraja を推奨しています。</strong>
+</p>
+
+
+
+<h3 id="guide-table-of-contents">目次 (各項目クリックで別ページにリンクします)</h3>
+
+<h4 id="guide-player-link"><a href="guide_player.html" style="color: #ffffff;">本体プレイヤーの導入</a></h4>
+
+<h4 id="guide-song-skin-table-link"><a href="guide_song_skin_table.html" style="color: #ffffff;">楽曲・スキン・難易度表の導入</a></h4>
+
+<h4 id="guide-controller-link"><a href="guide_controller.html" style="color: #ffffff;">コントローラの導入・キーコンフィグと操作方法</a></h4>
+
+<h4 id="guide-chart-link"><a href="guide_chart.html" style="color: #ffffff;">創作譜面 (自作差分) の作成</a></h4>
+
+<h4 id="guide-tips-link"><a href="guide_tips.html" style="color: #ffffff;">Tips / トラブルシューティング</a></h4>
+
+<br>
+
+<h3 id="external-articles">外部記事 (各項目クリックで別ページにリンクします)</h3>
+<h4 id="gauge-judgement-article"><a href="https://ralba-gear.hateblo.jp/entry/2023/11/06/141139" style="color: #ffffff;">beatoraja / LR2 のゲージ・判定・コンボ仕様についての詳細なまとめ</a></h4>
+
+<br>
+
+
+<h3 id="reference-sites">参考にさせて頂いたサイト / 当ガイドに近しい導入解説をされているサイト集</h3>
+<p>
+<strong>■ <a href="http://nigo10sabun.web.fc2.com/column/index.html" target="_blank">発狂PMS導入ガイド (西ヶ蜂 さん)</a></strong> … LR2 向け　当ガイドの雛形にさせていただきました。<br>
+<strong>■ <a href="https://note.com/propeller_ex/n/ndeb1301f8efe" target="_blank">発狂PMS導入方法 完全版（beatoraja） (propeller さん)</a></strong> … beatoraja 向け　ユーザー視点での解説が参考になります。
+</p>
+
+<br>
+
+<h3 id="pms-guide-info">最新のPMS関連情報を募集しています</h3>
+<p>
+<span style="font-size: 14pt;">■ <strong><a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit#gid=671420740" target="_blank">[Tips] PMS Guide 　- PMS Database 関連アンケート場　(Google スプレッドシート)</a></strong></span>
+</p>
+<p>
+このガイドは主に、2023/06 頃のPMS事情 (LR2beta3 ver.100201 / beatoraja v084 ～ 085) に基づいて執筆しました。<br>
+ここに記せる情報には限りがあり、情報が古くなっていく事が予想されますので、皆さんのノウハウを共有してください。質問も自由に書き込んで頂いて構いません。<br>
+PMS Database Discord Server や X(Twitter) などで重要そうな情報を見つけた場合、情報やソースを転記して頂けると助かります。
+</p>
+
+
+
+
+<br>
+<br>
+<br>
+<h3 id="planned-topics">追記予定？ の項目メモ</h3>
+<p>
+・ 本体プレイヤーごとのバックアップ推奨ファイル<br>
+・ アケコンの調整 (リンク集)<br>
+・ 録画、配信関連<br>
+<br>
+
+・ トラシュメモ (LR2 / beatoraja)<br>
+・ 寄稿いただいている記事の掲載 > Tips<br>
+・ 要約？<br>
+<br>
+<br>
+
+
+
+</div>
+
+</section>
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+open_close("openclosebox2_hdr", "openclosebox2");
+open_close("openclosebox3_hdr", "openclosebox3");
+open_close("openclosebox4_hdr", "openclosebox4");
+
+}
+</script>
+
+<script type="text/javascript">
+(function() {
+	function openBox(boxId) {
+		var box = document.getElementById(boxId);
+		var header = document.getElementById(boxId + "_hdr");
+		if (!box) return;
+		box.style.display = "block";
+		if (header) {
+			header.className = header.className.replace(/\bclose\b/g, "open");
+			if (header.className.indexOf("open") === -1) {
+				header.className += " open";
+			}
+		}
+	}
+
+	function openBoxFromHash() {
+		var hash = location.hash ? decodeURIComponent(location.hash.substring(1)) : "";
+		if (!hash) return;
+
+		var target = document.getElementById(hash);
+		if (!target) return;
+
+		var node = target;
+		while (node && node !== document) {
+			if (node.id && /^openclosebox\d+$/.test(node.id)) {
+				openBox(node.id);
+				break;
+			}
+			node = node.parentNode;
+		}
+
+		var header = target;
+		while (header && header !== document) {
+			if (header.id && /_hdr$/.test(header.id)) {
+				openBox(header.id.replace(/_hdr$/, ""));
+				break;
+			}
+			header = header.parentNode;
+		}
+
+		setTimeout(function() {
+			if (target.scrollIntoView) {
+				target.scrollIntoView();
+			}
+		}, 0);
+	}
+
+	openBoxFromHash();
+	if (window.addEventListener) {
+		window.addEventListener("hashchange", openBoxFromHash, false);
+	}
+})();
+</script>
+
+
+
+</body>
+</html>
