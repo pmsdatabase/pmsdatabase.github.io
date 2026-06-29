@@ -139,7 +139,7 @@
 
 <!--　　　　　ここから難易度表本体　　　　　-->
 <div class="tableflame">
-<table align="center" cellspacing="1" cellpadding=2　border="0" bgcolor="#000000" id="table_int">
+<table align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#000000" id="table_int" class="table-ir5">
 </table>
 </div>
 
@@ -170,6 +170,20 @@ $(document).ready(function(){
 });
 
 
+// レベル見出し用ID生成
+// header.jsonのlevel_orderがある場合はその順番、ない場合は表示順の通し番号を使用する。
+function getLevelAnchorNumber(level, order, fallbackNumber) {
+	if(order != "" && order != null){
+		for(var i = 0; i < order.length; i++){
+			if(order[i].toString() == level.toString()){
+				return i + 1;
+			}
+		}
+	}
+	return fallbackNumber;
+}
+
+
 // ソートのための引数追加
 function makeBMSTable(info, mark, order) {
 	// orderが未指定の場合はnull
@@ -180,6 +194,7 @@ function makeBMSTable(info, mark, order) {
     var x = "";
     var ev = "";
     var count = 0;
+    var levelAnchorCount = 0;
     var obj = $("#table_int");
 
 	// ソート
@@ -237,16 +252,17 @@ function makeBMSTable(info, mark, order) {
 	
     // 表のクリア
     obj.html("");
-    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='2' align='center'>beatoraja IR</td><td align='center'>タイトル (+LR2IR)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>").appendTo(obj);
+    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='5' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>").appendTo(obj);
     var obj_sep = null;
     for (var i = 0; i < info.length; i++) {
         // 難度ごとの区切り
         if (x != info[i].level) {
             // 前の区切りに譜面数、平均密度を追加
           	if (obj_sep != null) {
-                obj_sep.html("<td colspan='12' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
+                obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
             }
-            obj_sep = $("<tr class='tr_separate' id='" + mark + info[i].level + "'></tr>");
+            levelAnchorCount++;
+            obj_sep = $("<tr class='tr_separate' id='level-" + getLevelAnchorNumber(info[i].level, order, levelAnchorCount) + "'></tr>");
             obj_sep.appendTo(obj);
             count = 0;
             x = info[i].level;
@@ -282,27 +298,36 @@ function makeBMSTable(info, mark, order) {
         // 動画
 		if(info[i].video1 != "" && info[i].video1 != null){
 			// ニコニコ
-			$("<td width='1%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
+			$("<td width='1.2%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
 		} else if(info[i].video2 != "" && info[i].video2 != null){
 			// YouTube
-			$("<td width='1%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
+			$("<td width='1.2%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
 		} else if(info[i].video3 != "" && info[i].video3 != null){
 			// vimeo
-			$("<td width='1%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
+			$("<td width='1.2%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
 		} else {
-        	$("<td width='1%'></td>").appendTo(str);
+        	$("<td width='1.2%'></td>").appendTo(str);
 		}
 　　　　// 譜面画像
-　　　　$("<td width='1%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
+　　　　$("<td width='1.2%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
 
 　　　　// Mocha Repository
-　　　　$("<td width='1%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>").appendTo(str);
+　　　　$("<td width='1.2%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>").appendTo(str);
 
 　　　　// MinIR
-　　　　$("<td width='1%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0' target='_blank'><img src='style/minir_logo.gif' border='0' /></a></td>").appendTo(str);
+　　　　$("<td width='1.2%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0' target='_blank'><img src='style/minir_logo.gif' border='0' /></a></td>").appendTo(str);
+
+　　　　// BMS-IR
+　　　　$("<td width='1.2%' align='center'><a href='https://bms-ir.org/new/song?songmd5=" + info[i].md5 + "' target='_blank'><img src='style/bmsir_logo.gif' border='0' /></a></td>").appendTo(str);
+
+　　　　// rianIR
+　　　　$("<td width='1.2%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/rianir_logo.gif' border='0' /></a></td>").appendTo(str);
+
+　　　　// STELLAVERSE IR
+　　　　$("<td width='1.2%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='style/stellaverseir_logo.gif' border='0' /></a></td>").appendTo(str);
 
         // タイトル
-        $("<td width='12%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+        $("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
         // アーティスト
         var astr = "";
@@ -328,19 +353,20 @@ function makeBMSTable(info, mark, order) {
         		astr += "<br />(" + info[i].name_pack + ")";
         	}
         }
-        $("<td width='10%'>" + astr + "</td>").appendTo(str);
+        $("<td width='12%'>" + astr + "</td>").appendTo(str);
+
         // 差分
         if(info[i].url_diff != "" && info[i].url_diff != null) {
         	if(info[i].name_diff != "" && info[i].name_diff != null) {
-	        $("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+	        $("<td width='12%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
         	} else {
-	        $("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
+	        $("<td width='12%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
         	}
         } else {
         	if(info[i].name_diff != "" && info[i].name_diff != null) {
-	        $("<td width='10%'>" + info[i].name_diff + "</td>").appendTo(str);
+	        $("<td width='12%'>" + info[i].name_diff + "</td>").appendTo(str);
         	} else {
-	        $("<td width='10%'></td>").appendTo(str);
+	        $("<td width='12%'></td>").appendTo(str);
         	}
         }
 
@@ -349,14 +375,14 @@ function makeBMSTable(info, mark, order) {
         str.appendTo(str);
 
         //TOTAL
-        $("<td width='9%'>" + info[i].total + "</td>").appendTo(str);
+        $("<td width='5%'>" + info[i].total + "</td>").appendTo(str);
         str.appendTo(str);
 
         // memo
-        $("<td width='5%'>" + info[i].memo + "</td>").appendTo(str);
+        $("<td width='3%'>" + info[i].memo + "</td>").appendTo(str);
 
         // コメント
-        $("<td width='18%'>" + info[i].comment + "</td>").appendTo(str);
+        $("<td width='12%'>" + info[i].comment + "</td>").appendTo(str);
         str.appendTo(obj);
         count++;
     }
@@ -366,7 +392,7 @@ function makeBMSTable(info, mark, order) {
     // 最後の区切り処理
 	// マークが抜け落ちてたので追加
     if (obj_sep != null) {
-        obj_sep.html("<td colspan='12' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
+        obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
     }
 }
 </script>

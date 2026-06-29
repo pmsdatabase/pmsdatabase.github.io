@@ -695,3 +695,104 @@ body.diff {
 .tableflame tr.tr_normal:hover {
   background-color: #70f0f0;
 }
+
+/* ----- 5列IR対応テーブル幅調整（PMS Database / 2026） -----
+   LV, 動画, 譜面, IR×5, タイトル, 本体, 差分, Notes, TOTAL, memo, コメント
+   の15列構成を想定。table要素に class="table-ir5" を付与して使用。
+*/
+
+#table_int.table-ir5 {
+  table-layout: auto;
+}
+
+#table_int.table-ir5 td {
+  box-sizing: border-box;
+}
+
+/* IRアイコン列は中身を折り返さない */
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(4),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(5),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(6),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(7),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(8) {
+  white-space: nowrap;
+}
+
+/* 長い曲名・URL・コメントはFirefoxで列幅を圧迫しないように折り返し許可 */
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(9),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(10),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(11),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(15) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* TOTAL列はなるべく1行表示を維持 */
+#table_int.table-ir5 tr:not(.tr_separate):not(:first-child) > td:nth-child(13),
+#table_int.table-ir5 tr:first-child > td:nth-child(10) {
+  white-space: nowrap;
+  min-width: 9em;
+}
+
+/* 旧テンプレートのTOTAL色分けは10列目前提なので、5列IR版では13列目へ移す */
+#table_int.table-ir5 tr[class*="state_total"] > td:nth-of-type(10) {
+  color: inherit;
+  font-weight: normal;
+}
+
+#table_int.table-ir5 .state_total10 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total11 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total12 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total13 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total14 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total15 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total16 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total17 > td:nth-of-type(13) {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#table_int.table-ir5 .state_total20 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total21 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total22 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total23 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total24 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total25 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total26 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total27 > td:nth-of-type(13) {
+  color: #ff0000;
+}
+
+#table_int.table-ir5 .state_total30 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total31 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total32 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total33 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total34 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total35 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total36 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total37 > td:nth-of-type(13) {
+  color: #0000ff;
+}
+
+#table_int.table-ir5 .state_total40 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total41 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total42 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total43 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total44 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total45 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total46 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total47 > td:nth-of-type(13) {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+#table_int.table-ir5 .state_total50 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total51 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total52 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total53 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total54 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total55 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total56 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total57 > td:nth-of-type(13) {
+  color: #aaaaaa;
+}
