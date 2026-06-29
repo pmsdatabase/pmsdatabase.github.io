@@ -207,7 +207,7 @@ function makeBMSTable(info, mark, order) {
 　　　　$("<td width='1%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='../../style/rianir_logo.gif' border='0' alt='rianIR' /></a></td>").appendTo(str);
 
 　　　　// STELLAVERSE IR
-　　　　$("<td width='1%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].sha256 + "' target='_blank'><img src='../../style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);
+　　　　$("<td width='1%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='../../style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);
 
         // タイトル
         $("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
