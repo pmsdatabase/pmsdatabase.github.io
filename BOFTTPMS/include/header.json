@@ -1,7 +1,8 @@
 ﻿{
 "name" : "BOFTT 同梱譜面一覧表",
 "symbol" : "lv",
-"data_url" : "https://script.google.com/macros/s/AKfycbwDOBq9298d0gL3palWYbXdZTEntxNtdFXYPnq2-0BRvv3BSndsyKD6Ub4_PBth4koE/exec",
+"data_url" : "https://pmsdatabase.github.io/BOFTTPMS/include/score.json",
+"data_url_GAS" : "https://script.google.com/macros/s/AKfycbwDOBq9298d0gL3palWYbXdZTEntxNtdFXYPnq2-0BRvv3BSndsyKD6Ub4_PBth4koE/exec",
 "level_order" : [0,1,2,3,4,5,6,7,8,9,10,11,12,"13+"]
 
 }

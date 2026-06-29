@@ -1,7 +1,8 @@
 ﻿{
 "name" : "BOFTT(BOF2024)PMS (P●数字版)",
 "symbol" : "BOFTTPMS●",
-"data_url" : "https://script.google.com/macros/s/AKfycbyhXxDRzt3CmqdUlGroZ4ERHSt32REuEcCYDA5CXHVNeuRgY4UJ5_nZcYfdntWZ_PPO/exec",
+"data_url" : "https://pmsdatabase.github.io/BOFTTPMS/insane/header.json",
+"data_url_GAS" : "https://script.google.com/macros/s/AKfycbyhXxDRzt3CmqdUlGroZ4ERHSt32REuEcCYDA5CXHVNeuRgY4UJ5_nZcYfdntWZ_PPO/exec",
 "level_order" : [45,"45+","lv?",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,"？","◆","～","Dummy"]
 
 }
