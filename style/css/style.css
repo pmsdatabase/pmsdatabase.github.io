@@ -727,9 +727,17 @@ body.diff {
   word-break: normal;
 }
 
-/* TOTAL列はなるべく1行表示を維持 */
-#table_int.table-ir5 tr:not(.tr_separate):not(:first-child) > td:nth-child(13),
-#table_int.table-ir5 tr:first-child > td:nth-child(10) {
+/* TOTAL列は標準的な値を1行表示し、極端に長い値は折り返しを許可 */
+#table_int.table-ir5 tr:not(.tr_separate):not(:first-child) > td:nth-child(13) {
+  white-space: normal;
+  min-width: 10.5em;
+  max-width: 12em;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ヘッダーのTOTAL(+増加率)は1行表示を維持 */
+#table_int.table-ir5 tr:first-child > td:nth-child(9) {
   white-space: nowrap;
   min-width: 9em;
 }
