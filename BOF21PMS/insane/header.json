@@ -1,7 +1,8 @@
-﻿{
+{
 "name" : "BOF21(BOF2025)PMS (P●数字版)",
 "symbol" : "BOF21PMS●",
-"data_url" : "https://script.google.com/macros/s/AKfycbwFUczmQQgrn-Xy9-K2bEswbdOQF887BI9p-jsTEiPgTaB_y1mbHVBnFPNj45GPIi_P/exec",
+"data_url" : "https://pmsdatabase.github.io/BOF21PMS/insane/score.json",
+"data_url_GAS" : "https://script.google.com/macros/s/AKfycbwFUczmQQgrn-Xy9-K2bEswbdOQF887BI9p-jsTEiPgTaB_y1mbHVBnFPNj45GPIi_P/exec",
 "level_order" : [45,"45+","lv?",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,"？","◆","～","Dummy"]
 
 }
