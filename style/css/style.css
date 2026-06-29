@@ -804,3 +804,34 @@ body.diff {
 #table_int.table-ir5 .state_total57 > td:nth-of-type(13) {
   color: #aaaaaa;
 }
+
+/* ----- 5列IR対応・Notes/TOTALなしコンパクト表（PMS Database / 2026） -----
+   LV, 動画, 譜面, IR×5, タイトル, 本体, 差分, memo, コメント
+   の13列構成を想定。table要素に class="table-ir5-compact" を付与して使用。
+*/
+
+#table_int.table-ir5-compact {
+  table-layout: auto;
+}
+
+#table_int.table-ir5-compact td {
+  box-sizing: border-box;
+}
+
+/* IRアイコン列は中身を折り返さない */
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(4),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(5),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(6),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(7),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(8) {
+  white-space: nowrap;
+}
+
+/* 長い曲名・URL・コメントはFirefoxで列幅を圧迫しないように折り返し許可 */
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(9),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(10),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(11),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(13) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
