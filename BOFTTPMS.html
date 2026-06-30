@@ -513,33 +513,33 @@ function makeBMSTable(info, mark, order) {
         // 動画
 		if(info[i].video1 != "" && info[i].video1 != null){
 			// ニコニコ
-			$("<td width='1%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
+			$("<td width='1.2%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
 		} else if(info[i].video2 != "" && info[i].video2 != null){
 			// YouTube
-			$("<td width='1%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
+			$("<td width='1.2%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
 		} else if(info[i].video3 != "" && info[i].video3 != null){
 			// vimeo
-			$("<td width='1%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
+			$("<td width='1.2%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
 		} else {
-        	$("<td width='1%'></td>").appendTo(str);
+        	$("<td width='1.2%'></td>").appendTo(str);
 		}
 		// 譜面画像
-		$("<td width='1%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
+		$("<td width='1.2%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
 
 		// Mocha Repository
-		$("<td width='1%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>").appendTo(str);
+		$("<td width='1.2%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>").appendTo(str);
 
 		// MinIR
-		$("<td width='1%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0' target='_blank'><img src='style/minir_logo.gif' border='0' alt='MinIR' /></a></td>").appendTo(str);
+		$("<td width='1.2%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0' target='_blank'><img src='style/minir_logo.gif' border='0' alt='MinIR' /></a></td>").appendTo(str);
 
 		// BMS-IR
-		$("<td width='1%' align='center'><a href='https://bms-ir.org/new/song?songmd5=" + info[i].md5 + "' target='_blank'><img src='style/bmsir_logo.gif' border='0' alt='BMS-IR' /></a></td>").appendTo(str);
+		$("<td width='1.2%' align='center'><a href='https://bms-ir.org/new/song?songmd5=" + info[i].md5 + "' target='_blank'><img src='style/bmsir_logo.gif' border='0' alt='BMS-IR' /></a></td>").appendTo(str);
 
 		// rianIR
-		$("<td width='1%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/rianir_logo.gif' border='0' alt='rianIR' /></a></td>").appendTo(str);
+		$("<td width='1.2%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/rianir_logo.gif' border='0' alt='rianIR' /></a></td>").appendTo(str);
 
 		// STELLAVERSE IR
-		$("<td width='1%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);
+		$("<td width='1.2%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);
 
         // タイトル
         $("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
