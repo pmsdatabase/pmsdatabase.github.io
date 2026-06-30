@@ -1,0 +1,418 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="ja">
+
+<head>
+<title>G2R2018 (BOF2018) PMS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="bmstable" content="https://pmsdatabase.github.io/G2R2018PMS/G2R2018PMS_header.json" />
+
+<link rel="stylesheet" href="style/css/style_base.css">
+<link href="style/css/style.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script src="style/js/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</nav>
+</span>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li class="current"><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+<h2 id="overview">G2R2018 (BOF2018) PMS</h2>
+
+<h3 id="update"><strong><span style="font-size: 14pt;">UPDATE: 2020/03/11</span></strong></h3>
+
+<p>
+G2R2018PMS差分企画の難易度表です。このページのURLは難易度表ツールに対応しており、シンボルとして【G2R2018Plv】を使用しています。<br>
+Vol.1(43) + Vol.2(93) + Vol.3(154) = 290譜面　　イベント同梱譜面(75) + 差分企画(290) = 計365譜面 (158曲)　差分制作ありがとうございました！
+</p>
+
+<p>
+■ <strong><a href="https://docs.google.com/spreadsheets/d/1h3Uzwb3Lj0EY0VsJto-MxJuD-RlWEBNM5bawrAHFqfE/edit#gid=1728094242" target="_blank">G2R2018 PMS差分企画 ワークシート (Work Sheet Here - Google Spreadsheets)</a></strong><br>
+■ <a href="http://nigo10sabun.web.fc2.com/G2R2018.html" target="_blank">差分企画特設ページ</a><br>
+</p>
+
+<p>
+■ <strong><a href="G2R2018PMS/insane/table.html" target="_blank">P●数字版難易度表</a> (更新終了)</strong><br>
+■ <a href="https://manbow.nothing.sh/event/event.cgi?action=List_def&event=123" target="_blank">G2R2018 イベント会場 (G2R2018 Venue)</a><br>
+</p>
+
+<h2 id="download">Download</h2>
+
+<h3 id="full-package">フルパッケージ</h3>
+<p>
+<strong><span style="font-size: 16pt;"><a href="https://drive.google.com/drive/folders/1vwfMa7_vpVJ6VDgFbldfSLvgMzPZcjP3?usp=sharing" target="_blank">【Download】G2R2018 PMS Appends Full Package (Team sort)</a>　Mirror:</span></strong>
+
+<span style="font-size: 12pt;"><span>(Full)</span>　
+			       <a href="G2R2018PMS/G2R2018PMS-vol1.zip">(Vol.1)</a>　
+			       <a href="G2R2018PMS/G2R2018PMS-vol2.zip">(Vol.2)</a>　
+			       <a href="G2R2018PMS/G2R2018PMS-vol3.zip">(Vol.3)</a>　
+</span>
+<br>
+
+
+<strong><span style="font-size: 16pt;"><a href="https://drive.google.com/drive/folders/1vwfMa7_vpVJ6VDgFbldfSLvgMzPZcjP3?usp=sharing" target="_blank">【Download】G2R2018 PMS Appends Full Package (Title sort)</a>　Mirror:</span></strong>
+
+<span style="font-size: 12pt;"><span>(Full)</span>　
+			       <span>(Vol.1)</span>　
+			       <span>(Vol.2)</span>　
+			       <span>(Vol.3)</span>　
+</span>
+</p>
+
+
+<h4 id="openclosebox1_hdr" class="close"><span id="installation"></span>導入方法の説明(クリックで展開)</h4>
+<div id="openclosebox1">
+
+<h3 id="integrate-full-package">全曲パッケージに統合する方法(推奨)</h3>
+<p>
+1) <a href="https://blog.polyohm.net/articles/misc/2019/05/02/BMS-package/index.html" target="_blank">こちらの全曲パッケージ</a> をダウンロードし、7-zip を利用して解凍します。(曲別フォルダがﾀﾞﾊﾞｧするので注意)<br>
+2) パッケージに以下の修正を行ってください。<br>
+　 ・<a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&num=432&event=123" target="_blank">「starlove / +TEK」</a>および<a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&num=433&event=123" target="_blank">「sparkling ruby / memowave」</a>を各自で追加<br>
+　 ・<a href="http://manbow.nothing.sh/event/event.cgi?action=More_def&num=371&event=123" target="_blank">「夕霧の峰、星のきざはし / 任那伽耶」</a>を各自でDLし、パッケージ内の同BMSに上書き解凍<br>
+　　※これらのBMSは上記のPMSパッケージDL先にも保管してあります
+</p>
+
+<p>
+3) 上記 Download リンクから差分パッケージ(チーム分け無し)をDLし、本体パッケージに統合してください。
+</p>
+
+
+<h3 id="use-glassist">GLAssistの差分自動導入機能を利用</h3>
+<p>
+上記Torrent以外のパッケージを導入した方や、BMSを個別に集めた方はこちらの方法が便利です。
+</p>
+<p>
+1) 本体BMSをLR2に登録しておく<br>
+2) GLAssistでG2R2018PMS難易度表を読み込む(このページです)<br>
+3) GLAssistで難易度表を開き【差分自動導入】ボタンをクリックで導入完了(しばらく時間がかかり、メモリも食うので注意)
+</p>
+
+<h3 id="manual-installation">個別に導入</h3>
+<p>
+楽曲を個別に収集された方や、導入がうまくいかない場合、GLAssistを使用されていない場合などは手動で導入してください。<br>
+チーム分け無しの差分パッケージを上記 Download 内に用意しています。そちらをDLし、<a href="http://bmsnormal2.syuriken.jp/glassist_feature.html" target="_blank">GLAssist</a> や
+<a href="https://github.com/SayakaIsBaka/BeMusicSeeker-installer/releases" target="_blank">BeMusicSeeker</a> の差分導入機能(画面に差分をD&amp;D)で一括導入すると便利です。
+</p>
+
+
+
+</div>
+
+</section>
+
+
+<!--　　　　　ここから難易度表本体　　　　　-->
+<div class="tableflame">
+<table align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#000000" id="table_int" class="table-ir5">
+</table>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+// メニュー開閉
+function menu(tName){
+	var tMenu = document.getElementById(tName).style;
+	if (tMenu.display == 'none'){
+		tMenu.display = "block";
+	}else{
+		tMenu.display = "none";
+	}
+}
+
+
+$(document).ready(function(){
+	$.getJSON($("meta[name=bmstable]").attr("content"), function(header){
+		$.getJSON(header.data_url, function(information){
+			// headerのsort有無で分岐
+			if(header["level_order"]){
+				makeBMSTable(information,header.symbol,header["level_order"]);
+			} else {
+			makeBMSTable(information,header.symbol);
+			}
+		});
+	});
+});
+
+
+// ソートのための引数追加
+function makeBMSTable(info, mark, order) {
+	// orderが未指定の場合はnull
+	if(typeof order === 'undefined'){
+		order = null;
+	}
+
+    var x = "";
+    var ev = "";
+    var count = 0;
+    var obj = $("#table_int");
+
+	// ソート
+	if(order != "" && order != null){
+		// header.jsonにsortが存在する場合は指定順->タイトル順にソート
+
+		var orderAry = [];
+		for(var l = 0; l < order.length; l++){
+			orderAry.push(order[l].toString());
+		}
+
+		for(var j = 0; j < info.length; j++){
+		    var index=orderAry.indexOf(info[j]["level"]);
+		    info[j]["_index"]=index;
+		}
+
+		info.sort(function(a,b){
+		    if(a["_index"] < b["_index"]){
+				return -1;
+		    } else if(a["_index"] > b["_index"]){
+				return 1;
+			} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
+				return -1;
+			} else if( a["title"].toLowerCase() > b["title"].toLowerCase() ){
+				return 1;
+			} else {
+	　	　　	return 0;
+			}
+		});
+		for(var k=0; k < info.length; k++){
+			delete info[k]["_index"];
+		}
+	} else {
+		// そうでない場合はレベル順->タイトル順にソート
+		info.sort(
+			function(a,b){
+				var aLv = a["level"].toString();
+				var bLv = b["level"].toString();
+				if(isNaN(a["level"]) == false && isNaN(b["level"]) == false){
+					return a["level"]-b["level"];
+				} else if( aLv < bLv ){
+					return -1;
+				} else if( aLv > bLv ){
+					return 1;
+				} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
+					return -1;
+				} else if( a["title"].toLowerCase() > b["title"].toLowerCase() ){
+					return 1;
+				} else {
+		　	　　	return 0;
+				}
+			}
+		);
+	}
+
+    // 表のクリア
+    obj.html("");
+    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='5' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>").appendTo(obj);
+    var obj_sep = null;
+    var levelIdCounter = 0;
+    for (var i = 0; i < info.length; i++) {
+        // 難度ごとの区切り
+        if (x != info[i].level) {
+            // 前の区切りに譜面数を追加
+          	if (obj_sep != null) {
+                obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
+            }
+            levelIdCounter++;
+            obj_sep = $("<tr class='tr_separate' id='level-" + levelIdCounter + "'></tr>");
+            obj_sep.appendTo(obj);
+            count = 0;
+            x = info[i].level;
+        }
+        // 本文
+        var str = $("<tr class='tr_normal'></tr>");
+
+        if(info[i].state == 1) {
+        str = $("<tr class='state1'></tr>");
+        }
+        if(info[i].state == 2) {
+        str = $("<tr class='state2'></tr>");
+        }
+        if(info[i].state == 3) {
+        str = $("<tr class='state3'></tr>");
+        }
+        if(info[i].state == 4) {
+        str = $("<tr class='state4'></tr>");
+        }
+        if(info[i].state == 5) {
+        str = $("<tr class='state5'></tr>");
+        }
+        if(info[i].state == 6) {
+        str = $("<tr class='state6'></tr>");
+
+        }
+
+        // レベル表記
+        $("<td width='4%'>" + mark + x + "</td>").appendTo(str);
+        // 動画
+		if(info[i].video1 != "" && info[i].video1 != null){
+			// ニコニコ
+			$("<td width='1.2%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
+		} else if(info[i].video2 != "" && info[i].video2 != null){
+			// YouTube
+			$("<td width='1.2%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
+		} else if(info[i].video3 != "" && info[i].video3 != null){
+			// vimeo
+			$("<td width='1.2%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
+		} else {
+        	$("<td width='1.2%'></td>").appendTo(str);
+		}
+　　　　// 譜面画像
+　　　　$("<td width='1.2%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
+
+　　　　// Mocha Repository
+　　　　$("<td width='1.2%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>").appendTo(str);
+
+　　　　// MinIR
+　　　　$("<td width='1.2%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0' target='_blank'><img src='style/minir_logo.gif' border='0' alt='MinIR' /></a></td>").appendTo(str);
+
+　　　　// BMS-IR
+　　　　$("<td width='1.2%' align='center'><a href='https://bms-ir.org/new/song?songmd5=" + info[i].md5 + "' target='_blank'><img src='style/bmsir_logo.gif' border='0' alt='BMS-IR' /></a></td>").appendTo(str);
+
+　　　　// rianIR
+　　　　$("<td width='1.2%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/rianir_logo.gif' border='0' alt='rianIR' /></a></td>").appendTo(str);
+
+　　　　// STELLAVERSE IR
+　　　　$("<td width='1.2%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);
+
+        // タイトル
+        $("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+        // アーティスト
+        var astr = "";
+        if(info[i].url != "" && info[i].url != null) {
+        	if(info[i].artist != "" && info[i].artist != null) {
+        		astr = "<a href='" + info[i].url + "'>" + info[i].artist + "</a>";
+        	} else {
+        		astr = "<a href='" + info[i].url + "'>" + info[i].url + "</a>";
+        	}
+        } else {
+        	if(info[i].artist != "" && info[i].artist != null) {
+        		astr = info[i].artist;
+        	}
+        }
+        if(info[i].url_pack != "" && info[i].url_pack != null) {
+        	if(info[i].name_pack != "" && info[i].name_pack != null) {
+        		astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].name_pack + "</a>)";
+        	} else {
+        		astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].url_pack + "</a>)";
+        	}
+        } else {
+        	if(info[i].name_pack != "" && info[i].name_pack != null) {
+        		astr += "<br />(" + info[i].name_pack + ")";
+        	}
+        }
+        $("<td width='13%'>" + astr + "</td>").appendTo(str);
+        // 差分
+        if(info[i].url_diff != "" && info[i].url_diff != null) {
+        	if(info[i].name_diff != "" && info[i].name_diff != null) {
+	        $("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+        	} else {
+	        $("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
+        	}
+        } else {
+        	if(info[i].name_diff != "" && info[i].name_diff != null) {
+	        $("<td width='10%'>" + info[i].name_diff + "</td>").appendTo(str);
+        	} else {
+	        $("<td width='10%'></td>").appendTo(str);
+        	}
+        }
+
+        // Notes
+        $("<td width='3%'>" + (info[i].notes || "") + "</td>").appendTo(str);
+        // TOTAL
+        $("<td width='8%'>" + (info[i].total || "") + "</td>").appendTo(str);
+        // memo
+        $("<td width='5%'>" + info[i].memo + "</td>").appendTo(str);
+
+        // コメント
+        $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+        str.appendTo(obj);
+        count++;
+    }
+
+
+
+    // 最後の区切り処理
+	// マークが抜け落ちてたので追加
+    if (obj_sep != null) {
+        obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
+    }
+}
+
+</script>
+
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--開閉ブロック-->
+<script type="text/javascript">
+if (OCwindowWidth() < 3000) {
+open_close("openclosebox1_hdr", "openclosebox1");
+
+}
+
+$(function(){
+	var hash = window.location.hash;
+	if(!hash) {
+		return;
+	}
+	var $target = $(hash);
+	if(!$target.length) {
+		return;
+	}
+	var $box = $target.closest("div[id^='openclosebox']");
+	if(!$box.length && $target.closest("h4[id^='openclosebox']").length) {
+		var hdrId = $target.closest("h4[id^='openclosebox']").attr("id");
+		$box = $("#" + hdrId.replace("_hdr", ""));
+	}
+	if($box.length) {
+		$box.show();
+		var $hdr = $("#" + $box.attr("id") + "_hdr");
+		$hdr.removeClass("close").addClass("open");
+	}
+});
+</script>
+
+</body>
+</html>
