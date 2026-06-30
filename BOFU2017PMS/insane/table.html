@@ -16,7 +16,7 @@
 <center>
 
 <p>
-<strong><span style="font-size: 18pt;">BOFU2017(BOF2017)PMS (P●数字版)　</span></strong><br>
+<strong><span style="font-size: 18pt;">BOFU2017(BOF2017)PMS (P●数字版)</span></strong><br>
 </p>
 
 <p>
@@ -80,7 +80,7 @@ function makeBMSTable(info, mark, order) {
 
 	// ソート
 	if(order != "" && order != null){
-		// herder.jsonにsortが存在する場合は指定順->タイトル順にソート
+		// header.jsonにsortが存在する場合は指定順->タイトル順にソート
 		
 		var orderAry = [];
 		for(var l = 0; l < order.length; l++){
@@ -88,8 +88,11 @@ function makeBMSTable(info, mark, order) {
 		}
 		
 		for(var j = 0; j < info.length; j++){
-		    var index=orderAry.indexOf(info[j]["level"]);
-		    info[j]["_index"]=index;
+		    var index = orderAry.indexOf(info[j]["level"]);
+		    if(index === -1){
+		        index = orderAry.length;
+		    }
+		    info[j]["_index"] = index;
 		}
 
 		info.sort(function(a,b){
@@ -169,11 +172,9 @@ function makeBMSTable(info, mark, order) {
         }
         if(info[i].state == 6) {
         str = $("<tr class='state6'></tr>");
-	}
+        }
         if(info[i].state == 7) {
         str = $("<tr class='state7'></tr>");
-
-
         }
 
         // レベル表記
@@ -273,16 +274,6 @@ function makeBMSTable(info, mark, order) {
     }
 }
 </script>
-
-
-
-</div>
-
-
-
-
-
-
 
 </body>
 </html>
