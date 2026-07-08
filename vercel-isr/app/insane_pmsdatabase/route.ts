@@ -1,44 +1,17 @@
-import { NextResponse } from "next/server";
-
-const DATA_URL =
+const GAS_URL =
   "https://script.google.com/macros/s/AKfycbxxIG6DRM_yFNYV6yMWGhZusbcGNGoZmVKOVcANDge7ayL_WemCfKthT0_qmdKdXc-z/exec";
-
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, OPTIONS",
-};
-
 export const revalidate = 300;
 
-export async function OPTIONS() {
-  return new NextResponse(null, { headers: corsHeaders });
-}
-
 export async function GET() {
-  try {
-    const res = await fetch(DATA_URL, {
-      next: { revalidate: 300 },
-    });
-
-    if (!res.ok) {
-      return NextResponse.json(
-        { error: `Failed to fetch score data: ${res.status}` },
-        { status: 502, headers: corsHeaders }
-      );
-    }
-
-    const data = await res.json();
-
-    return NextResponse.json(data, {
-      headers: corsHeaders,
-    });
-  } catch (error) {
-    return NextResponse.json(
-      {
-        error:
-          error instanceof Error ? error.message : "Unknown fetch error",
-      },
-      { status: 502, headers: corsHeaders }
-    );
-  }
+  const res = await fetch(GAS_URL, {
+    redirect: "follow",
+    next: { revalidate: 300 },
+  });
+  const data = await res.text();
+  return new Response(data, {
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
+    },
+  });
 }
