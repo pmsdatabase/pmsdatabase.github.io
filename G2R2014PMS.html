@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="ja">
+
+<head>
+<title>G2R2014 (BOF2014) PMS Archive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="bmstable" content="https://pmsdatabase.github.io/G2R2014/G2R2014PMS_header.json" />
+
+<link rel="stylesheet" href="style/css/style_base.css">
+<link href="style/css/style.css" rel="stylesheet" type="text/css" media="screen,print" />
+<script src="style/js/jquery-2.0.2.min.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</nav>
+</span>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li class="current"><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+<h2 id="overview">G2R2014 (BOF2014) PMS Archive</h2>
+
+
+<p>
+旧発狂PMS難易度表で開催された <a href="http://stellawingroad.web.fc2.com/g2r/g2r.html" target="_blank">G2R2014 (BOF2014) PMS差分企画</a> について、現存する手元資料・ローカルデータベースをもとに、当時の情報を可能な範囲で復元しました。<br>
+このページのURLは難易度表ツールに対応しており、シンボルとして【G2R2014Plv】を使用しています。<br>
+</p>
+
+<br>
+<p>
+■ 統計: イベント同梱譜面(70) + 差分企画(459) = 計529譜面 (計214曲)
+</p>
+
+
+<p>
+■ <a href="http://stellawingroad.web.fc2.com/g2r/g2r.html" target="_blank">特設会場 (旧発狂PMS難易度表)</a><br>
+■ <a href="http://stellawingroad.web.fc2.com/g2r/pms.html" target="_blank">旧難易度表 (旧発狂PMS難易度表)</a><br>
+■ <a href="https://docs.google.com/spreadsheets/d/1qLvJnIAJRE-M-9KW30vPL0lmk_nEqLybJmNPiJhIcEc/edit?gid=0#gid=0" target="_blank">G2R2014 (BOF2014) PMS差分企画 ワークシート跡地 (Google Spreadsheets)</a><br>
+■ <a href="https://manbow.nothing.sh/event/event.cgi?action=List_def&event=96" target="_blank">G2R2014 イベント会場 (G2R2014 Venue)</a>
+</p>
+
+<br>
+
+
+
+<h2 id="download">Download</h2>
+
+<p>
+<strong><span style="font-size: 16pt;"><a href="https://drive.google.com/drive/folders/1R8T6s8es02eJczB9ykg0Zrr5DYt6oCKl" target="_blank">【Download】G2R2014 BMS Package</a>　(本体BMSパッケージ)</span></strong><br>
+</p>
+
+
+<p>
+<strong><span style="font-size: 16pt;"><a href="https://drive.google.com/drive/folders/1FVIT3iMx0TKklSZ3LNWh_MDDyX-zoDf_" target="_blank">【Download】G2R2014 PMS Appends Full Package (Team sort)</a></span>　 Mirror:</strong>
+
+<span style="font-size: 12pt;"><span>(Full)</span></span>
+</p>
+
+<br>
+
+<p>
+以下のBMSは、本体パッケージに由来する再生不良があるそうです。会場から最新版のBMSをダウンロード・上書きすると改善されるかもしれません。(筆者未確認)<br>
+・ チーム「ご注文はカマボコですか」 > <a href="https://manbow.nothing.sh/event/event.cgi?action=More_def&num=42&event=96" target="_blank">Luminance</a><br>
+・ チーム「V.S. MY PAST SELF」 > <a href="https://manbow.nothing.sh/event/event.cgi?action=More_def&num=154&event=96" target="_blank">AirTrip-SF#2-</a><br>
+</p>
+
+
+
+</section>
+
+<section>
+<h2 id="difficulty-table">難易度表</h2>
+
+
+<!--　　　　　ここから難易度表本体　　　　　-->
+
+<div class="tableflame">
+<table align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#000000" id="table_int" class="table-ir5">
+</table>
+</div>
+</section>
+
+<script language="javascript" type="text/javascript">
+
+$(document).ready(function(){
+	$.getJSON($("meta[name=bmstable]").attr("content"), function(header){
+		$.getJSON(header.data_url, function(information){
+			// headerのsort有無で分岐
+			if(header["level_order"]){
+				makeBMSTable(information,header.symbol,header["level_order"]);
+			} else {
+				makeBMSTable(information,header.symbol);
+			}
+		});
+	});
+});
+
+
+// レベル見出し用ID生成
+// header.jsonのlevel_orderがある場合はその順番、ない場合は表示順の通し番号を使用する。
+function getLevelAnchorNumber(level, order, fallbackNumber) {
+	if(order != "" && order != null){
+		for(var i = 0; i < order.length; i++){
+			if(order[i].toString() == level.toString()){
+				return i + 1;
+			}
+		}
+	}
+	return fallbackNumber;
+}
+
+
+function hasValue(value) {
+	return value != "" && value != null;
+}
+
+
+function appendBlankCell(row, width) {
+	$("<td width='" + width + "'></td>").appendTo(row);
+}
+
+
+function appendImageLinkCell(row, width, url, image, alt) {
+	$("<td width='" + width + "' align='center'><a href='" + url + "' target='_blank'><img src='" + image + "' border='0' alt='" + alt + "' /></a></td>").appendTo(row);
+}
+
+
+// ソートのための引数追加
+function makeBMSTable(info, mark, order) {
+	// orderが未指定の場合はnull
+	if(typeof order === 'undefined'){
+		order = null;
+	}
+
+    var x = "";
+    var count = 0;
+    var levelAnchorCount = 0;
+    var obj = $("#table_int");
+
+	// ソート
+	if(order != "" && order != null){
+		// header.jsonにsortが存在する場合は指定順->タイトル順にソート
+
+		var orderAry = [];
+		for(var l = 0; l < order.length; l++){
+			orderAry.push(order[l].toString());
+		}
+
+		for(var j = 0; j < info.length; j++){
+		    var index = orderAry.indexOf(info[j]["level"].toString());
+		    info[j]["_index"] = (index === -1) ? orderAry.length : index;
+		}
+
+		info.sort(function(a,b){
+		    if(a["_index"] < b["_index"]){
+				return -1;
+		    } else if(a["_index"] > b["_index"]){
+				return 1;
+			} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
+				return -1;
+			} else if( a["title"].toLowerCase() > b["title"].toLowerCase() ){
+				return 1;
+			} else {
+				return 0;
+			}
+		});
+		for(var k=0; k < info.length; k++){
+			delete info[k]["_index"];
+		}
+	} else {
+		// そうでない場合はレベル順->タイトル順にソート
+		info.sort(
+			function(a,b){
+				var aLv = a["level"].toString();
+				var bLv = b["level"].toString();
+				if(isNaN(a["level"]) == false && isNaN(b["level"]) == false){
+					return a["level"]-b["level"];
+				} else if( aLv < bLv ){
+					return -1;
+				} else if( aLv > bLv ){
+					return 1;
+				} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
+					return -1;
+				} else if( a["title"].toLowerCase() > b["title"].toLowerCase() ){
+					return 1;
+				} else {
+					return 0;
+				}
+			}
+		);
+	}
+
+    // 表のクリア
+    obj.html("");
+    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='5' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>").appendTo(obj);
+    var obj_sep = null;
+    for (var i = 0; i < info.length; i++) {
+        // 難度ごとの区切り
+        if (x != info[i].level) {
+            // 前の区切りに譜面数を追加
+          	if (obj_sep != null) {
+                obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
+            }
+            levelAnchorCount++;
+            obj_sep = $("<tr class='tr_separate' id='level-" + getLevelAnchorNumber(info[i].level, order, levelAnchorCount) + "'></tr>");
+            obj_sep.appendTo(obj);
+            count = 0;
+            x = info[i].level;
+        }
+
+        // 本文
+        var rowClass = "tr_normal";
+        if(hasValue(info[i].state_total)){
+            rowClass = "state_total" + info[i].state_total;
+        } else if(hasValue(info[i].state)){
+            rowClass = "state" + info[i].state;
+        }
+        var str = $("<tr class='" + rowClass + "'></tr>");
+
+        // レベル表記
+        $("<td width='2%'>" + mark + x + "</td>").appendTo(str);
+
+        // 動画
+		if(hasValue(info[i].video1)){
+			appendImageLinkCell(str, "1.2%", "https://www.nicovideo.jp/watch/sm" + info[i].video1, "style/nico.gif", "ニコニコ動画");
+		} else if(hasValue(info[i].video2)){
+			appendImageLinkCell(str, "1.2%", "https://www.youtube.com/watch?v=" + info[i].video2, "style/youtube.gif", "Youtube");
+		} else if(hasValue(info[i].video3)){
+			appendImageLinkCell(str, "1.2%", "https://vimeo.com/" + info[i].video3, "style/vimeo.gif", "vimeo");
+		} else {
+        	appendBlankCell(str, "1.2%");
+		}
+
+		// 譜面画像
+		if(hasValue(info[i].md5)){
+			$("<td width='1.2%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
+		} else {
+			appendBlankCell(str, "1.2%");
+		}
+
+		// Mocha Repository
+		if(hasValue(info[i].sha256)){
+			appendImageLinkCell(str, "1.2%", "https://mocha-repository.info/song.php?sha256=" + info[i].sha256, "style/mochair_logo.gif", "Mocha Repository");
+		} else {
+			appendBlankCell(str, "1.2%");
+		}
+
+		// MinIR
+		if(hasValue(info[i].sha256)){
+			appendImageLinkCell(str, "1.2%", "https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0", "style/minir_logo.gif", "MinIR");
+		} else {
+			appendBlankCell(str, "1.2%");
+		}
+
+		// BMS-IR
+		if(hasValue(info[i].md5)){
+			appendImageLinkCell(str, "1.2%", "https://bms-ir.org/new/song?songmd5=" + info[i].md5, "style/bmsir_logo.gif", "BMS-IR");
+		} else {
+			appendBlankCell(str, "1.2%");
+		}
+
+		// rianIR
+		if(hasValue(info[i].sha256)){
+			appendImageLinkCell(str, "1.2%", "https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256, "style/rianir_logo.gif", "rianIR");
+		} else {
+			appendBlankCell(str, "1.2%");
+		}
+
+		// STELLAVERSE IR
+		if(hasValue(info[i].md5)){
+			appendImageLinkCell(str, "1.2%", "https://ir.stellabms.xyz/charts/" + info[i].md5, "style/stellaverseir_logo.gif", "STELLAVERSE IR");
+		} else {
+			appendBlankCell(str, "1.2%");
+		}
+
+        // タイトル
+        if(hasValue(info[i].md5)){
+        	$("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+        } else {
+        	$("<td width='15%'>" + info[i].title + "</td>").appendTo(str);
+        }
+
+        // アーティスト
+        var astr = "";
+        if(hasValue(info[i].url)) {
+        	if(hasValue(info[i].artist)) {
+        		astr = "<a href='" + info[i].url + "'>" + info[i].artist + "</a>";
+        	} else {
+        		astr = "<a href='" + info[i].url + "'>" + info[i].url + "</a>";
+        	}
+        } else {
+        	if(hasValue(info[i].artist)) {
+        		astr = info[i].artist;
+        	}
+        }
+        if(hasValue(info[i].url_pack)) {
+        	if(hasValue(info[i].name_pack)) {
+        		astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].name_pack + "</a>)";
+        	} else {
+        		astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].url_pack + "</a>)";
+        	}
+        } else {
+        	if(hasValue(info[i].name_pack)) {
+        		astr += "<br />(" + info[i].name_pack + ")";
+        	}
+        }
+        $("<td width='13%'>" + astr + "</td>").appendTo(str);
+
+        // 差分
+        if(hasValue(info[i].url_diff)) {
+        	if(hasValue(info[i].name_diff)) {
+	        	$("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
+        	} else {
+	        	$("<td width='10%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
+        	}
+        } else {
+        	if(hasValue(info[i].name_diff)) {
+	        	$("<td width='10%'>" + info[i].name_diff + "</td>").appendTo(str);
+        	} else {
+	        	$("<td width='10%'></td>").appendTo(str);
+        	}
+        }
+
+        // Notes
+        $("<td width='3%'>" + info[i].notes + "</td>").appendTo(str);
+
+        // TOTAL
+        $("<td width='8%'>" + info[i].total + "</td>").appendTo(str);
+
+        // memo
+        $("<td width='5%'>" + info[i].memo + "</td>").appendTo(str);
+
+        // コメント
+        $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+
+        str.appendTo(obj);
+        count++;
+    }
+
+
+
+    // 最後の区切り処理
+    if (obj_sep != null) {
+        obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
+    }
+}
+</script>
+
+
+
+</div>
+
+
+
+<!--/contents-->
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+
+</body>
+</html>
