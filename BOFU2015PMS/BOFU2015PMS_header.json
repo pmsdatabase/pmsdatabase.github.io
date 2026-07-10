@@ -1,6 +1,532 @@
 ﻿{
-"name" : "BOFU2015PMS",
-"symbol" : "BOFU2015Plv",
-"data_url" : "https://pmsdatabase.github.io/BOFU2015PMS/BOFU2015PMS_score.json",
-"level_order" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,"？","～","◆"]
+	"name": "BOFU2015PMS",
+	"symbol": "BOFU2015Plv",
+	"data_url": "https://pmsdatabase.github.io/BOFU2015PMS/BOFU2015PMS_score.json",
+	"level_order": [
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		8,
+		9,
+		10,
+		11,
+		12,
+		13,
+		14,
+		15,
+		16,
+		17,
+		18,
+		19,
+		20,
+		21,
+		22,
+		23,
+		24,
+		25,
+		26,
+		27,
+		28,
+		29,
+		30,
+		31,
+		32,
+		33,
+		34,
+		35,
+		36,
+		37,
+		38,
+		39,
+		40,
+		41,
+		42,
+		43,
+		44,
+		45,
+		46,
+		47,
+		48,
+		49,
+		50,
+		51,
+		52,
+		53,
+		54,
+		55,
+		"？",
+		"～",
+		"◆"
+	],
+	"course": [
+		{
+			"name": "VS 346プロダクション（バックメンバー）  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"a9b9f8c3e092a6ca9aa7b3fd4ff3bb89",
+				"0f30831db2a11470e4e97e7d012f8bb5",
+				"ddd80b760636085c261bda3c0e0dcbeb",
+				"aa3d923cb99b1491f6f2837b9d84e5a4",
+				"742dec667a64554337b3f766e73ffdec"
+			]
+		},
+		{
+			"name": "VS 森の妖精  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"0d0d08dd7534e488ace782d29c4b297a",
+				"a8b241167e4fafcf6957c4b5836eb72d",
+				"7d8395a7053d8d793b6ac9a0dc844b84",
+				"4139971e67b8ef49a9ec4f75d999ceff",
+				"125cf3653adcef731065f2b78d7ec8c1"
+			]
+		},
+		{
+			"name": "VS ゆず太大提督(乙)  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"e8abb4e846dbb5543dc3f465ebd6d5f8",
+				"1e277697f590dc0ee282f6580eceba6b",
+				"94e7a764d08d55942de57ea96c738d46",
+				"14a8cf7ca691174a381576d560e4a76e",
+				"8aaf10dfdbe6bf97763610dd28c302bc"
+			]
+		},
+		{
+			"name": "VS ウラ・水霊  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"3197e1e329336d6ebe7d6fbcf7caedd3",
+				"4b75a8c68b766656436f15f185379150",
+				"8fa5c5d6ed4f6e7796941ec460cd08d0",
+				"e9ba194c92465100a1f9eb21033cad26",
+				"9260f37250a3b9905e9a7a2a20cc6e90"
+			]
+		},
+		{
+			"name": "VS 0samil0 (^^)  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"2fc071a360ab8868aad7ad2bb9dfd329",
+				"405de2d59c3f5781b789e3c889b13143",
+				"f3bdf4682d20fe0d4cd83c7f5006d3f5",
+				"194f31026bc0ff476650476f5feed40b",
+				"1eeb0e8764b87745c276fea21d64c5bd"
+			]
+		},
+		{
+			"name": "VS ゆず太大提督(丙)  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"358e0e2301ee2cfd66816b2c133e5b45",
+				"4f1da9fb68570f49639e13c3cb2ac5ac",
+				"f2b2da016f55e3d4288b232e1ccc8418",
+				"e1e8f66827d5db3b247bf903e5bba842",
+				"220a36d7bb65986f19eefdc8ddc665e9"
+			]
+		},
+		{
+			"name": "VS 0samil0  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"5ebe45ade895c29e7c14914da960162b",
+				"e764903551f5b8cee6b5a82e4d0aa202",
+				"e4f8f098951650e9adc3d01446c265e7",
+				"3b3da84710c6c28f7cb28f383a8937bd",
+				"f964f75a81590a727cc2be8f426620dc"
+			]
+		},
+		{
+			"name": "VS mkst  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"e0dc4c37ec03304dee7eb4733483390d",
+				"f7df497fcf0a95f0b2e679c73669c341",
+				"141f2d81566d4869053122ab0325fee5",
+				"dbfc1444a44b82e727e1092c79fd1331",
+				"fcba09d3b3b4f3277194039e0b1d0625"
+			]
+		},
+		{
+			"name": "VS 水霊  / 初級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"da5b02ab27025f1488e46f3cdea57669",
+				"043dc2be02868ba658355074b4213554",
+				"d7b01469baea6b2191cf60d5131a5ab0",
+				"e79c163df343a74948812d30d4a960c0",
+				"165d5de1a00f57584e181b83b2fcda2f"
+			]
+		},
+		{
+			"name": "VS Seri  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"118ded57240c02af852bd47cac10859f",
+				"565b1e622b9621c7a53f2752d12a2958",
+				"aacc78c10e8fd5c9ec5aa6210e2e703d",
+				"bb3744d39207106a6603f3d03fe7eaf2",
+				"d142e382b77459d238c1c78032579683"
+			]
+		},
+		{
+			"name": "VS Rusalka  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"952590d80b27ed9e21427308261111cd",
+				"6ad63ad812ca70db814d3c2eaeb840a4",
+				"d1981dfd5be58cfb151fb3a3924457ba",
+				"b7ea6e34a636dff82cfee63998067a4b",
+				"8e5b67fab97e276684fe311d179a7ba8"
+			]
+		},
+		{
+			"name": "VS 深海(今日の運勢)  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"bf3df9b6be4d780e36f2445e8986f79d",
+				"05bed0bd509e88eaf55b964d280101b8",
+				"ee1b6976513bc739631f0c8707ba0966",
+				"8cc3d71b27df095b67f1120499def9bb",
+				"66cf1be1871eb392843f981afa433f87"
+			]
+		},
+		{
+			"name": "VS 未知のエリア  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"27de8ac3460dd23d7eb2466f652bb4c0",
+				"8db322955e08c179ad1ec09776aa705a",
+				"4f0d35afac59fde2175797904ebf81c1",
+				"dbbf83f99b40d45f53ac417427c66456",
+				"7267e4170dc484a93dfd56cfddf7d95a"
+			]
+		},
+		{
+			"name": "VS 0samil0 (^_^;)  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"bcd4a8edaa4adb50bc03bb660084024b",
+				"ec22e9c0c71186dac253dfb181ae232c",
+				"5e11f77af341a24d3b879d9db5f37f57",
+				"4d0ba89dc36a5826b49bad85095ca611",
+				"f0e92ee26414fe15e6e7415a94a79fcc"
+			]
+		},
+		{
+			"name": "VS 海底シンデン  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"b08670b244b29f83bfc7e9b0d218934b",
+				"f191fc958a7edca228a01712a58be2bf",
+				"d909f7ba396010d23148a132175ac8ba",
+				"f6ffbb2f87a49b4a23e865f95f670e14",
+				"810903b9f1c292d5df82d9a8c7763d41"
+			]
+		},
+		{
+			"name": "VS Aqua Coronet+  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"5efc9020f12ef93b08817419b794e04f",
+				"98cc6c1a764f3cec1a5e968ceda4fe2e",
+				"7e93b302e2f0a6a966d40663f550d7ae",
+				"98ad1ad888eb1ef3f327c3daa8c852e9",
+				"ce019d4053ecd877053c149740ab7fb8"
+			]
+		},
+		{
+			"name": "VS aquabit  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"c0b942792fe51720df5e64aa869e219c",
+				"22d9d3eb47593f4c56be40643c923e1d",
+				"b108526d35130b951125c94ee4e0a53f",
+				"c2b9b77078a499ae1d5cd5c5bda3917a",
+				"2670b8d81bb93d91cf8b000380603d4a"
+			]
+		},
+		{
+			"name": "VS cotton  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"b28f41ded49ca4d3b10bed9fd94c79ae",
+				"4ce9ca927429e890a21b518e83ad7b74",
+				"44de1a9fa3ea703d9893c46df4d96e1f",
+				"096d99487b127f9a6f17083b107d19a3",
+				"bf31c77fe0f84e832dabe274cc0d9422"
+			]
+		},
+		{
+			"name": "VS oxygen  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"a2184c72f817138570d1c35f14a89d77",
+				"7ffe155c759a21ec01a7ec165e2b9f2a",
+				"83c6ddb06d6f0b411f22f12cac4fe2fb",
+				"1ec47d1d9cf6f98ecdf25583a876b251",
+				"0bd5285b4efd8ae537d429c5376308cc"
+			]
+		},
+		{
+			"name": "VS 浅瀬  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"4348fdebe4ff9dc8e2f882d5beaf2b2b",
+				"288b0b9ac410fdfcac877a176a63f24b",
+				"9898d6f412c2db4ee259b7b91b454e3b",
+				"6d155e3d8e649f1951bfa7e239851e1a",
+				"2fe0e213ea478740613976c3bbc21dee"
+			]
+		},
+		{
+			"name": "VS アグノム領（海）/ 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"39b81721037f3679a71d889fa14fd23b",
+				"30d80344de7c8e58a458183e40a42b54",
+				"6f4164d174b41f7bdc5e2878228d4bdf",
+				"64a61563f84958d85e3509aeb0de8ff4",
+				"43e5aae2448e34ba5004f98f9e1a658c"
+			]
+		},
+		{
+			"name": "VS Sugar  / 上級",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"cdc44e50c8c0a930f134680ea225b543",
+				"b337421928d0af7fcb8de6d420f6deeb",
+				"3862e148946f8b7850a292c948f6a1d3",
+				"8549d4a4c6b0471083db5ed356c335a7",
+				"889678fce504d3ab7575ddd230af5ad2"
+			]
+		},
+		{
+			"name": "VS Pearl-C(razy).  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"9523d668611c7762bc3e159cccae1fc1",
+				"f4a61fbbcd20e205e9603fb0571a9817",
+				"8b13f96710881bf09649ca3b9cf333cd",
+				"ee2f99d0073c51fa5acb1d0b81e83aeb",
+				"3b13d1590ae94377890fedfbff66789a"
+			]
+		},
+		{
+			"name": "BOFU2015きほん検定  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"ffa076476daa308f7903438439ebabbf",
+				"eacc01b65b14c8ceb54b55cd6f9bbfda",
+				"44729a8fd7820fcf1aa6e48c5ffc8160",
+				"a4bd93ceaf69acf37acdb6d7824d518b",
+				"70031a64ae5b89033ce2b213088b1a58"
+			]
+		},
+		{
+			"name": "VS aqumabit  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"1711ccf9de51c296281343b0129f8902",
+				"3c944ba4db1e8ae6a2b0ea6e606447b2",
+				"ce0b78b0eb1bd08bcf6ac87a376b4edd",
+				"c9a2ef20dded8bb05d58ec403f5dd200",
+				"7bef70c0b57687665225399c9e2b7dff"
+			]
+		},
+		{
+			"name": "VS Pearl-C.  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"3cd70cbf67c6c4decabdac6a0447cd77",
+				"7359d486f19473b322315d7a8aaeb20f",
+				"12651a778682cb20db9af15d28580e0c",
+				"d8813b9213460afbe361cf8686cdcdcd",
+				"d7a3045615e232c08697a9e0d4b27852"
+			]
+		},
+		{
+			"name": "VS （　・へ・）  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"0029811e6da4353da4ece3a057131102",
+				"70cd16992673c5a568c4e84e4486683c",
+				"9db5cc4d2de998af460b7222f6f247f6",
+				"2aa03dfb04e1ec55ba249f96e59dad41",
+				"7f625e687f35e45f4dbab0cd2e042b4d"
+			]
+		},
+		{
+			"name": "VS 346プロダクション（フロントメンバー）  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"901bc9fb06d84552ae1c749e90ff75f9",
+				"550fd08dbe37f14aeecdc1dc4abe513c",
+				"c372ab3b24082e54fee61ff4bbffa45c",
+				"249bd82631ad5278ba4070f2282ea9e3",
+				"27651c8a463623a5e02ee3a51cb2e9f4"
+			]
+		},
+		{
+			"name": "VS ゆず太大提督(甲)  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"5f0376c713c9a7bee493f3862ef03d43",
+				"6aa7abd5f4085534acd01570f6961c4e",
+				"bca84f27d816372bd2976b7653916b7f",
+				"14a53eac825c7cf147a6f188772b9e65",
+				"fa58235f66288405850a9f6eb4819f68"
+			]
+		},
+		{
+			"name": "VS クラン残  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"cdf19af5c0ae02a83fd1794fc0791b55",
+				"1769d7e3d5b7518924df8ab144baa909",
+				"68a93fbe83c20c9fa83bde30cb760a86",
+				"8e1aea3110533f84d8223e42b182d831",
+				"e206ffb42caf8a84dc9f87470d4f5236"
+			]
+		},
+		{
+			"name": "VS アグノム領（山）  / ヤバイ！！！",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"e03db5ea9e4bb227a52aaa2a80b2029a",
+				"2643e6ba108e656942dc4e19e7112190",
+				"e57b19972be4d3020bb57f677c777a14",
+				"8306db43478ae5169930ffa4890c8099",
+				"e834aaa7430f26da371545d22a4edc11"
+			]
+		}
+	]
 }
