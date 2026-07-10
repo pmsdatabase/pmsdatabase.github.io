@@ -161,6 +161,7 @@
 </table>
 </div>
 
+
 <script language="javascript" type="text/javascript">
 
 // メニュー開閉
@@ -211,38 +212,65 @@ function getLevelAnchorId(level, order, fallbackNumber, usedIds) {
 }
 
 
+
 // ソートのための引数追加
+
+/*
+巨大表向けの描画最適化。読み込み速度が数倍早くなるが、他の表や配布中のテンプレートとは互換性がないので要注意。
+jQuery appendTo による逐次DOM生成ではなく、HTML文字列を組み立てて最後に innerHTML で一括挿入する。
+列構成が違う表へ流用する場合は、見出し行・td構成・separator colspan を要確認。
+*/
+
+function hasValue(value) {
+	return value != "" && value != null;
+}
+
+function cellValue(value) {
+	return value == null ? "" : value;
+}
+
+function makeSeparatorRow(mark, level, count, sepId) {
+	return "<tr class='tr_separate' id='" + sepId + "'><td colspan='15' align='center'><b>" + mark + level + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td></tr>";
+}
+
 function makeBMSTable(info, mark, order) {
 	// orderが未指定の場合はnull
 	if(typeof order === 'undefined'){
 		order = null;
 	}
 
-    var x = "";
-    var ev = "";
-    var count = 0;
-    var levelAnchorCount = 0;
-    var usedLevelIds = {};
-    var obj = $("#table_int");
+	var x = "";
+	var count = 0;
+	var levelAnchorCount = 0;
+	var usedLevelIds = {};
+	var table = document.getElementById("table_int");
+
+	if (!table) {
+		return;
+	}
+
+/*
+巨大表向けの描画最適化主にここまで。ただし以降も HTMLの文字列組み立てを先に行った関係で変更されている部分あり
+*/
+
 
 	// ソート
 	if(order != "" && order != null){
 		// header.jsonにsortが存在する場合は指定順->タイトル順にソート
-
 		var orderAry = [];
 		for(var l = 0; l < order.length; l++){
 			orderAry.push(order[l].toString());
 		}
 
 		for(var j = 0; j < info.length; j++){
-		    var index=orderAry.indexOf(info[j]["level"]);
-		    info[j]["_index"]=index;
+			var index = orderAry.indexOf(info[j]["level"]);
+			info[j]["_index"] = index;
 		}
 
 		info.sort(function(a,b){
-		    if(a["_index"] < b["_index"]){
+			if(a["_index"] < b["_index"]){
 				return -1;
-		    } else if(a["_index"] > b["_index"]){
+			} else if(a["_index"] > b["_index"]){
 				return 1;
 			} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
 				return -1;
@@ -278,131 +306,145 @@ function makeBMSTable(info, mark, order) {
 		);
 	}
 
-    // 表のクリア
-    obj.html("");
-    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='5' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>").appendTo(obj);
-    var obj_sep = null;
-    for (var i = 0; i < info.length; i++) {
-        // 難度ごとの区切り
-        if (x != info[i].level) {
-            // 前の区切りに譜面数を追加
-			if (obj_sep != null) {
-                obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
-            }
-            levelAnchorCount++;
-            obj_sep = $("<tr class='tr_separate' id='" + getLevelAnchorId(info[i].level, order, levelAnchorCount, usedLevelIds) + "'></tr>");
-            obj_sep.appendTo(obj);
-            count = 0;
-            x = info[i].level;
-        }
+	var rows = [];
+	var sepIndex = -1;
+	var sepId = "";
 
-        // 本文
-        var rowClass = "tr_normal";
-        if(info[i].state_total != "" && info[i].state_total != null) {
-			rowClass = "state_total" + info[i].state_total;
-        } else if(info[i].state != "" && info[i].state != null) {
-			rowClass = "state" + info[i].state;
-        }
-        var str = $("<tr class='" + rowClass + "'></tr>");
+	rows.push("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='5' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>");
 
-        // レベル表記
-        $("<td width='3%'>" + mark + x + "</td>").appendTo(str);
-        // 動画
-		if(info[i].video1 != "" && info[i].video1 != null){
-			// ニコニコ
-			$("<td width='1.2%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
-		} else if(info[i].video2 != "" && info[i].video2 != null){
-			// YouTube
-			$("<td width='1.2%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
-		} else if(info[i].video3 != "" && info[i].video3 != null){
-			// vimeo
-			$("<td width='1.2%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
-		} else {
-        	$("<td width='1.2%'></td>").appendTo(str);
+	for (var i = 0; i < info.length; i++) {
+		var item = info[i];
+
+		// 難度ごとの区切り
+		if (x != item.level) {
+			// 前の区切りに譜面数を追加
+			if (sepIndex >= 0) {
+				rows[sepIndex] = makeSeparatorRow(mark, x, count, sepId);
+			}
+			levelAnchorCount++;
+			sepId = getLevelAnchorId(item.level, order, levelAnchorCount, usedLevelIds);
+			sepIndex = rows.length;
+			rows.push(makeSeparatorRow(mark, item.level, 0, sepId));
+			count = 0;
+			x = item.level;
 		}
+
+		// 本文
+		var rowClass = "tr_normal";
+		if(hasValue(item.state_total)) {
+			rowClass = "state_total" + item.state_total;
+		} else if(hasValue(item.state)) {
+			rowClass = "state" + item.state;
+		}
+
+		var row = [];
+		row.push("<tr class='" + rowClass + "'>");
+
+		// レベル表記
+		row.push("<td width='3%'>" + mark + x + "</td>");
+
+		// 動画
+		if(hasValue(item.video1)){
+			// ニコニコ
+			row.push("<td width='1.2%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + item.video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>");
+		} else if(hasValue(item.video2)){
+			// YouTube
+			row.push("<td width='1.2%' align='center'><a href='http://www.youtube.com/watch?v=" + item.video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>");
+		} else if(hasValue(item.video3)){
+			// vimeo
+			row.push("<td width='1.2%' align='center'><a href='http://vimeo.com/" + item.video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>");
+		} else {
+			row.push("<td width='1.2%'></td>");
+		}
+
 		// 譜面画像
-		$("<td width='1.2%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + info[i].md5 + "' target='_blank'>♪</a></td>").appendTo(str);
+		row.push("<td width='1.2%' align='center'><a href='https://bms-score-viewer.pages.dev/view?md5=" + item.md5 + "' target='_blank'>♪</a></td>");
 
 		// Mocha Repository
-		$("<td width='1.2%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>").appendTo(str);
+		row.push("<td width='1.2%' align='center'><a href='https://mocha-repository.info/song.php?sha256=" + item.sha256 + "' target='_blank'><img src='style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>");
 
 		// MinIR
-		$("<td width='1.2%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + info[i].sha256 + "/0' target='_blank'><img src='style/minir_logo.gif' border='0' /></a></td>").appendTo(str);
+		row.push("<td width='1.2%' align='center'><a href='https://www.gaftalk.com/minir/#/viewer/song/" + item.sha256 + "/0' target='_blank'><img src='style/minir_logo.gif' border='0' /></a></td>");
 
 		// BMS-IR
-		$("<td width='1.2%' align='center'><a href='https://bms-ir.org/new/song?songmd5=" + info[i].md5 + "' target='_blank'><img src='style/bmsir_logo.gif' border='0' /></a></td>").appendTo(str);
+		row.push("<td width='1.2%' align='center'><a href='https://bms-ir.org/new/song?songmd5=" + item.md5 + "' target='_blank'><img src='style/bmsir_logo.gif' border='0' /></a></td>");
 
 		// rianIR
-		$("<td width='1.2%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='style/rianir_logo.gif' border='0' /></a></td>").appendTo(str);
+		row.push("<td width='1.2%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + item.sha256 + "' target='_blank'><img src='style/rianir_logo.gif' border='0' /></a></td>");
 
 		// STELLAVERSE IR
-		$("<td width='1.2%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='style/stellaverseir_logo.gif' border='0' /></a></td>").appendTo(str);
+		row.push("<td width='1.2%' align='center'><a href='https://ir.stellabms.xyz/charts/" + item.md5 + "' target='_blank'><img src='style/stellaverseir_logo.gif' border='0' /></a></td>");
 
-        // タイトル
-        $("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+		// タイトル
+		row.push("<td width='15%'><a href='https://lr2ir.com/charts/" + item.md5 + "' target='_blank'>" + cellValue(item.title) + "</a></td>");
 
-        // アーティスト
-        var astr = "";
-        if(info[i].url != "" && info[i].url != null) {
-        	if(info[i].artist != "" && info[i].artist != null) {
-        		astr = "<a href='" + info[i].url + "'>" + info[i].artist + "</a>";
-        	} else {
-        		astr = "<a href='" + info[i].url + "'>" + info[i].url + "</a>";
-        	}
-        } else {
-        	if(info[i].artist != "" && info[i].artist != null) {
-        		astr = info[i].artist;
-        	}
-        }
-        if(info[i].url_pack != "" && info[i].url_pack != null) {
-        	if(info[i].name_pack != "" && info[i].name_pack != null) {
-        		astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].name_pack + "</a>)";
-        	} else {
-        		astr += "<br />(<a href='" + info[i].url_pack + "'>" + info[i].url_pack + "</a>)";
-        	}
-        } else {
-        	if(info[i].name_pack != "" && info[i].name_pack != null) {
-        		astr += "<br />(" + info[i].name_pack + ")";
-        	}
-        }
-        $("<td width='12%'>" + astr + "</td>").appendTo(str);
+		// アーティスト
+		var astr = "";
+		if(hasValue(item.url)) {
+			if(hasValue(item.artist)) {
+				astr = "<a href='" + item.url + "'>" + item.artist + "</a>";
+			} else {
+				astr = "<a href='" + item.url + "'>" + item.url + "</a>";
+			}
+		} else {
+			if(hasValue(item.artist)) {
+				astr = item.artist;
+			}
+		}
+		if(hasValue(item.url_pack)) {
+			if(hasValue(item.name_pack)) {
+				astr += "<br />(<a href='" + item.url_pack + "'>" + item.name_pack + "</a>)";
+			} else {
+				astr += "<br />(<a href='" + item.url_pack + "'>" + item.url_pack + "</a>)";
+			}
+		} else {
+			if(hasValue(item.name_pack)) {
+				astr += "<br />(" + item.name_pack + ")";
+			}
+		}
+		row.push("<td width='12%'>" + astr + "</td>");
 
-        // 差分
-        if(info[i].url_diff != "" && info[i].url_diff != null) {
-        	if(info[i].name_diff != "" && info[i].name_diff != null) {
-				$("<td width='12%'><a href='" + info[i].url_diff + "'>" + info[i].name_diff + "</a></td>").appendTo(str);
-        	} else {
-				$("<td width='12%'><a href='" + info[i].url_diff + "'>" + info[i].url_diff + "</a></td>").appendTo(str);
-        	}
-        } else {
-        	if(info[i].name_diff != "" && info[i].name_diff != null) {
-				$("<td width='12%'>" + info[i].name_diff + "</td>").appendTo(str);
-        	} else {
-				$("<td width='12%'></td>").appendTo(str);
-        	}
-        }
+		// 差分
+		if(hasValue(item.url_diff)) {
+			if(hasValue(item.name_diff)) {
+				row.push("<td width='12%'><a href='" + item.url_diff + "'>" + item.name_diff + "</a></td>");
+			} else {
+				row.push("<td width='12%'><a href='" + item.url_diff + "'>" + item.url_diff + "</a></td>");
+			}
+		} else {
+			if(hasValue(item.name_diff)) {
+				row.push("<td width='12%'>" + item.name_diff + "</td>");
+			} else {
+				row.push("<td width='12%'></td>");
+			}
+		}
 
-        // Notes
-        $("<td width='3%'>" + info[i].notes + "</td>").appendTo(str);
+		// Notes
+		row.push("<td width='3%'>" + cellValue(item.notes) + "</td>");
 
-        // TOTAL
-        $("<td width='5%'>" + info[i].total + "</td>").appendTo(str);
+		// TOTAL
+		row.push("<td width='5%'>" + cellValue(item.total) + "</td>");
 
-        // memo
-        $("<td width='3%'>" + info[i].memo + "</td>").appendTo(str);
+		// memo
+		row.push("<td width='3%'>" + cellValue(item.memo) + "</td>");
 
-        // コメント
-        $("<td width='12%'>" + info[i].comment + "</td>").appendTo(str);
+		// コメント
+		row.push("<td width='12%'>" + cellValue(item.comment) + "</td>");
 
-        str.appendTo(obj);
-        count++;
-    }
+		row.push("</tr>");
+		rows.push(row.join(""));
+		count++;
+	}
 
-    // 最後の区切り処理
-    if (obj_sep != null) {
-        obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
-    }
+	// 最後の区切り処理
+	if (sepIndex >= 0) {
+		rows[sepIndex] = makeSeparatorRow(mark, x, count, sepId);
+	}
+
+	// DOMへの反映は最後に1回だけ行う
+	table.innerHTML = rows.join("");
 }
+
 
 </script>
 
