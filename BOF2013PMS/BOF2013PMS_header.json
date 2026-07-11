@@ -1,0 +1,235 @@
+﻿{
+	"name": "BOF2013PMS",
+	"symbol": "BOF2013Plv",
+	"data_url": "https://pmsdatabase.github.io/BOF2013PMS/BOF2013PMS_score.json",
+	"level_order": [
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		8,
+		9,
+		10,
+		11,
+		12,
+		13,
+		14,
+		15,
+		16,
+		17,
+		18,
+		19,
+		20,
+		21,
+		22,
+		23,
+		24,
+		25,
+		26,
+		27,
+		28,
+		29,
+		30,
+		31,
+		32,
+		33,
+		34,
+		35,
+		36,
+		37,
+		38,
+		39,
+		40,
+		41,
+		42,
+		43,
+		44,
+		45,
+		46,
+		47,
+		48,
+		49,
+		50,
+		51,
+		52,
+		53,
+		54,
+		55,
+		"？",
+		"～",
+		"◆"
+	],
+	"course": [
+		{
+			"name": "BOF2013PMS きほん検定 1",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"0e4f51244620c9810ab09aeb09b0b407",
+				"4241d7828ef07118e29626d5e0f00a65",
+				"891ea72c5aa55d5f169e02ad7baaca03",
+				"b91f7a3301e0d50555726ecfdde1c954"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 2",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"90e546da205ad423fec46c3611f16b84",
+				"84535dfae99e4e3a1165079d947f8747",
+				"8915bcf69ac1975963b0eae70e4c7609",
+				"98837ee77563673e763cba6a71d53b93"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 3",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"6fea1dca9a5335a118dde30370257777",
+				"2f465d1950ce51f6fe6ce1fd83bf8cf3",
+				"b810d4d15a34ba4ed39f97526211286d",
+				"2a8388b2f0b532e381198a2ffcb83bfd"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 4",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"2fc071a360ab8868aad7ad2bb9dfd329",
+				"94e7a764d08d55942de57ea96c738d46",
+				"eb2636f739a1f371c142592df398ce6c",
+				"cc0fa7fb146fab3236d67213c6a8f722"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 5",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"14a8cf7ca691174a381576d560e4a76e",
+				"eb75d83d9cf105c415ac5de36ea1f2bb",
+				"68eedb07b741e4a7fcc1cb2f9eb12f03",
+				"d902caf3eed1ee74acfb1e620b98e8a5"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 6",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"cafb12f9afdbc3951c1d5237ef5e5cbe",
+				"a2b83f7d7e76350409e9f793f8abc1f0",
+				"cf2dece20a8cdb8b5ce8253443ce9130",
+				"4491bc616cb90a23f22cdbd8122b35fa"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 7",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"9d79f76a34ca08cec7df4c4a87bcd7f8",
+				"b4d0b1b7c07c8919cf988c8ff39bd34e",
+				"e3deaaff3fe84699a859b58749f48369",
+				"8dfa2c225a6a97c95c80260b14718198"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 8",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"37d4878458a5286f45ddf49c5d33c4ac",
+				"d29576b97753504837164f78262d7c94",
+				"565b1e622b9621c7a53f2752d12a2958",
+				"37d5dde141c2b37f2a03289d92a668fe"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 9",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"51a28d92bbe2279a348a3ab7088a5ae9",
+				"0029811e6da4353da4ece3a057131102",
+				"8e616f818ea8bd427f9050827cc562e6",
+				"7f9bed2fc95bbb1cf7d798c8e49f07d7"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 10",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"2617ca06f9d4d07f6872d53602bdc70c",
+				"4ff56df3f5ae89f9a5672680a9d47ddd",
+				"bbb14ee17a83141288daa499ef65ce46",
+				"9db5cc4d2de998af460b7222f6f247f6"
+			]
+		},
+		{
+			"name": "BOF2013PMS きほん検定 !i",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"42810609d4066a8d889b48d3fb1efed6",
+				"09900452c76ed52a1ffc8e75ffb4ac64",
+				"668eeebf99948ee74bc6f3e3fe04c907",
+				"51f5ae1067e2f4305c4b1de15c631a95"
+			]
+		},
+		{
+			"name": "BOF2013PMS ソショウアポカリプス",
+			"constraint": [
+				"grade_mirror",
+				"gauge_lr2",
+				""
+			],
+			"md5": [
+				"f4394df1f74d890bfb03902c7aad1d2c",
+				"33aabbdc20546704bc444405d505614c",
+				"29f9202df529ef1f7e705dddab9d7347",
+				"daf2f1e8bbc669b6767b6dbe202ff6f7"
+			]
+		}
+	]
+}
