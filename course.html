@@ -1,0 +1,388 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>コースデータ案内所 - PMS Database</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PMSの段位認定・企画・オリジナルコースデータを、LR2およびbeatoraja向けに案内・配布しています。">
+<meta name="keywords" content="PMS,コースデータ,LR2,beatoraja,PMS Database">
+<meta name="bmstable" content="https://pmsdatabase.github.io/course/course_header.json">
+
+<link rel="stylesheet" href="style/css/style_base.css">
+<link rel="stylesheet" href="style/css/style.css" media="screen,print">
+<script src="style/js/jquery-2.0.2.min.js"></script>
+<script src="style/js/openclose.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body id="top">
+
+<div id="container">
+
+<header>
+<nav id="menubar">
+<span style="font-size: 24pt;">
+<ul>
+<li class="current"><a href="home.html" style="text-decoration:none;">PMS Database</a></li> / <li><a href="_pastoral_home.html" style="text-decoration:none;">発狂PMS難易度表</a></li>
+</ul>
+</nav>
+</span>
+</header>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About &amp; Guide</a></li>
+<li><a href="PMSdifficulty.html">Normal Records</a></li>
+<li><a href="insane_PMSdifficulty.html">Insane Records</a></li>
+<li><a href="excluded_PMSdifficulty.html">Excluded Records</a></li>
+<li class="current"><a href="others.html">Others</a></li>
+<li><a href="links.html">Links</a></li>
+</ul>
+</nav>
+
+<div id="contents">
+
+<section>
+
+<h2 id="course-data">コースデータ案内所 - PMS Database</h2>
+<h3 id="last-update"><strong><span style="font-size: 14pt;">UPDATE: 2026/06/20</span></strong></h3>
+
+<p>
+主に LR2IR で配布されていたコースデータを広く収集し、<strong>平均レベル準拠</strong>の難易度表形式でリストしました。このページの URL は、難易度表ツールへの登録に対応しています。<br>
+色分け：黄色は <a href="_pastoral_grade.html" target="_blank">PMS段位認定 2024</a> の課題コース、オレンジ色は <a href="grade.html" target="_blank">PMS Database Grade Courses ver.2022.08</a> の課題コースです。
+</p>
+
+<br>
+
+<h3 id="important-notice">重要なお知らせ</h3>
+
+<p>
+LR2IR の閉鎖、ならびに beatoraja で作成したコースを <a href="https://x.com/ryougae_samurai/status/2012138198982680731" target="_blank">Mocha-Repository から直接ダウンロードできるようになるアップデート</a> があったことなどを総合的に踏まえ、<br>
+
+<strong>2026年6月をもちまして、コース追加のリクエストをはじめ、コースデータ案内所全体の更新を停止することにしました。</strong><br>
+今後このページは「LR2IR に存在したコースデータを beatoraja 用に引き継いだアーカイブ集」として、必要に応じてご利用いただければと思います。
+</p>
+<p>
+■ <a href="https://docs.google.com/spreadsheets/d/1koYXs5JdBL9gdGlPidPoTg0aiifbSeea9yUhv5y3Sx8/edit?gid=1979928781#gid=1979928781" target="_blank">関連作業用のスプレッドシート跡地（PMS Database 関連アンケート場）</a>
+</p>
+
+<br>
+
+<h3 id="update-history">更新履歴</h3>
+<p>2026/06/20　データの刷新を行いました。<br>
+　・ 各コースの LR2IR リンクを魚拓サイトの URL へ暫定的に変更しました。また、コースファイル単品のダウンロードリンクはリンク切れのため削除しました。<br>
+　・ <a href="_pastoral_grade.html" target="_blank">PMS段位認定 2024</a> と <a href="grade.html" target="_blank">PMS Database Grade Courses ver.2022.08</a> の課題コースを追加しました。<br>
+　・ <strong>今回の更新をもって、旧 LR2IR 内に残っていたすべての 9KEYS コースデータの精査が完了しました。これらの更新分のみを一括導入する LR2 用コースファイルは <a href="course/course_update_20260620.zip">こちら</a> です。</strong><br>
+　・ 各譜面の難易度とコースの平均難易度を最新の値に更新しました。ただし P●0 には複数の難易度が混在しているので、もともとの難易度表記（PLv）を優先しています。
+</p>
+
+<br>
+
+<h4 id="openclosebox1_hdr" class="close"><span id="usage">利用方法（クリックで開閉）</span></h4>
+<div id="openclosebox1">
+
+<p>
+LR2 と beatoraja で利用方法や利用できる機能が異なります。
+</p>
+
+<h2 id="usage-lr2">LR2 を利用している場合</h2>
+<p>
+コースファイルをダウンロードし、LR2SETUP 画面へドラッグ＆ドロップして登録した後、LR2 の選曲画面で COURSE/NONSTOP/段位認定 フォルダから選曲します。<br>
+コースファイルは、下記のまとめファイルから一括登録できます。<br>
+登録済みのコースファイルと重複した場合は、選曲画面の TAG EDITOR &gt; DELETE ボタンで削除できます（この操作は既存のクリアランプに影響しません）。
+</p>
+<p>
+■ <a href="course/course_all.lr2crs">全コースファイルセット (2026/06/20)</a>
+</p>
+
+<p>
+■ <a href="course/course_grade.zip">第1～5期 PMS段位認定 (2026/06/20)</a><br>
+■ <a href="course/course_kikaku.zip">公式・合同企画 (2026/06/20)</a><br>
+■ <a href="course/course_others.zip">オリジナル (2026/06/20)</a>
+</p>
+
+<p>
+■ <a href="course/course_update_20260620.zip">2026/06/20 以前にコースファイルを導入済みの方向け・最終更新分一括パッチ</a><br>
+</p>
+
+<p>
+GLAssist（<a href="https://mega.nz/folder/FNFDCQaT#wfv-iI4UuSIaGpP0oFZdtQ/file/pJ9XTYaa" target="_blank">v232</a> / <a href="https://drive.google.com/file/d/1Bm93vUgCbxlfyH0Vh7ZHyMYd9rDozfVR/view?usp=sharing" target="_blank">v135</a>）
+でこのページの URL を読み込むと、各コースのクリア状況（v135）や最新の段位取得状況（v232）を確認できます。<br>
+仕様により、未プレイの段位は所持していても NO SONG と表示されます。また、カスタムフォルダ内からの選曲はできません。
+</p>
+
+
+
+
+<h2 id="usage-beatoraja">beatoraja を利用している場合</h2>
+
+<p>
+このページの URL を難易度表リソースとして登録すると、カスタムフォルダ内にコースリストが出力されますので、そこから選曲してください。<br>
+レベル別の選曲フォルダは表示用のダミーで、選曲には使用できません。
+</p>
+<br>
+</div>
+
+
+
+
+
+
+</section>
+
+
+<!--　　　　　ここから難易度表本体　　　　　-->
+
+<div class="tableflame">
+<table align="center" cellspacing="1" cellpadding=2　border="0" bgcolor="#000000" id="table_int">
+</table>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+// メニュー開閉
+function menu(tName){
+	var tMenu = document.getElementById(tName).style;
+	if (tMenu.display == 'none'){
+		tMenu.display = "block";
+	}else{
+		tMenu.display = "none";
+	}
+}
+
+$(document).ready(function(){
+	$.getJSON($("meta[name=bmstable]").attr("content"), function(header){
+		$.getJSON(header.data_url, function(information){
+			// headerのsort有無で分岐
+			if(header["level_order"]){
+				makeBMSTable(information,header.symbol,header["level_order"]);
+			} else {
+			makeBMSTable(information,header.symbol);
+			}
+		});
+	});
+});
+
+// ソートのための引数追加
+function makeBMSTable(info, mark, order) {
+	// orderが未指定の場合はnull
+	if(typeof order === 'undefined'){
+		order = null;
+	}
+	
+    var x = "";
+    var ev = "";
+    var count = 0;
+    var obj = $("#table_int");
+
+	// ソート
+	if(order != "" && order != null){
+		// herder.jsonにsortが存在する場合は指定順->タイトル順にソート
+		
+		var orderAry = [];
+		for(var l = 0; l < order.length; l++){
+			orderAry.push(order[l].toString());
+		}
+		
+		for(var j = 0; j < info.length; j++){
+		    var index=orderAry.indexOf(info[j]["level"]);
+		    info[j]["_index"]=index;
+		}
+
+		info.sort(function(a,b){
+		    if(a["_index"] < b["_index"]){
+				return -1;
+		    } else if(a["_index"] > b["_index"]){
+				return 1;
+			} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
+				return -1;
+			} else if( a["title"].toLowerCase() > b["title"].toLowerCase() ){
+				return 1;
+			} else {
+	　	　　	return 0;
+			}
+		});
+		for(var k=0; k < info.length; k++){
+			delete info[k]["_index"];
+		}
+	} else {
+		// そうでない場合はレベル順->タイトル順にソート
+		info.sort(
+			function(a,b){
+				var aLv = a["level"].toString();
+				var bLv = b["level"].toString();
+				if(isNaN(a["level"]) == false && isNaN(b["level"]) == false){
+					return a["level"]-b["level"];
+				} else if( aLv < bLv ){
+					return -1;
+				} else if( aLv > bLv ){
+					return 1;
+				} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
+					return -1;
+				} else if( a["title"].toLowerCase() > b["title"].toLowerCase() ){
+					return 1;
+				} else {
+		　	　　	return 0;
+				}
+			}
+		);
+	}
+	
+    // 表のクリア
+    obj.html("");
+    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>平均Lv</td><td align='center'>動画</td><td colspan='2' align='center'>Other IR</td><td align='center'>コースタイトル (+LR2IR)</td><td align='center'>Lv</td><td align='center'>1曲目</td><td align='center'>Lv</td><td align='center'>2曲目</td><td align='center'>Lv</td><td align='center'>3曲目</td><td align='center'>Lv</td><td align='center'>4曲目</td><td align='center'>Lv</td><td align='center'>5曲目</td><td align='center'>memo</td><td align='center'>comment</td></tr>").appendTo(obj);
+
+    var obj_sep = null;
+    for (var i = 0; i < info.length; i++) {
+        // 難度ごとの区切り
+        if (x != info[i].level) {
+            // 前の区切りに譜面数、平均密度を追加
+          	if (obj_sep != null) {
+                obj_sep.html("<td colspan='17' align='center'>" + "<b>" + mark + x + " (" + count + "コース)</b></td>");
+            }
+            obj_sep = $("<tr class='tr_separate' id='" + mark + info[i].level + "'></tr>");
+            obj_sep.appendTo(obj);
+            count = 0;
+            x = info[i].level;
+        }
+        // 本文
+        var str = $("<tr class='tr_normal'></tr>");
+
+        if(info[i].state == 1) {
+        str = $("<tr class='state1'></tr>");
+        }
+        if(info[i].state == 2) {
+        str = $("<tr class='state2'></tr>");
+        }
+        if(info[i].state == 3) {
+        str = $("<tr class='state3'></tr>");
+        }
+        if(info[i].state == 4) {
+        str = $("<tr class='state4'></tr>");
+        }
+        if(info[i].state == 5) {
+        str = $("<tr class='state5'></tr>");
+        }
+        if(info[i].state == 6) {
+        str = $("<tr class='state6'></tr>");
+        }
+        if(info[i].state == 7) {
+        str = $("<tr class='state7'></tr>");
+
+        }
+
+        // コースレベル
+        $("<td width='2%'>" + x + "</td>").appendTo(str);
+        // 動画
+		if(info[i].video1 != "" && info[i].video1 != null){
+			// ニコニコ
+			$("<td width='1.5%' align='center'><a href='http://www.nicovideo.jp/watch/sm" + info[i].video1 + "' target='_blank'><img src='style/nico.gif' border='0' alt='ニコニコ動画' /></a></td>").appendTo(str);
+		} else if(info[i].video2 != "" && info[i].video2 != null){
+			// YouTube
+			$("<td width='1.5%' align='center'><a href='http://www.youtube.com/watch?v=" + info[i].video2 + "' target='_blank'><img src='style/youtube.gif' border='0' alt='Youtube' /></a></td>").appendTo(str);
+		} else if(info[i].video3 != "" && info[i].video3 != null){
+			// vimeo
+			$("<td width='1.5%' align='center'><a href='http://vimeo.com/" + info[i].video3 + "' target='_blank'><img src='style/vimeo.gif' border='0' alt='vimeo' /></a></td>").appendTo(str);
+		} else {
+        	$("<td width='1.5%'></td>").appendTo(str);
+		}
+
+　　　　// Mocha Repository
+　　　　$("<td width='1.5%' align='center'><a href='https://mocha-repository.info/course.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='/style/mochair_logo.gif' border='0' alt='Mocha Repository' /></a></td>").appendTo(str);
+
+　　　　// LR2IR
+　　　　$("<td width='1.5%' align='center'><a href='https://lr2ir.com/courses/" + info[i].lr2_courseid + "' target='_blank'><img src='/style/lr2ir_logo.gif' border='0' alt='LR2IR' /></a></td>").appendTo(str);
+
+        // コースタイトル (+LR2IR)
+        $("<td width='18%'>" + "<a href='https://lr2ir.com/courses/" + info[i].lr2_courseid + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+
+
+	//1曲目
+	
+	// レベル
+        $("<td width='2%'>" + info[i].level_1st + "</td>").appendTo(str);
+        // タイトル
+        $("<td width='9%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5_1st + "' target='_blank'>" + info[i].title_1st + "</a></td>").appendTo(str);
+
+
+	//2曲目
+	
+	// レベル
+        $("<td width='2%'>" + info[i].level_2nd + "</td>").appendTo(str);
+        // タイトル
+        $("<td width='9%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5_2nd + "' target='_blank'>" + info[i].title_2nd + "</a></td>").appendTo(str);
+
+
+	//3曲目
+	
+	// レベル
+        $("<td width='2%'>" + info[i].level_3rd + "</td>").appendTo(str);
+        // タイトル
+        $("<td width='9%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5_3rd + "' target='_blank'>" + info[i].title_3rd + "</a></td>").appendTo(str);
+
+
+	//4曲目
+	
+	// レベル
+        $("<td width='2%'>" + info[i].level_4th + "</td>").appendTo(str);
+        // タイトル
+        $("<td width='9%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5_4th + "' target='_blank'>" + info[i].title_4th + "</a></td>").appendTo(str);
+
+
+	//5曲目
+	
+	// レベル
+        $("<td width='2%'>" + info[i].level_5th + "</td>").appendTo(str);
+        // タイトル
+        $("<td width='9%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5_5th + "' target='_blank'>" + info[i].title_5th + "</a></td>").appendTo(str);
+
+
+        //memo
+        $("<td width='7%'>" + info[i].memo + "</td>").appendTo(str);
+        str.appendTo(str);
+
+
+        // comment
+        $("<td width='10%'><a href='javaScript:menu(\"" + info[i].md5 + "\")'>→</a><div id='" + info[i].md5 + "' style='display:none'>" + info[i].comment + "</div></td>").appendTo(str);
+        str.appendTo(obj);
+        count++;
+    }
+
+    
+    // 最後の区切り処理
+	// マークが抜け落ちてたので追加
+    if (obj_sep != null) {
+        obj_sep.html("<td colspan='17' align='center'>" + "<b>" + mark + x + " (" + count + "コース)</b></td>");
+    }
+}
+</script>
+
+
+
+</div>
+<!--/contents-->
+
+<footer>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+<!--開閉ブロック-->
+<script>
+if (OCwindowWidth() < 3000) {
+	open_close("openclosebox1_hdr", "openclosebox1");
+}
+</script>
+
+
+</body>
+</html>
