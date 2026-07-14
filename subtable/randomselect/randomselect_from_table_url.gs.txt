@@ -1,0 +1,357 @@
+
+// パラメータ記入部
+
+// 難易度表HTMLのURLを記入する。
+const SOURCE_TABLE_URL = "https://pmsdatabase.github.io/insane_PMSdifficulty.html";
+
+// 1レベルあたりの抽出数
+const CHARTS_PER_LEVEL = 5;
+
+// 抽選結果を切り替える間隔。1なら1分ごと。
+const INTERVAL_MINUTES = 1;
+
+// header.json の level_order にないレベルも末尾へ追加する。true / false
+const INCLUDE_UNLISTED_LEVELS = true;
+
+// 抽出対象外にするレベルがあれば文字列で指定する。
+// 例: ["査定中", "除外"]
+const EXCLUDED_LEVELS = ["!i", "査定中"];
+
+
+
+
+
+// 実行部
+
+function doGet(e) {
+  const headerUrl = discoverBmstableUrl_(SOURCE_TABLE_URL);
+  const header = fetchJson_(headerUrl);
+
+  if (!header || !header.data_url) {
+    throw new Error("header.json に data_url がありません。");
+  }
+
+  const scoreUrl = resolveUrl_(headerUrl, String(header.data_url));
+  const score = fetchJson_(scoreUrl);
+
+  if (!Array.isArray(score)) {
+    throw new Error("score.json のルートが配列ではありません。");
+  }
+
+  const seedKey = getSeedKey_(e);
+  const selected = selectCharts_(
+    score,
+    Array.isArray(header.level_order) ? header.level_order : [],
+    seedKey
+  );
+
+  return ContentService
+    .createTextOutput(JSON.stringify(selected, null, 2))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+
+function discoverBmstableUrl_(tableUrl) {
+  const html = fetchText_(tableUrl);
+  const metaTags = html.match(/<meta\b[^>]*>/gi) || [];
+
+  for (let i = 0; i < metaTags.length; i++) {
+    const attributes = parseHtmlAttributes_(metaTags[i]);
+    const name = String(attributes.name || "").toLowerCase();
+
+    if (name === "bmstable" && attributes.content) {
+      const content = decodeHtmlAttribute_(String(attributes.content).trim());
+      return resolveUrl_(tableUrl, content);
+    }
+  }
+
+  throw new Error(
+    '難易度表HTMLに <meta name="bmstable" content="..."> が見つかりません: ' +
+    tableUrl
+  );
+}
+
+
+function parseHtmlAttributes_(tag) {
+  const attributes = {};
+  const pattern = /([^\s=/>]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+))/g;
+  let match;
+
+  while ((match = pattern.exec(tag)) !== null) {
+    const key = String(match[1]).toLowerCase();
+    const value =
+      match[2] !== undefined ? match[2] :
+      match[3] !== undefined ? match[3] :
+      match[4];
+
+    attributes[key] = value;
+  }
+
+  return attributes;
+}
+
+
+function decodeHtmlAttribute_(value) {
+  return value
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">");
+}
+
+
+function resolveUrl_(baseUrl, targetUrl) {
+  const target = String(targetUrl).trim();
+
+  if (/^https?:\/\//i.test(target)) {
+    return target;
+  }
+
+  const baseMatch = String(baseUrl).match(/^(https?):\/\/([^/]+)(\/[^?#]*)?/i);
+  if (!baseMatch) {
+    throw new Error("基準URLが不正です: " + baseUrl);
+  }
+
+  const protocol = baseMatch[1];
+  const origin = protocol + "://" + baseMatch[2];
+  const basePath = baseMatch[3] || "/";
+
+  if (target.indexOf("//") === 0) {
+    return protocol + ":" + target;
+  }
+
+  if (target.charAt(0) === "/") {
+    return origin + normalizePath_(target);
+  }
+
+  const directory = basePath.substring(0, basePath.lastIndexOf("/") + 1);
+  return origin + normalizePath_(directory + target);
+}
+
+
+function normalizePath_(path) {
+  const parts = String(path).split("/");
+  const normalized = [];
+
+  parts.forEach(function(part) {
+    if (part === "" || part === ".") {
+      return;
+    }
+
+    if (part === "..") {
+      normalized.pop();
+      return;
+    }
+
+    normalized.push(part);
+  });
+
+  return "/" + normalized.join("/");
+}
+
+
+function fetchText_(url) {
+  if (!url || !/^https?:\/\//i.test(String(url))) {
+    throw new Error("取得先URLが不正です: " + url);
+  }
+
+  const response = UrlFetchApp.fetch(String(url), {
+    method: "get",
+    followRedirects: true,
+    muteHttpExceptions: true,
+    headers: {
+      "Accept": "text/html,application/xhtml+xml"
+    }
+  });
+
+  const status = response.getResponseCode();
+  if (status < 200 || status >= 300) {
+    throw new Error("HTML取得に失敗しました。HTTP " + status + ": " + url);
+  }
+
+  return response.getContentText("UTF-8").replace(/^\uFEFF/, "");
+}
+
+
+function fetchJson_(url) {
+  if (!url || !/^https?:\/\//i.test(String(url))) {
+    throw new Error("取得先URLが不正です: " + url);
+  }
+
+  const response = UrlFetchApp.fetch(String(url), {
+    method: "get",
+    followRedirects: true,
+    muteHttpExceptions: true,
+    headers: {
+      "Accept": "application/json"
+    }
+  });
+
+  const status = response.getResponseCode();
+  if (status < 200 || status >= 300) {
+    throw new Error("JSON取得に失敗しました。HTTP " + status + ": " + url);
+  }
+
+  const text = response.getContentText("UTF-8").replace(/^\uFEFF/, "");
+
+  try {
+    return JSON.parse(text);
+  } catch (error) {
+    throw new Error("JSONの解析に失敗しました: " + url + "\n" + error.message);
+  }
+}
+
+
+function getSeedKey_(e) {
+  if (e && e.parameter && e.parameter.seed) {
+    return String(e.parameter.seed);
+  }
+
+  const intervalMs = INTERVAL_MINUTES * 60 * 1000;
+  return String(Math.floor(Date.now() / intervalMs));
+}
+
+
+function selectCharts_(score, headerLevelOrder, seedKey) {
+  const groups = new Map();
+  const firstAppearanceOrder = [];
+
+  score.forEach(function(chart) {
+    if (!chart || chart.level === null || chart.level === undefined) {
+      return;
+    }
+
+    const level = String(chart.level);
+    if (level === "" || EXCLUDED_LEVELS.indexOf(level) !== -1) {
+      return;
+    }
+
+    if (!groups.has(level)) {
+      groups.set(level, []);
+      firstAppearanceOrder.push(level);
+    }
+
+    groups.get(level).push(chart);
+  });
+
+  const levelOrder = buildLevelOrder_(
+    groups,
+    headerLevelOrder,
+    firstAppearanceOrder
+  );
+
+  const result = [];
+
+  levelOrder.forEach(function(level) {
+    const charts = groups.get(level) || [];
+    const levelSeed = hashString_(seedKey + "\u0000" + level);
+    const sampled = sampleWithoutReplacement_(
+      charts,
+      CHARTS_PER_LEVEL,
+      levelSeed
+    );
+
+    sampled.forEach(function(chart) {
+      result.push(chart);
+    });
+  });
+
+  return result;
+}
+
+
+function buildLevelOrder_(groups, headerLevelOrder, firstAppearanceOrder) {
+  const result = [];
+  const added = new Set();
+
+  headerLevelOrder.forEach(function(rawLevel) {
+    const level = String(rawLevel);
+
+    if (
+      groups.has(level) &&
+      EXCLUDED_LEVELS.indexOf(level) === -1 &&
+      !added.has(level)
+    ) {
+      result.push(level);
+      added.add(level);
+    }
+  });
+
+  if (INCLUDE_UNLISTED_LEVELS) {
+    firstAppearanceOrder.forEach(function(level) {
+      if (!added.has(level)) {
+        result.push(level);
+        added.add(level);
+      }
+    });
+  }
+
+  return result;
+}
+
+
+function sampleWithoutReplacement_(items, count, seed) {
+  const copied = items.slice();
+  const random = mulberry32_(seed);
+
+  for (let i = copied.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    const temporary = copied[i];
+    copied[i] = copied[j];
+    copied[j] = temporary;
+  }
+
+  return copied.slice(0, Math.min(count, copied.length));
+}
+
+
+function hashString_(text) {
+  let hash = 2166136261;
+
+  for (let i = 0; i < text.length; i++) {
+    hash ^= text.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+
+  return hash >>> 0;
+}
+
+
+function mulberry32_(seed) {
+  let value = seed >>> 0;
+
+  return function() {
+    value += 0x6D2B79F5;
+    let result = value;
+    result = Math.imul(result ^ (result >>> 15), result | 1);
+    result ^= result + Math.imul(result ^ (result >>> 7), result | 61);
+    return ((result ^ (result >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+
+function testSelection() {
+  const headerUrl = discoverBmstableUrl_(SOURCE_TABLE_URL);
+  const header = fetchJson_(headerUrl);
+  const scoreUrl = resolveUrl_(headerUrl, String(header.data_url));
+  const score = fetchJson_(scoreUrl);
+
+  const selected = selectCharts_(
+    score,
+    Array.isArray(header.level_order) ? header.level_order : [],
+    "test"
+  );
+
+  const counts = {};
+  selected.forEach(function(chart) {
+    const level = String(chart.level);
+    counts[level] = (counts[level] || 0) + 1;
+  });
+
+  console.log("難易度表: " + SOURCE_TABLE_URL);
+  console.log("header: " + headerUrl);
+  console.log("score: " + scoreUrl);
+  console.log(JSON.stringify(counts, null, 2));
+  console.log("抽出総数: " + selected.length);
+}
