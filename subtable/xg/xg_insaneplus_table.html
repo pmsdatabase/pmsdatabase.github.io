@@ -3,15 +3,15 @@
 <html lang="ja">
 
 <head>
-<title>PMS XG Overjoy (仮) (2024/12 更新終了)</title>
+<title>PMS XG Insane+ (P●6～11) (仮) (2024/12 更新終了)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="PMS XG Overjoy (仮) の更新終了版難易度表です。">
-<meta name="keywords" content="PMS,発狂PMS,PMS XG Overjoy,PMS Database">
+<meta name="description" content="PMS XG Insane+ (P●6～11) (仮) の更新終了版難易度表です。">
+<meta name="keywords" content="PMS,発狂PMS,PMS XG Insane+,PMS Database">
 
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="bmstable" content="https://pmsdatabase.github.io/subtable/xg/overjoy/xg_overjoy_header.json" />
+<meta name="bmstable" content="https://pmsdatabase.github.io/subtable/xg/insaneplus/xg_insaneplus_header.json" />
 
 <!-- このHTMLは /subtable/xg/ 配置を前提とする -->
 <link rel="stylesheet" href="../../style/css/style_base.css">
@@ -52,12 +52,12 @@
 <div id="contents">
 
 <section>
-<h2 id="pms-xg-overjoy">PMS XG Overjoy (仮) (2024/12 更新終了)</h2>
+<h2 id="pms-xg-insaneplus">PMS XG Insane+ (P●6～11) (仮) (2024/12 更新終了)</h2>
 
 <p>
 <strong>
 (2026/07)　サイト整理の一環で、難易度表のURLを更新しました。旧URLも当面は難易度表として機能しますが、今後はこちらを正とします。<br>
-旧URL：　https://pmsdifficulty.xxxxxxxx.jp/overjoy/table.html
+旧URL：　https://pmsdifficulty.xxxxxxxx.jp/xg_insaneplus/table.html
 </strong>
 </p>
 
@@ -65,13 +65,13 @@
 
 <h3 id="about-this-table">この難易度表について</h3>
 <p>
-この難易度表は、P●12～20 のレベル内格差について、プレイヤーの体感難易度の平均値を小数一位まで読み込むことで細分化できないか？ という実験から始まりましたが、<br>
+この難易度表は、P●6～11 のレベル内格差について、プレイヤーの体感難易度の平均値を小数一位まで読み込むことで細分化できないか？ という実験から始まりましたが、<br>
 その途中で主要本体が LR2 から beatoraja に切り替わったこと、Mocha-Repository の Level Review 機能が 9KEY に対応したこと、発狂PMS難易度表の運営再開に伴い難易度値の同期が困難になったこと、そのほか運営上のいくつかの理由から、2024/12 をもちまして更新終了とさせて頂くことになりました。<br>
 難易度表と査定シートはログとして残しておきますので、必要に応じてご利用ください。たくさんのご意見ありがとうございました！
 </p>
 
 <p>
-■ <a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit#gid=97789294" target="_blank">Overjoy 細分化ワークシート</a><br>
+■ <a href="https://docs.google.com/spreadsheets/d/1r6Qc0dZMRELS2vBnm4SvFsTE8CB4ZjDmQtzV97L4G6Q/edit?gid=743188294#gid=743188294" target="_blank">Insane+ 細分化ワークシート</a><br>
 </p>
 
 <br>
@@ -87,6 +87,20 @@
 </div>
 
 <script language="javascript" type="text/javascript">
+// コメント開閉
+function menu(tName){
+	var target = document.getElementById(tName);
+	if(!target){
+		return;
+	}
+	if(target.style.display == "none"){
+		target.style.display = "block";
+	} else {
+		target.style.display = "none";
+	}
+}
+
+
 $(document).ready(function(){
 	$.getJSON($("meta[name=bmstable]").attr("content"), function(header){
 		$.getJSON(header.data_url, function(information){
@@ -336,8 +350,13 @@ function makeBMSTable(info, mark, order) {
 		// memo
 		$("<td width='5%'>" + (hasValue(info[i].memo) ? info[i].memo : "") + "</td>").appendTo(str);
 
-		// コメント
-		$("<td width='10%'>" + (hasValue(info[i].comment) ? info[i].comment : "") + "</td>").appendTo(str);
+		// コメント（旧表と同様に開閉式）
+		if(hasValue(info[i].comment)){
+			var commentId = "comment-" + i;
+			$("<td width='10%'><a href='javascript:void(0);' onclick='menu(\"" + commentId + "\"); return false;'>→</a><div id='" + commentId + "' style='display:none'>" + info[i].comment + "</div></td>").appendTo(str);
+		} else {
+			$("<td width='10%'></td>").appendTo(str);
+		}
 
 		str.appendTo(obj);
 		count++;
