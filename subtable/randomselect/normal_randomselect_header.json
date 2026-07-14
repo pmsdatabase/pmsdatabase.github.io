@@ -2,7 +2,7 @@
 "name" : "PMS Database お題箱 (PLv/5曲/1分間隔)",
 "symbol" : "R-PickupPLv",
 "data_url" : "https://script.google.com/macros/s/AKfycbyRMG6506eslj5ZMHP2p_8ApZqarUjk22PpCMa_9_W2trxeUooIqOdxhSjje84d6rxF/exec",
-"data_url_legacy_GAS" : "None",
+"data_url_legacy_GAS" : "",
 "level_order" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,"45+","?"]
 
 }
