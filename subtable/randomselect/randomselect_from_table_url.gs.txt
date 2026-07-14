@@ -1,3 +1,4 @@
+// Modified with ChatGPT
 
 // パラメータ記入部
 
