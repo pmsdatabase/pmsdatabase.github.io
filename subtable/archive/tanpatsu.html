@@ -86,10 +86,10 @@
 
 <tr>
 <th width="20%">コース名</th>
-<th width="10%">LR2IR</th>
+<th width="15%">LR2IR (Archive)</th>
 <th width="15%">難易度</th>
 <th width="10%">P●換算</th>
-<th width="45%">曲名</th>
+<th width="40%">曲名</th>
 </tr>
 
 <tr>
@@ -339,7 +339,7 @@ function makeBMSTable(info, mark, order) {
         var str = $("<tr class='" + rowClass + "'></tr>");
 
         // レベル表記
-        $("<td width='2%'>" + mark + x + "</td>").appendTo(str);
+        $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
 
         // 動画
 		if(hasValue(info[i].video1)){
@@ -396,9 +396,9 @@ function makeBMSTable(info, mark, order) {
 
         // タイトル
         if(hasValue(info[i].md5)){
-        	$("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+        	$("<td width='13%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
         } else {
-        	$("<td width='15%'>" + info[i].title + "</td>").appendTo(str);
+        	$("<td width='13%'>" + info[i].title + "</td>").appendTo(str);
         }
 
         // アーティスト
