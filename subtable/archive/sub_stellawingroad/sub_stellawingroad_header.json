@@ -1,0 +1,13 @@
+{
+    "name": "準発狂PMS難易度表 Archive (for LR2 2023/07)　- PMS Database",
+    "symbol": "○",
+    "data_url": "https://pmsdatabase.github.io/subtable/archive/sub_stellawingroad/sub_stellawingroad_score.json",
+    "level_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ]
+}
