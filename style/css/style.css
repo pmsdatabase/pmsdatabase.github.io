@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "utf-8";
 
 /* 難易度表用レイアウト */
 
@@ -835,3 +835,111 @@ body.diff {
   overflow-wrap: anywhere;
   word-break: normal;
 }
+
+/* ----- 5列IR対応・月別表用の列位置補正（PMS Database / 2026） -----
+   登録時期, P●, 動画, 譜面, IR×5, タイトル, 本体, 差分, Notes, TOTAL, コメント
+   の15列構成を想定。
+   通常の table-ir5 と異なり、Notesは13列目、TOTALは14列目になる。
+   table要素に class="table-ir5 table-ir5-monthly" を付与して使用。
+*/
+
+/* 通常版のTOTAL幅指定が誤ってNotes列へ当たるため解除 */
+#table_int.table-ir5-monthly tr:not(.tr_separate):not(:first-child) > td:nth-child(13) {
+  white-space: nowrap;
+  min-width: 0;
+  max-width: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* 月別表のTOTAL列は14列目 */
+#table_int.table-ir5-monthly tr:not(.tr_separate):not(:first-child) > td:nth-child(14) {
+  white-space: normal;
+  min-width: 10.5em;
+  max-width: 12em;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* 通常版では9番目のヘッダーセルがTOTALだが、月別表ではNotes */
+#table_int.table-ir5-monthly tr:first-child > td:nth-child(9) {
+  white-space: normal;
+  min-width: 0;
+}
+
+/* 月別表のTOTALヘッダーは10番目のセル */
+#table_int.table-ir5-monthly tr:first-child > td:nth-child(10) {
+  white-space: nowrap;
+  min-width: 9em;
+}
+
+/* 差分列も長いURL等を折り返せるようにする */
+#table_int.table-ir5-monthly tr:not(.tr_separate) > td:nth-child(12) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* 通常版のTOTAL色分けがNotes列へ当たるため解除 */
+#table_int.table-ir5-monthly tr[class*="state_total"] > td:nth-of-type(13) {
+  color: inherit;
+  font-weight: normal;
+}
+
+/* 月別表ではTOTAL色分けを14列目へ適用 */
+#table_int.table-ir5-monthly .state_total10 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total11 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total12 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total13 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total14 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total15 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total16 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total17 > td:nth-of-type(14) {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#table_int.table-ir5-monthly .state_total20 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total21 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total22 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total23 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total24 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total25 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total26 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total27 > td:nth-of-type(14) {
+  color: #ff0000;
+}
+
+#table_int.table-ir5-monthly .state_total30 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total31 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total32 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total33 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total34 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total35 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total36 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total37 > td:nth-of-type(14) {
+  color: #0000ff;
+}
+
+#table_int.table-ir5-monthly .state_total40 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total41 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total42 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total43 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total44 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total45 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total46 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total47 > td:nth-of-type(14) {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+#table_int.table-ir5-monthly .state_total50 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total51 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total52 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total53 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total54 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total55 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total56 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total57 > td:nth-of-type(14) {
+  color: #aaaaaa;
+}
+
