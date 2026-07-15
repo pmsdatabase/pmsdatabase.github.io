@@ -1,7 +1,7 @@
 ﻿{
 "name" : "PMS XG Insane+ (P●6-11) (仮)",
 "symbol" : "PXG●",
-"data_url": "https://pmsdatabase.github.io/subtable/xg/insaneplus/xg_insaneplus_score.json",
+"data_url": "https://pmsdatabase.github.io/subtable/xg/xg_insaneplus_score.json",
 "data_url_GAS" : "https://script.google.com/macros/s/AKfycbxuqS13O5iAc_XpVUljXiuh8OpfMFK1NqBhzxBMraWQhHMl0Ux4RzucBGeXgTflkN1A/exec",
 
 "level_order" : [

@@ -1,7 +1,7 @@
 ﻿{
 "name" : "PMS XG Overjoy (仮)",
 "symbol" : "PXG●",
-"data_url": "https://pmsdatabase.github.io/subtable/xg/overjoy/xg_overjoy_score.json",
+"data_url": "https://pmsdatabase.github.io/subtable/xg/xg_overjoy_score.json",
 "data_url_GAS" : "https://script.google.com/macros/s/AKfycbwxfIvoF6ckhvIF6IWwAK5q424M15QfbeFvbslb8AvlT9JU5Qfiq_kPq-MN_Breag/exec",
 "level_order" : [
 		12,12.1,12.2,12.3,12.4,12.5,12.6,12.7,12.8,12.9,
