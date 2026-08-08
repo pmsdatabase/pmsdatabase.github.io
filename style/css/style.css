@@ -1,0 +1,971 @@
+@charset "utf-8";
+
+/* 難易度表用レイアウト */
+
+body.diff {
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  background-color: #222222;
+  width: auto;
+  min-width: 900px;
+  line-height: 1.5;
+}
+
+.tableflame {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+  background-color: #222222;
+  min-width: 900px;
+}
+
+.tableflame a {
+  color: #0000c0;
+}
+
+.tableflame a:visited {
+  color: #0000c0;
+}
+
+.tr_separate {
+  height: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px #444444;
+  background-color: #aaaaaa;
+}
+
+.tr_normal {
+  background-color: #eeeeee;
+}
+
+
+/* ----- 行色塗りなし (#eeeeee) + TOTAL値分岐 ----- */
+
+.state_total0 {			/* 0.2～0.3% */
+  background-color: #eeeeee;	/* 行色指定 */
+}
+
+
+.state_total10 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total10 {
+	background-color: #eeeeee;	/* 行色指定 */
+}
+
+
+.state_total20 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total20 {
+	background-color: #eeeeee;	/* 行色指定 */
+}
+
+
+.state_total30 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total30 {
+	background-color: #eeeeee;	/* 行色指定 */
+}
+
+
+.state_total40 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total40 {
+	background-color: #eeeeee;	/* 行色指定 */
+}
+
+
+.state_total50 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total50 {
+	background-color: #eeeeee;	/* 行色指定 */
+}
+
+
+
+/* ----- 赤色行 (#ffc0cb) + TOTAL値分岐 ----- */
+
+.state_total1 {			/* 0.2～0.3% */
+  background-color: #ffc0cb;	/* 行色指定 */
+}
+
+
+.state_total11 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total11 {
+	background-color: #ffc0cb;	/* 行色指定 */
+}
+
+
+.state_total21 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total21 {
+	background-color: #ffc0cb;	/* 行色指定 */
+}
+
+
+.state_total31 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total31 {
+	background-color: #ffc0cb;	/* 行色指定 */
+}
+
+
+.state_total41 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total41 {
+	background-color: #ffc0cb;	/* 行色指定 */
+}
+
+
+.state_total51 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total51 {
+	background-color: #ffc0cb;	/* 行色指定 */
+}
+
+
+
+
+/* ----- 青色行 (#add8e6) + TOTAL値分岐 ----- */
+
+.state_total2 {			/* 0.2～0.3% */
+  background-color: #add8e6;	/* 行色指定 */
+}
+
+
+.state_total12 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total12 {
+	background-color: #add8e6;	/* 行色指定 */
+}
+
+
+.state_total22 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total22 {
+	background-color: #add8e6;	/* 行色指定 */
+}
+
+
+.state_total32 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total32 {
+	background-color: #add8e6;	/* 行色指定 */
+}
+
+
+.state_total42 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total42 {
+	background-color: #add8e6;	/* 行色指定 */
+}
+
+
+.state_total52 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total52 {
+	background-color: #add8e6;	/* 行色指定 */
+}
+
+
+
+
+/* ----- 緑色行 (#90ee90) + TOTAL値分岐 ----- */
+
+.state_total3 {			/* 0.2～0.3% */
+  background-color: #90ee90;	/* 行色指定 */
+}
+
+
+.state_total13 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total13 {
+	background-color: #90ee90;	/* 行色指定 */
+}
+
+
+.state_total23 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total23 {
+	background-color: #90ee90;	/* 行色指定 */
+}
+
+
+.state_total33 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total33 {
+	background-color: #90ee90;	/* 行色指定 */
+}
+
+
+.state_total43 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total43 {
+	background-color: #90ee90;	/* 行色指定 */
+}
+
+
+.state_total53 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total53 {
+	background-color: #90ee90;	/* 行色指定 */
+}
+
+
+
+
+/* ----- 黄色行 (#fffaa5) + TOTAL値分岐 ----- */
+
+.state_total4 {			/* 0.2～0.3% */
+  background-color: #fffaa5;	/* 行色指定 */
+}
+
+
+.state_total14 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total14 {
+	background-color: #fffaa5;	/* 行色指定 */
+}
+
+
+.state_total24 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total24 {
+	background-color: #fffaa5;	/* 行色指定 */
+}
+
+
+.state_total34 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total34 {
+	background-color: #fffaa5;	/* 行色指定 */
+}
+
+
+.state_total44 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total44 {
+	background-color: #fffaa5;	/* 行色指定 */
+}
+
+
+.state_total54 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total54 {
+	background-color: #fffaa5;	/* 行色指定 */
+}
+
+
+
+
+/* ----- 灰色行 (#bcbcbc) + TOTAL値分岐 ----- */
+
+.state_total5 {			/* 0.2～0.3% */
+  background-color: #bcbcbc;	/* 行色指定 */
+}
+
+
+.state_total15 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total15 {
+	background-color: #bcbcbc;	/* 行色指定 */
+}
+
+
+.state_total25 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total25 {
+	background-color: #bcbcbc;	/* 行色指定 */
+}
+
+
+.state_total35 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total35 {
+	background-color: #bcbcbc;	/* 行色指定 */
+}
+
+
+.state_total45 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total45 {
+	background-color: #bcbcbc;	/* 行色指定 */
+}
+
+
+.state_total55 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total55 {
+	background-color: #bcbcbc;	/* 行色指定 */
+}
+
+
+
+
+/* ----- オレンジ行 (#ffc766) + TOTAL値分岐 ----- */
+
+.state_total6 {			/* 0.2～0.3% */
+  background-color: #ffc766;	/* 行色指定 */
+}
+
+
+.state_total16 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total16 {
+	background-color: #ffc766;	/* 行色指定 */
+}
+
+
+.state_total26 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total26 {
+	background-color: #ffc766;	/* 行色指定 */
+}
+
+
+.state_total36 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total36 {
+	background-color: #ffc766;	/* 行色指定 */
+}
+
+
+.state_total46 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total46 {
+	background-color: #ffc766;	/* 行色指定 */
+}
+
+
+.state_total56 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total56 {
+	background-color: #ffc766;	/* 行色指定 */
+}
+
+
+
+
+/* ----- 青緑行 (#83d1c9) + TOTAL値分岐 ----- */
+
+.state_total7 {			/* 0.2～0.3% */
+  background-color: #83d1c9;	/* 行色指定 */
+}
+
+
+.state_total17 > td:nth-of-type(10){	/* ～ 0.1% */
+	color: #ff0000;			/* 赤字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total17 {
+	background-color: #83d1c9;	/* 行色指定 */
+}
+
+
+.state_total27 > td:nth-of-type(10){	/* 0.1 ～ 0.2% */
+	color: #ff0000;			/* 赤字 */
+}
+.state_total27 {
+	background-color: #83d1c9;	/* 行色指定 */
+}
+
+
+.state_total37 > td:nth-of-type(10){	/* 0.3 ～ 0.4% */
+	color: #0000ff;			/* 青字 */
+}
+.state_total37 {
+	background-color: #83d1c9;	/* 行色指定 */
+}
+
+
+.state_total47 > td:nth-of-type(10){	/* 0.4% ～ */
+	color: #0000ff;			/* 青字 */
+	font-weight: bold;		/* 太字 */
+}
+.state_total47 {
+	background-color: #83d1c9;	/* 行色指定 */
+}
+
+
+.state_total57 > td:nth-of-type(10){	/* TOTAL未定義 */
+	color: #aaaaaa;			/* 灰字 */
+}
+.state_total57 {
+	background-color: #83d1c9;	/* 行色指定 */
+}
+
+
+
+/* ----- マウスカーソルを合わせた行を水色にハイライト ----- */
+
+
+.tableflame tr.tr_normal:hover {
+  background-color: #70f0f0;
+}
+
+
+.tableflame tr.state_total0:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total10:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total20:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total30:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total40:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total50:hover {
+  background-color: #70f0f0;
+}
+
+.tableflame tr.state_total1:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total11:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total21:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total31:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total41:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total51:hover {
+  background-color: #70f0f0;
+}
+
+.tableflame tr.state_total2:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total12:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total22:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total32:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total42:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total52:hover {
+  background-color: #70f0f0;
+}
+
+.tableflame tr.state_total3:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total13:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total23:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total33:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total43:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total53:hover {
+  background-color: #70f0f0;
+}
+
+.tableflame tr.state_total4:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total14:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total24:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total34:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total44:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total54:hover {
+  background-color: #70f0f0;
+}
+
+.tableflame tr.state_total5:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total15:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total25:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total35:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total45:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total55:hover {
+  background-color: #70f0f0;
+}
+
+.tableflame tr.state_total6:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total16:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total26:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total36:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total46:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total56:hover {
+  background-color: #70f0f0;
+}
+
+.tableflame tr.state_total7:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total17:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total27:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total37:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total47:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state_total57:hover {
+  background-color: #70f0f0;
+}
+
+/* ----- 色分け改変ここまで ----- */
+
+
+
+
+/* --- 旧色分け ---*/
+
+
+.state1 {
+  background-color: #ffc0cb;
+}
+
+.state2 {
+  background-color: #add8e6;
+}
+
+.state3 {
+  background-color: #90ee90;
+}
+
+.state4 {
+  background-color: #fffaa5;
+}
+
+.state5 {
+  background-color: #bcbcbc;
+}
+
+.state6 {
+  background-color: #ffc766;
+}
+
+.state7 {
+  background-color: #83d1c9;
+}
+
+
+.tableflame tr.state1:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state2:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state3:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state4:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state5:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state6:hover {
+  background-color: #70f0f0;
+}
+.tableflame tr.state7:hover {
+  background-color: #70f0f0;
+}
+
+
+/* --- TOTAL(+増加率) 欄の文字色 --- */
+/*
+  total / increase 分離後は、TOTALセル自身に total-rate-* クラスを付与する。
+  他のCSSにあるID付きセレクタ等より確実に優先させるため、
+  #table_int td.total-rate-* と !important を使用する。
+*/
+
+#table_int td.total-rate-red-bold {
+  color: #ff0000 !important;
+  font-weight: bold !important;
+}
+
+#table_int td.total-rate-red {
+  color: #ff0000 !important;
+}
+
+#table_int td.total-rate-blue {
+  color: #0000ff !important;
+}
+
+#table_int td.total-rate-blue-bold {
+  color: #0000ff !important;
+  font-weight: bold !important;
+}
+
+
+
+
+.tableflame table {
+  font-size: 12px;
+}
+
+.tableflame td {
+  table-layout: fixed;
+}
+
+.tableflame tr, a {
+  /*Firefox向け*/
+  -moz-transition-property: color, background-color;
+  -moz-transition-duration: 0.2s;
+  /*Chrome、Safari向け*/
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-duration: 0.2s;
+  /*Opera向け*/
+  -o-transition-property: color, background-color;
+  -o-transition-duration: 0.2s;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.tableflame tr.tr_normal:hover {
+  background-color: #70f0f0;
+}
+
+/* ----- 5列IR対応テーブル幅調整（PMS Database / 2026） -----
+   LV, 動画, 譜面, IR×5, タイトル, 本体, 差分, Notes, TOTAL, memo, コメント
+   の15列構成を想定。table要素に class="table-ir5" を付与して使用。
+*/
+
+#table_int.table-ir5 {
+  table-layout: auto;
+}
+
+#table_int.table-ir5 td {
+  box-sizing: border-box;
+}
+
+/* IRアイコン列は中身を折り返さない */
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(4),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(5),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(6),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(7),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(8) {
+  white-space: nowrap;
+}
+
+/* 長い曲名・URL・コメントはFirefoxで列幅を圧迫しないように折り返し許可 */
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(9),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(10),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(11),
+#table_int.table-ir5 tr:not(.tr_separate) > td:nth-child(15) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* TOTAL列は標準的な値を1行表示し、極端に長い値は折り返しを許可 */
+#table_int.table-ir5 tr:not(.tr_separate):not(:first-child) > td:nth-child(13) {
+  white-space: normal;
+  min-width: 10.5em;
+  max-width: 12em;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ヘッダーのTOTAL(+増加率)は1行表示を維持 */
+#table_int.table-ir5 tr:first-child > td:nth-child(9) {
+  white-space: nowrap;
+  min-width: 9em;
+}
+
+/* 旧テンプレートのTOTAL色分けは10列目前提なので、5列IR版では13列目へ移す */
+#table_int.table-ir5 tr[class*="state_total"] > td:nth-of-type(10) {
+  color: inherit;
+  font-weight: normal;
+}
+
+#table_int.table-ir5 .state_total10 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total11 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total12 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total13 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total14 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total15 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total16 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total17 > td:nth-of-type(13) {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#table_int.table-ir5 .state_total20 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total21 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total22 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total23 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total24 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total25 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total26 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total27 > td:nth-of-type(13) {
+  color: #ff0000;
+}
+
+#table_int.table-ir5 .state_total30 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total31 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total32 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total33 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total34 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total35 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total36 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total37 > td:nth-of-type(13) {
+  color: #0000ff;
+}
+
+#table_int.table-ir5 .state_total40 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total41 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total42 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total43 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total44 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total45 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total46 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total47 > td:nth-of-type(13) {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+#table_int.table-ir5 .state_total50 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total51 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total52 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total53 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total54 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total55 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total56 > td:nth-of-type(13),
+#table_int.table-ir5 .state_total57 > td:nth-of-type(13) {
+  color: #aaaaaa;
+}
+
+/* ----- 5列IR対応・Notes/TOTALなしコンパクト表（PMS Database / 2026） -----
+   LV, 動画, 譜面, IR×5, タイトル, 本体, 差分, memo, コメント
+   の13列構成を想定。table要素に class="table-ir5-compact" を付与して使用。
+*/
+
+#table_int.table-ir5-compact {
+  table-layout: auto;
+}
+
+#table_int.table-ir5-compact td {
+  box-sizing: border-box;
+}
+
+/* IRアイコン列は中身を折り返さない */
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(4),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(5),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(6),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(7),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(8) {
+  white-space: nowrap;
+}
+
+/* 長い曲名・URL・コメントはFirefoxで列幅を圧迫しないように折り返し許可 */
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(9),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(10),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(11),
+#table_int.table-ir5-compact tr:not(.tr_separate) > td:nth-child(13) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ----- 5列IR対応・月別表用の列位置補正（PMS Database / 2026） -----
+   登録時期, P●, 動画, 譜面, IR×5, タイトル, 本体, 差分, Notes, TOTAL, コメント
+   の15列構成を想定。
+   通常の table-ir5 と異なり、Notesは13列目、TOTALは14列目になる。
+   table要素に class="table-ir5 table-ir5-monthly" を付与して使用。
+*/
+
+/* 通常版のTOTAL幅指定が誤ってNotes列へ当たるため解除 */
+#table_int.table-ir5-monthly tr:not(.tr_separate):not(:first-child) > td:nth-child(13) {
+  white-space: nowrap;
+  min-width: 0;
+  max-width: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* 月別表のTOTAL列は14列目 */
+#table_int.table-ir5-monthly tr:not(.tr_separate):not(:first-child) > td:nth-child(14) {
+  white-space: normal;
+  min-width: 10.5em;
+  max-width: 12em;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* 通常版では9番目のヘッダーセルがTOTALだが、月別表ではNotes */
+#table_int.table-ir5-monthly tr:first-child > td:nth-child(9) {
+  white-space: normal;
+  min-width: 0;
+}
+
+/* 月別表のTOTALヘッダーは10番目のセル */
+#table_int.table-ir5-monthly tr:first-child > td:nth-child(10) {
+  white-space: nowrap;
+  min-width: 9em;
+}
+
+/* 差分列も長いURL等を折り返せるようにする */
+#table_int.table-ir5-monthly tr:not(.tr_separate) > td:nth-child(12) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* 通常版のTOTAL色分けがNotes列へ当たるため解除 */
+#table_int.table-ir5-monthly tr[class*="state_total"] > td:nth-of-type(13) {
+  color: inherit;
+  font-weight: normal;
+}
+
+/* 月別表ではTOTAL色分けを14列目へ適用 */
+#table_int.table-ir5-monthly .state_total10 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total11 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total12 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total13 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total14 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total15 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total16 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total17 > td:nth-of-type(14) {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#table_int.table-ir5-monthly .state_total20 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total21 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total22 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total23 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total24 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total25 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total26 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total27 > td:nth-of-type(14) {
+  color: #ff0000;
+}
+
+#table_int.table-ir5-monthly .state_total30 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total31 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total32 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total33 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total34 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total35 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total36 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total37 > td:nth-of-type(14) {
+  color: #0000ff;
+}
+
+#table_int.table-ir5-monthly .state_total40 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total41 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total42 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total43 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total44 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total45 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total46 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total47 > td:nth-of-type(14) {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+#table_int.table-ir5-monthly .state_total50 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total51 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total52 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total53 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total54 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total55 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total56 > td:nth-of-type(14),
+#table_int.table-ir5-monthly .state_total57 > td:nth-of-type(14) {
+  color: #aaaaaa;
+}
+

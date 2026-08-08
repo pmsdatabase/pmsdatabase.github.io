@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="shift_jis"?>
+<!--曲は上から順に登録されます。-->
+<courselist>
+
+	<course>
+		<title>第5期 PMS段位認定 3級</title>
+		<line>9</line>
+		<hash>0000000000200000000000000000394ddbe48c3617f79c98ca45ba65fd7ab0ea0b18bfaf473f5213318e4ed80af5cad556c60f22136a44877e57598b2382c89bdaa9b82aec369c0fbf72343f14004d35</hash>
+		<type>2</type>
+	</course>
+
+	<course>
+		<title>第5期 PMS段位認定 2級</title>
+		<line>9</line>
+		<hash>0000000000200000000000000000394dd81c13cda4757412c17216b69586d7fd496199ab091d7d1f941ee1e4b7a97333b734d90df2f1d39aea64d37010260d3e06d222a2d0466222dbf3e65da5bac141</hash>
+		<type>2</type>
+	</course>
+
+	<course>
+		<title>第5期 PMS段位認定 1級</title>
+		<line>9</line>
+		<hash>0000000000200000000000000000394d82c7e1a8bb492f8bac99e69da17b1cc63bc652c43af9610ea8c65e416a8692a9afd9acbc0b3f02d4b79689527ff7a77ad2a6f16b16f6b65b3bfea9045641e484</hash>
+		<type>2</type>
+	</course>
+
+</courselist>

@@ -1,0 +1,99 @@
+name: Update PMS manual score JSON
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Serialize all PMS score JSON workflows to avoid simultaneous pushes.
+concurrency:
+  group: pms-score-json-update
+  cancel-in-progress: false
+
+jobs:
+  update-manual-score-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and validate manually updated score JSON from GAS
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          fetch_json() {
+            local url="$1"
+            local destination="$2"
+            local temporary="${destination}.tmp"
+
+            mkdir -p "$(dirname "$destination")"
+            rm -f "$temporary"
+
+            curl \
+              --fail \
+              --silent \
+              --show-error \
+              --location \
+              --retry 4 \
+              --retry-delay 15 \
+              --retry-all-errors \
+              --connect-timeout 30 \
+              --max-time 600 \
+              "$url" \
+              --output "$temporary"
+
+            python - "$temporary" <<'PY'
+          import json
+          import sys
+
+          path = sys.argv[1]
+          with open(path, "r", encoding="utf-8") as file:
+              data = json.load(file)
+
+          if not isinstance(data, list):
+              raise SystemExit(f"Top-level JSON is not an array: {path}")
+          PY
+
+            mv "$temporary" "$destination"
+          }
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbxs0SEMVRmpaFWpYXv5ywIUb98rr_EdNLUwAcp-_SutnUXYkTCfy2ZmXwlI6pHVtEjL/exec" \
+            "BOFPMS/BOFPMS_score.json"
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbznxBGv__vlFdNa-W04ZRgWfsxlV7ITsWH-Cs8rrUYiikc38If47GZMRVP7iNF91v4Rqg/exec" \
+            "subtable/monthly/monthly_score.json"
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbzvuzB7gkEZi-GbbXihPsaChsGVwr73wer48BM-Lwe-BXo3hM6-YvbcUTIYUYWPZgQ/exec" \
+            "subtable/included/normal_score.json"
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycby-lIlcuTGGy5TLI2KkF4BcQCxN0NTPhnUYuwrpMWagrRLl10gtejuUKYPl1gqMbDS1kw/exec" \
+            "subtable/included/insane_score.json"
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            BOFPMS/BOFPMS_score.json \
+            subtable/monthly/monthly_score.json \
+            subtable/included/normal_score.json \
+            subtable/included/insane_score.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update PMS manual score JSON"
+            git push
+          fi

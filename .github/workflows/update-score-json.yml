@@ -1,0 +1,97 @@
+name: Update PMS main score JSON
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every hour at minute 17 (UTC).
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+# Serialize all PMS score JSON workflows to avoid simultaneous pushes.
+concurrency:
+  group: pms-score-json-update
+  cancel-in-progress: false
+
+jobs:
+  update-main-score-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and validate main score JSON from GAS
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          fetch_json() {
+            local url="$1"
+            local destination="$2"
+            local temporary="${destination}.tmp"
+
+            mkdir -p "$(dirname "$destination")"
+            rm -f "$temporary"
+
+            curl \
+              --fail \
+              --silent \
+              --show-error \
+              --location \
+              --retry 4 \
+              --retry-delay 15 \
+              --retry-all-errors \
+              --connect-timeout 30 \
+              --max-time 600 \
+              "$url" \
+              --output "$temporary"
+
+            python - "$temporary" <<'PY'
+          import json
+          import sys
+
+          path = sys.argv[1]
+          with open(path, "r", encoding="utf-8") as file:
+              data = json.load(file)
+
+          if not isinstance(data, list):
+              raise SystemExit(f"Top-level JSON is not an array: {path}")
+          PY
+
+            mv "$temporary" "$destination"
+          }
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbzMmaVluHP9y-j2kbBCYhlA2e3CoZziGP72uKbidbD3G9Ck6d0j78v3fKK2ImtAOr3WxQ/exec" \
+            "pmsdatabase/pmsdatabase_score.json"
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbzCBO9JE3ioysfQUj8FHPt_CGDggmDn1_kzuo_JXFjH9canvUS9888tSLax73wr23Ls/exec" \
+            "insane_pmsdatabase/insane_pmsdatabase_score.json"
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbxzqSUFt9FBehey18eiEVSFUfdK2P3snkLkdMYfkjk55aWmGHcuHZ_TGo7eiMHfQB5a/exec" \
+            "excluded_pmsdatabase/excluded_pmsdatabase_score.json"
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            pmsdatabase/pmsdatabase_score.json \
+            insane_pmsdatabase/insane_pmsdatabase_score.json \
+            excluded_pmsdatabase/excluded_pmsdatabase_score.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update PMS main score JSON"
+            git push
+          fi

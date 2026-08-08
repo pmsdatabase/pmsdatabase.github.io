@@ -1,0 +1,7 @@
+﻿{
+"name" : "PDB式難易度表作成例",
+"symbol" : "P例",
+"data_url" : "./score.json",
+"level_order" : [1,2,3,4,5,6,7,8,9,12,50,55,99,"!i"]
+
+}

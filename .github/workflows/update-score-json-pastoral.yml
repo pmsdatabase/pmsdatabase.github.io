@@ -1,0 +1,92 @@
+name: Update PMS pastoral score JSON
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Every hour at minute 47 (UTC), separated from the main workflow.
+    - cron: "47 * * * *"
+
+permissions:
+  contents: write
+
+# Serialize all PMS score JSON workflows to avoid simultaneous pushes.
+concurrency:
+  group: pms-score-json-update
+  cancel-in-progress: false
+
+jobs:
+  update-pastoral-score-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and validate pastoral score JSON from GAS
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          fetch_json() {
+            local url="$1"
+            local destination="$2"
+            local temporary="${destination}.tmp"
+
+            mkdir -p "$(dirname "$destination")"
+            rm -f "$temporary"
+
+            curl \
+              --fail \
+              --silent \
+              --show-error \
+              --location \
+              --retry 4 \
+              --retry-delay 15 \
+              --retry-all-errors \
+              --connect-timeout 30 \
+              --max-time 600 \
+              "$url" \
+              --output "$temporary"
+
+            python - "$temporary" <<'PY'
+          import json
+          import sys
+
+          path = sys.argv[1]
+          with open(path, "r", encoding="utf-8") as file:
+              data = json.load(file)
+
+          if not isinstance(data, list):
+              raise SystemExit(f"Top-level JSON is not an array: {path}")
+          PY
+
+            mv "$temporary" "$destination"
+          }
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbxRSYi7GF78Fs8kivgmGZ7P2Edgl0AVBtu_llutQ7C5dsABApdSDvavBS5dWbAcvnmGow/exec" \
+            "pastoral_insane/score.json"
+
+          fetch_json \
+            "https://script.google.com/macros/s/AKfycbwGsYk0YhnkbO3laX_9GxqTUQu30Kbk2z6YfOl3ojW943MirAQtlr912alrgY1gdfyu/exec" \
+            "pastoral_overjoy/score.json"
+
+      - name: Commit and push if changed
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            pastoral_insane/score.json \
+            pastoral_overjoy/score.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update PMS pastoral score JSON"
+            git push
+          fi

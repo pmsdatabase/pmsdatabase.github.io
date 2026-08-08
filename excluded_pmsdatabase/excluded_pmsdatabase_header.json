@@ -1,0 +1,27 @@
+﻿{
+    "name": "PMSデータベース隔離枠",
+    "symbol": "P†",
+    "data_url": "https://pmsdatabase.github.io/excluded_pmsdatabase/excluded_pmsdatabase_score.json",
+
+    "data_url_json": "https://pmsdatabase.github.io/excluded_pmsdatabase/excluded_pmsdatabase_score.json",
+    "data_url_GAS_Legacy": "",
+    "data_url_GAS_New": "https://script.google.com/macros/s/AKfycbxzqSUFt9FBehey18eiEVSFUfdK2P3snkLkdMYfkjk55aWmGHcuHZ_TGo7eiMHfQB5a/exec",
+    
+    "level_order": [
+        "要調査",
+        "入手困難",
+        "キー音無し",
+        "18keys(DPPMS)",
+        "大人の事情",
+        "R18",
+        "下ネタ",
+        "グロゴア",
+        "ジャンプスケア",
+        "センシティブ",
+        "取り下げ",
+        "修正あり",
+        "マイナーチェンジ",
+        "その他",
+        "その他B"
+    ]
+}
