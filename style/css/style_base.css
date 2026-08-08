@@ -175,17 +175,47 @@ iframe { max-width: 100%; }
   #container { width: calc(100% - 16px); margin: 8px 0 0 8px; }
   .site-header { padding-top: 0; }
   .site-brand { font-size: 1.5rem; margin-bottom: 14px; line-height: 1.4; }
+
+  /* スマホでは current の下線を文字幅だけにする。
+     ブランド名は改行時にも一まとまりで扱い、旧レイアウトに近い見え方にする。 */
+  .site-brand a {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .site-nav { margin-bottom: 24px; line-height: 1.4; }
   .site-nav li { display: block; margin-bottom: 3px; }
-  .site-nav a { display: block; padding: 7px 10px; }
+  .site-nav a {
+    display: inline-block;
+    padding: 7px 0;
+  }
   .site-nav a:hover,
   .site-nav a:focus,
   .site-nav li.current a { border-bottom-width: 2px; }
+
   #contents h2, #contents h3, #contents h4 { padding-left: 12px; padding-right: 12px; }
   #contents p { padding-left: 12px; padding-right: 12px; }
   #new dt { float: none; width: auto; }
   #new dd { padding-left: 0; margin-bottom: 7px; }
+
+  /* 通常の難易度表本体ではなく、案内ページ等で使う共通表だけを小さくする。 */
+  .ta1 th, .ta1 td,
+  .ta2 th, .ta2 td,
+  .ta3 th, .ta3 td,
+  .ta4 th, .ta4 td {
+    font-size: 11px;
+    line-height: 1.45;
+    padding: 2px 3px;
+  }
+  .ta1 th.tamidashi,
+  .ta1 caption,
+  .ta2 th.tamidashi,
+  .ta3 th.ta3midashi {
+    font-size: 12px;
+  }
   .ta2, .ta3 { width: 100% !important; }
+
   .list { padding: 10px; }
   .list img { float: none; width: auto; max-width: 100%; margin-right: 0; }
   .ws, .wl { width: 94%; }
