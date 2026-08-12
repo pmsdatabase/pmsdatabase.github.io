@@ -394,7 +394,7 @@ function makeBMSTable(info, mark, order) {
         if (x != info[i].level) {
             // 前の区切りに譜面数を追加
           	if (obj_sep != null) {
-                obj_sep.html("<td colspan='16' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
+                obj_sep.html("<td colspan='16' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
             }
             levelIdCounter++;
             obj_sep = $("<tr class='tr_separate' id='level-" + levelIdCounter + "'></tr>");
@@ -519,7 +519,7 @@ function makeBMSTable(info, mark, order) {
     // 最後の区切り処理
 	// マークが抜け落ちてたので追加
     if (obj_sep != null) {
-        obj_sep.html("<td colspan='16' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
+        obj_sep.html("<td colspan='16' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td>");
     }
 
 
