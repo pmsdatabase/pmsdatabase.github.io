@@ -969,3 +969,281 @@ body.diff {
   color: #aaaaaa;
 }
 
+/* ----- 難易度表 レベルジャンプ（PMS Database / 2026） ----- */
+.level-jump {
+  margin: 0 18px 14px;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.level-jump a {
+  display: inline-block;
+  margin: 1px 2px;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #ffffff;
+  font-size: 14px;
+  line-height: 1.65;
+  text-decoration: none;
+}
+
+.level-jump a:hover,
+.level-jump a:focus {
+  background: var(--accent-soft);
+}
+
+
+
+/* ----- 6列IR対応テーブル幅調整（PMS Database / 2026） -----
+   LV, 動画, 譜面, IR×6, タイトル, 本体, 差分, Notes, TOTAL, memo, コメント
+   の16列構成を想定。table要素に class="table-ir6" を付与して使用。
+   5列IR版(table-ir5)は段階的な更新中の互換用として残す。
+*/
+
+#table_int.table-ir6 {
+  table-layout: auto;
+}
+
+#table_int.table-ir6 td {
+  box-sizing: border-box;
+}
+
+/* IRアイコン列は中身を折り返さない */
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(4),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(5),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(6),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(7),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(8),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(9) {
+  white-space: nowrap;
+}
+
+/* 長い曲名・URL・コメントはFirefoxで列幅を圧迫しないように折り返し許可 */
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(10),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(11),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(12),
+#table_int.table-ir6 tr:not(.tr_separate) > td:nth-child(16) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* TOTAL列は標準的な値を1行表示し、極端に長い値は折り返しを許可 */
+#table_int.table-ir6 tr:not(.tr_separate):not(:first-child) > td:nth-child(14) {
+  white-space: normal;
+  min-width: 10.5em;
+  max-width: 12em;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ヘッダーのTOTAL(+増加率)は1行表示を維持。colspanは子要素数に数えないため9番目のまま */
+#table_int.table-ir6 tr:first-child > td:nth-child(9) {
+  white-space: nowrap;
+  min-width: 9em;
+}
+
+/* 旧テンプレートのTOTAL色分けは10列目前提なので、6列IR版では14列目へ移す */
+#table_int.table-ir6 tr[class*="state_total"] > td:nth-of-type(10) {
+  color: inherit;
+  font-weight: normal;
+}
+
+#table_int.table-ir6 .state_total10 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total11 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total12 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total13 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total14 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total15 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total16 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total17 > td:nth-of-type(14) {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#table_int.table-ir6 .state_total20 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total21 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total22 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total23 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total24 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total25 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total26 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total27 > td:nth-of-type(14) {
+  color: #ff0000;
+}
+
+#table_int.table-ir6 .state_total30 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total31 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total32 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total33 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total34 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total35 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total36 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total37 > td:nth-of-type(14) {
+  color: #0000ff;
+}
+
+#table_int.table-ir6 .state_total40 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total41 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total42 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total43 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total44 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total45 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total46 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total47 > td:nth-of-type(14) {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+#table_int.table-ir6 .state_total50 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total51 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total52 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total53 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total54 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total55 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total56 > td:nth-of-type(14),
+#table_int.table-ir6 .state_total57 > td:nth-of-type(14) {
+  color: #aaaaaa;
+}
+
+/* ----- 6列IR対応・Notes/TOTALなしコンパクト表（PMS Database / 2026） -----
+   LV, 動画, 譜面, IR×6, タイトル, 本体, 差分, memo, コメント
+   の14列構成を想定。table要素に class="table-ir6-compact" を付与して使用。
+*/
+
+#table_int.table-ir6-compact {
+  table-layout: auto;
+}
+
+#table_int.table-ir6-compact td {
+  box-sizing: border-box;
+}
+
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(4),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(5),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(6),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(7),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(8),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(9) {
+  white-space: nowrap;
+}
+
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(10),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(11),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(12),
+#table_int.table-ir6-compact tr:not(.tr_separate) > td:nth-child(14) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ----- 6列IR対応・月別表用の列位置補正（PMS Database / 2026） -----
+   登録時期, P●, 動画, 譜面, IR×6, タイトル, 本体, 差分, Notes, TOTAL, コメント
+   の16列構成を想定。
+   table要素に class="table-ir6 table-ir6-monthly" を付与して使用。
+*/
+
+/* 月別表の6番目IRは10列目。通常版の折り返し指定を解除して1行表示 */
+#table_int.table-ir6-monthly tr:not(.tr_separate) > td:nth-child(10) {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* 通常版のTOTAL幅指定がNotes列へ当たるため解除 */
+#table_int.table-ir6-monthly tr:not(.tr_separate):not(:first-child) > td:nth-child(14) {
+  white-space: nowrap;
+  min-width: 0;
+  max-width: none;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* 月別表のTOTAL列は15列目 */
+#table_int.table-ir6-monthly tr:not(.tr_separate):not(:first-child) > td:nth-child(15) {
+  white-space: normal;
+  min-width: 10.5em;
+  max-width: 12em;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* ヘッダーセル数はIRのcolspan増加では変わらない */
+#table_int.table-ir6-monthly tr:first-child > td:nth-child(9) {
+  white-space: normal;
+  min-width: 0;
+}
+
+#table_int.table-ir6-monthly tr:first-child > td:nth-child(10) {
+  white-space: nowrap;
+  min-width: 9em;
+}
+
+/* 月別表の差分列は13列目 */
+#table_int.table-ir6-monthly tr:not(.tr_separate) > td:nth-child(13) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* 通常版のTOTAL色分けがNotes列へ当たるため解除 */
+#table_int.table-ir6-monthly tr[class*="state_total"] > td:nth-of-type(14) {
+  color: inherit;
+  font-weight: normal;
+}
+
+/* 月別表ではTOTAL色分けを15列目へ適用 */
+#table_int.table-ir6-monthly .state_total10 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total11 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total12 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total13 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total14 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total15 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total16 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total17 > td:nth-of-type(15) {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+#table_int.table-ir6-monthly .state_total20 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total21 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total22 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total23 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total24 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total25 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total26 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total27 > td:nth-of-type(15) {
+  color: #ff0000;
+}
+
+#table_int.table-ir6-monthly .state_total30 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total31 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total32 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total33 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total34 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total35 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total36 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total37 > td:nth-of-type(15) {
+  color: #0000ff;
+}
+
+#table_int.table-ir6-monthly .state_total40 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total41 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total42 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total43 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total44 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total45 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total46 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total47 > td:nth-of-type(15) {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+#table_int.table-ir6-monthly .state_total50 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total51 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total52 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total53 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total54 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total55 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total56 > td:nth-of-type(15),
+#table_int.table-ir6-monthly .state_total57 > td:nth-of-type(15) {
+  color: #aaaaaa;
+}

@@ -129,14 +129,14 @@ function makeBMSTable(info, mark, order) {
 	
     // 表のクリア
     obj.html("");
-    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>譜面</td><td colspan='5' align='center'>beatoraja IR</td><td align='center'>タイトル</td><td align='center'>ジャンル</td><td align='center'>本体</td><td align='center'>keys</td><td align='center'>notes</td></tr>").appendTo(obj);
+    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>譜面</td><td colspan='6' align='center'>beatoraja IR</td><td align='center'>タイトル</td><td align='center'>ジャンル</td><td align='center'>本体</td><td align='center'>keys</td><td align='center'>notes</td></tr>").appendTo(obj);
     var obj_sep = null;
     for (var i = 0; i < info.length; i++) {
         // 難度ごとの区切り
         if (x != info[i].level) {
             // 前の区切りに譜面数、平均密度を追加
           	if (obj_sep != null) {
-                obj_sep.html("<td colspan='12' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
+                obj_sep.html("<td colspan='13' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
             }
             obj_sep = $("<tr class='tr_separate' id='" + mark + info[i].level + "'></tr>");
             obj_sep.appendTo(obj);
@@ -187,7 +187,8 @@ function makeBMSTable(info, mark, order) {
 　　　　$("<td width='1%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='../../style/rianir_logo.gif' border='0' alt='rianIR' /></a></td>").appendTo(str);
 
 　　　　// STELLAVERSE IR
-　　　　$("<td width='1%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='../../style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);
+　　　　$("<td width='1%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='../../style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);　　　　// Kaleid IR
+　　　　$("<td width='1%' align='center'><a href='https://kaleidir.com/charts/" + info[i].sha256 + "' target='_blank'><img src='../../style/kaleidir_logo.gif' border='0' alt='Kaleid IR' /></a></td>").appendTo(str);
 
         // タイトル
         $("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
@@ -235,7 +236,7 @@ function makeBMSTable(info, mark, order) {
     // 最後の区切り処理
 	// マークが抜け落ちてたので追加
     if (obj_sep != null) {
-        obj_sep.html("<td colspan='12' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
+        obj_sep.html("<td colspan='13' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)</b></td>");
     }
 }
 </script>
@@ -248,6 +249,8 @@ function makeBMSTable(info, mark, order) {
 
 
 
+
+<center><a href="#">△TOPへ戻る</a></center>
 
 </body>
 </html>

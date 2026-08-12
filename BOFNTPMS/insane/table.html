@@ -35,7 +35,7 @@ BOFNT(BOF2023)PMSで発狂●1以上の査定がついた譜面のリストで�
 <!--　　　　　ここから難易度表本体　　　　　-->
 
 <div id="container" class="tableflame">
-<table align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#000000" id="table_int" class="table-ir5">
+<table align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#000000" id="table_int" class="table-ir6">
 </table>
 </div>
 
@@ -133,7 +133,7 @@ function makeBMSTable(info, mark, order) {
 	
     // 表のクリア
     obj.html("");
-    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='5' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>").appendTo(obj);
+    $("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='6' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>Notes</td><td align='center'>TOTAL(+増加率)</td><td align='center'>memo</td><td align='center'>コメント</td></tr>").appendTo(obj);
     var obj_sep = null;
     var levelIdCounter = 0;
     for (var i = 0; i < info.length; i++) {
@@ -141,7 +141,7 @@ function makeBMSTable(info, mark, order) {
         if (x != info[i].level) {
             // 前の区切りに譜面数、平均密度を追加
           	if (obj_sep != null) {
-                obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
+                obj_sep.html("<td colspan='16' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
             }
             levelIdCounter++;
             obj_sep = $("<tr class='tr_separate' id='level-" + levelIdCounter + "'></tr>");
@@ -207,7 +207,8 @@ function makeBMSTable(info, mark, order) {
 　　　　$("<td width='1%' align='center'><a href='https://rianir.link/pages/ranking/ranking.php?sha256=" + info[i].sha256 + "' target='_blank'><img src='../../style/rianir_logo.gif' border='0' alt='rianIR' /></a></td>").appendTo(str);
 
 　　　　// STELLAVERSE IR
-　　　　$("<td width='1%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='../../style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);
+　　　　$("<td width='1%' align='center'><a href='https://ir.stellabms.xyz/charts/" + info[i].md5 + "' target='_blank'><img src='../../style/stellaverseir_logo.gif' border='0' alt='STELLAVERSE IR' /></a></td>").appendTo(str);　　　　// Kaleid IR
+　　　　$("<td width='1%' align='center'><a href='https://kaleidir.com/charts/" + info[i].sha256 + "' target='_blank'><img src='../../style/kaleidir_logo.gif' border='0' alt='Kaleid IR' /></a></td>").appendTo(str);
 
         // タイトル
         $("<td width='15%'>" + "<a href='https://lr2ir.com/charts/" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
@@ -269,7 +270,7 @@ function makeBMSTable(info, mark, order) {
     // 最後の区切り処理
 	// マークが抜け落ちてたので追加
     if (obj_sep != null) {
-        obj_sep.html("<td colspan='15' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
+        obj_sep.html("<td colspan='16' align='center'>" + "<b>" + mark + x + " (" + count + "譜面)　　<a href='#container'>▲TOP</a></b></td>");
     }
 }
 </script>
@@ -283,6 +284,8 @@ function makeBMSTable(info, mark, order) {
 
 
 
+
+<center><a href="#">△TOPへ戻る</a></center>
 
 </body>
 </html>
