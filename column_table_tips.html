@@ -129,7 +129,7 @@ GitHub Pages の初回公開には少し時間がかかります。それでも�
 
 <p>
 <strong>■ その他レガシーな手法として紹介していたもの</strong><br>
-md5 であれば <a href="http://stairway.sakura.ne.jp/bms/tabletool/editor.html" target="_blank">Stairway 氏のツール</a> や <a href="https://misty.orz.hm/tools.html" target="_blank">BMSHashUtil (misty.ls04 氏)</a> を使う方法が、
+md5 であれば <a href="http://stairway.sakura.ne.jp/bms/tabletool/editor.html" target="_blank">Stairway 氏のツール</a> や <a href="https://mistyblue.info/tools.html" target="_blank">BMSHashUtil (misty.ls04 氏)</a> を使う方法が、
 sha256 であれば <a href="https://www.ponsoftware.com/archiver/download.htm" target="_blank">Explzh</a> の右クリック拡張メニュー「SHA256ハッシュ値…」から調べる方法があります。また、LR2と連携する難易度表ツール　GLAssist / BeMusicSeeker を導入済であれば、曲検索→IRページを開く をクリックすると 旧LR2IR の末尾が ～bmsmd5={md5} となっているURLにジャンプするので、そこから入手できます。<br>
 </p>
 
@@ -206,7 +206,7 @@ Ribbit氏運営の BMS Search Alternative は bmsid と bmsmd5 の大部分* が
 <div id="openclosebox4">
 <p>
 Google Apps Script を利用し、日時を指定して Googleスプレッドシートのバックアップを作成する方法が 様々なページで解説されています。万一の備えにオススメ。<br>
-<s>しかもスプレッドシートはどれだけ作成しても Google Drive の容量を消費しない仕様</strong> らしく、基本的に作り得のようです。<br>
+<s>しかもスプレッドシートはどれだけ作成しても Google Drive の容量を消費しない仕様 らしく、基本的に作り得のようです。<br>
 </s> (2023/12 頃より) 容量を消費する仕様に変わったのでトリガーの設定にご注意ください。バックアップを定期的に削除する想定で、専用のフォルダを作成しておくと効率的と思われます。<br>
 
 <br>
@@ -331,7 +331,7 @@ Google Apps Script は、Googleドライブ > 左上の新規ボタン > その�
 </p>
 <p>
 <strong><span style="font-size: 10pt;">
-=IF(AND(<span style="color: #0000ff;">C4</span>="",<span style="color: #0000ff;">D4</span>=""),"","{"&"""level"":"""&<span style="color: #0000ff;">A4</span>&""""&","&"""title"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">B4</span>,"\","\\"),"""","\""")&""""&","&"""sha256"":"""&if(<span style="color: #0000ff;">C4</span>="","",if(ISERROR(Find("sha256",<span style="color: #0000ff;">C4</span>)),<span style="color: #0000ff;">C4</span>,mid(<span style="color: #0000ff;">C4</span>,Find("sha256",<span style="color: #0000ff;">C4</span>)+7,64)))&""""&","&"""md5"":"""&if(<span style="color: #0000ff;">D4</span>="","",if(ISERROR(Find("bmsmd5",<span style="color: #0000ff;">D4</span>)),<span style="color: #0000ff;">D4</span>,mid(<span style="color: #0000ff;">D4</span>,Find("bmsmd5",<span style="color: #0000ff;">D4</span>)+7,32)))&""""&","&"""video1"":"""&<span style="color: #0000ff;">E4</span>&""""&","&"""video2"":"""&<span style="color: #0000ff;">F4</span>&""""&","&"""url_diff"":"""&""&<span style="color: #0000ff;">G4</span>&""","&"""name_diff"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">H4</span>,"\","\\"),"""","\""")&""""&","&"""url"":"""&<span style="color: #0000ff;">I4</span>&""","&"""artist"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">J4</span>,"\","\\"),"""","\""")&""""&","&"""<span style="color: #ff0000;">memo</span>"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">P4</span>,"\","\\"),"""","\""")&""""&","&"""comment"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">K4</span>,"\","\\"),"""","\""")&""""&","&"""state"":"""&<span style="color: #0000ff;">L4</span>&""""&"},")</span></p>
+=IF(AND(<span style="color: #0000ff;">C4</span>="",<span style="color: #0000ff;">D4</span>=""),"","{"&"""level"":"""&<span style="color: #0000ff;">A4</span>&""""&","&"""title"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">B4</span>,"\","\\"),"""","\""")&""""&","&"""sha256"":"""&if(<span style="color: #0000ff;">C4</span>="","",if(ISERROR(Find("sha256",<span style="color: #0000ff;">C4</span>)),<span style="color: #0000ff;">C4</span>,mid(<span style="color: #0000ff;">C4</span>,Find("sha256",<span style="color: #0000ff;">C4</span>)+7,64)))&""""&","&"""md5"":"""&if(<span style="color: #0000ff;">D4</span>="","",if(ISERROR(Find("bmsmd5",<span style="color: #0000ff;">D4</span>)),<span style="color: #0000ff;">D4</span>,mid(<span style="color: #0000ff;">D4</span>,Find("bmsmd5",<span style="color: #0000ff;">D4</span>)+7,32)))&""""&","&"""video1"":"""&<span style="color: #0000ff;">E4</span>&""""&","&"""video2"":"""&<span style="color: #0000ff;">F4</span>&""""&","&"""url_diff"":"""&""&<span style="color: #0000ff;">G4</span>&""","&"""name_diff"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">H4</span>,"\","\\"),"""","\""")&""""&","&"""url"":"""&<span style="color: #0000ff;">I4</span>&""","&"""artist"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">J4</span>,"\","\\"),"""","\""")&""""&","&"""<span style="color: #ff0000;">memo</span>"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">P4</span>,"\","\\"),"""","\""")&""""&","&"""comment"":"""&SUBSTITUTE(SUBSTITUTE(<span style="color: #0000ff;">K4</span>,"\","\\"),"""","\""")&""""&","&"""state"":"""&<span style="color: #0000ff;">L4</span>&""""&"},")</span></strong></p>
 <p>
 (3) M4セルの内容をフィルドラッグで列方向に埋めなおせば完了です。新たに出力されたJSONコードで「score.json」を更新してください。<br>
 (4) 反映が確認できたら、以降は「memo」をお好きな列に移動させて頂いて大丈夫です。サンプルシートではJ列(曲作者名) と K列(コメント) の間に挿入しました。
@@ -413,6 +413,8 @@ $("＜td width='25%'＞<span style="color: #ff0000;">＜a href='javaScript:menu(
 
 
 </section>
+
+<center><a href="#">△TOPへ戻る</a></center>
 
 </div>
 <!--/contents-->
