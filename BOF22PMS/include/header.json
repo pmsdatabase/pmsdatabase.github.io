@@ -1,0 +1,8 @@
+﻿{
+"name" : "BOF22 同梱譜面一覧表",
+"symbol" : "lv",
+"data_url" : "https://script.google.com/macros/s/AKfycbwjkMDM1Cv3hkeQ88ttSoW8Gybh7Aj7ul8xOT-cNCgnbb4hJ-oZq6Sdp7TCStU3j6bE3w/exec",
+"data_url_GAS" : "https://script.google.com/macros/s/AKfycbwjkMDM1Cv3hkeQ88ttSoW8Gybh7Aj7ul8xOT-cNCgnbb4hJ-oZq6Sdp7TCStU3j6bE3w/exec",
+"level_order" : [0,1,2,3,4,5,6,7,8,9,10,11,12,"13+"]
+
+}
