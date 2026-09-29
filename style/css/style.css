@@ -1264,3 +1264,9 @@ body.diff {
  #table-search-mobile-help { display: block; font-size: 12px; }
  #table-search-input { display: block; width: 100%; max-width: 100%; box-sizing: border-box; padding-left: 4px; padding-right: 4px; }
 }
+
+/* viewport未指定の旧式サブ表は、縮小表示を保ったまま端末幅で検索欄を切り替える */
+@media screen and (max-device-width: 480px) {
+ .table-search-legacy #table-search-mobile-help { display: block; font-size: 12px; }
+ .table-search-legacy #table-search-input { display: block; width: 100%; max-width: 100%; box-sizing: border-box; padding-left: 4px; padding-right: 4px; }
+}

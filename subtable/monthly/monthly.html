@@ -72,6 +72,13 @@ PMS Database（本表）へ新規登録したPMS譜面を難易度表形式で�
 
 <h2 id="difficulty-table">難易度表</h2>
 
+<div id="table-search" class="level-jump">
+<label for="table-search-input">検索:</label>
+<input type="text" id="table-search-input" placeholder="タイトル・作者・差分作者・md5・sha256" oninput="handleSearchInput(event)" onkeydown="handleSearchKeydown(event)" oncompositionend="handleSearchInput(event)" enterkeyhint="search" aria-describedby="table-search-mobile-help">
+<span id="table-search-status"></span>
+<span id="table-search-mobile-help">スマートフォンでの検索は非常に重いのでご注意ください。3文字以上入力して検索キーを押すと実行します。</span>
+</div>
+
 <div id="level-jump" class="level-jump"></div>
 
 <!--　　　　　ここから難易度表本体　　　　　-->
@@ -236,6 +243,146 @@ function getTotalRateClass(totalRate) {
 function makeSeparatorRow(level, count, sepId) {
 	return "<tr class='tr_separate' id='" + sepId + "'><td colspan='16' align='center'><b>" + level + " (" + count + "譜面)</b>　　<a href='#top'>▲TOP</a></td></tr>";
 }
+
+var searchableRows = [];
+var searchSeparators = [];
+var searchTimer = null;
+
+// 簡易検索用文字列
+function getSearchText(item) {
+	return [
+		item.title,
+		item.artist,
+		item.name_diff,
+		item.md5,
+		item.sha256
+	].join(" ").toLowerCase();
+}
+
+
+// 描画済みの譜面行と難易度見出しを検索用に保持
+function cacheSearchData(info) {
+	searchableRows = [];
+	searchSeparators = [];
+
+	var currentSeparator = null;
+	var itemIndex = 0;
+
+	$("#table_int tr").each(function() {
+		if($(this).hasClass("tr_separate")) {
+			currentSeparator = {
+				element: this,
+				matchCount: 0
+			};
+			searchSeparators.push(currentSeparator);
+			return;
+		}
+
+		if(itemIndex < info.length &&
+			(this.className == "tr_normal" || /^state/.test(this.className))) {
+
+			searchableRows.push({
+				element: this,
+				text: getSearchText(info[itemIndex]),
+				parentSeparator: currentSeparator
+			});
+
+			itemIndex++;
+		}
+	});
+}
+
+
+// スマホは検索キーで実行し、空欄に戻したときは全件表示する
+function isMobileSearch() {
+ return window.matchMedia("(max-width: 480px)").matches;
+}
+
+function handleSearchInput(event) {
+ clearTimeout(searchTimer);
+ if(event && event.isComposing) {
+  return;
+ }
+ var input = document.getElementById("table-search-input");
+ if(!isMobileSearch() || $.trim(input.value) == "") {
+  filterTable();
+ } else {
+  document.getElementById("table-search-status").textContent = "検索キーで結果を更新";
+ }
+}
+
+function handleSearchKeydown(event) {
+ if(isMobileSearch() && event.key == "Enter" && !event.isComposing && event.keyCode != 229) {
+  event.preventDefault();
+  filterTable();
+ }
+}
+
+// 簡易検索
+function filterTable() {
+	clearTimeout(searchTimer);
+
+	searchTimer = setTimeout(function() {
+		var input = document.getElementById("table-search-input");
+		var status = document.getElementById("table-search-status");
+
+		if(!input || !status) {
+			return;
+		}
+
+		var query = $.trim(input.value.toLowerCase());
+		var minLength = isMobileSearch() ? 3 : 2;
+		var showAll = query.length < minLength;
+		var totalMatches = 0;
+
+		// 検索で表が縮んでも、ページ下端によるスクロール位置の補正を防ぐ
+		var container = document.getElementById("container");
+		if(container) {
+			container.style.minHeight = showAll ? "" :
+				Math.max(0, window.innerHeight - container.getBoundingClientRect().top) + "px";
+		}
+
+		for(var i = 0; i < searchSeparators.length; i++) {
+			searchSeparators[i].matchCount = 0;
+		}
+
+		for(var j = 0; j < searchableRows.length; j++) {
+			var item = searchableRows[j];
+			var isMatch = showAll || item.text.indexOf(query) != -1;
+
+			var display = isMatch ? "" : "none";
+			if(item.element.style.display != display) {
+				item.element.style.display = display;
+			}
+
+			if(isMatch) {
+				totalMatches++;
+
+				if(item.parentSeparator) {
+					item.parentSeparator.matchCount++;
+				}
+			}
+		}
+
+		for(var k = 0; k < searchSeparators.length; k++) {
+			var separator = searchSeparators[k];
+
+			var separatorDisplay = (showAll || separator.matchCount > 0) ? "" : "none";
+			if(separator.element.style.display != separatorDisplay) {
+				separator.element.style.display = separatorDisplay;
+			}
+		}
+
+		if(query.length == 0) {
+			status.innerHTML = "";
+		} else if(query.length < minLength) {
+			status.innerHTML = minLength + "文字以上入力してください";
+		} else {
+			status.innerHTML = totalMatches + " 件表示中";
+		}
+	}, 250);
+}
+
 
 function makeBMSTable(info, mark, order) {
 	// orderが未指定の場合はnull
@@ -503,6 +650,10 @@ function makeBMSTable(info, mark, order) {
 			$("<a></a>").attr("href", "#" + this.id).text(label).appendTo(levelJump);
 		});
 	}
+
+	// 簡易検索用データを保持
+	cacheSearchData(info);
+	filterTable();
 }
 
 

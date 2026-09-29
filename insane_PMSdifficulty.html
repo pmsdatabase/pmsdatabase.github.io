@@ -147,8 +147,9 @@
 
 <div id="table-search" class="level-jump">
 <label for="table-search-input">検索:</label>
-<input type="text" id="table-search-input" placeholder="タイトル・作者・差分作者・md5・sha256" oninput="filterTable()" style="width: 400px; max-width: 70%; padding: 1px 6px; border: 1px solid var(--line); border-radius: 3px; background: #ffffff; font: inherit;">
-<span id="table-search-status" style="margin-left: 6px;"></span>
+<input type="text" id="table-search-input" placeholder="タイトル・作者・差分作者・md5・sha256" oninput="handleSearchInput(event)" onkeydown="handleSearchKeydown(event)" oncompositionend="handleSearchInput(event)" enterkeyhint="search" aria-describedby="table-search-mobile-help">
+<span id="table-search-status"></span>
+<span id="table-search-mobile-help">スマートフォンでの検索は非常に重いのでご注意ください。3文字以上入力して検索キーを押すと実行します。</span>
 </div>
 
 <div id="level-jump" class="level-jump"></div>
@@ -165,10 +166,6 @@
 // TOTAL(+増加率)欄の文字色を使用するか
 // false: 文字色変更なし / true: total / notesから求めた増加率に応じて文字色を変更
 var ENABLE_TOTAL_RATE_COLOR = true;
-
-var searchableRows = [];
-var searchSeparators = [];
-var searchTimer = null;
 
 // メニュー開閉
 function menu(tName){
@@ -305,14 +302,18 @@ function makeSeparatorRow(mark, level, count, sepId) {
 	return "<tr class='tr_separate' id='" + sepId + "'><td colspan='16' align='center'><b>" + mark + level + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td></tr>";
 }
 
+var searchableRows = [];
+var searchSeparators = [];
+var searchTimer = null;
+
 // 簡易検索用文字列
 function getSearchText(item) {
 	return [
-		cellValue(item.title),
-		cellValue(item.artist),
-		cellValue(item.name_diff),
-		cellValue(item.md5),
-		cellValue(item.sha256)
+		item.title,
+		item.artist,
+		item.name_diff,
+		item.md5,
+		item.sha256
 	].join(" ").toLowerCase();
 }
 
@@ -350,6 +351,31 @@ function cacheSearchData(info) {
 }
 
 
+// スマホは検索キーで実行し、空欄に戻したときは全件表示する
+function isMobileSearch() {
+ return window.matchMedia("(max-width: 480px)").matches;
+}
+
+function handleSearchInput(event) {
+ clearTimeout(searchTimer);
+ if(event && event.isComposing) {
+  return;
+ }
+ var input = document.getElementById("table-search-input");
+ if(!isMobileSearch() || $.trim(input.value) == "") {
+  filterTable();
+ } else {
+  document.getElementById("table-search-status").textContent = "検索キーで結果を更新";
+ }
+}
+
+function handleSearchKeydown(event) {
+ if(isMobileSearch() && event.key == "Enter" && !event.isComposing && event.keyCode != 229) {
+  event.preventDefault();
+  filterTable();
+ }
+}
+
 // 簡易検索
 function filterTable() {
 	clearTimeout(searchTimer);
@@ -363,7 +389,8 @@ function filterTable() {
 		}
 
 		var query = $.trim(input.value.toLowerCase());
-		var showAll = query.length < 2;
+		var minLength = isMobileSearch() ? 3 : 2;
+		var showAll = query.length < minLength;
 		var totalMatches = 0;
 
 		// 検索で表が縮んでも、ページ下端によるスクロール位置の補正を防ぐ
@@ -381,7 +408,10 @@ function filterTable() {
 			var item = searchableRows[j];
 			var isMatch = showAll || item.text.indexOf(query) != -1;
 
-			item.element.style.display = isMatch ? "" : "none";
+			var display = isMatch ? "" : "none";
+			if(item.element.style.display != display) {
+				item.element.style.display = display;
+			}
 
 			if(isMatch) {
 				totalMatches++;
@@ -395,14 +425,16 @@ function filterTable() {
 		for(var k = 0; k < searchSeparators.length; k++) {
 			var separator = searchSeparators[k];
 
-			separator.element.style.display =
-				(showAll || separator.matchCount > 0) ? "" : "none";
+			var separatorDisplay = (showAll || separator.matchCount > 0) ? "" : "none";
+			if(separator.element.style.display != separatorDisplay) {
+				separator.element.style.display = separatorDisplay;
+			}
 		}
 
 		if(query.length == 0) {
 			status.innerHTML = "";
-		} else if(query.length < 2) {
-			status.innerHTML = "2文字以上入力してください";
+		} else if(query.length < minLength) {
+			status.innerHTML = minLength + "文字以上入力してください";
 		} else {
 			status.innerHTML = totalMatches + " 件表示中";
 		}
@@ -623,10 +655,6 @@ function makeBMSTable(info, mark, order) {
 	// DOMへの反映は最後に1回だけ行う
 	table.innerHTML = rows.join("");
 
-	// 簡易検索用データを保持
-	cacheSearchData(info);
-	filterTable();
-
 
 	// レベル見出しへのジャンプリンク
 	var levelJump = $("#level-jump");
@@ -637,6 +665,10 @@ function makeBMSTable(info, mark, order) {
 			$("<a></a>").attr("href", "#" + this.id).text(label).appendTo(levelJump);
 		});
 	}
+
+	// 簡易検索用データを保持
+	cacheSearchData(info);
+	filterTable();
 }
 
 

@@ -295,11 +295,11 @@ function makeSeparatorRow(mark, level, count, sepId) {
 // 簡易検索用文字列
 function getSearchText(item) {
 	return [
-		cellValue(item.title),
-		cellValue(item.artist),
-		cellValue(item.name_diff),
-		cellValue(item.md5),
-		cellValue(item.sha256)
+		item.title,
+		item.artist,
+		item.name_diff,
+		item.md5,
+		item.sha256
 	].join(" ").toLowerCase();
 }
 
@@ -323,7 +323,7 @@ function cacheSearchData(info) {
 		}
 
 		if(itemIndex < info.length &&
-			(this.className == "tr_normal" || /^state[1-7]$/.test(this.className))) {
+			(this.className == "tr_normal" || /^state/.test(this.className))) {
 
 			searchableRows.push({
 				element: this,
