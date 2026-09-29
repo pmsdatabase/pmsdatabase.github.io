@@ -1247,3 +1247,20 @@ body.diff {
 #table_int.table-ir6-monthly .state_total57 > td:nth-of-type(15) {
   color: #aaaaaa;
 }
+
+/* 難易度表の簡易検索 */
+#table-search-input {
+ width: 400px;
+ max-width: 70%;
+ padding: 1px 6px;
+ border: 1px solid var(--line, #c8c8c8);
+ border-radius: 3px;
+ background: #ffffff;
+ font: inherit;
+}
+#table-search-status { margin-left: 6px; }
+#table-search-mobile-help { display: none; }
+@media screen and (max-width: 480px) {
+ #table-search-mobile-help { display: block; font-size: 12px; }
+ #table-search-input { display: block; width: 100%; max-width: 100%; box-sizing: border-box; padding-left: 4px; padding-right: 4px; }
+}
