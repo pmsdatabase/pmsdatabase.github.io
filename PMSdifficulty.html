@@ -17,6 +17,13 @@
 <link href="style/css/style.css" rel="stylesheet" type="text/css" media="screen,print" />
 <script src="style/js/jquery-2.0.2.min.js"></script>
 <script type="text/javascript" src="style/js/openclose.js"></script>
+<style type="text/css">
+#table-search-mobile-help { display: none; }
+@media screen and (max-width: 480px) {
+ #table-search-mobile-help { display: block; font-size: 12px; }
+ #table-search-input::placeholder { color: transparent; }
+}
+</style>
 </head>
 
 <body>
@@ -138,8 +145,9 @@
 
 <div id="table-search" class="level-jump">
 <label for="table-search-input">検索:</label>
-<input type="text" id="table-search-input" placeholder="タイトル・作者・差分作者・md5・sha256" oninput="filterTable()" style="width: 400px; max-width: 70%; padding: 1px 6px; border: 1px solid var(--line); border-radius: 3px; background: #ffffff; font: inherit;">
+<input type="text" id="table-search-input" placeholder="タイトル・作者・差分作者・md5・sha256" oninput="handleSearchInput(event)" onkeydown="handleSearchKeydown(event)" oncompositionend="handleSearchInput(event)" enterkeyhint="search" aria-describedby="table-search-mobile-help" style="width: 480px; max-width: 70%; padding: 1px 6px; border: 1px solid var(--line); border-radius: 3px; background: #ffffff; font: inherit;">
 <span id="table-search-status" style="margin-left: 6px;"></span>
+<span id="table-search-mobile-help">タイトル・作者・差分作者・md5・sha256<br>3文字以上入力して検索キーを押してください</span>
 </div>
 
 <div id="level-jump" class="level-jump"></div>
@@ -336,6 +344,31 @@ function cacheSearchData(info) {
 }
 
 
+// スマホは検索キーで実行し、空欄に戻したときは全件表示する
+function isMobileSearch() {
+ return window.matchMedia("(max-width: 480px)").matches;
+}
+
+function handleSearchInput(event) {
+ clearTimeout(searchTimer);
+ if(event && event.isComposing) {
+  return;
+ }
+ var input = document.getElementById("table-search-input");
+ if(!isMobileSearch() || $.trim(input.value) == "") {
+  filterTable();
+ } else {
+  document.getElementById("table-search-status").textContent = "検索キーで結果を更新";
+ }
+}
+
+function handleSearchKeydown(event) {
+ if(isMobileSearch() && event.key == "Enter" && !event.isComposing && event.keyCode != 229) {
+  event.preventDefault();
+  filterTable();
+ }
+}
+
 // 簡易検索
 function filterTable() {
 	clearTimeout(searchTimer);
@@ -349,8 +382,16 @@ function filterTable() {
 		}
 
 		var query = $.trim(input.value.toLowerCase());
-		var showAll = query.length < 2;
+		var minLength = isMobileSearch() ? 3 : 2;
+		var showAll = query.length < minLength;
 		var totalMatches = 0;
+
+		// 検索で表が縮んでも、ページ下端によるスクロール位置の補正を防ぐ
+		var container = document.getElementById("container");
+		if(container) {
+			container.style.minHeight = showAll ? "" :
+				Math.max(0, window.innerHeight - container.getBoundingClientRect().top) + "px";
+		}
 
 		for(var i = 0; i < searchSeparators.length; i++) {
 			searchSeparators[i].matchCount = 0;
@@ -360,7 +401,10 @@ function filterTable() {
 			var item = searchableRows[j];
 			var isMatch = showAll || item.text.indexOf(query) != -1;
 
-			item.element.style.display = isMatch ? "" : "none";
+			var display = isMatch ? "" : "none";
+			if(item.element.style.display != display) {
+				item.element.style.display = display;
+			}
 
 			if(isMatch) {
 				totalMatches++;
@@ -374,14 +418,16 @@ function filterTable() {
 		for(var k = 0; k < searchSeparators.length; k++) {
 			var separator = searchSeparators[k];
 
-			separator.element.style.display =
-				(showAll || separator.matchCount > 0) ? "" : "none";
+			var separatorDisplay = (showAll || separator.matchCount > 0) ? "" : "none";
+			if(separator.element.style.display != separatorDisplay) {
+				separator.element.style.display = separatorDisplay;
+			}
 		}
 
 		if(query.length == 0) {
 			status.innerHTML = "";
-		} else if(query.length < 2) {
-			status.innerHTML = "2文字以上入力してください";
+		} else if(query.length < minLength) {
+			status.innerHTML = minLength + "文字以上入力してください";
 		} else {
 			status.innerHTML = totalMatches + " 件表示中";
 		}
