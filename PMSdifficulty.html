@@ -21,7 +21,7 @@
 #table-search-mobile-help { display: none; }
 @media screen and (max-width: 480px) {
  #table-search-mobile-help { display: block; font-size: 12px; }
- #table-search-input::placeholder { color: transparent; }
+ #table-search-input { display: block; width: 100% !important; max-width: 100% !important; box-sizing: border-box; padding-left: 4px !important; padding-right: 4px !important; }
 }
 </style>
 </head>
@@ -145,9 +145,9 @@
 
 <div id="table-search" class="level-jump">
 <label for="table-search-input">検索:</label>
-<input type="text" id="table-search-input" placeholder="タイトル・作者・差分作者・md5・sha256" oninput="handleSearchInput(event)" onkeydown="handleSearchKeydown(event)" oncompositionend="handleSearchInput(event)" enterkeyhint="search" aria-describedby="table-search-mobile-help" style="width: 480px; max-width: 70%; padding: 1px 6px; border: 1px solid var(--line); border-radius: 3px; background: #ffffff; font: inherit;">
+<input type="text" id="table-search-input" placeholder="タイトル・作者・差分作者・md5・sha256" oninput="handleSearchInput(event)" onkeydown="handleSearchKeydown(event)" oncompositionend="handleSearchInput(event)" enterkeyhint="search" aria-describedby="table-search-mobile-help" style="width: 400px; max-width: 70%; padding: 1px 6px; border: 1px solid var(--line); border-radius: 3px; background: #ffffff; font: inherit;">
 <span id="table-search-status" style="margin-left: 6px;"></span>
-<span id="table-search-mobile-help">タイトル・作者・差分作者・md5・sha256<br>3文字以上入力して検索キーを押してください</span>
+<span id="table-search-mobile-help">スマホでの検索は重いのでご注意ください。3文字以上入力して検索キーを押すと実行します。</span>
 </div>
 
 <div id="level-jump" class="level-jump"></div>
