@@ -44,11 +44,11 @@
 <section>
 <h2 id="bof22-pms">BOF:22 (BOF2026) PMS</h2>
 
-<h3 id="update"><strong><span style="font-size: 14pt;">UPDATE: 2026/10/10</span></strong></h3>
+<h3 id="update"><strong><span style="font-size: 14pt;">UPDATE: 2026/10/20</span></strong></h3>
 
 <p>
 BOF:22(BOF2026) PMS差分企画のポータル & 難易度表です。このページのURLは難易度表ツールに対応しており、シンボルとして【BOF22Plv】を使用しています。<br>
-<strong>現在はイベント登録期間です。～ 2026/10/19　(一般枠一斉公開済・Final Striker 一斉公開: 2026/10/16 0:00)</strong>
+<strong>現在はイベント評価期間です。～ 2026/12/06</strong>
 </p>
 
 
@@ -359,6 +359,71 @@ function getLevelAnchorId(level, order, fallbackNumber, usedIds) {
 
 function hasValue(value) {
 	return value != "" && value != null;
+}
+
+
+// TOTALの計算・表示・色分けはInsane表と共通の処理を使用する。
+var ENABLE_TOTAL_RATE_COLOR = true;
+
+function cellValue(value) {
+	return value == null ? "" : value;
+}
+
+function getTotalRate(item) {
+	if(!hasValue(item.total) || !hasValue(item.notes)) {
+		return NaN;
+	}
+
+	var total = Number(item.total);
+	var notes = Number(item.notes);
+
+	if(!isFinite(total) || !isFinite(notes) || notes <= 0) {
+		return NaN;
+	}
+
+	return total / notes;
+}
+
+function formatTotalRate(totalRate) {
+	return Math.round((totalRate + 1e-12) * 1000) / 1000;
+}
+
+function getTotalDisplay(item, totalRate) {
+	var total = cellValue(item.total);
+
+	if(!hasValue(total)) {
+		return "";
+	}
+
+	if(!isFinite(totalRate)) {
+		return total;
+	}
+
+	return total + " (" + formatTotalRate(totalRate) + "%/note)";
+}
+
+function getTotalRateClass(totalRate) {
+	if(!ENABLE_TOTAL_RATE_COLOR || !isFinite(totalRate)) {
+		return "";
+	}
+
+	if(totalRate <= 0.1) {
+		return "total-rate-red-bold";
+	}
+
+	if(totalRate < 0.2) {
+		return "total-rate-red";
+	}
+
+	if(totalRate < 0.3) {
+		return "";
+	}
+
+	if(totalRate < 0.4) {
+		return "total-rate-blue";
+	}
+
+	return "total-rate-blue-bold";
 }
 
 
@@ -724,7 +789,10 @@ function makeBMSTable(info, mark, order) {
         $("<td width='3%'>" + info[i].notes + "</td>").appendTo(str);
 
         // TOTAL
-        $("<td width='8%'>" + info[i].total + "</td>").appendTo(str);
+        var totalRate = getTotalRate(info[i]);
+        var totalRateClass = getTotalRateClass(totalRate);
+        var totalClassAttribute = totalRateClass ? " class='" + totalRateClass + "'" : "";
+        $("<td width='8%'" + totalClassAttribute + ">" + getTotalDisplay(info[i], totalRate) + "</td>").appendTo(str);
 
         // memo
         $("<td width='5%'>" + info[i].memo + "</td>").appendTo(str);
