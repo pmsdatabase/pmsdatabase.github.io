@@ -1270,3 +1270,32 @@ body.diff {
  .table-search-legacy #table-search-mobile-help { display: block; font-size: 12px; }
  .table-search-legacy #table-search-input { display: block; width: 100%; max-width: 100%; box-sizing: border-box; padding-left: 4px; padding-right: 4px; }
 }
+
+/* タッチ操作が主体の端末だけ、動画・IRアイコンの縮小を防ぐ。
+   通常のPCでは従来の列幅配分を維持する。 */
+@media screen and (hover: none) and (pointer: coarse) {
+  #table_int img[src$="/nico.gif"],
+  #table_int img[src="nico.gif"],
+  #table_int img[src$="/youtube.gif"],
+  #table_int img[src="youtube.gif"],
+  #table_int img[src$="/vimeo.gif"],
+  #table_int img[src="vimeo.gif"],
+  #table_int img[src$="/mochair_logo.gif"],
+  #table_int img[src="mochair_logo.gif"],
+  #table_int img[src$="/minir_logo.gif"],
+  #table_int img[src="minir_logo.gif"],
+  #table_int img[src$="/bmsir_logo.gif"],
+  #table_int img[src="bmsir_logo.gif"],
+  #table_int img[src$="/rianir_logo.gif"],
+  #table_int img[src="rianir_logo.gif"],
+  #table_int img[src$="/stellaverseir_logo.gif"],
+  #table_int img[src="stellaverseir_logo.gif"],
+  #table_int img[src$="/kaleidir_logo.gif"],
+  #table_int img[src="kaleidir_logo.gif"],
+  #table_int img[src$="/lr2ir_logo.gif"],
+  #table_int img[src="lr2ir_logo.gif"] {
+    width: auto;
+    height: auto;
+    max-width: none;
+  }
+}
