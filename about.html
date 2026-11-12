@@ -644,15 +644,8 @@ open_close("openclosebox4_hdr", "openclosebox4");
 (function() {
 	function openBox(boxId) {
 		var box = document.getElementById(boxId);
-		var header = document.getElementById(boxId + "_hdr");
 		if (!box) return;
-		box.style.display = "block";
-		if (header) {
-			header.className = header.className.replace(/\bclose\b/g, "open");
-			if (header.className.indexOf("open") === -1) {
-				header.className += " open";
-			}
-		}
+		open_close_show(box.id);
 	}
 
 	function openBoxFromHash() {

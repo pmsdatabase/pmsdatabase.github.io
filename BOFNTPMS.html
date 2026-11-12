@@ -793,8 +793,7 @@ open_close("openclosebox3_hdr", "openclosebox3");
     var boxId = hdr.id.replace(/_hdr$/, "");
     var box = document.getElementById(boxId);
     if (box) {
-        box.style.display = "block";
-        hdr.className = hdr.className.replace(/\bclose\b/g, "open");
+        open_close_show(box.id);
     }
 })();
 </script>

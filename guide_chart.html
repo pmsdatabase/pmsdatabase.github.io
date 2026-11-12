@@ -697,6 +697,8 @@ BMAnalyzer.jar を開き ファイルを指定して起動するほか、GLAssis
 
 </section>
 
+<center><a href="#">△TOPへ戻る</a></center>
+
 </div>
 <!--/contents-->
 
@@ -719,31 +721,13 @@ open_close("openclosebox3_hdr", "openclosebox3");
 <!--フラグメントリンクから閉じた開閉ブロック内へジャンプするための補助-->
 <script type="text/javascript">
 (function () {
-  function addClass(element, className) {
-    if (!element) return;
-    if ((" " + element.className + " ").indexOf(" " + className + " ") === -1) {
-      element.className = (element.className + " " + className).replace(/^\s+|\s+$/g, "");
-    }
-  }
-
-  function removeClass(element, className) {
-    if (!element) return;
-    var pattern = new RegExp("(^|\\s)" + className + "(\\s|$)", "g");
-    element.className = element.className.replace(pattern, " ").replace(/^\s+|\s+$/g, "");
-  }
-
   function openBox(boxId) {
     var box = document.getElementById(boxId);
-    var header = document.getElementById(boxId + "_hdr");
 
     if (box) {
-      box.style.display = "block";
+      open_close_show(box.id);
     }
 
-    if (header) {
-      removeClass(header, "close");
-      addClass(header, "open");
-    }
   }
 
   function collectBoxIds(target) {

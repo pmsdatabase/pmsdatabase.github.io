@@ -479,13 +479,7 @@ open_close("openclosebox15_hdr", "openclosebox15");
 	}
 
 	if (box) {
-		box.style.display = "block";
-	}
-	if (header) {
-		header.className = header.className.replace(/\bclose\b/g, "open");
-		if (header.className.indexOf("open") < 0) {
-			header.className += " open";
-		}
+		open_close_show(box.id);
 	}
 
 	setTimeout(function() {

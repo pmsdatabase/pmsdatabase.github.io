@@ -909,6 +909,8 @@ F2キー (初期設定に戻す) を行ってから、下図のようにアサ�
 
 </section>
 
+<center><a href="#">△TOPへ戻る</a></center>
+
 </div>
 <!--/contents-->
 
@@ -932,31 +934,13 @@ open_close("openclosebox6_hdr", "openclosebox6");
 <!--フラグメントリンク用：閉じた開閉ブロックを開いてからページ内ジャンプ-->
 <script type="text/javascript">
 (function () {
-  function addClass(element, className) {
-    if (!element) return;
-    if ((" " + element.className + " ").indexOf(" " + className + " ") === -1) {
-      element.className = (element.className + " " + className).replace(/^\s+|\s+$/g, "");
-    }
-  }
-
-  function removeClass(element, className) {
-    if (!element) return;
-    var pattern = new RegExp("(^|\\s)" + className + "(\\s|$)", "g");
-    element.className = element.className.replace(pattern, " ").replace(/^\s+|\s+$/g, "");
-  }
-
   function openBox(boxId) {
     var box = document.getElementById(boxId);
-    var header = document.getElementById(boxId + "_hdr");
 
     if (box) {
-      box.style.display = "block";
+      open_close_show(box.id);
     }
 
-    if (header) {
-      removeClass(header, "close");
-      addClass(header, "open");
-    }
   }
 
   function collectOpenBoxes(target) {

@@ -540,6 +540,8 @@ PMS Database を大規模に収集したい場合は、次のような手順が�
 
 </section>
 
+<center><a href="#">△TOPへ戻る</a></center>
+
 </div>
 <!--/contents-->
 
@@ -561,30 +563,11 @@ open_close("openclosebox3_hdr", "openclosebox3");
 <!--フラグメントリンクから閉じた開閉ブロック内へジャンプするための補助-->
 <script type="text/javascript">
 (function () {
-  function addClass(element, className) {
-    if (!element) return;
-    if ((" " + element.className + " ").indexOf(" " + className + " ") === -1) {
-      element.className = (element.className + " " + className).replace(/^\s+|\s+$/g, "");
-    }
-  }
-
-  function removeClass(element, className) {
-    if (!element) return;
-    var pattern = new RegExp("(^|\\s)" + className + "(\\s|$)", "g");
-    element.className = element.className.replace(pattern, " ").replace(/^\s+|\s+$/g, "");
-  }
-
   function openBox(box) {
     if (!box || !box.id) return;
 
-    var header = document.getElementById(box.id + "_hdr");
+    open_close_show(box.id);
 
-    box.style.display = "block";
-
-    if (header) {
-      removeClass(header, "close");
-      addClass(header, "open");
-    }
   }
 
   function findParentOpencloseBox(element) {

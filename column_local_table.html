@@ -37,31 +37,109 @@
 
 <h2 id="local-table">コラム -難易度表をオフライン(ローカル) 環境で作成・登録する方法について -</h2>
 <p>
-会員登録等を介さず、ローカル環境下に難易度表を作成し楽しむ方法はありませんか？ というリクエストを頂きました。<br>
-そこで当コラムでは、Google スプレッドシートの代わりに <strong>表計算ソフト(.xlsx / Excel等) でデータを作成</strong>し、URLの代わりに<strong>ファイルパスから難易度表を登録</strong>する方法をご紹介します。プライベートなプレイリストの作成や、難易度表の動作確認などにも利用できるかもしれません。<br>
+ホスティングサービスにファイルをアップせず、ローカル環境下に難易度表を作成し楽しむ方法はありませんか？ というリクエストを頂きました。<br>
+そこで当コラムでは、Google スプレッドシートの代わりに <strong>表計算ソフト(.xlsx / Excel等) でデータを作成</strong>し、URLの代わりに<strong>ファイルパスから難易度表を登録</strong>する方法をご紹介します。<br>
 </p>
 <p>
 コラム - <a href="column_table.html" target="_blank">難易度表の作成方法について</a>　/　<a href="column_course.html" target="_blank">段位認定コースセットの作成方法について</a> の内容を統合しています。動作対象の本体プレイヤーは LR2 / beatoraja です。
 </p>
 
+<br>
+
+<h3>2026/11/12　コラムの全面的な改訂を行いました</h3>
+<p>
+当コラムは beatoraja 0.8.5 / BeMusicSeeker 正規版 に基づいて作成しましたが、その後のアップデート等により、うまく使えなくなっている報告を頂きました。
+</p>
+<p>
+■ 入手困難となった正規版に代わり、<a href="https://neeted.github.io/bemusicseeker-unofficial-fork/index.ja.html" target="_blank">BeMusicSeeker Unofficial Fork</a> が発展しつつあります。<br>
+■ beatoraja 0.8.6 以降、記事内で取り上げていたファイル config.json が <strong>config_sys.json</strong> に置き換わりました。<br>
+■ beatoraja 0.8.9 (2026/10/17～) 以降、難易度表のURLとして header.json を指定する方法では難易度表が読み込めなくなりました。<a href="https://github.com/mi1-bm/1mi/tree/main/Nanka/table.html" target="_blank"># jbmstable-parser (a914f60) で .json を直接指定すると動かない問題の回避策</a> で挙げられている対処策に従い、読み込み用の table.html を用意してURLを書き換えれば再び読み込めるようになります。
+<span style="color: #ff0000;">ただし、beatoraja 0.8.8 以前のバージョンでは逆に、この方法では難易度表を読み込めません。</span>
+</p>
+<p>
+これらを踏まえ、コラムの改訂を行いました。<strong>これ以降の解説は beatoraja 0.8.9 (2026/10/17～) および BeMusicSeeker Unofficial Fork 3.1.0.0 版の仕様に従います。<br>
+各クライアントごとの作業内容、使用すべきファイルは下表のとおりです。必ず確認し、適宜読み替えて作業してください。</strong><br>
+</p>
+
+<table class="ta1">
+<tr>
+<th>クライアント</th>
+<th>難易度表の読み込みに<br>使用すべきファイル</th>
+<th>C:/Users/user/Documents/local_table_sample<br>に配置した場合のファイルパス例</th>
+<th>設定ファイルに追記すべき内容</th>
+</tr>
+
+<tr>
+<td><strong>beatoraja 0.8.9 以降<br>(2026/10/17 ～)</strong></td>
+<td>難易度表形式のHTML<br><strong>table.html</strong></td>
+<td>
+C:/Users/user/Documents/local_table_sample/table.html
+</td>
+<td>
+<strong>config_sys.json</strong><br>
+<code>"file:///C:/Users/user/Documents/local_table_sample/table.html",</code>
+</td>
+</tr>
+
+<tr>
+<td><strong>beatoraja 0.8.6 ～ 0.8.8</strong></td>
+<td><strong>header.json</strong></td>
+<td>
+C:/Users/user/Documents/local_table_sample/header.json
+</td>
+<td>
+<strong>config_sys.json</strong><br>
+<code>"file:///C:/Users/user/Documents/local_table_sample/header.json",</code>
+</td>
+</tr>
+
+<tr>
+<td><strong>beatoraja 0.8.5 以前</strong></td>
+<td><strong>header.json</strong></td>
+<td>
+C:/Users/user/Documents/local_table_sample/header.json
+</td>
+<td>
+<strong>config.json</strong><br>
+<code>"file:///C:/Users/user/Documents/local_table_sample/header.json",</code>
+</td>
+</tr>
+
+<tr>
+<td><strong>LR2<br>(BeMusicSeeker Unofficial Fork)</strong></td>
+<td>
+<strong>table.html / header.json</strong><br>
+いずれも使用可能
+</td>
+<td>
+C:/Users/user/Documents/local_table_sample/table.html<br>
+C:/Users/user/Documents/local_table_sample/header.json
+</td>
+<td>
+不要<br>
+BeMusicSeeker の URI 指定でファイルパスを直接入力<br>
+<code>C:/Users/user/Documents/local_table_sample/table.html</code>
+</td>
+</tr>
+</table>
+
+
 <h2 id="sample-set">サンプルセットと中身の概要</h2>
 <p>
-<strong><span style="font-size: 16pt;"><a href="table_sample/local_table/local_table_sample.zip">【Download】ローカル環境用 難易度表作成用テンプレート & サンプルセット</a></span></strong>
+<strong><span style="font-size: 16pt;"><a href="https://pmsdatabase.github.io/table_sample/local_table/local_table_sample.zip">【Download】ローカル環境用 難易度表作成用テンプレート & サンプルセット (v2.0 2026/11/12)</a></span></strong>
 </p>
 
 <p>
-- <strong>「worksheet.xlsx」</strong> … ここでデータ作成を行います。<strong>.xlsx</strong> に対応した表計算ソフトが必要です。(Excel 2019 で動作確認しました。)<br>
-
-- <strong>「header.json」</strong> … 難易度表全般のプロパティと段位認定情報を書き込むファイルです。<br>
-
-- <strong>「score.json」</strong> … 難易度表に登録する譜面の情報を書き込むファイルです。<br>
+■ <strong>「worksheet.xlsx」</strong> … ここでデータ作成を行います。<strong>.xlsx</strong> に対応した表計算ソフトが必要です。(Excel 2019 で動作確認しました。)<br>
+■ <strong>「header.json」</strong> … 難易度表全般のプロパティと段位認定情報を書き込むファイルです。<br>
+■ <strong>「score.json」</strong> … 難易度表に登録する譜面の情報を書き込むファイルです。<br>
+■ <strong>「table.html」</strong> … beatoraja 0.8.9 以降で、ローカル難易度表を読み込ませる際に使用します。
 </p>
 
 <p>
-- <strong>「header_with_course_sample.json」「course_sample.lr2crs」</strong> … 解説用のサンプルファイルです。<br>
-- <strong>「manual.pdf」</strong> … 完全オフライン環境向けのマニュアルです。内容は当コラム(と関連するコラム) に準じますので、どちらを参照頂いても構いません。<br>
+■ <strong>「header_with_course_sample.json」「course_sample.lr2crs」</strong> … 解説用のサンプルファイルです。<br>
+■ <strong>「manual.pdf」</strong> … 完全オフライン環境向けのマニュアルです。内容は当コラム(と関連するコラム) に準じますので、どちらを参照頂いても構いません。<br>
 <br>
-* 難易度表をウェブ公開するためのファイル類は含まれません。必要になった場合は、<a href="column_table.html" target="_blank">難易度表の作成方法について</a> のサンプルセットから導入してください。
 </p>
 
 <h2 id="create-data-with-spreadsheet">表計算ソフトで難易度表の各種データを作成する</h2>
@@ -95,54 +173,102 @@
 
 <h2 id="load-local-table">ローカル環境の難易度表データを本体プレイヤーに読み込ませる</h2>
 <p>
-「header.json」「score.json」が同一ディレクトリにあることを確認し、「header.json」のファイルパスを取得(ファイルを選択 > Shift+右クリック > パスのコピー) しておきます。<br>
-これらのファイルは管理しやすい場所に設置して構いませんが、<span style="color: #ff0000;"><strong>ファイルパスに半角英数字(ASCII文字) 以外が含まれないようにし、パス内の \ マークは / に変換しておいてください。</strong></span><br>
+「table.html」「header.json」「score.json」が同一ディレクトリにあることを確認し、フォルダ全体の設置場所を確定してください。<br>
+設置場所は自由に決めて構いませんが、<span style="color: #ff0000;">ファイルパスに半角英数字(ASCII文字) 以外が含まれないようにしてください。</span><br>
+次に、「table.html」の右クリックメニューからファイルパスを取得し、メモ帳アプリなどに貼り付けます。(Win10 以前の場合は ファイルを選択 > Shift+右クリック > パスのコピー)<br>
+貼り付けたパスからダブルクォーテーション（"）を削除し、パス内の \ 記号を / に変換しておいてください。<br>
 </p>
 
 <p>
 以下は一例として、ユーザ名 "user" が Cドライブ &gt; ドキュメント にサンプルファイル「local_table_sample」全体を設置したものとして紹介します。
 </p>
 <div align="center">
-この場合のファイルパス　<strong>C:<span style="color: #ff0000;">/</span>Users<span style="color: #ff0000;">/</span>user<span style="color: #ff0000;">/</span>Documents<span style="color: #ff0000;">/</span>local_table_sample<span style="color: #ff0000;">/</span>header.json</strong><br>
-<img src="style/images/columns/local_table_fig1.png" width="1000px" height="300px" alt="header.json のファイルパス例">
+この場合のファイルパス　<strong>C:<span style="color: #ff0000;">/</span>Users<span style="color: #ff0000;">/</span>user<span style="color: #ff0000;">/</span>Documents<span style="color: #ff0000;">/</span>local_table_sample<span style="color: #ff0000;">/</span>table.html</strong><br>
+<br>
+<img src="style/images/columns/local_table_fig1.png" width="1000" height="300" alt="table.html のファイルパス例">
 </div>
 <br>
 
+<br>
 
 <h3 id="lr2-bemusicseeker">LR2 の場合 (BeMusicSeeker)</h3>
 <p>
-<a href="https://github.com/SayakaIsBaka/BeMusicSeeker-installer/releases/tag/installer-v1" target="_blank">BeMusicSeeker</a> を使用します。あらかじめインストールしておいてください。<br>
+<a href="https://neeted.github.io/bemusicseeker-unofficial-fork/index.ja.html" target="_blank">BeMusicSeeker Unofficial Fork</a> を使用します。あらかじめインストールしておいてください。Ribbit氏の正規版や <a href="https://github.com/SayakaIsBaka/BeMusicSeeker-installer/releases/tag/installer-v1" target="_blank">黒皇帝氏のミラー版</a> を既に使用している場合はそちらで構いません。<br>
 メイン画面の左側「プレイリスト」を右クリック &gt; インポート &gt; URLを指定して読み込む を選択し、上記のファイルパスを入力して OK を押すと難易度表として読み込まれます。
 </p>
 
 <div align="center">
-<img src="style/images/columns/local_table_fig2.png" width="1000px" height="300px" alt="BeMusicSeeker のURL指定読み込み画面">
+<img src="style/images/columns/local_table_fig2.png" width="1000" height="300" alt="BeMusicSeeker のURL指定読み込み画面">
 </div>
+
+<br>
 
 <h3 id="beatoraja-local-table">beatoraja の場合</h3>
 <p>
-(v0.8.4現在) beatoraja-config > リソース > Table URL ではファイルパスが入力出来ませんが、URLの保存されている beatoraja/config.json を直接編集する事で、ファイルパスから難易度表を読み込ませることが可能になります。ただし、<strong><span style="color: #ff0000;">操作を誤ると config.json が初期化されてしまうので、あらかじめバックアップを作成しておいてください。</span></strong>
+(beatoraja 0.8.9 現在) beatoraja-config > リソース > Table URL ではファイルパスが入力出来ませんが、URLの保存されている beatoraja/config_sys.json を直接編集する事で、ファイルパスから難易度表を読み込ませることが可能になります。ただし、<strong><span style="color: #ff0000;">操作を誤ると config_sys.json が初期化されてしまうので、あらかじめバックアップを作成しておいてください。</span></strong>
 </p>
 
 <p>
-beatoraja フォルダ直下の config.json をメモ帳で開き、<strong>"tableURL":[</strong> と書かれている行の下に新たに行を挿入し、次のように入力して保存します。
+beatoraja フォルダ直下の config_sys.json をメモ帳で開き、<strong>"tableURL":[</strong> と書かれている行の下に新たに行を挿入し、次のように入力して保存します。
 </p>
 
 <div align="center">
-<strong><span style="font-size: 14pt;"><span style="color: #ff0000;">"file:///</span>(header.json のファイルパス)<span style="color: #ff0000;">",</span></span></strong><br>
-上述の例の場合は <strong><span style="color: #ff0000;">"file:///</span>C:/Users/user/Documents/local_table_sample/header.json<span style="color: #ff0000;">",</span></strong><br>
-<img src="style/images/columns/local_table_fig3.png" width="1000px" height="300px" alt="beatoraja config.json のTable URL設定例">
+<strong><span style="font-size: 14pt;"><span style="color: #ff0000;">"file:///</span>(table.html のファイルパス)<span style="color: #ff0000;">",</span></span></strong><br>
+上述の例の場合は <strong><span style="color: #ff0000;">"file:///</span>C:/Users/user/Documents/local_table_sample/table.html<span style="color: #ff0000;">",</span></strong><br>
+<img src="style/images/columns/local_table_fig3.png" width="1000" height="300" alt="beatoraja config_sys.json のTable URL設定例">
 </div>
 
+<br>
+
 <p>
-\マークや非ASCII文字が含まれていないか、ファイルパス周りの記述にミスがないか、もう一度確認してください。<br>
-きちんと導入できていれば、右図のように beatoraja-config > リソース > Table URL に難易度表が表示されています。「難易度表読み込み」を押して反映しましょう。
+きちんと導入できていれば、上図のように beatoraja-config > リソース > Table URL に難易度表が表示されています。「難易度表読み込み」を押して反映しましょう。<br>
+表示されない場合、先に一度リソースタブ内の「難易度表読み込み（全）」を実行してみてください。また、\ 記号や非ASCII文字が含まれていないか、ファイルパス周りの記述にミスがないか、もう一度確認してください。<br>
 </p>
+
+<br>
+
+<h4 id="openclosebox1_hdr" class="close"><span id="beatoraja-legacy-local-table"></span>beatoraja 0.8.8 以前のバージョンを使用している場合　(クリックで開閉)</h4>
+<div id="openclosebox1">
+
+<h3 id="beatoraja-086-088">beatoraja 0.8.6 ～ 0.8.8 の場合</h3>
+<p>
+table.html の代わりに header.json のファイルパスを取得し、config_sys.json で同様に記入します。
+</p>
+
+<div align="center">
+この場合のファイルパス　<strong>C:<span style="color: #ff0000;">/</span>Users<span style="color: #ff0000;">/</span>user<span style="color: #ff0000;">/</span>Documents<span style="color: #ff0000;">/</span>local_table_sample<span style="color: #ff0000;">/header.json</span></strong><br>
+<br>
+<img src="style/images/columns/local_table_fig1_v1.png" width="1000" height="300" alt="header.json のファイルパス例">
+</div>
+
+<br>
+
+<div align="center">
+<strong><span style="font-size: 14pt;"><span style="color: #ff0000;">"file:///</span>(<span style="color: #ff0000;">header.json</span> のファイルパス)<span style="color: #ff0000;">",</span></span></strong><br>
+上述の例の場合は <strong><span style="color: #ff0000;">"file:///</span>C:/Users/user/Documents/local_table_sample/<span style="color: #ff0000;">header.json",</span></strong><br>
+</div>
+
+<br>
+
+<h3 id="beatoraja-085-and-earlier">beatoraja 0.8.5 以前の場合</h3>
+<p>
+config_sys.json の代わりに config.json を開き、header.json のファイルパスを記入します。
+</p>
+
+<div align="center">
+<img src="style/images/columns/local_table_fig3_v1.png" width="1000" height="300" alt="beatoraja config.json のTable URL設定例">
+</div>
+
+<br>
+
+</div>
+
+<br>
 
 <h2 id="update-local-table">難易度表の更新等について</h2>
 <p>
 以降は通常の難易度表と同様に、「header.json」「score.json」を編集し、BeMusicSeeker あるいは beatoraja 上で更新すればOKです。<br>
-.json ファイルを移動させたい場合は、一旦難易度表から削除して、移動先のファイルパスで再度上記の導入作業を行ってください。<br>
+難易度表のファイル一式を移動させたい場合は、いったん難易度表の登録を解除し、移動先のファイルパスで再度上記の導入作業を行ってください。<br>
 2つ目以降の難易度表を作成した場合も同様に行ってください。
 </p>
 
@@ -150,6 +276,8 @@ beatoraja フォルダ直下の config.json をメモ帳で開き、<strong>"tab
 
 
 
+
+<center><a href="#">△TOPへ戻る</a></center>
 
 </div>
 <!--/contents-->
@@ -165,6 +293,50 @@ if (OCwindowWidth() < 3000) {
 open_close("openclosebox1_hdr", "openclosebox1");
 
 }
+</script>
+<script type="text/javascript">
+(function() {
+	function openBox(boxId) {
+		var box = document.getElementById(boxId);
+		if (!box) return;
+		open_close_show(box.id);
+	}
+	function openBoxFromHash() {
+		var hash = location.hash ? decodeURIComponent(location.hash.substring(1)) : "";
+		if (!hash) return;
+
+		var target = document.getElementById(hash);
+		if (!target) return;
+
+		var node = target;
+		while (node && node !== document) {
+			if (node.id && /^openclosebox\d+$/.test(node.id)) {
+				openBox(node.id);
+				break;
+			}
+			node = node.parentNode;
+		}
+		var header = target;
+		while (header && header !== document) {
+			if (header.id && /_hdr$/.test(header.id)) {
+				openBox(header.id.replace(/_hdr$/, ""));
+				break;
+			}
+			header = header.parentNode;
+		}
+
+		setTimeout(function() {
+			if (target.scrollIntoView) {
+				target.scrollIntoView();
+			}
+		}, 0);
+	}
+
+	openBoxFromHash();
+	if (window.addEventListener) {
+		window.addEventListener("hashchange", openBoxFromHash, false);
+	}
+})();
 </script>
 
 

@@ -204,11 +204,7 @@ open_close("openclosebox1_hdr", "openclosebox1");
 
 	function openBox(box, target) {
 		if (!box) return;
-		box.style.display = "block";
-		var header = document.getElementById(box.id + "_hdr");
-		if (header) {
-			header.className = header.className.replace(/\bclose\b/g, "open");
-		}
+		open_close_show(box.id);
 		setTimeout(function() {
 			if (target && target.scrollIntoView) {
 				target.scrollIntoView();

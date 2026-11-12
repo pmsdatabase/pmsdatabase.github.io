@@ -14,6 +14,11 @@
     panel.setAttribute("aria-hidden", open ? "false" : "true");
   }
 
+  // Open a panel without toggling; keep visual and accessibility state together.
+  window.open_close_show = function (panelId) {
+    setState(get(panelId + "_hdr"), get(panelId), true);
+  };
+
   window.do_onoff = function (headerId, panelId) {
     var header = get(headerId);
     var panel = get(panelId);
