@@ -84,7 +84,7 @@
 
 <!--　　　　　ここから難易度表本体　　　　　-->
 <div class="tableflame">
-<table align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#000000" id="table_int" class="table-ir6-compact">
+<table align="center" cellspacing="1" cellpadding="2" border="0" bgcolor="#000000" id="table_int" class="table-ir7-compact">
 </table>
 </div>
 
@@ -158,7 +158,7 @@ function cellValue(value) {
 
 // 隔離表はNotes・TOTALを表示しない14列構成
 function makeSeparatorRow(mark, level, count, sepId) {
-	return "<tr class='tr_separate' id='" + sepId + "'><td colspan='14' align='center'><b>" + mark + level + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td></tr>";
+	return "<tr class='tr_separate' id='" + sepId + "'><td colspan='15' align='center'><b>" + mark + level + " (" + count + "譜面)</b>　　<a href='#container'>▲TOP</a></td></tr>";
 }
 
 var searchableRows = [];
@@ -378,7 +378,7 @@ function makeBMSTable(info, mark, order) {
 	var sepIndex = -1;
 	var sepId = "";
 
-	rows.push("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='6' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>memo</td><td align='center'>コメント</td></tr>");
+	rows.push("<tr height='20' style='color:white;background-color:#666666'><td align='center'>LV</td><td align='center'>動画</td><td align='center'>譜面</td><td colspan='7' align='center'>IR</td><td align='center'>タイトル + LR2IR (Archive)</td><td align='center'>本体</td><td align='center'>差分</td><td align='center'>memo</td><td align='center'>コメント</td></tr>");
 
 	for (var i = 0; i < info.length; i++) {
 		var item = info[i];
@@ -463,10 +463,14 @@ function makeBMSTable(info, mark, order) {
 			row.push("<td width='1.2%' align='center'><a href='https://ir.stellabms.xyz/charts/" + item.md5 + "' target='_blank'><img src='style/stellaverseir_logo.gif' border='0' /></a></td>");
 		} else {
 			row.push("<td width='1.2%'></td>");
-		}		// Kaleid IR
+		}		// BMZ IR
 		if(hasValue(item.sha256)){
+			row.push("<td width='1.2%' align='center'><a href='https://bmz-player.hyrorre.workers.dev/charts/" + item.sha256 + "' target='_blank'><img src='style/bmz_ir_logo.gif' border='0' /></a></td>");
+
+			// Kaleid IR
 			row.push("<td width='1.2%' align='center'><a href='https://kaleidir.com/charts/" + item.sha256 + "' target='_blank'><img src='style/kaleidir_logo.gif' border='0' /></a></td>");
 		} else {
+			row.push("<td width='1.2%'></td>");
 			row.push("<td width='1.2%'></td>");
 		}
 
